@@ -22,6 +22,7 @@
 
 	<!-- DocPad Styles + Our Own -->
 	<%- @getBlock('styles').add(@site.styles).toHTML() %>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
 
 	<!-- Icons -->
 	<!-- Favicon -->
@@ -38,14 +39,19 @@
 <body>
 	<aside class="fixed">
 		<header>
+			<div class="photo">
+				<img src="https://secure.gravatar.com/avatar/5f0a15907f7f0dbe89500ccaaa3a3f21?s=420&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" alt="">
+			</div>
 			<h1 class="logo">
-				<a href="/">LFeh <small>(Luiz Felipe Tartarotti Fialho)</small></a>
+				<a href="/">LFeh <small>Luiz Felipe Tartarotti Fialho</small></a>
 			</h1>	
+			<h4>Front End Developer</h4>
+			<hr />
 		</header>
 		<div class="container">
 		</div>	
 	</aside>
-	<article>
+	<article class="wrap">
 		<%- @content %>
 	</article>
 	<footer></footer>

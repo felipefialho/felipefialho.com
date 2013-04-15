@@ -2,12 +2,13 @@
 // Used for customize others itens
 // --------------------------------------------------
 /*************************************************
-* Aside
+* Aside - Fixed
 *************************************************/
 
 .fixed{
-	background: #333;
-	background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.3));
+	background: @grayDarker;
+	#gradient > .horizontal(@startColor: @grayDark, @endColor: @black);
+	.box-shadow(1px 1px 2px rgba(0, 0, 0, 0.6));
 	position: fixed;
 	left: 0; top: 0;
 	height: 100%;
@@ -16,22 +17,47 @@
 		margin: 0 auto;
 		width: 90%;
 	}
-}
-
-.logo{
-	font-size: 50px;
-	margin: 50px 0 0;
-	text-align: center;
+	*{
+		.opacity(60);
+	}
+	h4,
 	a{
 		color: #fff;
-		.opacity(50);
-		&:hover{
+		
+	}
+	&:hover{
+		*{
 			.opacity(100);
 			.transition(0.5s);
 		}
 	}
+	header{
+		text-align: center;
+	}
+	hr{
+		border-top: 1px solid darken(@grayLight, 25%);
+		.box-shadow(1px 1px 2px rgba(60, 60, 60, 0.5));
+		border-bottom: 0;
+	}
+	.photo{
+		border: @grayDark solid 2px;
+		margin: 5px auto 0;
+		width: 60%;
+	}
+}
+
+.logo{
+	margin: 20px 0 0;
 	small{
 		display: block;
 		font-size: 16px;
 	}
+}
+
+/*************************************************
+* Article - Wrap
+*************************************************/
+
+.wrap{
+	padding: 0 0 0 22%;
 }

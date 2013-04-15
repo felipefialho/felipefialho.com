@@ -244,7 +244,7 @@ iframe {
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   color: #333333;
   background-color: #ffffff;
@@ -814,7 +814,7 @@ p {
 }
 .lead {
   margin-bottom: 20px;
-  font-size: 21px;
+  font-size: 24px;
   font-weight: 200;
   line-height: 30px;
 }
@@ -881,7 +881,7 @@ h4,
 h5,
 h6 {
   margin: 10px 0;
-  font-family: inherit;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
   line-height: 20px;
   color: #6f6f6f;
@@ -903,34 +903,34 @@ h3 {
   line-height: 40px;
 }
 h1 {
-  font-size: 38.5px;
+  font-size: 44px;
 }
 h2 {
-  font-size: 31.5px;
+  font-size: 36px;
 }
 h3 {
-  font-size: 21px;
+  font-size: 24px;
 }
 h4 {
-  font-size: 17.5px;
+  font-size: 20px;
 }
 h5 {
-  font-size: 14px;
+  font-size: 16px;
 }
 h6 {
-  font-size: 11.9px;
+  font-size: 13.6px;
 }
 h1 small {
-  font-size: 24.5px;
+  font-size: 28px;
 }
 h2 small {
-  font-size: 17.5px;
+  font-size: 20px;
 }
 h3 small {
-  font-size: 14px;
+  font-size: 16px;
 }
 h4 small {
-  font-size: 14px;
+  font-size: 16px;
 }
 .page-header {
   padding-bottom: 9px;
@@ -1030,7 +1030,7 @@ blockquote {
 }
 blockquote p {
   margin-bottom: 0;
-  font-size: 17.5px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 1.25;
 }
@@ -1156,7 +1156,7 @@ code,
 pre {
   padding: 0 3px 2px;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-  font-size: 12px;
+  font-size: 14px;
   color: #333333;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -1173,7 +1173,7 @@ pre {
   display: block;
   padding: 9.5px;
   margin: 0 0 10px;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 20px;
   word-break: break-all;
   word-wrap: break-word;
@@ -1217,7 +1217,7 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 20px;
-  font-size: 21px;
+  font-size: 24px;
   line-height: 40px;
   color: #333333;
   border: 0;
@@ -1232,7 +1232,7 @@ input,
 button,
 select,
 textarea {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 20px;
 }
@@ -1267,7 +1267,7 @@ input[type="color"],
   height: 20px;
   padding: 4px 6px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   color: #555555;
   -webkit-border-radius: 4px;
@@ -1782,7 +1782,7 @@ select:focus:invalid:focus {
 .input-prepend .dropdown-menu,
 .input-append .popover,
 .input-prepend .popover {
-  font-size: 14px;
+  font-size: 16px;
 }
 .input-append input,
 .input-prepend input,
@@ -1813,7 +1813,7 @@ select:focus:invalid:focus {
   height: 20px;
   min-width: 16px;
   padding: 4px 5px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 20px;
   text-align: center;
@@ -2385,7 +2385,7 @@ table th[class*="span"],
 }
 /* Chosen */
 .chzn-container {
-  font-size: 11.9px;
+  font-size: 13.6px;
   position: relative;
   display: inline-block;
   zoom: 1;
@@ -5296,7 +5296,7 @@ button.close {
 * Close Extension - Framework 
 *************************************************/
 .close {
-  font-size: 11.9px;
+  font-size: 13.6px;
 }
 /*************************************************
 * Buttons - Bootstrap
@@ -5309,7 +5309,7 @@ button.close {
   *zoom: 1;
   padding: 4px 12px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   text-align: center;
   vertical-align: middle;
@@ -5393,7 +5393,7 @@ button.close {
 }
 .btn-large {
   padding: 11px 19px;
-  font-size: 17.5px;
+  font-size: 20px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -5404,7 +5404,7 @@ button.close {
 }
 .btn-small {
   padding: 2px 10px;
-  font-size: 11.9px;
+  font-size: 13.6px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -5419,7 +5419,7 @@ button.close {
 }
 .btn-mini {
   padding: 0 6px;
-  font-size: 10.5px;
+  font-size: 12px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -5750,16 +5750,16 @@ input[type="submit"].btn.btn-mini {
 .btn-group > .btn,
 .btn-group > .dropdown-menu,
 .btn-group > .popover {
-  font-size: 14px;
+  font-size: 16px;
 }
 .btn-group > .btn-mini {
-  font-size: 10.5px;
+  font-size: 12px;
 }
 .btn-group > .btn-small {
-  font-size: 11.9px;
+  font-size: 13.6px;
 }
 .btn-group > .btn-large {
-  font-size: 17.5px;
+  font-size: 20px;
 }
 .btn-group > .btn:first-child {
   margin-left: 0;
@@ -6682,7 +6682,7 @@ input[type="submit"].btn.btn-mini {
 /* Sizes */
 .pagination-large a {
   padding: 11px 19px;
-  font-size: 17.5px;
+  font-size: 20px;
 }
 .pagination-large .pagination-content {
   -webkit-border-radius: 6px;
@@ -6691,7 +6691,7 @@ input[type="submit"].btn.btn-mini {
 }
 .pagination-small a {
   padding: 2px 10px;
-  font-size: 11.9px;
+  font-size: 13.6px;
 }
 .pagination-small .pagination-content {
   -webkit-border-radius: 3px;
@@ -6700,7 +6700,7 @@ input[type="submit"].btn.btn-mini {
 }
 .pagination-mini a {
   padding: 0 6px;
-  font-size: 10.5px;
+  font-size: 12px;
 }
 .pagination-mini .pagination-content {
   -webkit-border-radius: 3px;
@@ -7378,7 +7378,7 @@ a.thumbnail:focus {
 .badge {
   display: inline-block;
   padding: 2px 4px;
-  font-size: 11.844px;
+  font-size: 13.536px;
   font-weight: bold;
   line-height: 14px;
   color: #ffffff;
@@ -8008,11 +8008,21 @@ a.badge:focus {
 * Project Details
 *************************************************/
 /*************************************************
-* Aside
+* Aside - Fixed
 *************************************************/
 .fixed {
-  background: #333;
-  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3));
+  background: #222222;
+  background-color: #000000;
+  background-image: -moz-linear-gradient(left, #333333, #000000);
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#333333), to(#000000));
+  background-image: -webkit-linear-gradient(left, #333333, #000000);
+  background-image: -o-linear-gradient(left, #333333, #000000);
+  background-image: linear-gradient(to right, #333333, #000000);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff333333', endColorstr='#ff000000', GradientType=1);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   position: fixed;
   left: 0;
   top: 0;
@@ -8023,17 +8033,15 @@ a.badge:focus {
   margin: 0 auto;
   width: 90%;
 }
-.logo {
-  font-size: 50px;
-  margin: 50px 0 0;
-  text-align: center;
+.fixed * {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
 }
-.logo a {
+.fixed h4,
+.fixed a {
   color: #fff;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
 }
-.logo a:hover {
+.fixed:hover * {
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transition: 0.5s;
@@ -8041,9 +8049,33 @@ a.badge:focus {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+.fixed header {
+  text-align: center;
+}
+.fixed hr {
+  border-top: 1px solid #595959;
+  -webkit-box-shadow: 1px 1px 2px rgba(60, 60, 60, 0.5);
+  -moz-box-shadow: 1px 1px 2px rgba(60, 60, 60, 0.5);
+  box-shadow: 1px 1px 2px rgba(60, 60, 60, 0.5);
+  border-bottom: 0;
+}
+.fixed .photo {
+  border: #333333 solid 2px;
+  margin: 5px auto 0;
+  width: 60%;
+}
+.logo {
+  margin: 20px 0 0;
+}
 .logo small {
   display: block;
   font-size: 16px;
+}
+/*************************************************
+* Article - Wrap
+*************************************************/
+.wrap {
+  padding: 0 0 0 22%;
 }
 /************************************************* 
 * Responsive Utilities

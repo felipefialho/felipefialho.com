@@ -34,7 +34,7 @@
     "docpad-plugin-eco": "2.x",
     "docpad-plugin-marked": "2.x",
     "docpad-plugin-partials": "2.x",
-    "docpad-plugin-stylus": "2.x",
+    "docpad-plugin-ghpages",
     "docpad-plugin-text": "2.x",
     "bal-util": "~2.0.4",
     "grunt": "~0.4.1"
