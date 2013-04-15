@@ -1,9 +1,9 @@
 {
-  "name": "LFeh Website",
-  "version": "1.0",
+  "name": "Website",
+  "version": "0.0.1",
   "private": true,
   "description": "My Website using HTML5 Boilerplate skeleton for DocPad.",
-  "homepage": "https://github.com/docpad/html5-boilerplate.docpad",
+  "homepage": "https://github.com/LFeh/Website",
   "keywords": [
     "LFeh",
     "website",
@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "docpad": "6.x",
+    "docpad-plugin-ghpages": "2.x",
     "docpad-plugin-coffeescript": "2.x",
     "docpad-plugin-eco": "2.x",
     "docpad-plugin-marked": "2.x",
