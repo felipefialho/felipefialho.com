@@ -1,0 +1,37 @@
+// Project
+// Used for customize others itens
+// --------------------------------------------------
+/*************************************************
+* Aside
+*************************************************/
+
+.fixed{
+	background: #333;
+	background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.3));
+	position: fixed;
+	left: 0; top: 0;
+	height: 100%;
+	width: 20%;
+	.container{
+		margin: 0 auto;
+		width: 90%;
+	}
+}
+
+.logo{
+	font-size: 50px;
+	margin: 50px 0 0;
+	text-align: center;
+	a{
+		color: #fff;
+		.opacity(50);
+		&:hover{
+			.opacity(100);
+			.transition(0.5s);
+		}
+	}
+	small{
+		display: block;
+		font-size: 16px;
+	}
+}

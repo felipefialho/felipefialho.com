@@ -1,0 +1,56 @@
+// Table Responsive
+// http://themergency.com/footable/
+// --------------------------------------------------
+
+.footable{
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-collapse: separate;
+  width: 100%;
+  td,
+  th{
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  thead{
+    td,
+    th{
+      position: relative;
+      background-color: @grayLighter;
+      #gradient > .vertical(@startColor: @grayLighter, @endColor: darken(@grayLighter,5%));
+      .box-shadow(0 1px 0 rgba(255,255,255,.8) inset);
+      text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    }
+  }
+  tbody{
+    tr{
+      &:hover{
+        background: darken(@white, 3%);
+        &:not(.footable-row-detail) {
+          cursor: pointer;
+        }
+      }
+    }
+    img{
+      vertical-align:middle;
+    }
+  }
+  &.breakpoint{
+    td.expand{
+      background: url('@{icoFootablePath}plus.png') no-repeat 5px center;
+      padding-left: 40px;
+    }
+    tr{
+      &.footable-detail-show{
+        td.expand{
+          background: url('@{icoFootablePath}minus.png') no-repeat 5px center;
+        }
+      }
+      &.footable-row-detail{
+        background-color: @grayLighter;
+      }
+    }
+  } 
+}

@@ -1,0 +1,107 @@
+// 
+// Radiotoggle
+// ------------------------------------------------
+
+.toggle{
+  background-color: @grayDark;
+  .border-radius(60px);
+  color: @white;
+  height: 29px;
+  margin: 0 12px 12px 0;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  .transition(0.25s);
+  -webkit-backface-visibility: hidden; 
+
+  &:before,
+  &:after{
+    display: table;
+    content: ""; 
+  }
+  &:after {clear: both; }
+
+  &.toggle-off {
+    background-color: #cbd2d8; 
+
+    .toggle-radio {
+      background-image: url("@{imgPath}forms/icon-off.png");
+      background-position: 0 0;
+      color: white;
+      left: 0;
+      margin-left: 0.5px;
+      margin-right: -13px;
+      z-index: 1; 
+    
+      &:first-child {left: -120%; }
+    }
+
+  }
+
+  .toggle-radio {
+    background: url("@{imgPath}forms/icon-on.png") right top no-repeat;
+    color: #9C88BF;
+    cursor: pointer;
+    display: block;
+    font-weight: 700;
+    height: 21px;
+    left: 120%;
+    margin-left: -13px;
+    padding: 5px 32px 3px;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    .transition(0.25s);
+    -webkit-backface-visibility: hidden; 
+
+    &:first-child {
+      margin-bottom: -29px;
+      left: 0; 
+    }
+      
+  }
+
+  input {
+    display: none;
+    position: absolute;
+    outline: none !important;
+    display: block\9;
+    .opacity(0);
+    zoom: 1; 
+    visibility: hidden;
+  }
+
+  &.toggle-icon {
+    .border-radius(6px 7px 7px 6px);
+
+    .toggle-radio {
+      background-image: url("@{imgPath}forms/block-on.png");
+      background-position: 62px 0;
+      border-radius: 6px;
+      min-width: 27px;
+      text-align: right; 
+
+      &:first-child {text-align: left; }
+
+    }
+
+  }
+
+  &.toggle-icon.toggle-off {
+    .border-radius(7px 6px 6px 7px); 
+  
+    .toggle-radio {
+      background-image: url("@{imgPath}forms/block-off.png");
+      background-position: 0 0; 
+    }
+
+  }
+
+}
+
+
+
+
+

@@ -1,0 +1,175 @@
+//
+// Uniform
+// --------------------------------------------------
+
+.radio, 
+.checkbox {
+    padding-left: 0;
+}
+
+.checker,
+.radio{
+  display: -moz-inline-box;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: middle; 
+  min-height: 0;
+  padding-left: 0;
+  position: relative; 
+  span{
+    background-image: url("@{uniformPath}");
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased; 
+  }
+  input{
+    float: none;
+    margin-left: 0;
+    &:focus{outline: 0; }
+  }
+}
+
+// Checkbox
+// --------------------------------------------------
+
+div.checker{
+  &,
+  span,
+  input {
+    width: 19px;
+    height: 19px; 
+  }
+  span,
+  input{
+    display: inline-block;
+    *display: inline;
+  }
+  span{
+    display: -moz-inline-box;
+    zoom: 1;
+    text-align: center;
+    background-position: 0 -1px;
+  }
+  input {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    border: none;
+    background: none;
+    display: -moz-inline-box;
+    zoom: 1; 
+  }
+  &:active span,
+  &.active span {
+    background-position: -19px -1px;
+  }
+  &.focus span,
+  &:hover span {
+    background-position: -38px -1px; 
+  }
+  &.focus:active span,
+  &:active:hover span,
+  &.active:hover span,
+  &.focus.active span {
+    background-position: -57px -1px; 
+  }
+  span.checked {
+    background-position: -76px -1px; 
+  }
+  &:active span.checked,
+  &.active span.checked {
+    background-position: -95px -1px; 
+  }
+  &.focus span.checked,
+  &:hover span.checked {
+    background-position: -114px -1px; 
+  }
+  &.focus:active span.checked,
+  &:hover:active span.checked,
+  &.active:hover span.checked,
+  &.active.focus span.checked {
+    background-position: -133px -1px; 
+  }
+  &.checker.disabled span,
+  &.checker.disabled:active span,
+  &.checker.disabled.active span {
+    background-position: -152px -1px; 
+  }
+  &.checker.disabled span.checked,
+  &.checker.disabled:active span.checked,
+  &.checker.disabled.active span.checked {
+    background-position: -171px -1px; 
+  }
+}
+
+/* Radio */
+
+div.radio{
+  &,
+  span,
+  input {
+    width: 18px;
+    height: 18px; 
+  }
+  span,
+  input{
+    display: inline-block;
+    *display: inline;
+    text-align: center;
+  }
+  span{
+    display: -moz-inline-box;
+    zoom: 1;
+    background-position: 0 -20px; 
+  }
+  input {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    border: none;
+    background: none;
+    display: -moz-inline-box;
+    zoom: 1;
+  }
+  &:active span,
+  &.active span {
+    background-position: -18px -20px; 
+  }
+  &.focus span,
+  &:hover span {
+    background-position: -36px -20px; 
+  }
+  &.focus:active span,
+  &:active:hover span,
+  &.active:hover span,
+  &.active.focus span {
+    background-position: -54px -20px; 
+  }
+  & span.checked {
+    background-position: -72px -20px; 
+  }
+  &:active span.checked,
+  &.active span.checked {
+    background-position: -90px -20px; 
+  }
+  &.focus span.checked,
+  &:hover span.checked {
+    background-position: -108px -20px;
+  }
+  &.focus:active span.checked,
+  &:hover:active span.checked,
+  &.focus.active span.checked,
+  &.active:hover span.checked {
+    background-position: -126px -20px; 
+  }
+  &.disabled span,
+  &.disabled:active span,
+  &.disabled.active span {
+    background-position: -144px -20px; 
+  }
+  &.disabled span.checked,
+  &.disabled:active span.checked,
+  &.disabled.active span.checked {
+    background-position: -162px -20px; 
+  }
+}
