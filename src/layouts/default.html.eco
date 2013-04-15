@@ -49,6 +49,17 @@
 			<hr />
 		</header>
 		<div class="container">
+			<nav>
+				<ul>
+					<% for page in @getCollection("html").findAll({isPage:true}).toJSON(): %>
+			        <li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
+			            <a href="<%= page.url %>">
+			                <%= page.title %>
+			            </a>
+			        </li>
+			    	<% end %>
+				</ul>
+			</nav>	
 		</div>	
 	</aside>
 	<article class="wrap">

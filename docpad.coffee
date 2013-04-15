@@ -76,6 +76,13 @@ docpadConfig = {
 			    @
 
 		# -----------------------------
+		# Collection
+		    collections:
+		        pages: ->
+		            @getCollection("html").findAllLive({isPage:true})
+
+		            
+		# -----------------------------
 		# Helper Functions
 
 		# Get the prepared site/document title

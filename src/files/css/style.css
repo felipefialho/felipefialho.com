@@ -8036,6 +8036,10 @@ a.badge:focus {
 .fixed * {
   opacity: 0.6;
   filter: alpha(opacity=60);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 .fixed h4,
 .fixed a {
