@@ -40,21 +40,21 @@ docpadConfig = {
 
 			# The website's scripts
 			scriptsTop: [
-				'/vendor/plugin/modernizr-2.6.2.min.js'
+				'/scripts/plugin/modernizr-2.6.2.min.js'
 			]
 
 			scripts: [
-				'/vendor/plugin/jquery-plugins/jquery.placeholder.min.js'
-				'/vendor/plugin/jquery-plugins/jquery.chosen.min.js'
-				'/vendor/plugin/jquery-plugins/jquery.nanoscroller.min.js'
-				'/vendor/plugin/jquery-plugins/jquery.classysocial.js'
+				'/scripts/plugin/jquery-plugins/jquery.placeholder.min.js'
+				'/scripts/plugin/jquery-plugins/jquery.chosen.min.js'
+				'/scripts/plugin/jquery-plugins/jquery.nanoscroller.min.js'
+				'/scripts/plugin/jquery-plugins/jquery.classysocial.js'
 
-				'/vendor/plugin/bootstrap/bootstrap.min.js'
-				'/vendor/plugin/bootstrap-extension/bootstrap.inputmask.min.js'
+				'/scripts/plugin/bootstrap/bootstrap.min.js'
+				'/scripts/plugin/bootstrap-extension/bootstrap.inputmask.min.js'
 
-				'/vendor/site/_general.js'
+				'/scripts/site/_general.js'
 
-				'/vendor/log.js'
+				'/scripts/log.js'
 			]
 
 			# Write After
@@ -81,6 +81,16 @@ docpadConfig = {
 		        pages: ->
 		            @getCollection("html").findAllLive({isPage:true})
 
+		# Active sections on the website
+		# to deactivate comment out with '#'
+		# you can also change order here and it will reflect on page
+		sections: [
+		  'blog'
+		]
+
+		# Labels which you can translate to other languages
+		labels:
+		  blog: "Blog"
 		            
 		# -----------------------------
 		# Helper Functions

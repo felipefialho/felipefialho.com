@@ -2,20 +2,16 @@
 // --------------------------------------------------
 
 .nav-list-box{
-   .border-radius(5px);
-   .box-shadow(0 1px 4px rgba(0, 0, 0, 0.067));
     margin: 0 0 @defaultMargin;
     list-style: none;
 }
 
 .nav-list-item a{
-	border: 1px solid @grayLighter;
     color: @navlistColor;
-    display: block;
-    margin: 0 0 -1px;
-    padding: (@baseLineHeight/4) (@baseLineHeight/2);
-    &:hover,
+    &:hover{
+        color: @navlistColor;
+    }
     &.active{
-		background: darken(@grayLighter, 5%);
+        font-weight: bold;
     }
 }

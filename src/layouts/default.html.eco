@@ -24,19 +24,11 @@
 	<%- @getBlock('styles').add(@site.styles).toHTML() %>
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
 
-	<!-- Icons -->
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="/icons/favicon.ico" />
-	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-	<link rel="apple-touch-icon-precomposed" href="icons/apple-touch-icon-57x57-precomposed.png" />
-	<!-- For first- and second-generation iPad: -->
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/apple-touch-icon-72x72-precomposed.png" />
-	<!-- For iPhone with high-resolution Retina display: -->
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/apple-touch-icon-114x114-precomposed.png" />
-	<!-- For third-generation iPad with high-resolution Retina display: -->
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/apple-touch-icon-144x144-precomposed.png" />
 </head>
 <body>
+	<!-- SIDE -->
 	<aside class="fixed">
 		<header>
 			<div class="photo">
@@ -49,19 +41,10 @@
 			<hr />
 		</header>
 		<div class="container">
-			<nav>
-				<ul>
-					<% for page in @getCollection("html").findAll({isPage:true}).toJSON(): %>
-			        <li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
-			            <a href="<%= page.url %>">
-			                <%= page.title %>
-			            </a>
-			        </li>
-			    	<% end %>
-				</ul>
-			</nav>	
+			<%-@partial('nav.html.eco', @)%>
 		</div>	
 	</aside>
+	<!-- END SIDE -->
 	<article class="wrap">
 		<%- @content %>
 	</article>

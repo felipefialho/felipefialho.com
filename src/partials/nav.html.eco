@@ -1,0 +1,12 @@
+
+			<!-- NAVIGATION -->
+			<nav>
+				<ul class="nav-list-box">
+					 <% for section in @sections : %>
+				      <li class="nav-list-item">
+				        <a href="<%= section %>.html" title="<%= @labels[section] %>"><%= @labels[section] %></a>
+				      </li>
+				    <% end %>
+				</ul>
+			</nav>	
+			<!-- END NAVIGATION -->
