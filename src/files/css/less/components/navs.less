@@ -204,85 +204,6 @@
   margin-bottom: 1px; // decrease margin to match sizing of stacked tabs
 }
 
-
-
-// DROPDOWNS
-// ---------
-
-.nav-tabs .dropdown-menu {
-  .border-radius(0 0 6px 6px); // remove the top rounded corners here since there is a hard edge above the menu
-}
-.nav-pills .dropdown-menu {
-  .border-radius(6px); // make rounded corners match the pills
-}
-
-// Default dropdown links
-// -------------------------
-// Make carets use linkColor to start
-.nav .dropdown-toggle .caret {
-  border-top-color: @linkColor;
-  border-bottom-color: @linkColor;
-  margin-top: 6px;
-}
-.nav .dropdown-toggle:hover .caret,
-.nav .dropdown-toggle:focus .caret {
-  border-top-color: @linkColorHover;
-  border-bottom-color: @linkColorHover;
-}
-/* move down carets for tabs */
-.nav-tabs .dropdown-toggle .caret {
-  margin-top: 8px;
-}
-
-// Active dropdown links
-// -------------------------
-.nav .active .dropdown-toggle .caret {
-  border-top-color: #fff;
-  border-bottom-color: #fff;
-}
-.nav-tabs .active .dropdown-toggle .caret {
-  border-top-color: @gray;
-  border-bottom-color: @gray;
-}
-
-// Active:hover/:focus dropdown links
-// -------------------------
-.nav > .dropdown.active > a:hover,
-.nav > .dropdown.active > a:focus {
-  cursor: pointer;
-}
-
-// Open dropdowns
-// -------------------------
-.nav-tabs .open .dropdown-toggle,
-.nav-pills .open .dropdown-toggle,
-.nav > li.dropdown.open.active > a:hover,
-.nav > li.dropdown.open.active > a:focus {
-  color: @white;
-  background-color: @grayLight;
-  border-color: @grayLight;
-}
-.nav li.dropdown.open .caret,
-.nav li.dropdown.open.active .caret,
-.nav li.dropdown.open a:hover .caret,
-.nav li.dropdown.open a:focus .caret {
-  border-top-color: @white;
-  border-bottom-color: @white;
-  .opacity(100);
-}
-
-// Dropdowns in stacked tabs
-.tabs-stacked .open > a:hover,
-.tabs-stacked .open > a:focus {
-  border-color: @grayLight;
-}
-
-
-
-// TABBABLE
-// --------
-
-
 // COMMON STYLES
 // -------------
 
@@ -408,4 +329,9 @@
   text-decoration: none;
   background-color: transparent;
   cursor: default;
+}
+
+// Btn navbar
+.navbar .btn-navbar {
+  display: none;
 }

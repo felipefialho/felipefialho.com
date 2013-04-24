@@ -32,7 +32,7 @@
 
 		<!-- SIDE -->
 		<aside class="span3">
-			<div class="nav-side">
+			<div class="navbar nav-side">
 				<!-- HEADER -->
 				<header>
 					<div class="photo">
@@ -42,13 +42,11 @@
 						<a href="/">LFeh <small>Luiz Felipe Tartarotti Fialho</small></a>
 					</h1>	
 					<h4>Front End Developer</h4>
-					<hr />
 				</header>
 				<!-- END HEADER -->
 				<!-- NAV -->
 				<%-@partial('nav.html.eco', @)%>
 				<!-- END NAV -->
-				<hr />
 				<!-- SOCIAL MEDIA -->
 				<ul class="social-media inline">
 					<li><a href="https://twitter.com/LFeh"><span class="icon-twitter" aria-hidden="true"></span></a></li>

@@ -10,31 +10,9 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-  // Negative indent the now static "fixed" navbar
-  .navbar-fixed-top,
-  .navbar-fixed-bottom,
-  .navbar-static-top {
-    margin-left: -20px;
-    margin-right: -20px;
-  }
   // Remove padding on container given explicit padding set on body
   .container-fluid {
     padding: 0;
-  }
-
-  // TYPOGRAPHY
-  // ----------
-  // Reset horizontal dl
-  .dl-horizontal {
-    dt {
-      float: none;
-      clear: none;
-      width: auto;
-      text-align: left;
-    }
-    dd {
-      margin-left: 0;
-    }
   }
 
   // GRID & CONTAINERS
@@ -75,30 +53,6 @@
     margin-left: 0;
   }
 
-  // FORM FIELDS
-  // -----------
-  // Make span* classes full width
-  .input-large,
-  .input-xlarge,
-  .input-xxlarge,
-  input[class*="span"],
-  select[class*="span"],
-  textarea[class*="span"],
-  .uneditable-input {
-    .input-block-level();
-  }
-  // But don't let it screw up prepend/append inputs
-  .input-prepend input,
-  .input-append input,
-  .input-prepend input[class*="span"],
-  .input-append input[class*="span"] {
-    display: inline-block; // redeclare so they don't wrap to new lines
-    width: auto;
-  }
-  .controls-row [class*="span"] + [class*="span"] {
-    margin-left: 0;
-  }
-
   // Modals
   .modal {
     position: fixed;
@@ -111,9 +65,58 @@
     &.fade.in { top: 20px; }
   }
 
+  // Nav Side
+  .nav-side{
+    position: static;
+    margin: 0 -20px;
+    padding: 10px 20px;
+    text-align: left;
+    width: auto;
+    hr{
+      display: none;
+    }
+  }
+
+  // Navbar button for toggling navbar items in responsive layouts
+  // These definitions need to come after '.navbar .btn'
+  .navbar .btn-navbar {
+    display: block;
+    position: absolute; right: 10px; top: 10px;
+    padding: 7px 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    .buttonBackground(darken(@navbarInverseBackgroundHighlight, 5%), darken(@navbarInverseBackground, 5%));
+    .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075)");
+  }
+  .navbar .btn-navbar .icon-bar {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: #f5f5f5;
+    .border-radius(1px);
+    .box-shadow(0 1px 0 rgba(0,0,0,.25));
+  }
+  .btn-navbar .icon-bar + .icon-bar {
+    margin-top: 3px;
+  }
+
+  // Photo
+  .photo{
+    display: none;
+    margin: 0;
+  }
+
+  // Logo
+  .logo{
+    margin: 0;
+  }
+
+  // Social Media
+  .social-media{
+    position: absolute; top: 10px; right: 200px;
+  }
+
 }
-
-
 
 // UP TO LANDSCAPE PHONE
 // ---------------------
@@ -123,55 +126,6 @@
   // Smooth out the collapsing/expanding nav
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0); // activate the GPU
-  }
-
-  // Block level the page header small tag for readability
-  .page-header h1 small {
-    display: block;
-    line-height: @baseLineHeight;
-  }
-
-  // Update checkboxes for iOS
-  input[type="checkbox"],
-  input[type="radio"] {
-    border: 1px solid #ccc;
-  }
-
-  // Remove the horizontal form styles
-  .form-horizontal {
-    .control-label {
-      float: none;
-      width: auto;
-      padding-top: 0;
-      text-align: left;
-    }
-    // Move over all input controls and content
-    .controls {
-      margin-left: 0;
-    }
-    // Move the options list down to align with labels
-    .control-list {
-      padding-top: 0; // has to be padding because margin collaspes
-    }
-    // Move over buttons in .form-actions to align with .controls
-    .form-actions {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
-
-  // Medias
-  // Reset float and spacing to stack
-  .media .pull-left,
-  .media .pull-right  {
-    float: none;
-    display: block;
-    margin-bottom: 10px;
-  }
-  // Remove side margins since we stack instead of indent
-  .media-object {
-    margin-right: 0;
-    margin-left: 0;
   }
 
   // Modals
