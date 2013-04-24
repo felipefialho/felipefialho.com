@@ -25,30 +25,47 @@
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="img/icons/favicon.ico" />
+	<link rel="shortcut icon" href="img/icons/favicon2.ico" />
 </head>
 <body>
-	<!-- SIDE -->
-	<aside class="fixed">
-		<header>
-			<div class="photo hide">
-				<img src="https://secure.gravatar.com/avatar/5f0a15907f7f0dbe89500ccaaa3a3f21?s=420&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" alt="">
-			</div>
-			<h1 class="logo">
-				<a href="/">LFeh <small>Luiz Felipe Tartarotti Fialho</small></a>
-			</h1>	
-			<h4>Front End Developer</h4>
-			<hr />
-		</header>
-		<div class="container">
-			<%-@partial('nav.html.eco', @)%>
-		</div>	
-	</aside>
-	<!-- END SIDE -->
-	<section class="wrap">
-		<%- @content %>
-	</section>
+	<div class="row-fluid">
 
+		<!-- SIDE -->
+		<aside class="span3">
+			<div class="nav-side">
+				<!-- HEADER -->
+				<header>
+					<div class="photo">
+						<img src="img/default/luiz-felipe-tartarotti-fialho.png" alt="Cartoon de Luiz Felipe Tartarotti Fialho">
+					</div>
+					<h1 class="logo">
+						<a href="/">LFeh <small>Luiz Felipe Tartarotti Fialho</small></a>
+					</h1>	
+					<h4>Front End Developer</h4>
+					<hr />
+				</header>
+				<!-- END HEADER -->
+				<!-- NAV -->
+				<%-@partial('nav.html.eco', @)%>
+				<!-- END NAV -->
+				<hr />
+				<!-- SOCIAL MEDIA -->
+				<ul class="social-media inline">
+					<li><a href="https://twitter.com/LFeh"><span class="icon-twitter" aria-hidden="true"></span></a></li>
+					<li><a href="https://github.com/LFeh"><span class="icon-github-2" aria-hidden="true"></span></a></li>
+					<li><a href="http://www.linkedin.com/in/lfehfrontend"><span class="icon-linkedin" aria-hidden="true"></span></a></li>
+				</ul>	
+				<!-- END OF SOCIAL MEDIA -->
+			</div>	
+		</aside>
+		<!-- END SIDE -->
+		<section class="span9">
+			<article>
+				<%- @content %>
+			</article>
+		</section>
+
+	</div>	
 	<!-- Scripts -->
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
 	<!--[if IE 7]>

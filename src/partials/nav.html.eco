@@ -1,10 +1,10 @@
 
 			<!-- NAVIGATION -->
 			<nav>
-				<ul class="nav-list-box">
+				<ul class="nav nav-pills nav-stacked">
 					 <% for section in @sections : %>
 				      <li class="nav-list-item">
-				        <a href="<%= section %>.html" title="<%= @labels[section] %>"><%= @labels[section] %></a>
+				        <a href="<%= section %>.html"><%= @labels[section] %></a>
 				      </li>
 				    <% end %>
 				</ul>
