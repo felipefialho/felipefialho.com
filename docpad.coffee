@@ -44,6 +44,7 @@ docpadConfig = {
 			]
 
 			scripts: [
+				'/scripts/plugin/jquery/jquery.js'
 				'/scripts/plugin/jquery-plugins/jquery.placeholder.min.js'
 				'/scripts/plugin/jquery-plugins/jquery.chosen.min.js'
 				'/scripts/plugin/jquery-plugins/jquery.nanoscroller.min.js'
@@ -80,17 +81,19 @@ docpadConfig = {
 		    collections:
 		        pages: ->
 		            @getCollection("html").findAllLive({isPage:true})
-
+		            
 		# Active sections on the website
 		# to deactivate comment out with '#'
 		# you can also change order here and it will reflect on page
 		sections: [
 		  'blog'
+		  'projetos'
 		]
 
 		# Labels which you can translate to other languages
 		labels:
 		  blog: "Blog"
+		  projetos: "Projetos"
 		            
 		# -----------------------------
 		# Helper Functions

@@ -21,13 +21,12 @@
 
 // Core variables and mixins
 
-@import "bootstrap/variables.less"; // Modify this for custom colors, font-sizes, etc ... for bootstrap
-@import "framework/variables-extension.less"; // Modify this for custom colors, font-sizes, etc ... for framework
+@import "components/variables.less"; // Modify this for custom colors, font-sizes, etc ... 
 
 /*************************************************
 * Core - Bootstrap 
 *************************************************/
-@import "bootstrap/mixins.less";  
+@import "components/mixins.less";  
 
 
 // CSS Reset
@@ -35,29 +34,41 @@
 /*************************************************
 * Reset - Bootstrap 
 *************************************************/
-@import "bootstrap/reset.less"; 
+@import "components/reset.less"; 
 
 /*************************************************
 * Reset Extension - Framework 
 *************************************************/
-@import "framework/reset-extension.less"; 
+@import "components/reset-extension.less"; 
 
 // Grid system and page structure
 
 /*************************************************
 * Scaffolding - Bootstrap 
 *************************************************/
-@import "bootstrap/scaffolding.less"; 
+@import "components/scaffolding.less"; 
 
 /*************************************************
 * Grid - Bootstrap 
 *************************************************/
-@import "bootstrap/grid.less"; 
+@import "components/grid.less"; 
 
 /*************************************************
 * Layouts - Bootstrap 
 *************************************************/
-@import "bootstrap/layouts.less";
+@import "components/layouts.less";
+
+// Components: Nav
+
+/*************************************************
+* Navs - Bootstrap
+*************************************************/
+@import "components/navs.less";
+
+/*************************************************
+* Navbar - Bootstrap 
+*************************************************/
+@import "components/navbar.less";
 
 
 // Base CSS
@@ -65,284 +76,27 @@
 /*************************************************
 * Reusable Classes - Framework
 *************************************************/
-@import "framework/reusable-classes.less";
+@import "components/reusable-classes.less";
 
 /*************************************************
 * Type - Bootstrap 
 *************************************************/
-@import "bootstrap/type.less";
+@import "components/type.less";
 
 /*************************************************
 * Type Extension - Framework 
 *************************************************/
-@import "framework/type-extension.less";
-
-/*************************************************
-* Code - Bootstrap 
-*************************************************/
-@import "bootstrap/code.less";
-
-/*************************************************
-* Forms - Bootstrap 
-*************************************************/
-@import "bootstrap/forms.less";
-
-/*************************************************
-* Forms Extension - Framework 
-*************************************************/
-@import "framework/forms-extension.less";
-
-/*************************************************
-* Tables - Bootstrap 
-*************************************************/
-@import "bootstrap/tables.less";
-
-/*************************************************
-* Tables Responsive - Framework
-*************************************************/
-@import "framework/tables-responsive.less";
-
-
-// Components: Forms
-
-/*************************************************
-* Chosen (Customize Selects) - Framework 
-*************************************************/
-@import "framework/chosen.less";
-
-/*************************************************
-* Uniform (Customize checks and radios) - Framework 
-**********************************/
-@import "framework/uniform.less";
-
-/*************************************************
-* File Upload (Customize fileuploads) - Framework 
-*************************************************/
-@import "framework/fileupload.less";
-
-/*************************************************
-* Tags Input (add tags on inputs) - Framework 
-*************************************************/
-@import "framework/tagsinput.less";
-
-/*************************************************
-* Tags Input (based in Bootstrap) - Framework 
-*************************************************/
-@import "framework/tagsinput-bootstrap.less";
-
-/*************************************************
-* Radio Toggle (Radio on/off) - Framework 
-*************************************************/
-@import "framework/radiotoggle.less";
-
-/*************************************************
-* Datepicker - Framework 
-*************************************************/
-@import "framework/datepicker.less";
-
-// Components: common
-
-//  /*************************************************
-//	* Sprites Extension - Framework 
-//  *************************************************/
-//  @import "bootstrap/sprites.less";
-
-/*************************************************
-* Sprites Extension - Framework 
-*************************************************/
-@import "framework/sprites-extension.less";
+@import "components/type-extension.less";
 
 /*************************************************
 * Icons Font - Framework 
 *************************************************/
-@import "framework/icons-font.less";
-
-/*************************************************
-* Dropdowns - Bootstrap
-*************************************************/
-@import "bootstrap/dropdowns.less";
-
-/*************************************************
-* Wells - Bootstrap
-*************************************************/
-@import "bootstrap/wells.less";
+@import "components/icons-font.less";
 
 /*************************************************
 * Animations - Bootstrap 
 *************************************************/
-@import "bootstrap/component-animations.less";
-
-/*************************************************
-* Close - Bootstrap 
-*************************************************/
-@import "bootstrap/close.less";
-
-/*************************************************
-* Close Extension - Framework 
-*************************************************/
-@import "framework/close-extension.less";
-
-
-// Components: Buttons & Alerts
-
-/*************************************************
-* Buttons - Bootstrap
-*************************************************/
-@import "bootstrap/buttons.less";
-
-/*************************************************
-* Buttons Extension - Framework 
-*************************************************/
-@import "framework/buttons-extension.less";
-
-/*************************************************
-* Buttons Groups - Bootstrap
-*************************************************/
-@import "bootstrap/button-groups.less";
-
-/*************************************************
-* Alerts - Bootstrap
-*************************************************/
-@import "bootstrap/alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
-
-/*************************************************
-* Classy Social - Framework 
-*************************************************/
-@import "framework/classysocial.less";
-
-
-// Components: Nav
-
-/*************************************************
-* Navlist Extension - Framework 
-*************************************************/
-@import "framework/navlist-extension.less";
-
-/*************************************************
-* Submenu - Framework 
-*************************************************/
-@import "framework/submenu.less";
-
-/*************************************************
-* Breadcrumbs - Bootstrap
-*************************************************/
-@import "bootstrap/breadcrumbs.less";
-
-/*************************************************
-* Breadcrumbs Extension - Framework 
-*************************************************/
-@import "framework/breadcrumbs-extension.less";
-
-// /************************************************* 
-// * Pagination - Bootstrap
-// *************************************************/
-// @import "bootstrap/pagination.less";
-
-/************************************************* 
-* Pagination Extension - Framework 
-*************************************************/
-@import "framework/pagination-extension.less";
-
-/************************************************* 
-* Pager - Bootstrap
-*************************************************/
-@import "bootstrap/pager.less";
-
-/************************************************* 
-* Tabs Extension - Framework 
-*************************************************/
-@import "framework/tabs-extension.less";
-
-/************************************************* 
-* Toolbar - Framework 
-*************************************************/
-@import "framework/toolbar.less";
-
-// Components: Popovers
-
-/************************************************* 
-* Modal - Bootstrap
-*************************************************/
-@import "bootstrap/modals.less";
-
-/************************************************* 
-* Modal Extension - Framework 
-*************************************************/
-@import "framework/modals-extension.less";
-
-/************************************************* 
-* Tooltip - Bootstrap
-*************************************************/
-@import "bootstrap/tooltip.less";
-
-/************************************************* 
-* Popovers - Bootstrap
-*************************************************/
-@import "bootstrap/popovers.less";
-
-// Components: Misc
-
-/************************************************* 
-* Loading - Framework 
-*************************************************/
-@import "framework/loading.less";
-
-/************************************************* 
-* Thumbnails - Bootstrap
-*************************************************/
-@import "bootstrap/thumbnails.less";
-
-/************************************************* 
-* Thumbnails Extension - Framework 
-*************************************************/
-@import "framework/thumbnails-extension.less";
-
-/************************************************* 
-* Media - Bootstrap
-*************************************************/
-@import "bootstrap/media.less";
-
-/************************************************* 
-* Labels and Badges - Bootstrap 
-*************************************************/
-@import "bootstrap/labels-badges.less";
-
-/************************************************* 
-* Progressbar - Bootstrap 
-*************************************************/
-@import "bootstrap/progress-bars.less";
-
-/************************************************* 
-* Accordion - Bootstrap
-*************************************************/
-@import "bootstrap/accordion.less";
-
-/************************************************* 
-* Carousel - Bootstrap
-*************************************************/
-@import "bootstrap/carousel.less";
-
-/************************************************ 
-* Carousel Extension - Framework 
-*************************************************/
-@import "framework/carousel-extension.less";
-
-/************************************************* 
-* Hero Unit - Bootstrap
-*************************************************/
-@import "bootstrap/hero-unit.less";
-
-/************************************************* 
-* Scroller - Framework
-*************************************************/
-@import "framework/scroller.less";
-
-// Utility classes
-
-/************************************************* 
-* Utilities - Bootstrap 
-*************************************************/
-@import "bootstrap/utilities.less"; // Has to be last to override when necessary
+@import "components/component-animations.less";
 
 // Other adjustments:; based on each project
 
@@ -357,7 +111,7 @@
 /************************************************* 
 * Responsive Utilities
 *************************************************/
-@import "bootstrap/responsive-utilities.less";
+@import "components/responsive-utilities.less";
 
 
 // MEDIA QUERIES
@@ -370,20 +124,20 @@
 // Large desktops
 
 /* Large desktops */
-@import "bootstrap/responsive-1200px-min.less";
+@import "components/responsive-1200px-min.less";
 
 // Tablets to regular desktops
 
 /* Tablets to regular desktops */
-@import "bootstrap/responsive-768px-979px.less";
+@import "components/responsive-768px-979px.less";
 
 // Phones to portrait tablets and narrow desktops
 
 /* Phones to portrait tablets and narrow desktops */
-@import "bootstrap/responsive-767px-max.less";
+@import "components/responsive-767px-max.less";
 
 // RESPONSIVE NAVBAR
 // ------------------
 
 // From 979px and below, show a button to toggle navbar contents
-//@import "bootstrap/responsive-navbar.less";
+@import "components/responsive-navbar.less";

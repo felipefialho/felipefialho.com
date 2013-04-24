@@ -45,10 +45,10 @@
 // Typography
 // -------------------------
 @sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-@serifFontFamily:       "Droid Serif", Georgia, "Times New Roman", Times, serif;
+@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
-@baseFontSize:          16px;
+@baseFontSize:          14px;
 @baseFontFamily:        @sansFontFamily;
 @baseLineHeight:        20px;
 @altFontFamily:         @serifFontFamily;
@@ -177,7 +177,7 @@
 
 // Navbar
 // -------------------------
-@navbarCollapseWidth:             979px;
+@navbarCollapseWidth:             768px;
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
 @navbarHeight:                    40px;
@@ -299,3 +299,53 @@
 // 768px-979px
 @fluidGridColumnWidth768:      percentage(@gridColumnWidth768/@gridRowWidth768);
 @fluidGridGutterWidth768:      percentage(@gridGutterWidth768/@gridRowWidth768);
+
+//
+// Variables Extension
+// --------------------------------------------------
+
+// Typography
+// -------------------------
+@defaultMargin:        15px;
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+// Buttons
+// -------------------------
+@btnLoadingBackground:  #F5F5F5;
+
+// Modals
+// -------------------------
+@modalBigWidth:       	800px;
+@modalSmallWidth:       300px;
+
+// Navlist
+// -------------------------
+@navlistColor:             #555;
+@navlistColorHover:        darken(@navlistColor, 15%);
+
+// All Path
+// ----------------------
+@imgPath:         "../img/";
+
+// Sprite icons path
+// -------------------------
+@icoSpritePath:         "@{imgPath}ico/ico-sprite.png";
+
+// Footable path
+// -------------------------
+@icoFootablePath:         "@{imgPath}ico/footable/";
+
+// Icons Font path
+// -------------------------
+@iconFontFamily:        "icomoon";
+@iconFontPath:    		"icons/icomoon";
+
+// Uniform path
+// -------------------------
+@uniformPath:    		"@{imgPath}ico/uniform-sprite.png";
+
+// Choose path
+// -------------------------
+@choosenPath:    		"@{imgPath}ico/chosen-sprite.png";

@@ -14,24 +14,24 @@
 	<meta name="description" content="<%= @getPreparedDescription() %>" />
 	<meta name="keywords" content="<%= @getPreparedKeywords() %>" />
 
-	<!-- DocPad Meta -->
+	<!-- Meta -->
 	<%- @getBlock('meta').toHTML() %>
 
 	<!-- Modernizr -->
 	<%- @getBlock('scripts').add(@site.scriptsTop).toHTML() %>
 
-	<!-- DocPad Styles + Our Own -->
+	<!-- Styles + Our Own -->
 	<%- @getBlock('styles').add(@site.styles).toHTML() %>
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="/icons/favicon.ico" />
+	<link rel="shortcut icon" href="img/icons/favicon.ico" />
 </head>
 <body>
 	<!-- SIDE -->
 	<aside class="fixed">
 		<header>
-			<div class="photo">
+			<div class="photo hide">
 				<img src="https://secure.gravatar.com/avatar/5f0a15907f7f0dbe89500ccaaa3a3f21?s=420&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" alt="">
 			</div>
 			<h1 class="logo">
@@ -45,18 +45,12 @@
 		</div>	
 	</aside>
 	<!-- END SIDE -->
-	<article class="wrap">
+	<section class="wrap">
 		<%- @content %>
-	</article>
-	<footer></footer>
+	</section>
 
-	<!-- jQuery -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/vendor/plugin/jquery/jquery.js"><\/script>')</script>
-
-	<!-- DocPad Scripts + Our Own -->
+	<!-- Scripts -->
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
-
 	<!--[if IE 7]>
 		<%- @getBlock("scripts").add(["/vendor/plugin/lte-ie7.js"]).toHTML() %>
 	<![endif]-->
