@@ -39,7 +39,6 @@
     "bal-util": "~2.0.4",
     "grunt": "~0.4.1",
     "docpad-plugin-partials": "2.x",
-    "docpad-plugin-cleanurls": "2.x"
   },
   "main": "node_modules/docpad/bin/docpad-server"
 }

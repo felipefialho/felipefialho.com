@@ -3,3 +3,17 @@ title: "Home"
 layout: "default"
 ---
 
+<p class="lead">Olá amigo, tudo bem?</p>
+
+<p>Sou <em>Luiz Felipe Tartarotti Fialho</em>, tenho 23 anos e trabalho como <strong>Front-End Developer</strong> desde 2009.</p>
+
+<p>Atualmente trabalho na <a href="http://www.trendi.com.br/">Trend-i</a> (desde 2011). Participei de vários projetos legais, entre eles criei um <a href="http://www.trendi.com.br/framework/login.php">Framework</a> bastante robusto usando o <a href="http://twitter.github.io/bootstrap/index.html">Bootstrap</a> como base.</p>
+
+<p>Criei esse espaço, primeiro para brincar de design, segundo para testar geradores estáticos e por último, e não menos importante... ter um lugar bacana para expressar minha opinião, dar dicas, etc.</p>
+
+<p>Eu <strike>tinha</strike> tenho um portolio, na qual mostrava os projetos que participei nas empresas que trabalhei, ia migrar tudo para cá, mas até concluir esse processo vou deixar ativo. Deixei um <a href="luizfelipe13.blogspot.com" title="Abre em outra aba" target="_blank">link</a> (abre em outra aba) para acessar lá.</p>
+
+<p>Por enquanto vou deixar aqui apenas o espaço para blog e projetos pessoais.</p>
+
+<p>Falando em projeto pessoal, o blog foi feito usando o <a href="http://docpad.org/">Docpad</a>, e deixei o código aberto no <a href="https://github.com/LFeh/Website">Github</a>.</p>
+

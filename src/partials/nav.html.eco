@@ -4,16 +4,19 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			
+
 			<!-- NAVIGATION -->
 			<nav class="nav-collapse collapse">
 				<hr>
 				<ul class="nav nav-pills nav-stacked">
 					 <% for section in @sections : %>
 				      <li class="nav-list-item">
-				        <a href="<%= section %>.html"><%= @labels[section] %></a>
+				        <a href="<%= section %>/"><%= @labels[section] %></a>
 				      </li>
 				    <% end %>
+				      <li class="nav-list-item">
+				        <a href="luizfelipe13.blogspot.com" title="Abre em outra aba" target="_blank" class="tooltip-hover">Portfolio</a>
+				      </li>
 				</ul>
 				<hr>
 			</nav>	

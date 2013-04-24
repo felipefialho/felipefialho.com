@@ -73,7 +73,7 @@ docpadConfig = {
 		    collections:
 		        pages: ->
 		            @getCollection("html").findAllLive({isPage:true})
-		            
+		
 		# Active sections on the website
 		# to deactivate comment out with '#'
 		# you can also change order here and it will reflect on page
@@ -111,6 +111,15 @@ docpadConfig = {
 			# Merge the document keywords with the site keywords
 			@site.keywords.concat(@document.keywords or []).join(', ')
 
+
+		# Get the prepared relative file
+		getRelativeFile: ->
+			# if we have a relative file 
+			if @document.path
+				"#{@document.path}"
+			# if our relative file does not have 
+			else
+				""
 
 	# =================================
 	# DocPad Events

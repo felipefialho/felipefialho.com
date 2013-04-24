@@ -38,9 +38,21 @@ p {
 }
 .lead {
   margin-bottom: @baseLineHeight;
-  font-size: @baseFontSize * 1.5;
+  font-size: @baseFontSize * 1.8;
   font-weight: 200;
-  line-height: @baseLineHeight * 1.5;
+  line-height: @baseLineHeight * 2;
+}
+
+a:hover,
+a:focus{
+  text-decoration: none;
+}
+
+p{
+  a,
+  a:hover{
+    text-decoration: underline;
+  }
 }
 
 

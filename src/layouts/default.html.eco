@@ -25,7 +25,7 @@
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="img/icons/favicon2.ico" />
+	<link rel="shortcut icon" href="<%= @getRelativeFile() %>img/icons/favicon2.ico" />
 </head>
 <body>
 	<div class="row-fluid">
@@ -36,7 +36,7 @@
 				<!-- HEADER -->
 				<header>
 					<div class="photo">
-						<img src="img/default/luiz-felipe-tartarotti-fialho.png" alt="Cartoon de Luiz Felipe Tartarotti Fialho">
+						<img src="<%= @getRelativeFile() %>img/default/luiz-felipe-tartarotti-fialho.png" alt="Cartoon de Luiz Felipe Tartarotti Fialho">
 					</div>
 					<h1 class="logo">
 						<a href="/">LFeh <small>Luiz Felipe Tartarotti Fialho</small></a>
@@ -57,12 +57,12 @@
 			</div>	
 		</aside>
 		<!-- END SIDE -->
-		<section class="span9">
+		<section class="wrap span9">
 			<article>
 				<%- @content %>
 			</article>
 		</section>
-
+		<a class="fork" href="https://github.com/LFeh/Website"><img alt="Fork me on GitHub" src="<%= @getRelativeFile() %>img/default/fork.png"></a>
 	</div>	
 	<!-- Scripts -->
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
