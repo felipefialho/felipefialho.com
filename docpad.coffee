@@ -12,25 +12,19 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://website.com"
-
-			# Here are some old site urls that you would like to redirect from
-			oldUrls: [
-				'www.website.com',
-				'website.herokuapp.com'
-			]
+			url: "http://wwww.felipefialho.com"
 
 			# The default title of our website
 			title: "Luiz Felipe Tartarotti Fialho"
 
 			# The website description (for SEO)
 			description: """
-				When your website appears in search results in say Google, the text here will be shown underneath your website's title.
+				Blog pessoal, com dicas do mercado Front-End, tutoriais e projetos na qual participei.
 				"""
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
+				blog, front end, developer, desenvolvedor, tableless, css, html, jquery
 				"""
 
 			# The website's styles
@@ -54,8 +48,6 @@ docpadConfig = {
 				'/scripts/plugin/bootstrap-extension/bootstrap.inputmask.min.js'
 
 				'/scripts/site/_general.js'
-
-				'/scripts/log.js'
 			]
 
 			# Write After
