@@ -52,6 +52,7 @@
 					<li><a href="https://twitter.com/LFeh"><span class="icon-twitter" aria-hidden="true"></span></a></li>
 					<li><a href="https://github.com/LFeh"><span class="icon-github-2" aria-hidden="true"></span></a></li>
 					<li><a href="http://www.linkedin.com/in/lfehfrontend"><span class="icon-linkedin" aria-hidden="true"></span></a></li>
+					<li class="hide"><a href="http://www.linkedin.com/in/lfehfrontend"><span class="icon-linkedin" aria-hidden="true"></span></a></li>
 				</ul>	
 				<!-- END OF SOCIAL MEDIA -->
 			</div>	

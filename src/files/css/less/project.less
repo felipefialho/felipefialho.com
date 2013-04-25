@@ -25,8 +25,12 @@
 			color: #fff;
 			font-size: 30px;
 			&:hover{
-				color: #000;
+				color: @grayLight;
 			}
+			&.active{
+  				background-color: @grayLighter;
+  				color: #000;
+  			}
 		} 
 	}	
 	&:hover{

@@ -38,14 +38,10 @@ docpadConfig = {
 			]
 
 			scripts: [
-				'/scripts/plugin/jquery/jquery.js'
-				'/scripts/plugin/jquery-plugins/jquery.placeholder.min.js'
-				'/scripts/plugin/jquery-plugins/jquery.chosen.min.js'
-				'/scripts/plugin/jquery-plugins/jquery.nanoscroller.min.js'
-				'/scripts/plugin/jquery-plugins/jquery.classysocial.js'
-
-				'/scripts/plugin/bootstrap/bootstrap.min.js'
-				'/scripts/plugin/bootstrap-extension/bootstrap.inputmask.min.js'
+				#'/scripts/plugin/jquery/jquery.js'
+				#'/scripts/plugin/bootstrap/bootstrap.min.js'
+				#'/scripts/plugin/jquery-plugins/jquery.placeholder.min.js'
+				'/scripts/all.min.js'
 
 				'/scripts/site/_general.js'
 			]
