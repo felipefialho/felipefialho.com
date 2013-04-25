@@ -18,4 +18,3 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
 
 // TOOLTIP //
 $('.tooltip-hover').tooltip();
-

@@ -919,63 +919,6 @@ table.txt-center th {
 .no-bullet {
   list-style: none !important;
 }
-/* Cursor */
-.cursor-pointer {
-  cursor: pointer !important;
-}
-.cursor-default {
-  cursor: default !important;
-}
-.cursor-crosshair {
-  cursor: crosshair !important;
-}
-.cursor-move {
-  cursor: move !important;
-}
-.cursor-help {
-  cursor: help !important;
-}
-.cursor-wait {
-  cursor: wait !important;
-}
-.cursor-inherit {
-  cursor: inherit !important;
-}
-.cursor-text {
-  cursor: text !important;
-}
-.cursor-progress {
-  cursor: progress !important;
-}
-.cursor-grab {
-  cursor: hand;
-  cursor: grab;
-  cursor: -o-grab;
-  cursor: -ms-grab;
-  cursor: -moz-grab;
-  cursor: -webkit-grab;
-}
-.cursor-grabbing {
-  cursor: grabbing;
-  cursor: -o-grabbing;
-  cursor: -ms-grabbing;
-  cursor: -moz-grabbing;
-  cursor: -webkit-grabbing;
-}
-/* Use for create a block element */
-.section-box {
-  clear: both;
-  margin: 0 0 25px;
-}
-/* Use for create a mask element */
-.mask {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  text-indent: -9999px;
-  width: 100%;
-}
 /*************************************************
 * Buttons - Bootstrap
 *************************************************/
@@ -1469,10 +1412,10 @@ h4,
 h5,
 h6 {
   margin: 11px 0;
-  font-family: inherit;
+  font-family: 'ostrich_sansblack';
   font-weight: bold;
   line-height: 22px;
-  color: #6f6f6f;
+  color: #333333;
   text-rendering: optimizelegibility;
 }
 h1 small,
@@ -3170,7 +3113,6 @@ address {
   padding: 20px;
 }
 .nav-side h4 {
-  font-family: 'ostrich_sansblack';
   margin: 0;
 }
 .nav-side .nav-list-item {
@@ -3218,7 +3160,8 @@ address {
 .photo,
 .logo,
 .social-media li,
-.nav-list-item a {
+.nav-list-item a,
+.box-mask {
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
@@ -3244,6 +3187,64 @@ article {
   padding: 20px 0;
   width: 90%;
   max-width: 700px;
+}
+/*************************************************
+* Projetos
+*************************************************/
+.projetos-box .box-info {
+  background: #000000;
+  border-top: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 12px;
+  height: 160px;
+  padding: 10px;
+  position: relative;
+}
+.projetos-box .box-link {
+  border-top: 1px solid #ffffff;
+  padding: 10px 0 0;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.projetos-box .box-link ul {
+  margin: 0;
+}
+.projetos-box .box-link a {
+  color: #ffffff;
+  font-size: 25px;
+}
+.projetos-box .box-link a:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+/*************************************************
+* Assets
+*************************************************/
+.big-icon {
+  font-size: 40px;
+}
+.box-mask:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.box-img {
+  background: #ffffff;
+  border: 2px solid #000000;
+  overflow: hidden;
+  max-height: 300px;
+  text-align: center;
+}
+.box-tit {
+  background: #000000;
+  padding: 5px;
+  text-align: center;
+}
+.box-tit h4 {
+  color: #ffffff;
+  margin: 0;
 }
 /************************************************* 
 * Responsive Utilities
@@ -4036,6 +4037,7 @@ article {
     display: block;
     width: 100%;
     margin-left: 0;
+    margin-bottom: 10px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -4142,6 +4144,9 @@ article {
     position: absolute;
     top: 10px;
     right: 200px;
+  }
+  .fork {
+    top: 148px;
   }
 }
 @media (max-width: 480px) {

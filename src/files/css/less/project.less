@@ -17,7 +17,6 @@
 	width: 15%;
 	padding: 20px;
 	h4{
-		font-family: 'ostrich_sansblack';
 		margin: 0;
 	}
 	.nav-list-item{
@@ -70,7 +69,8 @@
 .photo,
 .logo,
 .social-media li,
-.nav-list-item a{
+.nav-list-item a,
+.box-mask{
 	.transition(0.5s);
 }
 
@@ -98,4 +98,68 @@ article{
 	padding: 20px 0;
 	width: 90%;
 	max-width: 700px;
+}
+
+/*************************************************
+* Projetos
+*************************************************/
+
+.projetos-box{
+	.box-info{
+		background: @black;
+		border-top: 1px solid @white;
+		color: @white;
+		font-size: 12px;
+		height: 160px;
+		padding: 10px;
+		position: relative;
+	}
+	.box-link{
+		border-top: 1px solid @white;
+		padding: 10px 0 0;
+		text-align: center;
+		position: absolute; left: 0; bottom: 0;
+		width: 100%;
+		ul{
+			margin: 0;
+		}
+		a{
+			color: @white;
+			font-size: 25px;
+			&:hover{
+				.opacity(60);
+			}
+		}
+	}
+}
+
+
+/*************************************************
+* Assets
+*************************************************/
+
+.big-icon{
+	font-size: 40px;
+}
+
+.box-mask:hover{
+	.opacity(60);
+}
+
+.box-img{
+	background: @white;
+	border: 2px solid @black;
+	overflow: hidden;
+	max-height: 300px;
+	text-align: center;
+}
+
+.box-tit{
+	background: @black;
+	padding: 5px;
+	text-align: center;
+	h4{
+		color: @white;
+		margin: 0;
+	}
 }

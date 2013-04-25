@@ -1,7 +1,0 @@
----
-title: "Home"
-layout: "default"
----
-
-
-<h2 class="section-title"><%= @labels['projetos'] %></h2>
