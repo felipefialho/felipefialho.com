@@ -39,7 +39,7 @@
 						<img src="<%= @getRelativeFile() %>img/default/luiz-felipe-tartarotti-fialho.png" alt="Cartoon de Luiz Felipe Tartarotti Fialho">
 					</div>
 					<h1 class="logo">
-						<a href="/">LFeh <small>Luiz Felipe Tartarotti Fialho</small></a>
+						<a href="/">LFeh <small>Felipe Fialho</small></a>
 					</h1>	
 					<h4>Front End Developer</h4>
 				</header>
@@ -52,7 +52,7 @@
 					<li><a href="https://twitter.com/LFeh"><span class="icon-twitter" aria-hidden="true"></span></a></li>
 					<li><a href="https://github.com/LFeh"><span class="icon-github-2" aria-hidden="true"></span></a></li>
 					<li><a href="http://www.linkedin.com/in/lfehfrontend"><span class="icon-linkedin" aria-hidden="true"></span></a></li>
-					<li class="hide"><a href="http://www.linkedin.com/in/lfehfrontend"><span class="icon-linkedin" aria-hidden="true"></span></a></li>
+					<li class="hide"><a href="http://portfolio.felipefialho.com/"><span class="icon-linkedin" aria-hidden="true"></span></a></li>
 				</ul>	
 				<!-- END OF SOCIAL MEDIA -->
 			</div>	
