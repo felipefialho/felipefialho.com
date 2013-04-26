@@ -14,9 +14,6 @@
 				        <a href="<%= @getRelativeFile() %><%= section %>/"><%= @labels[section] %></a>
 				      </li>
 				    <% end %>
-				      <li class="nav-list-item">
-				        <a href="http://luizfelipe13.blogspot.com" title="Abre em outra aba" target="_blank" class="tooltip-hover">Portfolio</a>
-				      </li>
 				</ul>
 				<hr>
 			</nav>	

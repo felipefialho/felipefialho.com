@@ -17,7 +17,7 @@
 	width: 15%;
 	padding: 20px;
 	h4{
-		color: @gray;
+		color: @grayLight;
 		margin: 0;
 	}
 	.nav-list-item{
@@ -110,6 +110,11 @@ article{
 *************************************************/
 
 .projetos-box{
+	margin-bottom: 15px;
+	&:nth-child(3n+1){
+		clear: both;
+		margin-left: 0!important;
+	}
 	.box-info{
 		background: @black;
 		border-top: 1px solid @white;
@@ -118,6 +123,9 @@ article{
 		height: 160px;
 		padding: 10px;
 		position: relative;
+		&.box-info-portfolio{
+			height: 105px;
+		}
 	}
 	.box-link{
 		border-top: 1px solid @white;

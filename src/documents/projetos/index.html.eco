@@ -8,62 +8,30 @@ path: "../../"
 <h1 class="page-header"><%= @labels['projetos'] %></h1>
 
 <div class="projetos-container">
+	
+	<% for projetos in @projetos: %>
+	<!-- <%= projetos.name %> -->
 	<div class="projetos-box span4">
-		<a href="https://developer.mozilla.org/pt-BR/demos/detail/pure-css3-eric-cartman" target="_blank" class="box-mask">
+		<a href="<%= projetos.link %>" target="_blank" class="box-mask">
 			<div class="box-img">
-				<img src="<%= @getRelativeFile() %>img/projetos/cartman-css3.jpg" alt="Pure CSS3 - Eric Cartman">
+				<img src="<%= @getRelativeFile() %><%= projetos.thumb %>" alt="<%= projetos.name %>">
 			</div>	
 			<div class="box-tit">
-				<h4>Pure CSS3 - Eric Cartman</h4>
+				<h4><%= projetos.name %></h4>
 			</div>	
 		</a>	
 		<div class="box-info">
-			<p>Protótipo de Eric Cartman totalmente desenvolvido em CSS3.<p> 
-			<p>Fiz para estudos, mas curti o resultado final.<p> 
+			<p><%= projetos.participation %><p> 
 			<div class="box-link">
 				<ul class="inline">
-					<li><a href="https://developer.mozilla.org/pt-BR/demos/detail/pure-css3-eric-cartman" target="_blank"><span class="icon-eye" aria-hidden="true"></span></a></li>
-					<li><a href="https://github.com/LFeh/CartmanCSS3" target="_blank"><span class="icon-github-2" aria-hidden="true"></span></a></li>
+					<li><a href="<%= projetos.link %>" target="_blank"><span class="icon-github-2" aria-hidden="true"></span></a></li>
+  					<% if projetos.link: %>
+					<li><a href="<%= projetos.demo %>" target="_blank"><span class="icon-eye" aria-hidden="true"></span></a></li>
+					<% end %>
 				</ul>	
 			</div>	
 		</div>	
 	</div>
-	<div class="projetos-box span4">
-		<a href="https://github.com/LFeh/bootstrap-carousel-thumbs" target="_blank" class="box-mask">
-			<div class="box-img">
-				<img src="<%= @getRelativeFile() %>img/projetos/carousel-thumbs.jpg" alt="Carousel Thumbs">
-			</div>	
-			<div class="box-tit">
-				<h4>Bootstrap Carousel Thumbs</h4>
-			</div>	
-		</a>	
-		<div class="box-info">
-			<p>Extensão para o Carousel do Bootstrap.<p> 
-			<p>Usei apenas CSS.<p> 
-			<div class="box-link">
-				<ul class="inline">
-					<li><a href="https://github.com/LFeh/bootstrap-carousel-thumbs" target="_blank"><span class="icon-github-2" aria-hidden="true"></span></a></li>
-				</ul>	
-			</div>	
-		</div>	
-	</div>
-	<div class="projetos-box span4">
-		<a href="https://github.com/LFeh/Website" target="_blank" class="box-mask">
-			<div class="box-img">
-				<img src="<%= @getRelativeFile() %>img/projetos/blog.jpg" alt="LFeh Website">
-			</div>	
-			<div class="box-tit">
-				<h4>LFeh Website</h4>
-			</div>	
-		</a>	
-		<div class="box-info">
-			<p>O site que está navegando nesse instante :p<p> 
-			<p>O código está aberto no Github.<p> 
-			<div class="box-link">
-				<ul class="inline">
-					<li><a href="https://github.com/LFeh/Website" target="_blank"><span class="icon-github-2" aria-hidden="true"></span></a></li>
-				</ul>	
-			</div>	
-		</div>	
-	</div>
+	<% end %>
+
 </div>

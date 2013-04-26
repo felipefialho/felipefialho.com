@@ -11,10 +11,6 @@ layout: "default"
 
 <p>Criei esse espaço, primeiro para brincar de design, segundo para testar geradores estáticos e por último, e não menos importante... ter um lugar bacana para expressar minha opinião, dar dicas, etc.</p>
 
-<p>Eu <strike>tinha</strike> tenho um portfolio, na qual mostrava os projetos que participei nas empresas que trabalhei, ia migrar tudo para cá, mas até concluir esse processo vou deixar ativo. Deixei um <a href="http://portfolio.felipefialho.com/" title="Abre em outra aba" target="_blank">link</a> (abre em outra aba) para acessar lá.</p>
-
-<p>Por enquanto vou deixar aqui apenas o espaço para blog e projetos pessoais.</p>
-
-<p>Falando em projeto pessoal, o blog foi feito usando o <a href="http://docpad.org/">Docpad</a>, e deixei o código aberto no <a href="https://github.com/LFeh/Website">Github</a>.</p>
+<p>Aliás, o site foi desenvolvido com <a href="http://docpad.org/">Docpad</a>, deixei o código aberto no <a href="https://github.com/LFeh/Website">Github</a>.</p>
 
 <p class="big-icon"><span aria-hidden="true" class="icon-happy"></span></p>
