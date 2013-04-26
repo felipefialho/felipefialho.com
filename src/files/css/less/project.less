@@ -3,6 +3,19 @@
 // --------------------------------------------------
 
 /*************************************************
+* Transition
+*************************************************/
+
+.photo,
+.logo,
+.social-media li,
+.nav-list-item a,
+.box-mask *,
+.blog-item a{
+	.transition(0.5s);
+}
+
+/*************************************************
 * Aside 
 *************************************************/
 
@@ -44,9 +57,9 @@
 
 .logo{
 	font-size: 40px;
+	font-family: 'ostrich_sansblack';
 	margin: 15px 0 0;
 	small{
-		font-family: 'ostrich_sansblack';
 		display: block;
 		margin: 5px 0 0;
 		font-size: 16px;
@@ -68,14 +81,6 @@
 	a{
 		color: @white;
 	}
-}
-
-.photo,
-.logo,
-.social-media li,
-.nav-list-item a,
-.box-mask *{
-	.transition(0.5s);
 }
 
 .social-media a,
@@ -145,10 +150,13 @@ article{
 	}
 }
 
+.home{
+	margin: @baseLineHeight*2 0;
+}
+
 /*************************************************
 * Blog
 *************************************************/
-
 
 .blog-list{
 	list-style: none;
@@ -157,18 +165,57 @@ article{
 
 .blog-item{
 	display: block;
-	margin: 0 0 25px;
+	margin: 0 0 15px;
+	a{
+		.box-shadow(0 1px 2px rgba(0,0,0,0.2));
+		color: @gray;
+		display: block;
+		background: #fcfcfc;
+		padding: 10px;
+		&:hover{
+			.box-shadow(0 1px 3px rgba(0,0,0,0.6));
+		}
+	}
 }
 
+.post-container{
+  	border-top: 1px solid @grayLighter;
+  	border-bottom: 1px solid @grayLighter;
+	margin: 20px 0;
+	padding: 20px 0;
+}
 
+.post{
+	clear: both;
+	margin: 30px 0;
+}
 
 /*************************************************
 * Assets
 *************************************************/
 
+.share-block{
+	height: 20px;
+}
+
 .date{
+	color: @grayLight;
 	display: block;
-	font-size: 12px;
+	font-size: 14px;
+}
+
+.tit{
+	font-family: @sansFontFamily;
+}
+
+.description{
+	font-size: 14px;
+}
+
+.author{
+	color: @gray;
+	display: block;
+	font-size: 14px;
 }
 
 .big-icon{

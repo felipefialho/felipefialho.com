@@ -10,8 +10,11 @@ path: "../../"
 	<ul class="blog-list">
  	<% for posts in @posts : %>
 	      <li class="blog-item">
-	      	<span class="date"><%= posts.date %></span>
-	        <a href="<%= posts.year %>/<%= posts.path %>/"><%= posts.name %></a>
+	        <a href="<%= posts.year %>/<%= posts.path %>/">
+		      	<span class="date"><%= posts.date %></span>
+		      	<h4 class="tit"><%= posts.name %></h4>
+		      	<p class="description"><%= posts.description %></p>
+		    </a>  	
 	      </li>
 	    <% end %>
 	</ul>

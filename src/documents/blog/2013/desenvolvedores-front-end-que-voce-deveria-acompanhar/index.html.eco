@@ -1,12 +1,42 @@
 ---
 title: "Desenvolvedores Front-End que você deveria acompanhar"
-date: 26/04/2013
-layout: "default"
-relativeOutDirPath: 'blog'
+datePost: 26/04/2013
+layout: "post"
+relativeOutDirPath: 'posts'
 path: "../../../"
-pathBlog: "../../../"
+pathBlog: "../../"
 ---
 
-<h1 class="page-header"><a href="<%= @document.pathBlog %>"><%= @labels['blog'] %></a></h1>
+<p class="lead">Em 2009, quando iniciei na carreira de desenvolvedor, a profissão não tinha nem nome, 
+era o "menino do HTML" ou "o rapaz que corta o layout".</p>
 
-<h2><%= @document.title %></h2>
+<p>Hoje, 4 anos depois, vivemos um momento sem igual no mercado. Fomos valorizados, a profissão ganhou um nome e
+o HTML e o CSS estão com tudo</p>
+
+<p>Mas tudo isso só foi possível graças a união e compartilhamento de ideias (e projetos) que existe em boa parte dos desenvolvedores.</p>
+
+<p>E alguns desses profissionais têm sido determinantes nesse "boom" que estamos vivendo, seja por projetos relevantes para toda comunidade, seja por escrever artigos que ajudam todos a se tornarem profissionais cada vez melhores.</p>
+
+<p>Considero muito importante acompanhar o trabalho dessa galera.</p>
+
+<p>Vou citar só brasileiros, porque temos contato mais direto com eles, provavelmente vou esquecer de alguns e quero deixar claro que é uma lista pessoal. De qualquer forma, indico para todos, iniciantes ou não.</p>
+
+<h3><a href="https://twitter.com/diegoeis ">Diego Eis</a></h3>
+<p>O fundador do <a href="http://tableless.com.br/">Tableless</a> nem precisa ser apresentado, certo?</p>
+<p>Acredito que boa parte dos profissionais do mercado tenham sido influenciados por ele, o <a href="http://tableless.com.br/">Tableless</a> foi e continua sendo um marco no mercado web.</p>
+
+<h3><a href="https://twitter.com/maujor">Maujor</a></h3>
+<p>Disse que boa parte dos desenvolvedores foram influenciados pelo <a href="https://twitter.com/diegoeis ">Diego Eis</a>, e acredito que TODOS tenham sido por ele, seja pelos livros, seja pelo seu <a href="http://www.maujor.com/index.php">site</a>.</p> 
+<p>Maurício Samy Silva ou simplesmente <a href="https://twitter.com/maujor">Maujor</a> precisa ser acompanhado por todos os profissionais web.</p>
+
+<h3><a href="https://twitter.com/zenorocha ">Zeno Rocha</a></h3>
+<p>Uma espécie de "popstar" entre os desenvolvedores brasileiros, palestrante dos mais importantes eventos e participa de várias <a href="https://github.com/zenorocha">iniciativas</a> que com certeza você já usou ou vai usar.</p>
+<p>Seu <a href="http://zenorocha.com/">site</a> tem vários posts legais, além do ótimo <a href="http://zofe.com.br/">Zone Of Front-Enders</a>, <a href="http://www.youtube.com/user/zno14">vídeos</a> com tutoriais... enfim, milhões de iniciativas e projetos que ajuda todos na comunidade.</p>
+
+<h3><a href="https://twitter.com/bernarddeluna">Bernard de Luna</a></h3>
+<p>Além de um <a href="http://bernarddeluna.com/">site</a> bem legal, que vai além de simples tutoriais e fala muito sobre inspiração na nossa profissão, é também um defensor de <em>sexy web projects</em>, ou seja, projetos que elevam a experiência do usuário para outro patamar.</p>
+
+<h3><a href="https://twitter.com/sergio_caelum ">Sérgio Lopes</a></h3>
+<p>Se tem dúvida sobre <em>layouts reponsivos</em> ou <em>mobile web</em> é esse cara que deve procurar. Seu <a href="http://sergiolopes.org/">site</a> é um guia de referencia incrivel. Coloco facilmente como o melhor do Brasil nesse sentido.</p>
+
+<p class="end">Esses são os desenvolvedores brasileiros que mais tenho acompanhado, e vocês amigos, podem indicar outros?</p>

@@ -22,12 +22,12 @@ docpadConfig = {
 
 			# The website description (for SEO)
 			description: """
-				Blog pessoal, com dicas do mercado Front-End, tutoriais e projetos na qual participei.
+				Site pessoal focado em Desenvolvedores Front-End, com dicas do mercado web, tutoriais e projetos na qual participei.
 				"""
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				blog, front end, developer, desenvolvedor, tableless, css, html, jquery
+				blog, front end, developer, desenvolvedor, tableless, css, html, jquery, docpad, felipe fialho, lfeh, luiz felipe tartarotti fialho
 				"""
 
 			# The website's styles
@@ -90,10 +90,11 @@ docpadConfig = {
 		
 		# Blog posts
 		posts: [
-		 # name: 'Desenvolvedores Front-End que você deveria acompanhar'
-		 # date: '26/04/2013'
-		 # year: '2013'
-		 # path: 'desenvolvedores-front-end-que-voce-deveria-acompanhar'
+		  name: 'Desenvolvedores Front-End que você deveria acompanhar'
+		  description: 'Em 2009, quando iniciei na carreira de desenvolvedor, a profissão não tinha nem nome, era o "menino do HTML" ou "o rapaz que corta o layout".'
+		  date: '26/04/2013'
+		  year: '2013'
+		  path: 'desenvolvedores-front-end-que-voce-deveria-acompanhar'
 		]
 
 		# Projetos list 
@@ -287,6 +288,10 @@ docpadConfig = {
 			# if our relative file does not have 
 			else
 				""
+
+		# Get the prepared post layout	
+		getLayoutName: (post) ->
+			post.layout.replace(/\..*/, '')
 
 	# =================================
 	# DocPad Events

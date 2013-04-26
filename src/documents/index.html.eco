@@ -3,14 +3,18 @@ title: ""
 layout: "default"
 ---
 
-<p class="lead">Olá amigos, tudo bem?</p>
+<div class="home">
 
-<p>Sou <em>Luiz Felipe Tartarotti Fialho</em>, tenho 23 anos e trabalho como <strong>Front-End Developer</strong> desde 2009.</p>
+	<p class="lead">Olá amigos, tudo bem?</p>
 
-<p>Atualmente trabalho na <a href="http://www.trendi.com.br/">Trend-i</a> (desde 2011). Participei de vários projetos legais, entre eles criei um <a href="http://www.trendi.com.br/framework/login.php">Framework</a> bastante robusto usando o <a href="http://twitter.github.io/bootstrap/index.html">Bootstrap</a> como base.</p>
+	<p>Sou <em>Luiz Felipe Tartarotti Fialho</em>, tenho 23 anos e trabalho como <strong>Front-End Developer</strong> desde 2009.</p>
 
-<p>Criei esse espaço, primeiro para brincar de design, segundo para testar geradores estáticos e por último, e não menos importante... ter um lugar bacana para expressar minha opinião, dar dicas, etc.</p>
+	<p>Atualmente trabalho na <a href="http://www.trendi.com.br/">Trend-i</a> (desde 2011). Participei de vários projetos legais, entre eles criei um <a href="http://www.trendi.com.br/framework/login.php">Framework</a> bastante robusto usando o <a href="http://twitter.github.io/bootstrap/index.html">Bootstrap</a> como base.</p>
 
-<p>Aliás, o site foi desenvolvido com <a href="http://docpad.org/">Docpad</a>, deixei o código aberto no <a href="https://github.com/LFeh/Website">Github</a>.</p>
+	<p>Criei esse espaço, primeiro para brincar de designer, segundo para testar geradores estáticos e por último, e não menos importante... ter um lugar bacana para expressar minha opinião, dar dicas, etc.</p>
 
-<p class="big-icon"><span aria-hidden="true" class="icon-happy"></span></p>
+	<p>Aliás, o site foi desenvolvido com <a href="http://docpad.org/">Docpad</a>, deixei o código aberto no <a href="https://github.com/LFeh/Website">Github</a>.</p>
+
+	<p class="big-icon"><span aria-hidden="true" class="icon-happy"></span></p>
+	
+</div>

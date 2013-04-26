@@ -25,9 +25,15 @@ p {
 }
 .lead {
   margin-bottom: @baseLineHeight;
-  font-size: @baseFontSize * 1.8;
+  font-size: @baseFontSize * 1.4;
   font-weight: 200;
-  line-height: @baseLineHeight * 2;
+  line-height: @baseLineHeight * 1.4;
+}
+
+.end{
+  font-size: @baseFontSize * 1.1;
+  font-weight: 200;
+  margin: @baseLineHeight*1.4 0;
 }
 
 a:hover,
@@ -96,7 +102,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-h1{font-family: 'ostrich_sansblack';}
+h1{
+  a{
+    color: @grayDark;
+  }
+}
 
 h1,
 h2,
@@ -119,12 +129,11 @@ h4 small { font-size: @baseFontSize; }
 // -------------------------
 
 .page-header {
+  font-family: 'ostrich_sansblack';
   padding-bottom: (@baseLineHeight / 2) - 1;
   margin: @baseLineHeight 0 (@baseLineHeight * 1.5);
   border-bottom: 1px solid @grayLighter;
 }
-
-
 
 // Lists
 // --------------------------------------------------
@@ -166,7 +175,7 @@ ol.inline {
 
 // Description Lists
 dl {
-  margin-bottom: @baseLineHeight;
+  margin: @baseLineHeight 0;
 }
 dt,
 dd {
@@ -175,9 +184,7 @@ dd {
 dt {
   font-weight: bold;
 }
-dd {
-  margin-left: @baseLineHeight / 2;
-}
+
 // Horizontal layout (like forms)
 .dl-horizontal {
   .clearfix(); // Ensure dl clears floats if empty dd elements present
