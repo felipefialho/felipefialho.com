@@ -8,7 +8,7 @@ path: "../../"
 <h1 class="page-header"><%= @labels['projetos'] %></h1>
 
 <div class="projetos-container">
-	
+
 	<% for projetos in @projetos: %>
 	<!-- <%= projetos.name %> -->
 	<div class="projetos-box span4">
@@ -25,7 +25,7 @@ path: "../../"
 			<div class="box-link">
 				<ul class="inline">
 					<li><a href="<%= projetos.link %>" target="_blank"><span class="icon-github-2" aria-hidden="true"></span></a></li>
-  					<% if projetos.link: %>
+  					<% if projetos.demo: %>
 					<li><a href="<%= projetos.demo %>" target="_blank"><span class="icon-eye" aria-hidden="true"></span></a></li>
 					<% end %>
 				</ul>	
