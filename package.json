@@ -30,7 +30,6 @@
   },
   "dependencies": {
     "docpad": "6.x",
-    "docpad-plugin-ghpages": "~2.0.2",
     "docpad-plugin-coffeescript": "2.x",
     "docpad-plugin-eco": "2.x",
     "docpad-plugin-marked": "2.x",

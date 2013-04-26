@@ -5,3 +5,14 @@ path: "../../"
 ---
 
 <h1 class="page-header"><%= @labels['blog'] %></h1>
+
+<div class="blog">
+	<ul class="blog-list">
+ 	<% for posts in @posts : %>
+	      <li class="blog-item">
+	      	<span class="date"><%= posts.date %></span>
+	        <a href="<%= posts.year %>/<%= posts.path %>/"><%= posts.name %></a>
+	      </li>
+	    <% end %>
+	</ul>
+</div>	

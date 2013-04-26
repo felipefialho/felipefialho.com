@@ -17,6 +17,9 @@ docpadConfig = {
 			# The default title of our website
 			title: "Luiz Felipe Tartarotti Fialho"
 
+			# The default author of our website
+			author: "Luiz Felipe Tartarotti Fialho"
+
 			# The website description (for SEO)
 			description: """
 				Blog pessoal, com dicas do mercado Front-End, tutoriais e projetos na qual participei.
@@ -66,9 +69,9 @@ docpadConfig = {
 
 		# -----------------------------
 		# Collection
-		    collections:
-		        pages: ->
-		            @getCollection("html").findAllLive({isPage:true})
+	    collections:
+	        pages: ->
+	            @getCollection("html").findAllLive({isPage:true})
 		
 		# Active sections on the website
 		# to deactivate comment out with '#'
@@ -84,7 +87,15 @@ docpadConfig = {
 		  blog: "Blog"
 		  projetos: "Projetos"
 		  portfolio: "Portfolio"
-		   
+		
+		# Blog posts
+		posts: [
+		 # name: 'Desenvolvedores Front-End que você deveria acompanhar'
+		 # date: '26/04/2013'
+		 # year: '2013'
+		 # path: 'desenvolvedores-front-end-que-voce-deveria-acompanhar'
+		]
+
 		# Projetos list 
 		projetos: [
 		  # Cartman

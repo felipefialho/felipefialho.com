@@ -1,0 +1,12 @@
+---
+title: "Desenvolvedores Front-End que você deveria acompanhar"
+date: 26/04/2013
+layout: "default"
+relativeOutDirPath: 'blog'
+path: "../../../"
+pathBlog: "../../../"
+---
+
+<h1 class="page-header"><a href="<%= @document.pathBlog %>"><%= @labels['blog'] %></a></h1>
+
+<h2><%= @document.title %></h2>

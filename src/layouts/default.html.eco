@@ -39,7 +39,7 @@
 						<img src="<%= @getRelativeFile() %>img/default/luiz-felipe-tartarotti-fialho.png" alt="Cartoon de Luiz Felipe Tartarotti Fialho">
 					</div>
 					<h1 class="logo">
-						<a href="/">LFeh <small>Felipe Fialho</small></a>
+						<a href="/">Felipe Fialho</a>
 					</h1>	
 					<h4>Front End Developer</h4>
 				</header>
