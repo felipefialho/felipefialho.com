@@ -6,7 +6,7 @@ layout: "default"
 
 <span class="date"><%= @document.datePost %></span>
 <h2><%= @document.title %></h2>
-<span class="author">Por: <%= @site.author %></span>
+<span class="author">Por: <a href="https://twitter.com/lfeh"><%= @site.author %></a></span>
 
 <div class="post-container">
 
