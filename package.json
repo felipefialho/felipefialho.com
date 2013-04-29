@@ -31,6 +31,8 @@
   "dependencies": {
     "docpad": "6.x",
     "docpad-plugin-coffeescript": "2.x",
+    "sitemap": "0.6.x",
+    "bal-util": ">=1.13.10 <1.14",
     "docpad-plugin-eco": "2.x",
     "docpad-plugin-marked": "2.x",
     "docpad-plugin-partials": "2.x",
