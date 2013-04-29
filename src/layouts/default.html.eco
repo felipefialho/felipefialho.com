@@ -22,7 +22,6 @@
 
 	<!-- Styles + Our Own -->
 	<%- @getBlock('styles').add(@site.styles).toHTML() %>
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="<%= @getRelativeFile() %>img/icons/favicon2.ico" />
@@ -68,7 +67,7 @@
 	<!-- Scripts -->
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
 	<!--[if IE 7]>
-		<%- @getBlock("scripts").add(["/vendor/plugin/lte-ie7.js"]).toHTML() %>
+		<%- @getBlock("scripts").add(["/scripts/plugin/lte-ie7.js"]).toHTML() %>
 	<![endif]-->
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
