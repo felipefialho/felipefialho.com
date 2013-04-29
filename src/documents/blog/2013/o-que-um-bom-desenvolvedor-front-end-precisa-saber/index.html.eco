@@ -7,7 +7,7 @@ path: "../../../"
 pathBlog: "../../"
 ---
 
-<p class="lead">Não tive formação como programador, sempre fui focado no HTML e CSS, apesar de claro, saber fazer integração e trabalhar no ambiente Back-End, além de me virar com JQuery.</p>
+<p class="lead">Não tive formação como programador, sempre tive foco no HTML e CSS, apesar de claro, saber fazer integração e trabalhar no ambiente Back-End, além de me virar com JQuery.</p>
 
 <p>Existe um projeto bem bacana no Github chamado <a href="https://github.com/LFeh/bons-front-enders">Pequeno Guia para Empresas que Procuram Bons Desenvolvedores Front-end e Desenvolvedores Front-end que Procuram Boas Empresas</a> e é nele que me inspiro para escrever essa postagem.</p>
 
