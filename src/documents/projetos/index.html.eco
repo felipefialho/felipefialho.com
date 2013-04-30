@@ -14,7 +14,7 @@ path: "../../"
 	<div class="projetos-box span4">
 		<a href="<%= projetos.link %>" target="_blank" class="box-mask">
 			<div class="box-img">
-				<img src="<%= @getRelativeFile() %><%= projetos.thumb %>" alt="<%= projetos.name %>">
+				<img src="<%= projetos.thumb %>" alt="<%= projetos.name %>">
 			</div>	
 			<div class="box-tit">
 				<h4><%= projetos.name %></h4>

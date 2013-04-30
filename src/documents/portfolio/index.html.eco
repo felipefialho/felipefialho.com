@@ -14,7 +14,7 @@ path: "../../"
 	<div class="projetos-box span4">
 		<a href="#modal-<%= portfolio.idName %>" data-toggle="modal" class="box-mask">
 			<div class="box-img">
-				<img src="<%= @getRelativeFile() %><%= portfolio.thumb %>" alt="<%= portfolio.name %>">
+				<img src="<%= portfolio.thumb %>" alt="<%= portfolio.name %>">
 			</div>	
 			<div class="box-tit">
 				<h4><%= portfolio.name %></h4>
