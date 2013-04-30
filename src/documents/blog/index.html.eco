@@ -1,6 +1,7 @@
 ---
 title: "Blog"
 layout: "default"
+path: "../../"
 ---
 
 <h1 class="page-header"><%= @labels['blog'] %></h1>
