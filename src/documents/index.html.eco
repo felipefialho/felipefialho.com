@@ -21,7 +21,7 @@ layout: "default"
 
 <div class="blog">
 
-	<h2 class="page-header">Rolando no blog</h2>
+	<h2 class="page-header">Rolando no blog...</h2>
 
 	<ul class="blog-list">
 		<% i= 0 %>
