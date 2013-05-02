@@ -1,7 +1,6 @@
 {
   "name": "Website",
   "version": "0.0.1",
-  "private": false,
   "description": "My Website using HTML5 Boilerplate skeleton for DocPad.",
   "homepage": "https://github.com/LFeh/Website",
   "keywords": [
@@ -17,9 +16,6 @@
   "contributors": [
     "Luiz Felipe Tartarotti Fialho <luizfelipe.tf.13@gmail.com> (http://www.felipefialho.com)"
   ],
-  "bugs": {
-    "url": "https://github.com/LFeh/Website/issues"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/LFeh/Website"
@@ -30,13 +26,14 @@
   },
   "dependencies": {
     "docpad": "6.x",
-    "docpad-plugin-coffeescript": "2.x",
-    "sitemap": "0.6.x",
+    "docpad-plugin-coffeescript": "latest",
+    "sitemap": "latest",
     "bal-util": ">=1.13.10 <1.14",
-    "docpad-plugin-eco": "2.x",
-    "docpad-plugin-marked": "2.x",
-    "docpad-plugin-partials": "2.x",
-    "docpad-plugin-text": "2.x"
+    "docpad-plugin-eco": "latest",
+    "docpad-plugin-marked": "~2.1.0",
+    "docpad-plugin-partials": "latest",
+    "docpad-plugin-text": "latest",
+    "docpad-plugin-ghpages": "~2.0.2"
   },
   "main": "node_modules/docpad/bin/docpad-server"
 }

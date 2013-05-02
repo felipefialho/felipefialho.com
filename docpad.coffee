@@ -107,20 +107,20 @@ docpadConfig = {
 		projetos: [
 		  # Cartman
 		  name: "Pure CSS3 - Eric Cartman"
-		  thumb: "img/projetos/cartman-css3.jpg"
+		  thumb: "/img/projetos/cartman-css3.jpg"
 		  participation: "Protótipo de Eric Cartman totalmente desenvolvido em CSS3. Fiz para estudos, mas curti o resultado final."
 		  link: "https://github.com/LFeh/CartmanCSS3"   
 		  demo: "https://developer.mozilla.org/pt-BR/demos/detail/pure-css3-eric-cartman"    
 		,
 		  # Carousel Thumbs
 		  name: "Carousel Thumbs"
-		  thumb: "img/projetos/carousel-thumbs.jpg"
+		  thumb: "/img/projetos/carousel-thumbs.jpg"
 		  participation: "Extensão para o Carousel do Bootstrap. Usei apenas CSS."
 		  link: "https://github.com/LFeh/bootstrap-carousel-thumbs"       
 		,
 		  # Website
 		  name: "LFeh Website"
-		  thumb: "img/projetos/blog.jpg"
+		  thumb: "/img/projetos/blog.jpg"
 		  participation: "O site que está navegando nesse instante :p. Código aberto no Github."
 		  link: "https://github.com/LFeh/Website"  
 		] 
@@ -130,134 +130,134 @@ docpadConfig = {
 		  # BTG
 		  name: "BTG Pactual"
 		  idName: "btg"
-		  thumb: "img/portfolio/site-btg-thumb.jpg"
-		  imgModal: "img/portfolio/site-btg.jpg"
+		  thumb: "/img/portfolio/site-btg-thumb.jpg"
+		  imgModal: "/img/portfolio/site-btg.jpg"
 		  participation: "Desenvolvimento do HTML, CSS e Javascript."
 		  link: "https://www.btgpactual.com/home/home.aspx"
 		,  
 		  # Prime Jardim Europa
 		  name: "Prime Jardim Europa"
 		  idName: "prime-jardim"
-		  thumb: "img/portfolio/site-norcon-rossi-thumb.jpg"
-		  imgModal: "img/portfolio/site-prime-jardim.jpg"
+		  thumb: "/img/portfolio/site-norcon-rossi-thumb.jpg"
+		  imgModal: "/img/portfolio/site-prime-jardim.jpg"
 		  participation: "Desenvolvimento do HTML, CSS e Javascript."
 		  link: "http://www.primejardimeuropa.com.br/"
 		,  
 		  # Carrefour - Escolha Premiada
 		  name: "Escolha Premiada"
 		  idName: "carrefour-escolha"
-		  thumb: "img/portfolio/site-carrefour-thumb.jpg"
-		  imgModal: "img/portfolio/site-escolha-premiada.jpg"
+		  thumb: "/img/portfolio/site-carrefour-thumb.jpg"
+		  imgModal: "/img/portfolio/site-escolha-premiada.jpg"
 		  participation: "Desenvolvimento do HTML, CSS e Javascript."
 		  link: "http://www.escolhacartaocarrefour.com.br/"
 		,  
 		  # Decathlon - Clube
 		  name: "Clube Decathlon"
 		  idName: "decathlon-clube"
-		  thumb: "img/portfolio/site-decathlon-thumb.jpg"
-		  imgModal: "img/portfolio/site-decathlon-clube.jpg"
+		  thumb: "/img/portfolio/site-decathlon-thumb.jpg"
+		  imgModal: "/img/portfolio/site-decathlon-clube.jpg"
 		  participation: "Desenvolvimento do HTML e CSS."
 		,  
 		  # Nutra e Viva
 		  name: "Nutra e Viva"
 		  idName: "nutra-viva"
-		  thumb: "img/portfolio/site-nutra-viva-thumb.jpg"
-		  imgModal: "img/portfolio/site-nutra-viva.jpg"
+		  thumb: "/img/portfolio/site-nutra-viva-thumb.jpg"
+		  imgModal: "/img/portfolio/site-nutra-viva.jpg"
 		  participation: "Desenvolvimento do HTML e CSS."
 		  link: "http://www.nutraeviva.com.br/Site/"
 		,  
 		  # Fundação Estudar
 		  name: "Fundação Estudar"
 		  idName: "fundacao-estudar"
-		  thumb: "img/portfolio/site-fundacao-estudar-thumb.jpg"
-		  imgModal: "img/portfolio/site-fundacao-estudar.jpg"
+		  thumb: "/img/portfolio/site-fundacao-estudar-thumb.jpg"
+		  imgModal: "/img/portfolio/site-fundacao-estudar.jpg"
 		  participation: "Desenvolvimento do HTML e CSS. Participação no Javascript."
 		  link: "http://www.estudar.org.br/"
 		,  
 		  # Decathlon - Montanha
 		  name: "Decathlon - Esportes"
 		  idName: "decathlon-esportes"
-		  thumb: "img/portfolio/site-decathlon-thumb.jpg"
-		  imgModal: "img/portfolio/site-decathlon-esportes.jpg"
+		  thumb: "/img/portfolio/site-decathlon-thumb.jpg"
+		  imgModal: "/img/portfolio/site-decathlon-esportes.jpg"
 		  participation: "Desenvolvimento do HTML e CSS."
 		,  
 		  # Decathlon - Montanha
 		  name: "Decathlon - Montanha"
 		  idName: "decathlon-montanha"
-		  thumb: "img/portfolio/site-decathlon-thumb.jpg"
-		  imgModal: "img/portfolio/site-decathlon-montanha.jpg"
+		  thumb: "/img/portfolio/site-decathlon-thumb.jpg"
+		  imgModal: "/img/portfolio/site-decathlon-montanha.jpg"
 		  participation: "Desenvolvimento do HTML e CSS."
 		,  
 		  # Grupo Trio
 		  name: "Grupo Trio"
 		  idName: "trio"
-		  thumb: "img/portfolio/site-trio-thumb.jpg"
-		  imgModal: "img/portfolio/site-trio.jpg"
+		  thumb: "/img/portfolio/site-trio-thumb.jpg"
+		  imgModal: "/img/portfolio/site-trio.jpg"
 		  participation: "Desenvolvimento do HTML e CSS."
 		,  
 		  # Carrefour - Compra Premiada
 		  name: "Compra Premiada"
 		  idName: "carrefour-compra"
-		  thumb: "img/portfolio/site-carrefour-thumb.jpg"
-		  imgModal: "img/portfolio/site-carrefour-compra.jpg"
+		  thumb: "/img/portfolio/site-carrefour-thumb.jpg"
+		  imgModal: "/img/portfolio/site-carrefour-compra.jpg"
 		  participation: "Desenvolvimento do HTML e CSS."
 		  link: "http://www.carrefoursolucoes.com.br/50mil/"
 		,  
 		  # Decathlon - Camping
 		  name: "Decathlon - Camping"
 		  idName: "decathlon-camping"
-		  thumb: "img/portfolio/site-decathlon-thumb.jpg"
-		  imgModal: "img/portfolio/site-decathlon-camping.jpg"
+		  thumb: "/img/portfolio/site-decathlon-thumb.jpg"
+		  imgModal: "/img/portfolio/site-decathlon-camping.jpg"
 		  participation: "Desenvolvimento do HTML e CSS."
 		,  
 		  # Prontocomprei
 		  name: "Prontocomprei"
 		  idName: "prontocomprei"
-		  thumb: "img/portfolio/site-pronto-comprei-thumb.jpg"
-		  imgModal: "img/portfolio/site-pronto-comprei.jpg"
+		  thumb: "/img/portfolio/site-pronto-comprei-thumb.jpg"
+		  imgModal: "/img/portfolio/site-pronto-comprei.jpg"
 		  participation: "Desenvolvimento do HTML e CSS."
 		,  
 		  # Imbra
 		  name: "Imbra"
 		  idName: "imbra"
-		  thumb: "img/portfolio/site-imbra-thumb.jpg"
-		  imgModal: "img/portfolio/site-imbra.jpg"
+		  thumb: "/img/portfolio/site-imbra-thumb.jpg"
+		  imgModal: "/img/portfolio/site-imbra.jpg"
 		  participation: "Desenvolvimento do HTML e CSS. Participação no Javascript."
 		,  
 		  # Sensation
 		  name: "Skol Sensation"
 		  idName: "sensation"
-		  thumb: "img/portfolio/site-skol-sensation-thumb.jpg"
-		  imgModal: "img/portfolio/site-skol-sensation.jpg"
+		  thumb: "/img/portfolio/site-skol-sensation-thumb.jpg"
+		  imgModal: "/img/portfolio/site-skol-sensation.jpg"
 		  participation: "Desenvolvimento do HTML e CSS. Participação no Javascript."
 		,  
 		  # Santander
 		  name: "Santander"
 		  idName: "santander"
-		  thumb: "img/portfolio/site-santander-thumb.jpg"
-		  imgModal: "img/portfolio/site-santander.jpg"
+		  thumb: "/img/portfolio/site-santander-thumb.jpg"
+		  imgModal: "/img/portfolio/site-santander.jpg"
 		  participation: "Desenvolvimento do HTML e CSS. Participação no Javascript."
 		,  
 		  # Movilita
 		  name: "Movilita"
 		  idName: "movilita"
-		  thumb: "img/portfolio/site-movilita-thumb.jpg"
-		  imgModal: "img/portfolio/site-movilita.jpg"
+		  thumb: "/img/portfolio/site-movilita-thumb.jpg"
+		  imgModal: "/img/portfolio/site-movilita.jpg"
 		  participation: "Desenvolvimento do HTML, CSS, Javascript e XSL que gera o HTML para os celulares."
 		  link: "http://www.movilita.com/"
 		,  
 		  # Ismart	
 		  name: "Ismart"
 		  idName: "ismart"
-		  thumb: "img/portfolio/site-ismart-thumb.jpg"
-		  imgModal: "img/portfolio/site-ismart.jpg"
+		  thumb: "/img/portfolio/site-ismart-thumb.jpg"
+		  imgModal: "/img/portfolio/site-ismart.jpg"
 		  participation: "Desenvolvimento do HTML e CSS."
 		,  
 		  # Biofenac	
 		  name: "Biofenac"
 		  idName: "biofenac"
-		  thumb: "img/portfolio/site-biofenac-thumb.jpg"
-		  imgModal: "img/portfolio/site-biofenac.jpg"
+		  thumb: "/img/portfolio/site-biofenac-thumb.jpg"
+		  imgModal: "/img/portfolio/site-biofenac.jpg"
 		  participation: "Desenvolvimento do HTML e CSS."
 	    ]
 
