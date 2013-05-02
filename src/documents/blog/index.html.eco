@@ -9,13 +9,13 @@ path: "../../"
 <div class="blog">
 	<ul class="blog-list">
  	<% for posts in @posts : %>
-	      <li class="blog-item">
-	        <a href="<%= posts.year %>/<%= posts.path %>/">
-		      	<span class="date"><%= posts.date %></span>
-		      	<h4 class="tit"><%= posts.name %></h4>
-		      	<p class="description"><%= posts.description %></p>
-		    </a>  	
-	      </li>
-	    <% end %>
+      <li class="blog-item">
+        <a href="<%= posts.year %>/<%= posts.path %>/">
+	      	<span class="date"><%= posts.date %></span>
+	      	<h4 class="tit"><%= posts.name %></h4>
+	      	<p class="description"><%= posts.description %></p>
+	    </a>  	
+      </li>
+    <% end %>
 	</ul>
 </div>	

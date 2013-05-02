@@ -15,6 +15,29 @@ layout: "default"
 
 	<p>Aliás, o site foi desenvolvido com <a href="http://docpad.org/">Docpad</a>, deixei o código aberto no <a href="https://github.com/LFeh/Website">Github</a>.</p>
 
-	<p class="big-icon"><span aria-hidden="true" class="icon-happy"></span></p>
+	<p class="big-icon txt-center"><span aria-hidden="true" class="icon-happy"></span></p>
 	
+</div>
+
+<div class="blog">
+
+	<h2 class="page-header">Rolando no blog</h2>
+
+	<ul class="blog-list">
+		<% i= 0 %>
+	 	<% for posts in @posts : %>
+	 		<% i++ %>
+	 		<% if i <= 1 : %>
+				<li class="blog-item">
+				<a href="<%= posts.year %>/<%= posts.path %>/">
+				  	<span class="date"><%= posts.date %></span>
+				  	<h4 class="tit"><%= posts.name %></h4>
+				  	<p class="description"><%= posts.description %></p>
+				</a>  	
+				</li>
+			<% end %>
+		<% end %>
+	</ul>
+</div>	
+
 </div>
