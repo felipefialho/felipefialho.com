@@ -29,7 +29,7 @@ layout: "default"
 	 		<% i++ %>
 	 		<% if i <= 1 : %>
 				<li class="blog-item">
-				<a href="<%= posts.year %>/<%= posts.path %>/">
+				<a href="blog/<%= posts.year %>/<%= posts.path %>/">
 				  	<span class="date"><%= posts.date %></span>
 				  	<h4 class="tit"><%= posts.name %></h4>
 				  	<p class="description"><%= posts.description %></p>
