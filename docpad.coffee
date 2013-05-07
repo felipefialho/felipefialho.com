@@ -90,6 +90,12 @@ docpadConfig = {
 		
 		# Blog posts
 		posts: [
+		  name: 'Geradores estáticos - Breve explicação'
+		  description: 'Quando escutamos falar em geradores estáticos pela primeira vez normalmente não compreendemos qual vantagem eles poderiam ter em relação a sistemas como o Wordpress.'
+		  date: '29/05/2013'
+		  year: '2013'
+		  path: 'geradores-estaticos-breve-explicacao'
+		,  
 		  name: 'O que um bom desenvolvedor Front-End precisa saber?'
 		  description: 'Não tive formação como programador, sempre fui focado no HTML e CSS, apesar de claro, saber fazer integração e trabalhar no ambiente Back-End, além de me virar com JQuery.'
 		  date: '29/04/2013'
