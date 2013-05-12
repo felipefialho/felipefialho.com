@@ -133,6 +133,14 @@ docpadConfig = {
 
 		# Portfolio list 
 		portfolio: [
+		  # Max In Time
+		  name: "Max in Time"
+		  idName: "max-in-time"
+		  thumb: "/img/portfolio/site-max-in-time-thumb.jpg"
+		  imgModal: "/img/portfolio/site-max-in-time.jpg"
+		  participation: "Desenvolvimento do HTML, CSS e Javascript."
+		  link: "http://www.maxintime.net.br/"
+		,  
 		  # BTG
 		  name: "BTG Pactual"
 		  idName: "btg"
