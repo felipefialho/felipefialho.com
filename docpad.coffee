@@ -111,26 +111,32 @@ docpadConfig = {
 
 		# Projetos list 
 		projetos: [
+		  # Nav in CSS3
+		  name: "Pure CSS3 - Navigation"
+		  thumb: "/img/projetos/nav-css3.jpg"
+		  participation: "Navegação usando apenas CSS. Usei a propriedade transition para fazer o delay."
+		  link: "https://github.com/LFeh/NavPureCSS3"   
+		  demo: "http://codepen.io/LFeh/pen/BLpcG"    
+		,
 		  # Cartman
 		  name: "Pure CSS3 - Eric Cartman"
 		  thumb: "/img/projetos/cartman-css3.jpg"
 		  participation: "Protótipo de Eric Cartman totalmente desenvolvido em CSS3. Fiz para estudos, mas curti o resultado final."
 		  link: "https://github.com/LFeh/CartmanCSS3"   
 		  demo: "https://developer.mozilla.org/pt-BR/demos/detail/pure-css3-eric-cartman"    
-		,
-		  # Carousel Thumbs
-		  name: "Carousel Thumbs"
-		  thumb: "/img/projetos/carousel-thumbs.jpg"
-		  participation: "Extensão para o Carousel do Bootstrap. Usei apenas CSS."
-		  link: "https://github.com/LFeh/bootstrap-carousel-thumbs"       
-		,
+		,     
 		  # Website
 		  name: "LFeh Website"
 		  thumb: "/img/projetos/blog.jpg"
 		  participation: "O site que está navegando nesse instante :p. Código aberto no Github."
-		  link: "https://github.com/LFeh/Website"  
+		  link: "https://github.com/LFeh/Website" 
+		,  
+		  # Carousel Thumbs
+		  name: "Carousel Thumbs"
+		  thumb: "/img/projetos/carousel-thumbs.jpg"
+		  participation: "Extensão para o Carousel do Bootstrap. Usei apenas CSS."
+		  link: "https://github.com/LFeh/bootstrap-carousel-thumbs"   
 		] 
-
 		# Portfolio list 
 		portfolio: [
 		  # Max In Time
