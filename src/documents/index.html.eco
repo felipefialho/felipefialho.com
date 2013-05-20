@@ -3,13 +3,13 @@ title: ""
 layout: "default"
 ---
 
-<div class="home">
+<div class="home" itemscope itemtype="http://data-vocabulary.org/Person">
 
 	<p class="lead">Olá amigos, tudo bem?</p>
 
-	<p>Sou <em>Luiz Felipe Tartarotti Fialho</em>, tenho 23 anos e trabalho como <strong>Front-End Developer</strong> desde 2009.</p>
+	<p>Sou <em itemprop="name">Luiz Felipe Tartarotti Fialho</em>, tenho 23 anos e trabalho como <strong itemprop="title">Front-End Developer</strong> desde 2009.</p>
 
-	<p>Atualmente trabalho na <a href="http://www.trendi.com.br/">Trend-i</a> (desde 2011). Participei de vários projetos legais, entre eles criei um <a href="http://www.trendi.com.br/framework/login.php">Framework</a> bastante robusto usando o <a href="http://twitter.github.io/bootstrap/index.html">Bootstrap</a> como base.</p>
+	<p>Atualmente trabalho na <a href="http://www.trendi.com.br/" itemprop="affiliation">Trend-i</a> (desde 2011). Participei de vários projetos legais, entre eles criei um <a href="http://www.trendi.com.br/framework/login.php">Framework</a> bastante robusto usando o <a href="http://twitter.github.io/bootstrap/index.html">Bootstrap</a> como base.</p>
 
 	<p>Criei esse espaço, primeiro para brincar de designer, segundo para testar geradores estáticos e por último, e não menos importante... ter um lugar bacana para expressar minha opinião, dar dicas, etc.</p>
 
