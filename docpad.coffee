@@ -90,9 +90,15 @@ docpadConfig = {
 		
 		# Blog posts
 		posts: [
+		  name: 'Primeiros passos com o Docpad'
+		  description: 'No último post dei uma breve explicação sobre geradores estáticos. Algumas pessoas me pediram para fazer um tutorial básico do Docpad.'
+		  date: '21/05/2013'
+		  year: '2013'
+		  path: 'primeiros-passos-com-o-docpad'
+		,  
 		  name: 'Geradores estáticos - Breve explicação'
 		  description: 'Quando escutamos falar em geradores estáticos pela primeira vez normalmente não compreendemos qual vantagem eles poderiam ter em relação a sistemas como o Wordpress.'
-		  date: '29/05/2013'
+		  date: '06/05/2013'
 		  year: '2013'
 		  path: 'geradores-estaticos-breve-explicacao'
 		,  

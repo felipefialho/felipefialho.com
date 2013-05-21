@@ -1,0 +1,115 @@
+---
+title: "Primeiros passos com o Docpad"
+datePost: 21/05/2013
+layout: "post"
+relativeOutDirPath: 'posts'
+path: "../../../"
+pathBlog: "../../"
+---
+
+<p class="lead">No último post dei uma breve explicação sobre geradores estáticos. Algumas pessoas me pediram para fazer um tutorial básico do <a href="http://docpad.org/">Docpad</a>.</p>
+
+<h3>NodeJS e o NPM</h3>
+
+<p>O primeiro passo, como havia falado, é entender o mínimo do funcionamento do <a href="http://nodejs.org/">NodeJS</a> e seu gerenciador de pacotes, o <a href="https://npmjs.org/">NPM</a>.</p>
+
+<p>Se você usa Windows, basta baixar a <a href="http://nodejs.org/#download">última versão</a> e instalar.</p>
+
+<p>Nesse momento não é necessária nenhuma configuração especial, apenas deixe todas as opções ativadas e será instalado o NodeJS, alguns módulos nativos e o NPM.</p>
+
+<p>Para instalar em outros sistemas operacionais, pode ler esse <a href="http://bevry.me/learn/node-install">passo a passo</a>.</p>
+
+<p>Agora um item importante. No Windows, é necessário dar permissão total para a pasta do NodeJS. Com isso ele conseguirá instalar outros módulos.</p>
+
+<ol>
+	<li>
+		<p>Vá até a pasta que instalou o NodeJS. No meu caso: <b>C:\Program Files\nodejs</b></p>
+	</li>
+	<li>
+		<p><b>Botão Direito > Propriedades > Segurança > Editar > Usuários > Marque a caixa "Controle total"</b></p>
+		<div class="img-box">
+			<img src="/img/blog/etc/propriedades-nodejs.png" alt="Propriedades do NodeJS">
+		</div>	
+	</li>
+</ol>
+
+<h3>Instalando o Docpad</h3>
+
+<ol>
+	<li>
+		<p>Abra o "Node.js command prompt" e terá essa tela:</p>
+		<div class="img-box">
+			<img src="/img/blog/etc/nodejs.png" alt="NodeJS">
+		</div>	
+	</li>
+	<li>
+		<p>Procure atualizações no NPM com o comando</p> 
+		<code>npm install -g npm</code>
+	</li>
+	<li>
+		<p>Instale o Docpad</p>
+		<code>npm install -g docpad</code>
+	</li>
+</ol>
+
+<h3>Criando um projeto</h3>
+
+<ol>
+	<li>
+		<p>Através do "Node.js command prompt" vá até a pasta que deseja criar o projeto.</p>
+	</li>
+	<li>
+		<p>Crie uma nova pasta para o projeto</p>
+		<code>mkdir NOME-DO-PROJETO</code>
+	</li>
+	<li>
+		<p>Entre na pasta</p>
+		<code>cd NOME-DO-PROJETO</code>
+	</li>
+	<li>
+		<p>Inicie o projeto</p>
+		<code>docpad run</code>
+	</li>
+	<li>
+		<p>Escolha o esqueleto que deseja usar</p>
+		<div class="img-box">
+			<img src="/img/blog/etc/docpad.png" alt="Docpad">
+		</div>	
+	</li>
+</ol>
+
+<h3>Comece a brincar!</h3>
+
+<p>Após escolher um esqueleto (menos quando escolher a opção 15), já terá uma base para começar a brincar e entender o como funciona o desenvolvimento.</p>
+
+<p>Para criar esse site, usei o esqueleto 1 - HTML5 Boilerplate.</p>
+
+<ol>
+	<li>
+		<p>Aperte "CRTL + C" e saia da aplicação.</p>
+	</li>
+	<li>
+		<p>Agora considerando que você TENHA escolhido um esqueleto, na pasta do projeto digite<p>
+		<code>npm install</code>
+		<p>Isso vai instalar as dependências do projeto.
+	</li>
+	<li>
+		<p>Rode novamente<p>
+		<code>docpad run</code>
+	</li>
+</ol>
+
+<p>Você deve alterar os arquivos da pasta <b>src/</b>, o Docpad automaticamente vai gerar uma pasta <b>out/</b>
+com os HTMLs gerados, essa pasta você não deve alterar.</p>
+
+<h3>Mais informações</h3>
+
+<p>Nesse post, mostrei apenas os primeiros passos.</p>
+
+<p>Para continuar o desenvolvimento, o <a href="http://docpad.org/">site do Docpad</a> tem um guia bem bacana de uso.</p>
+
+<p>Não se assuste se achar difícil no começo, garanto que é questão de tempo até que esteja fazendo coisas bem legais com essa ferramenta.</p>
+
+<p class="end">É isso amigos, espero que contribua de alguma forma. Não sou mestre no Docpad, alias domino bem pouco e faço apenas coisas mais básicas. Mas caso tenha dúvidas, pergunte e tento ajudar no que conseguir.</p>
+
+
