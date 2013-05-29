@@ -117,6 +117,12 @@ docpadConfig = {
 
 		# Projetos list 
 		projetos: [
+		  # Grunt base
+		  name: "Grunt Base"
+		  thumb: "/img/projetos/grunt-base.jpg"
+		  participation: "Projeto com configurações básica para rodar o Grunt."
+		  link: "https://github.com/LFeh/Grunt-Base"   
+		,
 		  # Nav in CSS3
 		  name: "Pure CSS3 - Navigation"
 		  thumb: "/img/projetos/nav-css3.jpg"

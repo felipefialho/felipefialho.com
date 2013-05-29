@@ -17,3 +17,8 @@
 
 1. Start hacking away by modifying the `src` directory
 
+## For Build
+
+	``` bash
+	docpad generate & grunt
+	```
