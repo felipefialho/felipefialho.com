@@ -19,6 +19,8 @@
 
 ## For Build
 
+1.
 	``` bash
 	docpad generate & grunt
 	```
+
