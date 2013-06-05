@@ -16,7 +16,7 @@ várias vezes, e você usa diversos programas para ajudar nessas tarefas. E isso
 
 <p>O <a href="http://gruntjs.com/">Grunt</a> automatiza todas essas tarefas. E mais... você pode customiza-lo literalmente da maneira que achar melhor.</p>
 
-<p>Ao contrário do meu <a href="../primeiros-passos-com-o-docpad/">último post</a> sobre o <a href="http://docpad.org/">Docpad</a>. Não vou me extender no tutorial básico. Gente gabaritada já fez tutoriais, a maioria em inglês, mas o pessoal do <a href="http://www.voltsdigital.com.br/">Volts Digital</a> fez um <a href="http://www.voltsdigital.com.br/labs/gruntjs-por-onde-comecar/">tutorial</a> ótimo para quem está interessado em começar a brincar.</p>
+<p>Ao contrário do meu <a href="../primeiros-passos-com-o-docpad/">último post</a> sobre o <a href="http://docpad.org/">Docpad</a>. Não vou me estender no tutorial básico. Gente gabaritada já fez tutoriais, a maioria em inglês, mas o pessoal do <a href="http://www.voltsdigital.com.br/">Volts Digital</a> fez um <a href="http://www.voltsdigital.com.br/labs/gruntjs-por-onde-comecar/">tutorial</a> ótimo para quem está interessado em começar a brincar.</p>
 
 <p>Dessa vez vou explicar as tarefas que atualmente estou utilizando para automatizar meu trabalho.</p>
 
