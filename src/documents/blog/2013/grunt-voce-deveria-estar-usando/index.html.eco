@@ -22,7 +22,7 @@ várias vezes, e você usa diversos programas para ajudar nessas tarefas. E isso
 
 <h3>O projeto</h3>
 
-<p>Como sempre deixei a base que estou utilizando no <a href="https://github.com/LFeh/Grunt-Base">Github</a>, forka lá se quiser usar.</p>
+<p>Como sempre, deixei a base que estou utilizando no <a href="https://github.com/LFeh/Grunt-Base">Github</a>, forka lá se quiser usar.</p>
 
 <h3>As tarefas</h3>
 
@@ -229,7 +229,7 @@ desenvolvimento deixo o debug ativado através da opção <code>beautify</code>.
 
 <p>É possível fazer otimizações em todos os níveis. Ou seja, você vai otimizar seu desenvolvimento e ganhar mais produtividade (afinal, não vai precisar repetir tarefas desnecessariamente) e vai otimizar o projeto em sí, já que através de um comando terá CSS, Javascript, imagens e HTML mais leves.</p>
 
-<p>Uma tarefa, que tentei vários plugins e não consegui achar um que considero ideal é <strong>gerar sprites</strong>, sei que tem o Compass para o Grunt, mas não queria usar SASS apenas para gerar sprites. Se alguém tiver uma solução ou usa algum plugin bacana sou todo ouvidos.</p>
+<p>Uma tarefa, que tentei vários plugins e não consegui achar um que considero ideal é <strong>gerar sprites</strong>, sei que tem o Compass para o Grunt, mas não queria usar SASS apenas para gerar sprites. Se alguém tiver uma solução ou usa algum plugin bacana... sou todo ouvidos.</p>
 
 <p class="end"> O objetivo desse artigo é atiçar a criatividade de quem ainda não está familiarizado com o Grunt, e não servir de tutorial. De qualquer forma, espero que tenha sido útil. É nóis.</p>
 
