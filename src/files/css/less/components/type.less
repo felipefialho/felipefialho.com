@@ -89,7 +89,7 @@ a.text-success:focus { color: darken(@successText, 10%); }
 // -------------------------
 
 h1, h2, h3, h4, h5, h6 {
-  margin: (@baseLineHeight / 2) 0;
+  margin: @baseLineHeight*2 0 (@baseLineHeight / 1.5);
   font-family: @headingsFontFamily;
   font-weight: @headingsFontWeight;
   line-height: @baseLineHeight;
@@ -209,6 +209,12 @@ code{
   background: lighten(@gold, 60%);
   display: block;
   padding: 10px;
+}
+p{
+  code{
+    display: inline;
+    padding: 2px;
+  }
 }
 
 // Horizontal rules

@@ -27,7 +27,7 @@ layout: "default"
 		<% i= 0 %>
 	 	<% for posts in @posts : %>
 	 		<% i++ %>
-	 		<% if i <= 1 : %>
+	 		<% if i <= 2 : %>
 				<li class="blog-item">
 				<a href="blog/<%= posts.year %>/<%= posts.path %>/">
 				  	<span class="date"><%= posts.date %></span>
