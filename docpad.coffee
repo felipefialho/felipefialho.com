@@ -94,7 +94,7 @@ docpadConfig = {
 		  description: 'Pense nas atividades que você faz (ou deveria fazer) no momento que vai colocar o projeto em produção. Provavelmente você minifica e concatena o CSS e o javascript. Talvez também minifique o HTML e otimiza as imagens...'
 		  date: '04/06/2013'
 		  year: '2013'
-		  path: 'otimize-suas-tarefas-com-o-grunt'
+		  path: 'grunt-voce-deveria-estar-usando'
 		,  
 		  name: 'Primeiros passos com o Docpad'
 		  description: 'No último post dei uma breve explicação sobre geradores estáticos. Algumas pessoas me pediram para fazer um tutorial básico do Docpad.'
