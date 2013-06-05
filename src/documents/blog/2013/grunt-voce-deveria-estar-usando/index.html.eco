@@ -225,9 +225,11 @@ desenvolvimento deixo o debug ativado através da opção <code>beautify</code>.
 
 <h3>Conclusão</h3>
 
-<p>Como viram, é possível adaptar o Grunt exatamente as suas necessidades.</p>
+<p>Como viram, você pode adaptar o Grunt exatamente as suas necessidades.</p>
 
 <p>É possível fazer otimizações em todos os níveis. Ou seja, você vai otimizar seu desenvolvimento e ganhar mais produtividade (afinal, não vai precisar repetir tarefas desnecessariamente) e vai otimizar o projeto em sí, já que através de um comando terá CSS, Javascript, imagens e HTML mais leves.</p>
+
+<p>Uma tarefa, que tentei vários plugins e não consegui achar um que considero ideal é <strong>gerar sprites</strong>, sei que tem o Compass para o Grunt, mas não queria usar SASS apenas para gerar sprites. Se alguém tiver uma solução ou usa algum plugin bacana sou todo ouvidos.</p>
 
 <p class="end"> O objetivo desse artigo é atiçar a criatividade de quem ainda não está familiarizado com o Grunt, e não servir de tutorial. De qualquer forma, espero que tenha sido útil. É nóis.</p>
 
