@@ -61,6 +61,21 @@
 			<article>
 				<%- @content %>
 			</article>
+			
+			<div class="box-adsense">
+				<script type="text/javascript"><!--
+					google_ad_client = "ca-pub-1030425510803556";
+					/* Footer */
+					google_ad_slot = "2756147026";
+					google_ad_width = 468;
+					google_ad_height = 60;
+					//-->
+					</script>
+					<script type="text/javascript"
+					src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+				</script>
+			</div>
+
 		</section>
 		<a class="fork" href="https://github.com/LFeh/Website"><img alt="Fork me on GitHub" src="<%= @getRelativeFile() %>img/default/fork.png"></a>
 	</div>	
