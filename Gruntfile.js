@@ -29,15 +29,14 @@ module.exports = function( grunt ) {
 	          dest: 'out/',    
 	      }],
 	    }
-	} // imageMin
-
+	}, // imageMin
+ 
   });
 
-
- 
   // Grunt plugins
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-ftp-deploy');
  
  
   // Tasks runnings

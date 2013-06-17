@@ -8,7 +8,7 @@
 			<!-- NAVIGATION -->
 			<nav class="nav-collapse collapse">
 				<hr>
-				<ul class="nav nav-pills nav-stacked">
+				<ul class="nav nav-pills nav-stacked" role="navigation">
 					 <% for section in @sections : %>
 				      <li class="nav-list-item">
 				        <a href="<%= @getRelativeFile() %><%= section %>/"><%= @labels[section] %></a>
