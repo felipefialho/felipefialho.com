@@ -90,6 +90,12 @@ docpadConfig = {
 		
 		# Blog posts
 		posts: [
+		  name: 'Sobre organização de componentes com pré-processadores'
+		  description: 'No último post dei uma passada pelo Grunt e mostrei como ele pode ajudar a otimizar suas tarefas. Se você usa pré-processadores a organização dos componentes é essencial.'
+		  date: '18/06/2013'
+		  year: '2013'
+		  path: 'sobre-organizacao-de-componentes-com-pre-processadores'
+		,  
 		  name: 'Otimize suas tarefas com o Grunt!'
 		  description: 'Pense nas atividades que você faz (ou deveria fazer) no momento que vai colocar o projeto em produção. Provavelmente você minifica e concatena o CSS e o javascript. Talvez também minifique o HTML e otimiza as imagens...'
 		  date: '04/06/2013'

@@ -1,0 +1,63 @@
+---
+title: "Sobre organização de componentes com pré-processadores"
+datePost: 18/06/2013
+layout: "post"
+relativeOutDirPath: 'posts'
+path: "../../../"
+pathBlog: "../../"
+---
+
+<p class="lead">No último artigo dei uma <a href="../grunt-voce-deveria-estar-usando/">passada pelo Grunt</a> e mostrei como ele pode ajudar a otimizar suas tarefas. Se você usa pré-processadores a organização dos componentes é essencial.</p>
+
+<h3>Breve introdução</h3>
+
+<p>Na eterna dúvida entre usar SASS ou LESS, acabei optando por LESS. Não tenho uma explicação certa, mas acredito que foi pelo fato do <a href="http://twitter.github.io/bootstrap/">Bootstrap</a> (na qual baseei meu Framework) usar LESS (apesar de ter uma adaptação em SASS). O fato dele ser baseado em javascript também me agradou.</p>
+
+<p>O SASS é mais robusto e tem plugins interessantíssimos como o Compass. O gerador de sprites dele é uma mão na roda e sinto falta disso no LESS.</p>
+
+<p>De qualquer forma vou dar mostrar minha organização baseada nos testes que fiz durante o desenvolvimento do Framework usando LESS, o que não significa que não possa ser adaptado para qualquer outro pré-processador.</p>
+
+<h3>Separação dos arquivos no Framework</h3>
+
+<p>Dentro da pasta <code>css</code> tenho a pasta <code>less</code> e nela separo meus arquivos em mais duas pastas: <code>bootstrap</code> e <code>framework</code>.</p>
+
+<p>Explico a seguir:</p>
+
+<ul>
+	<li><b>bootstrap:</b> Ficam todos os ".less" do <a href="http://twitter.github.io/bootstrap/">Bootstrap</a>. Deixo-os em uma pasta separadas. Não posso modificar os arquivos nesse momento. Me impediria de atualizar o Boostrap para novas versões.</li>
+	<li><b>framework:</b> Adiciono novos componentes e "estendo" os  componentes do Bootstrap. Qualquer modificação nos módulos padrões do Framework é feita nessa pasta.</li>
+</ul>
+
+<h3>Separação dos arquivos nos projetos</h3>
+
+<p>Agora imaginem que chegou um novo projeto e já fizemos toda a avaliação dos componentes que serão usados (vou explicar esse fluxo em outro artigo):</p>
+
+<ol>
+	<li>Copio os arquivos base do Framework para meu novo projeto.</li>
+	<li>Dentro da pasta <b>less</b>, crio uma pasta chamada <b>components</b>.</li>
+	<li>Nela adiciono todos os componentes que vou utilizar. Tanto da pasta <b>bootstrap</b> quanto da pasta <b>framework</b>.</li> 
+	<li>Dentro dessa pasta posso modificar qualquer  “.less" (já que não vou atualizar o Bootstrap nos projetos em andamento) e é onde adiciono novos componentes específicos do projeto.</li>
+	<li>Costumo também “mesclar” as extensões do Framework aos componentes do Bootstrap,  além de é claro, limpar qualquer código desnecessário (costumo deixar para o final).</li>
+</ol>
+<p>Na raiz da pasta <code>less</code> crio mais dois arquivos: <code>project.less</code> e <code>style.less</code>. Explico na sequencia:</p>
+
+<ul>
+	<li><b>project.less:</b> Coloco tudo que não se encaixa em "componente", detalhes especificos de cada página, entre outras coisas.</li>
+	<li><b>style.less:</b> É onde chamo todos os ".less" e peço para gerar um "style.css". Todos os componentes (e também o project.less) que estou utilizando são chamados nesse arquivo.</li>
+</ul>
+
+<p>A estrutura final da pasta <code>less</code> fica assim:</p>
+
+<div class="img-box">
+	<img src="/img/blog/etc/organizacao-less.jpg" alt="Organização final">
+</div>	
+
+<p>Pode ter uma ideia de como organizo os arquivos acessando o <a href="https://github.com/LFeh/Website/tree/master/src/files/css/less">fork do meu site.</a> Já fiz várias melhorias de lá pra cá, mas o principio segue o mesmo.</p>
+
+<h3>Para gerar o CSS</h3>
+
+<p>Antigamente usava o <a href="http://winless.org/">Winless</a> para gerar o CSS. Pedia para ele "olhar" minha pasta <code>less</code> e após qualquer modificação nos arquivos... gerar (através do style.less) o CSS final.</p>
+
+<p>Hoje uso o <a href="https://github.com/LFeh/Grunt-Base/blob/master/Gruntfile.js">Grunt para fazer essa tarefa</a>.</p>
+
+<p class="end">Escrevi esse artigo, após alguns amigos (@raphaelfabeni foi um deles) perguntarem sobre como costumo organizar os arquivos usando pré-processadores. Espero que contribua de alguma forma.</p>
