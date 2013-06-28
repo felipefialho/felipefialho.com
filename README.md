@@ -7,7 +7,8 @@
 1. Clone the project and run the server
 
 	``` bash
-	git clone git://github.com/lfeh/website.git
+	git clone https://github.com/LFeh/Website.git
+	
 	cd LFeh/Website
 	npm install
 	docpad run
