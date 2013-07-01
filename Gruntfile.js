@@ -36,7 +36,6 @@ module.exports = function( grunt ) {
   // Grunt plugins
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-ftp-deploy');
  
  
   // Tasks runnings

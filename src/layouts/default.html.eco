@@ -9,6 +9,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width" />
 
+	<meta property="og:title" content="<%= @getPreparedTitle() %>" />
+	<meta property="og:type" content="blog" />
+	<meta property="og:url" content="http://www.felipefialho.com.br/" />
+	<meta property="og:image" content="/img/default/luiz-felipe-tartarotti-fialho.png"/>
+
+
 	<!-- Site Properities -->
 	<title><%= @getPreparedTitle() %></title>
 	<meta name="description" content="<%= @getPreparedDescription() %>" />
