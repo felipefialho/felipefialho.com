@@ -163,6 +163,14 @@ docpadConfig = {
 		] 
 		# Portfolio list 
 		portfolio: [
+		  # Trend-i
+		  name: "Trend-i"
+		  idName: "trendi"
+		  thumb: "/img/portfolio/site-trendi-thumb.jpg"
+		  imgModal: "/img/portfolio/site-trendi.jpg"
+		  participation: "Desenvolvimento do HTML, CSS e Javascript."
+		  link: "http://www.trendi.com.br/"
+		,  
 		  # Max In Time
 		  name: "Max in Time"
 		  idName: "max-in-time"
