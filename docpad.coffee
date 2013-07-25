@@ -90,6 +90,12 @@ docpadConfig = {
 		
 		# Blog posts
 		posts: [
+		  name: 'Dica: Tire férias'
+		  description: 'Os amigos que me acompanham devem ter observado que sumi de repente. E tenho um motivo bem nobre para isso: Estava de férias.'
+		  date: '25/07/2013'
+		  year: '2013'
+		  path: 'dica-tire-ferias'
+		,  
 		  name: 'Sobre organização de componentes com pré-processadores'
 		  description: 'No último post dei uma passada pelo Grunt e mostrei como ele pode ajudar a otimizar suas tarefas. Se você usa pré-processadores a organização dos componentes é essencial.'
 		  date: '18/06/2013'
