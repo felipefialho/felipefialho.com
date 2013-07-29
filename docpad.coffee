@@ -90,6 +90,12 @@ docpadConfig = {
 		
 		# Blog posts
 		posts: [
+		  name: 'Um conto sobre componentização e quebra de paradigmas'
+		  description: 'Melhorar processos é parte essencial do nosso trabalho, mas em algum momento percebemos que só melhorar pode não ser o suficiente, as vezes é preciso quebrar paradigmas.'
+		  date: '29/07/2013'
+		  year: '2013'
+		  path: 'um-conto-sobre-componentizacao-e-quebra-de-paradigmas'
+		,  
 		  name: 'Dica: Tire férias'
 		  description: 'Os amigos que me acompanham devem ter observado que sumi de repente. E tenho um motivo bem nobre para isso: Estava de férias.'
 		  date: '25/07/2013'
