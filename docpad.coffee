@@ -238,7 +238,7 @@ docpadConfig = {
 		  participation: "Desenvolvimento do HTML e CSS. Participação no Javascript."
 		  link: "http://www.estudar.org.br/"
 		,  
-		  # Decathlon - Montanha
+		  # Decathlon - Esportes
 		  name: "Decathlon - Esportes"
 		  idName: "decathlon-esportes"
 		  thumb: "/img/portfolio/site-decathlon-thumb.jpg"
@@ -251,14 +251,7 @@ docpadConfig = {
 		  thumb: "/img/portfolio/site-decathlon-thumb.jpg"
 		  imgModal: "/img/portfolio/site-decathlon-montanha.jpg"
 		  participation: "Desenvolvimento do HTML e CSS."
-		,  
-		  # Grupo Trio
-		  name: "Grupo Trio"
-		  idName: "trio"
-		  thumb: "/img/portfolio/site-trio-thumb.jpg"
-		  imgModal: "/img/portfolio/site-trio.jpg"
-		  participation: "Desenvolvimento do HTML e CSS."
-		,  
+		,   
 		  # Carrefour - Compra Premiada
 		  name: "Compra Premiada"
 		  idName: "carrefour-compra"
@@ -281,13 +274,6 @@ docpadConfig = {
 		  imgModal: "/img/portfolio/site-pronto-comprei.jpg"
 		  participation: "Desenvolvimento do HTML e CSS."
 		,  
-		  # Imbra
-		  name: "Imbra"
-		  idName: "imbra"
-		  thumb: "/img/portfolio/site-imbra-thumb.jpg"
-		  imgModal: "/img/portfolio/site-imbra.jpg"
-		  participation: "Desenvolvimento do HTML e CSS. Participação no Javascript."
-		,  
 		  # Sensation
 		  name: "Skol Sensation"
 		  idName: "sensation"
@@ -301,28 +287,6 @@ docpadConfig = {
 		  thumb: "/img/portfolio/site-santander-thumb.jpg"
 		  imgModal: "/img/portfolio/site-santander.jpg"
 		  participation: "Desenvolvimento do HTML e CSS. Participação no Javascript."
-		,  
-		  # Movilita
-		  name: "Movilita"
-		  idName: "movilita"
-		  thumb: "/img/portfolio/site-movilita-thumb.jpg"
-		  imgModal: "/img/portfolio/site-movilita.jpg"
-		  participation: "Desenvolvimento do HTML, CSS, Javascript e XSL que gera o HTML para os celulares."
-		  link: "http://www.movilita.com/"
-		,  
-		  # Ismart	
-		  name: "Ismart"
-		  idName: "ismart"
-		  thumb: "/img/portfolio/site-ismart-thumb.jpg"
-		  imgModal: "/img/portfolio/site-ismart.jpg"
-		  participation: "Desenvolvimento do HTML e CSS."
-		,  
-		  # Biofenac	
-		  name: "Biofenac"
-		  idName: "biofenac"
-		  thumb: "/img/portfolio/site-biofenac-thumb.jpg"
-		  imgModal: "/img/portfolio/site-biofenac.jpg"
-		  participation: "Desenvolvimento do HTML e CSS."
 	    ]
 
 		# -----------------------------
