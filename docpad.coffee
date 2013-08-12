@@ -90,6 +90,12 @@ docpadConfig = {
 		
 		# Blog posts
 		posts: [
+		  name: 'O grupo Grunt Brasil no Facebook'
+		  description: 'Estar em um grupo para discutir assuntos de interesse mútuo é sempre muito legal e contribui MUITO para o desenvolvimento, por essa razão o grupo Grunt Brasil no Facebook foi criado.'
+		  date: '12/08/2013'
+		  year: '2013'
+		  path: 'o-grupo-grunt-brasil-no-facebook'
+		,  
 		  name: 'Um conto sobre componentização e quebra de paradigmas'
 		  description: 'Melhorar processos é parte essencial do nosso trabalho, mas em algum momento percebemos que só melhorar pode não ser o suficiente, as vezes é preciso quebrar paradigmas.'
 		  date: '29/07/2013'
