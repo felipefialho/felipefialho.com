@@ -145,29 +145,7 @@ desenvolvimento deixo o debug ativado através da opção <code>beautify</code>.
 </code>
 
 <p>Minifico o HTML.</p>
-
-<h4><a href="https://github.com/gruntjs/grunt-contrib-htmlmin">HTMLMin</a></h4>
-
-<code class="space">  	
-	<pre>
-	htmlmin: {                                     
-	    dist: {                                       
-	      options: {                                  
-	        removeComments: true,
-	        collapseWhitespace: true
-	      },
-	      files: [{
-	          expand: true,      
-	          cwd: 'dev/',       
-	          src: '*.html',  
-	          dest: 'dist/',    
-	      }],
-	    }
-  	},</pre>
-</code>
-
-<p>Minifico o HTML. Mantenho apenas uma tarefa de distribuição.</p>
-
+ 
 <h4><a href="https://github.com/gruntjs/grunt-contrib-imagemin">ImageMin</a></h4>
 
 <code class="space">  	
