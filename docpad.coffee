@@ -90,6 +90,12 @@ docpadConfig = {
 		
 		# Blog posts
 		posts: [
+		  name: 'Tutorial - Caixa de compartilhar em Puro CSS'
+		  description: 'Nunca escrevi um tutorial em CSS por aqui, e começo mostrando como desenvolvi uma caixa de compartilhamento que pode ser bastante útil.'
+		  date: '17/09/2013'
+		  year: '2013'
+		  path: 'tutorial-caixa-de-compartilhar-em-puro-css'
+		,  
 		  name: 'O grupo Grunt Brasil no Facebook'
 		  description: 'Estar em um grupo para discutir assuntos de interesse mútuo é sempre muito legal e contribui MUITO para o desenvolvimento, por essa razão o grupo Grunt Brasil no Facebook foi criado.'
 		  date: '12/08/2013'
@@ -147,6 +153,12 @@ docpadConfig = {
 
 		# Projetos list 
 		projetos: [
+		  # Social Media in CSS3
+		  name: "Pure CSS3 - Social Media"
+		  thumb: "/img/projetos/social-media-css3.jpg"
+		  participation: "Caixa de redes sociais com animações em CSS3"
+		  link: "http://codepen.io/LFeh/details/IvmJD"   
+		,
 		  # Grunt base
 		  name: "Grunt Base"
 		  thumb: "/img/projetos/grunt-base.jpg"
