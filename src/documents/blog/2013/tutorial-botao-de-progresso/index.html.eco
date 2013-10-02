@@ -9,7 +9,7 @@ pathBlog: "../../"
 
 <p class="lead">Nesse artigo, vou mostrar mais um tutorial simples... o desenvolvimento de um botão de progresso, que pode fornecer um feedback importante para o usuário.</p>
 
-<p>Continuo trabahando em diversos projetos paralelos, em razão disso estou um pouco desaparecido das comunidades que participo.</p>
+<p>Continuo trabalhando em diversos projetos paralelos, em razão disso estou um pouco desaparecido das comunidades que participo.</p>
 
 <p>Mas durante esses projetos, estou pensando e aplicando algumas soluções interessantes, uma delas foi a <a href="../tutorial-caixa-de-compartilhar-em-puro-css/">caixa de compartilhar</a>, agora vou mostrar um "botão de progresso".</p>
 
