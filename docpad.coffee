@@ -90,6 +90,12 @@ docpadConfig = {
 		
 		# Blog posts
 		posts: [
+		  name: 'Tutorial - Botão de Progresso'
+		  description: 'Vou mostrar mais um tutorial simples... o desenvolvimento de um botão de progresso, que pode fornecer um feedback importante para o usuário.'
+		  date: '02/10/2013'
+		  year: '2013'
+		  path: 'tutorial-botao-de-progresso'
+		,  
 		  name: 'Tutorial - Caixa de compartilhar em Puro CSS'
 		  description: 'Nunca escrevi um tutorial em CSS por aqui, e começo mostrando como desenvolvi uma caixa de compartilhamento que pode ser bastante útil.'
 		  date: '17/09/2013'
@@ -153,7 +159,13 @@ docpadConfig = {
 
 		# Projetos list 
 		projetos: [
-		  # Social Media in CSS3
+		  # Progress
+		  name: "Button Progress"
+		  thumb: "/img/projetos/button-progress.jpg"
+		  participation: "Button Progress in CSS Animate"
+		  link: "http://codepen.io/LFeh/pen/KviDw"   
+		,
+		  # Social Media CSS3
 		  name: "Pure CSS3 - Social Media"
 		  thumb: "/img/projetos/social-media-css3.jpg"
 		  participation: "Caixa de redes sociais com animações em CSS3"
