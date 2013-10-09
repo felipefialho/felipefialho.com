@@ -38,4 +38,7 @@ layout: "default"
 			<% end %>
 		<% end %>
 	</ul>
+
+	<a href="blog/">Gostou? Veja mais do blog...</a>
+
 </div>	
