@@ -195,14 +195,9 @@ docpadConfig = {
 		  name: "LFeh Website"
 		  thumb: "/img/projetos/blog.jpg"
 		  participation: "O site que está navegando nesse instante :p. Código aberto no Github."
-		  link: "https://github.com/LFeh/Website" 
-		,  
-		  # Carousel Thumbs
-		  name: "Carousel Thumbs"
-		  thumb: "/img/projetos/carousel-thumbs.jpg"
-		  participation: "Extensão para o Carousel do Bootstrap. Usei apenas CSS."
-		  link: "https://github.com/LFeh/bootstrap-carousel-thumbs"   
+		  link: "https://github.com/LFeh/Website"  
 		] 
+		
 		# Portfolio list 
 		portfolio: [
 		  # Trend-i
