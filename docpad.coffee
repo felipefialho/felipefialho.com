@@ -90,6 +90,12 @@ docpadConfig = {
 		
 		# Blog posts
 		posts: [
+		  name: 'Tutorial - Tabela Responsiva'
+		  description: 'Em layouts responsivos, um dos componentes que sempre me incomodava eram as tabelas. Acredito que isso também ocorra com outros desenvolvedores....'
+		  date: '14/10/2013'
+		  year: '2013'
+		  path: 'tutorial-tabela-responsiva'
+		,  
 		  name: 'Tutorial - Botão de Progresso'
 		  description: 'Vou mostrar mais um tutorial simples... o desenvolvimento de um botão de progresso, que pode fornecer um feedback importante para o usuário.'
 		  date: '02/10/2013'
