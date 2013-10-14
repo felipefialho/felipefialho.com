@@ -21,7 +21,7 @@ pathBlog: "../../"
 
 <p>Ela consiste em inverter a posição do <b>thead</b> e posicionar o <b>tbody</b> na sua direita.</p>
  
-<p>A demo funcional está no <a href="http://codepen.io/LFeh/pen/KviDw">CodePen</a> (redimensione o navegador para visualizar o efeito).</p>
+<p>A demo funcional está no <a href="http://codepen.io/LFeh/pen/hsreD">CodePen</a> (redimensione o navegador para visualizar o efeito).</p>
 
 <h3>Tutorial</h3>
 
@@ -103,7 +103,7 @@ pathBlog: "../../"
 
 <h3>Sobre</h3>
 
-<p>Essa solução foi inspirada no funcionamento do <a href="http://www.gmail.com/">GMail</a> para dispositivos menores.</p>
+<p>Essa solução foi inspirada no funcionamento do <a href="http://www.gmail.com/">Gmail</a> para dispositivos menores.</p>
 
 <p>Funciona bem para tabelas que exigem por exemplo, um check. Ele agrupa as informações.</p>
 
