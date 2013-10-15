@@ -160,6 +160,18 @@ docpadConfig = {
 
 		# Projetos list 
 		projetos: [
+		  # Table Responsive
+		  name: "Table Responsive - Action"
+		  thumb: "/img/projetos/table-action.jpg"
+		  participation: "Exemplo de tabela responsiva para modelo com 'ações'"
+		  link: "http://codepen.io/LFeh/pen/beEoG"   
+		,
+		  # Table Action
+		  name: "Table Responsive"
+		  thumb: "/img/projetos/table-responsive.jpg"
+		  participation: "Exemplo de tabela responsiva"
+		  link: "http://codepen.io/LFeh/pen/hsreD"   
+		,
 		  # Progress
 		  name: "Button Progress"
 		  thumb: "/img/projetos/button-progress.jpg"
