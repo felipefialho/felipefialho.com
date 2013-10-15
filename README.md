@@ -22,6 +22,6 @@
 
 1.
 	``` 
-	docpad generate & grunt
+	docpad generate & grunt build
 	```
 
