@@ -1,4 +1,4 @@
-# LFeh Website based in [HTML5 Boilerplate](http://html5boilerplate.com/)
+# LFeh Website 
 
 ## Getting Started
 
