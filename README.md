@@ -18,10 +18,16 @@
 
 1. Start hacking away by modifying the `src` directory
 
-## For Build
+### For Watch
 
 1.
 	``` 
-	docpad generate & grunt
+	grunt w
 	```
 
+### For Build
+
+1.
+	``` 
+	docpad generate & grunt build
+	```
