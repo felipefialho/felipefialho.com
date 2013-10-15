@@ -37,16 +37,11 @@ docpadConfig = {
 
 			# The website's scripts
 			scriptsTop: [
-				'/scripts/plugin/modernizr-2.6.2.min.js'
+				'/js/modernizr-2.6.2.min.js'
 			]
 
-			scripts: [
-				#'/scripts/plugin/jquery/jquery.js'
-				#'/scripts/plugin/bootstrap/bootstrap.min.js'
-				#'/scripts/plugin/jquery-plugins/jquery.placeholder.min.js'
-				'/scripts/all.min.js'
-
-				'/scripts/site/_general.js'
+			scripts: [ 
+				'/js/scripts.min.js'
 			]
 
 			# Write After
