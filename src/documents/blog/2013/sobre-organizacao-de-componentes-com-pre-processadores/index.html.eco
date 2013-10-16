@@ -49,7 +49,7 @@ pathBlog: "../../"
 <p>A estrutura final da pasta <code>less</code> fica assim:</p>
 
 <div class="img-box">
-	<img src="/img/blog/etc/organizacao-less.jpg" alt="Organização final">
+	<img src="/assets/img/blog/etc/organizacao-less.jpg" alt="Organização final">
 </div>	
 
 <p>Pode ter uma ideia de como organizo os arquivos acessando o <a href="https://github.com/LFeh/Website/tree/master/src/files/css/less">fork do meu site.</a> Já fiz várias melhorias de lá pra cá, mas o principio segue o mesmo.</p>

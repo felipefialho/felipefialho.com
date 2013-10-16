@@ -1,0 +1,37 @@
+---
+title: "Projects"
+layout: "default-en"
+path: "../"
+---
+
+
+<h1 class="page-header"><%= @labelsEn['projects'] %></h1>
+
+<div class="projetos-container">
+
+	<% for projetos in @projetos: %>
+	<!-- <%= projetos.name %> -->
+	<div class="projetos-box span4">
+		<a href="<%= projetos.link %>" target="_blank" class="box-mask">
+			<div class="box-img">
+				<img src="<%= projetos.thumb %>" alt="<%= projetos.name %>">
+			</div>	
+			<div class="box-tit">
+				<h4><%= projetos.name %></h4>
+			</div>	
+		</a>	
+		<div class="box-info">
+			<p><%= projetos.participationEn %><p> 
+			<div class="box-link">
+				<ul class="inline">
+					<li><a href="<%= projetos.link %>" target="_blank"><span class="icon-github-2" aria-hidden="true"></span></a></li>
+  					<% if projetos.demo: %>
+					<li><a href="<%= projetos.demo %>" target="_blank"><span class="icon-eye" aria-hidden="true"></span></a></li>
+					<% end %>
+				</ul>	
+			</div>	
+		</div>	
+	</div>
+	<% end %>
+
+</div>

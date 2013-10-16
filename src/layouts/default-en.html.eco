@@ -17,7 +17,7 @@
 
 	<!-- Site Properities -->
 	<title><%= @getPreparedTitle() %></title>
-	<meta name="description" content="<%= @getPreparedDescription() %>" />
+	<meta name="description" content="<%= @getPreparedDescriptionEn() %>" />
 	<meta name="keywords" content="<%= @getPreparedKeywords() %>" />
 
 	<!-- Meta -->
@@ -41,16 +41,16 @@
 				<!-- HEADER -->
 				<header>
 					<div class="photo">
-						<img src="/assets/img/default/luiz-felipe-tartarotti-fialho.png" alt="Cartoon de Luiz Felipe Tartarotti Fialho">
+						<img src="/assets/img/default/luiz-felipe-tartarotti-fialho.png" alt="Cartoon of Luiz Felipe Tartarotti Fialho">
 					</div>
 					<h1 class="logo">
-						<a href="/">Felipe Fialho</a>
+						<a href="/en/">Felipe Fialho</a>
 					</h1>	
 					<h4>Front-End Developer</h4>
 				</header>
 				<!-- END HEADER -->
 				<!-- NAV -->
-				<%-@partial('nav.html.eco', @)%>
+				<%-@partial('nav-en.html.eco', @)%>
 				<!-- END NAV -->
 			</div>	
 		</aside>

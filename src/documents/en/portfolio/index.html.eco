@@ -1,0 +1,43 @@
+---
+title: "Portfolio"
+layout: "default-en"
+path: "../"
+---
+
+
+<h1 class="page-header"><%= @labelsEn['portfolio'] %></h1>
+
+<div class="projetos-container">
+
+	<% for portfolio in @portfolio: %>
+	<!-- <%= portfolio.name %> -->
+	<div class="projetos-box span4">
+		<a href="#modal-<%= portfolio.idName %>" data-toggle="modal" class="box-mask">
+			<div class="box-img">
+				<img src="<%= portfolio.thumb %>" alt="<%= portfolio.name %>">
+			</div>	
+			<div class="box-tit">
+				<h4><%= portfolio.name %></h4>
+			</div>	
+		</a>	
+		<div class="box-info box-info-portfolio">
+			<p><%= portfolio.participationEn %><p> 
+			<div class="box-link">
+				<ul class="inline">
+					<li><a href="#modal-<%= portfolio.idName %>" data-toggle="modal"><span class="icon-eye" aria-hidden="true"></span></a></li>
+  					<% if portfolio.link: %>
+					<li><a href="<%= portfolio.link %>" target="_blank"><span aria-hidden="true" class="icon-link"></span></a></li>
+					<% end %>
+				</ul>	
+			</div>	
+		</div>	
+		<div id="modal-<%= portfolio.idName %>" class="modal modal-big fade" tabindex="-1" role="dialog" aria-labelledby="modal-<%= portfolio.idName %>" aria-hidden="true">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon-close" aria-hidden="true"></span></button>
+			<div class="modal-body">
+				<img src="<%= @getRelativeFile() %><%= portfolio.imgModal %>" alt="<%= portfolio.name %>">
+			</div>
+		</div>
+	</div>
+	<% end %>
+
+</div>

@@ -29,9 +29,9 @@ grunt.initConfig({
 	// Clean files
   	clean: {
 	  dist: [
-	  		"<%= config.dist %>/js/bootstrap/**", 
-	  		"<%= config.dist %>/js/jquery/**", 
-	  		"<%= config.dist %>/js/_general.js"
+	  		"<%= config.dist %>/**/**/bootstrap/**", 
+	  		"<%= config.dist %>/**/**/jquery/**", 
+	  		"<%= config.dist %>/**/**/_general.js"
 	  	]
 	}, 
 
@@ -70,10 +70,10 @@ grunt.initConfig({
 	less: { 
 	  dev: {
 	    options: {
-	      paths: ["<%= config.dev %>files/css/less"]
+	      paths: ["<%= config.dev %>files/assets/css/less"]
 	    },
 	    files: {
-	      "<%= config.dev %>files/css/style.css": "<%= config.dev %>files/css/less/style.less"
+	      "<%= config.dev %>files/assets/css/style.css": "<%= config.dev %>files/assets/css/less/style.less"
 	    }
 	  }
 	}, 
@@ -85,7 +85,7 @@ grunt.initConfig({
 		},                               
 	    dev: {   
 			files : {
-				'<%= config.dev %>js/scripts.min.js': scripts
+				'<%= config.dev %>files/assets/js/scripts.min.js': scripts
 			}
 		}
     },
@@ -104,6 +104,7 @@ grunt.initConfig({
    		js: {
    			files : [
    				'<%= config.dev %>**/js/*.js',
+   				'!<%= config.dev %>**/js/scripts.min.js',
    				'Gruntfile.js'
    			],
    			tasks : ['uglify:dev']

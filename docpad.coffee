@@ -25,23 +25,23 @@ docpadConfig = {
 				Site pessoal focado em Desenvolvedores Front-End, com dicas do mercado web, tutoriais e projetos na qual participei.
 				"""
 
-			# The website keywords (for SEO) separated by commas
-			keywords: """
-				blog, front end, developer, desenvolvedor, tableless, css, html, jquery, docpad, felipe fialho, lfeh, luiz felipe tartarotti fialho
+			# The website description (for SEO) - English
+			description_en: """
+				Personal Website with focused in Web Development, Front-End Enginner and personal projects.
 				"""
-
+ 
 			# The website's styles
-			styles: [
-				'/css/style.css'
+			styles: [ 
+				'/assets/css/style.css'
 			]
 
 			# The website's scripts
 			scriptsTop: [
-				'/js/modernizr-2.6.2.min.js'
+				'/assets/js/modernizr-2.6.2.min.js'
 			]
 
 			scripts: [ 
-				'/js/scripts.min.js'
+				'/assets/js/scripts.min.js'
 			]
 
 			# Write After
@@ -76,11 +76,19 @@ docpadConfig = {
 		  'projetos'
 		  'portfolio'
 		]
+		sectionsEn: [ 
+		  'projects'
+		  'portfolio'
+		]
 
 		# Labels which you can translate to other languages
 		labels:
 		  blog: "Blog"
 		  projetos: "Projetos"
+		  portfolio: "Portfolio"
+
+		labelsEn:
+		  projects: "Projects"
 		  portfolio: "Portfolio"
 		
 		# Blog posts
@@ -162,52 +170,60 @@ docpadConfig = {
 		projetos: [
 		  # Table Responsive
 		  name: "Table Responsive - Action"
-		  thumb: "/img/projetos/table-action.jpg"
-		  participation: "Exemplo de tabela responsiva para modelo com 'ações'"
+		  thumb: "/assets/img/projetos/table-action.jpg"
+		  participation: "Exemplo de 'Tabela Responsiva' para modelo com ações"
+		  participationEn: "Other example of 'Table Responsive'. This example, is indicated for tables that require actions."
 		  link: "http://codepen.io/LFeh/pen/beEoG"   
 		,
 		  # Table Action
 		  name: "Table Responsive"
-		  thumb: "/img/projetos/table-responsive.jpg"
-		  participation: "Exemplo de tabela responsiva"
+		  thumb: "/assets/img/projetos/table-responsive.jpg"
+		  participation: "Exemplo de 'Tabela Responsiva'"
+		  participationEn: "Example of 'Table Responsive' for better adjust in small sizes."
 		  link: "http://codepen.io/LFeh/pen/hsreD"   
 		,
 		  # Progress
 		  name: "Button Progress"
-		  thumb: "/img/projetos/button-progress.jpg"
-		  participation: "Button Progress in CSS Animate"
+		  thumb: "/assets/img/projetos/button-progress.jpg"
+		  participation: "'Botão de Progresso' usando CSS Animate"
+		  participationEn: "Button Progress in CSS Animate"
 		  link: "http://codepen.io/LFeh/pen/KviDw"   
 		,
 		  # Social Media CSS3
 		  name: "Pure CSS3 - Social Media"
-		  thumb: "/img/projetos/social-media-css3.jpg"
+		  thumb: "/assets/img/projetos/social-media-css3.jpg"
 		  participation: "Caixa de redes sociais com animações em CSS3"
+		  participationEn: "Elegant box of 'Social Networks' animated using only CSS"
 		  link: "http://codepen.io/LFeh/details/IvmJD"   
 		,
 		  # Grunt base
 		  name: "Grunt Base"
-		  thumb: "/img/projetos/grunt-base.jpg"
+		  thumb: "/assets/img/projetos/grunt-base.jpg"
 		  participation: "Projeto com configurações básica para rodar o Grunt."
+		  participationEn: "My Grunt Boilerplate"
 		  link: "https://github.com/LFeh/Grunt-Base"   
 		,
 		  # Nav in CSS3
 		  name: "Pure CSS3 - Navigation"
-		  thumb: "/img/projetos/nav-css3.jpg"
-		  participation: "Navegação usando apenas CSS. Usei a propriedade transition para fazer o delay."
+		  thumb: "/assets/img/projetos/nav-css3.jpg"
+		  participation: "Sub-Navegação usando apenas CSS."
+		  participationEn: "Navigation in pure CSS3, contains submenu and delay using only CSS."
 		  link: "https://github.com/LFeh/NavPureCSS3"   
 		  demo: "http://codepen.io/LFeh/pen/BLpcG"    
 		,
 		  # Cartman
 		  name: "Pure CSS3 - Eric Cartman"
-		  thumb: "/img/projetos/cartman-css3.jpg"
+		  thumb: "/assets/img/projetos/cartman-css3.jpg"
 		  participation: "Protótipo de Eric Cartman totalmente desenvolvido em CSS3. Fiz para estudos, mas curti o resultado final."
-		  link: "https://github.com/LFeh/CartmanCSS3"   
+		  participationEn: "Eric Cartman in Pure CSS3 (with animation)."
+		  link: "http://codepen.io/LFeh/pen/qzDCJ"   
 		  demo: "https://developer.mozilla.org/pt-BR/demos/detail/pure-css3-eric-cartman"    
 		,     
 		  # Website
 		  name: "LFeh Website"
-		  thumb: "/img/projetos/blog.jpg"
+		  thumb: "/assets/img/projetos/blog.jpg"
 		  participation: "O site que está navegando nesse instante :p. Código aberto no Github."
+		  participationEn: "This Website."
 		  link: "https://github.com/LFeh/Website"  
 		] 
 		
@@ -216,115 +232,130 @@ docpadConfig = {
 		  # Trend-i
 		  name: "Trend-i"
 		  idName: "trendi"
-		  thumb: "/img/portfolio/site-trendi-thumb.jpg"
-		  imgModal: "/img/portfolio/site-trendi.jpg"
+		  thumb: "/assets/img/portfolio/site-trendi-thumb.jpg"
+		  imgModal: "/assets/img/portfolio/site-trendi.jpg"
 		  participation: "Desenvolvimento do HTML, CSS e Javascript."
+		  participationEn: "Development of HTML, CSS and Javascript."
 		  link: "http://www.trendi.com.br/"
 		,  
 		  # Max In Time
 		  name: "Max in Time"
 		  idName: "max-in-time"
-		  thumb: "/img/portfolio/site-max-in-time-thumb.jpg"
-		  imgModal: "/img/portfolio/site-max-in-time.jpg"
+		  thumb: "/assets/img/portfolio/site-max-in-time-thumb.jpg"
+		  imgModal: "/assets/img/portfolio/site-max-in-time.jpg"
 		  participation: "Desenvolvimento do HTML, CSS e Javascript."
+		  participationEn: "Development of HTML, CSS and Javascript."
 		  link: "http://www.maxintime.net.br/"
 		,  
 		  # BTG
 		  name: "BTG Pactual"
 		  idName: "btg"
-		  thumb: "/img/portfolio/site-btg-thumb.jpg"
-		  imgModal: "/img/portfolio/site-btg.jpg"
+		  thumb: "/assets/img/portfolio/site-btg-thumb.jpg"
+		  imgModal: "/assets/img/portfolio/site-btg.jpg"
 		  participation: "Desenvolvimento do HTML, CSS e Javascript."
+		  participationEn: "Development of HTML, CSS and Javascript."
 		  link: "https://www.btgpactual.com/home/home.aspx"
 		,  
 		  # Prime Jardim Europa
 		  name: "Prime Jardim Europa"
 		  idName: "prime-jardim"
-		  thumb: "/img/portfolio/site-norcon-rossi-thumb.jpg"
-		  imgModal: "/img/portfolio/site-prime-jardim.jpg"
+		  thumb: "/assets/img/portfolio/site-norcon-rossi-thumb.jpg"
+		  imgModal: "/assets/img/portfolio/site-prime-jardim.jpg"
 		  participation: "Desenvolvimento do HTML, CSS e Javascript."
+		  participationEn: "Development of HTML, CSS and Javascript."
 		  link: "http://www.primejardimeuropa.com.br/"
 		,  
 		  # Carrefour - Escolha Premiada
 		  name: "Escolha Premiada"
 		  idName: "carrefour-escolha"
-		  thumb: "/img/portfolio/site-carrefour-thumb.jpg"
-		  imgModal: "/img/portfolio/site-escolha-premiada.jpg"
+		  thumb: "/assets/img/portfolio/site-carrefour-thumb.jpg"
+		  imgModal: "/assets/img/portfolio/site-escolha-premiada.jpg"
 		  participation: "Desenvolvimento do HTML, CSS e Javascript."
+		  participationEn: "Development of HTML, CSS and Javascript."
 		  link: "http://www.escolhacartaocarrefour.com.br/"
 		,  
 		  # Decathlon - Clube
 		  name: "Clube Decathlon"
 		  idName: "decathlon-clube"
-		  thumb: "/img/portfolio/site-decathlon-thumb.jpg"
-		  imgModal: "/img/portfolio/site-decathlon-clube.jpg"
+		  thumb: "/assets/img/portfolio/site-decathlon-thumb.jpg"
+		  imgModal: "/assets/img/portfolio/site-decathlon-clube.jpg"
 		  participation: "Desenvolvimento do HTML e CSS."
+		  participationEn: "Development of HTML and CSS"
 		,  
 		  # Nutra e Viva
 		  name: "Nutra e Viva"
 		  idName: "nutra-viva"
-		  thumb: "/img/portfolio/site-nutra-viva-thumb.jpg"
-		  imgModal: "/img/portfolio/site-nutra-viva.jpg"
+		  thumb: "/assets/img/portfolio/site-nutra-viva-thumb.jpg"
+		  imgModal: "/assets/img/portfolio/site-nutra-viva.jpg"
 		  participation: "Desenvolvimento do HTML e CSS."
+		  participationEn: "Development of HTML and CSS"
 		  link: "http://www.nutraeviva.com.br/Site/"
 		,  
 		  # Fundação Estudar
 		  name: "Fundação Estudar"
 		  idName: "fundacao-estudar"
-		  thumb: "/img/portfolio/site-fundacao-estudar-thumb.jpg"
-		  imgModal: "/img/portfolio/site-fundacao-estudar.jpg"
+		  thumb: "/assets/img/portfolio/site-fundacao-estudar-thumb.jpg"
+		  imgModal: "/assets/img/portfolio/site-fundacao-estudar.jpg"
 		  participation: "Desenvolvimento do HTML e CSS. Participação no Javascript."
+		  participationEn: "Development of HTML, CSS and participation in Javascript."
 		  link: "http://www.estudar.org.br/"
 		,  
 		  # Decathlon - Esportes
 		  name: "Decathlon - Esportes"
 		  idName: "decathlon-esportes"
-		  thumb: "/img/portfolio/site-decathlon-thumb.jpg"
-		  imgModal: "/img/portfolio/site-decathlon-esportes.jpg"
+		  thumb: "/assets/img/portfolio/site-decathlon-thumb.jpg"
+		  imgModal: "/assets/img/portfolio/site-decathlon-esportes.jpg"
 		  participation: "Desenvolvimento do HTML e CSS."
+		  participationEn: "Development of HTML and CSS"
 		,  
 		  # Decathlon - Montanha
 		  name: "Decathlon - Montanha"
 		  idName: "decathlon-montanha"
-		  thumb: "/img/portfolio/site-decathlon-thumb.jpg"
-		  imgModal: "/img/portfolio/site-decathlon-montanha.jpg"
+		  thumb: "/assets/img/portfolio/site-decathlon-thumb.jpg"
+		  imgModal: "/assets/img/portfolio/site-decathlon-montanha.jpg"
 		  participation: "Desenvolvimento do HTML e CSS."
+		  participationEn: "Development of HTML and CSS"
 		,   
 		  # Carrefour - Compra Premiada
 		  name: "Compra Premiada"
 		  idName: "carrefour-compra"
-		  thumb: "/img/portfolio/site-carrefour-thumb.jpg"
-		  imgModal: "/img/portfolio/site-carrefour-compra.jpg"
+		  thumb: "/assets/img/portfolio/site-carrefour-thumb.jpg"
+		  imgModal: "/assets/img/portfolio/site-carrefour-compra.jpg"
 		  participation: "Desenvolvimento do HTML e CSS."
+		  participationEn: "Development of HTML and CSS"
 		  link: "http://www.carrefoursolucoes.com.br/50mil/"
 		,  
 		  # Decathlon - Camping
 		  name: "Decathlon - Camping"
 		  idName: "decathlon-camping"
-		  thumb: "/img/portfolio/site-decathlon-thumb.jpg"
-		  imgModal: "/img/portfolio/site-decathlon-camping.jpg"
+		  thumb: "/assets/img/portfolio/site-decathlon-thumb.jpg"
+		  imgModal: "/assets/img/portfolio/site-decathlon-camping.jpg"
 		  participation: "Desenvolvimento do HTML e CSS."
+		  participationEn: "Development of HTML and CSS"
 		,  
 		  # Prontocomprei
 		  name: "Prontocomprei"
 		  idName: "prontocomprei"
-		  thumb: "/img/portfolio/site-pronto-comprei-thumb.jpg"
-		  imgModal: "/img/portfolio/site-pronto-comprei.jpg"
+		  thumb: "/assets/img/portfolio/site-pronto-comprei-thumb.jpg"
+		  imgModal: "/assets/img/portfolio/site-pronto-comprei.jpg"
 		  participation: "Desenvolvimento do HTML e CSS."
+		  participationEn: "Development of HTML and CSS"
 		,  
 		  # Sensation
 		  name: "Skol Sensation"
 		  idName: "sensation"
-		  thumb: "/img/portfolio/site-skol-sensation-thumb.jpg"
-		  imgModal: "/img/portfolio/site-skol-sensation.jpg"
+		  thumb: "/assets/img/portfolio/site-skol-sensation-thumb.jpg"
+		  imgModal: "/assets/img/portfolio/site-skol-sensation.jpg"
 		  participation: "Desenvolvimento do HTML e CSS. Participação no Javascript."
+		  participationEn: "Development of HTML, CSS and participation in Javascript."
 		,  
 		  # Santander
 		  name: "Santander"
 		  idName: "santander"
-		  thumb: "/img/portfolio/site-santander-thumb.jpg"
-		  imgModal: "/img/portfolio/site-santander.jpg"
+		  thumb: "/assets/img/portfolio/site-santander-thumb.jpg"
+		  imgModal: "/assets/img/portfolio/site-santander.jpg"
 		  participation: "Desenvolvimento do HTML e CSS. Participação no Javascript."
+		  participationEn: "Development of HTML, CSS and participation in Javascript."
 	    ]
 
 		# -----------------------------
@@ -345,6 +376,11 @@ docpadConfig = {
 		getPreparedDescription: ->
 			# if we have a document description, then we should use that, otherwise use the site's description
 			@document.description or @site.description
+
+		# Get the prepared site/document description
+		getPreparedDescriptionEn: ->
+			# if we have a document description, then we should use that, otherwise use the site's description
+			@document.description_en or @site.description_en
 
 		# Get the prepared site/document keywords
 		getPreparedKeywords: ->

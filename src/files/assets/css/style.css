@@ -18,9 +18,6 @@
 * Because the compress by LESS will replace others changes in CSS.
 *
 */
-/*************************************************
-* Core - Bootstrap 
-*************************************************/
 .clearfix {
   *zoom: 1;
 }
@@ -48,9 +45,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/*************************************************
-* Reset - Bootstrap 
-*************************************************/
 article,
 aside,
 details,
@@ -220,9 +214,6 @@ textarea {
     page-break-after: avoid;
   }
 }
-/*************************************************
-* Scaffolding - Bootstrap 
-*************************************************/
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -246,9 +237,6 @@ a:focus {
 .show {
   display: block!important;
 }
-/*************************************************
-* Grid - Bootstrap 
-*************************************************/
 .row {
   margin-left: -20px;
   *zoom: 1;
@@ -527,9 +515,6 @@ a:focus {
 .row-fluid [class*="span"].pull-right {
   float: right;
 }
-/*************************************************
-* Layouts - Bootstrap 
-*************************************************/
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -558,9 +543,6 @@ a:focus {
 .container-fluid:after {
   clear: both;
 }
-/*************************************************
-* Navs - Bootstrap
-*************************************************/
 .nav {
   font-family: 'ostrich_sansblack';
   margin-left: 0;
@@ -570,6 +552,9 @@ a:focus {
 .nav > li > a {
   color: #000;
   display: block;
+}
+.nav > li > a small {
+  font-size: 40%;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -626,9 +611,6 @@ a:focus {
 .navbar .btn-navbar {
   display: none;
 }
-/*************************************************
-* Type - Bootstrap 
-*************************************************/
 @font-face {
   font-family: 'ostrich_sansblack';
   src: url('fonts/ostrich-black-webfont.eot');
@@ -924,9 +906,6 @@ address {
   font-style: normal;
   line-height: 22px;
 }
-/*************************************************
-* Icons Font - Framework 
-*************************************************/
 @font-face {
   font-family: "icomoon";
   src: url('icons/icomoon.eot');
@@ -968,9 +947,6 @@ address {
 .icon-close:before {
   content: "\e0cd";
 }
-/*************************************************
-* Animations - Bootstrap 
-*************************************************/
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
@@ -993,9 +969,17 @@ address {
 .collapse.in {
   height: auto;
 }
-/*************************************************
-* Tooltip - Bootstrap 
-*************************************************/
+.photo,
+.logo,
+.social-media li,
+.nav-list-item a,
+.box-mask *,
+.blog-item a {
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
 .tooltip {
   position: absolute;
   z-index: 1030;
@@ -1072,9 +1056,6 @@ address {
   border-width: 0 5px 5px;
   border-bottom-color: #876b25;
 }
-/*************************************************
-* Modal - Bootstrap
-*************************************************/
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -1165,9 +1146,6 @@ address {
     position: absolute;
   }
 }
-/*************************************************
-* Close - Bootstrap
-*************************************************/
 .close {
   float: right;
   font-size: 16px;
@@ -1196,26 +1174,6 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
-/************************************************* 
-* Project Details
-*************************************************/
-/*************************************************
-* Transition
-*************************************************/
-.photo,
-.logo,
-.social-media li,
-.nav-list-item a,
-.box-mask *,
-.blog-item a {
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-/*************************************************
-* Aside 
-*************************************************/
 .nav-side {
   background: #222222;
   background-color: #000000;
@@ -1290,33 +1248,25 @@ button.close {
 .logo a:hover {
   color: #999999;
 }
-/*************************************************
-* Fork
-*************************************************/
+.translate a {
+  color: #ffffff;
+  font-size: 14px;
+}
+.translate a:hover {
+  text-decoration: underline;
+}
 .fork {
   position: fixed;
   right: 0;
   top: 0;
   width: 150px;
 }
-/*************************************************
-* Adsense
-*************************************************/
-.box-adsense {
-  margin: 0 0 25px;
-}
-/*************************************************
-* Article - Wrap
-*************************************************/
-article {
+.main {
   padding: 20px 0;
   width: 90%;
   max-width: 700px;
   overflow: hidden;
 }
-/*************************************************
-* Projetos
-*************************************************/
 .projetos-box {
   margin-bottom: 15px;
 }
@@ -1359,9 +1309,6 @@ article {
 .home {
   margin: 22px 0 44px;
 }
-/*************************************************
-* Blog
-*************************************************/
 .blog-list {
   list-style: none;
   margin: 0;
@@ -1400,9 +1347,6 @@ article {
 .img-box {
   display: block;
 }
-/*************************************************
-* Assets
-*************************************************/
 .share-block {
   height: 20px;
 }
@@ -1446,9 +1390,6 @@ article {
   font-family: 'ostrich_sansblack';
   margin: 0;
 }
-/************************************************* 
-* Responsive Utilities
-*************************************************/
 @-ms-viewport {
   width: device-width;
 }
@@ -1507,10 +1448,6 @@ article {
     display: none !important;
   }
 }
-/************************************************* 
-* Media Queries
-*************************************************/
-/* Large desktops */
 @media (min-width: 1200px) {
   .row {
     margin-left: -30px;
@@ -1860,7 +1797,6 @@ article {
     margin-left: 0;
   }
 }
-/* Tablets to regular desktops */
 @media (min-width: 768px) and (max-width: 979px) {
   .row {
     margin-left: -20px;
@@ -2207,7 +2143,6 @@ article {
     display: none;
   }
 }
-/* Phones to portrait tablets and narrow desktops */
 @media (max-width: 767px) {
   body {
     padding-left: 20px;

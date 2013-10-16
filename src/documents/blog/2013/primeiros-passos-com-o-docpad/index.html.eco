@@ -28,7 +28,7 @@ pathBlog: "../../"
 	<li>
 		<p><b>Botão Direito > Propriedades > Segurança > Editar > Usuários > Marque a caixa "Controle total"</b></p>
 		<div class="img-box">
-			<img src="/img/blog/etc/propriedades-nodejs.png" alt="Propriedades do NodeJS">
+			<img src="/assets/img/blog/etc/propriedades-nodejs.png" alt="Propriedades do NodeJS">
 		</div>	
 	</li>
 </ol>
@@ -39,7 +39,7 @@ pathBlog: "../../"
 	<li>
 		<p>Abra o "Node.js command prompt" e terá essa tela:</p>
 		<div class="img-box">
-			<img src="/img/blog/etc/nodejs.png" alt="NodeJS">
+			<img src="/assets/img/blog/etc/nodejs.png" alt="NodeJS">
 		</div>	
 	</li>
 	<li>
@@ -73,7 +73,7 @@ pathBlog: "../../"
 	<li>
 		<p>Escolha o esqueleto que deseja usar</p>
 		<div class="img-box">
-			<img src="/img/blog/etc/docpad.png" alt="Docpad">
+			<img src="/assets/img/blog/etc/docpad.png" alt="Docpad">
 		</div>	
 	</li>
 </ol>

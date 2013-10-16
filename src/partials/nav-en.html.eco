@@ -9,9 +9,9 @@
 			<nav class="nav-collapse collapse">
 				<hr>
 				<ul class="nav nav-pills nav-stacked" role="navigation">
-					 <% for section in @sections : %>
+					 <% for section in @sectionsEn : %>
 				      <li class="nav-list-item">
-				        <a href="<%= @getRelativeFile() %><%= section %>/"><%= @labels[section] %></a>
+				        <a href="<%= @getRelativeFile() %><%= section %>/"><%= @labelsEn[section] %></a>
 				      </li>
 				    <% end %>
 				</ul>
@@ -27,8 +27,9 @@
 				<hr>
 				<!-- TRANSLATE -->
 				<ul class="translate inline">
-					<li><a href="/en/">See in english</a></li>
+					<li><a href="/">Ver em português</a></li>
 				</ul>	
 				<!-- END OF TRANSLATE -->
+
 			</nav>	
 			<!-- END NAVIGATION -->
