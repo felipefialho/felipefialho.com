@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><%= @site.title %></title>
+    <link href="<%= @site.url %>/atom.xml" rel="self"/>
+    <link href="<%= @site.url %>"/> 
+    <id><%= @site.url %></id>
+    <author>
+        <name><%= @site.author %></name>
+        <email><%= @site.email %></email>
+    </author>
+
+    <% for posts in @posts : %> 
+    <entry>
+        <title><%= posts.name %></title>
+        <link href="<%= @site.url %><%= posts.year %>/<%= posts.path %>/"/>
+        <updated><%= posts.date %></updated>
+        <id><%= posts.description %></id>
+        <content type="html"><![CDATA[<%= posts.year %>/<%= posts.path %>/]]></content>
+    </entry>
+    <% end %>
+</feed>

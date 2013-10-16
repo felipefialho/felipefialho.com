@@ -1,4 +1,7 @@
 # The DocPad Configuration File
+
+cheerio = require('cheerio')
+
 # It is simply a CoffeeScript Object which is parsed by CSON
 docpadConfig = {
 
@@ -12,13 +15,16 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://wwww.felipefialho.com"
+			url: "http://www.felipefialho.com"
 
 			# The default title of our website
 			title: "Luiz Felipe Tartarotti Fialho"
 
 			# The default author of our website
 			author: "Luiz Felipe Tartarotti Fialho"
+
+			# The default title of our website
+			email: "luizfelipe.tf.13@gmail.com"
 
 			# The website description (for SEO)
 			description: """
@@ -44,30 +50,26 @@ docpadConfig = {
 				'/assets/js/scripts.min.js'
 			]
 
-			# Write After
-			# Used to minify our assets with grunt
-			writeAfter: (opts,next) ->
-			    # Prepare
-			    balUtil = require('bal-util')
-			    docpad = @docpad
-			    rootPath = docpad.config.rootPath
+			# Write After 
+			writeAfter: (opts,next) -> 
+  
+			# Fix Links 
+            fixLinks: (content) ->
+                baseUrl = @site.url
+                regex = /^(http|https|ftp|mailto):/
 
-			    # Perform the grunt `min` task
-			    # https://github.com/gruntjs/grunt/blob/0.3-stable/docs/task_min.md
-			    command = ["#{rootPath}/node_modules/.bin/grunt", 'min']
-
-			    # Execute
-			    balUtil.spawn(command, {cwd:rootPath,output:true}, next)
-
-			    # Chain
-			    @
-
-		# -----------------------------
-		# Collection
-	    collections:
-	        pages: ->
-	            @getCollection("html").findAllLive({isPage:true})
-		
+                $ = cheerio.load(content)
+                $('img').each ->
+                        $img = $(@)
+                        src = $img.attr('src')
+                        $img.attr('src', baseUrl + src) unless regex.test(src)
+                $('a').each ->
+                        $a = $(@)
+                        href = $a.attr('href')
+                        $a.attr('href', baseUrl + href) unless regex.test(href)
+                $.html()
+ 
+		# ----------------------------- 
 		# Active sections on the website
 		# to deactivate comment out with '#'
 		# you can also change order here and it will reflect on page

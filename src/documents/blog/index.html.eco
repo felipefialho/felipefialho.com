@@ -8,7 +8,7 @@ path: "../../"
 
 <div class="blog">
 	<ul class="blog-list">
- 	<% for posts in @posts : %>
+ 	<% for posts in @posts : %> 
       <li class="blog-item">
         <a href="<%= posts.year %>/<%= posts.path %>/">
 	      	<span class="date"><%= posts.date %></span>
