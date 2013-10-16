@@ -52,24 +52,8 @@ docpadConfig = {
 
 			# Write After 
 			writeAfter: (opts,next) -> 
-  
-			# Fix Links 
-            fixLinks: (content) ->
-                baseUrl = @site.url
-                regex = /^(http|https|ftp|mailto):/
-
-                $ = cheerio.load(content)
-                $('img').each ->
-                        $img = $(@)
-                        src = $img.attr('src')
-                        $img.attr('src', baseUrl + src) unless regex.test(src)
-                $('a').each ->
-                        $a = $(@)
-                        href = $a.attr('href')
-                        $a.attr('href', baseUrl + href) unless regex.test(href)
-                $.html()
- 
-		# ----------------------------- 
+   
+		# -----------------------------   
 		# Active sections on the website
 		# to deactivate comment out with '#'
 		# you can also change order here and it will reflect on page
