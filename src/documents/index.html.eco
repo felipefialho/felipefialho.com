@@ -7,7 +7,7 @@ layout: "default"
 
 	<p class="lead">Olá amigos, tudo bem?</p>
 
-	<p>Sou <em itemprop="name">Luiz Felipe Tartarotti Fialho</em>, tenho 23 anos e trabalho como <strong itemprop="title">Front-End Developer</strong> desde 2009.</p>
+	<p>Sou <em itemprop="name">Luiz Felipe Tartarotti Fialho</em>, tenho 23 anos e trabalho como <strong itemprop="title">Desenvolvedor Front-End</strong> desde 2009.</p>
 
 	<p>Atualmente trabalho na <a href="http://www.trendi.com.br/" itemprop="affiliation">Trend-i</a> (desde 2011). Participei de vários projetos legais, entre eles criei um <a href="http://www.trendi.com.br/framework/login.php">Framework</a> bastante robusto usando o <a href="http://twitter.github.io/bootstrap/index.html">Bootstrap</a> como base.</p>
 
