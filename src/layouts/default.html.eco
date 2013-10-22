@@ -59,7 +59,6 @@
 			<article class="main" role="main">
 				<%- @content %>
 			</article>
-			 
 		</section>
 		<a class="fork" href="https://github.com/LFeh/Website"><img alt="Fork me on GitHub" src="/assets/img/default/fork.png"></a>
 	</div>	

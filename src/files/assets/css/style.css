@@ -947,6 +947,9 @@ address {
 .icon-close:before {
   content: "\e0cd";
 }
+.icon-feed:before {
+  content: "\e128";
+}
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
