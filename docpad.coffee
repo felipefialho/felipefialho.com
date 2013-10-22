@@ -1,7 +1,5 @@
 # The DocPad Configuration File
-
-cheerio = require('cheerio')
-
+ 
 # It is simply a CoffeeScript Object which is parsed by CSON
 docpadConfig = {
 
@@ -33,7 +31,7 @@ docpadConfig = {
 
 			# The website description (for SEO) - English
 			description_en: """
-				Personal Website with focused in Web Development, Front-End Enginner and personal projects.
+				Personal Website with focused in Web Development, Front-End Developers and personal projects.
 				"""
  
 			# The website's styles
