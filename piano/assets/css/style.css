@@ -45,7 +45,7 @@ p{margin-bottom:15px;}
 .wrap{position:relative;}
 .container{margin:0 auto;padding:20px;width:980px;}
 hr{border-top:1px solid #ddd;margin:20px 0;}
-.fork{position:absolute;right:0;top:0;width:15%;}
+.fork{position:absolute;right:0;top:0;width:10%;}
 .share{height:20px;}
 .social-media{list-style:none;margin:0;}.social-media li{display:inline-block;margin:0 5px;}
 .social-media a{transition:color .1s linear;color:#222;font-size:20px;}.social-media a:hover{color:#777;}
