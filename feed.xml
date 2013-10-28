@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Luiz Felipe Tartarotti Fialho</title>
+    <link href="http://www.felipefialho.com/feed.xml" rel="self"/>
+    <link href="http://www.felipefialho.com"/> 
+    <id>http://www.felipefialho.com</id>
+    <author>
+        <name>Luiz Felipe Tartarotti Fialho</name>
+        <email>luizfelipe.tf.13@gmail.com</email>
+    </author>
+
+    
+    <entry>
+        <title>Tutorial - Tabela Responsiva</title>
+        <link href="http://www.felipefialho.com/blog/2013/tutorial-tabela-responsiva/"/>
+        <updated>14/10/2013</updated> 
+        <content type="html">Em layouts responsivos, um dos componentes que sempre me incomodava eram as tabelas. Acredito que isso também ocorra com outros desenvolvedores....</content>
+    </entry>
+    
+    <entry>
+        <title>Tutorial - Botão de Progresso</title>
+        <link href="http://www.felipefialho.com/blog/2013/tutorial-botao-de-progresso/"/>
+        <updated>02/10/2013</updated> 
+        <content type="html">Vou mostrar mais um tutorial simples... o desenvolvimento de um botão de progresso, que pode fornecer um feedback importante para o usuário.</content>
+    </entry>
+    
+    <entry>
+        <title>Tutorial - Caixa de compartilhar em Puro CSS</title>
+        <link href="http://www.felipefialho.com/blog/2013/tutorial-caixa-de-compartilhar-em-puro-css/"/>
+        <updated>17/09/2013</updated> 
+        <content type="html">Nunca escrevi um tutorial em CSS por aqui, e começo mostrando como desenvolvi uma caixa de compartilhamento que pode ser bastante útil.</content>
+    </entry>
+    
+    <entry>
+        <title>O grupo Grunt Brasil no Facebook</title>
+        <link href="http://www.felipefialho.com/blog/2013/o-grupo-grunt-brasil-no-facebook/"/>
+        <updated>12/08/2013</updated> 
+        <content type="html">Estar em um grupo para discutir assuntos de interesse mútuo é sempre muito legal e contribui MUITO para o desenvolvimento, por essa razão o grupo Grunt Brasil no Facebook foi criado.</content>
+    </entry>
+    
+    <entry>
+        <title>Um conto sobre componentização e quebra de paradigmas</title>
+        <link href="http://www.felipefialho.com/blog/2013/um-conto-sobre-componentizacao-e-quebra-de-paradigmas/"/>
+        <updated>29/07/2013</updated> 
+        <content type="html">Melhorar processos é parte essencial do nosso trabalho, mas em algum momento percebemos que só melhorar pode não ser o suficiente, as vezes é preciso quebrar paradigmas.</content>
+    </entry>
+    
+    <entry>
+        <title>Dica: Tire férias</title>
+        <link href="http://www.felipefialho.com/blog/2013/dica-tire-ferias/"/>
+        <updated>25/07/2013</updated> 
+        <content type="html">Os amigos que me acompanham devem ter observado que sumi de repente. E tenho um motivo bem nobre para isso: Estava de férias.</content>
+    </entry>
+    
+    <entry>
+        <title>Sobre organização de componentes com pré-processadores</title>
+        <link href="http://www.felipefialho.com/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores/"/>
+        <updated>18/06/2013</updated> 
+        <content type="html">No último post dei uma passada pelo Grunt e mostrei como ele pode ajudar a otimizar suas tarefas. Se você usa pré-processadores a organização dos componentes é essencial.</content>
+    </entry>
+    
+    <entry>
+        <title>Otimize suas tarefas com o Grunt!</title>
+        <link href="http://www.felipefialho.com/blog/2013/grunt-voce-deveria-estar-usando/"/>
+        <updated>04/06/2013</updated> 
+        <content type="html">Pense nas atividades que você faz (ou deveria fazer) no momento que vai colocar o projeto em produção. Provavelmente você minifica e concatena o CSS e o javascript. Talvez também minifique o HTML e otimiza as imagens...</content>
+    </entry>
+    
+    <entry>
+        <title>Primeiros passos com o Docpad</title>
+        <link href="http://www.felipefialho.com/blog/2013/primeiros-passos-com-o-docpad/"/>
+        <updated>21/05/2013</updated> 
+        <content type="html">No último post dei uma breve explicação sobre geradores estáticos. Algumas pessoas me pediram para fazer um tutorial básico do Docpad.</content>
+    </entry>
+    
+    <entry>
+        <title>Geradores estáticos - Breve explicação</title>
+        <link href="http://www.felipefialho.com/blog/2013/geradores-estaticos-breve-explicacao/"/>
+        <updated>06/05/2013</updated> 
+        <content type="html">Quando escutamos falar em geradores estáticos pela primeira vez normalmente não compreendemos qual vantagem eles poderiam ter em relação a sistemas como o Wordpress.</content>
+    </entry>
+    
+    <entry>
+        <title>O que um bom desenvolvedor Front-End precisa saber?</title>
+        <link href="http://www.felipefialho.com/blog/2013/o-que-um-bom-desenvolvedor-front-end-precisa-saber/"/>
+        <updated>29/04/2013</updated> 
+        <content type="html">Não tive formação como programador, sempre fui focado no HTML e CSS, apesar de claro, saber fazer integração e trabalhar no ambiente Back-End, além de me virar com JQuery.</content>
+    </entry>
+    
+    <entry>
+        <title>Desenvolvedores Front-End que você deveria acompanhar</title>
+        <link href="http://www.felipefialho.com/blog/2013/desenvolvedores-front-end-que-voce-deveria-acompanhar/"/>
+        <updated>26/04/2013</updated> 
+        <content type="html">Em 2009, quando iniciei na carreira de desenvolvedor, a profissão não tinha nem nome, era o &quot;menino do HTML&quot; ou &quot;o rapaz que corta o layout&quot;.</content>
+    </entry>
+    
+    
+</feed>

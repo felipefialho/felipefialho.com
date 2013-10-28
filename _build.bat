@@ -1,1 +1,0 @@
-docpad generate & grunt build
