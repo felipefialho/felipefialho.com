@@ -11,10 +11,24 @@
 
     
     <entry>
+        <title>Retrospectiva 2013</title>
+        <link href="http://www.felipefialho.com/blog/2013/retrospectiva-2013/"/>
+        <updated>17/12/2013</updated> 
+        <content type="html">Me deparei com um problema que alguns de vocês já devem ter passado, e posto aqui a resolução dele: A limitação do uso de &quot;height: auto&quot; em CSS Transitions.</content>
+    </entry>
+    
+    <entry>
+        <title>Usando height com CSS Transitions</title>
+        <link href="http://www.felipefialho.com/blog/2013/usando-height-com-css-transitions/"/>
+        <updated>18/11/2013</updated> 
+        <content type="html">Me deparei com um problema que alguns de vocês já devem ter passado, e posto aqui a resolução dele: A limitação do uso de &quot;height: auto&quot; em CSS Transitions.</content>
+    </entry>
+    
+    <entry>
         <title>Tutorial - Tabela Responsiva</title>
         <link href="http://www.felipefialho.com/blog/2013/tutorial-tabela-responsiva/"/>
         <updated>14/10/2013</updated> 
-        <content type="html">Em layouts responsivos, um dos componentes que sempre me incomodava eram as tabelas. Acredito que isso também ocorra com outros desenvolvedores....</content>
+        <content type="html">Em layouts responsivos, um dos componentes que sempre me incomodava eram as tabelas. Acredito que isso também ocorra com outros desenvolvedores...</content>
     </entry>
     
     <entry>
