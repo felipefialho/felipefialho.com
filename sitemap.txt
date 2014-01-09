@@ -13,6 +13,7 @@ http://www.felipefialho.com/blog\2013\tutorial-caixa-de-compartilhar-em-puro-css
 http://www.felipefialho.com/blog\2013\tutorial-tabela-responsiva/index.html
 http://www.felipefialho.com/blog\2013\um-conto-sobre-componentizacao-e-quebra-de-paradigmas/index.html
 http://www.felipefialho.com/blog\2013\usando-height-com-css-transitions/index.html
+http://www.felipefialho.com/blog\2014\utilizando-o-bootstrap-de-forma-consistente/index.html
 http://www.felipefialho.com/en/index.html
 http://www.felipefialho.com/en\portfolio/index.html
 http://www.felipefialho.com/en\projects/index.html
