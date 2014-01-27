@@ -1390,7 +1390,7 @@ button.close {
 }
 .box-tit h4 {
   color: #ffffff;
-  font-family: 'ostrich_sansblack';
+  font-size: 14px;
   margin: 0;
 }
 @-ms-viewport {
