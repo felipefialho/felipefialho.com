@@ -546,7 +546,6 @@ a:focus {
 .nav {
   font-family: 'ostrich_sansblack';
   margin-left: 0;
-  margin-bottom: 22px;
   list-style: none;
 }
 .nav > li > a {
@@ -560,30 +559,9 @@ a:focus {
 .nav > li > a:focus {
   text-decoration: none;
 }
-.nav-pills {
-  *zoom: 1;
-}
-.nav-pills:before,
-.nav-pills:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.nav-pills:after {
-  clear: both;
-}
-.nav-pills > li {
-  float: left;
-}
 .nav-pills > li > a {
-  padding-right: 12px;
-  padding-left: 12px;
-  margin-right: 2px;
-  line-height: 14px;
-}
-.nav-pills > li > a {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 9px;
+  padding-bottom: 7px;
   margin-top: 2px;
   margin-bottom: 2px;
   -webkit-border-radius: 5px;
@@ -595,18 +573,6 @@ a:focus {
 .nav-pills > .active > a:focus {
   color: #ffffff;
   background-color: #876b25;
-}
-.nav-stacked > li {
-  float: none;
-}
-.nav-stacked > li > a {
-  margin-right: 0;
-}
-.nav-pills.nav-stacked > li > a {
-  margin-bottom: 3px;
-}
-.nav-pills.nav-stacked > li:last-child > a {
-  margin-bottom: 1px;
 }
 .navbar .btn-navbar {
   display: none;
@@ -837,74 +803,21 @@ code {
   border-radius: 3px;
   background: #f8f3e6;
   display: block;
+  margin-bottom: 11px;
   padding: 10px;
 }
+code pre {
+  margin: 0;
+}
 p code {
+  border: #eeeeee solid 1px;
   display: inline;
   padding: 2px;
 }
 hr {
   margin: 22px 0;
   border: 0;
-  border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #ffffff;
-}
-abbr[title],
-abbr[data-original-title] {
-  cursor: help;
-  border-bottom: 1px dotted #999999;
-}
-abbr.initialism {
-  font-size: 90%;
-  text-transform: uppercase;
-}
-blockquote {
-  padding: 0 0 0 15px;
-  margin: 0 0 22px;
-  border-left: 5px solid #eeeeee;
-}
-blockquote p {
-  margin-bottom: 0;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 1.25;
-}
-blockquote small {
-  display: block;
-  line-height: 22px;
-  color: #999999;
-}
-blockquote small:before {
-  content: '\2014 \00A0';
-}
-blockquote.pull-right {
-  float: right;
-  padding-right: 15px;
-  padding-left: 0;
-  border-right: 5px solid #eeeeee;
-  border-left: 0;
-}
-blockquote.pull-right p,
-blockquote.pull-right small {
-  text-align: right;
-}
-blockquote.pull-right small:before {
-  content: '';
-}
-blockquote.pull-right small:after {
-  content: '\00A0 \2014';
-}
-q:before,
-q:after,
-blockquote:before,
-blockquote:after {
-  content: "";
-}
-address {
-  display: block;
-  margin-bottom: 22px;
-  font-style: normal;
-  line-height: 22px;
 }
 @font-face {
   font-family: "icomoon";

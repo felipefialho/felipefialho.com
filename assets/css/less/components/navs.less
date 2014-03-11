@@ -8,8 +8,7 @@
 
 .nav {
   font-family: 'ostrich_sansblack';
-  margin-left: 0;
-  margin-bottom: @baseLineHeight;
+  margin-left: 0; 
   list-style: none;
 }
 
@@ -27,29 +26,12 @@
 }
 
 // PILLS
-// -------------
-
-// Common styles
-.nav-pills {
-  .clearfix();
-}
-.nav-pills > li {
-  float: left;
-}
-.nav-pills > li > a {
-  padding-right: 12px;
-  padding-left: 12px;
-  margin-right: 2px;
-  line-height: 14px; // keeps the overall height an even number
-}
- 
-// PILLS
 // -----
 
 // Links rendered as pills
 .nav-pills > li > a {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 9px;
+  padding-bottom: 7px;
   margin-top: 2px;
   margin-bottom: 2px;
   .border-radius(5px);
@@ -62,26 +44,7 @@
   color: @white;
   background-color: @linkColor;
 }
-
-// STACKED NAV
-// -----------
-
-// Stacked tabs and pills
-.nav-stacked > li {
-  float: none;
-}
-.nav-stacked > li > a {
-  margin-right: 0; // no need for the gap between nav items
-}
  
-// Pills
-.nav-pills.nav-stacked > li > a {
-  margin-bottom: 3px;
-}
-.nav-pills.nav-stacked > li:last-child > a {
-  margin-bottom: 1px; // decrease margin to match sizing of stacked tabs
-}
-
 // Btn navbar
 .navbar .btn-navbar {
   display: none;
