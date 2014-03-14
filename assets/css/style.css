@@ -104,7 +104,7 @@ cite{font-style:normal;}
 .text-left{text-align:left;}
 .text-right{text-align:right;}
 .text-center{text-align:center;}
-h1,h2,h3,h4,h5,h6{margin:44px 0 14.666666666666666px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:bold;line-height:22px;color:#333333;text-rendering:optimizelegibility;}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{font-weight:normal;line-height:1;color:#999999;}
+h1,h2,h3,h4,h5,h6{margin:44px 0 14.666666666666666px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:normal;line-height:22px;color:#333333;text-rendering:optimizelegibility;}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{font-weight:normal;line-height:1;color:#999999;}
 h1 a{color:#333333;}
 h1,h2,h3{line-height:44px;}
 h1{font-size:44px;}

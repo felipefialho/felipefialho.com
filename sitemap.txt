@@ -1,5 +1,4 @@
 http://www.felipefialho.com/blog/index.html
-http://www.felipefialho.com/blog\2013\desenvolvedores-front-end-que-voce-deveria-acompanhar/index.html
 http://www.felipefialho.com/blog\2013\dica-tire-ferias/index.html
 http://www.felipefialho.com/blog\2013\geradores-estaticos-breve-explicacao/index.html
 http://www.felipefialho.com/blog\2013\grunt-voce-deveria-estar-usando/index.html
