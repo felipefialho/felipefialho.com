@@ -1,8 +1,6 @@
 http://www.felipefialho.com/blog/index.html
-http://www.felipefialho.com/blog\2013\dica-tire-ferias/index.html
 http://www.felipefialho.com/blog\2013\geradores-estaticos-breve-explicacao/index.html
 http://www.felipefialho.com/blog\2013\grunt-voce-deveria-estar-usando/index.html
-http://www.felipefialho.com/blog\2013\o-grupo-grunt-brasil-no-facebook/index.html
 http://www.felipefialho.com/blog\2013\o-que-um-bom-desenvolvedor-front-end-precisa-saber/index.html
 http://www.felipefialho.com/blog\2013\primeiros-passos-com-o-docpad/index.html
 http://www.felipefialho.com/blog\2013\retrospectiva-2013/index.html
