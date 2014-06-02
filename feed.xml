@@ -11,7 +11,7 @@
 
     
     <entry>
-        <title>Não use Placeholder no lugar da Label!</title>
+        <title>Não use Placeholder no lugar da Label</title>
         <link href="http://www.felipefialho.com/blog/2014/nao-use-placeholder-no-lugar-da-label/"/>
         <updated>02/06/2014</updated> 
         <content type="html">O placeholder ajuda muito com informações complementares do campo de formulário, mas não deveria ser utilizado para substituir o label.&lt;/code&gt;.</content>
