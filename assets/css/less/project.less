@@ -1,0 +1,248 @@
+// Project
+// Used for customize others itens
+// --------------------------------------------------
+
+// Aside
+// --------------------------------------------------
+
+.nav-side{
+	background: @grayDarker;
+	#gradient > .horizontal(@startColor: @grayDark, @endColor: @black);
+	.box-shadow(1px 1px 2px rgba(0, 0, 0, 0.6));
+	position: fixed;
+	left: 0; top: 0;
+	height: 100%;
+	text-align: center;
+	width: 15%;
+	padding: 20px;
+	h4{
+		color: @grayLight;
+		font-family: 'ostrich_sansblack';
+		margin: 0;
+	}
+	.nav-list-item{
+		padding: 5px 0;
+		a{
+			color: #fff;
+			font-size: 30px;
+			&:hover{
+				color: @grayLight;
+			}
+			&.active{
+  				background-color: @grayLighter;
+  				color: #000;
+  			}
+		}
+	}
+	&:hover{
+		.photo{
+			.opacity(100);
+		}
+	}
+}
+
+.logo{
+	font-size: 40px;
+	font-family: 'ostrich_sansblack';
+	margin: 15px 0 0;
+	small{
+		display: block;
+		margin: 5px 0 0;
+		font-size: 16px;
+	}
+	a{
+		color: @white;
+	}
+}
+
+.photo{
+	.opacity(40);
+	img{
+		max-width: 100px;
+	}
+}
+
+.social-media{
+	font-size: 20px;
+	a{
+		color: @white;
+	}
+}
+
+.social-media a,
+.logo a{
+	&:hover{
+		color: @grayLight;
+	}
+}
+
+.translate{
+	a{
+		color: @white;
+		font-size: 14px;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+
+
+// Fork
+// --------------------------------------------------
+
+.fork{
+	position: fixed; right: 0; top: 0;
+	width: 150px;
+}
+
+// Main
+// --------------------------------------------------
+
+.main{
+	padding: 20px 0;
+	width: 90%;
+	max-width: 700px;
+	overflow: hidden;
+}
+
+// Projects
+// --------------------------------------------------
+
+.projetos-box{
+	margin-bottom: 15px;
+	&:nth-child(3n+1){
+		clear: both;
+		margin-left: 0!important;
+	}
+	.box-info{
+		background: @black;
+		border-top: 1px solid @white;
+		color: @white;
+		font-size: 12px;
+		height: 160px;
+		padding: 10px;
+		position: relative;
+		&.box-info-portfolio{
+			height: 105px;
+		}
+	}
+	.box-link{
+		border-top: 1px solid @white;
+		padding: 10px 0 0;
+		text-align: center;
+		position: absolute; left: 0; bottom: 0;
+		width: 100%;
+		ul{
+			margin: 0;
+		}
+		a{
+			color: @white;
+			font-size: 25px;
+			&:hover{
+				.opacity(60);
+			}
+		}
+	}
+}
+
+.home{
+	margin: @baseLineHeight 0 (@baseLineHeight*2);
+}
+
+
+// Blog
+// --------------------------------------------------
+
+.blog-list{
+	list-style: none;
+	margin: 0;
+}
+
+.blog-item{
+	display: block;
+	margin: 0 0 35px;
+	a{
+		background: #fdfdfd;
+		.box-shadow(0 1px 2px rgba(0,0,0,0.2));
+		color: @gray;
+		display: block;
+		padding: 10px;
+		&:hover{
+			.box-shadow(0 1px 3px rgba(0,0,0,0.6));
+		}
+	}
+}
+
+.post-container{
+  	border-top: 1px solid @grayLighter;
+  	border-bottom: 1px solid @grayLighter;
+	margin: 20px 0;
+	padding: 20px 0;
+}
+
+.post{
+	clear: both;
+	margin: 30px 0;
+	li{
+		margin: 0 0 20px;
+	}
+}
+
+.img-box{
+	display: block;
+
+}
+
+// Assets
+// --------------------------------------------------
+
+.share-block{
+	height: 20px;
+}
+
+.date{
+	color: @grayLight;
+	display: block;
+	font-size: 14px;
+}
+
+.tit{
+	font-family: @sansFontFamily;
+}
+
+.description{
+	font-size: 14px;
+}
+
+.author{
+	color: @gray;
+	display: block;
+	font-size: 14px;
+}
+
+.big-icon{
+	font-size: 40px;
+}
+
+.box-mask:hover *{
+	.opacity(80);
+}
+
+.box-img{
+	background: @white;
+	border: 2px solid @black;
+	overflow: hidden;
+	max-height: 300px;
+	text-align: center;
+}
+
+.box-tit{
+	background: @black;
+	padding: 5px;
+	text-align: center;
+	h4{
+		color: @white;
+		font-size: 14px;
+		margin: 0;
+	}
+}
