@@ -14,6 +14,7 @@ http://www.felipefialho.com/blog\2014\5-anos-atras-eu-me-tornava-o-menino-do-htm
 http://www.felipefialho.com/blog\2014\css-modular-com-mobile-first/index.html
 http://www.felipefialho.com/blog\2014\e-possivel-utilizar-componentes-desenvolvidos-apenas-com-css/index.html
 http://www.felipefialho.com/blog\2014\estamos-realmente-interessados-em-formar-bons-profissionais/index.html
+http://www.felipefialho.com/blog\2014\falando-em-organizacao-parte-1/index.html
 http://www.felipefialho.com/blog\2014\nao-use-placeholder-no-lugar-da-label/index.html
 http://www.felipefialho.com/blog\2014\sobre-data-atributes-e-javascript/index.html
 http://www.felipefialho.com/blog\2014\utilizando-o-bootstrap-de-forma-consistente/index.html
