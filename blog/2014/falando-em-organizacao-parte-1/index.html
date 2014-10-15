@@ -189,6 +189,10 @@
 
 <p>Também coloco o <a href="https://github.com/gruntjs/grunt-contrib-watch">Watch</a> para observar meu Gruntfile, portanto toda vez que adiciono ou removo alguma dependência no array do <a href="https://github.com/gruntjs/grunt-contrib-concat">Concat</a> e salvo o Gruntfile, é gerado um novo arquivo com as dependências atualizadas.</p>
 
+<p>Esse é um ponto importante. O arquivo de 'vendor' com as dependências concatenadas não vai ser gerado o tempo todo, isso causaria sérios problemas de lentidão no Grunt. Ele só vai ser criado quando a gente adicionar (ou modificar/remover) um novo plugin no array do Concat, pois ao salvar o Gruntfile, tenho uma tarefa configurada no Watch para iniciar a tarefa de criação do 'vendor.js'.</p>
+
+<p>O scripts que modificamos o tempo todo vão ser concatenados com esse arquivo de 'vendor.js' e em seguida minificado através do Uglify. Isso aumenta consideravelmente o desempenho do Grunt no tempo para gerar o novo arquivo.</p>
+
 <h3>O polêmico Boostrap</h3>
 
 <p>O Bootstrap está cada vez mais mamilos e no centro de discussões. Continuo achando que se <a href="http://www.felipefialho.com/blog/2014/utilizando-o-bootstrap-de-forma-consistente/">utilizado de forma consciente</a>, pode ajudar bastante, especialmente no início do desenvolvimento.</p>
