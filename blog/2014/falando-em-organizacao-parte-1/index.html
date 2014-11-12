@@ -180,7 +180,7 @@
   <li>O plugin <a href="https://github.com/gruntjs/grunt-contrib-concat">Concat</a> é usado para concatenar os scripts de dependencias externas, afinal, a ideia é que eles fiquem inalterados.</li>
   <li>Esse arquivo concatenado é injetado dentro da pasta de desenvolvimento do JavaScript (ex, <code>assets/js</code>) e não deve ser alterado.</li>
   <li>Os scripts de desenvolvimento que estão dentro desta pasta podem ser alterados a qualquer momento. Portanto observo através do <a href="https://github.com/gruntjs/grunt-contrib-watch">Watch</a> qualquer alteração feita neles.</li>
-  <li>E então todos os scripts serão minificados em tempo real pelo <a href="https://github.com/gruntjs/grunt-contrib-uglify">Uglify</a></li>
+  <li>E então todos os scripts serão minificados em tempo real pelo <a href="https://github.com/gruntjs/grunt-contrib-uglify">Uglify</a>,</li>
 </ul>
 
 <h4>Integração com o Bower</h4>
@@ -192,6 +192,58 @@
 <p>Esse é um ponto importante. O arquivo de 'vendor' com as dependências concatenadas não vai ser gerado o tempo todo, isso causaria sérios problemas de lentidão no Grunt. Ele só vai ser criado quando a gente adicionar (ou modificar/remover) um novo plugin no array do Concat, pois ao salvar o Gruntfile, tenho uma tarefa configurada no Watch para iniciar a tarefa de criação do 'vendor.js'.</p>
 
 <p>O scripts que modificamos o tempo todo vão ser concatenados com esse arquivo de 'vendor.js' e em seguida minificado através do Uglify. Isso aumenta consideravelmente o desempenho do Grunt no tempo para gerar o novo arquivo.</p>
+
+<h4>Exemplo de uso:</h4>
+
+<p><pre><code>
+  // Task: Concat
+  // ---------------------------------
+  concat: {
+    vendor: {
+      src: [
+        // Vendor Plugins
+        'bower_components/jquery/dist/jquery.min.js',    // jQuery
+        'bower_components/bootstrap/js/transition.js',   // Bootstrap - Animation
+        'bower_components/bootstrap/js/alert.js',        // Bootstrap - Alert
+        'bower_components/bootstrap/js/carousel.js',     // Bootstrap - Carousel
+        'bower_components/bootstrap/js/tab.js',          // Bootstrap - Tabs
+        'bower_components/bootstrap/js/modal.js',        // Bootstrap - Modal
+      ],
+      dest: 'dev/assets/js/_vendor.js'
+    }
+  },
+
+  // Task: Uglify
+  // ---------------------------------
+  uglify: {
+    dev: {
+      files : {
+        'public/assets/js/scripts.min.js': [
+        'dev/assets/js/_vendor.js',    // Vendor Scripts
+        'dev/assets/js/functions.js',  // Functions
+        'dev/assets/js/main.js'        // General
+        ]
+      }
+    }
+  },
+
+  // Task: Watch
+  // ---------------------------------
+  watch: {
+    build: {
+      files: [
+        'Gruntfile.js'
+      ],
+      tasks: ['concat', 'uglify']
+    }
+  }
+</code></pre></p>
+
+<p>Observem que gero um arquivo JavaScript chamado <code>_vendor.js</code> através do <a href="https://github.com/gruntjs/grunt-contrib-concat">Concat</a>, e nesse arquivo estão as dependências externas do bower. O <code>_vendor.js</code> só vai ser alterado caso seja necessário modificar essas dependências.</p>
+
+<p> Os JavaScripts de chamadas e que são modificados frequentemente ficam dentro de uma pasta <code>/js</code> e são concatenados com o <code>_vendor.js</code> e minificados através do <a href="https://github.com/gruntjs/grunt-contrib-uglify">Uglify</a>.</p>
+
+<p>E o segredo para essa integração funcionar é colocar o <a href="https://github.com/gruntjs/grunt-contrib-watch">Watch</a> para rodar o <a href="https://github.com/gruntjs/grunt-contrib-concat">Concat</a> e o <a href="https://github.com/gruntjs/grunt-contrib-uglify">Uglify</a> toda vez que fizer alguma alteração e salvar o Gruntfile.</p>
 
 <h3>O polêmico Boostrap</h3>
 
