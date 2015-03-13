@@ -1,0 +1,129 @@
+//
+// Responsive: Landscape phone to desktop/tablet
+// --------------------------------------------------
+
+
+@media (max-width: 767px) {
+
+  // Padding to set content in a bit
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  // Remove padding on container given explicit padding set on body
+  .container-fluid {
+    padding: 0;
+  }
+
+  // GRID & CONTAINERS
+  // -----------------
+  // Remove width from containers
+  .container {
+    width: auto;
+  }
+  // Fluid rows
+  .row-fluid {
+    width: 100%;
+  }
+  // Undo negative margin on rows and thumbnails
+  .row,
+  .thumbnails {
+    margin-left: 0;
+  }
+  .thumbnails > li {
+    float: none;
+    margin-left: 0; // Reset the default margin for all li elements when no .span* classes are present
+  }
+  // Make all grid-sized elements block level again
+  [class*="span"],
+  .uneditable-input[class*="span"], // Makes uneditable inputs full-width when using grid sizing
+  .row-fluid [class*="span"] {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+    .box-sizing(border-box);
+  }
+  .span12,
+  .row-fluid .span12 {
+    width: 100%;
+    .box-sizing(border-box);
+  }
+  .row-fluid [class*="offset"]:first-child {
+    margin-left: 0;
+  }
+ 
+  // Nav Side
+  .nav-side{
+    position: static;
+    margin: 0 -20px;
+    padding: 10px 20px;
+    text-align: left;
+    width: auto;
+    hr{
+      display: none;
+    }
+  }
+
+  // Navbar button for toggling navbar items in responsive layouts
+  // These definitions need to come after '.navbar .btn'
+  .navbar .btn-navbar {
+    display: block;
+    position: absolute; right: 10px; top: 10px;
+    padding: 7px 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    .buttonBackground(darken(#333, 5%), darken(#111, 5%));
+    .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075)");
+  }
+  .navbar .btn-navbar .icon-bar {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: #f5f5f5;
+    .border-radius(1px);
+    .box-shadow(0 1px 0 rgba(0,0,0,.25));
+  }
+  .btn-navbar .icon-bar + .icon-bar {
+    margin-top: 3px;
+  }
+
+  .nav-collapse {
+    border-top: @gray solid 1px;
+    display: none;
+    text-align: center;
+  }
+
+  .collapse-open:checked ~ .nav-collapse {
+    display: block;
+  }
+ 
+
+  // Photo
+  .photo{
+    display: none;
+    margin: 0;
+  }
+
+  // Logo
+  .logo{
+    margin: 0;
+    small{
+      display: none;
+    }
+  }
+
+  .nav-side h4{display: none;}
+
+  // Social Media
+  .social-media{
+  }
+
+  // Fork
+  .fork{
+    display: none;
+  }
+
+}
+ 
