@@ -1,0 +1,91 @@
+//
+// Blog
+// --------------------------------------------------
+ 
+.blog 
+  @extends .container
+  
+  // Headings
+  // --------------------------------------------------
+    
+  h1  
+    @extends $h1
+    margin-bottom $space-md
+    
+  h2  
+    @extends $h2
+    margin-bottom $space
+    margin-top $space-md
+    
+  h3  
+    @extends $h3
+    margin-top $space + $space-sm
+    margin-bottom $space
+    
+  h4  
+    @extends $h4
+    margin-bottom $space-sm
+    
+  h5  
+    @extends $h5
+    margin-bottom $space-sm
+    
+  h6  
+    @extends $h6 
+    margin-bottom $space-xs
+     
+
+  // Post
+  // --------------------------------------------------
+  
+  .post 
+    padding-bottom $space-md
+  
+    
+  // View More
+  // --------------------------------------------------
+  
+  .view-more 
+    display inline-block
+    margin-top $space-md
+    
+    &:hover 
+      text-decoration underline
+      
+
+  // Date
+  // --------------------------------------------------
+    
+  .date 
+    @extends $p2
+    color $gray
+    display block
+    margin-bottom $space-xs
+  
+  // Author
+  // --------------------------------------------------
+    
+  .author  
+    color $gray
+    display block
+    margin-bottom $space
+    
+
+// Blog List
+// --------------------------------------------------
+  
+.blog-list
+  @extends $list-unstyled
+   
+.blog-link
+  border-bottom alpha($text-color, 0.2) solid 1px  
+  color $text-color
+  display block
+  padding $space-md $space-sm 
+  transition background .3s 
+    
+  &:hover 
+    background alpha($text-color, 0.15)
+     
+    
+  
