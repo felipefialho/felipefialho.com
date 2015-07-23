@@ -21,6 +21,7 @@ http://www.felipefialho.com/blog\2014\sobre-data-atributes-e-javascript/index.ht
 http://www.felipefialho.com/blog\2014\utilizando-o-bootstrap-de-forma-consistente/index.html
 http://www.felipefialho.com/blog\2015\aproximando-seus-estudos-de-cenarios-reais/index.html
 http://www.felipefialho.com/blog\2015\meu-dia-a-dia-como-dev-frontend/index.html
+http://www.felipefialho.com/blog\2015\otimizando-e-organizando-as-media-queries/index.html
 http://www.felipefialho.com/blog\2015\sobre-trabalhar-remoto/index.html
 http://www.felipefialho.com/en/index.html
 http://www.felipefialho.com/en\portfolio/index.html

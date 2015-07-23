@@ -11,6 +11,13 @@
 
     
     <entry>
+        <title>Otimizando e Organizando as Media Queries</title>
+        <link href="http://www.felipefialho.com/blog/2015/otimizando-e-organizando-as-media-queries/"/>
+        <updated>23/07/2015</updated> 
+        <content type="html">Quando o assunto é mobile first, media queries e otimização de código eu tenho uma regra: Evitar ao máximo resetar propriedades.</content>
+    </entry>
+    
+    <entry>
         <title>Aproximando seus estudos de cenários reais</title>
         <link href="http://www.felipefialho.com/blog/2015/aproximando-seus-estudos-de-cenarios-reais/"/>
         <updated>02/07/2015</updated> 
