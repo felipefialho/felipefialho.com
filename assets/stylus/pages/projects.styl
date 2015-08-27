@@ -1,0 +1,95 @@
+//
+// Projects
+// --------------------------------------------------
+  
+
+// Projects Box
+// --------------------------------------------------
+
+.projects-box
+  color $text-color 
+  margin-bottom $space
+     
+  @media (min-width $screen-sm) 
+    float left 
+    padding-right $space
+    width 50%
+     
+  @media (min-width $screen-lg) 
+    width 33.33%
+     
+    
+
+// Projects Media
+// --------------------------------------------------
+ 
+.projects-media 
+  display block
+  background-repeat no-repeat
+  background-position center center
+  border alpha($text-color, 0.2) solid 1px  
+  position relative
+  overflow hidden
+  height 200px 
+    
+  @media (min-width $screen-sm) 
+    background-size cover
+    
+    &:after
+      background alpha(#000, 0.85)
+      color #fff
+      content attr(data-text)  
+      height 100%
+      line-height 200px
+      position absolute
+      top 0 
+      left 0
+      text-align center
+      width 100% 
+      transform translate(0, -100%)
+      transition transform .6s ease-out
+      
+      // FIx Chrome transform bug 
+      -webkit-backface-visibility hidden
+      -webkit-transform translateZ(0) scale(1.0, 1.0)
+    
+    &:hover:after
+      transform translate(0, 0)
+   
+  img  
+    object-fit cover
+    position absolute
+    left 0 
+    top 0 
+    width 100%
+    height 100%
+    
+  
+// Projects Body
+// --------------------------------------------------
+
+.projects-body   
+  padding $space-sm 
+   
+  @media (min-width $screen-sm) 
+    height 150px
+    
+.projects-title
+  @extends $h4 
+  margin-bottom $space-sm
+   
+
+// Projects Link
+// --------------------------------------------------
+ 
+.projects-link 
+  color $gray-light 
+  display inline-block 
+  font-size 2.0rem
+  margin-right $space-xs
+  text-decoration none
+  transition color .3s
+  
+  &:hover 
+    color $text-color 
+    

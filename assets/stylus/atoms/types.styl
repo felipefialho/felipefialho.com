@@ -1,0 +1,44 @@
+//
+// Types
+//
+// 1. Links
+// 2. Headings
+// 3. Paragraph
+//
+// -------------------------------------------------- 
+
+//
+// 1. Links
+// --------------------------------------------------
+
+a 
+  color $gold
+  text-decoration none
+  
+  p &  
+    text-decoration underline
+    
+
+//
+// 2. Headings
+// --------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 
+  color $gray
+  font-weight normal
+  margin 0
+  
+
+//
+// 3. Paragraph
+// --------------------------------------------------
+
+p 
+  margin 0 0 $space
+  
+  &:last-child
+    margin-bottom 0 
+    
+  &.lead 
+    font-size 120% 
+    line-height 1.3
