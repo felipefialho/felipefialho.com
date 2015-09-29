@@ -23,6 +23,7 @@ http://www.felipefialho.com/blog\2015\aproximando-seus-estudos-de-cenarios-reais
 http://www.felipefialho.com/blog\2015\meu-dia-a-dia-como-dev-frontend/index.html
 http://www.felipefialho.com/blog\2015\otimizando-e-organizando-as-media-queries/index.html
 http://www.felipefialho.com/blog\2015\sobre-trabalhar-remoto/index.html
+http://www.felipefialho.com/blog\2015\uma-reflexao-sobre-salarios-valor-hora-e-qualidade-de-vida/index.html
 http://www.felipefialho.com/en/index.html
 http://www.felipefialho.com/en\portfolio/index.html
 http://www.felipefialho.com/en\projects/index.html
