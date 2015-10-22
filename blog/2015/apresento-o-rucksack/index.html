@@ -10,14 +10,14 @@ var postcss = function(){
           use: [postcss], 
         } 
       } 
-}</code></pre><h4>Opções</h4><p>É possível habilitar ou desabilitar algumas opções do Rucksack. Por padrão apenas as opções de <em>autoprefixer</em> e <em>fallbacks</em> ficam desabilitadas.</p><h5>Autoprefixer</h5><p>Faz a mágica de adicionar prefixos automaticamente para você, e sempre se baseando na tabela mais atualizada do <a href="http://caniuse.com/">CanIUSe</a>.</p><p>Por exemplo:</p><pre><code>.foo 
+}</code></pre><h4>Opções</h4><p>É possível habilitar ou desabilitar algumas opções do Rucksack. Por padrão apenas as opções de <em>autoprefixer</em> e <em>fallbacks</em> ficam desabilitadas.</p><h5>Fallbacks</h5><p>Adiciona compatibilidade de algumas propriedades para navegadores antigos.</p><h5>Autoprefixer</h5><p>Faz a mágica de adicionar prefixos automaticamente para você, e sempre se baseando na tabela mais atualizada do <a href="http://caniuse.com/">CanIUSe</a>.</p><p>Por exemplo:</p><pre><code>.foo 
   display flex
 </code></pre><p>Vai gerar:</p><pre><code>.foo {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex
-}</code></pre><h5>Fallbacks</h5><p>Adiciona compatibilidade de algumas propriedades para navegadores antigos.</p><p>Como acho essas funções importantes, deixei ambas habilitadas.</p><pre><code>var postcss = function() { 
+}</code></pre><p>Como acho essas funções importantes, deixei ambas habilitadas.</p><pre><code>var postcss = function() { 
   return require('poststylus')([rucksack({
     autoprefixer: true,
     fallbacks: true
