@@ -19,6 +19,7 @@ http://www.felipefialho.com/blog\2014\falando-em-organizacao-parte-1/index.html
 http://www.felipefialho.com/blog\2014\nao-use-placeholder-no-lugar-da-label/index.html
 http://www.felipefialho.com/blog\2014\sobre-data-atributes-e-javascript/index.html
 http://www.felipefialho.com/blog\2014\utilizando-o-bootstrap-de-forma-consistente/index.html
+http://www.felipefialho.com/blog\2015\apresento-o-rucksack/index.html
 http://www.felipefialho.com/blog\2015\aproximando-seus-estudos-de-cenarios-reais/index.html
 http://www.felipefialho.com/blog\2015\meu-dia-a-dia-como-dev-frontend/index.html
 http://www.felipefialho.com/blog\2015\otimizando-e-organizando-as-media-queries/index.html
