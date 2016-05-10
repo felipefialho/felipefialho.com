@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/3603793/15134364/c940fec6-1641-11e6-80ad-dd93a3acefdb.png" width="200">
+  <img src="https://cloud.githubusercontent.com/assets/3603793/15134364/c940fec6-1641-11e6-80ad-dd93a3acefdb.png" width="100">
 </p>
 
 # Felipe Fialho - Website
