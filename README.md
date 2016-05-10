@@ -85,6 +85,7 @@ This project also uses [Husky](https://github.com/typicode/husky) to prevent com
 
 To help you, this project has a `npm run fix` command to fix all jscs errors.
 
+This project uses as a base the [Kratos Boilerplate](https://github.com/LFeh/kratos-boilerplate).
 
 ### Tasks
 
