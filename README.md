@@ -89,7 +89,7 @@ This project uses as a base the [Kratos Boilerplate](https://github.com/LFeh/kra
 
 ### Tasks
 
-- `npm start`: run all tasks and initialize watch for changes and a server
+- `gulp`: run all tasks and initialize watch for changes and a server
 - `gulp js`: execute js files
 - `gulp jade`: compile jade files
 - `gulp css`: compile stylus files

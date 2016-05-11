@@ -21,6 +21,9 @@ import svgmin from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import cheerio from 'gulp-cheerio';
 
+var Hexo = require('hexo'),
+    hexo = new Hexo(process.cwd(), {});
+
 const srcPaths = {
   js: 'src/js/**/*.js',
   css: 'src/styl/**/*.styl',
@@ -140,6 +143,13 @@ gulp.task('browser-sync', () => {
       baseDir: './build/'
     },
   });
+
+  hexo.init().then(function(){
+    return hexo.call('generate', {watch: true});
+  }).catch(function(err){
+    console.log(err);
+  });
+
 });
 
 gulp.task('default', ['css', 'jade', 'vendors', 'js', 'images', 'icons', 'watch', 'browser-sync']);
