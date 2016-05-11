@@ -52,14 +52,12 @@ With the commands above, you have everything to start.
 │   │   └── style.css
 │   ├── img/
 │   ├── svg/
-│   └── js /
 │   ├── index.html
 ├── gulpfile.babel.js
 ├── package.json
 └── src
 │   ├── img
 │   ├── svg
-│   ├── js
 │   ├── styl
 │   │   ├── _core/*.styl
 │   │   ├── atoms/*.styl
@@ -68,8 +66,6 @@ With the commands above, you have everything to start.
 │   │   ├── widgets/*.styl
 │   │   ├── pages/*.styl
 │   │   └── style.styl
-│   ├── jade
-│   │   └── index.jade
 └── scaffolds/
 └── themes/
 ```
@@ -90,8 +86,6 @@ This project uses as a base the [Kratos Boilerplate](https://github.com/LFeh/kra
 ### Tasks
 
 - `gulp`: run all tasks and initialize watch for changes and a server
-- `gulp js`: execute js files
-- `gulp jade`: compile jade files
 - `gulp css`: compile stylus files
 - `gulp images`: compress image files
 - `gulp icons`: generate sprite of icons

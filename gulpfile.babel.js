@@ -13,8 +13,6 @@ import lost from 'lost';
 import rupture from 'rupture';
 import postcss from 'gulp-postcss';
 import concat from 'gulp-concat';
-import uglify from 'gulp-uglify';
-import jade from 'gulp-jade';
 import imagemin from 'gulp-imagemin';
 import browserSync from 'browser-sync';
 import svgmin from 'gulp-svgmin';
@@ -25,27 +23,20 @@ var Hexo = require('hexo'),
     hexo = new Hexo(process.cwd(), {});
 
 const srcPaths = {
-  js: 'src/js/**/*.js',
   css: 'src/styl/**/*.styl',
   styl: 'src/styl/style.styl',
   jade: 'src/templates/*.jade',
   icons: 'src/svg/icons/*',
   svg: 'src/svg/',
-  jade: 'src/jade/*.jade',
   img: 'src/img/**/*',
-  vendors: [
-
-  ]
 };
 
 const buildPaths = {
   build: 'build/**/*',
-  js: 'build/js/',
   css: 'build/css/',
   jade: 'build/',
   img: 'build/img',
   svg: 'build/svg/',
-  vendors: 'src/js/_core/'
 };
 
 function onError(err) {
@@ -72,31 +63,6 @@ gulp.task('css', () => {
     .pipe(gcmq())
     .pipe(cssnano())
     .pipe(gulp.dest(buildPaths.css));
-});
-
-gulp.task('vendors', () => {
-  gulp.src(srcPaths.vendors)
-    .pipe(plumber())
-    .pipe(concat('vendors.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest(buildPaths.vendors));
-});
-
-gulp.task('js', () => {
-  gulp.src(srcPaths.js)
-    .pipe(plumber())
-    .pipe(concat('main.js'))
-    .pipe(uglify())
-    .on('error', onError)
-    .pipe(gulp.dest(buildPaths.js));
-});
-
-gulp.task('jade', () => {
-  gulp.src(srcPaths.jade)
-    .pipe(plumber())
-    .pipe(jade())
-    .on('error', onError)
-    .pipe(gulp.dest(buildPaths.jade));
 });
 
 gulp.task('images', () => {
@@ -152,6 +118,14 @@ gulp.task('browser-sync', () => {
 
 });
 
-gulp.task('default', ['css', 'jade', 'vendors', 'js', 'images', 'icons', 'watch', 'browser-sync']);
-gulp.task('build', ['css', 'jade', 'vendors', 'js', 'images', 'icons']);
+gulp.task('hexo', () => {
+  hexo.init().then(function(){
+    return hexo.call('generate');
+  }).catch(function(err){
+    console.log(err);
+  });
+});
+
+gulp.task('default', ['css', 'images', 'icons', 'watch', 'browser-sync']);
+gulp.task('build', ['css', 'images', 'icons', 'hexo']);
 
