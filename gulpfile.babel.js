@@ -22,6 +22,11 @@ import cheerio from 'gulp-cheerio';
 var Hexo = require('hexo'),
     hexo = new Hexo(process.cwd(), {});
 
+function onError(err) {
+  console.log(err);
+  this.emit('end');
+}
+
 const srcPaths = {
   css: 'src/styl/**/*.styl',
   styl: 'src/styl/style.styl',
@@ -38,11 +43,6 @@ const buildPaths = {
   img: 'build/img',
   svg: 'build/svg/',
 };
-
-function onError(err) {
-  console.log(err);
-  this.emit('end');
-}
 
 gulp.task('css', () => {
   gulp.src(srcPaths.styl)
@@ -120,7 +120,7 @@ gulp.task('browser-sync', () => {
 
 gulp.task('hexo', () => {
   hexo.init().then(function(){
-    return hexo.call('generate');
+    return hexo.call('generate', {watch: false});
   }).catch(function(err){
     console.log(err);
   });
