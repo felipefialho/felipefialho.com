@@ -65,6 +65,14 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: kratos
 
+# HTML Minifier
+html_minifier:
+  exclude:
+  removeComments: true
+  collapseWhitespace: true
+  removeScriptTypeAttributes: true
+  removeStyleLinkTypeAttributes: true
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:

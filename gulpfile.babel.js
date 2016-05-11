@@ -19,8 +19,8 @@ import svgmin from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import cheerio from 'gulp-cheerio';
 
-var Hexo = require('hexo'),
-    hexo = new Hexo(process.cwd(), {});
+var Hexo = require('hexo');
+var hexo = new Hexo(process.cwd(), {});
 
 function onError(err) {
   console.log(err);
@@ -33,6 +33,10 @@ const srcPaths = {
   icons: 'themes/kratos/_source/svg/icons/*',
   svg: 'themes/kratos/_source/svg/',
   img: 'themes/kratos/_source/img/**/*',
+  hexo: [
+   'themes/kratos/layout/**/*',
+   'src/**/*'
+  ],
 };
 
 const buildPaths = {
@@ -89,10 +93,17 @@ gulp.task('icons', () => {
     .pipe(gulp.dest(srcPaths.svg));
 });
 
+gulp.task('hexo', () => {
+  hexo.init().then(function(){
+    return hexo.call('generate', {watch: false});
+  }).catch(function(err){
+    console.log(err);
+  });
+});
+
 gulp.task('watch', () => {
-  gulp.watch(srcPaths.jade, ['jade']);
+  gulp.watch(srcPaths.hexo, ['hexo']);
   gulp.watch(srcPaths.css, ['css']);
-  gulp.watch(srcPaths.js, ['js']);
   gulp.watch(srcPaths.img, ['images']);
   gulp.watch(srcPaths.icons, ['icons']);
 });
@@ -108,22 +119,13 @@ gulp.task('browser-sync', () => {
     },
   });
 
-  hexo.init().then(function(){
-    return hexo.call('generate', {watch: true});
-  }).catch(function(err){
-    console.log(err);
-  });
+  hexo.init();
 
+  hexo.call('generate', {}, function(){
+    console.log('Started Hexo Server');
+  })
 });
 
-gulp.task('hexo', () => {
-  hexo.init().then(function(){
-    return hexo.call('generate', {watch: false});
-  }).catch(function(err){
-    console.log(err);
-  });
-});
-
-gulp.task('default', ['css', 'images', 'icons', 'watch', 'browser-sync']);
+gulp.task('default', ['hexo', 'css', 'images', 'icons', 'watch', 'browser-sync']);
 gulp.task('build', ['hexo', 'css', 'images', 'icons']);
 
