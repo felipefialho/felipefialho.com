@@ -86,6 +86,7 @@ This project uses as a base the [Kratos Boilerplate](https://github.com/LFeh/kra
 ### Tasks
 
 - `gulp`: run all tasks and initialize watch for changes and a server
+- `gulp hexo`: generate hexo files
 - `gulp css`: compile stylus files
 - `gulp images`: compress image files
 - `gulp icons`: generate sprite of icons
