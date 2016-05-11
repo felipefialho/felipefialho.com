@@ -28,18 +28,16 @@ function onError(err) {
 }
 
 const srcPaths = {
-  css: 'src/styl/**/*.styl',
-  styl: 'src/styl/style.styl',
-  jade: 'src/templates/*.jade',
-  icons: 'src/svg/icons/*',
-  svg: 'src/svg/',
-  img: 'src/img/**/*',
+  css: 'themes/kratos/_source/styl/**/*.styl',
+  styl: 'themes/kratos/_source/styl/style.styl',
+  icons: 'themes/kratos/_source/svg/icons/*',
+  svg: 'themes/kratos/_source/svg/',
+  img: 'themes/kratos/_source/img/**/*',
 };
 
 const buildPaths = {
   build: 'build/**/*',
   css: 'build/css/',
-  jade: 'build/',
   img: 'build/img',
   svg: 'build/svg/',
 };
@@ -127,5 +125,5 @@ gulp.task('hexo', () => {
 });
 
 gulp.task('default', ['css', 'images', 'icons', 'watch', 'browser-sync']);
-gulp.task('build', ['css', 'images', 'icons', 'hexo']);
+gulp.task('build', ['hexo', 'css', 'images', 'icons']);
 
