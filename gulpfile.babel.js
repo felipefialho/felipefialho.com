@@ -118,14 +118,8 @@ gulp.task('browser-sync', () => {
       baseDir: './build/'
     },
   });
-
-  hexo.init();
-
-  hexo.call('generate', {}, function(){
-    console.log('Started Hexo Server');
-  })
 });
 
-gulp.task('default', ['css', 'images', 'icons', 'watch', 'browser-sync']);
+gulp.task('default', ['hexo', 'css', 'images', 'icons', 'watch', 'browser-sync']);
 gulp.task('build', ['hexo', 'css', 'images', 'icons']);
 
