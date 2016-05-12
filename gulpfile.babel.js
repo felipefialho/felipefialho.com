@@ -103,7 +103,7 @@ gulp.task('hexo-build', () => {
 
 gulp.task('hexo-serve', () => {
   hexo.init().then(function(){
-    return hexo.call('server', {open: true});
+    return hexo.call('server', {open: true, ip: '127.0.0.1'});
   }).catch(function(err){
     console.log(err);
   });
