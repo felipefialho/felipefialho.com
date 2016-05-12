@@ -93,7 +93,7 @@ gulp.task('icons', () => {
     .pipe(gulp.dest(srcPaths.svg));
 });
 
-gulp.task('hexo', () => {
+gulp.task('hexo-build', () => {
   hexo.init().then(function(){
     return hexo.call('generate', {watch: false});
   }).catch(function(err){
@@ -101,8 +101,15 @@ gulp.task('hexo', () => {
   });
 });
 
+gulp.task('hexo-serve', () => {
+  hexo.init().then(function(){
+    return hexo.call('server', {open: true});
+  }).catch(function(err){
+    console.log(err);
+  });
+});
+
 gulp.task('watch', () => {
-  gulp.watch(srcPaths.hexo, ['hexo']);
   gulp.watch(srcPaths.css, ['css']);
   gulp.watch(srcPaths.img, ['images']);
   gulp.watch(srcPaths.icons, ['icons']);
@@ -120,6 +127,6 @@ gulp.task('browser-sync', () => {
   });
 });
 
-gulp.task('default', ['hexo', 'css', 'images', 'icons', 'watch', 'browser-sync']);
-gulp.task('build', ['hexo', 'css', 'images', 'icons']);
+gulp.task('default', ['hexo-serve', 'css', 'images', 'icons', 'watch']);
+gulp.task('build', ['hexo-build', 'css', 'images', 'icons']);
 
