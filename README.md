@@ -4,10 +4,10 @@
 
 # Felipe Fialho - Website
 
-This project uses Hexo, Jade, Stylus, Gulp and Browsersync.
+This project uses Harp, Jade, Stylus, Gulp and Browsersync.
 
 Maybe you want to read about them:
-- [Hexo](https://hexo.io/)
+- [Harp](http://harpjs.com/)
 - [GulpJS](http://gulpjs.com/)
 - [Jade](http://jade-lang.com/)
 - [Stylus](http://learnboost.github.io/stylus/)
@@ -32,8 +32,10 @@ $ git clone git@github.com:LFeh/kratos-boilerplate.git
 $ cd kratos-boilerplate
 
 # install gulp globally
-$ npm install -g hexo-cli
 $ npm install -g gulp
+
+# install harp globally
+$ npm install -g harp
 
 # install dependencies
 $ npm install
@@ -45,9 +47,9 @@ With the commands above, you have everything to start.
 ### Folders and Files
 
 ```sh
-├── _config.yml
+├── harp.json
 ├── README.md
-├── build
+├── public/
 │   ├── css
 │   │   └── style.css
 │   ├── img/
@@ -66,8 +68,7 @@ With the commands above, you have everything to start.
 │   │   ├── widgets/*.styl
 │   │   ├── pages/*.styl
 │   │   └── style.styl
-└── scaffolds/
-└── themes/
+└──
 ```
 
 Those folders and file will change during the project.
@@ -86,7 +87,7 @@ This project uses as a base the [Kratos Boilerplate](https://github.com/LFeh/kra
 ### Tasks
 
 - `gulp`: run all tasks and initialize watch for changes and a server
-- `gulp hexo`: generate hexo files
+- `gulp harp`: generate harp files
 - `gulp css`: compile stylus files
 - `gulp images`: compress image files
 - `gulp icons`: generate sprite of icons

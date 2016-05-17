@@ -18,9 +18,9 @@ import browserSync from 'browser-sync';
 import svgmin from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import cheerio from 'gulp-cheerio';
+import harp from 'harp';
 
-var Hexo = require('hexo');
-var hexo = new Hexo(process.cwd(), {});
+var reload = browserSync.reload;
 
 function onError(err) {
   console.log(err);
@@ -28,22 +28,20 @@ function onError(err) {
 }
 
 const srcPaths = {
-  css: 'themes/kratos/_source/styl/**/*.styl',
-  styl: 'themes/kratos/_source/styl/style.styl',
-  icons: 'themes/kratos/_source/svg/icons/*',
-  svg: 'themes/kratos/_source/svg/',
-  img: 'themes/kratos/_source/img/**/*',
-  hexo: [
-   'themes/kratos/layout/**/*',
-   'src/**/*'
-  ],
+  css: 'public/**/*.styl',
+  styl: 'public/**/style.styl',
+  icons: 'public/**/icons/*.svg',
+  svg: 'public/**/svg/',
+  img: 'public/**/img/**/*',
+  jade: 'public/**/*.jade',
+  md: 'public/**/*.md',
 };
 
 const buildPaths = {
-  build: 'build/**/*',
-  css: 'build/css/',
-  img: 'build/img',
-  svg: 'build/svg/',
+  build: '/build/**/*',
+  css: '/build/css/',
+  img: '/build/img',
+  svg: '/build/svg/',
 };
 
 gulp.task('css', () => {
@@ -93,40 +91,24 @@ gulp.task('icons', () => {
     .pipe(gulp.dest(srcPaths.svg));
 });
 
-gulp.task('hexo-build', () => {
-  hexo.init().then(function(){
-    return hexo.call('generate', {watch: false});
-  }).catch(function(err){
-    console.log(err);
-  });
+gulp.task('serve', () => {
+
+  harp.server(__dirname, {
+    port: 9000
+  }, function () {
+    browserSync({
+      proxy: 'localhost:9000'
+    });
+
+    gulp.watch(srcPaths.md, function () { reload(); });
+    gulp.watch(srcPaths.jade, function () { reload(); });
+    gulp.watch(srcPaths.css, ['css']);
+    gulp.watch(srcPaths.img, ['images']);
+    gulp.watch(srcPaths.icons, ['icons']);
+
+  })
 });
 
-gulp.task('hexo-serve', () => {
-  hexo.init().then(function(){
-    return hexo.call('server', {open: true, ip: '127.0.0.1'});
-  }).catch(function(err){
-    console.log(err);
-  });
-});
-
-gulp.task('watch', () => {
-  gulp.watch(srcPaths.css, ['css']);
-  gulp.watch(srcPaths.img, ['images']);
-  gulp.watch(srcPaths.icons, ['icons']);
-});
-
-gulp.task('browser-sync', () => {
-  var files = [
-    buildPaths.build
-  ];
-
-  browserSync.init(files, {
-    server: {
-      baseDir: './build/'
-    },
-  });
-});
-
-gulp.task('default', ['hexo-serve', 'css', 'images', 'icons', 'watch']);
-gulp.task('build', ['hexo-build', 'css', 'images', 'icons']);
+gulp.task('default', ['css', 'images', 'icons', 'serve']);
+gulp.task('build', ['css', 'images', 'icons']);
 
