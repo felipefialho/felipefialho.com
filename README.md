@@ -48,27 +48,29 @@ With the commands above, you have everything to start.
 
 ```sh
 ├── harp.json
-├── README.md
-├── public/
-│   ├── css
-│   │   └── style.css
-│   ├── img/
-│   ├── svg/
-│   ├── index.html
+├── readme.md
 ├── gulpfile.babel.js
 ├── package.json
-└── src
-│   ├── img
-│   ├── svg
-│   ├── styl
-│   │   ├── _core/*.styl
-│   │   ├── atoms/*.styl
-│   │   ├── molecules/*.styl
-│   │   ├── organisms/*.styl
-│   │   ├── widgets/*.styl
-│   │   ├── pages/*.styl
-│   │   └── style.styl
-└──
+├── public/
+│   ├── _partials/*.jade
+│   ├── _src
+│   │   └── img/*
+│   │   └── styl/*.styl
+│   │   └── svg/*.svg
+│   ├── _assets
+│   │   └── css/style.css
+│   │   └── img/*
+│   │   └── svg/*.svg
+│   ├── posts
+│   │   └── _data.json
+│   │   └── *.md
+│   ├── 404.jade
+│   ├── _data.json
+│   ├── _layout.jade
+│   ├── index.jade
+│   ├── rss.xml.jade
+│   ├── sitemap.xml.jade
+├── styleguide/
 ```
 
 Those folders and file will change during the project.
