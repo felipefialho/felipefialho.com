@@ -48,7 +48,7 @@ With the commands above, you have everything to start.
 
 ```sh
 ├── harp.json
-├── readme.md
+├── README.md
 ├── gulpfile.babel.js
 ├── package.json
 ├── public/
