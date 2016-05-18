@@ -1,10 +1,12 @@
-doctype
-html(lang="en")
+doctype html
+html
   head
-    meta(charset="utf-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title #{ site_title }
-    link(rel="alternate", type="application/rss+xml", title="#{ site_title } RSS", href="/rss.xml")
+    title Kratos Boilerplate
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description' content="meta desc")
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel="stylesheet", type="text/css", href="css/style.css")
 
     //- Favicon
     //- --------------------------------------------------
@@ -27,10 +29,6 @@ html(lang="en")
     meta(name='theme-color' content='#ffffff')
 
 
-    //- Stylesheet
-    //- --------------------------------------------------
-    link(rel="stylesheet", href="/assets/css/style.css")
-
     //- GA
     //- --------------------------------------------------
     if ((data) && (data.analytics) && (data.analytics.ga))
@@ -39,19 +37,18 @@ html(lang="en")
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-40410936-1', 'auto');
+        ga('create', '', 'auto');
         ga('send', 'pageview');
 
 
-  body(class="page-#{ current.path[0] } #{ current.path.join('-') }")
-    article#content
-      .container.main-content
-        .row
-          .col-sm-8.main
-            != yield
-            != partial("_partials/comments")
-          .col-sm-offset-1.col-sm-3.aside
-            != partial("_partials/aside")
+  body
+    .container
 
-    hr
-    != partial("_partials/footer")
+      //- Put your content here
+      //- --------------------------------------------------
+      h1 Kratos Boilerplate 
+
+    
+    //- Scripts
+    //- --------------------------------------------------
+    script(src='js/main.js')

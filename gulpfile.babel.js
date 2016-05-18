@@ -27,21 +27,27 @@ function onError(err) {
   this.emit('end');
 }
 
+function refresh() {
+  setTimeout(function() {
+    reload();
+  }, 500);
+}
+
 const srcPaths = {
-  css: 'public/**/*.styl',
-  styl: 'public/**/style.styl',
-  icons: 'public/**/icons/*.svg',
-  svg: 'public/**/svg/',
-  img: 'public/**/img/**/*',
+  css: 'public/_src/styl/**/*.styl',
+  styl: 'public/_src/styl/style.styl',
+  icons: 'public/_src/svg/icons/*.svg',
+  svg: 'public/_src/svg/',
+  img: 'public/_src/img/**/*',
   jade: 'public/**/*.jade',
   md: 'public/**/*.md',
 };
 
 const buildPaths = {
-  build: '/build/**/*',
-  css: '/build/css/',
-  img: '/build/img',
-  svg: '/build/svg/',
+  build: 'public/assets/**/*',
+  css: 'public/assets/css/',
+  img: 'public/assets/img',
+  svg: 'public/assets/svg/',
 };
 
 gulp.task('css', () => {
@@ -53,9 +59,9 @@ gulp.task('css', () => {
     .on('error', onError)
     .pipe(postcss([
       require('mdcss')({
-        logo: '../logo-kratos.png',
+        logo: '../logo-felipe.png',
         examples: {
-          css: ['../build/css/style.css']
+          css: ['../public/_src/css/style.css']
         }
       })
     ]))
@@ -63,6 +69,7 @@ gulp.task('css', () => {
     .pipe(gcmq())
     .pipe(cssnano())
     .pipe(gulp.dest(buildPaths.css));
+    refresh();
 });
 
 gulp.task('images', () => {
@@ -74,6 +81,7 @@ gulp.task('images', () => {
         interlaced: true
     }))
     .pipe(gulp.dest(buildPaths.img));
+    refresh();
 });
 
 gulp.task('icons', () => {
@@ -89,6 +97,7 @@ gulp.task('icons', () => {
     }))
     .pipe(gulp.dest(buildPaths.svg))
     .pipe(gulp.dest(srcPaths.svg));
+    refresh();
 });
 
 gulp.task('serve', () => {
@@ -96,6 +105,7 @@ gulp.task('serve', () => {
   harp.server(__dirname, {
     port: 9000
   }, function () {
+
     browserSync({
       proxy: 'localhost:9000'
     });
