@@ -7,8 +7,8 @@
     "url": "git+https://github.com/LFeh/lfeh.github.io"
   },
   "scripts": {
-    "lint": "./node_modules/.bin/jscs public/assets",
-    "fix": "./node_modules/.bin/jscs public/assets --fix",
+    "lint": "./node_modules/.bin/jscs public/_src",
+    "fix": "./node_modules/.bin/jscs public/_src --fix",
     "precommit": "npm run lint"
   },
   "author": "Felipe Fialho <hi@felipefialho.com> (http://www.felipefialho.com/)",

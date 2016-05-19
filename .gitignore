@@ -1,4 +1,4 @@
 .DS_Store
-www/
+public/assets
 node_modules
 *.log*
