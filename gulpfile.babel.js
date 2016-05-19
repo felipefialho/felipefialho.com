@@ -37,7 +37,7 @@ const srcPaths = {
   css: 'public/_src/styl/**/*.styl',
   styl: 'public/_src/styl/style.styl',
   icons: 'public/_src/svg/icons/*.svg',
-  svg: 'public/_src/svg/',
+  svg: 'public/_src/svg/etc/*',
   img: 'public/_src/img/**/*',
   jade: 'public/**/*.jade',
   md: 'public/**/*.md',
@@ -84,6 +84,13 @@ gulp.task('images', () => {
     refresh();
 });
 
+gulp.task('svg', () => {
+  gulp.src(srcPaths.svg)
+    .pipe(svgmin())
+    .pipe(gulp.dest(buildPaths.svg))
+    refresh();
+});
+
 gulp.task('icons', () => {
   gulp.src(srcPaths.icons)
     .pipe(svgmin())
@@ -118,6 +125,6 @@ gulp.task('serve', () => {
   })
 });
 
-gulp.task('default', ['css', 'images', 'icons', 'serve']);
-gulp.task('build', ['css', 'images', 'icons']);
+gulp.task('default', ['css', 'images', 'svg', 'icons', 'serve']);
+gulp.task('build', ['css', 'images', 'svg', 'icons']);
 

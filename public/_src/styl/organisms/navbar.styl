@@ -1,0 +1,75 @@
+//
+// Navbar
+//
+// 1. Nav
+// 2. Button
+//
+// ==================================================
+
+.navbar
+  +below('xs')
+    order 3
+
+//
+// 1. Nav
+// ==================================================
+
+.nav-open
+  hidden(sr)
+
+  +below('xs')
+    &:checked ~ .nav
+      opacity 100
+      visibility visible
+
+
+.nav
+  reset(list)
+
+  +below('xs')
+    background $gray-darker
+    opacity 0
+    position absolute 100% 0 auto
+    transition opacity .3s
+    visibility hidden
+
+
+.nav-item
+  +above('sm')
+    display inline-block
+
+    &:not(:last-child)
+      margin-right $space-lg
+
+
+.nav-link
+  font(p2, bold, '', lowercase)
+  effect(hover, $blue-light)
+
+  +below('xs')
+    border-top rgba($blue-light, .15) solid 1px
+    padding $space $space-md
+
+    &:hover
+    &:focus
+      background $gray-dark
+
+
+
+//
+// 2. Button
+// ==================================================
+
+.navbar-btn
+  reset(form)
+  visible(xs)
+  cursor pointer
+  display block
+  fill currentColor
+
+  .icon
+    height $space-lg
+    top .5rem
+    width $space-lg
+
+

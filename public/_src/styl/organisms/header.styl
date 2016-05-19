@@ -5,10 +5,14 @@
 
 .header
   background $gray-darker
-  padding-top $space
-  padding-bottom $space
+  color #fff
+  padding $space $space-md
+  position relative
 
-  +above('md')
-    position fixed 0
-    bottom auto
+  +above('sm')
+    position fixed 0 0 auto
 
+.header-container
+  align-items center
+  lost-flex-container row
+  justify-content space-between

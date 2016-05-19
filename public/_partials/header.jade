@@ -2,30 +2,34 @@
 //- Header
 //- --------------------------------------------------
 header.header(role='banner')
-  .container
+  .header-container
 
     //- Brand
     //- --------------------------------------------------
-    a.brand(href='#' role='logo') Felipe Fialho
+    a.brand(href='#' role='logo')
+      include ../_src/svg/etc/logo-felipe-fialho.svg
 
 
     //- Navbar
     //- --------------------------------------------------
-    button.navbar-btn(role='button') #[svg.icon(aria-hidden='true' aria-label='Menu') #[use(xlink:href='/svg/icons.svg#menu')]]
-
     nav.navbar
+      label.navbar-btn(for='navbar') #[svg.icon(aria-hidden='true' aria-label='Menu') #[use(xlink:href='assets/svg/icons.svg#menu')]]
 
+      input.nav-open#navbar(type='checkbox')
       ul.nav(role='navigation')
-        li.nav-item #[a.nav-link(class='#{ current.source=="blog" ? "active" : "" }' href='#')] Blog
-        li.nav-item #[a.nav-link(class='#{ current.source=="projects" ? "active" : "" }' href='#')] Projects
-        li.nav-item #[a.nav-link(class='#{ current.source=="portfolio" ? "active" : "" }' href='#')] Portfolio
+        li.nav-item #[a.nav-link(class='#{ current.source=="blog" ? "active" : "" }' href='#') Blog]
+        li.nav-item #[a.nav-link(class='#{ current.source=="projects" ? "active" : "" }' href='#') Projects]
+        li.nav-item #[a.nav-link(class='#{ current.source=="lab" ? "active" : "" }' href='#') Lab]
 
-      ul.social-media
-        li #[a(href="http://twitter.com/#{ twitter }" title='View my Twitter' target='_blank') #[svg.icon(aria-hidden='true' aria-label='Twitter') #[use(xlink:href='/svg/icons.svg#twitter')]]]
-        li #[a(href="https://www.facebook.com/#{ facebook }" title='View my Facebook' target='_blank') #[svg.icon(aria-hidden='true' aria-label='Facebook') #[use(xlink:href='/svg/icons.svg#facebook')]]]
-        li #[a(href="https://www.linkedin.com/#{ linkedin }" title='View my Linkedin' target='_blank') #[svg.icon(aria-hidden='true' aria-label='linkedin') #[use(xlink:href='/svg/icons.svg#linkedin')]]]
-        li #[a(href="https://github.com/#{ github }" title='View my Github' target='_blank') #[svg.icon(aria-hidden='true' aria-label='github') #[use(xlink:href='/svg/icons.svg#github')]]]
-        li #[a(href="https://plus.google.com/#{ gplus }" title='View my Google Plus' target='_blank') #[svg.icon(aria-hidden='true' aria-label='Google Plus') #[use(xlink:href='/svg/icons.svg#gplus')]]]
+
+    //- Social Media
+    //- --------------------------------------------------
+    ul.social-media
+      li #[a(href="http://twitter.com/#{ twitter }" title='View my Twitter' target='_blank') #[svg.icon(aria-hidden='true' aria-label='Twitter') #[use(xlink:href='assets/svg/icons.svg#twitter')]]]
+      li #[a(href="https://www.facebook.com/#{ facebook }" title='View my Facebook' target='_blank') #[svg.icon(aria-hidden='true' aria-label='Facebook') #[use(xlink:href='assets/svg/icons.svg#facebook')]]]
+      li #[a(href="https://www.linkedin.com/#{ linkedin }" title='View my Linkedin' target='_blank') #[svg.icon(aria-hidden='true' aria-label='linkedin') #[use(xlink:href='assets/svg/icons.svg#linkedin')]]]
+      li #[a(href="https://github.com/#{ github }" title='View my Github' target='_blank') #[svg.icon(aria-hidden='true' aria-label='github') #[use(xlink:href='assets/svg/icons.svg#github')]]]
+      li.hidden #[a(href="https://plus.google.com/#{ gplus }" title='View my Google Plus' target='_blank') #[svg.icon(aria-hidden='true' aria-label='Google Plus') #[use(xlink:href='assets/svg/icons.svg#google')]]]
 
 
 

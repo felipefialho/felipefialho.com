@@ -1,0 +1,21 @@
+//
+//  Social Media
+//
+// ==================================================
+
+.social-media
+  reset(list)
+  position relative
+  top .4rem
+
+  > li
+    display inline-block
+
+    &:not(:last-child)
+      margin-right $space-sm
+
+  a
+    effect(hover, $blue-light)
+
+  svg
+    fill currentColor
