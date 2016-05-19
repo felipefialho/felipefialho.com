@@ -39,11 +39,19 @@ html(lang="en")
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-40410936-1', 'auto');
+        ga('create', '#{ ga }', 'auto');
         ga('send', 'pageview');
 
 
   body(class="page-#{ current.path[0] } #{ current.path.join('-') }")
+
+    //-
+    //- Header
+    //- --------------------------------------------------
+    != partial("_partials/header")
+
+
+
     article#content
       .container.main-content
         .row
@@ -53,5 +61,4 @@ html(lang="en")
           .col-sm-offset-1.col-sm-3.aside
             != partial("_partials/aside")
 
-    hr
-    != partial("_partials/footer")
+

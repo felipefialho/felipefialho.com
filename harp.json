@@ -1,13 +1,24 @@
 {
   "domains": ["www.felipefialho.com", "felipefialho.com"],
+
   "globals": {
+
     "site_title": "Felipe Fialho - Front-End Developer",
+
     "twitter": "LFeh",
+    "facebook": "LFehh",
+    "linkedin": "lfehfrontend",
+    "github": "lfeh",
+    "gplus": "101721187531748531230?rel=author",
+    "ga": "UA-40410936-1",
+
     "site_url": "www.felipefialho.com",
+
     "disqus": {
       "enabled": true,
       "shortname": ""
     },
+
     "sitemap": {
       "enabled": true,
       "changefreq": "daily"

@@ -96,7 +96,6 @@ gulp.task('icons', () => {
       parserOptions: { xmlMode: true }
     }))
     .pipe(gulp.dest(buildPaths.svg))
-    .pipe(gulp.dest(srcPaths.svg));
     refresh();
 });
 
