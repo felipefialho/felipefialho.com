@@ -255,7 +255,7 @@ effect(type, color)
         margin-top $space-xs
         transition opacity .2s
 
-      &:hover
-      &:focus
+      &:hover:not(.active)
+      &:focus:not(.active)
         &:after
           opacity 100
