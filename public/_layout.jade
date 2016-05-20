@@ -42,7 +42,7 @@ html(lang="en")
         ga('send', 'pageview');
 
 
-  body(class="page-#{ current.path[0] } #{ current.path.join('-') }")
+  body(class='#{ current.path[0] } #{ current.path.join('-') }')
 
     //-
     //- Header
@@ -56,15 +56,4 @@ html(lang="en")
 
     main.main(role='main')
       != yield
-
-
-
-      //-.container.main-content
-        .row
-          .col-sm-8.main
-            != yield
-            != partial("_partials/comments")
-          .col-sm-offset-1.col-sm-3.aside
-            != partial("_partials/aside")
-
 

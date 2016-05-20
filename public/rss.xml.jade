@@ -3,8 +3,8 @@ rss(version='2.0')
   channel
     title #{ title }
     link #{ site_url }/
-    each post, slug in public.posts._data
+    each post, slug in public.blog._data
       item
         title #{ post.title }
-        link #{ site_url }/posts/#{ slug }
-        description <![CDATA[!{ partial("blog/" + slug) }]]>
+        link #{ site_url }/blog/#{ post.path }
+        description #{ post.description }

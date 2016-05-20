@@ -10,15 +10,6 @@
     padding-top $space-lg
 
 
-  // Types
-  // ----------------------------------------------------
-
-  .blog-title
-    font(h4, regular, secondary)
-    color $gray
-    margin-bottom $space-md
-
-
 //
 // Post
 // ==================================================
@@ -35,6 +26,7 @@
   margin-left -($space-md)
   padding $space-md
   transition border .2s
+  width 'calc(100% + %s)' % ($space-md * 2)
 
   &:hover
   &:focus
