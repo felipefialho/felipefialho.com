@@ -61,11 +61,10 @@ With the commands above, you have everything to start.
 │   │   └── css/style.css
 │   │   └── img/*
 │   │   └── svg/*.svg
-│   ├── posts
-│   │   └── _data.json
-│   │   └── *.md
+│   ├── blog/
+│   ├── lab/
+│   ├── projects/
 │   ├── 404.jade
-│   ├── _data.json
 │   ├── _layout.jade
 │   ├── index.jade
 │   ├── rss.xml.jade
@@ -91,6 +90,7 @@ This project uses as a base the [Kratos Boilerplate](https://github.com/LFeh/kra
 - `gulp`: run all tasks and initialize watch for changes and a server
 - `gulp harp`: generate harp files
 - `gulp css`: compile stylus files
+- `gulp styleguide`: compile styleguide files
 - `gulp images`: compress image files
 - `gulp icons`: generate sprite of icons
 - `gulp browser-sync`: inicialize a server
