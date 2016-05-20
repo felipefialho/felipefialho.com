@@ -14,32 +14,46 @@
   // ----------------------------------------------------
 
   .blog-title
-    font(h3, regular, secondary)
-    margin-bottom $space-lg
+    font(h4, regular, secondary)
+    color $gray
+    margin-bottom $space-md
 
 
 //
 // Post
 // ==================================================
 
-.blog-post
-  border $line solid 1px
+.blog-link
   display block
-  margin-left -($space-md)
-  padding $space-md
-  transition border .2s
 
   &:not(:last-child)
     margin-bottom $space-lg
 
 
+.blog-post
+  border $line solid 1px
+  margin-left -($space-md)
+  padding $space-md
+  transition border .2s
+
   &:hover
   &:focus
     border-color $brand-primary
 
+
+  // Types
+  // ----------------------------------------------------
+
   .title
     font(h2, regular, secondary)
     margin-bottom $space-md
+
+  .date
+    font(h6, regular, secondary)
+    color $gray
+    display block
+    margin-bottom $space-xs
+
 
   p
     font(p1, light)

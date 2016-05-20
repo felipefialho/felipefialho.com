@@ -5,9 +5,9 @@
 article.content(itemscope="" itemtype='http://schema.org/Person')
   .container
 
-    p.lead Hey friend, how are you?
+    p.lead Hey friends, how are you?
 
-    p My name is #[em(itemprop='name') Luiz Felipe Tartarotti Fialho], I'm 26 years old and I work as #[strong(itemprop='jobTitle') Front-End Developer] since 2009.
+    p My name is #[em(itemprop='name') Luiz Felipe Tartarotti Fialho] from Brazil, I'm 26 years old and I work as #[strong(itemprop='jobTitle') Front-End Developer] since 2009.
 
     p Currently, I'm working at #[a(href='http://filtro.cc/' target='_blank' itemprop='affiliation') Filtro]. I'm a founder of #[a(href='http://www.meetup.com/CSS-SP/' target='_blank' itemprop='organizer') Meetup CSS] I helped in organization of #[a(href='http://cssconfbrasil.com.br/' target='_blank' itemprop='organizer') Conferência CSS Brasil 2015].
 
@@ -19,9 +19,17 @@ section.blog
 
     h2.blog-title Blog (Portuguese)
 
+    - var postCount = 0
     each post, slug in public.blog._data
+      if postCount < 2
+        a.blog-link(href='/blog/#{ post.path }/' title='View the post')
+          article.blog-post
+            time.date #{ post.date }
+            h1.title #{ post.title }
+            p #{ post.description }
 
-      a.blog-post(href='/blog/#{ slug }/' title='View the post')
+      - postCount++;
 
-        h1.title #{ post.title }
-        p #{ post.description }
+    a.btn-link(href='/blog/' title='See more posts') Do you liked it? See more posts!
+
+

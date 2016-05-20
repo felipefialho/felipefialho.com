@@ -7,4 +7,4 @@ rss(version='2.0')
       item
         title #{ post.title }
         link #{ site_url }/posts/#{ slug }
-        description <![CDATA[!{ partial("posts/" + slug) }]]>
+        description <![CDATA[!{ partial("blog/" + slug) }]]>

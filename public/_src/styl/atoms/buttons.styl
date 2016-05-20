@@ -1,6 +1,8 @@
 //
 // Buttons
 //
+// 1. Link
+//
 // ==================================================
 
 /*!---
@@ -11,11 +13,29 @@ section: Atoms
 Button styles can be applied to **any** element. Typically you'll want to use
 either a `<button>` or an `<a>` element:
 
+###### Button Link
+
 ```example:html
-<button class="btn">Click</button>
-<a class="btn" href="/some-page">Some Page</a>
+<button class="btn-link">Click</button>
+<a class="btn-link" href="/some-page">Some Page</a>
 ```
 
 */
 
+
+//
+// 1. Link
+// ==================================================
+
+.btn-link
+  form(reset)
+  font(p2, regular, secondary)
+  color $gray
+  display inline-block
+  transition color .2s
+
+  &:hover
+  &:focus
+    color $brand-primary
+    text-decoration underline
 
