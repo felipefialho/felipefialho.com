@@ -26,7 +26,6 @@ html(lang="en")
     meta(name='msapplication-TileImage' content='/favicon/ms-icon-144x144.png')
     meta(name='theme-color' content='#ffffff')
 
-
     //- Stylesheet
     //- --------------------------------------------------
     link(rel="stylesheet", href="/assets/css/style.css")
@@ -51,9 +50,16 @@ html(lang="en")
     != partial("_partials/header")
 
 
+    //-
+    //- Main
+    //- --------------------------------------------------
 
-    article#content
-      .container.main-content
+    main.main(role='main')
+      != yield
+
+
+
+      //-.container.main-content
         .row
           .col-sm-8.main
             != yield

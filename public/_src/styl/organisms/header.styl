@@ -3,6 +3,8 @@
 //
 // ==================================================
 
+$header-height = 7rem
+
 .header
   background rgba($gray-darker, .95)
   color #fff
@@ -10,6 +12,7 @@
   position relative
 
   +above('sm')
+    height $header-height
     position fixed 0 0 auto
 
 .header-container

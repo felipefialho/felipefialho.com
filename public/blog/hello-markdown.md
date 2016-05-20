@@ -1,4 +1,4 @@
-##[Markdown Post](/posts/hello-markdown)
+## [Markdown Post](/posts/hello-markdown)
 
 __This is an example of a post created using markdown.__
 

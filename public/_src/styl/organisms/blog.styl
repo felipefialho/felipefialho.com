@@ -1,0 +1,45 @@
+//
+// Blog
+//
+// ==================================================
+
+.blog
+
+  .content + &
+    margin-top $space-xlg
+    padding-top $space-lg
+
+
+  // Types
+  // ----------------------------------------------------
+
+  .blog-title
+    font(h3, regular, secondary)
+    margin-bottom $space-lg
+
+
+//
+// Post
+// ==================================================
+
+.blog-post
+  border $line solid 1px
+  display block
+  margin-left -($space-md)
+  padding $space-md
+  transition border .2s
+
+  &:not(:last-child)
+    margin-bottom $space-lg
+
+
+  &:hover
+  &:focus
+    border-color $brand-primary
+
+  .title
+    font(h2, regular, secondary)
+    margin-bottom $space-md
+
+  p
+    font(p1, light)
