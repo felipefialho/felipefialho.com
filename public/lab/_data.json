@@ -1,4 +1,11 @@
 {
+  "progress": {
+    "path":"http://codepen.io/LFeh/pen/vGMJBN",
+    "date": "May 2016",
+    "title": "Pure CSS - Progress Circles",
+    "description": "A example of progress circles using only Stylus. ",
+    "image": "progress.png"
+  },
   "kratos": {
     "path":"https://github.com/LFeh/kratos-boilerplate",
     "date": "Apr 2016",
@@ -32,7 +39,7 @@
     "date": "Apr 2014",
     "title": "CSS Components",
     "description": "A set of common UI Components using the power of CSS and without Javascript",
-    "image": "css-components.jpg"
+    "image": "css-components.png"
   },
   "chess": {
     "path":"https://github.com/chessjs/chess",
@@ -46,28 +53,28 @@
     "date": "Jan 2014",
     "title": "A Clockwork Orange",
     "description": "My tribute in Pure CSS to this great movie",
-    "image": "clockwork-orange.jpg"
+    "image": "clockwork-orange.png"
   },
   "piano": {
     "path":"http://www.felipefialho.com/piano/",
     "date": "Out 2013",
     "title": "Piano Keyboard",
     "description": "Piano Keyboard developed in HTML, CSS and Javascript",
-    "image": "piano-keyboard.jpg"
+    "image": "piano-keyboard.png"
   },
   "table-action": {
     "path":"http://codepen.io/LFeh/pen/beEoG",
     "date": "Out 2013",
     "title": "Responsible Table - Action",
     "description": "Example of responsive table to actions",
-    "image": "table-action.jpg"
+    "image": "table-action.png"
   },
   "table": {
     "path":"http://codepen.io/LFeh/details/hsreD",
     "date": "Out 2013",
     "title": "Responsible Table",
     "description": "Example of responsive table",
-    "image": "table-responsive.jpg"
+    "image": "table-responsive.png"
   },
   "cartman": {
     "path":"http://codepen.io/LFeh/details/qzDCJ",
