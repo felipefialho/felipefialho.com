@@ -9,10 +9,6 @@
   +above('lg')
     lost-center $screen-lg no-flex
 
-  .page-header
-    lost-center $screen-sm $space-lg
-    lost-flex-container column
-
 
 //
 // List
@@ -29,10 +25,8 @@
 .thumbnail-item
   justify-content flex-end
   lost-flex-container column
+  margin-bottom $space-xlg
   position relative
-
-  &:not(:last-child)
-    margin-bottom $space-xlg
 
   +above('sm')
     lost-column 1/2 2 $space-xlg
@@ -46,7 +40,7 @@
   // ----------------------------------------------------
 
   .title
-    font(h3, regular, secondary)
+    font(h4, regular, secondary)
     margin-bottom $space
 
   .date
@@ -58,6 +52,9 @@
   p
     font(p1, light)
 
+    +above('sm')
+      min-height 9rem
+
   .picture
     border $line solid 1px
     display block
@@ -68,6 +65,7 @@
       height 25vh
       object-fit cover
       max-width 100%
+      width 100%
 
   .btn
     width 100%

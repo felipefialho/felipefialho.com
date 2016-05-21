@@ -1,0 +1,19 @@
+//-
+//- Lab
+//- ==================================================
+
+section.thumbnail
+
+  header.page-header.sr-only
+    h2.title Lab
+
+  .thumbnail-list
+    each lab, slug in public.lab._data
+      article.thumbnail-item
+        time.date #{ lab.date }
+        h1.title #{ lab.title }
+        picture.picture
+          img(src='/assets/img/lab/#{ lab.image }' alt="Thumbnail of #{ lab.title }'s website")
+        p #{ lab.description }
+        a.btn(href='#{ lab.path }' title='View lab' target='_blank') View the project
+

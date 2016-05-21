@@ -39,8 +39,7 @@ const srcPaths = {
   icons: 'public/_src/svg/icons/*.svg',
   svg: 'public/_src/svg/etc/*',
   img: 'public/_src/img/**/*',
-  jade: 'public/**/*.jade',
-  md: 'public/**/*.md',
+  harp: ['public/**/*.jade', 'public/**/*.md', 'public/**/*.json']
 };
 
 const buildPaths = {
@@ -107,8 +106,7 @@ gulp.task('serve', () => {
       proxy: 'localhost:9000'
     });
 
-    gulp.watch(srcPaths.md, function () { reload(); });
-    gulp.watch(srcPaths.jade, function () { reload(); });
+    gulp.watch(srcPaths.harp, function () { reload(); });
     gulp.watch(srcPaths.css, ['css']);
     gulp.watch(srcPaths.img, ['images']);
     gulp.watch(srcPaths.icons, ['icons']);

@@ -1,0 +1,79 @@
+{
+  "kratos": {
+    "path":"https://github.com/LFeh/kratos-boilerplate",
+    "date": "Apr 2016",
+    "title": "Kratos Boilerplate",
+    "description": "A simple and fast boilerplate for static projects using Gulp, Jade, Stylus and PostCSS",
+    "image": "kratos.png"
+  },
+  "frontend-br": {
+    "path":"https://github.com/frontendbr",
+    "date": "Fev 2016",
+    "title": "Front-End Brasil - Github",
+    "description": "Organization in Github to improve the discussions about Front-End on Brazil",
+    "image": "frontend-br.png"
+  },
+  "coding-style": {
+    "path":"https://github.com/LFeh/coding-style",
+    "date": "Nov 2014",
+    "title": "My Coding Style",
+    "description": "My rules coding for HTML, CSS and JavaScript development",
+    "image": "coding-style.png"
+  },
+  "survey": {
+    "path":"http://www.felipefialho.com/survey/",
+    "date": "Ago 2014",
+    "title": "Survey - Front-End Brasil",
+    "description": "Market research with Front-enders of Brazil",
+    "image": "survey.png"
+  },
+  "components": {
+    "path":"http://www.felipefialho.com/css-components/",
+    "date": "Apr 2014",
+    "title": "CSS Components",
+    "description": "A set of common UI Components using the power of CSS and without Javascript",
+    "image": "css-components.jpg"
+  },
+  "chess": {
+    "path":"https://github.com/chessjs/chess",
+    "date": "Fev 2014",
+    "title": "CheSS.js",
+    "description": "A modern and light chess game developed with HTML, CSS and Javascript",
+    "image": "chess.jpg"
+  },
+  "clockwork": {
+    "path":"http://codepen.io/LFeh/pen/kjlnJ",
+    "date": "Jan 2014",
+    "title": "A Clockwork Orange",
+    "description": "My tribute in Pure CSS to this great movie",
+    "image": "clockwork-orange.jpg"
+  },
+  "piano": {
+    "path":"http://www.felipefialho.com/piano/",
+    "date": "Out 2013",
+    "title": "Piano Keyboard",
+    "description": "Piano Keyboard developed in HTML, CSS and Javascript",
+    "image": "piano-keyboard.jpg"
+  },
+  "table-action": {
+    "path":"http://codepen.io/LFeh/pen/beEoG",
+    "date": "Out 2013",
+    "title": "Responsible Table - Action",
+    "description": "Example of responsive table to actions",
+    "image": "table-action.jpg"
+  },
+  "table": {
+    "path":"http://codepen.io/LFeh/details/hsreD",
+    "date": "Out 2013",
+    "title": "Responsible Table",
+    "description": "Example of responsive table",
+    "image": "table-responsive.jpg"
+  },
+  "cartman": {
+    "path":"http://codepen.io/LFeh/details/qzDCJ",
+    "date": "Aug 2012",
+    "title": "Pure CSS - Eric Cartman",
+    "description": "Eric Cartman in Pure CSS (with animation)",
+    "image": "cartman-css3.jpg"
+  }
+}
