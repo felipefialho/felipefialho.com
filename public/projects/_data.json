@@ -1,0 +1,72 @@
+{
+  "wendy": {
+    "path":"http://myholidayinnorthkorea.com/",
+    "date": "Aug 2005",
+    "title": "My Holiday in North Korea",
+    "description": "Development of HTML (Jade), CSS (Stylus) and Javascript.",
+    "image": "wendy-thumb.jpg"
+  },
+  "van-gogh": {
+    "path":"http://vangogh.oupexplore.com/",
+    "date": "Jul 2005",
+    "title": "Van Gogh - 125 Years of Inspiration & Mystery",
+    "description": "Development of HTML (Jade), CSS (Stylus) and Javascript.",
+    "image": "van-gogh-thumb.jpg"
+  },
+  "ore": {
+    "path":"http://oxfordre.com/",
+    "date": "Jul 2005",
+    "title": "Oxford Research Encyclopedias",
+    "description": "Development of HTML (Jade), CSS (Stylus) and Javascript.",
+    "image": "ore-thumb.jpg"
+  },
+  "civilwar": {
+    "path":"http://civilwar.oupexplore.com/",
+    "date": "Mar 2005",
+    "title": "Civil War - 150th Anniversary",
+    "description": "Development of HTML (Jade), CSS (Less) and Javascript.",
+    "image": "civilwar-thumb.jpg"
+  },
+  "aasc": {
+    "path":"http://aasc.oupexplore.com/",
+    "date": "Fev 2005",
+    "title": "African American Studies Center",
+    "description": "Development of HTML (Jade), CSS (Less) and Javascript.",
+    "image": "aasc-thumb.jpg"
+  },
+  "obo": {
+    "path":"http://oxbib-info.oupexplore.com/",
+    "date": "Jan 2005",
+    "title": "Oxford Bibliographies",
+    "description": "Development of HTML (Jade), CSS (Less) and Javascript.",
+    "image": "obo-thumb.jpg"
+  },
+  "filtro-structure": {
+    "path":"http://2014.filtro.us/",
+    "date": "Dez 2014",
+    "title": "Filtro Structure - 2014",
+    "description": "Development of HTML (Jade), CSS (Less) and Javascript.",
+    "image": "filtro-structure-thumb.jpg"
+  },
+  "corporate-sales": {
+    "path":"http://oupmediainfo.com/",
+    "date": "Out 2014",
+    "title": "Oxford - Corporate Sales",
+    "description": "Development of HTML (Jade), CSS (Less) and Javascript.",
+    "image": "site-corporate-sales-thumb.jpg"
+  },
+  "site-tst": {
+    "path":"http://www.twostorytents.com/",
+    "date": "Ago 2014",
+    "title": "Two Story Tents",
+    "description": "Development of HTML (Jade), CSS (Less) and Javascript.",
+    "image": "site-tst-thumb.jpg"
+  },
+  "site-jpr-2015": {
+    "path":"http://www.jpr2015.org.br/",
+    "date": "Out 2014",
+    "title": "JPR 2015",
+    "description": "Development of HTML (Jade), CSS (Less) and Javascript.",
+    "image": "site-jpr-2015-thumb.jpg"
+  }
+}

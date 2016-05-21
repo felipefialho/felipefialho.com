@@ -8,7 +8,6 @@
 // 5. Italic
 // 6. Small
 // 7. Blockquote
-// 8. Title
 //
 // ==================================================
 
@@ -166,23 +165,3 @@ blockquote
         content '– '
 
 
-
-//
-// 8. Title
-// --------------------------------------------------
-
-.title-section
-  font(h4, regular, secondary)
-  color $gray
-  margin-bottom $space-lg
-  padding-bottom $space
-  position relative
-
-  &:after
-    border-bottom currentColor solid 1px
-    content ''
-    position absolute
-    opacity .5
-    top 100%
-    left -($space-md)
-    right -($space-md)

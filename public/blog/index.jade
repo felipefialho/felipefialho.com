@@ -3,14 +3,14 @@
 //- ==================================================
 
 section.blog
-  .container
 
-    h2.title-section Blog (Portuguese)
+  header.page-header
+    h2.title Blog (Portuguese)
 
-    each post, slug in public.blog._data
-      a.blog-link(href='/blog/#{ post.path }/' title='View the post')
-        article.blog-post
-          time.date #{ post.date }
-          h1.title #{ post.title }
-          p #{ post.description }
+  each post, slug in public.blog._data
+    a.blog-link(href='/blog/#{ post.path }/' title='View the post')
+      article.blog-post
+        time.date #{ post.date }
+        h1.title #{ post.title }
+        p #{ post.description }
 

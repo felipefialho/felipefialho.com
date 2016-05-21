@@ -1,0 +1,61 @@
+//
+// Thumbnail
+//
+// ==================================================
+
+.thumbnail
+  lost-center $screen-sm $space-lg
+  padding-top $space-md
+
+  +above('lg')
+    lost-center $screen-lg
+
+
+//
+// Item
+// ==================================================
+
+.thumbnail-item
+  lost-flex-container column
+  position relative
+
+  &:not(:last-child)
+    margin-bottom $space-lg
+
+  +above('sm')
+    lost-column 1/2 2 $space-lg
+
+  +above('lg')
+    lost-column 2/6 3 $space-lg
+
+
+
+  // Types
+  // ----------------------------------------------------
+
+  .title
+    font(h3, regular, secondary)
+    margin-bottom $space
+
+  .date
+    font(h6, regular, secondary)
+    color $gray
+    display block
+    margin-bottom $space-xs
+
+  p
+    font(p1, light)
+
+  .picture
+    border $line solid 1px
+    display block
+    margin-bottom $space
+
+    img
+      display block
+      height 25vh
+      object-fit cover
+      max-width 100%
+
+  .btn
+    width 100%

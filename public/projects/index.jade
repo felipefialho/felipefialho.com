@@ -1,0 +1,19 @@
+//-
+//- Projects
+//- ==================================================
+
+section.thumbnail
+
+  header.page-header
+    h2.title Projects
+    p Only the last projects
+
+  each project, slug in public.projects._data
+    article.thumbnail-item
+      time.date #{ project.date }
+      h1.title #{ project.title }
+      picture.picture
+        img(src='/assets/img/projects/#{ project.image }' alt="Thumbnail of #{ project.title }'s website")
+      p #{ project.description }
+      a.btn(href='#{ project.path }' title='View project' target='_blank') View the project
+
