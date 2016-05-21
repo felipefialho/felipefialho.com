@@ -4,11 +4,22 @@
 // ==================================================
 
 .thumbnail
-  lost-center $screen-sm $space-lg
-  padding-top $space-md
+  lost-center $screen-sm $space-lg no-flex
 
   +above('lg')
-    lost-center $screen-lg
+    lost-center $screen-lg no-flex
+
+  .page-header
+    lost-center $screen-sm $space-lg
+    lost-flex-container column
+
+
+//
+// List
+// ==================================================
+
+.thumbnail-list
+  lost-flex-container row
 
 
 //
