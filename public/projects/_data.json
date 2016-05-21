@@ -1,72 +1,86 @@
 {
+  "composition": {
+    "path":"http://composition.is/",
+    "date": "Fev 2016",
+    "title": "Composition",
+    "description": "Development of HTML (Jade), CSS (Stylus) and Javascript",
+    "image": "composition.jpg"
+  },
   "wendy": {
     "path":"http://myholidayinnorthkorea.com/",
     "date": "Aug 2015",
     "title": "My Holiday in North Korea",
     "description": "Development of HTML (Jade), CSS (Stylus) and Javascript",
-    "image": "wendy-thumb.jpg"
+    "image": "wendy.jpg"
   },
   "van-gogh": {
     "path":"http://vangogh.oupexplore.com/",
     "date": "Jul 2015",
     "title": "Van Gogh - 125 Years of Inspiration & Mystery",
     "description": "Development of HTML (Jade), CSS (Stylus) and Javascript",
-    "image": "van-gogh-thumb.jpg"
+    "image": "van-gogh.jpg"
   },
   "ore": {
     "path":"http://oxfordre.com/",
     "date": "Jul 2015",
     "title": "Oxford Research Encyclopedias",
     "description": "Development of HTML (Jade), CSS (Stylus) and Javascript",
-    "image": "ore-thumb.jpg"
+    "image": "ore.jpg"
   },
   "civilwar": {
     "path":"http://civilwar.oupexplore.com/",
     "date": "Mar 2015",
     "title": "Civil War - 150th Anniversary",
     "description": "Development of HTML (Jade), CSS (Less) and Javascript",
-    "image": "civilwar-thumb.jpg"
+    "image": "civilwar.jpg"
   },
   "aasc": {
     "path":"http://aasc.oupexplore.com/",
     "date": "Fev 2015",
     "title": "African American Studies Center",
     "description": "Development of HTML (Jade), CSS (Less) and Javascript",
-    "image": "aasc-thumb.jpg"
+    "image": "aasc.jpg"
   },
   "obo": {
     "path":"http://oxbib-info.oupexplore.com/",
     "date": "Jan 2015",
     "title": "Oxford Bibliographies",
     "description": "Development of HTML (Jade), CSS (Less) and Javascript",
-    "image": "obo-thumb.jpg"
+    "image": "obo.jpg"
   },
   "filtro-structure": {
     "path":"http://2014.filtro.us/",
     "date": "Dez 2014",
     "title": "Filtro Structure - 2014",
     "description": "Development of HTML (Jade), CSS (Less) and Javascript",
-    "image": "filtro-structure-thumb.jpg"
+    "image": "filtro-structure.jpg"
   },
   "corporate-sales": {
     "path":"http://oupmediainfo.com/",
     "date": "Out 2014",
     "title": "Oxford - Corporate Sales",
     "description": "Development of HTML (Jade), CSS (Less) and Javascript",
-    "image": "site-corporate-sales-thumb.jpg"
+    "image": "corporate-sales.jpg"
   },
-  "site-tst": {
-    "path":"http://www.twostorytents.com/",
-    "date": "Ago 2014",
-    "title": "Two Story Tents",
-    "description": "Development of HTML (Jade), CSS (Less) and Javascript",
-    "image": "site-tst-thumb.jpg"
-  },
-  "site-jpr-2015": {
+  "jpr-2015": {
     "path":"http://www.jpr2015.org.br/",
     "date": "Out 2014",
     "title": "JPR 2015",
     "description": "Development of HTML (Jade), CSS (Less) and Javascript",
-    "image": "site-jpr-2015-thumb.jpg"
+    "image": "jpr-2015.jpg"
+  },
+  "tst": {
+    "path":"http://www.twostorytents.com/",
+    "date": "Ago 2014",
+    "title": "Two Story Tents",
+    "description": "Development of HTML (Jade), CSS (Less) and Javascript",
+    "image": "tst.jpg"
+  },
+  "american-life": {
+    "path":"https://www.alseg.com.br/",
+    "date": "Ago 2014",
+    "title": "American Life",
+    "description": "Development of HTML (Jade), CSS (Less) and Javascript",
+    "image": "american-life.jpg"
   }
 }
