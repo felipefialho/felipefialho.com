@@ -63,23 +63,6 @@ gulp.task('css', () => {
     refresh();
 });
 
-gulp.task('styleguide', () => {
-  gulp.src(srcPaths.styl)
-    .pipe(stylus({
-      use: [rupture(), poststylus([lost(), fontMagician(), rucksack({ autoprefixer: true })])],
-      compress: false
-    }))
-    .pipe(postcss([
-      require('mdcss')({
-        logo: '../logo-felipe.png',
-        examples: {
-          css: ['../public/_src/css/style.css']
-        }
-      })
-    ]))
-    .pipe(gulp.dest(buildPaths.css));
-});
-
 gulp.task('images', () => {
   gulp.src(srcPaths.img)
     .pipe(plumber())

@@ -27,17 +27,18 @@
 // ==================================================
 
 .thumbnail-item
+  justify-content flex-end
   lost-flex-container column
   position relative
 
   &:not(:last-child)
-    margin-bottom $space-lg
+    margin-bottom $space-xlg
 
   +above('sm')
-    lost-column 1/2 2 $space-lg
+    lost-column 1/2 2 $space-xlg
 
   +above('lg')
-    lost-column 2/6 3 $space-lg
+    lost-column 2/6 3 $space-xlg
 
 
 
