@@ -1,0 +1,24 @@
+doctype
+html(lang="en")
+
+  != partial("../_partials/head")
+
+  body(class='page-#{ current.path[0] }')
+
+    != partial("../_partials/header")
+
+    //-
+    //- Main
+    //- --------------------------------------------------
+    main.main(role='main')
+      article.post(itemscope itemtype='http://schema.org/Blog')
+
+        .post-header
+          h1 #{ title }
+
+        .content(itemprop='text')
+          != yield
+
+        aside.comments
+          != partial("../_partials/comments")
+

@@ -14,11 +14,6 @@
 
     "site_url": "www.felipefialho.com",
 
-    "disqus": {
-      "enabled": true,
-      "shortname": ""
-    },
-
     "sitemap": {
       "enabled": true,
       "changefreq": "daily"

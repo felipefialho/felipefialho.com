@@ -1,20 +1,8 @@
 {
-  "hello-markdown": {
-    "path":"2016/hello-markdown",
-    "date": "05/20/2016",
-    "title": "Markdown Post",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aliquam ea architecto beatae nam, rerum quidem tempora molestiae necessitatibus est distinctio ab, ad quo laborum, porro. Repudiandae aspernatur autem quis."
-  },
-  "hello-markdown-2": {
-    "path":"2016/hello-markdown-2",
-    "date": "05/20/2016",
-    "title": "Markdown Post",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aliquam ea architecto beatae nam, rerum quidem tempora molestiae necessitatibus est distinctio ab, ad quo laborum, porro. Repudiandae aspernatur autem quis."
-  },
-  "hello-markdown-3": {
-    "path":"2016/hello-markdown",
-    "date": "05/20/2016",
-    "title": "Markdown Post",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aliquam ea architecto beatae nam, rerum quidem tempora molestiae necessitatibus est distinctio ab, ad quo laborum, porro. Repudiandae aspernatur autem quis."
+  "o-que-um-bom-desenvolvedor-front-end-precisa-saber": {
+    "path":"2013/o-que-um-bom-desenvolvedor-front-end-precisa-saber",
+    "date": "29/04/2013",
+    "title": "O que um bom desenvolvedor Front-End precisa saber?",
+    "description": "Não tive formação como programador, sempre fui focado no HTML e CSS, apesar de claro, saber fazer integração e trabalhar no ambiente Back-End, além de me virar com JQuery."
   }
 }
