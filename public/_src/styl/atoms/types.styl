@@ -4,10 +4,8 @@
 // 1. Links
 // 2. Headings
 // 3. Paragraph
-// 4. Bold
-// 5. Italic
-// 6. Small
-// 7. Blockquote
+// 4. Code
+// 5. Blockquote
 //
 // ==================================================
 
@@ -44,35 +42,26 @@ p
   &:last-child
     margin-bottom 0
 
-
 //
-// 4. Bold
+// 4. Code
 // ==================================================
 
-b,
-strong
-  font-weight(bold)
+pre
+  font(p1, 600, secondary)
+  background rgba($gray-light, .2)
+  display block
+  margin $space-lg 0
+  padding $space-md
+
+code
+  display block
+
+  p &
+    display inline
 
 
 //
-// 5. Italic
-// ==================================================
-
-i,
-em
-  font-style italic
-
-
-//
-// 6. Small
-// ==================================================
-
-small
-  font-size 85%
-
-
-//
-// 7. Blockquote
+// 5. Blockquote
 // ==================================================
 
 blockquote

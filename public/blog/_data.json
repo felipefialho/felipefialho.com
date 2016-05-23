@@ -1,4 +1,12 @@
 {
+  "grunt-voce-deveria-estar-usando": {
+    "cover": "grunt.jpg",
+    "cover_alt": "Logo do Grunt",
+    "path":"2013/grunt-voce-deveria-estar-usando",
+    "date": "04/06/2013",
+    "title": "Grunt - Você deveria estar usando",
+    "description": "Dessa vez vou explicar as tarefas que atualmente estou utilizando para automatizar meu trabalho."
+  },
   "geradores-estaticos-breve-explicacao": {
     "path":"2013/geradores-estaticos-breve-explicacao",
     "date": "06/05/2013",
