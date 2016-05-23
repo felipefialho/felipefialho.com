@@ -1,4 +1,34 @@
 {
+  "retrospectiva-2013": {
+    "path":"2013/retrospectiva-2013",
+    "date": "17/12/2013",
+    "title": "Retrospectiva 2013",
+    "description": "Último dia de trabalho no ano, e é o momento ideal para analisar o que foi feito, reforçar as bases e se preparar para ter um 2014 ainda mais produtivo."
+  },
+  "tutorial-tabela-responsiva": {
+    "path":"2013/tutorial-tabela-responsiva",
+    "date": "14/10/2013",
+    "title": "Tutorial - Tabela Responsiva",
+    "description": "Em layouts responsivos, um dos componentes que sempre me incomodava eram as tabelas. Acredito que isso também ocorra com outros desenvolvedores."
+  },
+  "tutorial-botao-de-progresso": {
+    "path":"2013/tutorial-botao-de-progresso",
+    "date": "02/10/2013",
+    "title": "Tutorial - Botão de Progresso",
+    "description": "Nesse artigo, vou mostrar mais um tutorial simples... o desenvolvimento de um botão de progresso, que pode fornecer um feedback importante para o usuário."
+  },
+  "um-conto-sobre-componentizacao-e-quebra-de-paradigmas": {
+    "path":"2013/um-conto-sobre-componentizacao-e-quebra-de-paradigmas",
+    "date": "29/07/2013",
+    "title": "Um conto sobre componentização e quebra de paradigmas",
+    "description": "Melhorar processos é parte essencial do nosso trabalho, mas em algum momento percebemos que só melhorar pode não ser o suficiente, as vezes é preciso quebrar paradigmas."
+  },
+  "sobre-organizacao-de-componentes-com-pre-processadores": {
+    "path":"2013/sobre-organizacao-de-componentes-com-pre-processadores",
+    "date": "18/06/2013",
+    "title": "Sobre organização de componentes com pré-processadores",
+    "description": "No último artigo dei uma passada pelo Grunt e mostrei como ele pode ajudar a otimizar suas tarefas. Se você usa pré-processadores a organização dos componentes é essencial.."
+  },
   "grunt-voce-deveria-estar-usando": {
     "cover": "grunt.jpg",
     "cover_alt": "Logo do Grunt",
@@ -6,6 +36,12 @@
     "date": "04/06/2013",
     "title": "Grunt - Você deveria estar usando",
     "description": "Dessa vez vou explicar as tarefas que atualmente estou utilizando para automatizar meu trabalho."
+  },
+  "primeiros-passos-com-o-docpad": {
+    "path":"2013/primeiros-passos-com-o-docpad",
+    "date": "21/05/2013",
+    "title": "Primeiros passos com o Docpad",
+    "description": "No último post dei uma breve explicação sobre geradores estáticos. Algumas pessoas me pediram para fazer um tutorial básico do Docpad."
   },
   "geradores-estaticos-breve-explicacao": {
     "path":"2013/geradores-estaticos-breve-explicacao",
