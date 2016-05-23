@@ -1,5 +1,5 @@
 doctype
-html(lang="en")
+html(lang="pt-br")
 
   != partial("../_partials/head")
 
@@ -14,16 +14,25 @@ html(lang="en")
     main.main(role='main')
 
       if current.source !== 'index' && public.blog._data
-        article.post(itemscope itemtype='http://schema.org/Blog')
 
-          .post-header
-            h1 #{ title }
+        each post, slug in public.blog._data
 
-          .content(itemprop='text')
-            != yield
+          article.blog-article(itemscope itemtype='http://schema.org/Blog')
 
-          aside.comments
-            != partial("../_partials/comments")
+            .blog-header
+              picture.picture
+                img(src='/assets/img/blog/cover/#{ post.cover }' alt='Criança em frente a uma lousa')
+
+              .content
+                h1 #{ post.title }
+                p #{ post.description }
+
+            .blog-inner
+              .content(itemprop='text')
+                != yield
+
+              aside.comments
+                != partial("../_partials/comments")
 
       else
         != yield

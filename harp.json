@@ -1,9 +1,13 @@
 {
   "domains": ["www.felipefialho.com", "felipefialho.com"],
 
+  "language": "en",
+
   "globals": {
 
     "site_title": "Felipe Fialho - Front-End Developer",
+
+    "description": "Personal website focused in Front-End and my personal projects.",
 
     "twitter": "LFeh",
     "facebook": "LFehh",

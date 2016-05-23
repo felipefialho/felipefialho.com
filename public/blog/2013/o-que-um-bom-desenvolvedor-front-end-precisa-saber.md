@@ -1,5 +1,3 @@
-Não tive formação como programador, sempre tive foco no HTML e CSS, apesar de claro, saber fazer integração e trabalhar no ambiente Back-End, além de me virar com JQuery.
-
 Existe um projeto bem bacana no Github chamado [Pequeno Guia para Empresas que Procuram Bons Desenvolvedores Front-end e Desenvolvedores Front-end que Procuram Boas Empresas](https://github.com/LFeh/bons-front-enders) e é nele que me inspiro para escrever essa postagem.
 
 ### Preciso ser um designer?
