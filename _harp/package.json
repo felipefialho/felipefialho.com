@@ -9,7 +9,8 @@
   "scripts": {
     "lint": "./node_modules/.bin/jscs public/_src",
     "fix": "./node_modules/.bin/jscs public/_src --fix",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "deploy": "cd .. && harp compile _harp ./ && cp _harp/README.md ./ && cp _harp/CNAME ./"
   },
   "author": "Felipe Fialho <hi@felipefialho.com> (http://www.felipefialho.com/)",
   "license": "MIT",

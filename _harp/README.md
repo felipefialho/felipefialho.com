@@ -96,6 +96,7 @@ This project uses as a base the [Kratos Boilerplate](https://github.com/LFeh/kra
 - `gulp browser-sync`: inicialize a server
 - `gulp watch`: call for watch files
 - `gulp build`: run all tasks
+- `npm run deploy`: deploy to gh pages
 
 
 ## License

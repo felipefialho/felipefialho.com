@@ -21,6 +21,8 @@
     "sitemap": {
       "enabled": true,
       "changefreq": "daily"
-    }
+    },
+
+    "copy": [".gitignore", "README.md", "CNAME"]
   }
 }
