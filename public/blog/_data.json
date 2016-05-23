@@ -1,6 +1,13 @@
 {
+  "geradores-estaticos-breve-explicacao": {
+    "path":"2013/geradores-estaticos-breve-explicacao",
+    "date": "06/05/2013",
+    "title": "Geradores estáticos - Breve explicação",
+    "description": "Quando escutamos falar pela primeira vez em geradores estáticos, normalmente não compreendemos qual vantagem eles poderiam ter em relação a sistemas de CMS como o Wordpress"
+  },
   "o-que-um-bom-desenvolvedor-front-end-precisa-saber": {
     "cover": "learn.jpg",
+    "cover_alt": "Criança em frente a uma lousa",
     "path":"2013/o-que-um-bom-desenvolvedor-front-end-precisa-saber",
     "date": "29/04/2013",
     "title": "O que um bom desenvolvedor Front-End precisa saber?",

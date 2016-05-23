@@ -13,26 +13,32 @@ html(lang="pt-br")
     //- --------------------------------------------------
     main.main(role='main')
 
-      if current.source !== 'index' && public.blog._data
+      - var postCount = 0
+      if (current.source !== 'index' && public.blog._data)
 
-        each post, slug in public.blog._data
+        for post, slug in public.blog._data
 
-          article.blog-article(itemscope itemtype='http://schema.org/Blog')
+          if slug == current.source
+            article.blog-article(itemscope itemtype='http://schema.org/Blog')
 
-            .blog-header
-              picture.picture
-                img(src='/assets/img/blog/cover/#{ post.cover }' alt='Criança em frente a uma lousa')
+              .blog-header
 
-              .content
-                h1 #{ post.title }
-                p #{ post.description }
+                if (post.cover)
+                  picture.picture
+                    img(src='/assets/img/blog/cover/#{ post.cover }' alt='#{ post.cover_alt }')
 
-            .blog-inner
-              .content(itemprop='text')
-                != yield
+                .content
+                  h1 #{ post.title }
+                  p #{ post.description }
 
-              aside.comments
-                != partial("../_partials/comments")
+              .blog-inner
+                .content(itemprop='text')
+                  != yield
+
+                aside.comments
+                  != partial("../_partials/comments")
+
+          - postCount++;
 
       else
         != yield

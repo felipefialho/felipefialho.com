@@ -8,7 +8,7 @@ section.thumbnail
     h2.title Lab
 
   .thumbnail-list
-    each lab, slug in public.lab._data
+    for lab, slug in public.lab._data
       article.thumbnail-item
         time.date #{ lab.date }
         h1.title #{ lab.title }

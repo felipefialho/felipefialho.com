@@ -7,7 +7,7 @@ section.blog
   header.page-header
     h2.title Blog (Portuguese)
 
-  each post, slug in public.blog._data
+  for post in public.blog._data
     a.blog-link(href='/blog/#{ post.path }/' title='View the post')
       article.blog-post
         time.date #{ post.date }

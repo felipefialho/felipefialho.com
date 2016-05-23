@@ -8,7 +8,7 @@ section.thumbnail
     h2.title Projects
 
   .thumbnail-list
-    each project, slug in public.projects._data
+    for project, slug in public.projects._data
       article.thumbnail-item
         time.date #{ project.date }
         h1.title #{ project.title }
