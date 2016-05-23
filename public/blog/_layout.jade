@@ -7,18 +7,24 @@ html(lang="en")
 
     != partial("../_partials/header")
 
+
     //-
     //- Main
     //- --------------------------------------------------
     main.main(role='main')
-      article.post(itemscope itemtype='http://schema.org/Blog')
 
-        .post-header
-          h1 #{ title }
+      if current.source !== 'index' && public.blog._data
+        article.post(itemscope itemtype='http://schema.org/Blog')
 
-        .content(itemprop='text')
-          != yield
+          .post-header
+            h1 #{ title }
 
-        aside.comments
-          != partial("../_partials/comments")
+          .content(itemprop='text')
+            != yield
+
+          aside.comments
+            != partial("../_partials/comments")
+
+      else
+        != yield
 
