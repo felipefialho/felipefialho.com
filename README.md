@@ -68,7 +68,7 @@ With the commands above, you have everything to start.
 │   ├── _layout.jade
 │   ├── index.jade
 │   ├── rss.xml.jade
-│   ├── sitemap.xml.jade 
+│   ├── sitemap.xml.jade
 ```
 
 Those folders and file will change during the project.

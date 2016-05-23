@@ -12,8 +12,8 @@ Dentro da pasta `css` tenho a pasta `less` e nela separo meus arquivos em mais d
 
 Explico a seguir:
 
-*   **bootstrap:** Ficam todos os ".less" do [Bootstrap](http://twitter.github.io/bootstrap/). Deixo-os em uma pasta separadas. Não posso modificar os arquivos nesse momento. Me impediria de atualizar o Boostrap para novas versões.
-*   **framework:** Adiciono novos componentes e "estendo" os componentes do Bootstrap. Qualquer modificação nos módulos padrões do Framework é feita nessa pasta.
+- **bootstrap:** Ficam todos os ".less" do [Bootstrap](http://twitter.github.io/bootstrap/). Deixo-os em uma pasta separadas. Não posso modificar os arquivos nesse momento. Me impediria de atualizar o Boostrap para novas versões.
+- **framework:** Adiciono novos componentes e "estendo" os componentes do Bootstrap. Qualquer modificação nos módulos padrões do Framework é feita nessa pasta.
 
 ## Separação dos arquivos nos projetos
 
@@ -27,18 +27,16 @@ Agora imaginem que chegou um novo projeto e já fizemos toda a avaliação dos c
 
 Na raiz da pasta `less` crio mais dois arquivos: `project.less` e `style.less`. Explico na sequencia:
 
-*   **project.less:** Coloco tudo que não se encaixa em "componente", detalhes especificos de cada página, entre outras coisas.
-*   **style.less:** É onde chamo todos os ".less" e peço para gerar um "style.css". Todos os componentes (e também o project.less) que estou utilizando são chamados nesse arquivo.
+- **project.less:** Coloco tudo que não se encaixa em "componente", detalhes especificos de cada página, entre outras coisas.
+- **style.less:** É onde chamo todos os ".less" e peço para gerar um "style.css". Todos os componentes (e também o project.less) que estou utilizando são chamados nesse arquivo.
 
 A estrutura final da pasta `less` fica assim:
 
-<div class="img-box">![Organização final](/assets/img/blog/etc/organizacao-less.jpg)</div>
+![Organização final](/assets/img/blog/organizacao-less.jpg)
 
 Pode ter uma ideia de como organizo os arquivos acessando o [fork do meu site.](https://github.com/LFeh/Website/tree/master/src/files/css/less) Já fiz várias melhorias de lá pra cá, mas o principio segue o mesmo.
 
 ## Para gerar o CSS
-
-Antigamente usava o [Winless](http://winless.org/) para gerar o CSS. Pedia para ele "olhar" minha pasta `less` e após qualquer modificação nos arquivos... gerar (através do style.less) o CSS final.
 
 Hoje uso o [Grunt para fazer essa tarefa](https://github.com/LFeh/Grunt-Base/blob/master/Gruntfile.js).
 

@@ -58,7 +58,10 @@ code
   display block
 
   p &
+  li &
+    background rgba($gray-light, .2)
     display inline
+    padding $space-xs
 
 
 //
@@ -76,11 +79,9 @@ blockquote
     margin-bottom 0
 
   cite
-    font-family(secondary)
-    font-weight(bold)
+    font(h2, regular, secondary)
+    color $gray
     display block
-    font-size 5rem
-    line-height 5.5rem
     position relative
     margin-bottom $space-sm
 
@@ -88,11 +89,11 @@ blockquote
     &:after
       font-size 4.5rem
       position absolute
-      margin-top -10px
+      margin-top  $space-xs
 
     &:before
       content '“'
-      left -($space)
+      left -($space-md)
 
     &:after
       content '”'

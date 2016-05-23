@@ -7,7 +7,7 @@
 // ==================================================
 
 .blog
-  lost-center $screen-sm $space-lg no-flex
+  lost-center ($screen-sm + (40px * 2)) $space-lg no-flex
 
   .content + &
     margin-top $space-xlg
@@ -57,19 +57,35 @@
 // ----------------------------------------------------
 
 .blog-header
-  align-items center
+  align-items flex-end
   background rgba($blue-light, .7)
   color #fff
   height 'calc(70vh - %s)' % $header-height
   lost-flex-container row
   overflow hidden
-  position fixed $header-height 0 0
+  padding-top $space-xlg
+  padding-bottom $space-xlg
+  position fixed 0
+
+  +above('sm')
+    top $header-height
 
   &:before
     background rgba($gray-darker, .8)
     content ''
     position absolute 0
     z-index 2
+
+  .picture
+    position absolute 0
+
+    img
+      filter: grayscale(85%)
+      object-fit cover
+      position absolute 0
+      height 100%
+      width 100%
+
 
   .content
     position relative
@@ -92,7 +108,7 @@
   z-index 5
 
   .comments
-    lost-center $screen-sm $space-lg no-flex
+    lost-center ($screen-sm + (40px * 2)) $space-lg no-flex
     margin-top $space-xlg
 
 

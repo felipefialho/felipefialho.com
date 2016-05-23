@@ -5,15 +5,15 @@
 section.thumbnail
 
   header.page-header.sr-only
-    h2.title Lab
+    h2.title Labs
 
   .thumbnail-list
-    for lab, slug in public.lab._data
+    for lab, slug in public.labs._data
       article.thumbnail-item
         time.date #{ lab.date }
         h1.title #{ lab.title }
         picture.picture
-          img(src='/assets/img/lab/#{ lab.image }' alt="Thumbnail of #{ lab.title }'s website")
+          img(src='/assets/img/labs/#{ lab.image }' alt="Thumbnail of #{ lab.title }'s website")
         p #{ lab.description }
         a.btn(href='#{ lab.path }' title='View lab' target='_blank') View the project
 

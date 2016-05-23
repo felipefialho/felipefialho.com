@@ -1,10 +1,10 @@
- Vou começar pelo fim, e agradecer antes de entrar na retrospectiva, pois nada seria possível sem as pessoas que estiveram do meu lado me apoiando ou contribuindo de alguma forma.
+Vou começar pelo fim, e agradecer antes de entrar na retrospectiva, pois nada seria possível sem as pessoas que estiveram do meu lado me apoiando ou contribuindo de alguma forma.
 
-*   Agradeço os amigos desenvolvedores que fiz esse ano (e foram muitos!), citarei alguns no texto, caso esqueça alguém não fiquem bravos, pois poderia cometer a injustiça de esquecer alguns.
-*   A [Trend-i](http://www.trendi.com.br/), empresa que trabalho e me apoiou nos projetos (incluindo os pessoais!) e nas conquistas desse ano.
-*   Aos meus amigos de longa data, os ótimos momentos foram muitos e constantes (normalmente a base de cerveja :p).
-*   Namorada, que esteve do meu lado e deu forças quando mais precisei (horrível 2012) e esse ano solidificamos ainda mais esse relacionamento.
-*   Minha familia, mesmo estando longe, é a base de tudo e aonde nos situamos.
+- Agradeço os amigos desenvolvedores que fiz esse ano (e foram muitos!), citarei alguns no texto, caso esqueça alguém não fiquem bravos, pois poderia cometer a injustiça de esquecer alguns.
+- A [Trend-i](http://www.trendi.com.br/), empresa que trabalho e me apoiou nos projetos (incluindo os pessoais!) e nas conquistas desse ano.
+- Aos meus amigos de longa data, os ótimos momentos foram muitos e constantes (normalmente a base de cerveja :p).
+- Namorada, que esteve do meu lado e deu forças quando mais precisei (horrível 2012) e esse ano solidificamos ainda mais esse relacionamento.
+- Minha familia, mesmo estando longe, é a base de tudo e aonde nos situamos.
 
 Vou separar o ano em trimestres, nesses :
 

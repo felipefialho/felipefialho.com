@@ -57,9 +57,9 @@ Após alguns meses e bastante teste, cheguei em um modelo estrutural e organizac
 
 Esse ano descobrimos que o [Brad Frost](https://twitter.com/brad_frost) escreveu sobre algo que chamou de [Atomic Design](http://bradfrostweb.com/blog/post/atomic-web-design/), que tem uma idéia muito parecida com a que estavamos usando, e ela vai ainda mais a fundo, trabalhando com:
 
-*   **Átomos**: Elementos mínimos
-*   **Moléculas**: Junção desses elementos
-*   **Organismos**: Agrupamento dessas móleculas
+- **Átomos**: Elementos mínimos
+- **Moléculas**: Junção desses elementos
+- **Organismos**: Agrupamento dessas móleculas
 
 Existem dois ótimos artigos em português, um do [Fabricio Teixeira](http://arquiteturadeinformacao.com/2013/06/16/atomic-design-redesenhando-os-entregaveis-de-designers-e-desenvolvedores/) e outro da [Dani Guerrato](http://tableless.com.br/o-que-e-design-atomic/#.UfLPotK1zIg). Recomendo a leitura.
 

@@ -6,16 +6,16 @@
 .header
   background rgba($gray-darker, .95)
   color #fff
-  padding $space $space-lg
-  position relative
+  padding 0 $space-lg
+  position absolute 0 0 auto
+  z-index 10
 
   +above('sm')
-    height $header-height
-    position fixed 0 0 auto
-    z-index 10
+    position fixed
 
 
 .header-container
   align-items center
+  height $header-height
   lost-flex-container row
   justify-content space-between

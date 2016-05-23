@@ -1,0 +1,92 @@
+<!DOCTYPE html><html lang="pt-br"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="description" content="Melhorar processos é parte essencial do nosso trabalho, mas em algum momento percebemos que só melhorar pode não ser o suficiente, as vezes é preciso quebrar paradigmas."/><title>Um conto sobre componentização e quebra de paradigmas | Felipe Fialho - Front-End Developer</title><link rel="alternate" type="application/rss+xml" title="Felipe Fialho - Front-End Developer RSS" href="/rss.xml"/><link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png"/><link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png"/><link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png"/><link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png"/><link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png"/><link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png"/><link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png"/><link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png"/><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png"/><link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-icon-192x192.png"/><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/assets/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/assets/favicon-96x96.png"/><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/assets/favicon-16x16.png"/><link rel="manifest" href="/assets/favicon/manifest.json"/><meta name="msapplication-TileColor" content="#ffffff"/><meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png"/><meta name="theme-color" content="#ffffff"/><link rel="stylesheet" href="/assets/css/style.css"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-40410936-1', 'auto');
+ga('send', 'pageview');</script></head><body><header role="banner" class="header"><div class="header-container"><a href="/" role="logo" class="brand"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 140 30" style="enable-background:new 0 0 140 30;" xml:space="preserve">
+<g>
+	<path d="M0,8.5h2.6V7.4c0-3.3,1.4-6.2,5.5-6.2c1.2,0,2.4,0.3,3.1,0.8l-1,2C9.6,3.7,9,3.5,8.1,3.5c-2.5,0-2.9,1.2-2.9,3.9v1.1h3.9
+		v2.3H5.2v11.8H2.6V10.8H0V8.5z"/>
+	<path d="M22.6,20.6c-1.6,1.6-3.3,2.4-5.8,2.4c-2,0-3.5-0.6-4.5-1.5c-1.2-1.2-1.8-2.8-1.8-5.6c0-2.3,0.4-4.7,1.7-6.2
+		c0.9-1.1,2.4-1.9,4.7-1.9c4.2,0,5.8,2.8,5.8,6.2c0,0.5,0,1.2-0.1,1.8l-9.3,0.1c0.1,3,0.5,4.9,3.5,4.9c1.8,0,3.2-0.6,4.3-1.8
+		L22.6,20.6z M20.1,13.7c0-2.4-0.5-3.8-3.1-3.8c-2.7,0-3.4,1.5-3.6,3.8L20.1,13.7z"/>
+	<path d="M28.4,0.3v22.3h-2.6V0.3H28.4z"/>
+	<path d="M35.1,8.1v14.6h-2.6V8.1H35.1z"/>
+	<path d="M41.6,8.1v2.6c0.9-1.8,2.8-2.9,4.8-2.9c1.5,0,2.6,0.6,3.3,1.4c1.3,1.4,1.7,3.7,1.7,6c0,2.7-0.5,5.1-2.1,6.5
+		c-0.9,0.8-2.2,1.3-3.8,1.3c-1.4,0-3-0.4-4-1.8v8.5H39V8.1H41.6z M43,11.6c-1,1.3-1.4,2.9-1.4,4.6c0,1.4,0.2,2.6,0.9,3.4
+		c0.6,0.7,1.6,1.1,2.9,1.1c2.5,0,3.3-1.6,3.3-5.4c0-3.6-0.8-5.2-2.7-5.2C44.8,10.1,43.7,10.6,43,11.6z"/>
+	<path d="M66.2,20.6c-1.6,1.6-3.3,2.4-5.8,2.4c-2,0-3.5-0.6-4.5-1.5c-1.2-1.2-1.8-2.8-1.8-5.6c0-2.3,0.4-4.7,1.7-6.2
+		c0.9-1.1,2.4-1.9,4.7-1.9c4.2,0,5.8,2.8,5.8,6.2c0,0.5,0,1.2-0.1,1.8l-9.3,0.1c0.1,3,0.5,4.9,3.5,4.9c1.8,0,3.2-0.6,4.3-1.8
+		L66.2,20.6z M63.7,13.7c0-2.4-0.5-3.8-3.1-3.8c-2.7,0-3.4,1.5-3.6,3.8L63.7,13.7z"/>
+	<path d="M75,8.5h2.6v-1c0-3.5,1.2-6.4,6.6-6.4c2,0,3.5,0.4,4.8,1.3l-1,2c-1.1-0.7-2.3-1-4-1c-3.4,0-3.8,1.4-3.8,4v1.1H89v14.1h-2.6
+		V10.8h-6.1v11.8h-2.6V10.8H75V8.5z"/>
+	<path d="M92.4,9.8c1.4-1.5,3.2-2,5.3-2c3.6,0,5.5,1.5,5.5,5.3v9.5h-2.4l0-2.4C99.8,22.1,98,23,96.1,23c-1.3,0-2.4-0.4-3.1-1.1
+		c-0.8-0.7-1.2-1.8-1.2-3.1c0-1.7,0.6-2.7,1.7-3.5c1.3-0.9,3-1.2,5.1-1.2h2.1v-0.7c0-2.5-0.8-3.3-3-3.3c-1.6,0-2.7,0.4-3.8,1.5
+		L92.4,9.8z M98.3,16c-2.3,0-3.8,0.4-3.8,2.6c0,1.4,0.5,2.2,2,2.2c1.9,0,4.1-1.4,4.2-4.8H98.3z"/>
+	<path d="M109.3,0.3v22.3h-2.6V0.3H109.3z"/>
+	<path d="M115.6,0.3v10.6c0.6-1.8,2.3-3.2,4.6-3.2c2.7,0,4.2,1.8,4.2,4.8v10.1h-2.6v-9.6c0-1.9-0.5-2.9-2-2.9c-2.1,0-4.2,2-4.2,7.4
+		v5.1h-2.6V0.3H115.6z"/>
+	<path d="M138.2,21.1c-1.1,1.2-2.5,1.9-4.8,1.9c-2.2,0-3.6-0.7-4.6-1.8c-1.3-1.4-1.6-3.1-1.6-5.6c0-2.7,0.4-4.5,1.8-6
+		c1.1-1.2,2.6-1.9,4.8-1.9c2.2,0,3.6,0.7,4.6,1.8c1.3,1.4,1.6,3.2,1.6,5.7C140,17.8,139.6,19.5,138.2,21.1z M136.2,10.9
+		c-0.5-0.5-1.2-0.9-2.6-0.9c-1.5,0-2.2,0.5-2.6,1c-0.8,1-1.1,2.7-1.1,4.5c0,2.1,0.3,3.4,1,4.3c0.4,0.5,1.3,0.9,2.5,0.9
+		c1.5,0,2.2-0.5,2.7-1c0.8-1,1.1-2.6,1.1-4.4C137.3,13.4,137,11.8,136.2,10.9z"/>
+</g>
+</svg>
+</a><nav class="navbar"><label for="navbar" class="navbar-btn"><svg aria-hidden="true" aria-label="Menu" class="icon"><use xlink:href="/assets/svg/icons.svg#menu"></use></svg></label><input id="navbar" type="checkbox" class="nav-open"/><ul role="navigation" class="nav"><li class="nav-item"><a href="/blog" class="nav-link active">Blog</a></li><li class="nav-item"><a href="/projects" class="nav-link">Projects</a></li><li class="nav-item"><a href="/labs" class="nav-link">Labs</a></li></ul></nav><ul class="social-media"><li><a href="http://twitter.com/LFeh" title="View my Twitter" target="_blank"><svg aria-hidden="true" aria-label="Twitter" class="icon"><use xlink:href="/assets/svg/icons.svg#twitter"></use></svg></a></li><li><a href="https://www.facebook.com/LFehh" title="View my Facebook" target="_blank"><svg aria-hidden="true" aria-label="Facebook" class="icon"><use xlink:href="/assets/svg/icons.svg#facebook"></use></svg></a></li><li><a href="https://www.linkedin.com/lfehfrontend" title="View my Linkedin" target="_blank"><svg aria-hidden="true" aria-label="Linkedin" class="icon"><use xlink:href="/assets/svg/icons.svg#linkedin"></use></svg></a></li><li><a href="https://github.com/lfeh" title="View my Github" target="_blank"><svg aria-hidden="true" aria-label="Github" class="icon"><use xlink:href="/assets/svg/icons.svg#github"></use></svg></a></li><li><a href="https://codepen.io/lfeh" title="View my Codepen" target="_blank"><svg aria-hidden="true" aria-label="Codepen" class="icon"><use xlink:href="/assets/svg/icons.svg#codepen"></use></svg></a></li><li class="hidden"><a href="https://plus.google.com/101721187531748531230?rel=author" title="View my Google Plus" target="_blank"><svg aria-hidden="true" aria-label="Google Plus" class="icon"><use xlink:href="/assets/svg/icons.svg#google"></use></svg></a></li></ul></div></header><main role="main" class="main"><article itemscope itemtype="http://schema.org/Blog" class="blog-article"><div class="blog-header"><div class="content"><span itemprop="author" class="sr-only">Luiz Felipe Tartarotti Fialho</span><time itemprop="dateCreated" class="date">29/07/2013</time><h1 itemprop="name">Um conto sobre componentização e quebra de paradigmas</h1><p itemprop="description">Melhorar processos é parte essencial do nosso trabalho, mas em algum momento percebemos que só melhorar pode não ser o suficiente, as vezes é preciso quebrar paradigmas.</p></div></div><div class="blog-inner"><div itemprop="text" class="content"><h2>Mas sou apenas um &quot;mero desenvolvedor&quot;</h2><p>No <a href="http://tableless.com.br/drops-14-sou-um-mero-desenvolvedor/#.UfKtxNK1zIg">último drops</a> do <a href="https://twitter.com/diegoeis">Diego Eis</a>, ele conta sobre uma conversa no tuiter, na qual um dos desenvolvedores faz esse comentário.</p>
+<p>Não, você não é apenas um &quot;mero desenvolvedor&quot;, você está no centro de mudanças importantes no nosso mercado e pode influenciar positivamente.</p>
+<h2>O processo padrão</h2><p>Na maioria das vezes, essas são as etapas resumidas de um projeto...</p>
+<ol>
+<li>São criados Wireframes (geralmente pelo Diretor de Arte ou por alguém focado nessa parte)</li>
+<li>Em seguida o Diretor de Arte cria PSD&#39;s para TODAS as páginas, não é incomum uns 40 PSD&#39;s serem criados.</li>
+<li>O desenvolvedor Front-End cria HTML&#39;s e os estilos para todas as páginas e interações.</li>
+<li>Então o desenvolvedor Back-End coloca &quot;vida&quot; no projeto.</li>
+</ol>
+<p>Inclusive em alguns casos praticamente não existe contato entre os integrantes do projeto.</p>
+<p>Mas... será que não é hora de mudar os conceitos?</p>
+<h2>Os tempos são outros...</h2><p>Em algum momento, observei que receber 40 PSD&#39;s simplesmente não fazia sentido, tanto para mim quanto para o Diretor de Arte. Um projeto bem diagramado mantém caracteristicas praticamente iguais entre as páginas e na maioria dos casos apresentam os mesmos <strong>componentes</strong>.</p>
+<p>Cheguei a conclusão que seria muito mais lógico trabalhar os <strong>componentes</strong> de forma isolada, e usar eles nas páginas de acordo com a necessidade.</p>
+<h2>A importancia do trabalho em equipe</h2><p>De nada adianta ter idéias para melhorar o processo e não tentar coloca-las em prática e ouvir sugestões do resto da equipe.</p>
+<p>Uma mudança como essa impacta diretamente nas outras áreas, afinal o Diretor de Arte vai precisar se adaptar a nova forma de trabalhar e o pessoal do Back-End terá que programar os componentes &quot;separadamente&quot;.</p>
+<p>Portanto é extremamente necessário debater as idéias para chegar em um processo que fique bom para todos. Todas as áreas querem a mesma coisa: entregar projetos cada vez melhores. Uma troca de idéias para deixar as coisas alinhadas é muito importante para garantir uma boa entrega.</p>
+<p>Trabalho com pessoas muito competentes e inovadoras do meu lado, então as coisas fluiram naturalmente.</p>
+<h2>A criação de um Framework</h2><p>A estrutura HTML/CSS/JS dos componentes geralmente seguem linhas de código parecidas, mesmo quando são visualmente muito diferentes de um projeto para outro, então a criação de um Framework otimizaria muito o trabalho.</p>
+<p>Após alguns meses e bastante teste, cheguei em um modelo estrutural e organizacional que considero o ideal por enquanto, podem ver nesse artigo: <a href="../sobre-organizacao-de-componentes-com-pre-processadores/">Sobre organização de componentes com pré-processadores</a></p>
+<h3>Como trabalhamos atualmente</h3><p>É um resumo do resumo do processo que estamos seguindo (e que está sempre em estado &#39;beta&#39;)...</p>
+<ol>
+<li>Todos os envolvidos participam com o Diretor de Arte no desenvolvimento dos Wireframes.</li>
+<li>Fazemos um levantamento dos componentes que serão utilizados no projeto.</li>
+<li>Diretor de Arte cria layouts base (home e algumas internas) para aprovação e em paralelo trabalha nos componentes.</li>
+<li>Desenvolvo a estrutura base do site (header, footer...).</li>
+<li>Agora já tenho todo o aparato para trabalhar os componentes e pensar em escalabilidade.</li>
+<li>Com a estrutura básica e os componentes prontos, montar prótotipos funcionais passa a ser um &quot;quebra-cabeça&quot;, basta juntar as peças e a página está criada!</li>
+<li>Nessa etapa o Diretor de Arte, na maioria dos casos, trabalha apenas nos Wireframes ou rascunhos.</li>
+<li>Faço validações com o Diretor de Arte e com o Back-End após cada página desenvolvida.</li>
+<li>Nas etapas mais avançadas do projeto, o programador Back-End já consegue sozinho criar páginas com os componentes necessários sem precisar alterar nada no HTML/CSS.</li>
+</ol>
+<h2>Atomic Design</h2><p>Esse ano descobrimos que o <a href="https://twitter.com/brad_frost">Brad Frost</a> escreveu sobre algo que chamou de <a href="http://bradfrostweb.com/blog/post/atomic-web-design/">Atomic Design</a>, que tem uma idéia muito parecida com a que estavamos usando, e ela vai ainda mais a fundo, trabalhando com:</p>
+<ul>
+<li><strong>Átomos</strong>: Elementos mínimos</li>
+<li><strong>Moléculas</strong>: Junção desses elementos</li>
+<li><strong>Organismos</strong>: Agrupamento dessas móleculas</li>
+</ul>
+<p>Existem dois ótimos artigos em português, um do <a href="http://arquiteturadeinformacao.com/2013/06/16/atomic-design-redesenhando-os-entregaveis-de-designers-e-desenvolvedores/">Fabricio Teixeira</a> e outro da <a href="http://tableless.com.br/o-que-e-design-atomic/#.UfLPotK1zIg">Dani Guerrato</a>. Recomendo a leitura.</p>
+<h2>Dicas para trabalhar os componentes</h2><h3>OOCSS</h3><p><strong>OOCSS</strong> (Object Oriented CSS) casa perfeitamente com a idéia de componentes, você passa a criar classes baseadas na função, e pode reutilizar em vários lugares. Tem um post muito bacana do <a href="http://wbruno.com.br/css/object-oriented-css-a-teoria-das-classes-reutilizaveis-oocss/">William Bruno falando sobre isso</a>.</p>
+<p>Mas CUIDADO, é preciso usar essa técnica com prudencia, algo como <code>&quot;box full side&quot;</code> faz sentido, mas <code>&quot;box big float-left font18 red border&quot;</code> engessa o código.</p>
+<h3>Pense na manutenção (sem esquecer da performance!)</h3><p>Performance é fundamental, mas não se esqueça que um código que não tem foco em manutenção e escalabilidade pode gerar gambiarras que automaticamente vão interferir na performance.</p>
+<p>Então, pense sempre um passo a frente, especialmente em grandes projetos.</p>
+<h3>Evite seletores complexos</h3><p>Um seletor <code>.header .nav li a</code> é ruim para performance e te deixa travado.</p>
+<p>Colocar uma classe <code>.nav-link</code> no <code>a</code> e referenciar diretamente no CSS faz mais sentido.</p>
+<p>Esse é o principio básico para componentização, usar a classe de forma mais genérica possível. Se você tiver uma busca no site, comece a usar <code>.search</code> ao invés de <code>.header .search</code>, assim pode usar o <strong>componente</strong> em qualquer lugar, não apenas dentro do <code>header</code>.</p>
+<h3>Aproveite a cascata</h3><p><strong>CSS</strong> significa Cascading Style Sheets e podemos (e devemos) fazer uso disso.</p>
+<p>Se por exemplo, a cor dos h4 dentro de determinado local precise ser azul, é interessante adicionar uma classe na div pai, e sobrescrever as regras (reparem que uso a classe blue de exemplo, analise antes e veja o nome que faz mais sentido): <code>.box.blue h4{color: #4A8CF7}</code></p>
+<h2>No fim tudo depende do projeto e da equipe</h2><p>São apenas sugestões de um método que estamos usando e que está dando certo. Mas como tudo no mundo dev, depende muito do tipo de projeto e com quem você trabalha. Espero que ajude de alguma forma.</p>
+<p>Abraços galera!</p></div><aside class="comments"><div id="disqus_thread"></div><script>(function() {
+var d = document, s = d.createElement('script');
+s.src = '//felipefialho.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script><script id="dsq-count-scr" src="//felipefialho.disqus.com/count.js" async="async"></script></aside></div></article></main></body></html>

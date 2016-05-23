@@ -1,0 +1,160 @@
+<!DOCTYPE html><html lang="pt-br"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="description" content="Nesse artigo vou mostrar para vocês o Rucksack, um pacote de features desenvolvido em PostCSS que pode ser de grande ajuda no seu workflow."/><title>Apresento o Rucksack | Felipe Fialho - Front-End Developer</title><link rel="alternate" type="application/rss+xml" title="Felipe Fialho - Front-End Developer RSS" href="/rss.xml"/><link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png"/><link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png"/><link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png"/><link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png"/><link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png"/><link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png"/><link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png"/><link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png"/><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png"/><link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-icon-192x192.png"/><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/assets/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/assets/favicon-96x96.png"/><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/assets/favicon-16x16.png"/><link rel="manifest" href="/assets/favicon/manifest.json"/><meta name="msapplication-TileColor" content="#ffffff"/><meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png"/><meta name="theme-color" content="#ffffff"/><link rel="stylesheet" href="/assets/css/style.css"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-40410936-1', 'auto');
+ga('send', 'pageview');</script></head><body><header role="banner" class="header"><div class="header-container"><a href="/" role="logo" class="brand"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 140 30" style="enable-background:new 0 0 140 30;" xml:space="preserve">
+<g>
+	<path d="M0,8.5h2.6V7.4c0-3.3,1.4-6.2,5.5-6.2c1.2,0,2.4,0.3,3.1,0.8l-1,2C9.6,3.7,9,3.5,8.1,3.5c-2.5,0-2.9,1.2-2.9,3.9v1.1h3.9
+		v2.3H5.2v11.8H2.6V10.8H0V8.5z"/>
+	<path d="M22.6,20.6c-1.6,1.6-3.3,2.4-5.8,2.4c-2,0-3.5-0.6-4.5-1.5c-1.2-1.2-1.8-2.8-1.8-5.6c0-2.3,0.4-4.7,1.7-6.2
+		c0.9-1.1,2.4-1.9,4.7-1.9c4.2,0,5.8,2.8,5.8,6.2c0,0.5,0,1.2-0.1,1.8l-9.3,0.1c0.1,3,0.5,4.9,3.5,4.9c1.8,0,3.2-0.6,4.3-1.8
+		L22.6,20.6z M20.1,13.7c0-2.4-0.5-3.8-3.1-3.8c-2.7,0-3.4,1.5-3.6,3.8L20.1,13.7z"/>
+	<path d="M28.4,0.3v22.3h-2.6V0.3H28.4z"/>
+	<path d="M35.1,8.1v14.6h-2.6V8.1H35.1z"/>
+	<path d="M41.6,8.1v2.6c0.9-1.8,2.8-2.9,4.8-2.9c1.5,0,2.6,0.6,3.3,1.4c1.3,1.4,1.7,3.7,1.7,6c0,2.7-0.5,5.1-2.1,6.5
+		c-0.9,0.8-2.2,1.3-3.8,1.3c-1.4,0-3-0.4-4-1.8v8.5H39V8.1H41.6z M43,11.6c-1,1.3-1.4,2.9-1.4,4.6c0,1.4,0.2,2.6,0.9,3.4
+		c0.6,0.7,1.6,1.1,2.9,1.1c2.5,0,3.3-1.6,3.3-5.4c0-3.6-0.8-5.2-2.7-5.2C44.8,10.1,43.7,10.6,43,11.6z"/>
+	<path d="M66.2,20.6c-1.6,1.6-3.3,2.4-5.8,2.4c-2,0-3.5-0.6-4.5-1.5c-1.2-1.2-1.8-2.8-1.8-5.6c0-2.3,0.4-4.7,1.7-6.2
+		c0.9-1.1,2.4-1.9,4.7-1.9c4.2,0,5.8,2.8,5.8,6.2c0,0.5,0,1.2-0.1,1.8l-9.3,0.1c0.1,3,0.5,4.9,3.5,4.9c1.8,0,3.2-0.6,4.3-1.8
+		L66.2,20.6z M63.7,13.7c0-2.4-0.5-3.8-3.1-3.8c-2.7,0-3.4,1.5-3.6,3.8L63.7,13.7z"/>
+	<path d="M75,8.5h2.6v-1c0-3.5,1.2-6.4,6.6-6.4c2,0,3.5,0.4,4.8,1.3l-1,2c-1.1-0.7-2.3-1-4-1c-3.4,0-3.8,1.4-3.8,4v1.1H89v14.1h-2.6
+		V10.8h-6.1v11.8h-2.6V10.8H75V8.5z"/>
+	<path d="M92.4,9.8c1.4-1.5,3.2-2,5.3-2c3.6,0,5.5,1.5,5.5,5.3v9.5h-2.4l0-2.4C99.8,22.1,98,23,96.1,23c-1.3,0-2.4-0.4-3.1-1.1
+		c-0.8-0.7-1.2-1.8-1.2-3.1c0-1.7,0.6-2.7,1.7-3.5c1.3-0.9,3-1.2,5.1-1.2h2.1v-0.7c0-2.5-0.8-3.3-3-3.3c-1.6,0-2.7,0.4-3.8,1.5
+		L92.4,9.8z M98.3,16c-2.3,0-3.8,0.4-3.8,2.6c0,1.4,0.5,2.2,2,2.2c1.9,0,4.1-1.4,4.2-4.8H98.3z"/>
+	<path d="M109.3,0.3v22.3h-2.6V0.3H109.3z"/>
+	<path d="M115.6,0.3v10.6c0.6-1.8,2.3-3.2,4.6-3.2c2.7,0,4.2,1.8,4.2,4.8v10.1h-2.6v-9.6c0-1.9-0.5-2.9-2-2.9c-2.1,0-4.2,2-4.2,7.4
+		v5.1h-2.6V0.3H115.6z"/>
+	<path d="M138.2,21.1c-1.1,1.2-2.5,1.9-4.8,1.9c-2.2,0-3.6-0.7-4.6-1.8c-1.3-1.4-1.6-3.1-1.6-5.6c0-2.7,0.4-4.5,1.8-6
+		c1.1-1.2,2.6-1.9,4.8-1.9c2.2,0,3.6,0.7,4.6,1.8c1.3,1.4,1.6,3.2,1.6,5.7C140,17.8,139.6,19.5,138.2,21.1z M136.2,10.9
+		c-0.5-0.5-1.2-0.9-2.6-0.9c-1.5,0-2.2,0.5-2.6,1c-0.8,1-1.1,2.7-1.1,4.5c0,2.1,0.3,3.4,1,4.3c0.4,0.5,1.3,0.9,2.5,0.9
+		c1.5,0,2.2-0.5,2.7-1c0.8-1,1.1-2.6,1.1-4.4C137.3,13.4,137,11.8,136.2,10.9z"/>
+</g>
+</svg>
+</a><nav class="navbar"><label for="navbar" class="navbar-btn"><svg aria-hidden="true" aria-label="Menu" class="icon"><use xlink:href="/assets/svg/icons.svg#menu"></use></svg></label><input id="navbar" type="checkbox" class="nav-open"/><ul role="navigation" class="nav"><li class="nav-item"><a href="/blog" class="nav-link active">Blog</a></li><li class="nav-item"><a href="/projects" class="nav-link">Projects</a></li><li class="nav-item"><a href="/labs" class="nav-link">Labs</a></li></ul></nav><ul class="social-media"><li><a href="http://twitter.com/LFeh" title="View my Twitter" target="_blank"><svg aria-hidden="true" aria-label="Twitter" class="icon"><use xlink:href="/assets/svg/icons.svg#twitter"></use></svg></a></li><li><a href="https://www.facebook.com/LFehh" title="View my Facebook" target="_blank"><svg aria-hidden="true" aria-label="Facebook" class="icon"><use xlink:href="/assets/svg/icons.svg#facebook"></use></svg></a></li><li><a href="https://www.linkedin.com/lfehfrontend" title="View my Linkedin" target="_blank"><svg aria-hidden="true" aria-label="Linkedin" class="icon"><use xlink:href="/assets/svg/icons.svg#linkedin"></use></svg></a></li><li><a href="https://github.com/lfeh" title="View my Github" target="_blank"><svg aria-hidden="true" aria-label="Github" class="icon"><use xlink:href="/assets/svg/icons.svg#github"></use></svg></a></li><li><a href="https://codepen.io/lfeh" title="View my Codepen" target="_blank"><svg aria-hidden="true" aria-label="Codepen" class="icon"><use xlink:href="/assets/svg/icons.svg#codepen"></use></svg></a></li><li class="hidden"><a href="https://plus.google.com/101721187531748531230?rel=author" title="View my Google Plus" target="_blank"><svg aria-hidden="true" aria-label="Google Plus" class="icon"><use xlink:href="/assets/svg/icons.svg#google"></use></svg></a></li></ul></div></header><main role="main" class="main"><article itemscope itemtype="http://schema.org/Blog" class="blog-article"><div class="blog-header"><picture class="picture"><img src="/assets/img/blog/cover/rucksack.jpg" alt="Logo do Rucksack"></picture><div class="content"><span itemprop="author" class="sr-only">Luiz Felipe Tartarotti Fialho</span><time itemprop="dateCreated" class="date">21/10/2015</time><h1 itemprop="name">Apresento o Rucksack</h1><p itemprop="description">Nesse artigo vou mostrar para vocês o Rucksack, um pacote de features desenvolvido em PostCSS que pode ser de grande ajuda no seu workflow.</p></div></div><div class="blog-inner"><div itemprop="text" class="content"><h2>Introdução</h2><p>Tenho certeza absoluta que o <a href="https://github.com/postcss/postcss">PostCSS</a> vai estar cada vez mais presente no nosso dia a dia, já que é absolutamente fantástico e pode ser usado de várias formas, inclusive junto com o pré-processador da sua preferencia, ou seja, a escalabilidade é total.</p>
+<p>Muitas ferramentas já estão utilizando o PostCSS, um exemplo é o grid-system <a href="https://github.com/corysimmons/lost">Lost</a>, desenvolvido pelo mesmo criador do super conhecido <a href="http://jeet.gs/">Jeet</a>.</p>
+<p>Porém o foco desse artigo é o <a href="http://simplaio.github.io/rucksack/">Rucksack</a>.</p>
+<h2>O que é?</h2><p>Quem me mostrou essa ferramenta foi o <a href="https://github.com/mjnr">Milson Junior</a> e desde então fiquei fascinado com algumas coisas que ela oferece.</p>
+<p><a href="http://simplaio.github.io/rucksack/">Rucksack</a> é um pacote de funcionalidades que pode ser usado em qualquer pré-processador, com o PostCSS ou até mesmo ser injetado diretamente no Stylus.</p>
+<p>Um detalhe importante, é que seu CSS gerado não terá <strong>nenhum</strong> código extra.</p>
+<h2>Instalação</h2><p>Vou mostrar uma configuração utilizando o Grunt + Stylus, mas é possível ver todas as configurações <a href="http://simplaio.github.io/rucksack/docs/#usage">aqui</a>.</p>
+<p>Baixe o <a href="https://github.com/seaneking/poststylus">PostStylus</a> e o Rucksack.</p>
+<pre><code>$ npm install --save poststylus rucksack-css
+</code></pre><p>Em seguida crie uma função para utilizar o PostCSS na sua configuração do Stylus no Grunt:</p>
+<pre><code>var rucksack = require(&#39;rucksack-css&#39;);
+
+var postcss = function(){
+  return require(&#39;poststylus&#39;)([&#39;rucksack-css&#39;]);
+}
+</code></pre><p>Caso queira utilizar outra ferramenta em PostCSS, como o Lost, também deve chamar dessa forma, por exemplo:</p>
+<pre><code>var postcss = function(){
+  return require(&#39;poststylus&#39;)([&#39;rucksack-css&#39;, &#39;lost&#39;]);
+}
+</code></pre><p>Depois é só chamar no <code>use</code> do Stylus dentro do seu Gruntfile:</p>
+<pre><code>stylus: {
+  dev: {
+    options: {
+      use: [postcss],
+    }
+  }
+}
+</code></pre><h3>Opções</h3><p>É possível habilitar ou desabilitar algumas opções do Rucksack. Por padrão apenas as opções de <em>autoprefixer</em> e <em>fallbacks</em> ficam desabilitadas.</p>
+<h4>Fallbacks</h4><p>Adiciona compatibilidade de algumas propriedades para navegadores antigos.</p>
+<p>Por exemplo:</p>
+<pre><code>.foo
+  opacity 0.8
+</code></pre><p>Vai gerar:</p>
+<pre><code>foo {
+  -ms-filter: &quot;progid:DXImageTransform.Microsoft.Alpha(Opacity=80)&quot;;
+  opacity: 0.8;
+}
+</code></pre><h4>Autoprefixer</h4><p>Faz a mágica de adicionar prefixos automaticamente para você, e sempre se baseando na tabela mais atualizada do <a href="http://caniuse.com/">CanIUSe</a>.</p>
+<p>Por exemplo:</p>
+<pre><code>.foo
+  display flex
+</code></pre><p>Vai gerar:</p>
+<pre><code>.foo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex
+}
+</code></pre><p>Como acho essas funções importantes, deixei ambas habilitadas.</p>
+<pre><code>var postcss = function() {
+  return require(&#39;poststylus&#39;)([rucksack({
+    autoprefixer: true,
+    fallbacks: true
+  })]);
+}
+</code></pre><h2>Features</h2><p>Agora vou fazer um breve resumo das funcionalidades que achei mais relevantes.</p>
+<h3>Responsive Typography</h3><p>De longe é o que mais me impressionou. É simplesmente incrível!</p>
+<p>Suas fontes ficarão responsivas automaticamente, não é magia nem JavaScript, é apenas CSS.</p>
+<p>Pode ler toda a documentação <a href="http://simplaio.github.io/rucksack/docs/#responsive-type">aqui</a>, mas estou usando da seguinte forma:</p>
+<p>Como utilizo REM, defino no HTML um range entre 7px e 10px.</p>
+<pre><code>html
+  font-size responsive 7px 10px
+</code></pre><p>E pronto!</p>
+<p>O motivo de ser entre 7px e 10px, é que assim posso usar o REM como se fosse pixel, ou seja, 1.6rem = 16px. Então consigo ter mais controle na fidelidade das fontes.</p>
+<p>Travando o minimo em 7px, garanto que as tipografias vão diminuir no máximo 3px, então elas vão ficar em um tamanho adequado para dispositivos menores.</p>
+<h3>Shorthand Positioning</h3><p>Outra mão na roda, sabe quando a gente precisa deixar um elemento absoluto ou fixo e quer que ele ocupe todo o espaço?</p>
+<p>Basta fazer isso:</p>
+<pre><code>.foo
+  position absolute 0
+</code></pre><p>E você terá isso:</p>
+<pre><code>.foo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+</code></pre><h3>Property Aliases</h3><p>Tem preguiça de escrever o nome completo de alguma propriedade?</p>
+<p>Crie um alias!</p>
+<pre><code>@alias
+  fs font-size
+
+.foo
+  fs 16px
+</code></pre><p>Para ter isso:</p>
+<pre><code>.foo {
+  font-size: 16px;
+}
+</code></pre><h3>Font Src Expansion</h3><p>Sabe aquelas funções que criamos no pré-processador para gerar nosso font-face mais facilmente? É coisa do passado, agora podemos usar &quot;nativamente&quot;.</p>
+<pre><code>@font-face
+  font-family &#39;My Font&#39;
+  font-path &#39;/my/font/file&#39;
+  font-weight normal
+  font-style normal
+</code></pre><p>E vai gerar o código completo:</p>
+<pre><code>@font-face {
+  font-family: &#39;My Font&#39;;
+  src: url(&quot;/my/font/file.eot&quot;);
+  src: url(&quot;/my/font/file.eot?#iefix&quot;) format(&#39;embedded-opentype&#39;),
+       url(&quot;/my/font/file.woff&quot;) format(&#39;woff&#39;),
+       url(&quot;/my/font/file.ttf&quot;) format(&#39;truetype&#39;),
+       url(&quot;/my/font/file.svg&quot;) format(&#39;svg&#39;);
+  font-weight: normal;
+  font-style: normal;
+}
+</code></pre><h3>All The Easings</h3><p>Um pacote completo com transições incríveis.</p>
+<p>Escreva:</p>
+<pre><code>.foo
+  transition all 250ms ease-in-cubic
+</code></pre><p>E terá:</p>
+<pre><code>.foo {
+  transition: all 250ms cubic-bezier(0.55, 0.055, 0.675, 0.19);}
+</code></pre><p>Chega de perder tempo entrando em sites para gerar o código pra você :)</p>
+<p>Pode ver todas as transições <a href="http://simplaio.github.io/rucksack/docs/#easings">aqui</a>.</p>
+<h2>Conclusão</h2><p>O Rucksack oferece features interessantes que podem agilizar muito nosso dia a dia.</p>
+<p>Funcionalidades como a de <em>Responsive Typography</em> ou <em>All The Easings</em> são motivos mais do que suficientes para começar a usar o quanto antes.</p>
+<p>E ai gostaram do artigo? Alguma consideração? Mandem ver nos comentários!</p></div><aside class="comments"><div id="disqus_thread"></div><script>(function() {
+var d = document, s = d.createElement('script');
+s.src = '//felipefialho.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script><script id="dsq-count-scr" src="//felipefialho.disqus.com/count.js" async="async"></script></aside></div></article></main></body></html>
