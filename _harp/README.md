@@ -4,6 +4,8 @@
 
 # Felipe Fialho - Website
 
+[Access the website](http://www.felipefialho.com/)
+
 This project uses Harp, Jade, Stylus, Gulp and Browsersync.
 
 Maybe you want to read about them:
