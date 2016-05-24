@@ -55,8 +55,12 @@ font(type = '', weight = '', family = '', transform = '')
     // --------------------------------------------------
 
     if (type == h1)
-      font-size 6rem
-      line-height 7rem
+      font-size 4.5rem
+      line-height 5.5rem
+
+      +above('sm')
+        font-size 6rem
+        line-height 7rem
 
     if (type == h2)
       font-size 3.6rem
