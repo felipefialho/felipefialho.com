@@ -65,6 +65,9 @@
   padding-top $space-xlg
   padding-bottom $space-xlg
 
+  +below('xs')
+    margin-top -($space-xlg)
+
   +above('sm')
     height 'calc(70vh - %s)' % $header-height
     position fixed $header-height 0 auto
