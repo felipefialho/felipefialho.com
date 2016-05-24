@@ -65,10 +65,7 @@
   overflow hidden
   padding-top $space-xlg
   padding-bottom $space-xlg
-  position fixed 0
-
-  +above('sm')
-    top $header-height
+  position fixed $header-height 0 auto
 
   &:before
     background rgba($gray-darker, .8)
