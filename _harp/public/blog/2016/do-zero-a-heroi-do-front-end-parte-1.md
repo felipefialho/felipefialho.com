@@ -12,7 +12,7 @@ Me lembro quando eu comecei a aprender desenvolvimento Front-End. Encontrei tant
 
 Esse guia vai ajudá-lo a navegar pela aprendizagem de desenvolvimento Front-End. Ele fornece fontes de aprendizado que eu achei eficaz no passado, junto com explicações suplementares.
 
-Para manter esse guia digestível, eu dividi ele em duas partes. A primeira parte vai falar sobre desenvolvimento de interfaces com HTML e CSS. A segunda parte vai falar sobre JavaScript, estruturas e padrões de projeto. Se você estiver familiarizado com HTML e CSS você pode pular para a #[segunda parte que cobre todas as coisas de JavaScript (ainda vou traduzir)](https://medium.com/p/adfa4824da9b).
+Para manter esse guia digestível, eu dividi ele em duas partes. A primeira parte vai falar sobre desenvolvimento de interfaces com HTML e CSS. A segunda parte vai falar sobre JavaScript, estruturas e padrões de projeto. Se você estiver familiarizado com HTML e CSS você pode pular para a [segunda parte que cobre todas as coisas de JavaScript (ainda vou traduzir)](https://medium.com/p/adfa4824da9b).
 
 ## HTML e CSS básico
 
