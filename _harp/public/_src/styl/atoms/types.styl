@@ -7,6 +7,7 @@
 // 4. Code
 // 5. Blockquote
 // 6. Date
+// 7. HR
 //
 // ==================================================
 
@@ -18,9 +19,11 @@ a
   color inherit
   text-decoration none
 
+  li &
   p &
     color $brand-primary
 
+  li &:hover
   p &:hover
     text-decoration underline
 
@@ -106,7 +109,6 @@ blockquote
         content '– '
 
 
-
 //
 // 6. Date
 // ==================================================
@@ -116,3 +118,14 @@ blockquote
   color $gray
   display block
   margin-bottom $space-xs
+
+
+//
+// 7. HR
+// ==================================================
+
+hr
+  reset(form)
+  border-top rgba($gray, .3) solid 1px
+  margin-top $space-xlg
+  margin-bottom $space-xlg
