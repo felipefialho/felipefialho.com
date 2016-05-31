@@ -12,7 +12,8 @@ Uma boa forma de contornar esse problema, é adicionar uma `<label>`, fora do ca
 
 ## A Solução
 
-See the Pen [Label - Good use](http://codepen.io/LFeh/pen/ijBDF/) by Luiz Felipe Tartarotti Fialho ([@LFeh](http://codepen.io/LFeh)) on [CodePen](http://codepen.io).
+<p data-height="400" data-theme-id="light" data-slug-hash="ijBDF" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/LFeh/pen/ijBDF/">Table Responsive</a> by Luiz Felipe Tartarotti Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Observem, que ao clicar sobre o campo, a `<label>` muda de posição e permanece sempre visível. Essa solução usa apenas CSS e é muito simples de ser implementada:
 
