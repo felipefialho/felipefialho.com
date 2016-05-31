@@ -8,7 +8,7 @@ Importante ressaltar que a tradução não é literal, adaptei algumas partes pa
 
 ______
 
-Me lembro quando eu comecei a aprender desenvolvimento Front-End. Encontrei tantos artigos e fiquei tão sobrecarregado pela quantidade de material que seria necessário aprender que não sabia nem por onde começar.
+Lembro-me quando eu comecei a aprender desenvolvimento Front-End. Encontrei tantos artigos e fiquei tão sobrecarregado pela quantidade de material que seria necessário aprender que não sabia nem por onde começar.
 
 Esse guia vai ajudá-lo a navegar pela aprendizagem de desenvolvimento Front-End. Ele fornece fontes de aprendizado que eu achei eficaz no passado, junto com explicações suplementares.
 
