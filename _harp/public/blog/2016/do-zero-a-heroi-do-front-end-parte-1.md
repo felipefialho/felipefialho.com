@@ -95,7 +95,8 @@ Os navegadores tem pequenas inconsistências de estilos para margens até line-h
 
 ### Suporte Cross Browser
 
-Suporte *Cross Browser* significa que seu código suporta a maioria dos navegadores atualizados. Algumas propriedades CSS, como os `transitions`, precisam de [vendor prefixes](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix) para funcionar corretamente em diferentes navegadores. Você pode ler mais sobre *vendor prefixes* no artigo, CSS Vendor Prefixes](http://webdesign.about.com/od/css/a/css-vendor-prefixes.htm). O principal é que você deve testar seu site em vários navegadores, incluindo Chrome, Firefox e Safari.
+Suporte *Cross Browser* significa que seu código suporta a maioria dos navegadores atualizados. Algumas propriedades CSS, como os `transitions`, precisam de
+[vendor prefixes](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix) para funcionar corretamente em diferentes navegadores. Você pode ler mais sobre *vendor prefixes* no artigo, [CSS Vendor Prefixes](http://webdesign.about.com/od/css/a/css-vendor-prefixes.htm). O principal é que você deve testar seu site em vários navegadores, incluindo Chrome, Firefox e Safari.
 
 ![Lista de Navegadores](https://d262ilb51hltx0.cloudfront.net/max/800/1*pCAitbJZl5eai2oNdzIphA.png)
 
