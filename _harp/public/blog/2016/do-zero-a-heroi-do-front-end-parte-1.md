@@ -85,7 +85,7 @@ Por exemplo, a tag `h1` conta para nós que o texto é um titulo importante. Out
 
 ### Convenções de nomenclatura CSS
 
-O próxima boa prática para o CSS é propor uma nomenclatura apropriada. Uma boa nomenclatura, como em marcação semântica, transmite um significado e ajuda a tornar nosso código previsível. Você pode ler sobre as diferentes convenções de nomenclatura no artigo [OOCSS, ACSS, BEM, SMACSS: what are they? What should I use?](http://clubmate.fi/oocss-acss-bem-smacss-what-are-they-what-should-i-use/).
+A próxima boa prática para o CSS é propor uma nomenclatura apropriada. Uma boa nomenclatura, como em marcação semântica, transmite um significado e ajuda a tornar nosso código previsível. Você pode ler sobre as diferentes convenções de nomenclatura no artigo [OOCSS, ACSS, BEM, SMACSS: what are they? What should I use?](http://clubmate.fi/oocss-acss-bem-smacss-what-are-they-what-should-i-use/).
 
 Em geral, eu sugiro experimentar convenções de nomenclaturas simples que fazem sentido intuitivo pra você. Com o tempo, você vai descobrir o que funciona melhor. Para ver como empresas, tipo o Medium, utilizam as convenções de nomenclaturas como o BEM, leia [Medium’s CSS is actually pretty f***ing good](https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good-b8e2a6c78b06#.ef81j61eg). Nesse artigo, você também vai aprender que chegar em um conjunto eficaz de convenções CSS é um processo iterativo.
 
@@ -108,9 +108,9 @@ Pré-processadores CSS são extensões da linguagem CSS que adicionam novas feat
 
 ![Sass x Less](https://d262ilb51hltx0.cloudfront.net/max/800/1*7Px9Kzaw8-eLCf2D41yauQ.png)
 
-Pós-processadores CSS aplica as alterações no CSS depois de ter sido escrito ou compilado com um pré-processador. Por exemplo, alguns pós-processadores como PostCSS tem plugins que adicionam *vendor prefixes* para os navegadores automaticamente.
+Pós-processadores CSS aplicam as alterações no CSS depois de ter sido escrito ou compilado com um pré-processador. Por exemplo, alguns pós-processadores como PostCSS tem plugins que adicionam *vendor prefixes* para os navegadores automaticamente.
 
-Quando você descobre pela primeira vez pré-processadores e pós-processadores, é tentador usa-los em todos os lugares. No entanto, comece simples e adicione extensões como variáveis e mixins somente quando necessário. O artigo que sugeri anteriormente, [Medium’s CSS is actually pretty f***ing good](https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good-b8e2a6c78b06#.ef81j61eg), também abrange o quanto é demais quando se trata de pré-processadores.
+Quando você descobre pela primeira vez pré-processadores e pós-processadores, é tentador usá-los em todos os lugares. No entanto, comece simples e adicione extensões como variáveis e mixins somente quando necessário. O artigo que sugeri anteriormente, [Medium’s CSS is actually pretty f***ing good](https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good-b8e2a6c78b06#.ef81j61eg), também abrange o quanto é demais quando se trata de pré-processadores.
 
 ### Grid Systems e Responsividade
 
@@ -143,7 +143,7 @@ A seguir temos algumas coisas para perguntar para você mesmo quando você estiv
 
 - O nome das suas classes são ambiguas? Daqui 6 meses você ainda vai ser capaz de entender o que o nome da classe significa?
 - O seu HTML e CSS são semânticos? Ao olhar para seu código você é capaz de discernir rapidamente significado estrutural e relacional?
-- Você está utilizando o mesmo código de cor hexadecimal mais de uma vez e seu código? Faria mais sentido refatorar e colocar em uma váriavel do Sass?
+- Você está utilizando o mesmo código de cor hexadecimal mais de uma vez em seu código? Faria mais sentido refatorar e colocar em uma váriavel do Sass?
 - Será que seu trabalho funciona tão bem no Safari quanto funciona no Chrome?
 - Você poderia substituir o seu código de layout para algum *grid system* como o [Skeleton](http://getskeleton.com/)?
 - Você está usando `!important` frequentemente? Como você pode corrigir isso?
