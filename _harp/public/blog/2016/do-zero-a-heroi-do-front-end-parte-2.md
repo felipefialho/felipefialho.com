@@ -1,6 +1,6 @@
 ## Sobre esse artigo
 
-O texto a seguir é uma tradução livre do fantástico artigo [From Zero to Front-End Hero (Part 2)](https://medium.freecodecamp.com/from-zero-to-Front-End-hero-part-2-adfa4824da9b#.342vpy7aq) publicado no Medium pelo [@jonathanzwhite](https://twitter.com/jonathanzwhite).
+O texto a seguir é uma tradução livre do fantástico artigo [From Zero to Front-End Hero (Part 2)](https://medium.freecodecamp.com/from-zero-to-front-end-hero-part-2-adfa4824da9b#.342vpy7aq) publicado no Medium pelo [@jonathanzwhite](https://twitter.com/jonathanzwhite).
 
 Então quero agradece-lo primeiro por ter escrito esse ótimo texto, segundo por ter permitido que eu fizesse essa tradução.
 
@@ -108,7 +108,7 @@ O principal objetivo deste experimento é fazer algumas das coisas que você apr
 
 ![JavaScript permite que os desenvolvedores criem interfaces interativas](https://d262ilb51hltx0.cloudfront.net/max/800/1*7365CToqHiLkXf16Di8xRw.gif)
 
-Usando CodePen, escreva um JavaScript básico que usa manipulação do DOM e requer alguma lógica de programação para funcionar. O foco deste experimento é pegar algumas das coisas que você aprendeu no [Do Zero a Herói do Front-End](/blog/2016/do-zero-a-heroi-do-Front-End-parte-1) e combinar com JavaScript. Aqui estão alguns exemplos para referência que podem servir de inspiração.
+Usando CodePen, escreva um JavaScript básico que usa manipulação do DOM e requer alguma lógica de programação para funcionar. O foco deste experimento é pegar algumas das coisas que você aprendeu no [Do Zero a Herói do Front-End](/blog/2016/do-zero-a-heroi-do-front-end-parte-1) e combinar com JavaScript. Aqui estão alguns exemplos para referência que podem servir de inspiração.
 
 - [Periodic Table](http://codepen.io/tony_the_coder/pen/GZdNQY)
 - [Mood Color Generator](http://codepen.io/mecarter/pen/RNomVo)
