@@ -12,7 +12,7 @@ Este artigo é a segunda parte da série "Do Zero a Herói do Front-End". Na pri
 
 Assim como com HTML e CSS, existem milhares de tutoriais JavaScript por aí. No entanto, especialmente para alguém novo no mundo Front-End, é difícil descobrir quais tutoriais usar e qual a ordem para fazê-las. O principal objetivo desta série é fornecer um roteiro para ajudar a aprender Front-End.
 
-Se você ainda não leu a [primeira parte, faça isso antes de continuar a leitura](/blog/2016/do-zero-a-heroi-do-Front-End-parte-1).
+Se você ainda não leu a [primeira parte, faça isso antes de continuar a leitura](/blog/2016/do-zero-a-heroi-do-front-end-parte-1).
 
 ## O básico do JavaScript
 
