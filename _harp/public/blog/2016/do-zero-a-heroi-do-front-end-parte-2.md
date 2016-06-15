@@ -8,7 +8,7 @@ Importante ressaltar que a tradução não é literal, adaptei algumas partes pa
 
 ______
 
-Este artigo é a segunda parte da série "Do Zero a Herói do Front-End". Na primeira parte, você aprendeu a criar layouts com HTML e CSS, usando algumas das melhores práticas. Na parte dois, vamos nos focar em aprender JavaScript como uma linguagem independente, adicionar interatividade a interfaces, design JavaScript, padrões de arquitetura e como construir aplicações web.
+Este artigo é a segunda parte da série "Do Zero a Herói Front-End". Na primeira parte, você aprendeu a criar layouts com HTML e CSS, usando algumas das melhores práticas. Na parte dois, vamos nos focar em aprender JavaScript como uma linguagem independente, adicionar interatividade a interfaces, design JavaScript, padrões de arquitetura e como construir aplicações web.
 
 Assim como com HTML e CSS, existem milhares de tutoriais JavaScript por aí. No entanto, especialmente para alguém novo no mundo Front-End, é difícil descobrir quais tutoriais usar e qual a ordem para fazê-las. O principal objetivo desta série é fornecer um roteiro para ajudar a aprender Front-End.
 
@@ -108,7 +108,7 @@ O principal objetivo deste experimento é fazer algumas das coisas que você apr
 
 ![JavaScript permite que os desenvolvedores criem interfaces interativas](https://d262ilb51hltx0.cloudfront.net/max/800/1*7365CToqHiLkXf16Di8xRw.gif)
 
-Usando CodePen, escreva um JavaScript básico que usa manipulação do DOM e requer alguma lógica de programação para funcionar. O foco deste experimento é pegar algumas das coisas que você aprendeu no [Do Zero a Herói do Front-End](/blog/2016/do-zero-a-heroi-do-front-end-parte-1) e combinar com JavaScript. Aqui estão alguns exemplos para referência que podem servir de inspiração.
+Usando CodePen, escreva um JavaScript básico que usa manipulação do DOM e requer alguma lógica de programação para funcionar. O foco deste experimento é pegar algumas das coisas que você aprendeu no [Do Zero a Herói Front-End](/blog/2016/do-zero-a-heroi-do-front-end-parte-1) e combinar com JavaScript. Aqui estão alguns exemplos para referência que podem servir de inspiração.
 
 - [Periodic Table](http://codepen.io/tony_the_coder/pen/GZdNQY)
 - [Mood Color Generator](http://codepen.io/mecarter/pen/RNomVo)
@@ -360,6 +360,6 @@ Não consigo enfatizar o quanto é útil é ler um bom código. Aprenda como pro
 
 ## Considerações finais
 
-No final deste guia, você deve ter uma compreensão sólida de fundamentos do JavaScript e como aplicá-los na Web. Lembre-se, este guia te fornece um mapa geral do caminho. Se você quer se tornar um herói do Front-End, é importante que você gaste tempo trabalhando em projetos para aplicar estes conceitos. Quanto mais projetos você fazer, e quanto mais se apaixonar por eles, mais você vai aprender.
+No final deste guia, você deve ter uma compreensão sólida de fundamentos do JavaScript e como aplicá-los na Web. Lembre-se, este guia te fornece um mapa geral do caminho. Se você quer se tornar um herói Front-End, é importante que você gaste tempo trabalhando em projetos para aplicar estes conceitos. Quanto mais projetos você fazer, e quanto mais se apaixonar por eles, mais você vai aprender.
 
 Este artigo é a segunda parte da série de duas partes. O que está faltando neste guia é uma introdução do [Node](https://nodejs.org/en/), que é uma plataforma que permite que o JavaScript rode em servidores. No futuro, posso escrever uma parte três que vai falar sobre o desenvolvimento do lado do servidor com o Node e coisas como bancos de dados [noSQL](https://en.wikipedia.org/wiki/NoSQL).
