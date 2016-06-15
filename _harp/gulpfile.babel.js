@@ -28,7 +28,7 @@ function onError(err) {
 }
 
 function refresh() {
-  setTimeout(function() {
+  setTimeout(function () {
     reload();
   }, 500);
 }
@@ -59,7 +59,7 @@ gulp.task('css', () => {
     .pipe(gcmq())
     .pipe(cssnano())
     .pipe(gulp.dest(buildPaths.css));
-    refresh();
+  refresh();
 });
 
 gulp.task('images', () => {
@@ -69,31 +69,32 @@ gulp.task('images', () => {
         optimizationLevel: 3,
         progressive: true,
         interlaced: true
-    }))
+      }))
     .pipe(gulp.dest(buildPaths.img));
-    refresh();
+  refresh();
 });
 
 gulp.task('svg', () => {
   gulp.src(srcPaths.svg)
     .pipe(svgmin())
-    .pipe(gulp.dest(buildPaths.svg))
-    refresh();
+    .pipe(gulp.dest(buildPaths.svg));
+  refresh();
 });
 
 gulp.task('icons', () => {
   gulp.src(srcPaths.icons)
     .pipe(svgmin())
-    .pipe(svgstore({ fileName: 'icons.svg', inlineSvg: true}))
+    .pipe(svgstore({ fileName: 'icons.svg', inlineSvg: true }))
     .pipe(cheerio({
       run: function ($, file) {
           $('svg').addClass('hide');
           $('[fill]').removeAttr('fill');
-      },
+        },
+
       parserOptions: { xmlMode: true }
     }))
-    .pipe(gulp.dest(buildPaths.svg))
-    refresh();
+    .pipe(gulp.dest(buildPaths.svg));
+  refresh();
 });
 
 gulp.task('serve', () => {
@@ -107,11 +108,12 @@ gulp.task('serve', () => {
     });
 
     gulp.watch(srcPaths.harp, function () { reload(); });
+
     gulp.watch(srcPaths.css, ['css']);
     gulp.watch(srcPaths.img, ['images']);
     gulp.watch(srcPaths.icons, ['icons']);
 
-  })
+  });
 });
 
 gulp.task('default', ['css', 'images', 'svg', 'icons', 'serve']);
