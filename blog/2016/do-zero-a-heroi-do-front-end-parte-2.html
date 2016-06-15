@@ -1,0 +1,255 @@
+<!DOCTYPE html><html lang="pt-br"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="description" content="Tradução: Um guia completo para aprender desenvolvimento Front-End."/><title>Do Zero a Herói Front-End (Parte II) | Felipe Fialho - Front-End Developer</title><link rel="alternate" type="application/rss+xml" title="Felipe Fialho - Front-End Developer RSS" href="/rss.xml"/><link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png"/><link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png"/><link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png"/><link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png"/><link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png"/><link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png"/><link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png"/><link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png"/><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png"/><link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-icon-192x192.png"/><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/assets/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/assets/favicon-96x96.png"/><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/assets/favicon-16x16.png"/><link rel="manifest" href="/assets/favicon/manifest.json"/><meta name="msapplication-TileColor" content="#ffffff"/><meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png"/><meta name="theme-color" content="#ffffff"/><link rel="stylesheet" href="/assets/css/style.css"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-40410936-1', 'auto');
+ga('send', 'pageview');</script></head><body><header role="banner" class="header"><div class="header-container"><a href="/" role="logo" class="brand"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 140 30" style="enable-background:new 0 0 140 30;" xml:space="preserve">
+<g>
+	<path d="M0,8.5h2.6V7.4c0-3.3,1.4-6.2,5.5-6.2c1.2,0,2.4,0.3,3.1,0.8l-1,2C9.6,3.7,9,3.5,8.1,3.5c-2.5,0-2.9,1.2-2.9,3.9v1.1h3.9
+		v2.3H5.2v11.8H2.6V10.8H0V8.5z"/>
+	<path d="M22.6,20.6c-1.6,1.6-3.3,2.4-5.8,2.4c-2,0-3.5-0.6-4.5-1.5c-1.2-1.2-1.8-2.8-1.8-5.6c0-2.3,0.4-4.7,1.7-6.2
+		c0.9-1.1,2.4-1.9,4.7-1.9c4.2,0,5.8,2.8,5.8,6.2c0,0.5,0,1.2-0.1,1.8l-9.3,0.1c0.1,3,0.5,4.9,3.5,4.9c1.8,0,3.2-0.6,4.3-1.8
+		L22.6,20.6z M20.1,13.7c0-2.4-0.5-3.8-3.1-3.8c-2.7,0-3.4,1.5-3.6,3.8L20.1,13.7z"/>
+	<path d="M28.4,0.3v22.3h-2.6V0.3H28.4z"/>
+	<path d="M35.1,8.1v14.6h-2.6V8.1H35.1z"/>
+	<path d="M41.6,8.1v2.6c0.9-1.8,2.8-2.9,4.8-2.9c1.5,0,2.6,0.6,3.3,1.4c1.3,1.4,1.7,3.7,1.7,6c0,2.7-0.5,5.1-2.1,6.5
+		c-0.9,0.8-2.2,1.3-3.8,1.3c-1.4,0-3-0.4-4-1.8v8.5H39V8.1H41.6z M43,11.6c-1,1.3-1.4,2.9-1.4,4.6c0,1.4,0.2,2.6,0.9,3.4
+		c0.6,0.7,1.6,1.1,2.9,1.1c2.5,0,3.3-1.6,3.3-5.4c0-3.6-0.8-5.2-2.7-5.2C44.8,10.1,43.7,10.6,43,11.6z"/>
+	<path d="M66.2,20.6c-1.6,1.6-3.3,2.4-5.8,2.4c-2,0-3.5-0.6-4.5-1.5c-1.2-1.2-1.8-2.8-1.8-5.6c0-2.3,0.4-4.7,1.7-6.2
+		c0.9-1.1,2.4-1.9,4.7-1.9c4.2,0,5.8,2.8,5.8,6.2c0,0.5,0,1.2-0.1,1.8l-9.3,0.1c0.1,3,0.5,4.9,3.5,4.9c1.8,0,3.2-0.6,4.3-1.8
+		L66.2,20.6z M63.7,13.7c0-2.4-0.5-3.8-3.1-3.8c-2.7,0-3.4,1.5-3.6,3.8L63.7,13.7z"/>
+	<path d="M75,8.5h2.6v-1c0-3.5,1.2-6.4,6.6-6.4c2,0,3.5,0.4,4.8,1.3l-1,2c-1.1-0.7-2.3-1-4-1c-3.4,0-3.8,1.4-3.8,4v1.1H89v14.1h-2.6
+		V10.8h-6.1v11.8h-2.6V10.8H75V8.5z"/>
+	<path d="M92.4,9.8c1.4-1.5,3.2-2,5.3-2c3.6,0,5.5,1.5,5.5,5.3v9.5h-2.4l0-2.4C99.8,22.1,98,23,96.1,23c-1.3,0-2.4-0.4-3.1-1.1
+		c-0.8-0.7-1.2-1.8-1.2-3.1c0-1.7,0.6-2.7,1.7-3.5c1.3-0.9,3-1.2,5.1-1.2h2.1v-0.7c0-2.5-0.8-3.3-3-3.3c-1.6,0-2.7,0.4-3.8,1.5
+		L92.4,9.8z M98.3,16c-2.3,0-3.8,0.4-3.8,2.6c0,1.4,0.5,2.2,2,2.2c1.9,0,4.1-1.4,4.2-4.8H98.3z"/>
+	<path d="M109.3,0.3v22.3h-2.6V0.3H109.3z"/>
+	<path d="M115.6,0.3v10.6c0.6-1.8,2.3-3.2,4.6-3.2c2.7,0,4.2,1.8,4.2,4.8v10.1h-2.6v-9.6c0-1.9-0.5-2.9-2-2.9c-2.1,0-4.2,2-4.2,7.4
+		v5.1h-2.6V0.3H115.6z"/>
+	<path d="M138.2,21.1c-1.1,1.2-2.5,1.9-4.8,1.9c-2.2,0-3.6-0.7-4.6-1.8c-1.3-1.4-1.6-3.1-1.6-5.6c0-2.7,0.4-4.5,1.8-6
+		c1.1-1.2,2.6-1.9,4.8-1.9c2.2,0,3.6,0.7,4.6,1.8c1.3,1.4,1.6,3.2,1.6,5.7C140,17.8,139.6,19.5,138.2,21.1z M136.2,10.9
+		c-0.5-0.5-1.2-0.9-2.6-0.9c-1.5,0-2.2,0.5-2.6,1c-0.8,1-1.1,2.7-1.1,4.5c0,2.1,0.3,3.4,1,4.3c0.4,0.5,1.3,0.9,2.5,0.9
+		c1.5,0,2.2-0.5,2.7-1c0.8-1,1.1-2.6,1.1-4.4C137.3,13.4,137,11.8,136.2,10.9z"/>
+</g>
+</svg>
+</a><nav class="navbar"><label for="navbar" class="navbar-btn"><svg aria-hidden="true" aria-label="Menu" class="icon"><use xlink:href="/assets/svg/icons.svg#menu"></use></svg></label><input id="navbar" type="checkbox" class="nav-open"/><ul role="navigation" class="nav"><li class="nav-item"><a href="/blog" class="nav-link active">Blog</a></li><li class="nav-item"><a href="/projects" class="nav-link">Projects</a></li><li class="nav-item"><a href="/labs" class="nav-link">Labs</a></li></ul></nav><ul class="social-media"><li><a href="http://twitter.com/LFeh" title="View my Twitter" target="_blank"><svg aria-hidden="true" aria-label="Twitter" class="icon"><use xlink:href="/assets/svg/icons.svg#twitter"></use></svg></a></li><li><a href="https://www.facebook.com/LFehh" title="View my Facebook" target="_blank"><svg aria-hidden="true" aria-label="Facebook" class="icon"><use xlink:href="/assets/svg/icons.svg#facebook"></use></svg></a></li><li><a href="https://www.linkedin.com/in/lfehfrontend" title="View my Linkedin" target="_blank"><svg aria-hidden="true" aria-label="Linkedin" class="icon"><use xlink:href="/assets/svg/icons.svg#linkedin"></use></svg></a></li><li><a href="https://github.com/lfeh" title="View my Github" target="_blank"><svg aria-hidden="true" aria-label="Github" class="icon"><use xlink:href="/assets/svg/icons.svg#github"></use></svg></a></li><li><a href="https://codepen.io/lfeh" title="View my Codepen" target="_blank"><svg aria-hidden="true" aria-label="Codepen" class="icon"><use xlink:href="/assets/svg/icons.svg#codepen"></use></svg></a></li><li class="hidden"><a href="https://plus.google.com/101721187531748531230?rel=author" title="View my Google Plus" target="_blank"><svg aria-hidden="true" aria-label="Google Plus" class="icon"><use xlink:href="/assets/svg/icons.svg#google"></use></svg></a></li></ul></div></header><main role="main" class="main"><article itemscope itemtype="http://schema.org/Blog" class="blog-article"><div class="blog-header"><picture class="picture"><img src="/assets/img/blog/cover/zero-to-front-end-hero.png" alt="Fundo vermelho com um raio amarelo"></picture><div class="content"><span itemprop="author" class="sr-only">Luiz Felipe Tartarotti Fialho</span><time itemprop="dateCreated" class="date">14/06/2016</time><h1 itemprop="name">Do Zero a Herói Front-End (Parte II)</h1><p itemprop="description">Tradução: Um guia completo para aprender desenvolvimento Front-End.</p></div></div><div class="blog-inner"><div itemprop="text" class="content"><h2>Sobre esse artigo</h2><p>O texto a seguir é uma tradução livre do fantástico artigo <a href="https://medium.freecodecamp.com/from-zero-to-Front-End-hero-part-2-adfa4824da9b#.342vpy7aq">From Zero to Front-End Hero (Part 2)</a> publicado no Medium pelo <a href="https://twitter.com/jonathanzwhite">@jonathanzwhite</a>.</p>
+<p>Então quero agradece-lo primeiro por ter escrito esse ótimo texto, segundo por ter permitido que eu fizesse essa tradução.</p>
+<p>Importante ressaltar que a tradução não é literal, adaptei algumas partes para facilitar a compreensão. Caso encontre erros graves de tradução pode abrir uma <a href="https://github.com/LFeh/lfeh.github.io">pull-request</a> com a correção do problema ou uma <a href="https://github.com/LFeh/lfeh.github.io/issues">issue informando aonde é o erro</a>.</p>
+<hr>
+<p>Este artigo é a segunda parte da série &quot;Do Zero a Herói do Front-End&quot;. Na primeira parte, você aprendeu a criar layouts com HTML e CSS, usando algumas das melhores práticas. Na parte dois, vamos nos focar em aprender JavaScript como uma linguagem independente, adicionar interatividade a interfaces, design JavaScript, padrões de arquitetura e como construir aplicações web.</p>
+<p>Assim como com HTML e CSS, existem milhares de tutoriais JavaScript por aí. No entanto, especialmente para alguém novo no mundo Front-End, é difícil descobrir quais tutoriais usar e qual a ordem para fazê-las. O principal objetivo desta série é fornecer um roteiro para ajudar a aprender Front-End.</p>
+<p>Se você ainda não leu a <a href="/blog/2016/do-zero-a-heroi-do-Front-End-parte-1">primeira parte, faça isso antes de continuar a leitura</a>.</p>
+<h2>O básico do JavaScript</h2><p>JavaScript é uma linguagem de programação multi-plataforma que pode ser usada para praticamente qualquer coisa atualmente, mas vamos voltar nisso mais tarde, depois que você compreender as noções básicas de como os desenvolvedores usam JavaScript para a web.</p>
+<h3>Linguagem</h3><p>Antes de aprender como aplicar o JavaScript na web, você deve aprender sobre a própria linguagem. Para começar, leia o curso básico da Mozilla Developer Network’s <a href="https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/JavaScript_basics">Language basics crash course</a>. Este tutorial vai te ensinar coisas básicas da linguagem como variáveis, condicionais e funções.</p>
+<p>Depois, leia as seguintes sessões no MDN <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">JavaScript guide</a>:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types">Grammar and types</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling">Control flow and error handling</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration">Loops and iterations</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration">Functions</a></li>
+</ul>
+<p>Não se preocupe muito em memorizar a sintaxe, você sempre pode procurar isso. Em vez disso, concentre-se na compreensão de conceitos importantes como instanciação de variáveis, loops e funções. Se o material for muito denso, tudo bem. Você pode continuar mais depois. Quando colocar esses conceitos na prática, eles se tornarão muito mais claros.</p>
+<p>Para quebrar a monotonia da aprendizagem baseada em texto, confira o curso de <a href="https://www.codecademy.com/learn/javascript">JavaScript da Codecademy</a>. É prático e divertido. Além disso, se você tiver tempo, para cada conceito listado acima, leia o capítulo correspondente em <a href="http://eloquentjavascript.net/">Eloquent JavaScript</a> para reforçar a sua aprendizagem. <em>Eloquent JavaScript</em> é um livro online gratuito que todo desenvolvedor Front-End aspirante deve ler.</p>
+<h3>Interatividade</h3><p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*V4UtSyfCN9DDpl70IxXSHA.gif" alt="Uso de JavaScript para animar layouts"></p>
+<p>Agora que você tem um conhecimento básico de JavaScript, o próximo passo é para aplicá-lo à web. Para entender como o JavaScript interage com websites, você primeiro tem que entender sobre o <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">Document Object Model (DOM)</a>&#39;.</p>
+<p>O DOM é uma estrutura representacional dos documentos HTML. É uma árvore estrutural composta de objeto que correspondem aos nós do HTML. Para ler mais sobre o DOM, leia <a href="https://css-tricks.com/dom/">What is the DOM</a> do CSSTricks. Ele fornece uma explicação simples e direta sobre o assunto.</p>
+<p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*o1lGaXpnKYgp2r9CFOI_9A.png" alt="Inspecionando o DOM"></p>
+<p>JavaScript interage com o DOM para mudar e atualizar ele. Aqui está um exemplo onde podemos selecionar um elemento HTML e alterar o seu conteúdo:</p>
+<pre><code>var container = document.getElementById(&#39;container&#39;);
+container.innerHTML = &#39;New Content!&#39;;
+</code></pre><p>Não se preocupe, foi só um exemplo simples. Você pode fazer muito mais do que isso manipulando o DOM com JavaScript. Para saber mais sobre como usar JavaScript para interagir com o DOM, leia as seguintes sessões do MDN, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">The Document Object Model</a>.</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events">Events</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Examples">Examples of web and XML development using the DOM</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/How_to_create_a_DOM_tree">How to create a DOM tree</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">Introduction to the DOM</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors">Locating DOM elements using selectors</a></li>
+</ul>
+<p>Mais uma vez, concentre-se nos conceitos e não na sintaxe. Seja capaz de responder às seguintes perguntas:</p>
+<ul>
+<li>O que é o DOM?</li>
+<li>Como você consulta elementos?</li>
+<li>Como adicionar <em>event listeners</em>?</li>
+<li>Como você mudar propriedades do DOM?</li>
+</ul>
+<p>Para obter uma lista de interações comuns de JavaScript no DOM, Confira as <a href="https://plainjs.com/javascript/">JavaScript Functions and Helpers</a> do PlainJS. Este site fornece exemplos de como fazer coisas como definir <a href="https://plainjs.com/javascript/styles/set-and-get-css-styles-of-elements-53/">estilos nos elementos HTML</a> e adicionar <a href="https://plainjs.com/javascript/events/getting-the-keycode-from-keyboard-events-17/"><em>event listeners</em> no teclado</a>. E se você quiser ir mais fundo, você pode ler a seção sobre o DOM no <a href="http://eloquentjavascript.net/13_dom.html">Eloquent JavaScript</a>.</p>
+<h3>Inspector</h3><p>Para <em>debugar</em> JavaScript do lado do cliente, utilizamos ferramentas para o desenvolvedor construídas nos navegadores. O painel de inspeção está disponível na maioria dos navegadores e permite que você veja o código fonte das páginas web. Você pode verificar quando o JavaScript é executado, mostrar estados de debug no console e ver coisas como solicitações de rede e outros recursos.</p>
+<p>Aqui tem um <a href="https://developer.chrome.com/devtools">tutorial</a> usando o <em>developer tool</em> do Chrome. Se você está usando Firefox, você pode ver <a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector">esse tutorial</a>.</p>
+<p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*wW-FbgJhP0R_id-XPOSKpg.jpeg" alt="Chrome developer tools"></p>
+<h2>Práticando o básico</h2><p>Neste ponto, você ainda não aprendeu muito sobre JavaScript. No entanto, a última seção tinha uma grande quantidade de informações. Acho que é um bom momento para a gente fazer uma pausa e fazer algumas pequenas experiências. Elas devem ajudar a solidificar alguns dos conceitos que você acabou de aprender.</p>
+<p>Experimento 1</p>
+<p>Para o experimento 1, vá até o <a href="https://www.airbnb.com/">AirBnB</a>, abra o <em>inspector tools</em> do seu navegador e clique na <a href="https://developer.chrome.com/devtools/docs/console">guia console</a>. Aqui você pode executar o JavaScript na página. O que vamos fazer é nos divertir com a manipulação de alguns dos elementos na página. Veja se você consegue fazer todas as manipulações de DOM a seguir.</p>
+<p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*5L17hFKIMTsBFQOLCy8tCQ.png" alt="Airbnb.com"></p>
+<p>Eu escolhi o site do AirBnB porque os nomes de classe CSS são relativamente simples e não são ofuscadas por um compilador. Porém, você pode fazer isso em qualquer página que quiser.</p>
+<ul>
+<li>Selecione uma tag de cabeçalho com um nome de classe única e altere o texto</li>
+<li>Selecione qualquer elemento na página e remova ele</li>
+<li>Selecione qualquer elemento e altere uma das suas propriedades CSS</li>
+<li>Selecione uma seção específica e mova ela 250 pixels para baixo</li>
+<li>Selecione qualquer componente, como um painel e ajuste a sua visibilidade</li>
+<li>Defina uma função chamada <code>doSomething</code> com um alerta de &quot;Hello world&quot; e em seguida execute</li>
+<li>Selecione um parágrafo, adicione um <em> event listener</em> de clique nele e execute algo cada vez que o evento é clicado</li>
+</ul>
+<p>Se você ficar preso, use o guia <a href="https://plainjs.com/javascript/">JavaScript Functions and Helpers</a> como referência. Eu baseei a maioria dessas tarefas fora dele, abaixo está um exemplo de como completar o primeiro bullet:</p>
+<pre><code>var header = document.querySelector(&#39;.text-branding&#39;)
+header.innerText = ‘Boop&#39;
+</code></pre><p>O principal objetivo deste experimento é fazer algumas das coisas que você aprendeu sobre JavaScript e manipulação de DOM.</p>
+<h3>Experimento 2</h3><p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*7365CToqHiLkXf16Di8xRw.gif" alt="JavaScript permite que os desenvolvedores criem interfaces interativas"></p>
+<p>Usando CodePen, escreva um JavaScript básico que usa manipulação do DOM e requer alguma lógica de programação para funcionar. O foco deste experimento é pegar algumas das coisas que você aprendeu no <a href="/blog/2016/do-zero-a-heroi-do-Front-End-parte-1">Do Zero a Herói do Front-End</a> e combinar com JavaScript. Aqui estão alguns exemplos para referência que podem servir de inspiração.</p>
+<ul>
+<li><a href="http://codepen.io/tony_the_coder/pen/GZdNQY">Periodic Table</a></li>
+<li><a href="http://codepen.io/mecarter/pen/RNomVo">Mood Color Generator</a></li>
+<li><a href="http://codepen.io/nodws/pen/heILd">Calculator</a></li>
+<li><a href="http://codepen.io/jasonchan/pen/wMaEwN">JavaScript Quiz</a></li>
+<li><a href="http://codepen.io/jeffibacache/pen/bzBsp">Playable Canvas Asteroids</a></li>
+</ul>
+<h3>Mais JavaScript</h3><p>Agora que você sabe e teve um pouco de prática com JavaScript, vamos avançar para conceitos mais avançados. Os conceitos abaixo não estão diretamente relacionados um ao outro. Agrupei eles nesta seção porque são necessários para compreensão de como construir sistemas mais complexos de Front-End. Você entenderá melhor como colocá-los em uso quando você chegar na seção de experiências e Frameworks.</p>
+<h2>Linguagem</h2><p>Quando você fazer mais projetos com JavaScript, você encontrará alguns conceitos <em>higher level</em>. Esta é uma lista de alguns deles. Quando você tiver tempo, passe por todos. O <a href="http://eloquentjavascript.net/">Eloquent JavaScript</a> também abrange muito deste material, caso você queira completar a sua aprendizagem.</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain">Prototypal inheritance</a></li>
+<li><a href="https://spin.atomicobject.com/2014/10/20/javascript-scope-closures/">Scoping</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures">Closures</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop">The event loop</a></li>
+<li><a href="http://javascript.info/tutorial/bubbling-and-capturing">Event bubbling</a></li>
+<li><a href="http://javascriptissexy.com/javascript-apply-call-and-bind-methods-are-essential-for-javascript-professionals/">Apply, call, and bind</a></li>
+<li><a href="https://www.quora.com/Whats-the-difference-between-a-promise-and-a-callback-in-Javascript">Callbacks and promises</a></li>
+<li><a href="http://adripofjavascript.com/blog/drips/variable-and-function-hoisting">Variable and function hoisting</a></li>
+<li><a href="http://www.sitepoint.com/currying-in-functional-javascript/">Currying</a></li>
+</ul>
+<h3>Imperativo vs. Declarativo</h3><p>Existem dois tipos de abordagens de como o JavaScript interage com o DOM: imperativa e declarativa. De um lado, a programação declarativa foca no <em>o que</em> acontece. Do outro lado, programação imperativa foca no <em>o que</em> e também em <em>como</em>.</p>
+<pre><code>var hero = document.querySelector(&#39;.hero&#39;)
+hero.addEventListener(‘click’, function() {
+var newChild = document.createElement(‘p’)
+newChild.appendChild(document.createTextNode(‘Hello world!’))
+newChild.setAttribute(‘class’, ‘text’)
+newChild.setAttribute(‘data-info’, ‘header’)
+hero.appendChild(newChild)
+})
+}
+</code></pre><p>Este é um exemplo de programação imperativa em que nós consultamos manualmente um elemento e guardamos o estado dele no DOM. Em outras palavras, estamos focando em <em>como</em> conseguir alguma coisa. O maior problema com este código é que ele é frágil. Se alguém mudar o nome da classe no HTML de <code>hero</code> para <code>villain</code>, o <em>event listener</em> não va funcionar mais, já que não vai existir a classe <code>hero</code> no DOM.</p>
+<p>A programação declarativa resolve esse problema. Em vez de selecionar elementos, você deixa isso com o Framework ou a Biblioteca que você está usando. Esta função permite que você se concentre sobre <em>o que</em>, em vez do <em>como</em>. Para ler mais, confira <a href="http://www.tysoncadenhead.com/blog/the-state-of-javascript-a-shift-from-imperative-to-declarative#.Vz0WEZMrIUE">The State Of JavaScript — A Shift From Imperative To Declarative</a> e <a href="http://developer.telerik.com/featured/three-ds-of-web-development-1-declarative-vs-imperative/">Three D’s of Web Development #1: Declarative vs. Imperative</a>.</p>
+<p>Este guia ensina primeiro a abordagem imperativa antes de introduzir a abordagem declarativa com frameworks como <a href="https://angular.io/">Angular</a> e bibliotecas como <a href="https://facebook.github.io/react/">React</a>. Eu recomendo o aprendizado nesta ordem porque ele permite que você veja o problema que a abordagem declarativa resolve.</p>
+<h3>Ajax</h3><p>Ao longo destes artigos e tutoriais, você provavelmente viu o termo <a href="https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started">Ajax</a> ser mencionado algumas vezes. Ajax é uma técnica que permite que as páginas da web interajam com o servidor usando JavaScript.</p>
+<p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*kkezNwUnuEiAztlQRkJ69A.gif" alt="Ajax é o que faz o conteúdo ser dinâmico"></p>
+<p>Por exemplo, quando você enviar um formulário em um site, ele coleta sua entrada e faz uma solicitação HTTP que envia dados para um servidor. Quando você postar um tweet no Twitter, seu cliente do Twitter faz uma solicitação HTTP para o servidor da API do Twitter e atualiza a página com a resposta do servidor.</p>
+<p>Para leitura sobre Ajax veja o <a href="http://www.vandelaydesign.com/what-is-ajax-webdev/">What is Ajax</a>. Se você ainda não entendeu totalmente o conceito, dê uma olhada no <a href="https://www.reddit.com/r/explainlikeimfive/comments/19gvn9/explain_it_like_im_5_what_is_ajax/">Explain it like i’m 5, what is Ajax</a>. Se ainda não for suficiente, você pode ler o <a href="http://eloquentjavascript.net/17_http.html">Eloquent JavaScript’s chapter on HTTP</a>.</p>
+<p>Hoje, o padrão de navegador para fazer solicitações de HTTP é o <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">Fetch</a>. Você pode ler mais sobre o <em>Fetch</em> neste artigo do <a href="https://davidwalsh.name/fetch">Dan Walsh</a>. Ele abrange como o <em>Fetch</em> funciona e como usá-lo. Você também pode encontrar um <a href="http://stackoverflow.com/questions/7087331/what-is-the-meaning-of-polyfills-in-html5">polyfill</a> do <em>Fetch</em> com a documentação <a href="https://github.com/github/fetch">aqui</a>.</p>
+<h3>jQuery</h3><p>Até agora, você tem feito manipulações de DOM usando apenas JavaScript. Porém existem várias bibliotecas de manipulação do DOM que fornecem APIs para simplificar o código que você escreve.</p>
+<p>Uma das bibliotecas mais populares de manipulação do DOM é o <a href="https://jquery.com/">jQuery</a>. Tenha em mente que o jQuery é uma biblioteca imperativa. Foi escrita antes de os sistemas Front-End se tornarem tão complexos como são hoje. Atualmente, o gerenciamento de interfaces de usuário complexas são com frameworks declarativos, usando bibliotecas como Angular e React. No entanto, eu ainda recomendo que você aprenda jQuery porque você provavelmente o encontrará muitas vezes durante sua carreira como Front-Ender.</p>
+<p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*4XD5t8AEjQFWeTWEIdhQpw.gif" alt="jQuery é uma abstração em cima de simples manipulação no DOM"></p>
+<p>Para aprender o básico do jQuery, confira o <a href="http://learn.jquery.com/">jQuery’s Learning Center</a>. É um passo-a-passo de conceitos importantes como animações e manipulação de eventos. Se você quer fazer em tutorial interativo, você pode tentar o <a href="https://www.codecademy.com/learn/jquery">Codecademy’s jQuery course</a>.</p>
+<p>Tenha em mente, jQuery nem sempre é a solução para a manipulação imperativa do DOM. <a href="https://plainjs.com/javascript/">PlainJS</a> e <a href="http://youmightnotneedjquery.com/">You Might Not Need jQuery</a> são dois sites que mostram funções de JavaScript equivalentes a funções usadas com freqüência no jQuery.</p>
+<h3>ES5 vs. ES6</h3><p>Outro conceito importante para entender sobre JavaScript é o <a href="https://en.wikipedia.org/wiki/ECMAScript">ECMAScript</a> e como ele se relaciona com o Javascript. Existem dois tipos principais de JavaScript que você vai encontrar hoje: ES5 e ES6. Eles são padrões de ECMAScript que o JavaScript usa. Você pode pensar neles como versões do JavaScript. O projeto final do ES5 foi finalizado em 2009 e é o que estávamos usando até agora.</p>
+<p>ES6, também conhecido como ES2015, é o novo padrão que traz novas construções de linguagem como modelo <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const"> constants</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes">classes</a> e <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals">template literals</a> para o JavaScript. É importante notar que ES6 traz novos recursos de linguagem, mas ainda definimos semanticamente os termos de ES5. Por exemplo, as classes no ES6 são meramente <a href="https://en.wikipedia.org/wiki/Syntactic_sugar"><em>syntactical sugar</em></a> sobre a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain">herança prototípica</a> do JavaScript.</p>
+<p>É essencial saber tanto ES5 e ES6, já que você verá aplicativos que usam um ou outro. Uma boa introdução ao ES6 é o <a href="http://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning/">ES5, ES6, ES2016, ES.Next: What’s going on with JavaScript versioning</a> e o <a href="http://weblogs.asp.net/dwahlin/getting-started-with-es6-%E2%80%93-the-next-version-of-javascript">Getting Started with ES6 — The Next Version of JavaScript</a> do Dan Wahlin. Depois disso, você pode ver uma lista completa de alterações do ES5 para o ES6 no <a href="http://es6-features.org/#Constants">ES6 Features</a>. Se você quiser ainda mais, confira este <a href="https://github.com/lukehoban/es6features">repositório no Github sobre recursos do ES6</a>.</p>
+<h2>Mais prática</h2><p>Se você já chegou a este ponto, parabenize-se. Você já aprendeu muito sobre JavaScript. Vamos colocar em prática o que você aprendeu.</p>
+<h3>Experimento 3</h3><p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*vThR7vEzW40OloxGnbmwuA.png" alt="Flipboard.com"></p>
+<p>O experimento 3 vai te ensinar como usar habilidades como manipulação do DOM e jQuery. Para este experimento, vamos adotar uma abordagem mais estruturada e copiar a homepage do Flipboard usando o tutorial do Codecademy, <a href="https://www.codecademy.com/skills/make-an-interactive-website">Flipboard’s home page and add interactivity with JavaScript</a>.</p>
+<p>Durante o tutorial, concentre-se na compreensão de como fazer um site interativo, quando torná-lo interativo e como aplicar o jQuery.</p>
+<h3>Experimento 4</h3><p>O experimento 4 combina o que você aprendeu sobre HTML e CSS com seu curso introdutório em JavaScript. Para este experimento, você criará um relógio com seu próprio estilo e vai torná-lo interativo usando JavaScript. Antes de começar, eu recomendo a leitura do <a href="http://philipwalton.com/articles/decoupling-html-css-and-javascript/">Decoupling Your HTML, CSS, and JavaScript</a> para aprender o básico da nomenclatura do CSS quando o JavaScript é jogado no projeto. Também preparei uma lista de <em>pens</em> no CodePen para você usar como referência para este experimento. Para obter mais exemplos, busque <a href="http://codepen.io/search/pens?q=clock&amp;limit=all&amp;type=type-pens">clock</a> no CodePen.</p>
+<ul>
+<li><a href="http://codepen.io/stevenfabre/pen/Cyhjb">Flat Clock</a></li>
+<li><a href="http://codepen.io/mattlitzinger/pen/ruEyz">jQuery Wall Clock</a></li>
+<li><a href="http://codepen.io/rapidrob/pen/IGEhn">Fancy Clock</a></li>
+<li><a href="http://codepen.io/OfficialAntarctica/pen/VYzvgj">Retro Clock</a></li>
+<li><a href="http://codepen.io/dudleystorey/pen/unEyp">Simple JavaScript Clock</a></li>
+</ul>
+<p>Você pode fazer esta experiência de duas maneiras:</p>
+<ol>
+<li>Comece a projetar e criar o layout em HTML e CSS e adicione interatividade com JavaScript.</li>
+<li>Escrava a lógica JavaScript primeiro e depois passe para o layout.</li>
+</ol>
+<p>Você pode usar jQuery, mas sinta-se livre para usar o JavaScript simples.</p>
+<h2>Frameworks JavaScript</h2><p>Com você sabendo o básico de JavaScript, é hora de aprender sobre Frameworks JavaScript.</p>
+<p>Frameworks são bibliotecas de JavaScript que vão te ajudar a estruturar e organizar seu código. Eles fornecem aos desenvolvedores soluções repetíveis para problemas complexos de Front-End, como gerenciamento de estado, roteamento e otimização de desempenho. Eles são comumente usados para criar <a href="http://www.visionmobile.com/blog/2013/07/web-sites-vs-web-apps-what-the-experts-think/">web apps</a>.</p>
+<p>Eu não vou incluir uma descrição de cada estrutura do JavaScript. Mas aqui está uma lista rápida de alguns Frameworks:</p>
+<ul>
+<li><a href="https://angularjs.org/">Angular</a></li>
+<li><a href="https://facebook.github.io/react/">React</a> + <a href="https://facebook.github.io/react/docs/flux-overview.html">Flux</a></li>
+<li><a href="http://emberjs.com/">Ember</a></li>
+<li><a href="http://aurelia.io/">Aurelia</a></li>
+<li><a href="http://vuejs.org/">Vue</a></li>
+<li><a href="https://www.meteor.com/">Meteor</a></li>
+</ul>
+<p>Você não tem que aprender todos os Frameworks. Escolha um e aprenda bastante. Não foque nos Frameworks em sí. Em vez disso, compreenda as filosofias de programação e princípios de construção deles.</p>
+<h2>Architectural Patterns</h2><p>Antes de ver os Frameworks, é importante entender alguns padrões de arquitetura que eles costumam usar: <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">model-view-controller</a>, <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel">model-view-viewmodel</a> e <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter">model-view-presenter</a>. Esses padrões são projetados para criar uma clara <a href="https://en.wikipedia.org/wiki/Separation_of_concerns">separação de conceitos</a> entre as camadas da aplicação.</p>
+<p>Separação de conceitos, é um princípio que sugere a divisão da aplicação em camadas específicas. Por exemplo, em vez do HTML manter o estado da aplicação, você pode usar um objeto JavaScript — geralmente chamado <code>model</code> — para armazenar o estado.</p>
+<p>Para saber mais sobre esses padrões, primeiro leia sobre MVC no <a href="https://developer.chrome.com/apps/app_frameworks">Chrome Developers</a>. Depois, leia <a href="https://addyosmani.com/blog/understanding-mvc-and-mvp-for-javascript-and-backbone-developers/">Understanding MVC And MVP (For JavaScript And Backbone Developers)</a>. Nesse artigo, não se preocupe em aprender Backbone, veja apenas as partes com explicações de MVC e MVP.</p>
+<p>Addy Osman também escreveu sobre MVVM em <a href="https://addyosmani.com/blog/understanding-mvvm-a-guide-for-javascript-developers/">Understanding MVVM — A Guide For JavaScript Developers</a>. Para saber mais sobre as origens do MVC e porque ele surgiu, leia o ensaio de Martin Fowler chamado <a href="http://martinfowler.com/eaaDev/uiArchs.html">GUI Architectures</a>. Finalmente, leia a seção, <a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvcmvp">JavaScript MV* Patterns</a> no <a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/">Learning JavaScript Design Patterns</a>, é um livro fantástico online.</p>
+<h2>Design Patterns</h2><p>Frameworks JavaScript não reinventam a roda. A maioria deles dependem de <em>design patterns</em>. Você pode pensar sobre <em>design patterns</em> como modelos para resolver problemas comuns no desenvolvimento de software.</p>
+<p>Sabendo que a compreensão dos <em>design patterns</em> no JavaScript não é um pré-requisito para o aprendizado de um Framework, sugiro olhar a lista a seguir em algum momento.</p>
+<ul>
+<li><a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/#decoratorpatternjavascript">Decorator</a></li>
+<li><a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/#factorypatternjavascript">Factory</a></li>
+<li><a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/#singletonpatternjavascript">Singleton</a></li>
+<li><a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript">Revealing module</a></li>
+<li><a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/#facadepatternjavascript">Facade</a></li>
+<li><a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/#observerpatternjavascript">Observer</a></li>
+</ul>
+<p>Compreender e ser capaz de implementar alguns destes <em>design patterns</em> não só vai te fazer um desenvolvedor melhor, mas também vai ajudar você a entender o que alguns Frameworks estão fazendo por trás das cortinas.</p>
+<h3>AngularJS</h3><p>AngularJS é um Framework <a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvc">MVC</a> e às vezes um Framework <a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvvm">MVVM</a>. Ele é mantido pelo Google e balançou a comunidade de JavaScript, quando foi lançado em 2010.</p>
+<p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*lFZ7nP3KlRtb69abn19xJQ.png" alt="AngularJS"></p>
+<p>Angular é um Framework declarativo. A leitura que mais me ajudou a entender a transição da programação imperativa para programação declarativa no JavaScript foi <a href="http://stackoverflow.com/questions/13151725/how-is-angularjs-different-from-jquery">How is AngularJS different from jQuery</a> no StackOverflow.</p>
+<p>Se você quer aprender mais sobre Angular, confira a <a href="https://docs.angularjs.org/guide">documentação</a>. Eles também têm um tutorial chamado <a href="https://docs.angularjs.org/tutorial/step_00">Angular Cat</a> que permite que você vá para a codificação imediatamente. Um guia mais completo para aprender Angular pode ser encontrado neste <a href="https://github.com/timjacobi/angular2-education">repositório do Github</a> do Tim Jacobi. Além disso, confira <a href="https://github.com/johnpapa/angular-styleguide">best practice styleguide</a>, escrito pelo John Papa.</p>
+<h3>React + Flux</h3><p>O Angular resolve muitos problemas que os desenvolvedores enfrentam ao construir sistemas complexos de Front-End. Outra ferramenta popular é o <a href="https://facebook.github.io/react/">React</a>, que é uma biblioteca para a criação de <em>user interfaces</em>. Você pode pensar nele como o V no MVC. Sendo o React apenas uma biblioteca, muitas vezes ele é oferecido com uma arquitetura conhecida como <a href="https://facebook.github.io/flux/">Flux</a>.</p>
+<p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*c0JXNVxVnTlOuQCnDqA6CA.png" alt="React"></p>
+<p>O Facebook desenvolveu o React e o Flux para abordar algumas das deficiências do MVC e seus problemas de escalabilidade. Dê uma olhada na sua apresentação conhecida como <a href="https://www.youtube.com/watch?list=PLb0IAmt7-GS188xDYE-u1ShQmFFGbrk0v&amp;v=nYkdrAPrdcw">Hacker Way: Rethinking Web App Development at Facebook</a>. Fala sobre o futuro e a origem do Flux.</p>
+<iframe width="100%" height="415" src="https://www.youtube.com/embed/nYkdrAPrdcw?list=PLb0IAmt7-GS188xDYE-u1ShQmFFGbrk0v" frameborder="0" allowfullscreen></iframe>
+
+<p>Para começar com React + Flux, primeiro aprenda React. Um bom inicio é a <a href="https://facebook.github.io/react/docs/getting-started.html">documentação do React</a>. Depois disso, confira <a href="http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/">React.js Introduction For People Who Know Just Enough jQuery To Get By</a> para ajudar você na transição da &quot;mentalidade jQuery&quot;.</p>
+<p>Depois que você tiver uma compreensão básica de React, comece a aprender Flux. Um bom lugar para começar é a <a href="https://facebook.github.io/flux/docs/overview.html">documentação oficial do Flux</a>. Depois confira <a href="https://github.com/enaqx/awesome-react">Awesome React</a>, que é uma lista de links com curadoria que irá ajudá-lo a avançar ainda mais no seu aprendizado.</p>
+<h2>Praticando com Frameworks</h2><p>Agora que você tem conhecimento básico sobre os Frameworks e padrões de arquitetura, é hora de colocá-los em prática. Durante estes dois experimentos, foque em aplicar os conceitos arquitetônicos que você aprendeu. Mantenha o seu código <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a>, com uma <a href="https://en.wikipedia.org/wiki/Separation_of_concerns">clara separação de conceitos</a> e use o <a href="https://en.wikipedia.org/wiki/Single_responsibility_principle">principio de responsabilidade única</a>.</p>
+<h3>Experimento 5</h3><p>Esse experimento é para desmontar e reconstruir o app <em>Todo MVC</em> usando um JavaScript agnóstico. Em outras palavras, mantenha o JavaScript simples, sem um Framework. O objetivo deste experimento é mostrar como MVC funciona sem misturar na sintaxe específica de um Framework.</p>
+<p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*ISCVxjX3_691DLnV3EPZ3w.png" alt=""></p>
+<p>Para começar, confira o resultado final no <a href="http://todomvc.com/examples/vanillajs/">TodoMVC</a>. O primeiro passo é criar um novo projeto local e primeiramente estabelecer os três componentes do MVC. Já que envolve um experimento, referencie o código-fonte completo neste <a href="https://github.com/tastejs/todomvc/tree/gh-pages/examples/vanillajs">repositório do Github</a>. Se você não pode replicar completamente o projeto ou não tem tempo, tudo bem. Baixe o código do repositório e brinque com os diferentes componentes do MVC até você entender como eles se relacionam com o outro.</p>
+<h3>Experimento 6</h3><p>O experimento 6 é um bom exercício de aplicação MVC. Entender o MVC é um passo importante para aprender os Frameworks JavaScript. Temos a seguir um tutorial do Scotch.io para construir um clone do Etsy usando Angular.</p>
+<p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*zOIJ31nV3rDYBidYkPSH_A.png" alt=""></p>
+<p><a href="https://scotch.io/tutorials/build-an-etsy-clone-with-angular-and-stamplay-part-1">Build an Etsy Clone with Angular and Stamplay</a> vai ensinar você a construir um web app usando Angular, interfaces com <a href="https://en.wikipedia.org/wiki/Application_programming_interface">APIs</a> e como estruturar projetos grandes. Após terminar esse tutorial, você deve ser capaz de responder as seguintes questões:</p>
+<ul>
+<li>O que é um web app?</li>
+<li>Como o MVC/MVVM são aplicados com Angular?</li>
+<li>O que é uma API e o que ela faz?</li>
+<li>Como organizar e estruturar bases de código grandes?</li>
+<li>Quais são as vantagens de adicionar <em>directive components</em> na sua UI?</li>
+</ul>
+<p>Se você quiser construir outros web apps usando Angular, tente <a href="https://www.sitepoint.com/real-time-status-update-app-angularjs-firebase/">Build a Real-Time Status Update App with AngularJS &amp; Firebase</a>.</p>
+<h3>Experimento 7</h3><p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*3HrnGSbAzIM5Lwu0_eqmjw.png" alt="React + Flux"></p>
+<p>Agora que você já entendeu o MVC, É o momento de tentar usar o <a href="https://facebook.github.io/flux/">Flux</a>. O experimento 7 vai construir uma <em>todo list</em> usando a arquitetura do React e Flux. Você pode achar o tutorial completo no <a href="https://facebook.github.io/flux/docs/todo-list.html">Facebook’s Flux documentation site</a>. Ele vai te mostrar um passo-a-passo de como usar React para construir interfaces e como o Flux é aplicado para construir web apps.</p>
+<p>Após você completar esse tutorial, você pode tentar outros tutoriais relacionados como <a href="https://www.sitepoint.com/how-to-build-a-todo-app-using-react-redux-and-immutable-js/">How to Build a Todo App Using React, Redux, and Immutable.js</a> e <a href="http://code.tutsplus.com/courses/build-a-microblogging-app-with-flux-and-react">Build a Microblogging App With Flux and React</a>.</p>
+<h2>Mantenha-se atualizado</h2><p>Assim como o resto do Front-End, o cenário de JavaScript muda rapidamente. É importante estar sempre um passo a frente.</p>
+<p>Abaixo uma lista de websites, blogs, e fóruns que são informativos e agradáveis de ler.</p>
+<ul>
+<li><a href="https://www.smashingmagazine.com/tag/javascript/">Smashing Magazine</a></li>
+<li><a href="http://javascriptweekly.com/">JavaScript Weekly</a></li>
+<li><a href="http://www.ng-newsletter.com/">Ng Weekly</a></li>
+<li><a href="https://www.reddit.com/r/javascript/">Reddit JavaScript</a></li>
+<li><a href="https://devchat.tv/js-jabber">JavaScript Jabber</a></li>
+</ul>
+<h2>Aprenda pelo exemplo</h2><p>Como sempre, a melhor maneira de aprender é pelo exemplo.</p>
+<h3>Styleguides</h3><p>Os styleguides de JavaScript são convenções de códigos desenvolvidas para ajudar você a manter seu código legível e com fácil manutenção.</p>
+<ul>
+<li><a href="https://github.com/airbnb/javascript">AirBnB JavaScript Styleguide</a></li>
+<li><a href="https://github.com/rwaldron/idiomatic.js/">Principles of Writing Consistent, Idiomatic JavaScript</a></li>
+<li><a href="https://github.com/felixge/node-style-guide">Node Styleguide</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style">MDN Coding Style</a></li>
+</ul>
+<h3>Codebases</h3><p>Não consigo enfatizar o quanto é útil é ler um bom código. Aprenda como procurar no <a href="https://github.com/">Github</a> repositórios relevantes sempre que buscar algo novo.</p>
+<ul>
+<li><a href="https://github.com/lodash/lodash">Lodash</a></li>
+<li><a href="https://github.com/jashkenas/underscore">Underscore</a></li>
+<li><a href="https://github.com/babel/babel">Babel</a></li>
+<li><a href="https://github.com/TryGhost/Ghost">Ghost</a></li>
+<li><a href="https://github.com/NodeBB/NodeBB">NodeBB</a></li>
+<li><a href="https://github.com/keystonejs/keystone">KeystoneJS</a></li>
+</ul>
+<h2>Considerações finais</h2><p>No final deste guia, você deve ter uma compreensão sólida de fundamentos do JavaScript e como aplicá-los na Web. Lembre-se, este guia te fornece um mapa geral do caminho. Se você quer se tornar um herói do Front-End, é importante que você gaste tempo trabalhando em projetos para aplicar estes conceitos. Quanto mais projetos você fazer, e quanto mais se apaixonar por eles, mais você vai aprender.</p>
+<p>Este artigo é a segunda parte da série de duas partes. O que está faltando neste guia é uma introdução do <a href="https://nodejs.org/en/">Node</a>, que é uma plataforma que permite que o JavaScript rode em servidores. No futuro, posso escrever uma parte três que vai falar sobre o desenvolvimento do lado do servidor com o Node e coisas como bancos de dados <a href="https://en.wikipedia.org/wiki/NoSQL">noSQL</a>.</p></div><div class="share"><div class="addthis_sharing_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51124ac82d52f270"></script></div><aside class="comments"><div id="disqus_thread"></div><script>(function() {
+var d = document, s = d.createElement('script');
+s.src = '//felipefialho.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script><script id="dsq-count-scr" src="//felipefialho.disqus.com/count.js" async="async"></script></aside></div></article></main></body></html>
