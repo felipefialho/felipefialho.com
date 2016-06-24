@@ -1,4 +1,11 @@
 {
+  "espirito1880": {
+    "path":"http://www.espirito1880.com/",
+    "date": "Jun 2016",
+    "title": "Espirito 1880",
+    "description": "Development of HTML (Pug), CSS (Stylus) and Javascript",
+    "image": "espirito1880.jpg"
+  },
   "parks": {
     "path":"http://parks.oupexplore.com/",
     "date": "Apr 2016",
