@@ -3,14 +3,14 @@
     "path":"http://codepen.io/LFeh/pen/LkOXBA",
     "date": "Jul 2016",
     "title": "Animate height with CSS transitions using scale()",
-    "description": "An example to simulate the transition height using scale(). ",
+    "description": "An example to simulate the transition height using scale()",
     "image": "animate-height.png"
   },
   "progress": {
     "path":"http://codepen.io/LFeh/pen/vGMJBN",
     "date": "May 2016",
     "title": "Pure CSS - Progress Circles",
-    "description": "A example of progress circles using only Stylus. ",
+    "description": "A example of progress circles using only Stylus",
     "image": "progress.png"
   },
   "kratos": {
