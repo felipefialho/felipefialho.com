@@ -1,16 +1,13 @@
-doctype
-html(lang="en")
+!= partial("_partials/head")
 
-  != partial("_partials/head")
+body(class='page-#{ current.path[0] }')
 
-  body(class='page-#{ current.path[0] }')
+  != partial("_partials/header")
 
-    != partial("_partials/header")
+  //-
+  //- Main
+  //- --------------------------------------------------
 
-    //-
-    //- Main
-    //- --------------------------------------------------
-
-    main.main(role='main')
-      != yield
+  main.main(role='main')
+    != yield
 
