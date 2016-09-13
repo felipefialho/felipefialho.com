@@ -121,6 +121,12 @@
     "title": "Retrospectiva 2013",
     "description": "Último dia de trabalho no ano, e é o momento ideal para analisar o que foi feito, reforçar as bases e se preparar para ter um 2014 ainda mais produtivo."
   },
+  "usando-height-com-css-transitions": {
+    "path":"2013/usando-height-com-css-transitions",
+    "date": "18/11/2013",
+    "title": "Usando height com CSS Transitions",
+    "description": "Hoje me deparei com um problema que alguns de vocês já devem ter passado, e coloco aqui a resolução: A limitação do uso de `height: auto` em CSS Transitions."
+  },
   "tutorial-tabela-responsiva": {
     "path":"2013/tutorial-tabela-responsiva",
     "date": "14/10/2013",

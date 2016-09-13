@@ -10,6 +10,7 @@
     "lint": "./node_modules/.bin/jscs ./",
     "fix": "./node_modules/.bin/jscs ./ --fix",
     "precommit": "npm run lint",
+    "start": "gulp",
     "deploy": "gulp build && cd .. && harp compile _harp ./ && cp _harp/README.md ./ && cp _harp/CNAME ./"
   },
   "author": "Felipe Fialho <hi@felipefialho.com> (http://www.felipefialho.com/)",
