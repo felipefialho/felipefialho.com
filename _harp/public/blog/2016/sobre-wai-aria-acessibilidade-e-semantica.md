@@ -10,7 +10,7 @@ A maioria das [roles](https://www.w3.org/WAI/PF/HTML/wiki/RoleAttribute) foram d
 
 Elas servem para dar significado (ou mais significado) aos elementos, já que nem sempre a tag HTML fornece por sí só o comportamento esperado.
 
-Agora bora ver exemplos de uso prático para você começar a usar AGORA.
+Vamos ver exemplos de uso prático para você começar a usar AGORA. :)
 
 #### button
 
