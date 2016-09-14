@@ -41,10 +41,9 @@ h1, h2, h3, h4, h5, h6
 // ==================================================
 
 p
-  margin 0 0 $space-text
-
-  &:last-child
-    margin-bottom 0
+  &:not(:last-child)
+    margin-bottom $space-text 
+    
 
 //
 // 4. Code
@@ -71,15 +70,14 @@ code
 // 5. Blockquote
 // ==================================================
 
-blockquote
-  margin ($space-lg + $space) 0 ($space-lg + $space)
+blockquote 
   position relative
 
-  &:first-child
-    margin-top 0
+  &:not(:first-child)
+    margin-top ($space-lg + $space)
 
-  &:last-child
-    margin-bottom 0
+  &:not(:last-child)
+    margin-bottom ($space-lg + $space)
 
   cite
     font(h2, regular, secondary)

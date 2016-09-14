@@ -1,4 +1,12 @@
 {
+  "sobre-wai-aria-acessibilidade-e-semantica": {
+    "cover": "sobre-role-e-semantica.png",
+    "cover_alt": "Imagem de código demonstrando a semântica de um logo",
+    "path":"2016/sobre-wai-aria-acessibilidade-e-semantica",
+    "date": "14/09/2016",
+    "title": "Sobre WAI-ARIA, acessibilidade e semântica.",
+    "description": "WAI-ARIA já é um assunto bem antigo. Porém, observo que muitas pessoas simplesmente desconhecem sua existência ou simplesmente não sabe como utilizar nos projetos."
+  },
   "do-zero-a-heroi-do-front-end-parte-2": {
     "cover": "zero-to-front-end-hero.png",
     "cover_alt": "Fundo vermelho com um raio amarelo",
