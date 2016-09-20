@@ -4,7 +4,7 @@ A importância de um CSS modularizado e o Atomic Design foi muito difundido nos 
 
 Imagino que a maneira na qual os Media Queries são mais utilizados é adicionando as condicionais no fim do CSS, algo como:
 
-````
+````css
 @media (max-width: 767px) {
   ...
 }
@@ -24,7 +24,7 @@ Lembrei então que o [Bootstrap 3](http://getbootstrap.com/) já estava trabalha
 
 Basta adicionar o seguinte código no `head` e como mágica Media Queries funcionarão perfeitamente no IE.
 
-````
+````html
 <!--[if lt IE 9]>
 <script type='text/javascript' src="assets/js/respond.min.js"></script>
 <![endif]-->
@@ -34,7 +34,7 @@ Basta adicionar o seguinte código no `head` e como mágica Media Queries funcio
 
 Não tem segredo. Simplesmente adiciono os Media Queries em sequencia da classe que desejo alterar. Caso use algum pré-processador, isso será ainda mais simples, porque você pode deixar tudo organizado. Usando o LESS como exemplo:
 
-````
+````css
 .navbar {
   margin-top: 20px;
   @media (min-width: @screen-sm-min) {
@@ -50,7 +50,7 @@ Não tem segredo. Simplesmente adiciono os Media Queries em sequencia da classe 
 
 Isso vai gerar:
 
-````
+````css
 .navbar {
   margin-top: 20px;
 }

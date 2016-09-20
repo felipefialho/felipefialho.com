@@ -6,7 +6,7 @@ Você precisa expandir a altura de algum elemento que está escondido e ao invé
 
 Então você faz algo desse tipo:
 
-````
+````css
 .accordion-content{
   transition: height 1s;  
   overflow: hidden;
@@ -32,7 +32,7 @@ A boa notícia é que a resolução dessa limitação é simples!
 
 Usaremos "max-height" para contornar isso.
 
-````
+````css
 .accordion-content{
   transition: max-height 1s;  
   overflow: hidden;

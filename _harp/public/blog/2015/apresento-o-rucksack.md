@@ -20,13 +20,13 @@ Vou mostrar uma configuração utilizando o Grunt + Stylus, mas é possível ver
 
 Baixe o [PostStylus](https://github.com/seaneking/poststylus) e o Rucksack.
 
-````
+````bash
 $ npm install --save poststylus rucksack-css
 ````
 
 Em seguida crie uma função para utilizar o PostCSS na sua configuração do Stylus no Grunt:
 
-````
+````js
 var rucksack = require('rucksack-css');
 
 var postcss = function(){
@@ -36,7 +36,7 @@ var postcss = function(){
 
 Caso queira utilizar outra ferramenta em PostCSS, como o Lost, também deve chamar dessa forma, por exemplo:
 
-````
+````js
 var postcss = function(){
   return require('poststylus')(['rucksack-css', 'lost']);
 }
@@ -44,7 +44,7 @@ var postcss = function(){
 
 Depois é só chamar no `use` do Stylus dentro do seu Gruntfile:
 
-````
+````js
 stylus: {
   dev: {
     options: {
@@ -64,14 +64,14 @@ Adiciona compatibilidade de algumas propriedades para navegadores antigos.
 
 Por exemplo:
 
-````
+````stylus
 .foo
   opacity 0.8
 ````
 
 Vai gerar:
 
-````
+````css
 foo {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   opacity: 0.8;
@@ -84,14 +84,14 @@ Faz a mágica de adicionar prefixos automaticamente para você, e sempre se base
 
 Por exemplo:
 
-````
+````stylus
 .foo
   display flex
 ````
 
 Vai gerar:
 
-````
+````css
 .foo {
   display: -webkit-box;
   display: -webkit-flex;
@@ -102,7 +102,7 @@ Vai gerar:
 
 Como acho essas funções importantes, deixei ambas habilitadas.
 
-````
+````js
 var postcss = function() {
   return require('poststylus')([rucksack({
     autoprefixer: true,
@@ -125,7 +125,7 @@ Pode ler toda a documentação [aqui](http://simplaio.github.io/rucksack/docs/#r
 
 Como utilizo REM, defino no HTML um range entre 7px e 10px.
 
-````
+````stylus
 html
   font-size responsive 7px 10px
 ````
@@ -142,14 +142,14 @@ Outra mão na roda, sabe quando a gente precisa deixar um elemento absoluto ou f
 
 Basta fazer isso:
 
-````
+````stylus
 .foo
   position absolute 0
 ````
 
 E você terá isso:
 
-````
+````css
 .foo {
   position: absolute;
   top: 0;
@@ -165,7 +165,7 @@ Tem preguiça de escrever o nome completo de alguma propriedade?
 
 Crie um alias!
 
-````
+````stylus
 @alias
   fs font-size
 
@@ -175,7 +175,7 @@ Crie um alias!
 
 Para ter isso:
 
-````
+````css
 .foo {
   font-size: 16px;
 }
@@ -185,7 +185,7 @@ Para ter isso:
 
 Sabe aquelas funções que criamos no pré-processador para gerar nosso font-face mais facilmente? É coisa do passado, agora podemos usar "nativamente".
 
-````
+````stylus
 @font-face
   font-family 'My Font'
   font-path '/my/font/file'
@@ -195,7 +195,7 @@ Sabe aquelas funções que criamos no pré-processador para gerar nosso font-fac
 
 E vai gerar o código completo:
 
-````
+````css
 @font-face {
   font-family: 'My Font';
   src: url("/my/font/file.eot");
@@ -214,14 +214,14 @@ Um pacote completo com transições incríveis.
 
 Escreva:
 
-````
+````stylus
 .foo
   transition all 250ms ease-in-cubic
 ````
 
 E terá:
 
-````
+````css
 .foo {
   transition: all 250ms cubic-bezier(0.55, 0.055, 0.675, 0.19);}
 ````

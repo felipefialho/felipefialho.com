@@ -6,7 +6,7 @@ Como sempre, deixei a base que estou utilizando no [Github](https://github.com/L
 
 #### [Clean](https://github.com/gruntjs/grunt-contrib-clean)
 
-````
+````js
 clean: {
   dist: {
     src: ["dist/"]
@@ -18,7 +18,7 @@ Limpo a pasta de distribuição.
 
 #### [Copy](https://github.com/gruntjs/grunt-contrib-copy)
 
-````
+````js
 copy: {
   dist: {
     files: [
@@ -43,7 +43,7 @@ Copio os arquivos necessários para rodar o projeto para a pasta de distribuiç�
 
 #### [Uglify](https://github.com/gruntjs/grunt-contrib-uglify)
 
-````
+````js
 uglify: {
   options: {
     mangle : false
@@ -72,7 +72,7 @@ Aqui concateno/minifico os scripts. Reparem que crio duas versões, **dist** e *
 
 #### [Less](https://github.com/gruntjs/grunt-contrib-less)
 
-````
+````js
 less: {
   dist: {
     options: {
@@ -99,7 +99,7 @@ Transformo os arquivos LESS em CSS. O mesmo caso da tarefa anterior, crio duas v
 
 #### [HTMLMin](https://github.com/gruntjs/grunt-contrib-htmlmin)
 
-````
+````js
 htmlmin: {
   dist: {
     options: {
@@ -120,7 +120,7 @@ Minifico o HTML.
 
 #### [ImageMin](https://github.com/gruntjs/grunt-contrib-imagemin)
 
-````
+````js
 imagemin: {
   dist: {
     options: {
@@ -140,7 +140,7 @@ Um dos plugins mais interessantes. Aqui comprimimos as imagens, sem perder quali
 
 #### [Watch](https://github.com/gruntjs/grunt-contrib-watch)
 
-````
+````js
 watch: {
   dev : {
     files : [
@@ -156,7 +156,7 @@ Pedimos para o Grunt "olhar" as modificações e iniciar determinada tarefa. No 
 
 #### Comandos para executar
 
-````
+````js
 // Dev
 grunt.registerTask( 'dev', ['uglify:dev', 'less:dev'] );
 

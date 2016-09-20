@@ -13,6 +13,7 @@ import lost from 'lost';
 import rupture from 'rupture';
 import postcss from 'gulp-postcss';
 import concat from 'gulp-concat';
+import uglify from 'gulp-uglify';
 import imagemin from 'gulp-imagemin';
 import browserSync from 'browser-sync';
 import svgmin from 'gulp-svgmin';
@@ -35,11 +36,25 @@ function refresh() {
 
 const srcPaths = {
   css: 'public/_src/styl/**/*.styl',
-  styl: 'public/_src/styl/style.styl',
+  styl: [
+    'public/_src/styl/style.styl',
+    'node_modules/prismjs/themes/prism.css',        // PrismJS
+    'node_modules/prismjs/themes/prism-okaidia.css' // PrismJS - Theme
+  ],
   icons: 'public/_src/svg/icons/*.svg',
   svg: 'public/_src/svg/etc/*',
   img: 'public/_src/img/**/*',
-  harp: ['public/**/*.jade', 'public/**/*.md', 'public/**/*.json']
+  harp: [
+    'public/**/*.jade', 
+    'public/**/*.md', 
+    'public/**/*.json'
+  ], 
+  js: 'public/_src/js/**/*.js',
+  vendors: [
+    'node_modules/prismjs/prism.js',                   // PrismJS
+    'node_modules/prismjs/components/prism-stylus.js', // PrismJS - Stylus
+    'node_modules/prismjs/components/prism-bash.js'    // PrismJS - Bash
+  ]
 };
 
 const buildPaths = {
@@ -47,6 +62,8 @@ const buildPaths = {
   css: 'public/assets/css/',
   img: 'public/assets/img',
   svg: 'public/assets/svg/',
+  js: 'public/assets/js/',
+  vendors: 'public/_src/js/_core/'
 };
 
 gulp.task('css', () => {
@@ -57,9 +74,28 @@ gulp.task('css', () => {
     }))
     .on('error', onError)
     .pipe(gcmq())
+    .pipe(plumber())
+    .pipe(concat('style.css'))
     .pipe(cssnano())
     .pipe(gulp.dest(buildPaths.css));
   refresh();
+});
+ 
+gulp.task('vendors', () => {
+  gulp.src(srcPaths.vendors)
+    .pipe(plumber())
+    .pipe(concat('vendors.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest(buildPaths.vendors));
+});
+
+gulp.task('js', () => {
+  gulp.src(srcPaths.js)
+    .pipe(plumber())
+    .pipe(concat('main.js'))
+    .pipe(uglify())
+    .on('error', onError)
+    .pipe(gulp.dest(buildPaths.js));
 });
 
 gulp.task('images', () => {
@@ -116,6 +152,6 @@ gulp.task('serve', () => {
   });
 });
 
-gulp.task('default', ['css', 'images', 'svg', 'icons', 'serve']);
-gulp.task('build', ['css', 'images', 'svg', 'icons']);
+gulp.task('default', ['css', 'vendors', 'js', 'svg', 'icons', 'serve']);
+gulp.task('build', ['css', 'vendors', 'js', 'images', 'svg', 'icons']);
 

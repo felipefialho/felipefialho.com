@@ -19,7 +19,7 @@ Observem, que ao clicar sobre o campo, a `<label>` muda de posição e permanece
 
 ### HTML
 
-````
+````html
 <div class="form-item">
   <input class="form-control" id="name" name="name" type="text" required>
   <label class="label-float" for="name">Nome</label>
@@ -30,7 +30,7 @@ Uma marcação básica, apenas adicionei a `<label>` logo após o campo relacion
 
 ### CSS
 
-````
+````stylus
 .form-item {
   position: relative;
 }
@@ -38,7 +38,7 @@ Uma marcação básica, apenas adicionei a `<label>` logo após o campo relacion
 
 Deixo o `.form-item` como relativo, para os filhos absolutos se posicionarem a partir dele.
 
-````
+````stylus
 .form-control {
   box-sizing: border-box;
   border-radius: 2px;
@@ -62,7 +62,7 @@ Deixo o `.form-item` como relativo, para os filhos absolutos se posicionarem a p
 
 Uma estilização bem simples de um campo de formulário.
 
-````
+````stylus
 .label-float {
   color: @gray-light;
   position: absolute;

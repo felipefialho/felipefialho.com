@@ -66,7 +66,7 @@ O scripts que modificamos o tempo todo vão ser concatenados com esse arquivo de
 
 ### Exemplo de uso:
 
-````
+````js
 // Task: Concat
 // ---------------------------------
 concat: {

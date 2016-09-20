@@ -21,7 +21,7 @@ Apenas um botão.
 
 ### No CSS
 
-````
+````css
 .btn{
   -webkit-transition: opacity linear .2s;
   -o-transition: opacity linear .2s;
@@ -46,7 +46,7 @@ Apenas um botão.
 
 Informações básicas do estilo do botão.
 
-````
+````css
 .btn-progress{
   cursor: default;
   overflow: hidden;
@@ -60,7 +60,7 @@ Informações básicas do estilo do botão.
 
 Quando o botão estiver no estado "processando", vai ter posição relativa, e será zerada qualquer interação que o usuário possa ter, por exemplo "cursor" e "hover".
 
-````
+````css
 .btn-progress:after{
 
   content: "Processing";
@@ -104,7 +104,7 @@ Use **:after** para adicionar os estilos.
 3.  Em seguida use "background-gradients" para criar listras diagonais.
 4.  E por último, as chamadas da animação.
 
-````
+````css
 /* Webkit */
 @-webkit-keyframes progress-bar-stripes {
   to  { background-position: 40px 0; }
@@ -140,7 +140,7 @@ Agora criamos a animação apenas invertendo a posição do gradiente, dando o e
 
 ### No Javascript
 
-````
+````js
 $(".btn").click( function(){
   $(this).toggleClass("btn-progress");
 });

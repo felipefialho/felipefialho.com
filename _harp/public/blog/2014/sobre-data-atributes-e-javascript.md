@@ -16,13 +16,13 @@ Ao invés de acessar o elemento via Javascript através de `.classe` ou `#id`, p
 
 Por exemplo (em jQuery) para iniciar uma interação touch em um menu, podemos chamar via `.classe`:
 
-````
+````js
 $('.nav-aside');
 ````
 
 Ou via `#id`:
 
-````
+````js
 $('#nav-aside');
 ````
 
@@ -36,13 +36,13 @@ O principal motivo, é para separar o estilo da funcionalidade Javascript. Apres
 
 1.  Imaginem novamente o menu do exemplo acima, ele apresenta uma função para interação em “swipe” em telas Touch. Então chamamos a função, atribuindo em todas a classes `.nav-aside`:
 
-    ````
+    ````js
     $('.nav-aside');
     ````
 
 2.  Porém, em uma das páginas. O menu apresenta o mesmo estilo, mas não deveria ter essa funcionalidade de swipe. Poderíamos atribuir a interação a um #id e adicionar o id nos elementos que devem apresentar esse comportamento.
 
-    ````
+    ````js
     $('#nav-touch');
     ````
 
@@ -50,7 +50,7 @@ O principal motivo, é para separar o estilo da funcionalidade Javascript. Apres
 
     Poderíamos então usar uma classe sem estilo, que serviria somente para a chamada no Javascript, algo como:
 
-    ````
+    ````js
     $('.js.nav-touch');
     ````
 
@@ -58,7 +58,7 @@ O principal motivo, é para separar o estilo da funcionalidade Javascript. Apres
 
 4.  Então finalmente, podemos usar o [data-*] para isso.
 
-    ````
+    ````js
     $('[data-toggle="nav-touch"]');
     ````
 
@@ -69,7 +69,7 @@ O principal motivo, é para separar o estilo da funcionalidade Javascript. Apres
 
 E claro, também é possível manipular os Data Atributes através de CSS, portanto, podemos adicionar animações ou algum estilo específico:
 
-````
+````css
 .nav-aside[data-toggle="nav-touch"] {
   ...
 }

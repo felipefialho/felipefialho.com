@@ -32,28 +32,28 @@ Como disse no inicio do artigo, quando se trata de otimizar o código para essa 
 
 O primeiro ponto, é que crio algumas variáveis de breakpoints e replico elas conforme a necessidade. Peguei esse costume no tempo em que usava o Bootstrap e mantive até hoje, eu acho que faz todo sentido e torna o fluxo mais fluido.
 
-````
+````stylus
 //
 // Media Queries
 // --------------------------------------------------
 
-$screen-xs = 480px // Extra small screen
-$screen-sm = 768px // Small screen
-$screen-md = 992px // Medium screen
-$screen-lg = 1200px // Large screen
-$screen-xlg = 1600px // Extra Large screen
+$screen-xs   = 480px // Extra small screen
+$screen-sm   = 768px // Small screen
+$screen-md   = 992px // Medium screen
+$screen-lg   = 1200px // Large screen
+$screen-xlg  = 1600px // Extra Large screen
 $screen-xxlg = 1900px // Extra Large screen
 
-$screen-xs-max = ($screen-sm - 1)
-$screen-sm-max = ($screen-md - 1)
-$screen-md-max = ($screen-lg - 1)
-$screen-lg-max = ($screen-xlg - 1)
+$screen-xs-max  = ($screen-sm - 1)
+$screen-sm-max  = ($screen-md - 1)
+$screen-md-max  = ($screen-lg - 1)
+$screen-lg-max  = ($screen-xlg - 1)
 $screen-xlg-max = ($screen-xxlg - 1)
 ````
 
 O segundo ponto é que eu uso Stylus e SEMPRE adiciono as linhas de Media Querie aninhadas dentro do elemento. E não no final do arquivo do componente, e muito menos em um arquivo separado.
 
-````
+````stylus
 .header
     @media (min-width $screen-sm)
        ...

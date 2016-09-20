@@ -143,7 +143,7 @@ less/
 
 #### _core/margins:
 
-````
+````stylus
 //
 // Margins
 // --------------------------------------------------
@@ -158,7 +158,7 @@ less/
 
 #### _core/type:
 
-````
+````stylus
 //
 // Typography
 // --------------------------------------------------
@@ -188,7 +188,7 @@ Observem que defino alguns mixins e configurações reaproveitáveis em todo o p
 
 #### atoms/headings:
 
-````
+````stylus
 //
 // Headings
 // --------------------------------------------------
@@ -204,7 +204,7 @@ h1 {
 
 #### atoms/paragraph:
 
-````
+````stylus
 //
 // Paragraph
 // --------------------------------------------------
@@ -227,7 +227,7 @@ Os elementos devem ser únicos, nunca aninhados.
 
 #### molecules/page-header:
 
-````
+````stylus
 //
 // Page Header
 // --------------------------------------------------
@@ -253,7 +253,7 @@ Modifica os átomos para a criação de um componente especifico.
 
 #### organisms/header:
 
-````
+````stylus
 //
 // Header
 // --------------------------------------------------
@@ -274,7 +274,7 @@ Modifica os átomos e moléculas para a criação de uma sessão do projeto.
 
 #### pages/home:
 
-````
+````stylus
 //
 // Home
 // --------------------------------------------------
@@ -320,7 +320,7 @@ Vamos imaginar que o `.header` precise ser absoluto em resoluções médias, fix
 
 #### organisms/header:
 
-````
+````stylus
 //
 // Header
 // --------------------------------------------------

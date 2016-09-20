@@ -35,7 +35,7 @@ See the Pen [%= penName %>](http://codepen.io/LFeh/pen/IvmJD) by Felipe Fialho (
 
 ### No CSS
 
-````
+````css
 .social-media {
   position: relative;
 }
@@ -43,7 +43,7 @@ See the Pen [%= penName %>](http://codepen.io/LFeh/pen/IvmJD) by Felipe Fialho (
 
 Informa que os elementos absolutos vão se basear por aqui.
 
-````
+````css
 .btn-share {
   position: absolute; top: 0; left: 0;
   z-index: 10;
@@ -52,7 +52,7 @@ Informa que os elementos absolutos vão se basear por aqui.
 
 Posiciona o botão de gatilho.
 
-````
+````css
 .social-list li {
   margin: 0;
   opacity: 0;
@@ -66,7 +66,7 @@ Posiciona o botão de gatilho.
 
 Atribui posicionamentos básicos nos itens da lista e informa a transição. O **z-index** precisa ser menor do que do botão.
 
-````
+````css
 .social-list.active li {
   opacity: 1;
 }
@@ -74,7 +74,7 @@ Atribui posicionamentos básicos nos itens da lista e informa a transição. O *
 
 Todos os elementos ficaram com opacidade sólida quando estiverem ativos.
 
-````
+````css
 .social-list.active li.item-1 {
   left: 170px;
 }
@@ -90,7 +90,7 @@ Posiciona a posição de cada item.
 
 ### No Javascript
 
-````
+````js
 $('.btn-share').click(function() {
   $('.social-list').toggleClass('active');
 });

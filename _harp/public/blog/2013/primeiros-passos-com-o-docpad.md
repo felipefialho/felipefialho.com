@@ -24,24 +24,37 @@ Agora um item importante. No Windows, é necessário dar permissão total para a
 
 2.  Procure atualizações no NPM com o comando
 
-    `npm install -g npm`
-3.  Instale o Docpad
+    ````bash
+    npm install -g npm
+    ````
 
-    `npm install -g docpad`
+3.  Instale o Docpad
+    
+    ````bash
+    npm install -g docpad
+    ````
 
 ## Criando um projeto
 
 1.  Através do "Node.js command prompt" vá até a pasta que deseja criar o projeto.
 
 2.  Crie uma nova pasta para o projeto
+ 
+    ````bash
+    mkdir NOME-DO-PROJETO
+    ````
 
-    `mkdir NOME-DO-PROJETO`
 3.  Entre na pasta
 
-    `cd NOME-DO-PROJETO`
+    ````bash
+    cd NOME-DO-PROJETO
+    ````
+
 4.  Inicie o projeto
 
-    `docpad run`
+    ````bash
+    docpad run
+    ````
 5.  Escolha o esqueleto que deseja usar
 
     ![Docpad](/assets/img/blog/docpad.png)
@@ -55,14 +68,18 @@ Para criar esse site, usei o esqueleto 1 - HTML5 Boilerplate.
 1.  Aperte "CRTL + C" e saia da aplicação.
 
 2.  Agora considerando que você TENHA escolhido um esqueleto, na pasta do projeto digite
-
-    `npm install`
+ 
+    ````bash
+    npm install 
+    ````
 
     Isso vai instalar as dependências do projeto.
 
-3.  Rode novamente
-
-    `docpad run`
+3.  Rode novamente 
+    
+    ````bash
+    docpad run
+    ````
 
 Você deve alterar os arquivos da pasta **src/**, o Docpad automaticamente vai gerar uma pasta **out/** com os HTMLs gerados, essa pasta você não deve alterar.
 

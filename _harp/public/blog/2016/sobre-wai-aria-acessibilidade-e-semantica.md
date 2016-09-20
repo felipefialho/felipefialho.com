@@ -28,18 +28,21 @@ Então, bora dar um significado para esse botão!
 
 Antigamente era comum utilizarmos a tag `<h1>` e adicionar a imagem e esconder o texto via CSS.
 
-````
+````html
 <h1 class="logo">
   <a href="#">
     Empresa foda!
   </a>
 </h1>
+````
 
-.logo
-  background: url('../img/logo.png')
-  height 80px
+````css
+.logo {
+  background: url
+  height: 80px
   text-indent: -999em
-  width 160px
+  width: 160px
+}
 ````
 
 Pare de fazer isso o quanto antes!
@@ -48,7 +51,7 @@ A imagem do logo é uma das informações mais importantes do projeto, e pode te
 
 O WAI-ARIA nos ajuda a fornecer significado.
 
-````
+````html
 <a class="logo" role="logo">
   <img src="/img/logo.svg" alt="Empresa foda!">
 </a>
@@ -58,7 +61,7 @@ O WAI-ARIA nos ajuda a fornecer significado.
 
 É possível ter vários `<header>` no projeto, então essa `role` ajuda a informar aonde está o header principal, geralmente o do topo.
 
-````
+````html
 <header class="header" role="banner">
 </header>
 ````
@@ -67,7 +70,7 @@ O WAI-ARIA nos ajuda a fornecer significado.
 
 Também é possível que um projeto tenha vários `<footer>`, com essa `role` podemos marcar o rodapé da página.
 
-````
+````html
 <footer class="footer" role="contentinfo">
 </footer>
 ````
@@ -76,8 +79,7 @@ Também é possível que um projeto tenha vários `<footer>`, com essa `role` po
 
 Ainda não temos um elemento `search` no HTML. Mas podemos dar uma mãozinha.
 
-````
-
+````html
 <form class="search" role="search">
   <input type="search" class="search--control" placeholder="Faça uma busca :)">
   <button class="search--btn">Buscar!</button>
@@ -88,7 +90,7 @@ Ainda não temos um elemento `search` no HTML. Mas podemos dar uma mãozinha.
 
 Normalmente usado para elementos como modal. Que só estarão ativos após a ação do usuário.
 
-````
+````html
 <div class="modal" role="dialog" tabindex="-1">
 </div>
 
@@ -106,7 +108,7 @@ E um [ótimo artigo sobre o tema aqui](http://html5doctor.com/on-html-belts-and-
 
 Essa `role` também deve ser única na página, normalmente utilizada em conjunto com a tag `<main>`.
 
-````
+````html
 <main class="main" role="main">
 </main>
 ````
@@ -115,7 +117,7 @@ Essa `role` também deve ser única na página, normalmente utilizada em conjunt
 
 Essa `role` auxilia elementos de navegação.
 
-````
+````html
 <nav class="navbar" role="navigation">
 </nav>
 ````
@@ -126,25 +128,25 @@ Sabe aqueles conteúdos e informações que não são as mais importante da pág
 
 Podemos usar essa `role` para informar tal função.
 
-````
+````html
 <aside class="content__complementary" role="complementary">
 </aside>
 ````
- 
-
-
+  
 #### !important
 
 Como qualquer propriedade, as roles podem ser alteradas via CSS. Você sempre devia usar classes, mas caso você tenha algum problema quanto a isso, também é possível usar assim.
 
-````
+````html
 <a role="logo">
   <img src="/img/logo.svg" alt="Empresa foda!">
 </a>
+````
 
-a[role='logo']
-  margin 2rem
-
+````css
+a[role="logo"] {
+  margin: 2rem 
+}
 ````
 
 Existem MUITAS roles, que cobrem praticamente qualquer situação, você pode ver a [lista completa aqui](https://www.w3.org/WAI/PF/HTML/wiki/RoleAttribute).
@@ -155,7 +157,7 @@ Você consegue usar essas propriedades para informar se determinado elemento est
 
 #### aria-hidden
 
-````
+````html
 <a href="#" title="Acessar o Facebook"> 
   Facebook 
   <svg aria-hidden="true" class="icon">
@@ -172,7 +174,7 @@ No exemplo acima, o link tem um ícone com um significado apenas visual, já que
 
 De novo um exemplo com ícone.
 
-````
+````html
 <svg aria-label="Facebook" class="icon">
   <use xlink:href="/assets/svg/icons.svg#facebook"></use>
 </svg>
@@ -184,11 +186,13 @@ Ao contrário do outro exemplo, dessa vez não tínhamos um texto ao lado, torna
 
 O [Deivid Marques](https://twitter.com/deividmarques) adicionou no CSS Components, [um dos melhores exemplos que já vi de aria-label](http://www.felipefialho.com/css-components/#component-tooltip). Aqui é possível ver CSS e HTML trabalhando juntos para melhorar semanântica e acessibilidade.
 
-````
+````html
 <div class="tooltip" aria-label="Informações em tooltip"></div>
+````
 
+````css
 .tooltip:after
-  content attr(aria-label)
+  content: attr(aria-label)
 ````
 
 ## Conclusão
