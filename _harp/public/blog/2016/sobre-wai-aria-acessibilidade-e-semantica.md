@@ -20,7 +20,7 @@ Na maioria das vezes o correto seria utilizar a tag `<button>`, mas por alguma l
 
 Então, bora dar um significado para esse botão!
 
-````
+````html
 <a href="#" data-modal="#modal-1" role="button">Abre o modal!</a>
 ````
 
