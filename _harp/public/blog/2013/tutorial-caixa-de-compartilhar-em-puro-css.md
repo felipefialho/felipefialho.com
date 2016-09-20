@@ -29,7 +29,7 @@ A estrutura é muito simples, um botão de "gatilho" para acionar a funcionalida
           </ul>
         </div>
 
-See the Pen [%= penName %>](http://codepen.io/LFeh/pen/IvmJD) by Luiz Felipe Tartarotti Fialho ([@LFeh](http://codepen.io/LFeh)) on [CodePen](http://codepen.io)
+See the Pen [%= penName %>](http://codepen.io/LFeh/pen/IvmJD) by Felipe Fialho ([@LFeh](http://codepen.io/LFeh)) on [CodePen](http://codepen.io)
 
 </div>
 

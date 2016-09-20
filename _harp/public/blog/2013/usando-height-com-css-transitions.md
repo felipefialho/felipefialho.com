@@ -52,8 +52,14 @@ O maior problema é caso o conteúdo seja dinamico e ultrapasse o tamanho máxim
 
 Deixei um exemplo funcional no <a href="http://codepen.io/LFeh/pen/ICkwe">CodePen</a> para demonstrar melhor o funcionamento.
 
-<p data-height="368" data-theme-id="0" data-slug-hash="ICkwe" data-user="LFeh" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/LFeh/pen/ICkwe'>Animate "height" with CSS Transitions</a> by Luiz Felipe Tartarotti Fialho (<a href='http://codepen.io/LFeh'>@LFeh</a>) on <a href='http://codepen.io'>CodePen</a>
+<p data-height="368" data-theme-id="0" data-slug-hash="ICkwe" data-user="LFeh" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/LFeh/pen/ICkwe'>Animate "height" with CSS Transitions</a> by Felipe Fialho (<a href='http://codepen.io/LFeh'>@LFeh</a>) on <a href='http://codepen.io'>CodePen</a>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-<p class="end">Bem simples, só para ajudar caso alguém passe por esse problema ;)
+## Atualização - 20/09/2016!
 
+Esse post é bem antigo, escrevi em meados de 2013. Ano passado desenvolvi uma solução mais moderna, utilizando `transform scaleY()` para simular o efeito. 
+
+O resultado pode ser visto no Codepen.
+
+<p data-height="650" data-theme-id="0" data-slug-hash="LkOXBA" data-user="LFeh" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/LFeh/pen/LkOXBA'>Animate height with CSS transitions using scale()</a> by Felipe Fialho (<a href='http://codepen.io/LFeh'>@LFeh</a>) on <a href='http://codepen.io'>CodePen</a>
+<script async src="//codepen.io/assets/embed/ei.js"></script>

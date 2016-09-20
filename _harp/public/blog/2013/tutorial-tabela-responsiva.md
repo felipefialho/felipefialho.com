@@ -16,7 +16,7 @@ A demo funcional está no [CodePen](http://codepen.io/LFeh/pen/hsreD) (redimensi
 
 #### No HTML
 
-<p data-height="500" data-theme-id="light" data-slug-hash="hsreD" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/LFeh/pen/hsreD/">Table Responsive</a> by Luiz Felipe Tartarotti Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="500" data-theme-id="light" data-slug-hash="hsreD" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/LFeh/pen/hsreD/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Observem que adiciono duas classes. A classe responsável pelo efeito é **table-responsive**, gosto de separar dessa forma e não deixar "genérico", pois consigo definir quais tabelas vão ter esse comportamento.
@@ -103,7 +103,7 @@ A demo funcional está no [CodePen](http://codepen.io/LFeh/pen/beEoG) (redimensi
 
 #### No HTML
 
-<p data-height="500" data-theme-id="light" data-slug-hash="hsreD" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/LFeh/pen/beEoG">Table Responsive</a> by Luiz Felipe Tartarotti Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="500" data-theme-id="light" data-slug-hash="hsreD" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/LFeh/pen/beEoG">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Assim como no exemplo anterior, uso uma classe apenas para aplicar o efeito, no caso **.table-action**.
