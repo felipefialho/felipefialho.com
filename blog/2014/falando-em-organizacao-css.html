@@ -120,7 +120,7 @@ ga('send', 'pageview');</script></head></html><body><header role="banner" class=
 │   ├── home
 |
 ├── vendor/ (Estiliza dependencias externas)
-</code></pre><h2>Exemplos Práticos</h2><h3>Core</h3><h4>_core/margins:</h4><pre><code>//
+</code></pre><h2>Exemplos Práticos</h2><h3>Core</h3><h4>_core/margins:</h4><pre><code class="language-stylus">//
 // Margins
 // --------------------------------------------------
 
@@ -130,7 +130,8 @@ ga('send', 'pageview');</script></head></html><body><header role="banner" class=
 @space-sm: (@space / 2); // Small space margin
 @space-md: (@space * 2); // Medium space margin
 @space-lg: (@space * 3); // Large space margin
-</code></pre><h4>_core/type:</h4><pre><code>//
+</code></pre>
+<h4>_core/type:</h4><pre><code class="language-stylus">//
 // Typography
 // --------------------------------------------------
 
@@ -151,8 +152,9 @@ ga('send', 'pageview');</script></head></html><body><header role="banner" class=
     .font(16);
   }
 }
-</code></pre><p>Observem que defino alguns mixins e configurações reaproveitáveis em todo o projeto.</p>
-<h4>Atoms</h4><h4>atoms/headings:</h4><pre><code>//
+</code></pre>
+<p>Observem que defino alguns mixins e configurações reaproveitáveis em todo o projeto.</p>
+<h4>Atoms</h4><h4>atoms/headings:</h4><pre><code class="language-stylus">//
 // Headings
 // --------------------------------------------------
 
@@ -163,7 +165,8 @@ h1 {
 h1 {
   #type &gt; .h1();
 }
-</code></pre><h4>atoms/paragraph:</h4><pre><code>//
+</code></pre>
+<h4>atoms/paragraph:</h4><pre><code class="language-stylus">//
 // Paragraph
 // --------------------------------------------------
 
@@ -175,9 +178,10 @@ p {
     margin: 0;
   }
 }
-</code></pre><p>São definidas classes ou elementos bases, que serão utilizadas e modificadas conforme a necessidade das &#39;molecules&#39;, &#39;organisms&#39; ou &#39;pages&#39;.</p>
+</code></pre>
+<p>São definidas classes ou elementos bases, que serão utilizadas e modificadas conforme a necessidade das &#39;molecules&#39;, &#39;organisms&#39; ou &#39;pages&#39;.</p>
 <p>Os elementos devem ser únicos, nunca aninhados.</p>
-<h4>Molecules</h4><h4>molecules/page-header:</h4><pre><code>//
+<h4>Molecules</h4><h4>molecules/page-header:</h4><pre><code class="language-stylus">//
 // Page Header
 // --------------------------------------------------
 
@@ -194,8 +198,9 @@ p {
     color: @gray;
   }
 }
-</code></pre><p>Modifica os átomos para a criação de um componente especifico.</p>
-<h4>Organisms</h4><h4>organisms/header:</h4><pre><code>//
+</code></pre>
+<p>Modifica os átomos para a criação de um componente especifico.</p>
+<h4>Organisms</h4><h4>organisms/header:</h4><pre><code class="language-stylus">//
 // Header
 // --------------------------------------------------
 
@@ -207,8 +212,9 @@ p {
     text-align: center;
   }
 }
-</code></pre><p>Modifica os átomos e moléculas para a criação de uma sessão do projeto.</p>
-<h4>Pages</h4><h4>pages/home:</h4><pre><code>//
+</code></pre>
+<p>Modifica os átomos e moléculas para a criação de uma sessão do projeto.</p>
+<h4>Pages</h4><h4>pages/home:</h4><pre><code class="language-stylus">//
 // Home
 // --------------------------------------------------
 
@@ -230,7 +236,8 @@ p {
   }
 
 }
-</code></pre><p>Modifica os átomos, moléculas e organismos para a criação de uma página específica do projeto.</p>
+</code></pre>
+<p>Modifica os átomos, moléculas e organismos para a criação de uma página específica do projeto.</p>
 <h3>Dicas rápidas</h3><ul>
 <li>Não se prenda na metodologia, abra espaço para implementar mudanças que vão melhorar a utilização, seja para uso próprio ou para um escopo especifico.</li>
 <li>A organização das pastas é muito importante. Você precisa se sentir confortável com a estrutura para não ficar pensando aonde está determinado arquivo.</li>
@@ -240,7 +247,7 @@ p {
 <h3>Um plus sobre &#39;Media Queries&#39;</h3><p>No começo do ano eu escrevi um post sobre <a href="http://www.felipefialho.com/blog/2014/css-modular-com-mobile-first/">CSS Modular com Mobile First</a> e agora essa idéia fica ainda mais aplicável.</p>
 <p>Não precisa mais ter um arquivo específico para ajustar media-queries. Nessa organização de CSS, cada elemento pode ter sua própria customização aplicada seguindo a idéia do Mobile First.</p>
 <h4>Como?</h4><p>Vamos imaginar que o <code>.header</code> precise ser absoluto em resoluções médias, fixo em resoluções grandes e tenha o background branco em telas menores:</p>
-<h4>organisms/header:</h4><pre><code>//
+<h4>organisms/header:</h4><pre><code class="language-stylus">//
 // Header
 // --------------------------------------------------
 
@@ -263,10 +270,11 @@ p {
     // O top, right e left está escalando na resolução &#39;sm&#39;, não precisa repetir :)
   }
 }
-</code></pre><p>Se tiverem alguma dúvida ou quiserem debater sobre o assunto, saiba que o Disqus escala e podem usar os comentários sem medo :p. Abraços!</p></div><div class="share"><div class="addthis_sharing_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51124ac82d52f270"></script></div><aside class="comments"><div id="disqus_thread"></div><script>(function() {
+</code></pre>
+<p>Se tiverem alguma dúvida ou quiserem debater sobre o assunto, saiba que o Disqus escala e podem usar os comentários sem medo :p. Abraços!</p></div><div class="share"><div class="addthis_sharing_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51124ac82d52f270"></script></div><aside class="comments"><div id="disqus_thread"></div><script>(function() {
 var d = document, s = d.createElement('script');
 s.src = '//felipefialho.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
-</script><script id="dsq-count-scr" src="//felipefialho.disqus.com/count.js" async="async"></script></aside></div></article></main></body>
+</script><script id="dsq-count-scr" src="//felipefialho.disqus.com/count.js" async="async"></script></aside></div></article></main><script src="/assets/js/main.js"></script></body>

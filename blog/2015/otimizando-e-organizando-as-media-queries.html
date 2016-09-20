@@ -17,27 +17,29 @@ ga('send', 'pageview');</script></head></html><body><header role="banner" class=
 <h2>O meu estilo de Mobile First :)</h2><p>Como disse no inicio do artigo, quando se trata de otimizar o código para essa metodologia a minha principal regra é: Evitar ao <strong>máximo</strong> resetar propriedades.</p>
 <p>É bom avisar, que o IE7 e IE8 ignora Media Queries, portanto caso tenha que fornecer suporte para esses navegadores recomendo o Respond.js (<a href="https://github.com/scottjehl/Respond">https://github.com/scottjehl/Respond</a>). Assim tudo vai funcionar perfeitamente (até parece...) nesses navegadores.</p>
 <p>O primeiro ponto, é que crio algumas variáveis de breakpoints e replico elas conforme a necessidade. Peguei esse costume no tempo em que usava o Bootstrap e mantive até hoje, eu acho que faz todo sentido e torna o fluxo mais fluido.</p>
-<pre><code>//
+<pre><code class="language-stylus">//
 // Media Queries
 // --------------------------------------------------
 
-$screen-xs = 480px // Extra small screen
-$screen-sm = 768px // Small screen
-$screen-md = 992px // Medium screen
-$screen-lg = 1200px // Large screen
-$screen-xlg = 1600px // Extra Large screen
+$screen-xs   = 480px // Extra small screen
+$screen-sm   = 768px // Small screen
+$screen-md   = 992px // Medium screen
+$screen-lg   = 1200px // Large screen
+$screen-xlg  = 1600px // Extra Large screen
 $screen-xxlg = 1900px // Extra Large screen
 
-$screen-xs-max = ($screen-sm - 1)
-$screen-sm-max = ($screen-md - 1)
-$screen-md-max = ($screen-lg - 1)
-$screen-lg-max = ($screen-xlg - 1)
+$screen-xs-max  = ($screen-sm - 1)
+$screen-sm-max  = ($screen-md - 1)
+$screen-md-max  = ($screen-lg - 1)
+$screen-lg-max  = ($screen-xlg - 1)
 $screen-xlg-max = ($screen-xxlg - 1)
-</code></pre><p>O segundo ponto é que eu uso Stylus e SEMPRE adiciono as linhas de Media Querie aninhadas dentro do elemento. E não no final do arquivo do componente, e muito menos em um arquivo separado.</p>
-<pre><code>.header
+</code></pre>
+<p>O segundo ponto é que eu uso Stylus e SEMPRE adiciono as linhas de Media Querie aninhadas dentro do elemento. E não no final do arquivo do componente, e muito menos em um arquivo separado.</p>
+<pre><code class="language-stylus">.header
     @media (min-width $screen-sm)
        ...
-</code></pre><p>O terceiro ponto, é que nos exemplos desse artigo não vou levar em consideração propriedades muito especificas de cada dispositivo, resoluções em retina, nem nada do tipo, mas o conceito é exatamente o mesmo.</p>
+</code></pre>
+<p>O terceiro ponto, é que nos exemplos desse artigo não vou levar em consideração propriedades muito especificas de cada dispositivo, resoluções em retina, nem nada do tipo, mas o conceito é exatamente o mesmo.</p>
 <h2>Situação real</h2><p>Vamos pensar na seguinte situação, que alias é muito comum: Você tem um menu, e a versão &quot;mobile&quot; e &quot;desktop&quot; são completamente diferentes uma da outra.</p>
 <ul>
 <li>Na versão mobile ele deve ser fixo, com um botão hambúrguer e o menu só ficará visível após clicar no botão. Quando os itens estiverem visíveis, eles devem estar em blocos um abaixo do outro</li>
@@ -74,4 +76,4 @@ s.src = '//felipefialho.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
-</script><script id="dsq-count-scr" src="//felipefialho.disqus.com/count.js" async="async"></script></aside></div></article></main></body>
+</script><script id="dsq-count-scr" src="//felipefialho.disqus.com/count.js" async="async"></script></aside></div></article></main><script src="/assets/js/main.js"></script></body>

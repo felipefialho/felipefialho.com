@@ -13,34 +13,41 @@ ga('send', 'pageview');</script></head></html><body><header role="banner" class=
 <p>Como podemos criar qualquer atributo através do prefixo <code>[data-*]</code>, esses atributos tem sido utilizados também para iniciar funções.</p>
 <h2>Como funciona?</h2><p>Ao invés de acessar o elemento via Javascript através de <code>.classe</code> ou <code>#id</code>, podemos usar os <code>[data-attributes]</code> do HTML5.</p>
 <p>Por exemplo (em jQuery) para iniciar uma interação touch em um menu, podemos chamar via <code>.classe</code>:</p>
-<pre><code>$(&#39;.nav-aside&#39;);
-</code></pre><p>Ou via <code>#id</code>:</p>
-<pre><code>$(&#39;#nav-aside&#39;);
-</code></pre><p>Mas a ideia aqui é fazer a chamada via <code>[data-*]</code>:</p>
+<pre><code class="language-js">$(&#39;.nav-aside&#39;);
+</code></pre>
+<p>Ou via <code>#id</code>:</p>
+<pre><code class="language-js">$(&#39;#nav-aside&#39;);
+</code></pre>
+<p>Mas a ideia aqui é fazer a chamada via <code>[data-*]</code>:</p>
 <p>$(&#39;[data-toggle=&quot;nav-touch&quot;]&#39;);</p>
 <h2>Por que usar dessa forma?</h2><p>O principal motivo, é para separar o estilo da funcionalidade Javascript. Apresento a seguir um cenário real de aplicação.</p>
 <ol>
 <li><p>Imaginem novamente o menu do exemplo acima, ele apresenta uma função para interação em “swipe” em telas Touch. Então chamamos a função, atribuindo em todas a classes <code>.nav-aside</code>:</p>
-<pre><code>$(&#39;.nav-aside&#39;);
-</code></pre></li>
+<pre><code class="language-js">$(&#39;.nav-aside&#39;);
+</code></pre>
+</li>
 <li><p>Porém, em uma das páginas. O menu apresenta o mesmo estilo, mas não deveria ter essa funcionalidade de swipe. Poderíamos atribuir a interação a um #id e adicionar o id nos elementos que devem apresentar esse comportamento.</p>
-<pre><code>$(&#39;#nav-touch&#39;);
-</code></pre></li>
+<pre><code class="language-js">$(&#39;#nav-touch&#39;);
+</code></pre>
+</li>
 <li><p>Para complicar mais, esse menu aparece duas vezes em outra página, porém como sabemos, não podemos repetir um #id na mesma página. E fazer a chamada para cada #id separadamente também não é uma solução adequada.</p>
 <p>Poderíamos então usar uma classe sem estilo, que serviria somente para a chamada no Javascript, algo como:</p>
-<pre><code>$(&#39;.js.nav-touch&#39;);
-</code></pre><p>Essa é uma solução viável e funcional, mas manter as classes apenas para estilização no CSS seria mais elegante.</p>
+<pre><code class="language-js">$(&#39;.js.nav-touch&#39;);
+</code></pre>
+<p>Essa é uma solução viável e funcional, mas manter as classes apenas para estilização no CSS seria mais elegante.</p>
 </li>
 <li><p>Então finalmente, podemos usar o [data-*] para isso.</p>
-<pre><code>$(&#39;[data-toggle=&quot;nav-touch&quot;]&#39;);
-</code></pre><p>Dessa forma, basta adicionar [data-toggle=&quot;nav-touch&quot;] ao elemento que deve apresentar esse comportamento.</p>
+<pre><code class="language-js">$(&#39;[data-toggle=&quot;nav-touch&quot;]&#39;);
+</code></pre>
+<p>Dessa forma, basta adicionar [data-toggle=&quot;nav-touch&quot;] ao elemento que deve apresentar esse comportamento.</p>
 </li>
 </ol>
 <h3>Através de CSS...</h3><p>E claro, também é possível manipular os Data Atributes através de CSS, portanto, podemos adicionar animações ou algum estilo específico:</p>
-<pre><code>.nav-aside[data-toggle=&quot;nav-touch&quot;] {
+<pre><code class="language-css">.nav-aside[data-toggle=&quot;nav-touch&quot;] {
   ...
 }
-</code></pre><h2>Na prática!</h2><p>Para mostrar em funcionamento, criei uma base de código bem rápida (peço que desconsiderem a qualidade do mesmo :p) e imaginei o seguinte cenário:</p>
+</code></pre>
+<h2>Na prática!</h2><p>Para mostrar em funcionamento, criei uma base de código bem rápida (peço que desconsiderem a qualidade do mesmo :p) e imaginei o seguinte cenário:</p>
 <ol>
 <li>Uma página que vai apresentar dois menus idênticos visualmente</li>
 <li>Um deles servirá como filtro para tags usando um plugin de &quot;tabs&quot;</li>
@@ -62,4 +69,4 @@ s.src = '//felipefialho.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
-</script><script id="dsq-count-scr" src="//felipefialho.disqus.com/count.js" async="async"></script></aside></div></article></main></body>
+</script><script id="dsq-count-scr" src="//felipefialho.disqus.com/count.js" async="async"></script></aside></div></article></main><script src="/assets/js/main.js"></script></body>

@@ -13,7 +13,7 @@ ga('send', 'pageview');</script></head></html><body><header role="banner" class=
 <p></p><p data-height="400" data-theme-id="light" data-slug-hash="KviDw" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/LFeh/pen/KviDw/">Button Progress</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-<h3>No CSS</h3><pre><code>.btn{
+<h3>No CSS</h3><pre><code class="language-css">.btn{
   -webkit-transition: opacity linear .2s;
   -o-transition: opacity linear .2s;
   transition: opacity linear .2s;
@@ -33,8 +33,9 @@ ga('send', 'pageview');</script></head></html><body><header role="banner" class=
 .btn:hover{
   opacity: .8;
 }
-</code></pre><p>Informações básicas do estilo do botão.</p>
-<pre><code>.btn-progress{
+</code></pre>
+<p>Informações básicas do estilo do botão.</p>
+<pre><code class="language-css">.btn-progress{
   cursor: default;
   overflow: hidden;
   position: relative;
@@ -43,8 +44,9 @@ ga('send', 'pageview');</script></head></html><body><header role="banner" class=
 .btn-progress:hover{
   opacity: 1;
 }
-</code></pre><p>Quando o botão estiver no estado &quot;processando&quot;, vai ter posição relativa, e será zerada qualquer interação que o usuário possa ter, por exemplo &quot;cursor&quot; e &quot;hover&quot;.</p>
-<pre><code>.btn-progress:after{
+</code></pre>
+<p>Quando o botão estiver no estado &quot;processando&quot;, vai ter posição relativa, e será zerada qualquer interação que o usuário possa ter, por exemplo &quot;cursor&quot; e &quot;hover&quot;.</p>
+<pre><code class="language-css">.btn-progress:after{
 
   content: &quot;Processing&quot;;
 
@@ -78,14 +80,15 @@ ga('send', 'pageview');</script></head></html><body><header role="banner" class=
   animation: progress-bar-stripes 0.5s linear infinite;
 
 }
-</code></pre><p>Use <strong>:after</strong> para adicionar os estilos.</p>
+</code></pre>
+<p>Use <strong>:after</strong> para adicionar os estilos.</p>
 <ol>
 <li>Em <strong>content</strong> adicione o texto que esse estado do botão terá.</li>
 <li>Ao definir a posição absoluta, width e height como 100%, ele ficará exatamente em cima do botão (definimos como relativo).</li>
 <li>Em seguida use &quot;background-gradients&quot; para criar listras diagonais.</li>
 <li>E por último, as chamadas da animação.</li>
 </ol>
-<pre><code>/* Webkit */
+<pre><code class="language-css">/* Webkit */
 @-webkit-keyframes progress-bar-stripes {
   to  { background-position: 40px 0; }
   from    { background-position: 0 0; }
@@ -114,15 +117,17 @@ ga('send', 'pageview');</script></head></html><body><header role="banner" class=
   to  { background-position: 40px 0; }
   from    { background-position: 0 0; }
 }
-</code></pre><p>Agora criamos a animação apenas invertendo a posição do gradiente, dando o efeito desejado.</p>
-<h3>No Javascript</h3><pre><code>$(&quot;.btn&quot;).click( function(){
+</code></pre>
+<p>Agora criamos a animação apenas invertendo a posição do gradiente, dando o efeito desejado.</p>
+<h3>No Javascript</h3><pre><code class="language-js">$(&quot;.btn&quot;).click( function(){
   $(this).toggleClass(&quot;btn-progress&quot;);
 });
-</code></pre><p>Apenas um &quot;gatilho&quot; para conseguirem ver o efeito funcionando.</p>
+</code></pre>
+<p>Apenas um &quot;gatilho&quot; para conseguirem ver o efeito funcionando.</p>
 <p>Mais um tutorial rápido que espero ser útil para algumas pessoas. Dias produtivos para todos vocês! :D</p></div><div class="share"><div class="addthis_sharing_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51124ac82d52f270"></script></div><aside class="comments"><div id="disqus_thread"></div><script>(function() {
 var d = document, s = d.createElement('script');
 s.src = '//felipefialho.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
-</script><script id="dsq-count-scr" src="//felipefialho.disqus.com/count.js" async="async"></script></aside></div></article></main></body>
+</script><script id="dsq-count-scr" src="//felipefialho.disqus.com/count.js" async="async"></script></aside></div></article></main><script src="/assets/js/main.js"></script></body>

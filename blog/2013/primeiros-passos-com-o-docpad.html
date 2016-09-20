@@ -21,23 +21,28 @@ ga('send', 'pageview');</script></head></html><body><header role="banner" class=
 <p><img src="/assets/img/blog/nodejs.png" alt="NodeJS"></p>
 </li>
 <li><p>Procure atualizações no NPM com o comando</p>
-<p><code>npm install -g npm</code></p>
+<pre><code class="language-bash">npm install -g npm
+</code></pre>
 </li>
 <li><p>Instale o Docpad</p>
-<p><code>npm install -g docpad</code></p>
+<pre><code class="language-bash">npm install -g docpad
+</code></pre>
 </li>
 </ol>
 <h2>Criando um projeto</h2><ol>
 <li><p>Através do &quot;Node.js command prompt&quot; vá até a pasta que deseja criar o projeto.</p>
 </li>
 <li><p>Crie uma nova pasta para o projeto</p>
-<p><code>mkdir NOME-DO-PROJETO</code></p>
+<pre><code class="language-bash">mkdir NOME-DO-PROJETO
+</code></pre>
 </li>
 <li><p>Entre na pasta</p>
-<p><code>cd NOME-DO-PROJETO</code></p>
+<pre><code class="language-bash">cd NOME-DO-PROJETO
+</code></pre>
 </li>
 <li><p>Inicie o projeto</p>
-<p><code>docpad run</code></p>
+<pre><code class="language-bash">docpad run
+</code></pre>
 </li>
 <li><p>Escolha o esqueleto que deseja usar</p>
 <p><img src="/assets/img/blog/docpad.png" alt="Docpad"></p>
@@ -49,11 +54,13 @@ ga('send', 'pageview');</script></head></html><body><header role="banner" class=
 <li><p>Aperte &quot;CRTL + C&quot; e saia da aplicação.</p>
 </li>
 <li><p>Agora considerando que você TENHA escolhido um esqueleto, na pasta do projeto digite</p>
-<p><code>npm install</code></p>
+<pre><code class="language-bash">npm install
+</code></pre>
 <p>Isso vai instalar as dependências do projeto.</p>
 </li>
-<li><p>Rode novamente</p>
-<p><code>docpad run</code></p>
+<li><p>Rode novamente </p>
+<pre><code class="language-bash">docpad run
+</code></pre>
 </li>
 </ol>
 <p>Você deve alterar os arquivos da pasta <strong>src/</strong>, o Docpad automaticamente vai gerar uma pasta <strong>out/</strong> com os HTMLs gerados, essa pasta você não deve alterar.</p>
@@ -66,4 +73,4 @@ s.src = '//felipefialho.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
-</script><script id="dsq-count-scr" src="//felipefialho.disqus.com/count.js" async="async"></script></aside></div></article></main></body>
+</script><script id="dsq-count-scr" src="//felipefialho.disqus.com/count.js" async="async"></script></aside></div></article></main><script src="/assets/js/main.js"></script></body>

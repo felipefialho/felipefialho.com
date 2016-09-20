@@ -41,7 +41,7 @@ ga('send', 'pageview');</script></head></html><body><header role="banner" class=
 <p>Também coloco o <a href="https://github.com/gruntjs/grunt-contrib-watch">Watch</a> para observar meu Gruntfile, portanto toda vez que adiciono ou removo alguma dependência no array do <a href="https://github.com/gruntjs/grunt-contrib-concat">Concat</a> e salvo o Gruntfile, é gerado um novo arquivo com as dependências atualizadas.</p>
 <p>Esse é um ponto importante. O arquivo de &#39;vendor&#39; com as dependências concatenadas não vai ser gerado o tempo todo, isso causaria sérios problemas de lentidão no Grunt. Ele só vai ser criado quando a gente adicionar (ou modificar/remover) um novo plugin no array do Concat, pois ao salvar o Gruntfile, tenho uma tarefa configurada no Watch para iniciar a tarefa de criação do &#39;vendor.js&#39;.</p>
 <p>O scripts que modificamos o tempo todo vão ser concatenados com esse arquivo de &#39;vendor.js&#39; e em seguida minificado através do Uglify. Isso aumenta consideravelmente o desempenho do Grunt no tempo para gerar o novo arquivo.</p>
-<h3>Exemplo de uso:</h3><pre><code>// Task: Concat
+<h3>Exemplo de uso:</h3><pre><code class="language-js">// Task: Concat
 // ---------------------------------
 concat: {
   vendor: {
@@ -82,7 +82,8 @@ watch: {
     tasks: [&#39;concat&#39;, &#39;uglify&#39;]
   }
 }
-</code></pre><p>Observem que gero um arquivo JavaScript chamado <code>_vendor.js</code> através do <a href="https://github.com/gruntjs/grunt-contrib-concat">Concat</a>, e nesse arquivo estão as dependências externas do bower. O <code>_vendor.js</code> só vai ser alterado caso seja necessário modificar essas dependências.</p>
+</code></pre>
+<p>Observem que gero um arquivo JavaScript chamado <code>_vendor.js</code> através do <a href="https://github.com/gruntjs/grunt-contrib-concat">Concat</a>, e nesse arquivo estão as dependências externas do bower. O <code>_vendor.js</code> só vai ser alterado caso seja necessário modificar essas dependências.</p>
 <p>Os JavaScripts de chamadas e que são modificados frequentemente ficam dentro de uma pasta <code>/js</code> e são concatenados com o <code>_vendor.js</code> e minificados através do <a href="https://github.com/gruntjs/grunt-contrib-uglify">Uglify</a>.</p>
 <p>E o segredo para essa integração funcionar é colocar o <a href="https://github.com/gruntjs/grunt-contrib-watch">Watch</a> para rodar o <a href="https://github.com/gruntjs/grunt-contrib-concat">Concat</a> e o <a href="https://github.com/gruntjs/grunt-contrib-uglify">Uglify</a> toda vez que fizer alguma alteração e salvar o Gruntfile.</p>
 <h2>O polêmico Boostrap</h2><p>O Bootstrap está cada vez mais mamilos e no centro de discussões. Continuo achando que se <a href="http://www.felipefialho.com/blog/2014/utilizando-o-bootstrap-de-forma-consistente/">utilizado de forma consciente</a>, pode ajudar bastante, especialmente no início do desenvolvimento.</p>
@@ -105,4 +106,4 @@ s.src = '//felipefialho.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
-</script><script id="dsq-count-scr" src="//felipefialho.disqus.com/count.js" async="async"></script></aside></div></article></main></body>
+</script><script id="dsq-count-scr" src="//felipefialho.disqus.com/count.js" async="async"></script></aside></div></article></main><script src="/assets/js/main.js"></script></body>

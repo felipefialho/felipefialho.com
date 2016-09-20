@@ -7,7 +7,7 @@ ga('send', 'pageview');</script></head></html><body><header role="banner" class=
 </a><nav class="navbar"><label for="navbar" class="navbar-btn"><svg aria-label="Menu" class="icon"><use xlink:href="/assets/svg/icons.svg#menu"></use></svg></label><input id="navbar" type="checkbox" class="nav-open"/><ul role="navigation" class="nav"><li class="nav-item"><a href="/blog" class="nav-link active">Blog</a></li><li class="nav-item"><a href="/projects" class="nav-link">Projects</a></li><li class="nav-item"><a href="/labs" class="nav-link">Labs</a></li></ul></nav><ul class="social-media"><li><a href="http://twitter.com/LFeh" title="View my Twitter" target="_blank"><svg aria-label="Twitter" class="icon"><use xlink:href="/assets/svg/icons.svg#twitter"></use></svg></a></li><li><a href="https://www.facebook.com/LFehh" title="View my Facebook" target="_blank"><svg aria-label="Facebook" class="icon"><use xlink:href="/assets/svg/icons.svg#facebook"></use></svg></a></li><li><a href="https://www.linkedin.com/in/lfehfrontend" title="View my Linkedin" target="_blank"><svg aria-label="Linkedin" class="icon"><use xlink:href="/assets/svg/icons.svg#linkedin"></use></svg></a></li><li><a href="https://github.com/lfeh" title="View my Github" target="_blank"><svg aria-label="Github" class="icon"><use xlink:href="/assets/svg/icons.svg#github"></use></svg></a></li><li><a href="https://codepen.io/lfeh" title="View my Codepen" target="_blank"><svg aria-label="Codepen" class="icon"><use xlink:href="/assets/svg/icons.svg#codepen"></use></svg></a></li><li class="hidden"><a href="https://plus.google.com/101721187531748531230?rel=author" title="View my Google Plus" target="_blank"><svg aria-label="Google Plus" class="icon"><use xlink:href="/assets/svg/icons.svg#google"></use></svg></a></li></ul></div></header><main role="main" class="main"><article itemscope="itemscope" itemtype="http://schema.org/Blog" lang="pt-br" class="blog-article"><div class="blog-header"><div class="content"><span itemprop="author" class="sr-only">Luiz Felipe Tartarotti Fialho</span><time itemprop="dateCreated" class="date">18/11/2013</time><h1 itemprop="name">Usando height com CSS Transitions</h1><p itemprop="description">Hoje me deparei com um problema que alguns de vocês já devem ter passado, e coloco aqui a resolução: A limitação do uso de `height: auto` em CSS Transitions.</p></div></div><div class="blog-inner"><div itemprop="text" class="content"><p>Hoje me deparei com um problema que alguns de vocês já devem ter passado, e coloco aqui a resolução: A limitação do uso de &quot;height: auto&quot; em CSS Transitions.</p>
 <h3>O problema</h3><p>Você precisa expandir a altura de algum elemento que está escondido e ao invés de um simples &quot;display: none/block&quot;, resolve usar CSS Transitions para o movimento ficar mais interessante e emular um &quot;slide-down&quot;.</p>
 <p>Então você faz algo desse tipo:</p>
-<pre><code>.accordion-content{
+<pre><code class="language-css">.accordion-content{
   transition: height 1s;  
   overflow: hidden;
   height: 0;
@@ -16,12 +16,13 @@ ga('send', 'pageview');</script></head></html><body><header role="banner" class=
 .accordion-content.active{
   height: auto;
 }
-</code></pre><p>Estranhamente isso não funciona e você se pergunta o motivo.</p>
+</code></pre>
+<p>Estranhamente isso não funciona e você se pergunta o motivo.</p>
 <h3>A explicação</h3><p>A explicação é simples. O CSS não consegue fazer a animação a partir do &quot;height: auto&quot;, ele precisa de algum tamanho definido para se basear.</p>
 <p>Só que você também não pode simplesmente setar uma altura fixa, já que isso traria problemas para trabalhar responsivamente.</p>
 <h3>A resolução</h3><p>A boa notícia é que a resolução dessa limitação é simples!</p>
 <p>Usaremos &quot;max-height&quot; para contornar isso.</p>
-<pre><code>.accordion-content{
+<pre><code class="language-css">.accordion-content{
   transition: max-height 1s;  
   overflow: hidden;
   max-height: 0;
@@ -30,7 +31,8 @@ ga('send', 'pageview');</script></head></html><body><header role="banner" class=
 .accordion-content.active{
   max-height: 300px;
 }
-</code></pre><p>Adicione uma altura próxima ao tamanho máximo do elemento.</p>
+</code></pre>
+<p>Adicione uma altura próxima ao tamanho máximo do elemento.</p>
 <p>Ou seja, na versão ativa do elemento, ele terá uma altura máxima setada, e assim o CSS tem uma base para calcular a transição.</p>
 <p>O maior problema é caso o conteúdo seja dinamico e ultrapasse o tamanho máximo que você setou. Nesse caso pode usar javascript para calcular a altura.</p>
 <p>Deixei um exemplo funcional no <a href="http://codepen.io/LFeh/pen/ICkwe">CodePen</a> para demonstrar melhor o funcionamento.</p>
@@ -46,4 +48,4 @@ s.src = '//felipefialho.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
-</script><script id="dsq-count-scr" src="//felipefialho.disqus.com/count.js" async="async"></script></aside></div></article></main></body>
+</script><script id="dsq-count-scr" src="//felipefialho.disqus.com/count.js" async="async"></script></aside></div></article></main><script src="/assets/js/main.js"></script></body>

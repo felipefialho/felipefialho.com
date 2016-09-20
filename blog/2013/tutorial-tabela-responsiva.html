@@ -14,9 +14,10 @@ ga('send', 'pageview');</script></head></html><body><header role="banner" class=
 
 <p>Observem que adiciono duas classes. A classe responsável pelo efeito é <strong>table-responsive</strong>, gosto de separar dessa forma e não deixar &quot;genérico&quot;, pois consigo definir quais tabelas vão ter esse comportamento.</p>
 <h4>No CSS</h4><p>A primeira parte do bloco, trata apenas de estilos, vou pular diretamente para o efeito.</p>
-<pre><code>@media (max-width: 767px) {
-</code></pre><p>Adiciono essas configurações apenas para resoluções de até 767px.</p>
-<pre><code>.table-responsive {
+<pre><code class="language-css">@media (max-width: 767px) {
+</code></pre>
+<p>Adiciono essas configurações apenas para resoluções de até 767px.</p>
+<pre><code class="language-css">.table-responsive {
   display: block;
   position: relative;
   width: 100%;
@@ -29,28 +30,33 @@ ga('send', 'pageview');</script></head></html><body><header role="banner" class=
 .table-responsive tr {
   display: block;
 }
-</code></pre><p>Tabela funcionando como um bloco.</p>
-<pre><code>.table-responsive td,
+</code></pre>
+<p>Tabela funcionando como um bloco.</p>
+<pre><code class="language-css">.table-responsive td,
 .table-responsive th {
   height: 35px;
 }
-</code></pre><p>Defino um tamanho para as células.</p>
-<pre><code>.table-responsive thead {
+</code></pre>
+<p>Defino um tamanho para as células.</p>
+<pre><code class="language-css">.table-responsive thead {
   float: left;
 }
-</code></pre><p>A &quot;mágica&quot; é feita aqui, o <strong>thead</strong> é “flotado” para esquerda.</p>
-<pre><code>.table-responsive tbody {
+</code></pre>
+<p>A &quot;mágica&quot; é feita aqui, o <strong>thead</strong> é “flotado” para esquerda.</p>
+<pre><code class="language-css">.table-responsive tbody {
   width: auto;
   position: relative;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   white-space: nowrap;
 }
-</code></pre><p>Assim como definimos que o <strong>tbody</strong> terá um scroll horizontal quando não comportar todo o conteúdo. Além disso, é importante colocar <strong>-webkit-overflow-scrolling: touch</strong> para pleno funcionamento em alguns dispositivos touch.</p>
-<pre><code>.table-responsive tbody tr {
+</code></pre>
+<p>Assim como definimos que o <strong>tbody</strong> terá um scroll horizontal quando não comportar todo o conteúdo. Além disso, é importante colocar <strong>-webkit-overflow-scrolling: touch</strong> para pleno funcionamento em alguns dispositivos touch.</p>
+<pre><code class="language-css">.table-responsive tbody tr {
   display: inline-block;
 }
-</code></pre><p>Por último, posicionamos as linhas lado-a-lado, isso causa o efeito que desejamos.</p>
+</code></pre>
+<p>Por último, posicionamos as linhas lado-a-lado, isso causa o efeito que desejamos.</p>
 <h2>Segunda técnica</h2><h3>Sobre</h3><p>Essa solução foi inspirada no funcionamento do <a href="http://www.gmail.com/">Gmail</a> para dispositivos menores.</p>
 <p>Funciona bem para tabelas que exigem por exemplo, um check. Ele agrupa as informações.</p>
 <p>Pode ser útil principalmente em CMS ou Gerenciadores.</p>
@@ -59,27 +65,31 @@ ga('send', 'pageview');</script></head></html><body><header role="banner" class=
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 <p>Assim como no exemplo anterior, uso uma classe apenas para aplicar o efeito, no caso <strong>.table-action</strong>.</p>
-<h4>No CSS</h4><pre><code>@media (max-width: 480px) {
-</code></pre><p>Adiciono essas configurações apenas para resoluções de até 480px.</p>
-<pre><code>.table-action thead {
+<h4>No CSS</h4><pre><code class="language-css">@media (max-width: 480px) {
+</code></pre>
+<p>Adiciono essas configurações apenas para resoluções de até 480px.</p>
+<pre><code class="language-css">.table-action thead {
   display: none;
 }
-</code></pre><p>Retiro o head ta tabela.</p>
-<pre><code>.table-action tr {
+</code></pre>
+<p>Retiro o head ta tabela.</p>
+<pre><code class="language-css">.table-action tr {
   border-bottom: 1px solid #dddddd;
 }
 .table-action td {
   border: 0;
 }
-</code></pre><p>Mudo o posicionamento das bordas, para causar o efeito que necessito.</p>
-<pre><code>.table-action td:not(:first-child) {
+</code></pre>
+<p>Mudo o posicionamento das bordas, para causar o efeito que necessito.</p>
+<pre><code class="language-css">.table-action td:not(:first-child) {
   display: block;
 }
-</code></pre><p>Por último... aviso que todas as td, com exceção da primeira, será um bloco, dessa forma vão se alinhar uma embaixo da outra.</p>
+</code></pre>
+<p>Por último... aviso que todas as td, com exceção da primeira, será um bloco, dessa forma vão se alinhar uma embaixo da outra.</p>
 <p>É isso pessoal, espero que ajude vocês com algum projeto responsivo que necessite de tabelas. Grande abraço!</p></div><div class="share"><div class="addthis_sharing_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51124ac82d52f270"></script></div><aside class="comments"><div id="disqus_thread"></div><script>(function() {
 var d = document, s = d.createElement('script');
 s.src = '//felipefialho.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
-</script><script id="dsq-count-scr" src="//felipefialho.disqus.com/count.js" async="async"></script></aside></div></article></main></body>
+</script><script id="dsq-count-scr" src="//felipefialho.disqus.com/count.js" async="async"></script></aside></div></article></main><script src="/assets/js/main.js"></script></body>
