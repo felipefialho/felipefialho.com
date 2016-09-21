@@ -130,7 +130,7 @@ Quando você fazer mais projetos com JavaScript, você encontrará alguns concei
 - [The event loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
 - [Event bubbling](http://javascript.info/tutorial/bubbling-and-capturing)
 - [Apply, call, and bind](http://javascriptissexy.com/javascript-apply-call-and-bind-methods-are-essential-for-javascript-professionals/)
-- [Callbacks and promises](https://www.quora.com/Whats-the-difference-between-a-promise-and-a-callback-in-Javascript)
+- [Callbacks and promises](https://www.quora.com/Whats-the-difference-between-a-promise-and-a-callback-in-JavaScript)
 - [Variable and function hoisting](http://adripofjavascript.com/blog/drips/variable-and-function-hoisting)
 - [Currying](http://www.sitepoint.com/currying-in-functional-javascript/)
 
@@ -182,7 +182,7 @@ Tenha em mente, jQuery nem sempre é a solução para a manipulação imperativa
 
 ### ES5 vs. ES6
 
-Outro conceito importante para entender sobre JavaScript é o [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) e como ele se relaciona com o Javascript. Existem dois tipos principais de JavaScript que você vai encontrar hoje: ES5 e ES6. Eles são padrões de ECMAScript que o JavaScript usa. Você pode pensar neles como versões do JavaScript. O projeto final do ES5 foi finalizado em 2009 e é o que estávamos usando até agora.
+Outro conceito importante para entender sobre JavaScript é o [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) e como ele se relaciona com o JavaScript. Existem dois tipos principais de JavaScript que você vai encontrar hoje: ES5 e ES6. Eles são padrões de ECMAScript que o JavaScript usa. Você pode pensar neles como versões do JavaScript. O projeto final do ES5 foi finalizado em 2009 e é o que estávamos usando até agora.
 
 ES6, também conhecido como ES2015, é o novo padrão que traz novas construções de linguagem como modelo [ constants](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const), [classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) e [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) para o JavaScript. É importante notar que ES6 traz novos recursos de linguagem, mas ainda definimos semanticamente os termos de ES5. Por exemplo, as classes no ES6 são meramente [_syntactical sugar_](https://en.wikipedia.org/wiki/Syntactic_sugar) sobre a [herança prototípica](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain) do JavaScript.
 

@@ -26,13 +26,13 @@ Ao mesmo passo que o desenvolver Back-End também não precisa saber construir u
 
 <strike>Sobre javascript, é o seguinte... depende. É importante que entenda o básico, compreenda o quanto ele afeta a performance, que saiba estilizar plugins e usar JQuery (ou outro framework). Mas **EU** não considero fundamental que saiba javascript avançado, normalmente ele acaba ficando com os Back-Enders. Mas isso varia muito de empresa para empresa, e do tipo de cargo que você ocupa.</strike>
 
-#### Vale um update sobre Javascript...
+#### Vale um update sobre JavaScript...
 
-Hoje vejo como essencial uma boa compreensão do Javascript, seja "puro", seja usando bibliotecas. Mas ainda sustento minha opinião que "depende".Isso porque vai depender do seu perfil profissional e principalmente do cargo que você ocupa (ou tipo de freelas que você pega).
+Hoje vejo como essencial uma boa compreensão do JavaScript, seja "puro", seja usando bibliotecas. Mas ainda sustento minha opinião que "depende".Isso porque vai depender do seu perfil profissional e principalmente do cargo que você ocupa (ou tipo de freelas que você pega).
 
-O Javascript ganhou um poder incrível nos últimos anos, conseguimos literalmente criar um site completo usando apenas Javascript e suas infinitas bibliotecas.
+O JavaScript ganhou um poder incrível nos últimos anos, conseguimos literalmente criar um site completo usando apenas JavaScript e suas infinitas bibliotecas.
 
-Por isso, é cada vez mais comum desenvolvedores Back-End "migrarem" para o Front-End e usarem apenas Javascript para montar suas aplicações. Isso é fantástico!
+Por isso, é cada vez mais comum desenvolvedores Back-End "migrarem" para o Front-End e usarem apenas JavaScript para montar suas aplicações. Isso é fantástico!
 
 ### E tem o mais importante...
 

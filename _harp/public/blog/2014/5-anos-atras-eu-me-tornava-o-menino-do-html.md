@@ -2,7 +2,7 @@
 
 Na verdade essa história começou um pouquinho antes... já "brincava" com HTML e CSS desde 2002/2003 (tinha entre 12 e 13 anos). O meu tio assinava uma revista daquelas que enviava um CD todo mês, e além daqueles saudosos 5-mil-templates-prontos-para-usar, elas tinham uma parte com tutoriais que "ensinavam a construir seu próprio website", e lembro de passar tardes e mais tardes tentando desenvolver um site de "Emuladores e Roms" que nunca foi para o ar.
 
-Realmente me divertia "desenvolvendo" e colocando aquele `marquee` maneiro (alias, sabiam que o [marquee ainda existe e pode ser útil em alguns casos?](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee)). Mas jamais imaginei que essa seria minha profissão um dia (afinal eu sempre pensava em profissão como algo chato e nada divertido :p... obrigado CSS e Javascript...).
+Realmente me divertia "desenvolvendo" e colocando aquele `marquee` maneiro (alias, sabiam que o [marquee ainda existe e pode ser útil em alguns casos?](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee)). Mas jamais imaginei que essa seria minha profissão um dia (afinal eu sempre pensava em profissão como algo chato e nada divertido :p... obrigado CSS e JavaScript...).
 
 Fiz faculdade (ou curso, sei lá) de Comunicação Web e entre as matérias tinha HTML e CSS, e mais ou menos nesse período (meados de 2007) fiz um [projetinho para treinar e que de forma inacreditável ainda tenho salvo](https://dl.dropboxusercontent.com/u/9133549/Old/portfolio2/index.html), desconsiderando o layout de péssimo gosto, observem que tentei fazer algo "responsivo" (já visando os novos tempos... só que não :p).
 
@@ -28,7 +28,7 @@ Pode não parecer muita coisa, mas 5 anos é metade de uma década (bela constat
 
 ## Ahhh o futuro...
 
-E falando em futuro... hoje temos nosso tripé mágico: HTML, CSS e Javascript, mas será que essas linguagens serão tão importantes daqui 15 anos, ou melhor, será que elas ainda vão existir?
+E falando em futuro... hoje temos nosso tripé mágico: HTML, CSS e JavaScript, mas será que essas linguagens serão tão importantes daqui 15 anos, ou melhor, será que elas ainda vão existir?
 
 O Flash era "o cara", até que perdeu mercado a ponto de estar quase obsoleto hoje em dia. Será que todos os "Desenvolvedores Flash" da época se mataram? Começaram uma faculdade de filosofia para buscar outro sentido para a vida? Estão morando nas ruas?
 

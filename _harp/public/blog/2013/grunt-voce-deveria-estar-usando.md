@@ -174,7 +174,7 @@ Uso `grunt dev` para compilar a versão de desenvolvimento e `grunt build` para 
 
 Como viram, você pode adaptar o Grunt exatamente as suas necessidades.
 
-É possível fazer otimizações em todos os níveis. Ou seja, você vai otimizar seu desenvolvimento e ganhar mais produtividade (afinal, não vai precisar repetir tarefas desnecessariamente) e vai otimizar o projeto em sí, já que através de um comando terá CSS, Javascript, imagens e HTML mais leves.
+É possível fazer otimizações em todos os níveis. Ou seja, você vai otimizar seu desenvolvimento e ganhar mais produtividade (afinal, não vai precisar repetir tarefas desnecessariamente) e vai otimizar o projeto em sí, já que através de um comando terá CSS, JavaScript, imagens e HTML mais leves.
 
 Uma tarefa, que tentei vários plugins e não consegui achar um que considero ideal é **gerar sprites**, sei que tem o Compass para o Grunt, mas não queria usar SASS apenas para gerar sprites. Se alguém tiver uma solução ou usa algum plugin bacana... sou todo ouvidos.
 

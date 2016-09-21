@@ -2,7 +2,7 @@ Não é segredo que gosto muito do Bootstrap, faz parte do meu workflow e fiquei
 
 ## O Grunt é seu amigo
 
-Para essa técnica, indico fortemente o uso do Grunt ou qualquer outro automatizador. Facilitar compilar o pré-processador CSS, concatenar o Javascript e otimizar todo o processo.
+Para essa técnica, indico fortemente o uso do Grunt ou qualquer outro automatizador. Facilitar compilar o pré-processador CSS, concatenar o JavaScript e otimizar todo o processo.
 
 Se não conhece essas ferramentas, já escrevi sobre o [Grunt](/blog/2013/grunt-voce-deveria-estar-usando/), mas sugiro ler o excelente [artigo do Vitor Britto](http://www.vitorbritto.com.br/blog/automacao-de-tarefas-com-gruntjs-parte-1/).
 

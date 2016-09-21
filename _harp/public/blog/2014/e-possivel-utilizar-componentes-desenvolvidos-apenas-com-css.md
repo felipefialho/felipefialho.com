@@ -377,11 +377,11 @@ E a melhor maneira de testar, é aplicando em um projeto real. Para isso escolhi
 
 Aqui um resultado de teste no [GTMetrix](gtmetrix.com) antes da alteração.
 
-![Resultado com Javascript](/assets/img/blog/gt-metrix-old.jpg)
+![Resultado com JavaScript](/assets/img/blog/gt-metrix-old.jpg)
 
-Fui radical e removi todo o Javascript do projeto. Passei a usar o CSS Componentes de Modal e Collapse.
+Fui radical e removi todo o JavaScript do projeto. Passei a usar o CSS Componentes de Modal e Collapse.
 
-![Resultado sem Javascript](/assets/img/blog/gt-metrix-new.jpg)
+![Resultado sem JavaScript](/assets/img/blog/gt-metrix-new.jpg)
 
 Como plus, otimizei o carregamento dos icones e retirei a imagem de "fork".
 
@@ -395,6 +395,6 @@ Isso mostra que qualquer ganho de performance é importante, mas alguns ajustes 
 
 Afirmo que **SIM**, é possível utilizar componentes apenas em CSS, especialmente em projetos menores. E não duvido que isso possa ser uma tendência daqui para frente.
 
-O Javascript se consolida cada vez mais para várias funções que não usávamos antigamente, e vejo boas possibilidades do CSS ter um papel cada vez mais importante na manipulação de interações.
+O JavaScript se consolida cada vez mais para várias funções que não usávamos antigamente, e vejo boas possibilidades do CSS ter um papel cada vez mais importante na manipulação de interações.
 
 Espero que tenham gostado :D

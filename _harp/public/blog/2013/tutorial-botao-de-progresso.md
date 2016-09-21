@@ -138,7 +138,7 @@ Use **:after** para adicionar os estilos.
 
 Agora criamos a animação apenas invertendo a posição do gradiente, dando o efeito desejado.
 
-### No Javascript
+### No JavaScript
 
 ````js
 $(".btn").click( function(){

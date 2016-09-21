@@ -12,57 +12,59 @@ Como podemos criar qualquer atributo através do prefixo `[data-*]`, esses atrib
 
 ## Como funciona?
 
-Ao invés de acessar o elemento via Javascript através de `.classe` ou `#id`, podemos usar os `[data-attributes]` do HTML5.
+Ao invés de acessar o elemento via JavaScript através de `.class` ou `#id`, podemos usar os `[data-attributes]` do HTML5.
 
-Por exemplo (em jQuery) para iniciar uma interação touch em um menu, podemos chamar via `.classe`:
+Por exemplo (em jQuery) para iniciar uma interação touch em um menu, podemos chamar via `.class`:
 
 ````js
-$('.nav-aside');
+$('.nav');
 ````
 
 Ou via `#id`:
 
 ````js
-$('#nav-aside');
+$('#nav');
 ````
 
 Mas a ideia aqui é fazer a chamada via `[data-*]`:
 
-$('[data-toggle="nav-touch"]');
+````js
+$('[data-trigger="nav-touch"]');
+````
 
 ## Por que usar dessa forma?
 
-O principal motivo, é para separar o estilo da funcionalidade Javascript. Apresento a seguir um cenário real de aplicação.
+O principal motivo, é para separar o estilo da funcionalidade JavaScript. Apresento a seguir um cenário real de aplicação.
 
-1.  Imaginem novamente o menu do exemplo acima, ele apresenta uma função para interação em “swipe” em telas Touch. Então chamamos a função, atribuindo em todas a classes `.nav-aside`:
+Imaginem novamente o menu do exemplo acima, ele apresenta uma função para interação em _swipe_ em telas Touch. Então chamamos a função, atribuindo em todas a classes `.nav`:
 
-    ````js
-    $('.nav-aside');
-    ````
+````js
+$('.nav');
+````
 
-2.  Porém, em uma das páginas. O menu apresenta o mesmo estilo, mas não deveria ter essa funcionalidade de swipe. Poderíamos atribuir a interação a um #id e adicionar o id nos elementos que devem apresentar esse comportamento.
+Porém, em uma das páginas. O menu precisa ter o mesmo estilo, mas não deveria ter essa funcionalidade de _swipe_. Poderíamos atribuir a interação a um #id e adicionar o id nos elementos que devem apresentar esse comportamento.
 
-    ````js
-    $('#nav-touch');
-    ````
+````js
+$('#nav-touch');
+````
 
-3.  Para complicar mais, esse menu aparece duas vezes em outra página, porém como sabemos, não podemos repetir um #id na mesma página. E fazer a chamada para cada #id separadamente também não é uma solução adequada.
+Para complicar mais, esse menu aparece duas vezes em outra página, porém como sabemos, não podemos repetir um #id na mesma página. E fazer a chamada para cada #id separadamente também não é uma solução adequada.
 
-    Poderíamos então usar uma classe sem estilo, que serviria somente para a chamada no Javascript, algo como:
+Poderíamos então usar uma classe sem estilo, que serviria somente para a chamada no JavaScript, algo como:
 
-    ````js
-    $('.js.nav-touch');
-    ````
+````js
+$('.js-nav-touch');
+````
 
-    Essa é uma solução viável e funcional, mas manter as classes apenas para estilização no CSS seria mais elegante.
+Essa é uma solução viável e funcional, mas manter as classes apenas para estilização no CSS seria mais elegante.
 
-4.  Então finalmente, podemos usar o [data-*] para isso.
+Então finalmente, podemos usar o [data-*] para isso.
 
-    ````js
-    $('[data-toggle="nav-touch"]');
-    ````
+````js
+$('[data-trigger="nav-touch"]');
+````
 
-    Dessa forma, basta adicionar [data-toggle="nav-touch"] ao elemento que deve apresentar esse comportamento.
+Dessa forma, basta adicionar [data-trigger="nav-touch"] ao elemento que deve apresentar esse comportamento.
 
 
 ### Através de CSS...
@@ -70,7 +72,7 @@ O principal motivo, é para separar o estilo da funcionalidade Javascript. Apres
 E claro, também é possível manipular os Data Atributes através de CSS, portanto, podemos adicionar animações ou algum estilo específico:
 
 ````css
-.nav-aside[data-toggle="nav-touch"] {
+.nav[data-trigger="nav-touch"] {
   ...
 }
 ````
@@ -87,19 +89,19 @@ Para mostrar em funcionamento, criei uma base de código bem rápida (peço que 
 
 <iframe width="100%" height="500" src="http://jsfiddle.net/LFeh/5Qr7b/2/embedded/result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-Ou seja, para ativar o plugin de "tabs", simplesmente usei `[data-toggle="tab"]`, evitando assim atrelar o plugin na classe de estilo `.nav` ou adicionar uma classe extra apenas para chamar a função.
+Ou seja, para ativar o plugin de **tabs**, simplesmente usei `[data-toggle="tab"]`, evitando assim atrelar o plugin na classe de estilo `.nav` ou adicionar uma classe extra apenas para chamar a função.
 
 ## E a performance?
 
 Fazendo um pequeno teste no [jsPerf](http://jsperf.com/long-selectors-vs-data/17), podemos observar que:
 
-- Seletor `.classe` apresenta de longe o melhor resultado, com uma média de **130.000** operações por 0,063 segundos
-- Seletores `[data-*]` são até 88% mais lentos do que os de `.classe`, com uma média de 'apenas' **18.000** operações por 0,063 segundos
+- Seletor `.class` apresenta de longe o melhor resultado, com uma média de **130.000** operações por 0,063 segundos
+- Seletores `[data-*]` são até 88% mais lentos do que os de `.class`, com uma média de 'apenas' **18.000** operações por 0,063 segundos
 
 ## Conclusão
 
 Usar o `[data-*]` para separar estilização e comportamento é uma solução bastante elegante e funcional. Se bem utilizada, acredito em um ganho importante de escalabilidade nos componentes.
 
-Porém existem problemas com relação a performance. Uma diferença negativa de 88% com relação aos seletores `.classe` não é algo que deve ser ignorado.
+Porém existem problemas com relação a performance. Uma diferença negativa de 88% com relação aos seletores `.class` não é algo que deve ser ignorado.
 
 Como em todos os projetos, vale uma análise prévia. Acredito que apenas em aplicações realmente grandes essa diferença seria notada. Portanto minha indicação seria de usar sem medo em projetos menores, e realizar testes para verificar o impacto na performance de projetos maiores.

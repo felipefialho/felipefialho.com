@@ -1,10 +1,18 @@
 {
+  "porque-usar-classes-para-estilizar-elementos": {
+    "cover": "id-and-class.png",
+    "cover_alt": "Imagem escrito #ID x .class",
+    "path":"2016/porque-usar-classes-para-estilizar-elementos",
+    "date": "21/09/2016",
+    "title": "Porquê usar classes para estilizar elementos",
+    "description": "É um assunto polêmico, eu sei. Muitas pessoas discordam. Mas vou defender meu ponto de vista que é totalmente favorável ao uso de classes."
+  },
   "sobre-wai-aria-acessibilidade-e-semantica": {
     "cover": "sobre-role-e-semantica.png",
     "cover_alt": "Imagem de código demonstrando a semântica de um logo",
     "path":"2016/sobre-wai-aria-acessibilidade-e-semantica",
     "date": "14/09/2016",
-    "title": "Sobre WAI-ARIA, acessibilidade e semântica.",
+    "title": "Sobre WAI-ARIA, acessibilidade e semântica",
     "description": "WAI-ARIA já é um assunto bem antigo. Porém, observo que muitas pessoas desconhecem sua existência ou não sabem como utilizar nos projetos."
   },
   "do-zero-a-heroi-do-front-end-parte-2": {
@@ -90,8 +98,8 @@
   "sobre-data-atributes-e-javascript": {
     "path":"2014/sobre-data-atributes-e-javascript",
     "date": "08/07/2014",
-    "title": "Sobre Data Atributes e Javascript",
-    "description": "Nos últimos projetos comecei a testar o uso do [data-*] do HTML5 como seletor no Javascript. Agora vou listar algumas coisas que observei com essa prática."
+    "title": "Sobre Data Atributes e JavaScript",
+    "description": "Nos últimos projetos comecei a testar o uso do [data-*] do HTML5 como seletor no JavaScript. Agora vou listar algumas coisas que observei com essa prática."
   },
   "5-anos-atras-eu-me-tornava-o-menino-do-html": {
     "path":"2014/5-anos-atras-eu-me-tornava-o-menino-do-html",

@@ -4,7 +4,7 @@ Após participar do [Front in Sampa](https://twitter.com/frontinsp) no último s
 
 ## Sobre
 
-Me inspirei no ótimo plugin [Classy Social](http://www.class.pm/projects/jquery/classysocial/), que é totalmente baseado em Javascript.
+Me inspirei no ótimo plugin [Classy Social](http://www.class.pm/projects/jquery/classysocial/), que é totalmente baseado em JavaScript.
 
 Esse tipo de visualização pode ser interessante especialmente para dispositivos com telas menores, onde podemos deixar a caixa de rede social menor, e criar um efeito agradável quando o usuário interagir com ela.
 
@@ -88,7 +88,7 @@ Todos os elementos ficaram com opacidade sólida quando estiverem ativos.
 
 Posiciona a posição de cada item.
 
-### No Javascript
+### No JavaScript
 
 ````js
 $('.btn-share').click(function() {
