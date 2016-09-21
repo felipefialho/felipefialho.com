@@ -221,7 +221,7 @@ ga('send', 'pageview');</script></head></html><body><header role="banner" class=
 </code></pre>
 <p>Não sei porque isso seria um problema, já que o HTML resolve semântica e o CSS resolve estilo. Mas caso isso incomode, nada te impede de utilizar outros nomes para as classes.</p>
 <p>Mas caso você realmente bata o pé e resolva estilizar diretamente os elementos, com certeza vão acontecer alguns problemas quando o projeto crescer.</p>
-<p>Pode ser que no inicio do projeto, você realmente tenha apenas <code>&lt;header&gt;</code> previsto, mas todos sabemos que essa tag pode ser utilizada mais vezes. Então todos os estilos adicionados no primeiro elemento, seriam herdados pelo segundo, e seria necessário aplicar <em>resets</em>, sujando o código e causando diversos problemas de escalabilidade.</p>
+<p>Pode ser que no inicio do projeto, você realmente tenha apenas um <code>&lt;header&gt;</code> previsto, mas todos sabemos que essa tag pode ser utilizada mais vezes. Então todos os estilos adicionados no primeiro elemento, seriam herdados pelo segundo, e seria necessário aplicar <em>resets</em>, sujando o código e causando diversos problemas de escalabilidade.</p>
 <p>Sinceramente, não tem nenhuma razão para estilizar diretamente um elemento ao invés de estilizar uma classe adicionada nele.</p>
 <h2>Mas sempre existem as exceções</h2><p>Usar classes para estilizar os elementos funciona muito bem para <strong>componentes</strong>, mas claro que não funciona para tudo.</p>
 <p>Textos de conteúdo ou de blogs, gerados por um CMS por exemplo, de maneira nenhuma devem ser customizado com classes (a não ser estilos muito específicos).</p>

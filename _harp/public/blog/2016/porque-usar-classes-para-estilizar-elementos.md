@@ -285,7 +285,7 @@ Não sei porque isso seria um problema, já que o HTML resolve semântica e o CS
 
 Mas caso você realmente bata o pé e resolva estilizar diretamente os elementos, com certeza vão acontecer alguns problemas quando o projeto crescer.
 
-Pode ser que no inicio do projeto, você realmente tenha apenas `<header>` previsto, mas todos sabemos que essa tag pode ser utilizada mais vezes. Então todos os estilos adicionados no primeiro elemento, seriam herdados pelo segundo, e seria necessário aplicar _resets_, sujando o código e causando diversos problemas de escalabilidade.
+Pode ser que no inicio do projeto, você realmente tenha apenas um `<header>` previsto, mas todos sabemos que essa tag pode ser utilizada mais vezes. Então todos os estilos adicionados no primeiro elemento, seriam herdados pelo segundo, e seria necessário aplicar _resets_, sujando o código e causando diversos problemas de escalabilidade.
 
 Sinceramente, não tem nenhuma razão para estilizar diretamente um elemento ao invés de estilizar uma classe adicionada nele.
 
