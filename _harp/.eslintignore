@@ -1,4 +1,3 @@
-node_modules/*
-styleguide/*
-build/*
+node_modules/* 
+public/assets/*
 **/_core/*

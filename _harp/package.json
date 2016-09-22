@@ -7,8 +7,8 @@
     "url": "git+https://github.com/LFeh/lfeh.github.io"
   },
   "scripts": {
-    "lint": "./node_modules/.bin/eslint src",
-    "fix": "./node_modules/.bin/eslint src --fix",
+    "lint": "./node_modules/.bin/eslint public",
+    "fix": "./node_modules/.bin/eslint public --fix",
     "precommit": "npm run lint",
     "start": "gulp",
     "deploy": "gulp build && cd .. && harp compile _harp ./ && cp _harp/README.md ./ && cp _harp/CNAME ./"
