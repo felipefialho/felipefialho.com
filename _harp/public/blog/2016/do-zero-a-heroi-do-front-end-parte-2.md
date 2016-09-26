@@ -27,7 +27,7 @@ Depois, leia as seguintes sessões no MDN [JavaScript guide](https://developer.m
 - [Grammar and types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types)
 - [Control flow and error handling](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
 - [Loops and iterations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
-- [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
+- [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
 
 Não se preocupe muito em memorizar a sintaxe, você sempre pode procurar isso. Em vez disso, concentre-se na compreensão de conceitos importantes como instanciação de variáveis, loops e funções. Se o material for muito denso, tudo bem. Você pode continuar mais depois. Quando colocar esses conceitos na prática, eles se tornarão muito mais claros.
 
