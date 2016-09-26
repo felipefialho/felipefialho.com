@@ -4,16 +4,16 @@
 
 section.thumbnail
 
-  header.page-header.sr-only
-    h2.title Projects
+  header.wellness
+    h2.wellness--title Projects
 
-  .thumbnail-list
+  .thumbnail__list
     for project, slug in public.projects._data
-      article.thumbnail-item
+      article.thumbnail__item
         time.date #{ project.date }
-        h1.title #{ project.title }
-        picture.picture
+        h1.thumbnail--title #{ project.title }
+        picture.thumbnail--picture
           img(src='/assets/img/projects/#{ project.image }' alt="Thumbnail of #{ project.title }'s website")
-        p #{ project.description }
+        p.thumbnail--text #{ project.description }
         a.btn(href='#{ project.path }' title='View project' target='_blank') View the project
 

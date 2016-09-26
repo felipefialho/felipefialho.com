@@ -15,16 +15,16 @@ article.content(itemscope="" itemtype='http://schema.org/Person')
 
 section.blog(lang='pt-br')
 
-  header.page-header
+  header.wellness
     h2.title Blog (Portuguese)
 
   - var postCount = 0
   for post in public.blog._data
     if postCount < 2
-      a.blog-link(href='/blog/#{ post.path }' title='Ver o post #{ post.title }')
-        article.blog-post
+      a.blog__link(href='/blog/#{ post.path }' title='Ver o post #{ post.title }')
+        article.blog__post
           time.date #{ post.date }
-          h1.title #{ post.title }
+          h1.blog__post--title #{ post.title }
           p #{ post.description }
 
     - postCount++;

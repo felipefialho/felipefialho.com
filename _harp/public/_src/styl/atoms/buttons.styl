@@ -11,10 +11,8 @@
 // ==================================================
 
 .btn
-  form(reset)
-  font-weight(regular)
-  font-family(secondary)
-  font-transform(lowercase)
+  form(reset) 
+  font(p2, regular, secondary, lowercase)
   border 1px solid $brand-primary
   color $brand-primary
   display inline-block
@@ -23,8 +21,7 @@
   padding $space
   position relative
   text-align center
-  transition color .15s
-  transition-delay .15s
+  transition color .15s .15s
 
   &:after
     background $brand-primary

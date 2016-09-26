@@ -14,109 +14,109 @@
     padding-top $space-lg
 
 
-//
-// 1. Post
-// ==================================================
+  //
+  // 1. Post
+  // ==================================================
 
-.blog-link
-  display block
+  &__link
+    display block
 
-  &:not(:last-child)
-    margin-bottom $space-lg
-
-
-.blog-post
-  border $line solid 1px
-  margin-left -($space-md)
-  padding $space-md
-  transition border .2s
-  width 'calc(100% + %s)' % ($space-md * 2)
-
-  &:hover
-  &:focus
-    border-color $brand-primary
+    &:not(:last-child)
+      margin-bottom $space-lg
 
 
-  // Types
+  &__post
+    border $line solid 1px
+    margin-left -($space-md)
+    padding $space-md
+    transition border .2s
+    width 'calc(100% + %s)' % ($space-md * 2)
+
+    &:hover
+    &:focus
+      border-color $brand-primary
+
+
+    // Types
+    // ----------------------------------------------------
+
+    &--title
+      font(h3, regular, secondary)
+      margin-bottom $space-sm
+
+    p
+      font(p1)
+
+
+  //
+  // 2. Article
+  // ==================================================
+
+  //
+  // Header
   // ----------------------------------------------------
 
-  .title
-    font(h3, regular, secondary)
-    margin-bottom $space-sm
-
-  p
-    font(p1)
-
-
-//
-// 2. Article
-// ==================================================
-
-//
-// Header
-// ----------------------------------------------------
-
-.blog-header
-  align-items flex-end
-  background rgba($blue-light, .7)
-  color #fff
-  lost-flex-container row
-  overflow hidden
-  padding-top $space-xlg
-  padding-bottom $space-xlg
-
-  +below('xs')
-    margin-top -($space-xlg)
-
-  +above('sm')
-    height 'calc(70vh - %s)' % $header-height
-    position fixed $header-height 0 auto
-
-  &:before
-    background rgba($gray-darker, .8)
-    content ''
-    position absolute 0
-    z-index 2
-
-  .picture
-    position absolute 0
-
-    img
-      filter: grayscale(85%)
-      object-fit cover
-      position absolute 0
-      height 100%
-      width 100%
-
-
-  .content
-    position relative
-    z-index 3
-
-  .date
+  &__header
+    align-items flex-end
+    background rgba($blue-light, .7)
     color #fff
+    lost-flex-container row
+    overflow hidden
+    padding-top $space-xlg
+    padding-bottom $space-xlg
+
+    +below('xs')
+      margin-top -($space-xlg)
+
+    +above('sm')
+      height 'calc(70vh - %s)' % $header-height
+      position fixed $header-height 0 auto
+
+    &:before
+      background rgba($gray-darker, .8)
+      content ''
+      position absolute 0
+      z-index 2
+
+    .picture
+      position absolute 0
+
+      img
+        filter: grayscale(85%)
+        object-fit cover
+        position absolute 0
+        height 100%
+        width 100%
 
 
-//
-// Inner
-// ----------------------------------------------------
+    .content
+      position relative
+      z-index 3
 
-.blog-inner
-  background #fff
-  padding-top $space-xlg
-  padding-bottom $space-xlg
-  position relative
-  z-index 5
+    .date
+      color #fff
 
-  +above('sm')
-    margin-top 'calc(70vh - %s)' % ($header-height * 2)
 
-  .comments
-    lost-center ($screen-sm + (40px * 2)) $space-lg no-flex
-    margin-top $space-xlg
+  //
+  // Inner
+  // ----------------------------------------------------
 
-  .share
-    lost-center ($screen-sm + (40px * 2)) $space-lg no-flex
-    margin-top $space-lg
+  &__inner
+    background #fff
+    padding-top $space-xlg
+    padding-bottom $space-xlg
+    position relative
+    z-index 5
+
+    +above('sm')
+      margin-top 'calc(70vh - %s)' % ($header-height * 2)
+
+    .comments
+      lost-center ($screen-sm + (40px * 2)) $space-lg no-flex
+      margin-top $space-xlg
+
+    .share
+      lost-center ($screen-sm + (40px * 2)) $space-lg no-flex
+      margin-top $space-lg
 
 

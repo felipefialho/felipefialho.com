@@ -2,15 +2,16 @@
 //- Blog
 //- ==================================================
 
-section.blog(lang='pt-br')
+section.blog(lang='pt-br' itemscope itemtype='http://schema.org/Blog')
 
-  header.page-header.sr-only
-    h2.title Blog (Portuguese)
+  header.wellness
+    h2.wellness--title Blog (Portuguese)
 
   for post in public.blog._data
-    a.blog-link(href='/blog/#{ post.path }' title='Ver o post #{ post.title }')
-      article.blog-post
-        time.date #{ post.date }
-        h1.title #{ post.title }
-        p #{ post.description }
+    a.blog__link(href='/blog/#{ post.path }' title='Ver o post #{ post.title }')
+      article.blog__post
+        span.sr-only(itemprop='author') Luiz Felipe Tartarotti Fialho
+        time.date(itemprop='dateCreated') #{ post.date }
+        h1.blog__post--title(itemprop='name') #{ post.title }
+        p(itemprop='description') #{ post.description }
 

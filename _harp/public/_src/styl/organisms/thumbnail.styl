@@ -9,47 +9,23 @@
   +above('lg')
     lost-center $screen-lg no-flex
 
-
-//
-// List
-// ==================================================
-
-.thumbnail-list
-  lost-flex-container row
-
-
-//
-// Item
-// ==================================================
-
-.thumbnail-item
-  justify-content flex-end
-  lost-flex-container column
-  margin-bottom $space-xlg
-  position relative
-
-  +above('sm')
-    lost-column 1/2 2 $space-xlg
-
-  +above('lg')
-    lost-column 2/6 3 $space-xlg
-
-
-
+ 
   // Types
   // ----------------------------------------------------
 
-  .title
+  &--title
     font(h4, regular, secondary)
     margin-bottom $space
 
-  p
+
+  &--text
     font(p1)
 
     +above('sm')
       min-height 9rem
 
-  .picture
+
+  &--picture
     border $line solid 1px
     display block
     margin-bottom $space
@@ -62,5 +38,28 @@
 
   .btn
     width 100%
+ 
+
+  //
+  // List
+  // ==================================================
+
+  &__list
+    lost-flex-container row
 
 
+  //
+  // Item
+  // ==================================================
+
+  &__item
+    justify-content flex-end
+    lost-flex-container column
+    margin-bottom $space-xlg
+    position relative
+
+    +above('sm')
+      lost-column 1/2 2 $space-xlg
+
+    +above('lg')
+      lost-column 2/6 3 $space-xlg

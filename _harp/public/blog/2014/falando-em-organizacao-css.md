@@ -106,7 +106,7 @@ less/
 |   |
 │   ├── text/
 │   |   ├── address
-│   |   ├── page-header
+│   |   ├── wellness
 │   |   ├── author
 │   |   ├── article-text
 │   |   ├── captions
@@ -225,14 +225,14 @@ Os elementos devem ser únicos, nunca aninhados.
 
 #### Molecules
 
-#### molecules/page-header:
+#### molecules/wellness:
 
 ````stylus
 //
-// Page Header
+// Wellness
 // --------------------------------------------------
 
-.page-header {
+.wellness {
   text-align: center;
 
   h1 {
@@ -260,9 +260,9 @@ Modifica os átomos para a criação de um componente especifico.
 
 .header {
 
-  // Page Header
+  // Wellness
   // --------------------------------------------------
-  .page-header {
+  .wellness {
     text-align: center;
   }
 }
@@ -290,9 +290,9 @@ Modifica os átomos e moléculas para a criação de uma sessão do projeto.
     left: 0;
   }
 
-  // Page Header
+  // Wellness
   // --------------------------------------------------
-  .page-header {
+  .wellness {
     padding: @space @space-lg;
   }
 

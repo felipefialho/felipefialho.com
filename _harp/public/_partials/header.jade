@@ -2,7 +2,7 @@
 //- Header
 //- --------------------------------------------------
 header.header(role='banner')
-  .header-container
+  .header__container
 
     //- Brand
     //- --------------------------------------------------
@@ -13,13 +13,13 @@ header.header(role='banner')
     //- Navbar
     //- --------------------------------------------------
     nav.navbar
-      label.navbar-btn(for='navbar') #[svg.icon(aria-label='Menu') #[use(xlink:href='/assets/svg/icons.svg#menu')]]
+      label.navbar--btn(for='navbar') #[svg.icon(aria-label='Menu') #[use(xlink:href='/assets/svg/icons.svg#menu')]]
 
-      input.nav-open#navbar(type='checkbox')
+      input.nav--open#navbar(type='checkbox')
       ul.nav(role='navigation')
-        li.nav-item #[a.nav-link(class="#{ current.path[0] == 'blog' ? 'active' : '' }" href='/blog') Blog]
-        li.nav-item #[a.nav-link(class="#{ current.path[0] == 'projects' ? 'active' : '' }" href='/projects') Projects]
-        li.nav-item #[a.nav-link(class="#{ current.path[0] == 'labs' ? 'active' : '' }" href='/labs') Labs]
+        li.nav__item #[a.nav--link(class="#{ current.path[0] == 'blog' ? 'active' : '' }" href='/blog') Blog]
+        li.nav__item #[a.nav--link(class="#{ current.path[0] == 'projects' ? 'active' : '' }" href='/projects') Projects]
+        li.nav__item #[a.nav--link(class="#{ current.path[0] == 'labs' ? 'active' : '' }" href='/labs') Labs]
 
 
     //- Social Media

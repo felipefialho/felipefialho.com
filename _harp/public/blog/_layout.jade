@@ -16,9 +16,9 @@ body
       for post, slug in public.blog._data
 
         if slug == current.source
-          article.blog-article(itemscope itemtype='http://schema.org/Blog' lang='pt-br')
+          article.blog__article(itemscope itemtype='http://schema.org/Blog' lang='pt-br')
 
-            .blog-header
+            .blog__header
 
               if (post.cover)
                 picture.picture
@@ -30,7 +30,7 @@ body
                 h1(itemprop='name') #{ post.title }
                 p(itemprop='description') #{ post.description }
 
-            .blog-inner
+            .blog__inner
               .content(itemprop='text')
                 != yield
 
