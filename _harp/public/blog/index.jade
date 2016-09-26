@@ -12,6 +12,6 @@ section.blog(lang='pt-br' itemscope itemtype='http://schema.org/Blog')
       article.blog__post
         span.sr-only(itemprop='author') Luiz Felipe Tartarotti Fialho
         time.date(itemprop='dateCreated') #{ post.date }
-        h1.blog__post--title(itemprop='name') #{ post.title }
-        p(itemprop='description') #{ post.description }
+        h1.blog--title(itemprop='name') #{ post.title }
+        p.blog--text(itemprop='description') #{ post.description }
 

@@ -24,8 +24,8 @@ section.blog(lang='pt-br')
       a.blog__link(href='/blog/#{ post.path }' title='Ver o post #{ post.title }')
         article.blog__post
           time.date #{ post.date }
-          h1.blog__post--title #{ post.title }
-          p #{ post.description }
+          h1.blog--title #{ post.title }
+          p.blog--text #{ post.description }
 
     - postCount++;
 
