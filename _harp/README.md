@@ -30,8 +30,8 @@ First of all, install the dependencies to run this boilerplate.
 
 ```sh
 # Clone this repository
-$ git clone git@github.com:LFeh/kratos-boilerplate.git
-$ cd kratos-boilerplate
+$ git clone git@github.com:LFeh/lfeh.github.io.git
+$ cd lfeh.github.io/harp/
 
 # install gulp globally
 $ npm install -g gulp
@@ -39,7 +39,7 @@ $ npm install -g gulp
 # install harp globally
 $ npm install -g harp
 
-# install dependencies
+# install dependencies 
 $ npm install
 
 ```
