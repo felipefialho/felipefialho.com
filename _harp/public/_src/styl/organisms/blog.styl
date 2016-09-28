@@ -70,8 +70,7 @@
       margin-top -($space-xlg)
 
     +above('sm')
-      height 'calc(70vh - %s)' % $header-height
-      position fixed $header-height 0 auto
+      min-height 'calc(70vh - %s)' % $header-height 
 
     &:before
       background rgba($gray-darker, .8)
@@ -108,10 +107,7 @@
     padding-bottom $space-xlg
     position relative
     z-index 5
-
-    +above('sm')
-      margin-top 'calc(70vh - %s)' % ($header-height * 2)
-
+ 
     .comments
       lost-center ($screen-sm + (40px * 2)) $space-lg no-flex
       margin-top $space-xlg
