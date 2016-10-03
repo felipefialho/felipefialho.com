@@ -2,33 +2,34 @@
 //- Home
 //- ==================================================
 
-article.content(itemscope="" itemtype='http://schema.org/Person')
+.main__inner 
+  article.content(itemscope="" itemtype='http://schema.org/Person')
 
-  p.lead Hey friends, how are you?
+    p.lead Hey friends, how are you?
 
-  p My name is #[em(itemprop='name') Luiz Felipe Tartarotti Fialho] from Brazil, I'm 26 years old and I've worked as #[strong(itemprop='jobTitle') Front-End Developer] since 2009.
+    p My name is #[em(itemprop='name') Luiz Felipe Tartarotti Fialho] from Brazil, I'm 26 years old and I've worked as #[strong(itemprop='jobTitle') Front-End Developer] since 2009.
 
-  p Currently, I've worked at #[a(href='http://filtro.cc/' target='_blank' itemprop='affiliation') Filtro] since 2014. I'm one of the founders of #[a(href='http://www.meetup.com/CSS-SP/' target='_blank' itemprop='organizer') Meetup CSS] and I helped in organization of #[a(href='http://cssconfbrasil.com.br/' target='_blank' itemprop='organizer') Conferência CSS Brasil 2015]. I'm also one of the founders of #[a(href='https://github.com/frontendbr' target='_blank' itemprop='organizer') Front-End Brasil] in Github.
+    p Currently, I've worked at #[a(href='http://filtro.cc/' target='_blank' itemprop='affiliation') Filtro] since 2014. I'm one of the founders of #[a(href='http://www.meetup.com/CSS-SP/' target='_blank' itemprop='organizer') Meetup CSS] and I helped in organization of #[a(href='http://cssconfbrasil.com.br/' target='_blank' itemprop='organizer') Conferência CSS Brasil 2015]. I'm also one of the founders of #[a(href='https://github.com/frontendbr' target='_blank' itemprop='organizer') Front-End Brasil] in Github.
 
-  p I have a lot of open-source projects, same #[a(href='http://www.felipefialho.com/css-components/' target='_blank' itemprop='creator') CSS Components], #[a(href='http://www.felipefialho.com/piano/' target='_blank' itemprop='creator') Piano Keyboard], #[a(href='https://github.com/LFeh/coding-style' target='_blank' itemprop='creator') Coding Style] and #[a(href='https://github.com/LFeh/kratos-boilerplate' target='_blank' itemprop='creator') Kratos Boilerplate].
+    p I have a lot of open-source projects, same #[a(href='http://www.felipefialho.com/css-components/' target='_blank' itemprop='creator') CSS Components], #[a(href='http://www.felipefialho.com/piano/' target='_blank' itemprop='creator') Piano Keyboard], #[a(href='https://github.com/LFeh/coding-style' target='_blank' itemprop='creator') Coding Style] and #[a(href='https://github.com/LFeh/kratos-boilerplate' target='_blank' itemprop='creator') Kratos Boilerplate].
 
 
-section.blog(lang='pt-br')
+  section.blog(lang='pt-br')
 
-  header.wellness
-    h2.title Blog (Portuguese)
+    header.wellness
+      h2.title Blog (Portuguese)
 
-  - var postCount = 0
-  for post in public.blog._data
-    if postCount < 2
-      a.blog__link(href='/blog/#{ post.path }' title='Ver o post #{ post.title }')
-        article.blog__post
-          time.date #{ post.date }
-          h1.blog--title #{ post.title }
-          p.blog--text #{ post.description }
+    - var postCount = 0
+    for post in public.blog._data
+      if postCount < 2
+        a.blog__link(href='/blog/#{ post.path }' title='Ver o post #{ post.title }')
+          article.blog__post
+            time.date #{ post.date }
+            h1.blog--title #{ post.title }
+            p.blog--text #{ post.description }
 
-    - postCount++;
+      - postCount++;
 
-  a.btn-link(href='/blog/' title='View more posts') Did you like it? View more posts!
+    a.btn-link(href='/blog/' title='View more posts') Did you like it? View more posts!
 
 

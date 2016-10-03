@@ -2,18 +2,19 @@
 //- Lab
 //- ==================================================
 
-section.thumbnail
+.main__inner 
+  section.thumbnail
 
-  header.wellness
-    h2.wellness--title Labs
+    header.wellness
+      h2.wellness--title Labs
 
-  .thumbnail__list
-    for lab, slug in public.labs._data
-      article.thumbnail__item
-        time.date #{ lab.date }
-        h1.thumbnail--title #{ lab.title }
-        picture.thumbnail--picture
-          img(src='/assets/img/labs/#{ lab.image }' alt="Thumbnail of #{ lab.title }'s website")
-        p.thumbnail--text #{ lab.description }
-        a.btn(href='#{ lab.path }' title='View lab' target='_blank') View the project
+    .thumbnail__list
+      for lab, slug in public.labs._data
+        article.thumbnail__item
+          time.date #{ lab.date }
+          h1.thumbnail--title #{ lab.title }
+          picture.thumbnail--picture
+            img(src='/assets/img/labs/#{ lab.image }' alt="Thumbnail of #{ lab.title }'s website")
+          p.thumbnail--text #{ lab.description }
+          a.btn(href='#{ lab.path }' title='View lab' target='_blank') View the project
 

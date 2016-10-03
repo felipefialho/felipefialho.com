@@ -7,7 +7,7 @@
 // ==================================================
 
 .blog
-  lost-center ($screen-sm + (40px * 2)) $space-lg no-flex
+  lost-center ($screen-sm + (40px * 2)) $space-lg no-flex 
 
   .content + &
     margin-top $space-xlg
@@ -61,10 +61,10 @@
     align-items flex-end
     background rgba($blue-light, .7)
     color #fff
-    lost-flex-container row
-    overflow hidden
+    lost-flex-container row 
     padding-top $space-xlg
     padding-bottom $space-xlg
+    position relative
 
     +below('xs')
       margin-top -($space-xlg)
@@ -75,7 +75,7 @@
     &:before
       background rgba($gray-darker, .8)
       content ''
-      position absolute 0
+      position absolute -100vh 0 0
       z-index 2
 
     .picture
