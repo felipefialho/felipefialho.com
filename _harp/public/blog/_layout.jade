@@ -8,47 +8,41 @@ body
   //-
   //- Main
   //- --------------------------------------------------
-  main.main(role='main')
-    .main__inner 
+  main.main(role='main') 
+    - var postCount = 0
+    if (current.source !== 'index' && public.blog._data) 
+      for post, slug in public.blog._data
 
-      - var postCount = 0
-      if (current.source !== 'index' && public.blog._data)
+        if slug == current.source
+          article.blog__article(itemscope itemtype='http://schema.org/Blog' lang='pt-br')
 
-        for post, slug in public.blog._data
+            .blog__header
 
-          if slug == current.source
-            article.blog__article(itemscope itemtype='http://schema.org/Blog' lang='pt-br')
+              if (post.cover)
+                picture.picture
+                  img(src='/assets/img/blog/cover/#{ post.cover }' alt='#{ post.cover_alt }')
 
-              .blog__header
+              .content
+                span.sr-only(itemprop='author') Luiz Felipe Tartarotti Fialho
+                time.date(itemprop='dateCreated') #{ post.date }
+                h1(itemprop='name') #{ post.title }
+                p(itemprop='description') #{ post.description }
 
-                if (post.cover)
-                  picture.picture
-                    img(src='/assets/img/blog/cover/#{ post.cover }' alt='#{ post.cover_alt }')
+            .blog__inner
+              .content(itemprop='text')
+                != yield
 
-                .content
-                  span.sr-only(itemprop='author') Luiz Felipe Tartarotti Fialho
-                  time.date(itemprop='dateCreated') #{ post.date }
-                  h1(itemprop='name') #{ post.title }
-                  p(itemprop='description') #{ post.description }
+              .share
+                .addthis_sharing_toolbox
+                script(src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51124ac82d52f270')
 
-              .blog__inner
-                .content(itemprop='text')
-                  != yield
+              aside.comments
+                != partial("../_partials/comments")
 
-                .share
-                  .addthis_sharing_toolbox
-                  script(src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51124ac82d52f270')
+        - postCount++;
 
-                aside.comments
-                  != partial("../_partials/comments")
-
-          - postCount++;
-
-      else
-        != yield
-
-       
-
+    else
+      != yield 
 
   //-
   //- Scripts
