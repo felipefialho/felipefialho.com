@@ -1,4 +1,12 @@
 {
+  "dark-theme-no-dev-tools": {
+    "cover": "dark-theme-chrome.png",
+    "cover_alt": "Tema escuro do DevTools no Chrome",
+    "path":"2016/dark-theme-no-dev-tools",
+    "date": "05/10/2016",
+    "title": "Dark Theme no Dev Tools",
+    "description": "Que tal deixar o seu DevTools com o tema escuro?"
+  },
   "porque-usar-classes-para-estilizar-elementos": {
     "cover": "id-and-class.png",
     "cover_alt": "Imagem escrito #ID x .class",
