@@ -1,6 +1,6 @@
 ## Sobre esse tipo de artigo
 
-Todo dia aprendemos alguma coisa nova. Seja através de um bug que que resolvemos, seja lendo artigos, seja conversando com as pessoas.
+Todo dia aprendemos alguma coisa. Seja através de um bug, seja lendo artigos, seja conversando com as pessoas.
 
 Ontem por exemplo, postei no Fórum Front-End BR no Github uma [dica para resolver o problema do position: fixed, em dispositivos mobile](https://github.com/frontendbr/forum/issues/314). 
 
