@@ -51,6 +51,6 @@
     "rupture": "^0.6.1"
   },
   "dependencies": {
-    "harp": "^0.20.3"
+    "harp": "^0.21.0"
   }
 }
