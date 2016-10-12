@@ -82,13 +82,18 @@ This project uses my own [Coding Style](https://github.com/LFeh/coding-style) as
 
 This project also uses [Husky](https://github.com/typicode/husky) to prevent commit and push messy and wrong code.
 
-To help you, this project has a `npm run fix` command to fix all jscs errors.
+To help you, this project has a `npm run fix` command to fix all eslint errors.
 
 This project uses as a base the [Kratos Boilerplate](https://github.com/LFeh/kratos-boilerplate).
 
-### Tasks
 
-- `gulp`: run all tasks and initialize watch for changes and a server
+#### Parker CSS
+
+To view a reporter of CSS files, use a `npm run reporter` command.
+
+
+### Tasks
+ 
 - `gulp harp`: generate harp files
 - `gulp css`: compile stylus files
 - `gulp styleguide`: compile styleguide files
@@ -97,6 +102,11 @@ This project uses as a base the [Kratos Boilerplate](https://github.com/LFeh/kra
 - `gulp browser-sync`: inicialize a server
 - `gulp watch`: call for watch files
 - `gulp build`: run all tasks
+
+- `npm start`: run all tasks and initialize watch for changes and a server
+- `npm test`: test the javascript and css complexity 
+- `npm run lint`: test the javascript
+- `npm run reporter`: test css complexity
 - `npm run deploy`: deploy to gh pages
 
 
