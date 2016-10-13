@@ -69,7 +69,7 @@ Existem milhares de materiais para estudar, muitos grupos para participar, cente
 
 Não tem desculpas para ficar parado esperando oportunidades cairem do céu. Obviamente, projetos open-source e estudos por si só não te darão vivencia profissional, mas podem ser decisivos para você estar mais preparado quando a chance chegar… e de qualquer forma, caso queira ser um alguém diferenciado no que faz, terá que continuar estudando a vida toda :)
 
-Mas como sei que essa questão de **Teoria x Prática** é uma inquietação comum para desenvolvedores em início de carreira, criei um [Gist chamado “Aproximando seus estudos de cenários mais reais”](https://gist.github.com/LFeh/ef4a174ad76220619714), que tem como objetivo listar alguns tópicos comuns e possíveis soluções. Vale a pena dar uma olhada ;)
+Mas como sei que essa questão de **Teoria x Prática** é uma inquietação comum para desenvolvedores em início de carreira, escrevi um artigo chamado [Aproximando seus estudos de cenários reais](http://www.felipefialho.com/blog/2015/aproximando-seus-estudos-de-cenarios-reais), que tem como objetivo listar alguns tópicos comuns e possíveis soluções. Vale a pena dar uma olhada ;)
 
 ## Finalizando…
 
@@ -78,5 +78,3 @@ A formação de bons profissionais é decisiva para o futuro de qualquer profiss
 E quando pessoas melhor preparadas surgem no mercado, a tendencia é um aumento de qualidade e uma valorização natural para todos, já que profissionais mais antigos também terão que se reciclar constantemente.
 
 Empresas, profissionais da área, aspirantes e estudantes, vamos mudar esse cenário?
-
-Status API Training Shop Blog About © 2016 GitHub, Inc. Terms Privacy Security Contact Help
