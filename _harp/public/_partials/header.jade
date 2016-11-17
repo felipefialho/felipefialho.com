@@ -25,12 +25,18 @@ header.header(role='banner')
     //- Social Media
     //- --------------------------------------------------
     ul.social-media
-      li #[a(href="http://twitter.com/#{ twitter }" title='View my Twitter' target='_blank') #[svg.icon(aria-label='Twitter') #[use(xlink:href='/assets/svg/icons.svg#twitter')]]]
-      li #[a(href="https://www.facebook.com/#{ facebook }" title='View my Facebook' target='_blank') #[svg.icon(aria-label='Facebook') #[use(xlink:href='/assets/svg/icons.svg#facebook')]]]
-      li #[a(href="https://www.linkedin.com/in/#{ linkedin }" title='View my Linkedin' target='_blank') #[svg.icon(aria-label='Linkedin') #[use(xlink:href='/assets/svg/icons.svg#linkedin')]]]
-      li #[a(href="https://github.com/#{ github }" title='View my Github' target='_blank') #[svg.icon(aria-label='Github') #[use(xlink:href='/assets/svg/icons.svg#github')]]]
-      li #[a(href="https://codepen.io/#{ github }" title='View my Codepen' target='_blank') #[svg.icon(aria-label='Codepen') #[use(xlink:href='/assets/svg/icons.svg#codepen')]]]
-      li.hidden #[a(href="https://plus.google.com/#{ gplus }" title='View my Google Plus' target='_blank') #[svg.icon(aria-label='Google Plus') #[use(xlink:href='/assets/svg/icons.svg#google')]]]
+      li.social-media__item 
+        a.social-media__link(href="http://twitter.com/#{ twitter }" title='View my Twitter' target='_blank') #[svg.icon(aria-label='Twitter') #[use(xlink:href='/assets/svg/icons.svg#twitter')]]
+      li.social-media__item 
+        a.social-media__link(href="https://www.facebook.com/#{ facebook }" title='View my Facebook' target='_blank') #[svg.icon(aria-label='Facebook') #[use(xlink:href='/assets/svg/icons.svg#facebook')]]
+      li.social-media__item 
+        a.social-media__link(href="https://www.linkedin.com/in/#{ linkedin }" title='View my Linkedin' target='_blank') #[svg.icon(aria-label='Linkedin') #[use(xlink:href='/assets/svg/icons.svg#linkedin')]]
+      li.social-media__item 
+        a.social-media__link(href="https://github.com/#{ github }" title='View my Github' target='_blank') #[svg.icon(aria-label='Github') #[use(xlink:href='/assets/svg/icons.svg#github')]]
+      li.social-media__item 
+        a.social-media__link(href="https://codepen.io/#{ github }" title='View my Codepen' target='_blank') #[svg.icon(aria-label='Codepen') #[use(xlink:href='/assets/svg/icons.svg#codepen')]]
+      li.social-media__item.hidden 
+        a.social-media__link(href="https://plus.google.com/#{ gplus }" title='View my Google Plus' target='_blank') #[svg.icon(aria-label='Google Plus') #[use(xlink:href='/assets/svg/icons.svg#google')]]
 
 
 

@@ -1,6 +1,5 @@
 //
-//  Social Media
-//
+//  Social Media 
 // ==================================================
 
 .social-media
@@ -8,15 +7,15 @@
   position relative
   top .4rem
 
-  > li
+  &__item
     display inline-block
 
     &:not(:last-child)
       margin-right $space-sm
 
-  a
+  &__link
     effect(hover, $blue-light)
     color #fff
 
-  svg
+  .icon
     fill currentColor
