@@ -34,11 +34,7 @@ html(lang='en')
               .blog__inner
                 .content(itemprop='text')
                   != yield
-
-                .share
-                  .addthis_sharing_toolbox
-                  script(src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51124ac82d52f270')
-
+ 
                 aside.comments
                   != partial("../_partials/comments")
 
