@@ -31,7 +31,7 @@ const srcPaths = {
   ],
   icons: 'public/_src/svg/icons/*.svg',
   svg: 'public/_src/svg/etc/*',
-  img: 'public/_src/img/**/*',
+  img: 'public/assets/img/**/*',
   harp: [
     'public/**/*.jade',
     'public/**/*.md',
