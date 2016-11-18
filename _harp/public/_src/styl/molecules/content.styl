@@ -76,7 +76,11 @@
 
     > li:not(:last-child)
       margin-bottom ($space-text / 2)
-
+      
+  > pre
+    &[class*=language-]
+      margin-bottom $space-xlg
+     
 
   .date
     font(h5, light)
@@ -84,4 +88,6 @@
 
   img 
     display block 
+    
+
     

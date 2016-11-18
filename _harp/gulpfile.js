@@ -26,7 +26,6 @@ const srcPaths = {
   css: 'public/_src/styl/**/*.styl',
   styl: [
     'public/_src/styl/style.styl',
-    'node_modules/prismjs/themes/prism.css', // PrismJS
     'node_modules/prismjs/themes/prism-okaidia.css' // PrismJS - Theme
   ],
   icons: 'public/_src/svg/icons/*.svg',
@@ -61,7 +60,7 @@ function refresh() {
 }
 
 gulp.task('css', () => {
-  gulp.src(srcPaths.styl)
+  return gulp.src(srcPaths.styl)
     .pipe(stylus({
       use: [rupture(), poststylus([lost(), fontMagician(), rucksack({ autoprefixer: true })])],
       compress: false
@@ -75,7 +74,7 @@ gulp.task('css', () => {
 });
 
 gulp.task('vendors', () => {
-  gulp.src(srcPaths.vendors)
+  return gulp.src(srcPaths.vendors)
     .pipe(plumber())
     .pipe(concat('vendors.js'))
     .pipe(uglify())
@@ -83,7 +82,7 @@ gulp.task('vendors', () => {
 });
 
 gulp.task('js', () => {
-  gulp.src(srcPaths.js)
+  return gulp.src(srcPaths.js)
     .pipe(plumber())
     .pipe(concat('main.js'))
     .pipe(uglify())
@@ -91,7 +90,7 @@ gulp.task('js', () => {
 });
 
 gulp.task('images', () => {
-  gulp.src(srcPaths.img)
+  return gulp.src(srcPaths.img)
     .pipe(plumber())
     .pipe(imagemin({
       optimizationLevel: 3,
@@ -103,14 +102,14 @@ gulp.task('images', () => {
 });
 
 gulp.task('svg', () => {
-  gulp.src(srcPaths.svg)
+  return gulp.src(srcPaths.svg)
     .pipe(svgmin())
     .pipe(gulp.dest(buildPaths.svg));
   refresh();
 });
 
 gulp.task('icons', () => {
-  gulp.src(srcPaths.icons)
+  return gulp.src(srcPaths.icons)
     .pipe(svgmin())
     .pipe(svgstore({ fileName: 'icons.svg', inlineSvg: true }))
     .pipe(cheerio({

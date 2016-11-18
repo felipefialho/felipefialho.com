@@ -1,4 +1,12 @@
 {
+  "css-o-fodastico-not": {
+    "cover": "css-not.png",
+    "cover_alt": "CSS pseudo-class, :not(X)",
+    "path": "2016/css-o-fodastico-not",
+    "date": "17/11/2016",
+    "title": "O fodástico :not()",
+    "description": "Quando se trata de evitar resetar propriedades, poucos elementos são tão fodas quanto o :not()."
+  },
   "dark-theme-no-dev-tools": {
     "cover": "dark-theme-chrome.png",
     "cover_alt": "Tema escuro no DevTools do Chrome",

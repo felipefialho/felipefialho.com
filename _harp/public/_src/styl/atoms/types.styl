@@ -31,11 +31,7 @@ a
 //
 // 2. Headings
 // ==================================================
-
-h1, h2, h3, h4, h5, h6
-  margin 0
-
-
+ 
 //
 // 3. Paragraph
 // ==================================================
@@ -43,21 +39,19 @@ h1, h2, h3, h4, h5, h6
 p
   &:not(:last-child)
     margin-bottom $space-text 
-    
-
+  
 //
 // 4. Code
 // ==================================================
 
-pre
+pre 
   font(p1, 600, secondary)
   background rgba($gray-light, .2)
   display block
-  margin $space-lg 0
   padding $space-md
   max-width 100% 
   overflow-x auto
-
+  
 code
   display block
 
