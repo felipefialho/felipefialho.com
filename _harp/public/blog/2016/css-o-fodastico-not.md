@@ -71,7 +71,7 @@ p:not(.foo)
   font-size 2rem
 ````
 
-Ou o inverso disso... que o estilo seja adicionado em uma class, mas não em um elemento especifico. 
+Ou o inverso disso... que o estilo seja adicionado em uma classe, mas não em um elemento especifico. 
 
 ````stylus
 .title:not(h2)
