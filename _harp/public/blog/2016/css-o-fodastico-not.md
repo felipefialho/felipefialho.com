@@ -30,7 +30,7 @@ Mas tenho certeza que vocês já viram um milhão de artigos falando dessas pseu
 
 Poucas coisas me deixam tão agoniado no CSS do que propriedades sendo resetadas, é tão frustrante que bolei um jeito de usar as [Media Queries evitando que isso acontecesse](http://www.felipefialho.com/blog/2015/otimizando-e-organizando-as-media-queries), muito antes dessa técnica ficar famosa.
 
-Sério, não faz sentido nenhum resetar propriedades, se você precisou resetar ela simplesmente não deveria existir dentro daquele escopo (mas claro... sempre tem as exceções).
+Sério, não faz sentido nenhum resetar propriedades, se você precisou resetar, ela simplesmente não deveria existir dentro daquele escopo (mas claro... sempre tem as exceções).
 
 E o `:not()` torna-se um aliado sensacional para nos ajudar nessa missão.
 
