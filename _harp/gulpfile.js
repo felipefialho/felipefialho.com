@@ -127,11 +127,11 @@ gulp.task('icons', () => {
 gulp.task('serve', () => {
 
   harp.server(__dirname, {
-    port: 9000
+    port: 9999
   }, function () {
 
     browserSync({
-      proxy: 'localhost:9000'
+      proxy: 'localhost:9999'
     });
 
     gulp.watch(srcPaths.harp, function () { reload(); });
