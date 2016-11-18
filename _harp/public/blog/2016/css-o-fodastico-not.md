@@ -1,6 +1,6 @@
 ## As lindas pseudo-class
 
-Fui desenvolvedor em uma época terrível, tempos em que era necessário usar PNGs transparentes para emular `box-shadow` e `border-radius`, tempos em que em que precisávamos usar hacks para IE6 e IE7, tempos em que tudo era lento e de difícil manutenção. 
+Fui desenvolvedor em uma época terrível, tempos em que era necessário usar PNGs transparentes para emular `box-shadow` e `border-radius`, tempos em que precisávamos usar hacks para IE6 e IE7, tempos em que tudo era lento e de difícil manutenção. 
 
 Felizmente o CSS evoluiu, e uma das novidades que mais gostei nos últimos anos foram as [pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes).
 
@@ -96,7 +96,7 @@ Quer negar dois elementos?
   color $brand-primary
 ````
 
-Quer que o `:hover` e o `:focus` só funcionem se o elemento não tiver a class `.active`? 
+Quer que o `:hover` e o `:focus` só funcionem se o elemento não tiver a classe `.active`? 
 
 ````stylus
 .btn:hover:not(.active),
