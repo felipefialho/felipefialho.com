@@ -64,6 +64,10 @@ tr:nth-child(odd) { background: #eee; }
 .btn:focus:not(.active)
   ...
 </code></pre>
+<p>Quer que o elemento tenha determinadas propriedades apenas Se não estiver vazio?</p>
+<pre><code class="language-stylus">.foo:not(:empty)
+  ...
+</code></pre>
 <h5>Quer combinar com pseudo-selectors?</h5><p>Bora pegar a classe <code>.title</code> apenas se ela não for um <code>h2</code> e o <code>.header</code> não estiver ativo? </p>
 <pre><code class="language-stylus">.header:not(.active) + .main .title:not(h2)
   ...

@@ -104,6 +104,13 @@ Quer que o `:hover` e o `:focus` só funcionem se o elemento não tiver a class 
   ...
 ````
 
+Quer que o elemento tenha determinadas propriedades apenas Se não estiver vazio?
+
+````stylus
+.foo:not(:empty)
+  ...
+````
+
 ##### Quer combinar com pseudo-selectors? 
 
 Bora pegar a classe `.title` apenas se ela não for um `h2` e o `.header` não estiver ativo? 
