@@ -61,14 +61,14 @@ function refresh() {
 
 gulp.task('css', () => {
   return gulp.src(srcPaths.styl)
+    .pipe(plumber())
     .pipe(stylus({
       use: [rupture(), poststylus([lost(), fontMagician(), rucksack({ autoprefixer: true })])],
       compress: false
     }))
     .pipe(gcmq())
-    .pipe(plumber())
     .pipe(concat('style.css'))
-    .pipe(cssnano())
+    .pipe(cssnano({ mergeRules: false }))
     .pipe(gulp.dest(buildPaths.css));
   refresh();
 });
