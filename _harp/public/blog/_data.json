@@ -4,7 +4,7 @@
     "cover_alt": "CSS: white-space nowrap",
     "path": "2017/css-usando-white-space-nowrap-para-fallbacks-incriveis",
     "date": "21/02/2017",
-    "title": "Usando white-space nowrap para fallbacks incríveis",
+    "title": "Usando white-space: nowrap para fallbacks incríveis",
     "description": "Pouco conhecida, essa técnica pode economizar muitas linhas de código e até mesmo melhorar a acessibilidade do seu projeto."
   },
   "css-o-fodastico-not": {
