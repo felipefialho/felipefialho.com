@@ -108,4 +108,4 @@ To view a reporter of CSS files, use a `npm run reporter` command.
 
 ## License
 
-[MIT License](http://felipefialho.mit-license.org/) © Luiz Felipe Tartarotti Fialho
+[MIT License](http://felipefialho.mit-license.org/) © Felipe Fialho
