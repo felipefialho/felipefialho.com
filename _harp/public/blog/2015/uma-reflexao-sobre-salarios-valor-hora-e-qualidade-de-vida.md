@@ -24,7 +24,7 @@ Vamos as contas:
 
 12h por dia x 22 dias = 264
 
-4.692,09 / 176 = **R$ 17,77** é o valor hora real dessa pessoa.
+4.692,09 / 264 = **R$ 17,77** é o valor hora real dessa pessoa.
 
 Se a pessoa tiver que gastar com gasolina, estacionamento e etc, esse valor hora pode ser ainda menor!
 
