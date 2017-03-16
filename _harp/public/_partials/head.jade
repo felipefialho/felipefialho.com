@@ -19,7 +19,7 @@ head
       for post, slug in public.blog._data
         if slug == current.source
           title #{post.title } | #{ site_title }
-          
+
           //- Essential Meta Tags for Social Media
           //- --------------------------------------------------
           meta(property='og:title' content='#{ post.title }')
@@ -37,8 +37,9 @@ head
       title #{ current.path[0] !== 'index' ? current.path[0] + ' |' : '' } #{ site_title }
 
     link(rel='alternate' type='application/rss+xml' title='#{ site_title } RSS' href='/rss.xml')
+    link(rel='canonical' href='https://www.felipefialho.com/' + current.path[0])
 
- 
+
     //- Favicon
     //- --------------------------------------------------
     link(rel='apple-touch-icon' sizes='57x57' href='/assets/favicon/apple-icon-57x57.png')

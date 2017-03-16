@@ -4,9 +4,6 @@
 
 # Felipe Fialho - Website
 
-[![license](https://img.shields.io/github/license/LFeh/lfeh.github.io.svg)](./license.md)
-[![GitHub contributors](https://img.shields.io/github/contributors/LFeh/lfeh.github.io.svg)](https://github.com/LFeh/lfeh.github.io/graphs/contributors)
-
 [Access the website](http://www.felipefialho.com/)
 
 This project uses Harp, Jade, Stylus, Gulp and Browsersync.
@@ -107,4 +104,8 @@ To view a reporter of CSS files, use a `npm run reporter` command.
 - `npm run lint`: test the javascript
 - `npm run reporter`: test css complexity
 - `npm run deploy`: deploy to gh pages
- 
+
+
+## License
+
+[MIT License](http://felipefialho.mit-license.org/) © Luiz Felipe Tartarotti Fialho
