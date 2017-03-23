@@ -1,4 +1,11 @@
 {
+  "docomomo": {
+    "path": "http://docomomo-us.org/",
+    "date": "Mar 2017",
+    "title": "Docomomo",
+    "description": "Development of HTML (Pug), CSS (Stylus) and JavaScript",
+    "image": "docomomo.png"
+  },
   "wos": {
     "path": "http://www.wforce.org/",
     "date": "Dez 2016",
