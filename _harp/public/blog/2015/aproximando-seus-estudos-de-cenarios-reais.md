@@ -12,8 +12,8 @@ Ou pior, você pode estar procurando seu primeiro emprego, ou uma nova oportunid
 
 Nesse caso aé desnecessário criar repositórios, teste rapidamente usando ferramentas como:
 
-- [Codepen](http://codepen.io/)
-- [JSFiddle](https://jsfiddle.net/)
+- [Codepen](http://codepen.io)
+- [JSFiddle](https://jsfiddle.net)
 
 Assim fica mais fácil para você ou outros desenvolvedores estudarem o código e fazer modificações caso queiram.
 
@@ -23,8 +23,8 @@ Costumo usar o Codepen para pequenos projetos ou brincadeiras (olha algumas [aqu
 
 Esse é o caso de literalmente transformar seu estudo em um projeto e criar uma solução mais completa. Eu costumo usar:
 
-- [Github](https://github.com/)
-- [Bitbucket](https://bitbucket.org/)
+- [Github](https://github.com)
+- [Bitbucket](https://bitbucket.org)
 
 Uso o o Github para repositórios públicos e o Bitbucket para repositórios privados ou que ainda não quero deixar aberto.
 

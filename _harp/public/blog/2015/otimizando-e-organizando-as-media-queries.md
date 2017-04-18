@@ -1,8 +1,8 @@
 ## Começando do começo
 
-Acabei de chegar da 9ª edição do [Meetup CSS](http://www.meetup.com/pt/CSS-SP/) que teve como tema **Media Queries**, a talk foi muito bem apresentada pelo [Matheus Marsiglio](https://twitter.com/matmarsiglio) e em seguida tivemos um ótimo debate técnico sobre o assunto.
+Acabei de chegar da 9ª edição do [Meetup CSS](http://www.meetup.com/pt/CSS-SP) que teve como tema **Media Queries**, a talk foi muito bem apresentada pelo [Matheus Marsiglio](https://twitter.com/matmarsiglio) e em seguida tivemos um ótimo debate técnico sobre o assunto.
 
-Fiquei feliz em saber que muita gente já está utilizando a abordagem de componentização de Media Queries, assunto que já abordei [>nessa postagem](http://www.felipefialho.com/blog/2014/css-modular-com-mobile-first/) e mais recentemente teve [um artigo](http://www.raphaelfabeni.com.br/componentes-responsivos/) do [Raphael Fabeni](https://twitter.com/raphaelfabeni) sobre isso.
+Fiquei feliz em saber que muita gente já está utilizando a abordagem de componentização de Media Queries, assunto que já abordei [>nessa postagem](https://www.felipefialho.com/blog/2014/css-modular-com-mobile-first) e mais recentemente teve [um artigo](http://www.raphaelfabeni.com.br/componentes-responsivos) do [Raphael Fabeni](https://twitter.com/raphaelfabeni) sobre isso.
 
 Apesar de já ter falado sobre isso, o assunto é tão interessante e importante que vale um novo artigo.
 

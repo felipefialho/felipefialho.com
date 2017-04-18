@@ -1,6 +1,6 @@
 ## Breve introdução
 
-Na eterna dúvida entre usar SASS ou LESS, acabei optando por LESS. Não tenho uma explicação certa, mas acredito que foi pelo fato do [Bootstrap](http://twitter.github.io/bootstrap/) (na qual baseei meu Framework) usar LESS (apesar de ter uma adaptação em SASS). O fato dele ser baseado em javascript também me agradou.
+Na eterna dúvida entre usar SASS ou LESS, acabei optando por LESS. Não tenho uma explicação certa, mas acredito que foi pelo fato do [Bootstrap](http://twitter.github.io/bootstrap) (na qual baseei meu Framework) usar LESS (apesar de ter uma adaptação em SASS). O fato dele ser baseado em javascript também me agradou.
 
 O SASS é mais robusto e tem plugins interessantíssimos como o Compass. O gerador de sprites dele é uma mão na roda e sinto falta disso no LESS.
 
@@ -12,7 +12,7 @@ Dentro da pasta `css` tenho a pasta `less` e nela separo meus arquivos em mais d
 
 Explico a seguir:
 
-- **bootstrap:** Ficam todos os ".less" do [Bootstrap](http://twitter.github.io/bootstrap/). Deixo-os em uma pasta separadas. Não posso modificar os arquivos nesse momento. Me impediria de atualizar o Boostrap para novas versões.
+- **bootstrap:** Ficam todos os ".less" do [Bootstrap](http://twitter.github.io/bootstrap). Deixo-os em uma pasta separadas. Não posso modificar os arquivos nesse momento. Me impediria de atualizar o Boostrap para novas versões.
 - **framework:** Adiciono novos componentes e "estendo" os componentes do Bootstrap. Qualquer modificação nos módulos padrões do Framework é feita nessa pasta.
 
 ## Separação dos arquivos nos projetos

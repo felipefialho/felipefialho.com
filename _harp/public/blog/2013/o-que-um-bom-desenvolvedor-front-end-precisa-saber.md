@@ -40,7 +40,7 @@ Conversar!
 
 Você faz a ponte entre a direção de arte e a programação, portanto você PRECISA conversar e integrar todas as áreas. Tenha um bom relacionamento com todos, procure soluções para facilitar o trabalho das áreas envolvidas.
 
-O [Bernard de Luna](https://twitter.com/bernarddeluna) fez um post sensacional em seu site: [VOCÊ DEVIA ESTUDAR MENOS CÓDIGO E MAIS METEOROLOGIA](http://bernarddeluna.com/conceito/voce-devia-estudar-menos-codigo-e-mais-meteorologia/), e é isso, TODAS as áreas envolvidas são importantes e você precisa entender que não é apenas um desenvolvedor e sim um _Designer “DE PRODUTO”_.
+O [Bernard de Luna](https://twitter.com/bernarddeluna) fez um post sensacional em seu site: [VOCÊ DEVIA ESTUDAR MENOS CÓDIGO E MAIS METEOROLOGIA](http://bernarddeluna.com/conceito/voce-devia-estudar-menos-codigo-e-mais-meteorologia), e é isso, TODAS as áreas envolvidas são importantes e você precisa entender que não é apenas um desenvolvedor e sim um _Designer “DE PRODUTO”_.
 
 Só podemos ser espetaculares no que fazemos se realmente gostarmos da nossa atividade. Com isso a evolução na carreira tende a ser natural.
 

@@ -1,6 +1,6 @@
 ## NodeJS e o NPM
 
-O primeiro passo, como havia falado, é entender o mínimo do funcionamento do [NodeJS](http://nodejs.org/) e seu gerenciador de pacotes, o [NPM](https://npmjs.org/).
+O primeiro passo, como havia falado, é entender o mínimo do funcionamento do [NodeJS](http://nodejs.org) e seu gerenciador de pacotes, o [NPM](https://npmjs.org).
 
 Se você usa Windows, basta baixar a [última versão](http://nodejs.org/#download) e instalar.
 
@@ -87,7 +87,7 @@ Você deve alterar os arquivos da pasta **src/**, o Docpad automaticamente vai g
 
 Nesse post, mostrei apenas os primeiros passos.
 
-Para continuar o desenvolvimento, o [site do Docpad](http://docpad.org/) tem um guia bem bacana de uso.
+Para continuar o desenvolvimento, o [site do Docpad](http://docpad.org) tem um guia bem bacana de uso.
 
 Não se assuste se achar difícil no começo, garanto que é questão de tempo até que esteja fazendo coisas bem legais com essa ferramenta.
 

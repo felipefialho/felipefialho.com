@@ -8,7 +8,7 @@ Acabei chegando a conclusão, que talvez seja melhor postar esse tipo de informa
 
 ## Dark Theme no DevTools??
 
-Não importa se você usa [Sublime](https://www.sublimetext.com/), [Atom](https://github.com/atom) ou o [Vim](http://www.vim.org/) caso seja um gênio igual o [Matheus Marsiglio](https://twitter.com/matmarsiglio), a chance de você estar usando um tema escuro nesses editores é enorme.
+Não importa se você usa [Sublime](https://www.sublimetext.com), [Atom](https://github.com/atom) ou o [Vim](http://www.vim.org) caso seja um gênio igual o [Matheus Marsiglio](https://twitter.com/matmarsiglio), a chance de você estar usando um tema escuro nesses editores é enorme.
 
 Além disso, você provavelmente usa linha de comando, e provavelmente o tema também é escuro.
 

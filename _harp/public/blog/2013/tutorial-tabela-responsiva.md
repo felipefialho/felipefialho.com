@@ -6,7 +6,7 @@ Mas nunca considerei uma solução definitiva, não gostava de depender de javas
 
 ### Sobre
 
-Cheguei nessa solução através [desse artigo](http://elvery.net/), que mostra algumas demos de tabelas funcionais e responsiva. Após aplicar e comprovar a eficácia dessa técnica, descobri que a [Globo.com](http://www.globo.com/) também está usando.
+Cheguei nessa solução através [desse artigo](http://elvery.net), que mostra algumas demos de tabelas funcionais e responsiva. Após aplicar e comprovar a eficácia dessa técnica, descobri que a [Globo.com](http://www.globo.com) também está usando.
 
 Ela consiste em inverter a posição do **thead** e posicionar o **tbody** na sua direita.
 
@@ -91,7 +91,7 @@ Por último, posicionamos as linhas lado-a-lado, isso causa o efeito que desejam
 
 ### Sobre
 
-Essa solução foi inspirada no funcionamento do [Gmail](http://www.gmail.com/) para dispositivos menores.
+Essa solução foi inspirada no funcionamento do [Gmail](http://www.gmail.com) para dispositivos menores.
 
 Funciona bem para tabelas que exigem por exemplo, um check. Ele agrupa as informações.
 

@@ -55,7 +55,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 </code></pre>
 <h4>Vamos falar sobre redundância</h4><p>Os exemplos a seguir, são redundantes, e sempre vejo discussões sobre a utilização ou não dessas <code>roles</code>.</p>
 <p><a href="https://github.com/frontendbr/forum/issues/302">Pode acompanhar uma discussão sobre o tema no nosso fórum</a>.</p>
-<p>E um <a href="http://html5doctor.com/on-html-belts-and-aria-braces/">ótimo artigo sobre o tema aqui</a>.</p>
+<p>E um <a href="http://html5doctor.com/on-html-belts-and-aria-braces">ótimo artigo sobre o tema aqui</a>.</p>
 <h5>main</h5><p>Essa <code>role</code> também deve ser única na página, normalmente utilizada em conjunto com a tag <code>&lt;main&gt;</code>.</p>
 <pre><code class="language-html">&lt;main class=&quot;main&quot; role=&quot;main&quot;&gt;
 &lt;/main&gt;
@@ -75,13 +75,13 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 &lt;/a&gt;
 </code></pre>
 <pre><code class="language-css">a[role=&quot;logo&quot;] {
-  margin: 2rem 
+  margin: 2rem
 }
 </code></pre>
 <p>Existem MUITAS roles, que cobrem praticamente qualquer situação, você pode ver a <a href="https://www.w3.org/WAI/PF/HTML/wiki/RoleAttribute">lista completa aqui</a>.</p>
 <h3>Status / Properties</h3><p>Você consegue usar essas propriedades para informar se determinado elemento está escondido ou visível para o usuário, fornecer informações de texto ou mesmo, esconder elementos visuais desnecessários.</p>
-<h4>aria-hidden</h4><pre><code class="language-html">&lt;a href=&quot;#&quot; title=&quot;Acessar o Facebook&quot;&gt; 
-  Facebook 
+<h4>aria-hidden</h4><pre><code class="language-html">&lt;a href=&quot;#&quot; title=&quot;Acessar o Facebook&quot;&gt;
+  Facebook
   &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon&quot;&gt;
     &lt;use xlink:href=&quot;/assets/svg/icons.svg#facebook&quot;&gt;&lt;/use&gt;
   &lt;/svg&gt;
@@ -105,9 +105,9 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 <p>Mas tenha em mente que o assunto é <strong>extremamente</strong> extenso e existem milhares de propriedades WAI-ARIA, englobando várias situações para te ajudar a fornecer mais significado e semântica ao seu projeto.</p>
 <p>Portanto, vou deixar alguns links que costumo acessar quando tenho dúvidas ou quero procurar alguma propriedade.</p>
 <ul>
-<li><a href="https://www.w3.org/TR/wai-aria-1.1/">W3C - Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li>
+<li><a href="https://www.w3.org/TR/wai-aria-1.1">W3C - Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li>
 <li><a href="https://www.w3.org/WAI/PF/HTML/wiki/RoleAttribute">W3C - RoleAttribute</a></li>
-<li><a href="http://w3c.github.io/aria-in-html/">Notes on Using ARIA in HTML</a></li>
+<li><a href="http://w3c.github.io/aria-in-html">Notes on Using ARIA in HTML</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">MDN - ARIA</a></li>
 </ul></div><aside class="blog__comments"><div id="disqus_thread"></div><script>(function() {
 var d = document, s = d.createElement('script');

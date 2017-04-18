@@ -102,7 +102,7 @@ Os exemplos a seguir, são redundantes, e sempre vejo discussões sobre a utiliz
 
 [Pode acompanhar uma discussão sobre o tema no nosso fórum](https://github.com/frontendbr/forum/issues/302).
 
-E um [ótimo artigo sobre o tema aqui](http://html5doctor.com/on-html-belts-and-aria-braces/).
+E um [ótimo artigo sobre o tema aqui](http://html5doctor.com/on-html-belts-and-aria-braces).
 
 ##### main
 
@@ -132,7 +132,7 @@ Podemos usar essa `role` para informar tal função.
 <aside class="content__complementary" role="complementary">
 </aside>
 ````
-  
+
 #### !important
 
 Como qualquer propriedade, as roles podem ser alteradas via CSS. Você sempre devia usar classes, mas caso você tenha algum problema quanto a isso, também é possível usar assim.
@@ -145,7 +145,7 @@ Como qualquer propriedade, as roles podem ser alteradas via CSS. Você sempre de
 
 ````css
 a[role="logo"] {
-  margin: 2rem 
+  margin: 2rem
 }
 ````
 
@@ -158,8 +158,8 @@ Você consegue usar essas propriedades para informar se determinado elemento est
 #### aria-hidden
 
 ````html
-<a href="#" title="Acessar o Facebook"> 
-  Facebook 
+<a href="#" title="Acessar o Facebook">
+  Facebook
   <svg aria-hidden="true" class="icon">
     <use xlink:href="/assets/svg/icons.svg#facebook"></use>
   </svg>
@@ -203,7 +203,7 @@ Mas tenha em mente que o assunto é **extremamente** extenso e existem milhares 
 
 Portanto, vou deixar alguns links que costumo acessar quando tenho dúvidas ou quero procurar alguma propriedade.
 
-- [W3C - Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/)
+- [W3C - Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1)
 - [W3C - RoleAttribute](https://www.w3.org/WAI/PF/HTML/wiki/RoleAttribute)
-- [Notes on Using ARIA in HTML](http://w3c.github.io/aria-in-html/)
+- [Notes on Using ARIA in HTML](http://w3c.github.io/aria-in-html)
 - [MDN - ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)

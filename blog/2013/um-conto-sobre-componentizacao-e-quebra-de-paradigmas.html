@@ -22,7 +22,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 <p>Portanto é extremamente necessário debater as idéias para chegar em um processo que fique bom para todos. Todas as áreas querem a mesma coisa: entregar projetos cada vez melhores. Uma troca de idéias para deixar as coisas alinhadas é muito importante para garantir uma boa entrega.</p>
 <p>Trabalho com pessoas muito competentes e inovadoras do meu lado, então as coisas fluiram naturalmente.</p>
 <h2>A criação de um Framework</h2><p>A estrutura HTML/CSS/JS dos componentes geralmente seguem linhas de código parecidas, mesmo quando são visualmente muito diferentes de um projeto para outro, então a criação de um Framework otimizaria muito o trabalho.</p>
-<p>Após alguns meses e bastante teste, cheguei em um modelo estrutural e organizacional que considero o ideal por enquanto, podem ver nesse artigo: <a href="../sobre-organizacao-de-componentes-com-pre-processadores/">Sobre organização de componentes com pré-processadores</a></p>
+<p>Após alguns meses e bastante teste, cheguei em um modelo estrutural e organizacional que considero o ideal por enquanto, podem ver nesse artigo: <a href="https://www.felipefialho.com/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores">Sobre organização de componentes com pré-processadores</a></p>
 <h3>Como trabalhamos atualmente</h3><p>É um resumo do resumo do processo que estamos seguindo (e que está sempre em estado &#39;beta&#39;)...</p>
 <ol>
 <li>Todos os envolvidos participam com o Diretor de Arte no desenvolvimento dos Wireframes.</li>
@@ -35,14 +35,14 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 <li>Faço validações com o Diretor de Arte e com o Back-End após cada página desenvolvida.</li>
 <li>Nas etapas mais avançadas do projeto, o programador Back-End já consegue sozinho criar páginas com os componentes necessários sem precisar alterar nada no HTML/CSS.</li>
 </ol>
-<h2>Atomic Design</h2><p>Esse ano descobrimos que o <a href="https://twitter.com/brad_frost">Brad Frost</a> escreveu sobre algo que chamou de <a href="http://bradfrostweb.com/blog/post/atomic-web-design/">Atomic Design</a>, que tem uma idéia muito parecida com a que estavamos usando, e ela vai ainda mais a fundo, trabalhando com:</p>
+<h2>Atomic Design</h2><p>Esse ano descobrimos que o <a href="https://twitter.com/brad_frost">Brad Frost</a> escreveu sobre algo que chamou de <a href="http://bradfrostweb.com/blog/post/atomic-web-design">Atomic Design</a>, que tem uma idéia muito parecida com a que estavamos usando, e ela vai ainda mais a fundo, trabalhando com:</p>
 <ul>
 <li><strong>Átomos</strong>: Elementos mínimos</li>
 <li><strong>Moléculas</strong>: Junção desses elementos</li>
 <li><strong>Organismos</strong>: Agrupamento dessas móleculas</li>
 </ul>
-<p>Existem dois ótimos artigos em português, um do <a href="http://arquiteturadeinformacao.com/2013/06/16/atomic-design-redesenhando-os-entregaveis-de-designers-e-desenvolvedores/">Fabricio Teixeira</a> e outro da <a href="http://tableless.com.br/o-que-e-design-atomic/#.UfLPotK1zIg">Dani Guerrato</a>. Recomendo a leitura.</p>
-<h2>Dicas para trabalhar os componentes</h2><h3>OOCSS</h3><p><strong>OOCSS</strong> (Object Oriented CSS) casa perfeitamente com a idéia de componentes, você passa a criar classes baseadas na função, e pode reutilizar em vários lugares. Tem um post muito bacana do <a href="http://wbruno.com.br/css/object-oriented-css-a-teoria-das-classes-reutilizaveis-oocss/">William Bruno falando sobre isso</a>.</p>
+<p>Existem dois ótimos artigos em português, um do <a href="http://arquiteturadeinformacao.com/2013/06/16/atomic-design-redesenhando-os-entregaveis-de-designers-e-desenvolvedores">Fabricio Teixeira</a> e outro da <a href="http://tableless.com.br/o-que-e-design-atomic/#.UfLPotK1zIg">Dani Guerrato</a>. Recomendo a leitura.</p>
+<h2>Dicas para trabalhar os componentes</h2><h3>OOCSS</h3><p><strong>OOCSS</strong> (Object Oriented CSS) casa perfeitamente com a idéia de componentes, você passa a criar classes baseadas na função, e pode reutilizar em vários lugares. Tem um post muito bacana do <a href="http://wbruno.com.br/css/object-oriented-css-a-teoria-das-classes-reutilizaveis-oocss">William Bruno falando sobre isso</a>.</p>
 <p>Mas CUIDADO, é preciso usar essa técnica com prudencia, algo como <code>&quot;box full side&quot;</code> faz sentido, mas <code>&quot;box big float-left font18 red border&quot;</code> engessa o código.</p>
 <h3>Pense na manutenção (sem esquecer da performance!)</h3><p>Performance é fundamental, mas não se esqueça que um código que não tem foco em manutenção e escalabilidade pode gerar gambiarras que automaticamente vão interferir na performance.</p>
 <p>Então, pense sempre um passo a frente, especialmente em grandes projetos.</p>

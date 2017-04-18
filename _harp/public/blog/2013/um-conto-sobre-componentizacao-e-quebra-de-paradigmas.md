@@ -37,7 +37,7 @@ Trabalho com pessoas muito competentes e inovadoras do meu lado, então as coisa
 
 A estrutura HTML/CSS/JS dos componentes geralmente seguem linhas de código parecidas, mesmo quando são visualmente muito diferentes de um projeto para outro, então a criação de um Framework otimizaria muito o trabalho.
 
-Após alguns meses e bastante teste, cheguei em um modelo estrutural e organizacional que considero o ideal por enquanto, podem ver nesse artigo: [Sobre organização de componentes com pré-processadores](../sobre-organizacao-de-componentes-com-pre-processadores/)
+Após alguns meses e bastante teste, cheguei em um modelo estrutural e organizacional que considero o ideal por enquanto, podem ver nesse artigo: [Sobre organização de componentes com pré-processadores](https://www.felipefialho.com/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores)
 
 ### Como trabalhamos atualmente
 
@@ -55,19 +55,19 @@ Após alguns meses e bastante teste, cheguei em um modelo estrutural e organizac
 
 ## Atomic Design
 
-Esse ano descobrimos que o [Brad Frost](https://twitter.com/brad_frost) escreveu sobre algo que chamou de [Atomic Design](http://bradfrostweb.com/blog/post/atomic-web-design/), que tem uma idéia muito parecida com a que estavamos usando, e ela vai ainda mais a fundo, trabalhando com:
+Esse ano descobrimos que o [Brad Frost](https://twitter.com/brad_frost) escreveu sobre algo que chamou de [Atomic Design](http://bradfrostweb.com/blog/post/atomic-web-design), que tem uma idéia muito parecida com a que estavamos usando, e ela vai ainda mais a fundo, trabalhando com:
 
 - **Átomos**: Elementos mínimos
 - **Moléculas**: Junção desses elementos
 - **Organismos**: Agrupamento dessas móleculas
 
-Existem dois ótimos artigos em português, um do [Fabricio Teixeira](http://arquiteturadeinformacao.com/2013/06/16/atomic-design-redesenhando-os-entregaveis-de-designers-e-desenvolvedores/) e outro da [Dani Guerrato](http://tableless.com.br/o-que-e-design-atomic/#.UfLPotK1zIg). Recomendo a leitura.
+Existem dois ótimos artigos em português, um do [Fabricio Teixeira](http://arquiteturadeinformacao.com/2013/06/16/atomic-design-redesenhando-os-entregaveis-de-designers-e-desenvolvedores) e outro da [Dani Guerrato](http://tableless.com.br/o-que-e-design-atomic/#.UfLPotK1zIg). Recomendo a leitura.
 
 ## Dicas para trabalhar os componentes
 
 ### OOCSS
 
-**OOCSS** (Object Oriented CSS) casa perfeitamente com a idéia de componentes, você passa a criar classes baseadas na função, e pode reutilizar em vários lugares. Tem um post muito bacana do [William Bruno falando sobre isso](http://wbruno.com.br/css/object-oriented-css-a-teoria-das-classes-reutilizaveis-oocss/).
+**OOCSS** (Object Oriented CSS) casa perfeitamente com a idéia de componentes, você passa a criar classes baseadas na função, e pode reutilizar em vários lugares. Tem um post muito bacana do [William Bruno falando sobre isso](http://wbruno.com.br/css/object-oriented-css-a-teoria-das-classes-reutilizaveis-oocss).
 
 Mas CUIDADO, é preciso usar essa técnica com prudencia, algo como `"box full side"` faz sentido, mas `"box big float-left font18 red border"` engessa o código.
 

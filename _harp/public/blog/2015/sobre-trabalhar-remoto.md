@@ -1,8 +1,8 @@
-Na verdade, no início do ano, ainda estava em processo de recuperação mental do super corrido final de 2014 e logo em seguida as energias foram focadas na [Conferência CSS Brasil](http://cssconfbrasil.com.br/).
+Na verdade, no início do ano, ainda estava em processo de recuperação mental do super corrido final de 2014 e logo em seguida as energias foram focadas na [Conferência CSS Brasil](http://cssconfbrasil.com.br).
 
 Estava pensando em escrever um texto técnico mas como também faz 6 meses que estou trabalhando remoto, e muitas pessoas tem curiosidade nesse sentido, achei que seria legal abordar esse tema.
 
-Como a maioria que acompanha o meu site ou redes sociais devem saber, atualmente estou trabalhando remotamente na [Filtro](http://2014.filtro.us/), inclusive falei um pouco disso no [post anterior](http://www.felipefialho.com/blog/2015/meu-dia-a-dia-como-dev-frontend/) mas vou ser um pouco mais abrangente agora.
+Como a maioria que acompanha o meu site ou redes sociais devem saber, atualmente estou trabalhando remotamente na [Filtro](http://2014.filtro.us), inclusive falei um pouco disso no [post anterior](https://www.felipefialho.com/blog/2015/meu-dia-a-dia-como-dev-frontend) mas vou ser um pouco mais abrangente agora.
 
 ## Produtividade e organização
 
@@ -22,7 +22,7 @@ Na realidade, trabalhando remoto me sinto ainda mais obrigado em entregar o melh
 
 Apesar de teoricamente poder trabalhar de qualquer lugar, sendo necessário apenas o notebook e internet, o ideal é tentar desenvolver em um local que ofereça a melhor infraestrutura possível e trabalhar em outras condições apenas esporadicamente.
 
-Fora isso, assinei o [Spotify](https://www.spotify.com/), isso ajuda a manter minha concentração o dia todo.
+Fora isso, assinei o [Spotify](https://www.spotify.com), isso ajuda a manter minha concentração o dia todo.
 
 ## Horários
 
@@ -30,7 +30,7 @@ Não é porque não tem ninguém te supervionando diretamente que você vai dorm
 
 O ideal é ajustar sua rotina de acordo com as outras pessoas da sua equipe.
 
-Trabalho na [Filtro](http://2014.filtro.us/), que é uma agência de Nova Iorque. A diferença de horário não é grande com relação ao daqui. Então trabalho em horário comercial, entre 9h e 19h, dependendo da hora que comecei.
+Trabalho na [Filtro](http://2014.filtro.us), que é uma agência de Nova Iorque. A diferença de horário não é grande com relação ao daqui. Então trabalho em horário comercial, entre 9h e 19h, dependendo da hora que comecei.
 
 Mas por padrão, procuro sempre começar perto das 9h. Acordo um pouco mais cedo, ligo o notebook e vou tomar café, escovar os dentes, cuidar da minha Agnes, entre outras coisas que todos fazem pela manhã.
 
@@ -48,11 +48,11 @@ Sou muito comunicativo, então imaginei que essa seria a parte que menos me adap
 
 Claro que faz falta conversar com alguém na hora do almoço. Mas no restante do dia consigo manter o foco tranquilamente.
 
-Converso com outros desenvolvedores quase todo dia, estudo e leio artigos, isso mantém qualquer sinal de estagnação longe do meu caminho. E normalmente organizo o [Meetup CSS](http://www.meetup.com/pt/CSS-SP/), junto com o [Rapha Fabeni](https://twitter.com/raphaelfabeni) uma vez por mês.
+Converso com outros desenvolvedores quase todo dia, estudo e leio artigos, isso mantém qualquer sinal de estagnação longe do meu caminho. E normalmente organizo o [Meetup CSS](http://www.meetup.com/pt/CSS-SP), junto com o [Rapha Fabeni](https://twitter.com/raphaelfabeni) uma vez por mês.
 
 Como plus, acho que tenho mantido mais contato com meus amigos agora do que antes, já que tenho mais tempo para tomar uma cerveja de noite e estou mais descansado no fim de semana.
 
-Com o pessoal da na [Filtro](http://2014.filtro.us/) a interação é espetacular, mantemos contato o dia todo no Skype. A comunicação e organização é rápida e eficiente. Ter uma equipe ótima trabalhando junto é imprescindível.
+Com o pessoal da na [Filtro](http://2014.filtro.us) a interação é espetacular, mantemos contato o dia todo no Skype. A comunicação e organização é rápida e eficiente. Ter uma equipe ótima trabalhando junto é imprescindível.
 
 ## Finanças
 

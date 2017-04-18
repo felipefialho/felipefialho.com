@@ -2,7 +2,7 @@
 
 Quem conversa comigo sobre o assunto, sabe que sou totalmente favorável ao uso de classes e quase obcecado em defende-las. Existem algumas razões para isso.
 
-Depois do [último artigo](http://www.felipefialho.com/blog/2016/sobre-wai-aria-acessibilidade-e-semantica), algumas pessoas ficaram com dúvidas ou pediram para explicar essa frase:
+Depois do [último artigo](https://www.felipefialho.com/blog/2016/sobre-wai-aria-acessibilidade-e-semantica), algumas pessoas ficaram com dúvidas ou pediram para explicar essa frase:
 
 > [..] Como qualquer propriedade, as roles podem ser alteradas via CSS. Você sempre devia usar classes, mas caso você tenha algum problema quanto a isso [..]
 
@@ -52,7 +52,7 @@ Segundo porque é impossível prever o impacto exato. Temos milhões de disposit
 
 O que precisamos nos preocupar é em desenvolver o código **mais escalável possível**, e a performance torna-se uma consequência.
 
-Uso [Atomic CSS](http://patternlab.io/), então aproveito da cascata do CSS para reaproveitar ao máximo e modificar componentes quando necessário.
+Uso [Atomic CSS](http://patternlab.io), então aproveito da cascata do CSS para reaproveitar ao máximo e modificar componentes quando necessário.
 
 Por performance, essa não é a melhor escolha, já que alguns elementos são aninhados (dica: respeite sempre o limite de três níveis!)
 
@@ -60,8 +60,8 @@ Mas por escalabilidade, considero essa a melhor forma do projeto crescer sem gam
 
 ### Referencias
 
-- [CSS performance revisited: selectors, bloat and expensive styles](https://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/)
-- [Writing efficient CSS selectors](http://csswizardry.com/2011/09/writing-efficient-css-selectors/)
+- [CSS performance revisited: selectors, bloat and expensive styles](https://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles)
+- [Writing efficient CSS selectors](http://csswizardry.com/2011/09/writing-efficient-css-selectors)
 - [MDN - Writing efficient CSS](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS)
 
 ## Evitando conflito na estilização de elementos
@@ -74,7 +74,7 @@ Quero deixar claro que vou utilizar [uma nomenclatura que estou usando nos meus 
 
 ### Exemplo
 
-Observem esse componente retirado do site do [Airbnb](https://www.airbnb.com.br/).
+Observem esse componente retirado do site do [Airbnb](https://www.airbnb.com.br).
 
 ![Exemplo Airbnb](/assets/img/blog/exemplo-airbnb.jpg)
 
@@ -90,29 +90,29 @@ Vamos imaginar que o nome do organismo é `.place` e o nome da molécula é `.ca
 
     <a class="card" href="#">
       <div class="card__main">
-        <img src="" alt=""> 
+        <img src="" alt="">
         <h2>Hospedado por Luciana</h2>
         <p>Rio de Janeiro</p>
       </div>
-      <p class="price">R$395</p> 
+      <p class="price">R$395</p>
     </a>
 
     <a class="card" href="#">
       <div class="card__main">
-        <img src="" alt=""> 
+        <img src="" alt="">
         <h2>Hospedado por Igor</h2>
         <p>Florianópolis</p>
       </div>
-      <p class="price">R$200</p> 
+      <p class="price">R$200</p>
     </a>
 
     <a class="card" href="#">
       <div class="card__main">
-        <img src="" alt=""> 
+        <img src="" alt="">
         <h2>Hospedado por Loise</h2>
         <p>Florianópolis</p>
       </div>
-      <p class="price">R$551</p> 
+      <p class="price">R$551</p>
     </a>
   </div>
 </section>
@@ -123,7 +123,7 @@ Vamos imaginar que o nome do organismo é `.place` e o nome da molécula é `.ca
 ````stylus
 // A molécula
 .card
-  h2 
+  h2
   ...
 
   p
@@ -132,16 +132,16 @@ Vamos imaginar que o nome do organismo é `.place` e o nome da molécula é `.ca
   .price
   ...
 
-  img 
+  img
   ...
 
 
 // O organismo
 .place
-  h1 
+  h1
   ...
 
-  p 
+  p
   ...
 ````
 
@@ -157,26 +157,26 @@ Para evitar que as moléculas herdassem o estilo dos organismos, tentei dar esti
 
 ````stylus
 // A mólecula
-.card 
-  > h2 
+.card
+  > h2
   ...
 
   > p
   ...
 
-  > img 
+  > img
   ...
 
   > .price
   ...
 
 
-// O organismo 
+// O organismo
 .place
-  > h1 
+  > h1
   ...
 
-  > p 
+  > p
   ...
 ````
 
@@ -192,7 +192,7 @@ Lembrando que uso Stylus...
 
 ````stylus
 // A molécula
-.card 
+.card
   // Textos
   &--title
 
@@ -204,15 +204,15 @@ Lembrando que uso Stylus...
   ...
 
   &--media
-  ... 
+  ...
 
-  // Etc 
+  // Etc
   &__main
   ...
 
 
-// O organismo 
-.place 
+// O organismo
+.place
   // Textos
   &--title
   ...
@@ -220,7 +220,7 @@ Lembrando que uso Stylus...
   &--text
   ...
 
-  // Etc 
+  // Etc
   &__container
   ...
 ````
@@ -240,7 +240,7 @@ E no HTML fica assim.
         <h2 class="card--title">Hospedado por Luciana</h2>
         <p class="card-text">Rio de Janeiro</p>
       </div>
-      <p class="card--price">R$395</p> 
+      <p class="card--price">R$395</p>
     </a>
 
     <a class="card" href="#">
@@ -249,16 +249,16 @@ E no HTML fica assim.
         <h2 class="card--title">Hospedado por Igor</h2>
         <p class="card-text">Florianópolis</p>
       </div>
-      <p class="card--price">R$200</p> 
+      <p class="card--price">R$200</p>
     </a>
 
     <a class="card" href="#">
       <div class="card__main">
-        <img class="card--media" src="" alt=""> 
+        <img class="card--media" src="" alt="">
         <h2 class="card--title">Hospedado por Loise</h2>
         <p class="card-text">Florianópolis</p>
       </div>
-      <p class="card--price">R$551</p> 
+      <p class="card--price">R$551</p>
     </a>
   </div>
 </section>
@@ -298,24 +298,24 @@ Textos de conteúdo ou de blogs, gerados por um CMS por exemplo, de maneira nenh
 Nesse caso, seguindo a lógica do Atomic CSS, teríamos uma molécula chamada `.content`, com as configurações de tipografia.
 
 ````stylus
-.content 
-  > h1 
+.content
+  > h1
   ...
 
 
-  > h2 
+  > h2
   ...
 
 
-  > h3 
+  > h3
   ...
 
 
-  > h4 
+  > h4
   ...
 
 
-  > h5 
+  > h5
   ...
 
 
@@ -329,7 +329,7 @@ Dessa forma, é possível escrever o texto livremente, adicionar em qualquer lug
 
 Mesmo não sendo os campeões de performance, os _data-attributes_ podem ser importantes aliados na construção de um código mais escalável.
 
-Em 2014, escrevi um artigo, chamado [Sobre Data Atributes e JavaScript](http://www.felipefialho.com/blog/2014/sobre-data-atributes-e-javascript), em que mostrava as vantagens usar _data-atributes_ e não classes ou IDs para manipulações no JavaScript.
+Em 2014, escrevi um artigo, chamado [Sobre Data Atributes e JavaScript](https://www.felipefialho.com/blog/2014/sobre-data-atributes-e-javascript), em que mostrava as vantagens usar _data-atributes_ e não classes ou IDs para manipulações no JavaScript.
 
 E esse conceito está cada vez mais consolidado.
 
@@ -341,12 +341,12 @@ E são essenciais para a construção de um código mais escalável. Não tenha 
 
 Existem diversas arquiteturas famosas para ajudar nas suas escolhas, como:
 
-- [OOCSS](http://oocss.org/)
-- [SMACSS](https://smacss.com/)
-- [BEM](http://getbem.com/introduction/)
-- [DRY CSS](http://vanseodesign.com/css/dry-principles/)
+- [OOCSS](http://oocss.org)
+- [SMACSS](https://smacss.com)
+- [BEM](http://getbem.com/introduction)
+- [DRY CSS](http://vanseodesign.com/css/dry-principles)
 
-O [Jean Carlo Emer](https://twitter.com/jcemer) escreveu o artigo [OOCSS, SMACSS, BEM, DRY CSS: afinal, como escrever CSS?](http://tableless.com.br/oocss-smacss-bem-dry-css-afinal-como-escrever-css/) em meados de 2014 e continua sendo uma ótima introdução desses conceitos.
+O [Jean Carlo Emer](https://twitter.com/jcemer) escreveu o artigo [OOCSS, SMACSS, BEM, DRY CSS: afinal, como escrever CSS?](http://tableless.com.br/oocss-smacss-bem-dry-css-afinal-como-escrever-css) em meados de 2014 e continua sendo uma ótima introdução desses conceitos.
 
 É uma sopa de letrinhas e cada uma delas trazem vantagens e desvantagens. O ideal é estuda-las e abstrair os conceitos que mais se adequam ao seu workflow.
 

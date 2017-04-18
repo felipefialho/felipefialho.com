@@ -1,8 +1,8 @@
 Já escrevi alguns artigos que mostram um pouco da metodologia que eu estava utilizando, são eles:
 
-- [Sobre organização de componentes com pré-processadores](http://www.felipefialho.com/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores/)
-- [Um conto sobre componentização e quebra de paradigmas](http://www.felipefialho.com/blog/2013/um-conto-sobre-componentizacao-e-quebra-de-paradigmas/)
-- [Utilizando o Bootstrap de forma consistente](http://www.felipefialho.com/blog/2014/utilizando-o-bootstrap-de-forma-consistente/)
+- [Sobre organização de componentes com pré-processadores](https://www.felipefialho.com/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores)
+- [Um conto sobre componentização e quebra de paradigmas](https://www.felipefialho.com/blog/2013/um-conto-sobre-componentizacao-e-quebra-de-paradigmas)
+- [Utilizando o Bootstrap de forma consistente](https://www.felipefialho.com/blog/2014/utilizando-o-bootstrap-de-forma-consistente)
 
 O fluxo de trabalho atual funcionou muito bem nos últimos 3 semestres (1 ano e meio), durante esse período fiz diversas modificações pontuais. Mas através da experiência adquirida nesse período, constatei possibilidade de melhorias profundas que poderiam trazer algumas vantagens no dia-a-dia:
 
@@ -118,7 +118,7 @@ E o segredo para essa integração funcionar é colocar o [Watch](https://github
 
 ## O polêmico Boostrap
 
-O Bootstrap está cada vez mais mamilos e no centro de discussões. Continuo achando que se [utilizado de forma consciente](http://www.felipefialho.com/blog/2014/utilizando-o-bootstrap-de-forma-consistente/), pode ajudar bastante, especialmente no início do desenvolvimento.
+O Bootstrap está cada vez mais mamilos e no centro de discussões. Continuo achando que se [utilizado de forma consciente](https://www.felipefialho.com/blog/2014/utilizando-o-bootstrap-de-forma-consistente), pode ajudar bastante, especialmente no início do desenvolvimento.
 
 Passei a deixar nos projetos apenas o que utilizo de fato:
 
@@ -138,8 +138,8 @@ Atualmente essa é a participação do Boostrap nos meus projetos.
 
 ## Organização do CSS
 
-Me aproximei de vez do [Atomic CSS](http://patternlab.io/). Não sei se estou usando a metodologia da forma que ela foi pensada, mas me senti muito confortável com a organização atual.
+Me aproximei de vez do [Atomic CSS](http://patternlab.io). Não sei se estou usando a metodologia da forma que ela foi pensada, mas me senti muito confortável com a organização atual.
 
-E é disso que vou falar na ['Parte II' desse artigo](http://www.felipefialho.com/blog/2014/falando-em-organizacao-css). Vou desconstruir a organização e metodologia do CSS que estou utilizando.
+E é disso que vou falar na ['Parte II' desse artigo](https://www.felipefialho.com/blog/2014/falando-em-organizacao-css). Vou desconstruir a organização e metodologia do CSS que estou utilizando.
 
 ;)

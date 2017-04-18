@@ -1,4 +1,4 @@
-Dando continuidade a série [sobre minha organização e fluxo de trabalho atual](http://www.felipefialho.com/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores/), vou contar um pouco sobre como tenho trabalhado o CSS.
+Dando continuidade a série [sobre minha organização e fluxo de trabalho atual](https://www.felipefialho.com/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores), vou contar um pouco sobre como tenho trabalhado o CSS.
 
 ## "CSS é muito fácil"... Será?
 
@@ -14,11 +14,11 @@ Um CSS sem planejamento e mal construido pode arruinar um projeto, que a longo p
 
 Junto com a necessidade de organizar o CSS, surgiram vários termos e metodologias que visam melhorar nosso controle sobre o código.
 
-No último [Meetup CSS](http://www.meetup.com/CSS-SP/) o [Rafael Rinaldi](https://twitter.com/rafaelrinaldi) deu uma verdadeira aula sobre diferentes tipos de Arquitetura CSS, vocês podem [assistir o vídeo](https://www.youtube.com/watch?v=q8pqDytjlVc) e dar uma [estudada nos slides](https://speakerdeck.com/rafaelrinaldi/arquitetura-css).
+No último [Meetup CSS](http://www.meetup.com/CSS-SP) o [Rafael Rinaldi](https://twitter.com/rafaelrinaldi) deu uma verdadeira aula sobre diferentes tipos de Arquitetura CSS, vocês podem [assistir o vídeo](https://www.youtube.com/watch?v=q8pqDytjlVc) e dar uma [estudada nos slides](https://speakerdeck.com/rafaelrinaldi/arquitetura-css).
 
-Dentro dessas metodologias, a que mais me agradou foi o conceito de [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/), proposta pelo Brad Frost, que deu origem ao [Pattern Lab](http://patternlab.io/).
+Dentro dessas metodologias, a que mais me agradou foi o conceito de [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design), proposta pelo Brad Frost, que deu origem ao [Pattern Lab](http://patternlab.io).
 
-Essa metodologia me agradou de cara, e ia de encontro com tudo que pensava sobre o desenvolvimento de CSS, em 2013 eu já estava [usando um conceito parecido](http://www.felipefialho.com/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores/) e incorporei várias idéias no meu workflow.
+Essa metodologia me agradou de cara, e ia de encontro com tudo que pensava sobre o desenvolvimento de CSS, em 2013 eu já estava [usando um conceito parecido](https://www.felipefialho.com/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores) e incorporei várias idéias no meu workflow.
 
 Mas foi apenas no segundo semestre de 2014 que me aproximei de vez do Atomic Design e cheguei a uma estrutura muito parecida com a que foi proposta inicialmente.
 
@@ -310,7 +310,7 @@ Modifica os átomos, moléculas e organismos para a criação de uma página esp
 
 ### Um plus sobre 'Media Queries'
 
-No começo do ano eu escrevi um post sobre [CSS Modular com Mobile First](http://www.felipefialho.com/blog/2014/css-modular-com-mobile-first/) e agora essa idéia fica ainda mais aplicável.
+No começo do ano eu escrevi um post sobre [CSS Modular com Mobile First](https://www.felipefialho.com/blog/2014/css-modular-com-mobile-first) e agora essa idéia fica ainda mais aplicável.
 
 Não precisa mais ter um arquivo específico para ajustar media-queries. Nessa organização de CSS, cada elemento pode ter sua própria customização aplicada seguindo a idéia do Mobile First.
 

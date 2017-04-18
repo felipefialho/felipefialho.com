@@ -2,15 +2,15 @@
 
 Tenho certeza absoluta que o [PostCSS](https://github.com/postcss/postcss) vai estar cada vez mais presente no nosso dia a dia, já que é absolutamente fantástico e pode ser usado de várias formas, inclusive junto com o pré-processador da sua preferencia, ou seja, a escalabilidade é total.
 
-Muitas ferramentas já estão utilizando o PostCSS, um exemplo é o grid-system [Lost](https://github.com/corysimmons/lost), desenvolvido pelo mesmo criador do super conhecido [Jeet](http://jeet.gs/).
+Muitas ferramentas já estão utilizando o PostCSS, um exemplo é o grid-system [Lost](https://github.com/corysimmons/lost), desenvolvido pelo mesmo criador do super conhecido [Jeet](http://jeet.gs).
 
-Porém o foco desse artigo é o [Rucksack](http://simplaio.github.io/rucksack/).
+Porém o foco desse artigo é o [Rucksack](http://simplaio.github.io/rucksack).
 
 ## O que é?
 
 Quem me mostrou essa ferramenta foi o [Milson Junior](https://github.com/mjnr) e desde então fiquei fascinado com algumas coisas que ela oferece.
 
-[Rucksack](http://simplaio.github.io/rucksack/) é um pacote de funcionalidades que pode ser usado em qualquer pré-processador, com o PostCSS ou até mesmo ser injetado diretamente no Stylus.
+[Rucksack](http://simplaio.github.io/rucksack) é um pacote de funcionalidades que pode ser usado em qualquer pré-processador, com o PostCSS ou até mesmo ser injetado diretamente no Stylus.
 
 Um detalhe importante, é que seu CSS gerado não terá **nenhum** código extra.
 
@@ -80,7 +80,7 @@ foo {
 
 #### Autoprefixer
 
-Faz a mágica de adicionar prefixos automaticamente para você, e sempre se baseando na tabela mais atualizada do [CanIUSe](http://caniuse.com/).
+Faz a mágica de adicionar prefixos automaticamente para você, e sempre se baseando na tabela mais atualizada do [CanIUSe](http://caniuse.com).
 
 Por exemplo:
 

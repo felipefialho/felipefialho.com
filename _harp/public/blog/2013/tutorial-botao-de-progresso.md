@@ -1,6 +1,6 @@
 Continuo trabalhando em diversos projetos paralelos, em razão disso estou um pouco desaparecido das comunidades que participo.
 
-Mas durante esses projetos, estou pensando e aplicando algumas soluções interessantes, uma delas foi a [caixa de compartilhar](../tutorial-caixa-de-compartilhar-em-puro-css/), agora vou mostrar um "botão de progresso".
+Mas durante esses projetos, estou pensando e aplicando algumas soluções interessantes, uma delas foi a [caixa de compartilhar](https://www.felipefialho.com/blog/2013/tutorial-caixa-de-compartilhar-em-puro-css), agora vou mostrar um "botão de progresso".
 
 ## Sobre
 

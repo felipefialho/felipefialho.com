@@ -69,7 +69,7 @@ Existem milhares de materiais para estudar, muitos grupos para participar, cente
 
 Não tem desculpas para ficar parado esperando oportunidades cairem do céu. Obviamente, projetos open-source e estudos por si só não te darão vivencia profissional, mas podem ser decisivos para você estar mais preparado quando a chance chegar… e de qualquer forma, caso queira ser um alguém diferenciado no que faz, terá que continuar estudando a vida toda :)
 
-Mas como sei que essa questão de **Teoria x Prática** é uma inquietação comum para desenvolvedores em início de carreira, escrevi um artigo chamado [Aproximando seus estudos de cenários reais](http://www.felipefialho.com/blog/2015/aproximando-seus-estudos-de-cenarios-reais), que tem como objetivo listar alguns tópicos comuns e possíveis soluções. Vale a pena dar uma olhada ;)
+Mas como sei que essa questão de **Teoria x Prática** é uma inquietação comum para desenvolvedores em início de carreira, escrevi um artigo chamado [Aproximando seus estudos de cenários reais](https://www.felipefialho.com/blog/2015/aproximando-seus-estudos-de-cenarios-reais), que tem como objetivo listar alguns tópicos comuns e possíveis soluções. Vale a pena dar uma olhada ;)
 
 ## Finalizando…
 

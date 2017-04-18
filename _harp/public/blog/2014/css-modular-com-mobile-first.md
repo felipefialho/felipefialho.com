@@ -1,4 +1,4 @@
-A importância de um CSS modularizado e o Atomic Design foi muito difundido nos últimos tempos, eu mesmo já escrevi um [artigo sobre o assunto](../../2013/um-conto-sobre-componentizacao-e-quebra-de-paradigmas/). Mas algo ainda me incomodava ao aplicar First Mobile em conjunto com CSS modular... os Media Queries.
+A importância de um CSS modularizado e o Atomic Design foi muito difundido nos últimos tempos, eu mesmo já escrevi um [artigo sobre o assunto](https://www.felipefialho.com/blog/2013/um-conto-sobre-componentizacao-e-quebra-de-paradigmas). Mas algo ainda me incomodava ao aplicar First Mobile em conjunto com CSS modular... os Media Queries.
 
 ## O uso tradicional
 
@@ -20,7 +20,7 @@ Mês passado iniciei um novo projeto, e adicionar Media Queries no final do CSS 
 
 A explicação é simples. Imaginem um componente, é de se esperar que toda a funcionalidade atrelada a ele esteja dentro do seu próprio 'include' (para quem usa pré-processadores). Mas a partir do momento que era necessário "ajustar" o funcionamento dele para outras resoluções no 'include' do media querie, as coisas ficavam esquisitas e eu me sentia desconfortável.
 
-Lembrei então que o [Bootstrap 3](http://getbootstrap.com/) já estava trabalhando de uma maneira muito próxima da que eu considerava ideal, e fornecia com a ajuda de plugins, suporte para o IE8\. Então conheci o [Respond.js](https://github.com/scottjehl/Respond) e todos meus problemas com o IE8 se resolveram.
+Lembrei então que o [Bootstrap 3](http://getbootstrap.com) já estava trabalhando de uma maneira muito próxima da que eu considerava ideal, e fornecia com a ajuda de plugins, suporte para o IE8\. Então conheci o [Respond.js](https://github.com/scottjehl/Respond) e todos meus problemas com o IE8 se resolveram.
 
 Basta adicionar o seguinte código no `head` e como mágica Media Queries funcionarão perfeitamente no IE.
 
@@ -75,7 +75,7 @@ E além de tudo, os componentes vão ter todas as propriedades deles dentro do p
 
 ## Plus: Os imprescindíveis automatizadores
 
-E claro... nossos melhores amigos [Grunt](http://gruntjs.com/) ou [Gulp](http://gulpjs.com/) vão melhorar ainda mais esse processo.
+E claro... nossos melhores amigos [Grunt](http://gruntjs.com) ou [Gulp](http://gulpjs.com) vão melhorar ainda mais esse processo.
 
 Existe um pequeno problema quando usamos os Media Queries dessa maneira... código desnecessário. Vamos ter milhares de Media Queries repetidos espalhados pelo projeto.
 

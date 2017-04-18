@@ -91,7 +91,7 @@ Agora definimos que quando o `.form-control` irmão for `:valid` ou `:focus` ele
 
 ## Uso real
 
-Utilizei essa abordagem em um projeto recente, e vocês podem ver o [resultado aqui](http://trendi.com.br/contato/).
+Utilizei essa abordagem em um projeto recente, e vocês podem ver o [resultado aqui](http://trendi.com.br/contato).
 
 Mostrei apenas uma abordagem padrão de uso, partindo do mesmo conceito é possível criar vários tipos interação, use de acordo com a necessidade do projeto.
 
@@ -99,9 +99,9 @@ Mostrei apenas uma abordagem padrão de uso, partindo do mesmo conceito é poss�
 
 A seguir algumas referencias sobre o mesmo assunto / abordagem:
 
-- [http://www.pardot.com/faqs/best-practices/placeholders-and-labels/](http://www.pardot.com/faqs/best-practices/placeholders-and-labels/)
-- [http://css-tricks.com/float-labels-css/](http://css-tricks.com/float-labels-css/)
-- [http://bradfrostweb.com/blog/post/float-label-pattern/](http://bradfrostweb.com/blog/post/float-label-pattern/)
-- [http://mozmonkey.com/2013/12/good-ux-for-placeholders-as-field-labels/](http://mozmonkey.com/2013/12/good-ux-for-placeholders-as-field-labels/)
+- [http://www.pardot.com/faqs/best-practices/placeholders-and-labels/](http://www.pardot.com/faqs/best-practices/placeholders-and-labels)
+- [http://css-tricks.com/float-labels-css/](http://css-tricks.com/float-labels-css)
+- [http://bradfrostweb.com/blog/post/float-label-pattern/](http://bradfrostweb.com/blog/post/float-label-pattern)
+- [http://mozmonkey.com/2013/12/good-ux-for-placeholders-as-field-labels/](http://mozmonkey.com/2013/12/good-ux-for-placeholders-as-field-labels)
 
 Até mais!

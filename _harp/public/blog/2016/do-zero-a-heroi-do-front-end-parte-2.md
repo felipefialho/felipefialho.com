@@ -31,7 +31,7 @@ Depois, leia as seguintes sessões no MDN [JavaScript guide](https://developer.m
 
 Não se preocupe muito em memorizar a sintaxe, você sempre pode procurar isso. Em vez disso, concentre-se na compreensão de conceitos importantes como instanciação de variáveis, loops e funções. Se o material for muito denso, tudo bem. Você pode continuar mais depois. Quando colocar esses conceitos na prática, eles se tornarão muito mais claros.
 
-Para quebrar a monotonia da aprendizagem baseada em texto, confira o curso de [JavaScript da Codecademy](https://www.codecademy.com/learn/javascript). É prático e divertido. Além disso, se você tiver tempo, para cada conceito listado acima, leia o capítulo correspondente em [Eloquent JavaScript](http://eloquentjavascript.net/) para reforçar a sua aprendizagem. _Eloquent JavaScript_ é um livro online gratuito que todo desenvolvedor Front-End aspirante deve ler.
+Para quebrar a monotonia da aprendizagem baseada em texto, confira o curso de [JavaScript da Codecademy](https://www.codecademy.com/learn/javascript). É prático e divertido. Além disso, se você tiver tempo, para cada conceito listado acima, leia o capítulo correspondente em [Eloquent JavaScript](http://eloquentjavascript.net) para reforçar a sua aprendizagem. _Eloquent JavaScript_ é um livro online gratuito que todo desenvolvedor Front-End aspirante deve ler.
 
 ### Interatividade
 
@@ -39,7 +39,7 @@ Para quebrar a monotonia da aprendizagem baseada em texto, confira o curso de [J
 
 Agora que você tem um conhecimento básico de JavaScript, o próximo passo é para aplicá-lo à web. Para entender como o JavaScript interage com websites, você primeiro tem que entender sobre o [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)'.
 
-O DOM é uma estrutura representacional dos documentos HTML. É uma árvore estrutural composta de objeto que correspondem aos nós do HTML. Para ler mais sobre o DOM, leia [What is the DOM](https://css-tricks.com/dom/) do CSSTricks. Ele fornece uma explicação simples e direta sobre o assunto.
+O DOM é uma estrutura representacional dos documentos HTML. É uma árvore estrutural composta de objeto que correspondem aos nós do HTML. Para ler mais sobre o DOM, leia [What is the DOM](https://css-tricks.com/dom) do CSSTricks. Ele fornece uma explicação simples e direta sobre o assunto.
 
 ![Inspecionando o DOM](https://d262ilb51hltx0.cloudfront.net/max/800/1*o1lGaXpnKYgp2r9CFOI_9A.png)
 
@@ -65,7 +65,7 @@ Mais uma vez, concentre-se nos conceitos e não na sintaxe. Seja capaz de respon
 - Como adicionar _event listeners_?
 - Como você mudar propriedades do DOM?
 
-Para obter uma lista de interações comuns de JavaScript no DOM, Confira as [JavaScript Functions and Helpers](https://plainjs.com/javascript/) do PlainJS. Este site fornece exemplos de como fazer coisas como definir [estilos nos elementos HTML](https://plainjs.com/javascript/styles/set-and-get-css-styles-of-elements-53/) e adicionar [_event listeners_ no teclado](https://plainjs.com/javascript/events/getting-the-keycode-from-keyboard-events-17/). E se você quiser ir mais fundo, você pode ler a seção sobre o DOM no [Eloquent JavaScript](http://eloquentjavascript.net/13_dom.html).
+Para obter uma lista de interações comuns de JavaScript no DOM, Confira as [JavaScript Functions and Helpers](https://plainjs.com/javascript) do PlainJS. Este site fornece exemplos de como fazer coisas como definir [estilos nos elementos HTML](https://plainjs.com/javascript/styles/set-and-get-css-styles-of-elements-53) e adicionar [_event listeners_ no teclado](https://plainjs.com/javascript/events/getting-the-keycode-from-keyboard-events-17). E se você quiser ir mais fundo, você pode ler a seção sobre o DOM no [Eloquent JavaScript](http://eloquentjavascript.net/13_dom.html).
 
 ### Inspector
 
@@ -81,7 +81,7 @@ Neste ponto, você ainda não aprendeu muito sobre JavaScript. No entanto, a úl
 
 Experimento 1
 
-Para o experimento 1, vá até o [AirBnB](https://www.airbnb.com/), abra o _inspector tools_ do seu navegador e clique na [guia console](https://developer.chrome.com/devtools/docs/console). Aqui você pode executar o JavaScript na página. O que vamos fazer é nos divertir com a manipulação de alguns dos elementos na página. Veja se você consegue fazer todas as manipulações de DOM a seguir.
+Para o experimento 1, vá até o [AirBnB](https://www.airbnb.com), abra o _inspector tools_ do seu navegador e clique na [guia console](https://developer.chrome.com/devtools/docs/console). Aqui você pode executar o JavaScript na página. O que vamos fazer é nos divertir com a manipulação de alguns dos elementos na página. Veja se você consegue fazer todas as manipulações de DOM a seguir.
 
 ![Airbnb.com](https://d262ilb51hltx0.cloudfront.net/max/800/1*5L17hFKIMTsBFQOLCy8tCQ.png)
 
@@ -95,7 +95,7 @@ Eu escolhi o site do AirBnB porque os nomes de classe CSS são relativamente sim
 - Defina uma função chamada `doSomething` com um alerta de "Hello world" e em seguida execute
 - Selecione um parágrafo, adicione um _ event listener_ de clique nele e execute algo cada vez que o evento é clicado
 
-Se você ficar preso, use o guia [JavaScript Functions and Helpers](https://plainjs.com/javascript/) como referência. Eu baseei a maioria dessas tarefas fora dele, abaixo está um exemplo de como completar o primeiro bullet:
+Se você ficar preso, use o guia [JavaScript Functions and Helpers](https://plainjs.com/javascript) como referência. Eu baseei a maioria dessas tarefas fora dele, abaixo está um exemplo de como completar o primeiro bullet:
 
 ````
 var header = document.querySelector('.text-branding')
@@ -122,17 +122,17 @@ Agora que você sabe e teve um pouco de prática com JavaScript, vamos avançar 
 
 ## Linguagem
 
-Quando você fazer mais projetos com JavaScript, você encontrará alguns conceitos _higher level_. Esta é uma lista de alguns deles. Quando você tiver tempo, passe por todos. O [Eloquent JavaScript](http://eloquentjavascript.net/) também abrange muito deste material, caso você queira completar a sua aprendizagem.
+Quando você fazer mais projetos com JavaScript, você encontrará alguns conceitos _higher level_. Esta é uma lista de alguns deles. Quando você tiver tempo, passe por todos. O [Eloquent JavaScript](http://eloquentjavascript.net) também abrange muito deste material, caso você queira completar a sua aprendizagem.
 
 - [Prototypal inheritance](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
-- [Scoping](https://spin.atomicobject.com/2014/10/20/javascript-scope-closures/)
+- [Scoping](https://spin.atomicobject.com/2014/10/20/javascript-scope-closures)
 - [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 - [The event loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
 - [Event bubbling](http://javascript.info/tutorial/bubbling-and-capturing)
-- [Apply, call, and bind](http://javascriptissexy.com/javascript-apply-call-and-bind-methods-are-essential-for-javascript-professionals/)
+- [Apply, call, and bind](http://javascriptissexy.com/javascript-apply-call-and-bind-methods-are-essential-for-javascript-professionals)
 - [Callbacks and promises](https://www.quora.com/Whats-the-difference-between-a-promise-and-a-callback-in-JavaScript)
 - [Variable and function hoisting](http://adripofjavascript.com/blog/drips/variable-and-function-hoisting)
-- [Currying](http://www.sitepoint.com/currying-in-functional-javascript/)
+- [Currying](http://www.sitepoint.com/currying-in-functional-javascript)
 
 ### Imperativo vs. Declarativo
 
@@ -152,9 +152,9 @@ hero.appendChild(newChild)
 
 Este é um exemplo de programação imperativa em que nós consultamos manualmente um elemento e guardamos o estado dele no DOM. Em outras palavras, estamos focando em _como_ conseguir alguma coisa. O maior problema com este código é que ele é frágil. Se alguém mudar o nome da classe no HTML de `hero` para `villain`, o _event listener_ não va funcionar mais, já que não vai existir a classe `hero` no DOM.
 
-A programação declarativa resolve esse problema. Em vez de selecionar elementos, você deixa isso com o Framework ou a Biblioteca que você está usando. Esta função permite que você se concentre sobre _o que_, em vez do _como_. Para ler mais, confira [The State Of JavaScript — A Shift From Imperative To Declarative](http://www.tysoncadenhead.com/blog/the-state-of-javascript-a-shift-from-imperative-to-declarative#.Vz0WEZMrIUE) e [Three D’s of Web Development #1: Declarative vs. Imperative](http://developer.telerik.com/featured/three-ds-of-web-development-1-declarative-vs-imperative/).
+A programação declarativa resolve esse problema. Em vez de selecionar elementos, você deixa isso com o Framework ou a Biblioteca que você está usando. Esta função permite que você se concentre sobre _o que_, em vez do _como_. Para ler mais, confira [The State Of JavaScript — A Shift From Imperative To Declarative](http://www.tysoncadenhead.com/blog/the-state-of-javascript-a-shift-from-imperative-to-declarative#.Vz0WEZMrIUE) e [Three D’s of Web Development #1: Declarative vs. Imperative](http://developer.telerik.com/featured/three-ds-of-web-development-1-declarative-vs-imperative).
 
-Este guia ensina primeiro a abordagem imperativa antes de introduzir a abordagem declarativa com frameworks como [Angular](https://angular.io/) e bibliotecas como [React](https://facebook.github.io/react/). Eu recomendo o aprendizado nesta ordem porque ele permite que você veja o problema que a abordagem declarativa resolve.
+Este guia ensina primeiro a abordagem imperativa antes de introduzir a abordagem declarativa com frameworks como [Angular](https://angular.io) e bibliotecas como [React](https://facebook.github.io/react). Eu recomendo o aprendizado nesta ordem porque ele permite que você veja o problema que a abordagem declarativa resolve.
 
 ### Ajax
 
@@ -164,7 +164,7 @@ Ao longo destes artigos e tutoriais, você provavelmente viu o termo [Ajax](http
 
 Por exemplo, quando você enviar um formulário em um site, ele coleta sua entrada e faz uma solicitação HTTP que envia dados para um servidor. Quando você postar um tweet no Twitter, seu cliente do Twitter faz uma solicitação HTTP para o servidor da API do Twitter e atualiza a página com a resposta do servidor.
 
-Para leitura sobre Ajax veja o [What is Ajax](http://www.vandelaydesign.com/what-is-ajax-webdev/). Se você ainda não entendeu totalmente o conceito, dê uma olhada no [Explain it like i’m 5, what is Ajax](https://www.reddit.com/r/explainlikeimfive/comments/19gvn9/explain_it_like_im_5_what_is_ajax/). Se ainda não for suficiente, você pode ler o [Eloquent JavaScript’s chapter on HTTP](http://eloquentjavascript.net/17_http.html).
+Para leitura sobre Ajax veja o [What is Ajax](http://www.vandelaydesign.com/what-is-ajax-webdev). Se você ainda não entendeu totalmente o conceito, dê uma olhada no [Explain it like i’m 5, what is Ajax](https://www.reddit.com/r/explainlikeimfive/comments/19gvn9/explain_it_like_im_5_what_is_ajax). Se ainda não for suficiente, você pode ler o [Eloquent JavaScript’s chapter on HTTP](http://eloquentjavascript.net/17_http.html).
 
 Hoje, o padrão de navegador para fazer solicitações de HTTP é o [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API). Você pode ler mais sobre o _Fetch_ neste artigo do [Dan Walsh](https://davidwalsh.name/fetch). Ele abrange como o _Fetch_ funciona e como usá-lo. Você também pode encontrar um [polyfill](http://stackoverflow.com/questions/7087331/what-is-the-meaning-of-polyfills-in-html5) do _Fetch_ com a documentação [aqui](https://github.com/github/fetch).
 
@@ -172,13 +172,13 @@ Hoje, o padrão de navegador para fazer solicitações de HTTP é o [Fetch](http
 
 Até agora, você tem feito manipulações de DOM usando apenas JavaScript. Porém existem várias bibliotecas de manipulação do DOM que fornecem APIs para simplificar o código que você escreve.
 
-Uma das bibliotecas mais populares de manipulação do DOM é o [jQuery](https://jquery.com/). Tenha em mente que o jQuery é uma biblioteca imperativa. Foi escrita antes de os sistemas Front-End se tornarem tão complexos como são hoje. Atualmente, o gerenciamento de interfaces de usuário complexas são com frameworks declarativos, usando bibliotecas como Angular e React. No entanto, eu ainda recomendo que você aprenda jQuery porque você provavelmente o encontrará muitas vezes durante sua carreira como Front-Ender.
+Uma das bibliotecas mais populares de manipulação do DOM é o [jQuery](https://jquery.com). Tenha em mente que o jQuery é uma biblioteca imperativa. Foi escrita antes de os sistemas Front-End se tornarem tão complexos como são hoje. Atualmente, o gerenciamento de interfaces de usuário complexas são com frameworks declarativos, usando bibliotecas como Angular e React. No entanto, eu ainda recomendo que você aprenda jQuery porque você provavelmente o encontrará muitas vezes durante sua carreira como Front-Ender.
 
 ![jQuery é uma abstração em cima de simples manipulação no DOM](https://d262ilb51hltx0.cloudfront.net/max/800/1*4XD5t8AEjQFWeTWEIdhQpw.gif)
 
-Para aprender o básico do jQuery, confira o [jQuery’s Learning Center](http://learn.jquery.com/). É um passo-a-passo de conceitos importantes como animações e manipulação de eventos. Se você quer fazer em tutorial interativo, você pode tentar o [Codecademy’s jQuery course](https://www.codecademy.com/learn/jquery).
+Para aprender o básico do jQuery, confira o [jQuery’s Learning Center](http://learn.jquery.com). É um passo-a-passo de conceitos importantes como animações e manipulação de eventos. Se você quer fazer em tutorial interativo, você pode tentar o [Codecademy’s jQuery course](https://www.codecademy.com/learn/jquery).
 
-Tenha em mente, jQuery nem sempre é a solução para a manipulação imperativa do DOM. [PlainJS](https://plainjs.com/javascript/) e [You Might Not Need jQuery](http://youmightnotneedjquery.com/) são dois sites que mostram funções de JavaScript equivalentes a funções usadas com freqüência no jQuery.
+Tenha em mente, jQuery nem sempre é a solução para a manipulação imperativa do DOM. [PlainJS](https://plainjs.com/javascript) e [You Might Not Need jQuery](http://youmightnotneedjquery.com) são dois sites que mostram funções de JavaScript equivalentes a funções usadas com freqüência no jQuery.
 
 ### ES5 vs. ES6
 
@@ -186,7 +186,7 @@ Outro conceito importante para entender sobre JavaScript é o [ECMAScript](https
 
 ES6, também conhecido como ES2015, é o novo padrão que traz novas construções de linguagem como modelo [ constants](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const), [classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) e [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) para o JavaScript. É importante notar que ES6 traz novos recursos de linguagem, mas ainda definimos semanticamente os termos de ES5. Por exemplo, as classes no ES6 são meramente [_syntactical sugar_](https://en.wikipedia.org/wiki/Syntactic_sugar) sobre a [herança prototípica](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain) do JavaScript.
 
-É essencial saber tanto ES5 e ES6, já que você verá aplicativos que usam um ou outro. Uma boa introdução ao ES6 é o [ES5, ES6, ES2016, ES.Next: What’s going on with JavaScript versioning](http://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning/) e o [Getting Started with ES6 — The Next Version of JavaScript](http://weblogs.asp.net/dwahlin/getting-started-with-es6-%E2%80%93-the-next-version-of-javascript) do Dan Wahlin. Depois disso, você pode ver uma lista completa de alterações do ES5 para o ES6 no [ES6 Features](http://es6-features.org/#Constants). Se você quiser ainda mais, confira este [repositório no Github sobre recursos do ES6](https://github.com/lukehoban/es6features).
+É essencial saber tanto ES5 e ES6, já que você verá aplicativos que usam um ou outro. Uma boa introdução ao ES6 é o [ES5, ES6, ES2016, ES.Next: What’s going on with JavaScript versioning](http://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning) e o [Getting Started with ES6 — The Next Version of JavaScript](http://weblogs.asp.net/dwahlin/getting-started-with-es6-%E2%80%93-the-next-version-of-javascript) do Dan Wahlin. Depois disso, você pode ver uma lista completa de alterações do ES5 para o ES6 no [ES6 Features](http://es6-features.org/#Constants). Se você quiser ainda mais, confira este [repositório no Github sobre recursos do ES6](https://github.com/lukehoban/es6features).
 
 ## Mais prática
 
@@ -202,7 +202,7 @@ Durante o tutorial, concentre-se na compreensão de como fazer um site interativ
 
 ### Experimento 4
 
-O experimento 4 combina o que você aprendeu sobre HTML e CSS com seu curso introdutório em JavaScript. Para este experimento, você criará um relógio com seu próprio estilo e vai torná-lo interativo usando JavaScript. Antes de começar, eu recomendo a leitura do [Decoupling Your HTML, CSS, and JavaScript](http://philipwalton.com/articles/decoupling-html-css-and-javascript/) para aprender o básico da nomenclatura do CSS quando o JavaScript é jogado no projeto. Também preparei uma lista de _pens_ no CodePen para você usar como referência para este experimento. Para obter mais exemplos, busque [clock](http://codepen.io/search/pens?q=clock&limit=all&type=type-pens) no CodePen.
+O experimento 4 combina o que você aprendeu sobre HTML e CSS com seu curso introdutório em JavaScript. Para este experimento, você criará um relógio com seu próprio estilo e vai torná-lo interativo usando JavaScript. Antes de começar, eu recomendo a leitura do [Decoupling Your HTML, CSS, and JavaScript](http://philipwalton.com/articles/decoupling-html-css-and-javascript) para aprender o básico da nomenclatura do CSS quando o JavaScript é jogado no projeto. Também preparei uma lista de _pens_ no CodePen para você usar como referência para este experimento. Para obter mais exemplos, busque [clock](http://codepen.io/search/pens?q=clock&limit=all&type=type-pens) no CodePen.
 
 - [Flat Clock](http://codepen.io/stevenfabre/pen/Cyhjb)
 - [jQuery Wall Clock](http://codepen.io/mattlitzinger/pen/ruEyz)
@@ -221,16 +221,16 @@ Você pode usar jQuery, mas sinta-se livre para usar o JavaScript simples.
 
 Com você sabendo o básico de JavaScript, é hora de aprender sobre Frameworks JavaScript.
 
-Frameworks são bibliotecas de JavaScript que vão te ajudar a estruturar e organizar seu código. Eles fornecem aos desenvolvedores soluções repetíveis para problemas complexos de Front-End, como gerenciamento de estado, roteamento e otimização de desempenho. Eles são comumente usados para criar [web apps](http://www.visionmobile.com/blog/2013/07/web-sites-vs-web-apps-what-the-experts-think/).
+Frameworks são bibliotecas de JavaScript que vão te ajudar a estruturar e organizar seu código. Eles fornecem aos desenvolvedores soluções repetíveis para problemas complexos de Front-End, como gerenciamento de estado, roteamento e otimização de desempenho. Eles são comumente usados para criar [web apps](http://www.visionmobile.com/blog/2013/07/web-sites-vs-web-apps-what-the-experts-think).
 
 Eu não vou incluir uma descrição de cada estrutura do JavaScript. Mas aqui está uma lista rápida de alguns Frameworks:
 
-- [Angular](https://angularjs.org/)
-- [React](https://facebook.github.io/react/) + [Flux](https://facebook.github.io/react/docs/flux-overview.html)
-- [Ember](http://emberjs.com/)
-- [Aurelia](http://aurelia.io/)
-- [Vue](http://vuejs.org/)
-- [Meteor](https://www.meteor.com/)
+- [Angular](https://angularjs.org)
+- [React](https://facebook.github.io/react) + [Flux](https://facebook.github.io/react/docs/flux-overview.html)
+- [Ember](http://emberjs.com)
+- [Aurelia](http://aurelia.io)
+- [Vue](http://vuejs.org)
+- [Meteor](https://www.meteor.com)
 
 Você não tem que aprender todos os Frameworks. Escolha um e aprenda bastante. Não foque nos Frameworks em sí. Em vez disso, compreenda as filosofias de programação e princípios de construção deles.
 
@@ -240,9 +240,9 @@ Antes de ver os Frameworks, é importante entender alguns padrões de arquitetur
 
 Separação de conceitos, é um princípio que sugere a divisão da aplicação em camadas específicas. Por exemplo, em vez do HTML manter o estado da aplicação, você pode usar um objeto JavaScript — geralmente chamado `model` — para armazenar o estado.
 
-Para saber mais sobre esses padrões, primeiro leia sobre MVC no [Chrome Developers](https://developer.chrome.com/apps/app_frameworks). Depois, leia [Understanding MVC And MVP (For JavaScript And Backbone Developers)](https://addyosmani.com/blog/understanding-mvc-and-mvp-for-javascript-and-backbone-developers/). Nesse artigo, não se preocupe em aprender Backbone, veja apenas as partes com explicações de MVC e MVP.
+Para saber mais sobre esses padrões, primeiro leia sobre MVC no [Chrome Developers](https://developer.chrome.com/apps/app_frameworks). Depois, leia [Understanding MVC And MVP (For JavaScript And Backbone Developers)](https://addyosmani.com/blog/understanding-mvc-and-mvp-for-javascript-and-backbone-developers). Nesse artigo, não se preocupe em aprender Backbone, veja apenas as partes com explicações de MVC e MVP.
 
-Addy Osman também escreveu sobre MVVM em [Understanding MVVM — A Guide For JavaScript Developers](https://addyosmani.com/blog/understanding-mvvm-a-guide-for-javascript-developers/). Para saber mais sobre as origens do MVC e porque ele surgiu, leia o ensaio de Martin Fowler chamado [GUI Architectures](http://martinfowler.com/eaaDev/uiArchs.html). Finalmente, leia a seção, [JavaScript MV* Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvcmvp) no [Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/), é um livro fantástico online.
+Addy Osman também escreveu sobre MVVM em [Understanding MVVM — A Guide For JavaScript Developers](https://addyosmani.com/blog/understanding-mvvm-a-guide-for-javascript-developers). Para saber mais sobre as origens do MVC e porque ele surgiu, leia o ensaio de Martin Fowler chamado [GUI Architectures](http://martinfowler.com/eaaDev/uiArchs.html). Finalmente, leia a seção, [JavaScript MV* Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvcmvp) no [Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book), é um livro fantástico online.
 
 ## Design Patterns
 
@@ -272,7 +272,7 @@ Se você quer aprender mais sobre Angular, confira a [documentação](https://do
 
 ### React + Flux
 
-O Angular resolve muitos problemas que os desenvolvedores enfrentam ao construir sistemas complexos de Front-End. Outra ferramenta popular é o [React](https://facebook.github.io/react/), que é uma biblioteca para a criação de _user interfaces_. Você pode pensar nele como o V no MVC. Sendo o React apenas uma biblioteca, muitas vezes ele é oferecido com uma arquitetura conhecida como [Flux](https://facebook.github.io/flux/).
+O Angular resolve muitos problemas que os desenvolvedores enfrentam ao construir sistemas complexos de Front-End. Outra ferramenta popular é o [React](https://facebook.github.io/react), que é uma biblioteca para a criação de _user interfaces_. Você pode pensar nele como o V no MVC. Sendo o React apenas uma biblioteca, muitas vezes ele é oferecido com uma arquitetura conhecida como [Flux](https://facebook.github.io/flux).
 
 ![React](https://d262ilb51hltx0.cloudfront.net/max/800/1*c0JXNVxVnTlOuQCnDqA6CA.png)
 
@@ -280,7 +280,7 @@ O Facebook desenvolveu o React e o Flux para abordar algumas das deficiências d
 
 <iframe width="100%" height="415" src="https://www.youtube.com/embed/nYkdrAPrdcw?list=PLb0IAmt7-GS188xDYE-u1ShQmFFGbrk0v" frameborder="0" allowfullscreen></iframe>
 
-Para começar com React + Flux, primeiro aprenda React. Um bom inicio é a [documentação do React](https://facebook.github.io/react/docs/getting-started.html). Depois disso, confira [React.js Introduction For People Who Know Just Enough jQuery To Get By](http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/) para ajudar você na transição da "mentalidade jQuery".
+Para começar com React + Flux, primeiro aprenda React. Um bom inicio é a [documentação do React](https://facebook.github.io/react/docs/getting-started.html). Depois disso, confira [React.js Introduction For People Who Know Just Enough jQuery To Get By](http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by) para ajudar você na transição da "mentalidade jQuery".
 
 Depois que você tiver uma compreensão básica de React, comece a aprender Flux. Um bom lugar para começar é a [documentação oficial do Flux](https://facebook.github.io/flux/docs/overview.html). Depois confira [Awesome React](https://github.com/enaqx/awesome-react), que é uma lista de links com curadoria que irá ajudá-lo a avançar ainda mais no seu aprendizado.
 
@@ -294,7 +294,7 @@ Esse experimento é para desmontar e reconstruir o app _Todo MVC_ usando um Java
 
 ![](https://d262ilb51hltx0.cloudfront.net/max/800/1*ISCVxjX3_691DLnV3EPZ3w.png)
 
-Para começar, confira o resultado final no [TodoMVC](http://todomvc.com/examples/vanillajs/). O primeiro passo é criar um novo projeto local e primeiramente estabelecer os três componentes do MVC. Já que envolve um experimento, referencie o código-fonte completo neste [repositório do Github](https://github.com/tastejs/todomvc/tree/gh-pages/examples/vanillajs). Se você não pode replicar completamente o projeto ou não tem tempo, tudo bem. Baixe o código do repositório e brinque com os diferentes componentes do MVC até você entender como eles se relacionam com o outro.
+Para começar, confira o resultado final no [TodoMVC](http://todomvc.com/examples/vanillajs). O primeiro passo é criar um novo projeto local e primeiramente estabelecer os três componentes do MVC. Já que envolve um experimento, referencie o código-fonte completo neste [repositório do Github](https://github.com/tastejs/todomvc/tree/gh-pages/examples/vanillajs). Se você não pode replicar completamente o projeto ou não tem tempo, tudo bem. Baixe o código do repositório e brinque com os diferentes componentes do MVC até você entender como eles se relacionam com o outro.
 
 ### Experimento 6
 
@@ -310,15 +310,15 @@ O experimento 6 é um bom exercício de aplicação MVC. Entender o MVC é um pa
 - Como organizar e estruturar bases de código grandes?
 - Quais são as vantagens de adicionar _directive components_ na sua UI?
 
-Se você quiser construir outros web apps usando Angular, tente [Build a Real-Time Status Update App with AngularJS & Firebase](https://www.sitepoint.com/real-time-status-update-app-angularjs-firebase/).
+Se você quiser construir outros web apps usando Angular, tente [Build a Real-Time Status Update App with AngularJS & Firebase](https://www.sitepoint.com/real-time-status-update-app-angularjs-firebase).
 
 ### Experimento 7
 
 ![React + Flux](https://d262ilb51hltx0.cloudfront.net/max/800/1*3HrnGSbAzIM5Lwu0_eqmjw.png)
 
-Agora que você já entendeu o MVC, É o momento de tentar usar o [Flux](https://facebook.github.io/flux/). O experimento 7 vai construir uma _todo list_ usando a arquitetura do React e Flux. Você pode achar o tutorial completo no [Facebook’s Flux documentation site](https://facebook.github.io/flux/docs/todo-list.html). Ele vai te mostrar um passo-a-passo de como usar React para construir interfaces e como o Flux é aplicado para construir web apps.
+Agora que você já entendeu o MVC, É o momento de tentar usar o [Flux](https://facebook.github.io/flux). O experimento 7 vai construir uma _todo list_ usando a arquitetura do React e Flux. Você pode achar o tutorial completo no [Facebook’s Flux documentation site](https://facebook.github.io/flux/docs/todo-list.html). Ele vai te mostrar um passo-a-passo de como usar React para construir interfaces e como o Flux é aplicado para construir web apps.
 
-Após você completar esse tutorial, você pode tentar outros tutoriais relacionados como [How to Build a Todo App Using React, Redux, and Immutable.js](https://www.sitepoint.com/how-to-build-a-todo-app-using-react-redux-and-immutable-js/) e [Build a Microblogging App With Flux and React](http://code.tutsplus.com/courses/build-a-microblogging-app-with-flux-and-react).
+Após você completar esse tutorial, você pode tentar outros tutoriais relacionados como [How to Build a Todo App Using React, Redux, and Immutable.js](https://www.sitepoint.com/how-to-build-a-todo-app-using-react-redux-and-immutable-js) e [Build a Microblogging App With Flux and React](http://code.tutsplus.com/courses/build-a-microblogging-app-with-flux-and-react).
 
 ## Mantenha-se atualizado
 
@@ -326,10 +326,10 @@ Assim como o resto do Front-End, o cenário de JavaScript muda rapidamente. É i
 
 Abaixo uma lista de websites, blogs, e fóruns que são informativos e agradáveis de ler.
 
-- [Smashing Magazine](https://www.smashingmagazine.com/tag/javascript/)
-- [JavaScript Weekly](http://javascriptweekly.com/)
-- [Ng Weekly](http://www.ng-newsletter.com/)
-- [Reddit JavaScript](https://www.reddit.com/r/javascript/)
+- [Smashing Magazine](https://www.smashingmagazine.com/tag/javascript)
+- [JavaScript Weekly](http://javascriptweekly.com)
+- [Ng Weekly](http://www.ng-newsletter.com)
+- [Reddit JavaScript](https://www.reddit.com/r/javascript)
 - [JavaScript Jabber](https://devchat.tv/js-jabber)
 
 ## Aprenda pelo exemplo
@@ -341,13 +341,13 @@ Como sempre, a melhor maneira de aprender é pelo exemplo.
 Os styleguides de JavaScript são convenções de códigos desenvolvidas para ajudar você a manter seu código legível e com fácil manutenção.
 
 - [AirBnB JavaScript Styleguide](https://github.com/airbnb/javascript)
-- [Principles of Writing Consistent, Idiomatic JavaScript](https://github.com/rwaldron/idiomatic.js/)
+- [Principles of Writing Consistent, Idiomatic JavaScript](https://github.com/rwaldron/idiomatic.js)
 - [Node Styleguide](https://github.com/felixge/node-style-guide)
 - [MDN Coding Style](https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style)
 
 ### Codebases
 
-Não consigo enfatizar o quanto é útil é ler um bom código. Aprenda como procurar no [Github](https://github.com/) repositórios relevantes sempre que buscar algo novo.
+Não consigo enfatizar o quanto é útil é ler um bom código. Aprenda como procurar no [Github](https://github.com) repositórios relevantes sempre que buscar algo novo.
 
 
 - [Lodash](https://github.com/lodash/lodash)
@@ -362,4 +362,4 @@ Não consigo enfatizar o quanto é útil é ler um bom código. Aprenda como pro
 
 No final deste guia, você deve ter uma compreensão sólida de fundamentos do JavaScript e como aplicá-los na Web. Lembre-se, este guia te fornece um mapa geral do caminho. Se você quer se tornar um herói Front-End, é importante que você gaste tempo trabalhando em projetos para aplicar estes conceitos. Quanto mais projetos você fazer, e quanto mais se apaixonar por eles, mais você vai aprender.
 
-Este artigo é a segunda parte da série de duas partes. O que está faltando neste guia é uma introdução do [Node](https://nodejs.org/en/), que é uma plataforma que permite que o JavaScript rode em servidores. No futuro, posso escrever uma parte três que vai falar sobre o desenvolvimento do lado do servidor com o Node e coisas como bancos de dados [noSQL](https://en.wikipedia.org/wiki/NoSQL).
+Este artigo é a segunda parte da série de duas partes. O que está faltando neste guia é uma introdução do [Node](https://nodejs.org/en), que é uma plataforma que permite que o JavaScript rode em servidores. No futuro, posso escrever uma parte três que vai falar sobre o desenvolvimento do lado do servidor com o Node e coisas como bancos de dados [noSQL](https://en.wikipedia.org/wiki/NoSQL).
