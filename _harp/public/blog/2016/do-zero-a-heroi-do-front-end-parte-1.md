@@ -69,7 +69,7 @@ Alguns websites usam CSS frameworks ou ofuscam as suas classes no CSS, tornando 
 
 Mais uma vez, o foco do experimento 2 não é recriar a página inteira. Apesar que certamente não mal! Escolha alguns componentes chaves como a navegação ou uma sessão *hero* para você codificar. Eu forneci sugestões ao lado da lista de sites, mas sinta-se livre para escolher outros componentes.
 
-Você pode codificar esse experimento no [CodePeb](http://codepen.io) ou armazenar localmente. Se você escolher armazenar localmente, você pode baixar esse [exemplo de projeto](https://github.com/murtaugh/HTML5-Reset) como um boilerplate ou criar os arquivos a partir do zero. Eu sugiro usar editores como [Atom](https://atom.io) ou [Sublime](https://www.sublimetext.com).
+Você pode codificar esse experimento no [CodePen](http://codepen.io) ou armazenar localmente. Se você escolher armazenar localmente, você pode baixar esse [exemplo de projeto](https://github.com/murtaugh/HTML5-Reset) como um boilerplate ou criar os arquivos a partir do zero. Eu sugiro usar editores como [Atom](https://atom.io) ou [Sublime](https://www.sublimetext.com).
 
 Além disso, tenha em mente que para qualquer site, você sempre pode ver seu HTML e CSS. Basta clicar com o botão direito na página ou em um componente, clicar em inspecionar, e um painel vai aparecer com o HTML a esquerda e o CSS a direita. Assim que estiver pronto, ou ficar preso, use o Inspector para ver como está, e comparar seu HTML e CSS.
 
