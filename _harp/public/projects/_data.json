@@ -1,4 +1,11 @@
 {
+  "cubo": {
+  "path": "https://cubo.network/",
+  "date": "Sep 2017",
+  "title": "Cubo",
+  "description": "Development of HTML, CSS (Stylus) and JavaScript (Angular)",
+  "image": "cubo.png"
+  },
   "docomomo": {
     "path": "http://docomomo-us.org/",
     "date": "Mar 2017",

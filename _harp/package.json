@@ -13,7 +13,7 @@
     "precommit": "npm run lint",
     "test": "npm run lint && npm run reporter",
     "start": "gulp",
-    "deploy": "gulp build && cd .. && harp compile _harp ./ && cp _harp/README.md ./ && cp _harp/CNAME ./"
+    "deploy": "gulp build && cd .. && harp compile _harp ./ && cp _harp/README.md ./ && cp _harp/CNAME ./ && git add . && git commit -m 'New deploy' && git push"
   },
   "author": "Felipe Fialho <hi@felipefialho.com> (http://www.felipefialho.com/)",
   "license": "MIT",
