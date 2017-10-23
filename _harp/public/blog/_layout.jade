@@ -1,11 +1,11 @@
 doctype
 html(lang='en')
 
-  != partial("../_partials/head")
+  != partial('../_partials/head')
 
   body.page-blog
 
-    != partial("../_partials/header")
+    != partial('../_partials/header')
 
     //-
     //- Main
@@ -31,9 +31,15 @@ html(lang='en')
                   p(itemprop='description') #{ post.description }
 
               .blog__inner
+                aside.share
+                  .addthis_sharing_toolbox
+
                 .content(itemprop='text')
                   != yield
  
+                aside.share
+                  .addthis_sharing_toolbox
+
                 aside.blog__comments
                   != partial("../_partials/comments")
 
@@ -46,3 +52,13 @@ html(lang='en')
     //- Scripts
     //- --------------------------------------------------
     script(src='/assets/js/main.js')
+    script(src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51124ac82d52f270' async)
+    script.
+      var addthis_share = addthis_share || {}
+      addthis_share = {
+        passthrough : {
+          twitter: {
+            via: "LFeh"
+          }
+        }
+      } 
