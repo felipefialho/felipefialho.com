@@ -97,7 +97,9 @@ sudo apt-get install -y build-essential
 sudo apt-get install zsh
 
 #### Instalando o git
-apt-get install git
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get update
+sudo apt-get install git
 
 #### Instalando o Node
 curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
