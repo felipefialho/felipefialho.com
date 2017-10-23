@@ -1,4 +1,12 @@
 {
+  "usando-o-terminal-do-linux-no-windows": {
+    "cover": "usando-o-terminal-do-linux-no-windows.jpg",
+    "cover_alt": "CSS: white-space nowrap",
+    "path": "2017/usando-o-terminal-do-linux-no-windows",
+    "date": "22/10/2017",
+    "title": "Usando o Terminal do Linux no Windows",
+    "description": "No inicio de 2016 o Windows entregou uma nova funcionalidade que era muito aguardada: A possibilidade de rodar o Bash do Linux."
+  },
   "css-usando-white-space-nowrap-para-fallbacks-incriveis": {
     "cover": "white-space-nowrap.png",
     "cover_alt": "CSS: white-space nowrap",
