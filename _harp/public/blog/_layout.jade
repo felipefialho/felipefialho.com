@@ -32,13 +32,13 @@ html(lang='en')
 
               .blog__inner
                 aside.share
-                  .addthis_sharing_toolbox
+                  .addthis_sharing_toolbox(data-url='https://www.felipefialho.com/blog/' + current.source)
 
                 .content(itemprop='text')
                   != yield
  
                 aside.share
-                  .addthis_sharing_toolbox
+                  .addthis_sharing_toolbox(data-url='https://www.felipefialho.com/blog/' + current.source)
 
                 aside.blog__comments
                   != partial("../_partials/comments")
