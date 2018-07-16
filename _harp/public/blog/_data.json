@@ -146,6 +146,8 @@
     "description": "O placeholder ajuda muito com informações complementares do campo de formulário, mas não deveria ser utilizado para substituir o label"
   },
   "e-possivel-utilizar-componentes-desenvolvidos-apenas-com-css": {
+    "cover": "https://github.com/LFeh/css-components/raw/gh-pages/logo-pcc.jpg",
+    "cover_alt": "Logo do CSS Components",
     "path": "2014/e-possivel-utilizar-componentes-desenvolvidos-apenas-com-css",
     "date": "22/04/2014",
     "title": "É possível utilizar componentes desenvolvidos apenas com CSS?",
