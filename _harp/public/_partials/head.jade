@@ -4,6 +4,7 @@
 head
     meta(charset='utf-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='Content-Security-Policy' content='upgrade-insecure-requests')
 
     if (current.path[0] == 'blog' && current.source !== 'index')
       - var postCount = 0
