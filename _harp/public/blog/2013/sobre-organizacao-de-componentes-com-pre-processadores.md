@@ -34,10 +34,10 @@ A estrutura final da pasta `less` fica assim:
 
 ![Organização final](/assets/img/blog/organizacao-less.jpg)
 
-Pode ter uma ideia de como organizo os arquivos acessando o [fork do meu site.](https://github.com/LFeh/Website/tree/master/src/files/css/less) Já fiz várias melhorias de lá pra cá, mas o principio segue o mesmo.
+Pode ter uma ideia de como organizo os arquivos acessando o [fork do meu site.](https://github.com/felipefialho/Website/tree/master/src/files/css/less) Já fiz várias melhorias de lá pra cá, mas o principio segue o mesmo.
 
 ## Para gerar o CSS
 
-Hoje uso o [Grunt para fazer essa tarefa](https://github.com/LFeh/Grunt-Base/blob/master/Gruntfile.js).
+Hoje uso o [Grunt para fazer essa tarefa](https://github.com/felipefialho/Grunt-Base/blob/master/Gruntfile.js).
 
 Escrevi esse artigo, após alguns amigos (@raphaelfabeni foi um deles) perguntarem sobre como costumo organizar os arquivos usando pré-processadores. Espero que contribua de alguma forma.

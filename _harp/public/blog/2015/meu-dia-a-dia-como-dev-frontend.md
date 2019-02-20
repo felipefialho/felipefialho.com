@@ -1,8 +1,8 @@
 ## Mas antes...
 
-Muitos já devem ter visto, mas [criei um repositório](https://github.com/LFeh/1-post-por-dia) para resolver um dos maiores problemas na hora de escrever um novo artigo: escolher um assunto/tema.
+Muitos já devem ter visto, mas [criei um repositório](https://github.com/felipefialho/1-post-por-dia) para resolver um dos maiores problemas na hora de escrever um novo artigo: escolher um assunto/tema.
 
-Esse post foi feito em cima de [um pedido](https://github.com/LFeh/1-post-por-dia/issues/12) do [Matheus Moraes](https://github.com/matheusmmo), e o assunto já teve postagens do [Willian Justen](http://willianjusten.com.br/meu-dia-a-dia-como-dev-frontend) e do [Fernando Daciuk](http://blog.da2k.com.br/2015/01/15/como-ser-um-dev-frontend-usando-linux).
+Esse post foi feito em cima de [um pedido](https://github.com/felipefialho/1-post-por-dia/issues/12) do [Matheus Moraes](https://github.com/matheusmmo), e o assunto já teve postagens do [Willian Justen](http://willianjusten.com.br/meu-dia-a-dia-como-dev-frontend) e do [Fernando Daciuk](http://blog.da2k.com.br/2015/01/15/como-ser-um-dev-frontend-usando-linux).
 
 ## Local de trabalho
 
@@ -64,8 +64,8 @@ Podem ter uma noção melhor do meu workflow técnico (de 2014, desatualizado) l
 
 E pode ver meu estilo de código e boilerplate aqui:
 
-- [My Coding Style](https://github.com/LFeh/coding-style)
-- [Kratos Boilerplate](https://github.com/LFeh/kratos-boilerplate)
+- [My Coding Style](https://github.com/felipefialho/coding-style)
+- [Kratos Boilerplate](https://github.com/felipefialho/kratos-boilerplate)
 
 Atualmente utilizo no meu workflow:
 

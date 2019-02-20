@@ -8,7 +8,7 @@ Mas durante esses projetos, estou pensando e aplicando algumas soluções intere
 
 Nível do tutorial: **Básico**
 
-A demo funcional está no [CodePen](http://codepen.io/LFeh/pen/KviDw).
+A demo funcional está no [CodePen](http://codepen.io/felipefialho/pen/KviDw).
 
 ## Tutorial
 
@@ -16,7 +16,7 @@ A demo funcional está no [CodePen](http://codepen.io/LFeh/pen/KviDw).
 
 Apenas um botão.
 
-<p data-height="400" data-theme-id="light" data-slug-hash="KviDw" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/LFeh/pen/KviDw/">Button Progress</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="light" data-slug-hash="KviDw" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/KviDw/">Button Progress</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ### No CSS

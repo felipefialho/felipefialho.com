@@ -6,7 +6,7 @@ Isso é possível porque o módulo "Subsistema do Windows para o Linux", fornece
 
 Por vezes temos a impressão que pouquíssimas pessoas ainda usam o Windows para desenvolvimento. Mas tenho certeza que essa impressão destoa da realidade. Fiz uma rápida pesquisa no Twitter (sendo que é bastante nichada) e os resultados foram:
 
-<blockquote class="twitter-tweet" data-lang="pt"><p lang="pt" dir="ltr">Curiosidade, qual sistema operacional vocês utilizam como Developers?</p>&mdash; Felipe Fialho (@LFeh) <a href="https://twitter.com/LFeh/status/921109237501227013?ref_src=twsrc%5Etfw">19 de outubro de 2017</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="pt"><p lang="pt" dir="ltr">Curiosidade, qual sistema operacional vocês utilizam como Developers?</p>&mdash; Felipe Fialho (@LFeh) <a href="https://twitter.com/felipefialho/status/921109237501227013?ref_src=twsrc%5Etfw">19 de outubro de 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Isso mostra que mesmo entre meus seguidores, muitas pessoas usam Windows, e isso realmente não deveria ser um problema.
@@ -80,7 +80,7 @@ Clique em editar, e no painel da direita altere para:
 
 ## Configurando seu ambiente de desenvolvimento no Bash on Ubuntu
 
-Você provavelmente já deve ter o _git_, o _node_ e outras ferramentas de desenvolvimento instaladas no Windows, mas elas não vão funcionar no Bash. É importante ressaltar que todas as instalações devem ser feitas dentro do próprio Bash on Ubuntu, ou seja, você vai precisar instalar tudo de novo.  
+Você provavelmente já deve ter o _git_, o _node_ e outras ferramentas de desenvolvimento instaladas no Windows, mas elas não vão funcionar no Bash. É importante ressaltar que todas as instalações devem ser feitas dentro do próprio Bash on Ubuntu, ou seja, você vai precisar instalar tudo de novo.
 
 Você vai estar dentro de um Bash de verdade, portanto alguns comandos são diferentes do Terminal do Windows, [veja uma lista dessa diferenças](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/ap-doslinux.html).
 

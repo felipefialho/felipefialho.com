@@ -69,14 +69,14 @@ Vamos pensar na seguinte situação, que alias é muito comum: Você tem um menu
 
 Seria exatamente assim:
 
-<p data-height="400" data-theme-id="light" data-slug-hash="jPvdgp" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/LFeh/pen/jPvdgp/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="light" data-slug-hash="jPvdgp" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/jPvdgp/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 - Já na versão desktop, ele deve estar sempre visível, não deve estar fixo e os itens devem ser posicionados um ao lado do outro
 
 Então ele ficaria dessa forma:
 
-<p data-height="400" data-theme-id="light" data-slug-hash="LVJaEG" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/LFeh/pen/LVJaEG/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="light" data-slug-hash="LVJaEG" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/LVJaEG/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Observem que utilizo o mesmo HTML (Jade) em ambos os exemplos.
@@ -85,7 +85,7 @@ Observem que utilizo o mesmo HTML (Jade) em ambos os exemplos.
 
 O resultado será esse! (pode dar resize para ver as mudanças)
 
-<p data-height="400" data-theme-id="light" data-slug-hash="GJXeJv" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/LFeh/pen/GJXeJv/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="light" data-slug-hash="GJXeJv" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/GJXeJv/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Observem bem o código.

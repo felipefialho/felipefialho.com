@@ -1,4 +1,4 @@
-Existe um projeto bem bacana no Github chamado [Pequeno Guia para Empresas que Procuram Bons Desenvolvedores Front-end e Desenvolvedores Front-end que Procuram Boas Empresas](https://github.com/LFeh/bons-front-enders) e é nele que me inspiro para escrever essa postagem.
+Existe um projeto bem bacana no Github chamado [Pequeno Guia para Empresas que Procuram Bons Desenvolvedores Front-end e Desenvolvedores Front-end que Procuram Boas Empresas](https://github.com/felipefialho/bons-front-enders) e é nele que me inspiro para escrever essa postagem.
 
 ### Preciso ser um designer?
 

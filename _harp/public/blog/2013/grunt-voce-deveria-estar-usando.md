@@ -1,6 +1,6 @@
 ### O projeto
 
-Como sempre, deixei a base que estou utilizando no [Github](https://github.com/LFeh/Grunt-Base), forka lá se quiser usar.
+Como sempre, deixei a base que estou utilizando no [Github](https://github.com/felipefialho/Grunt-Base), forka lá se quiser usar.
 
 ### As tarefas
 

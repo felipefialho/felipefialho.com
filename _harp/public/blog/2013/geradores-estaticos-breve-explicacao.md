@@ -4,7 +4,7 @@ Ou seja, você não precisa preparar nenhum ambiente, basta jogar o projeto no s
 
 Geradores estáticos como o [Jekyll](https://github.com/mojombo/jekyll) eram mais usados para blogs, pois facilitam muito o desenvolvimento deles, o Jekyll por exemplo, é extremamente simples, basicamente você instala e já pode sair postando.
 
-Mas a criatividade dos desenvolvedores não tem limites, e rapidamente começaram a surgir geradores estáticos mais robustos, na qual você pode construir qualquer tipo de site, basta usar a imaginação. Entre eles destaco o [Docpad](http://docpad.org), feito em [NodeJS](http://nodejs.org) e é o que estou usando nesse [site](https://github.com/LFeh/Website).
+Mas a criatividade dos desenvolvedores não tem limites, e rapidamente começaram a surgir geradores estáticos mais robustos, na qual você pode construir qualquer tipo de site, basta usar a imaginação. Entre eles destaco o [Docpad](http://docpad.org), feito em [NodeJS](http://nodejs.org) e é o que estou usando nesse [site](https://github.com/felipefialho/Website).
 
 Como falei no outro post, não tenho formação como programador, mas o [Docpad](http://docpad.org) é tão simples que consegui rapidamente pegar o jeito, a documentação na página oficial é bem intuitiva e existem vários plugins no Github que facilitam e adicionam funcionalidades, tornando-o ainda mais completo.
 

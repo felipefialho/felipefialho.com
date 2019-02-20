@@ -10,13 +10,13 @@ Cheguei nessa solução através [desse artigo](http://elvery.net), que mostra a
 
 Ela consiste em inverter a posição do **thead** e posicionar o **tbody** na sua direita.
 
-A demo funcional está no [CodePen](http://codepen.io/LFeh/pen/hsreD) (redimensione o navegador para visualizar o efeito).
+A demo funcional está no [CodePen](http://codepen.io/felipefialho/pen/hsreD) (redimensione o navegador para visualizar o efeito).
 
 ### Tutorial
 
 #### No HTML
 
-<p data-height="500" data-theme-id="light" data-slug-hash="hsreD" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/LFeh/pen/hsreD/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="500" data-theme-id="light" data-slug-hash="hsreD" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/hsreD/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Observem que adiciono duas classes. A classe responsável pelo efeito é **table-responsive**, gosto de separar dessa forma e não deixar "genérico", pois consigo definir quais tabelas vão ter esse comportamento.
@@ -97,13 +97,13 @@ Funciona bem para tabelas que exigem por exemplo, um check. Ele agrupa as inform
 
 Pode ser útil principalmente em CMS ou Gerenciadores.
 
-A demo funcional está no [CodePen](http://codepen.io/LFeh/pen/beEoG) (redimensione o navegador para visualizar o efeito).
+A demo funcional está no [CodePen](http://codepen.io/felipefialho/pen/beEoG) (redimensione o navegador para visualizar o efeito).
 
 ### Tutorial
 
 #### No HTML
 
-<p data-height="500" data-theme-id="light" data-slug-hash="hsreD" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/LFeh/pen/beEoG">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="500" data-theme-id="light" data-slug-hash="hsreD" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/beEoG">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Assim como no exemplo anterior, uso uma classe apenas para aplicar o efeito, no caso **.table-action**.

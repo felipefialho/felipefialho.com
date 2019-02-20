@@ -78,13 +78,13 @@ Those folders and file will change during the project.
 
 ### Code Standarts
 
-This project uses my own [Coding Style](https://github.com/LFeh/coding-style) as code reference.
+This project uses my own [Coding Style](https://github.com/felipefialho/coding-style) as code reference.
 
 This project also uses [Husky](https://github.com/typicode/husky) to prevent commit and push messy and wrong code.
 
 To help you, this project has a `npm run fix` command to fix all eslint errors.
 
-This project uses as a base the [Kratos Boilerplate](https://github.com/LFeh/kratos-boilerplate).
+This project uses as a base the [Kratos Boilerplate](https://github.com/felipefialho/kratos-boilerplate).
 
 
 #### Parker CSS

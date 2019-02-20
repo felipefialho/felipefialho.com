@@ -1,6 +1,6 @@
 Hoje me deparei com um problema que alguns de vocês já devem ter passado, e coloco aqui a resolução: A limitação do uso de "height: auto" em CSS Transitions.
- 
-### O problema 
+
+### O problema
 
 Você precisa expandir a altura de algum elemento que está escondido e ao invés de um simples "display: none/block", resolve usar CSS Transitions para o movimento ficar mais interessante e emular um "slide-down".
 
@@ -8,7 +8,7 @@ Então você faz algo desse tipo:
 
 ````css
 .accordion-content{
-  transition: height 1s;  
+  transition: height 1s;
   overflow: hidden;
   height: 0;
 }
@@ -19,14 +19,14 @@ Então você faz algo desse tipo:
 ````
 
 Estranhamente isso não funciona e você se pergunta o motivo.
- 
-### A explicação 
+
+### A explicação
 
 A explicação é simples. O CSS não consegue fazer a animação a partir do "height: auto", ele precisa de algum tamanho definido para se basear.
 
 Só que você também não pode simplesmente setar uma altura fixa, já que isso traria problemas para trabalhar responsivamente.
 
-### A resolução 
+### A resolução
 
 A boa notícia é que a resolução dessa limitação é simples!
 
@@ -34,7 +34,7 @@ Usaremos "max-height" para contornar isso.
 
 ````css
 .accordion-content{
-  transition: max-height 1s;  
+  transition: max-height 1s;
   overflow: hidden;
   max-height: 0;
 }
@@ -50,16 +50,16 @@ Ou seja, na versão ativa do elemento, ele terá uma altura máxima setada, e as
 
 O maior problema é caso o conteúdo seja dinamico e ultrapasse o tamanho máximo que você setou. Nesse caso pode usar javascript para calcular a altura.
 
-Deixei um exemplo funcional no <a href="http://codepen.io/LFeh/pen/ICkwe">CodePen</a> para demonstrar melhor o funcionamento.
+Deixei um exemplo funcional no <a href="http://codepen.io/felipefialho/pen/ICkwe">CodePen</a> para demonstrar melhor o funcionamento.
 
-<p data-height="368" data-theme-id="0" data-slug-hash="ICkwe" data-user="LFeh" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/LFeh/pen/ICkwe'>Animate "height" with CSS Transitions</a> by Felipe Fialho (<a href='http://codepen.io/LFeh'>@LFeh</a>) on <a href='http://codepen.io'>CodePen</a>
+<p data-height="368" data-theme-id="0" data-slug-hash="ICkwe" data-user="LFeh" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/felipefialho/pen/ICkwe'>Animate "height" with CSS Transitions</a> by Felipe Fialho (<a href='http://codepen.io/LFeh'>@LFeh</a>) on <a href='http://codepen.io'>CodePen</a>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 ## Atualização - 20/09/2016!
 
-Esse post é bem antigo, escrevi em meados de 2013. Ano passado desenvolvi uma solução mais moderna, utilizando `transform scaleY()` para simular o efeito. 
+Esse post é bem antigo, escrevi em meados de 2013. Ano passado desenvolvi uma solução mais moderna, utilizando `transform scaleY()` para simular o efeito.
 
 O resultado pode ser visto no Codepen.
 
-<p data-height="650" data-theme-id="0" data-slug-hash="LkOXBA" data-user="LFeh" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/LFeh/pen/LkOXBA'>Animate height with CSS transitions using scale()</a> by Felipe Fialho (<a href='http://codepen.io/LFeh'>@LFeh</a>) on <a href='http://codepen.io'>CodePen</a>
+<p data-height="650" data-theme-id="0" data-slug-hash="LkOXBA" data-user="LFeh" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/felipefialho/pen/LkOXBA'>Animate height with CSS transitions using scale()</a> by Felipe Fialho (<a href='http://codepen.io/LFeh'>@LFeh</a>) on <a href='http://codepen.io'>CodePen</a>
 <script async src="//codepen.io/assets/embed/ei.js"></script>

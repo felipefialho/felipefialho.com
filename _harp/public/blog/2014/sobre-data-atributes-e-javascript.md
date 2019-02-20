@@ -87,7 +87,7 @@ Para mostrar em funcionamento, criei uma base de código bem rápida (peço que 
 
 ### Em funcionamento:
 
-<iframe width="100%" height="500" src="http://jsfiddle.net/LFeh/5Qr7b/2/embedded/result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="500" src="http://jsfiddle.net/felipefialho/5Qr7b/2/embedded/result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Ou seja, para ativar o plugin de **tabs**, simplesmente usei `[data-toggle="tab"]`, evitando assim atrelar o plugin na classe de estilo `.nav` ou adicionar uma classe extra apenas para chamar a função.
 

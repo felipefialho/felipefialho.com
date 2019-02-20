@@ -36,9 +36,9 @@ Em julho tirei férias, foi meio maluca, mas consegui descansar um pouco.
 
 Nesse trimestre escrevi o artigo [Um conto sobre componentização e quebra de paradigmas](https://www.felipefialho.com/blog/2013/um-conto-sobre-componentizacao-e-quebra-de-paradigmas), que considero o post mais relevante por aqui.
 
-Criei projetinhos simples como [Social Media Box](http://codepen.io/LFeh/details/IvmJD), [Button Progress](http://codepen.io/LFeh/details/KviDw).
+Criei projetinhos simples como [Social Media Box](http://codepen.io/felipefialho/details/IvmJD), [Button Progress](http://codepen.io/felipefialho/details/KviDw).
 
-Em seguinda rolou dois projetinhos mais relevantes com ajuda do meu parceiro fodástico de UX, [Luigi Nista](https://twitter.com/LuigiNista). Foram eles [Table Responsive](http://codepen.io/LFeh/details/hsreD) e [Table Responsive - Action](http://codepen.io/LFeh/details/beEoG).
+Em seguinda rolou dois projetinhos mais relevantes com ajuda do meu parceiro fodástico de UX, [Luigi Nista](https://twitter.com/LuigiNista). Foram eles [Table Responsive](http://codepen.io/felipefialho/details/hsreD) e [Table Responsive - Action](http://codepen.io/felipefialho/details/beEoG).
 
 Chegou o [Front in Sampa 2013](https://www.facebook.com/frontinsampa), dia muito bacana e com um Happy Hour matador no final, conheci novas pessoas e reencontrei amigos como [Jacqueline Alves](https://twitter.com/jaquealvesilva), o mano [Suissa](https://twitter.com/osuissa), [Bernard de Luna](https://twitter.com/bernarddeluna) e [Zeno Rocha](https://twitter.com/zenorocha).
 
@@ -48,7 +48,7 @@ Chegou o [Front in Sampa 2013](https://www.facebook.com/frontinsampa), dia muito
 
 Junto com o [Thiago Genuino](https://twitter.com/tgenuino) criei o [Piano Keyboard](http://www.felipefialho.com/piano), projeto divertidíssimo de desenvolver e que teve tanta visita no lançamento que simplesmente derrubou a hospedagem (e ai... Hello Github Pages c/c [Diogo Moretti](https://twitter.com/diogomoretti_)).
 
-Para homenagear esse produtivo ano, desenvolvi uma espécie de "[Cartman-Crescido-Vestido-De-Papai-Noel](http://codepen.io/LFeh/details/EjcBK), tosquissimo, mas vale a intenção.
+Para homenagear esse produtivo ano, desenvolvi uma espécie de "[Cartman-Crescido-Vestido-De-Papai-Noel](http://codepen.io/felipefialho/details/EjcBK), tosquissimo, mas vale a intenção.
 
 E quando achei que não aconteceria mais nada... para fechar o ano, [minha primeira contribuição foi aceita no Bootstrap](https://github.com/twbs/bootstrap/pull/11162) e deve estar disponível nas próximas versões. Fiquei muito feliz, pois é um projeto que nutro muita admiração e está presente no meu Workflow.
 

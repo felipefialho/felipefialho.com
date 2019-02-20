@@ -4,7 +4,7 @@
   "description": "My personal website",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LFeh/lfeh.github.io"
+    "url": "git+https://github.com/felipefialho/lfeh.github.io"
   },
   "scripts": {
     "lint": "./node_modules/.bin/eslint public",
@@ -18,9 +18,9 @@
   "author": "Felipe Fialho <hi@felipefialho.com> (http://www.felipefialho.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LFeh/lfeh.github.io/issues"
+    "url": "https://github.com/felipefialho/lfeh.github.io/issues"
   },
-  "homepage": "https://github.com/LFeh/lfeh.github.io#readme",
+  "homepage": "https://github.com/felipefialho/lfeh.github.io#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
