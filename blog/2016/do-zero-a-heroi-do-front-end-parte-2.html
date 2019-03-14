@@ -28,8 +28,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 <p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*o1lGaXpnKYgp2r9CFOI_9A.png" alt="Inspecionando o DOM"></p>
 <p>JavaScript interage com o DOM para mudar e atualizar ele. Aqui está um exemplo onde podemos selecionar um elemento HTML e alterar o seu conteúdo:</p>
 <pre><code>var container = document.getElementById(&#39;container&#39;);
-container.innerHTML = &#39;New Content!&#39;;
-</code></pre><p>Não se preocupe, foi só um exemplo simples. Você pode fazer muito mais do que isso manipulando o DOM com JavaScript. Para saber mais sobre como usar JavaScript para interagir com o DOM, leia as seguintes sessões do MDN, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">The Document Object Model</a>.</p>
+container.innerHTML = &#39;New Content!&#39;;</code></pre><p>Não se preocupe, foi só um exemplo simples. Você pode fazer muito mais do que isso manipulando o DOM com JavaScript. Para saber mais sobre como usar JavaScript para interagir com o DOM, leia as seguintes sessões do MDN, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">The Document Object Model</a>.</p>
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events">Events</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Examples">Examples of web and XML development using the DOM</a></li>
@@ -60,12 +59,11 @@ container.innerHTML = &#39;New Content!&#39;;
 <li>Selecione uma seção específica e mova ela 250 pixels para baixo</li>
 <li>Selecione qualquer componente, como um painel e ajuste a sua visibilidade</li>
 <li>Defina uma função chamada <code>doSomething</code> com um alerta de &quot;Hello world&quot; e em seguida execute</li>
-<li>Selecione um parágrafo, adicione um <em> event listener</em> de clique nele e execute algo cada vez que o evento é clicado</li>
+<li>Selecione um parágrafo, adicione um _ event listener_ de clique nele e execute algo cada vez que o evento é clicado</li>
 </ul>
 <p>Se você ficar preso, use o guia <a href="https://plainjs.com/javascript">JavaScript Functions and Helpers</a> como referência. Eu baseei a maioria dessas tarefas fora dele, abaixo está um exemplo de como completar o primeiro bullet:</p>
 <pre><code>var header = document.querySelector(&#39;.text-branding&#39;)
-header.innerText = ‘Boop&#39;
-</code></pre><p>O principal objetivo deste experimento é fazer algumas das coisas que você aprendeu sobre JavaScript e manipulação de DOM.</p>
+header.innerText = ‘Boop&#39;</code></pre><p>O principal objetivo deste experimento é fazer algumas das coisas que você aprendeu sobre JavaScript e manipulação de DOM.</p>
 <h3>Experimento 2</h3><p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*7365CToqHiLkXf16Di8xRw.gif" alt="JavaScript permite que os desenvolvedores criem interfaces interativas"></p>
 <p>Usando CodePen, escreva um JavaScript básico que usa manipulação do DOM e requer alguma lógica de programação para funcionar. O foco deste experimento é pegar algumas das coisas que você aprendeu no <a href="/blog/2016/do-zero-a-heroi-do-front-end-parte-1">Do Zero a Herói Front-End</a> e combinar com JavaScript. Aqui estão alguns exemplos para referência que podem servir de inspiração.</p>
 <ul>
@@ -97,8 +95,7 @@ newChild.setAttribute(‘class’, ‘text’)
 newChild.setAttribute(‘data-info’, ‘header’)
 hero.appendChild(newChild)
 })
-}
-</code></pre><p>Este é um exemplo de programação imperativa em que nós consultamos manualmente um elemento e guardamos o estado dele no DOM. Em outras palavras, estamos focando em <em>como</em> conseguir alguma coisa. O maior problema com este código é que ele é frágil. Se alguém mudar o nome da classe no HTML de <code>hero</code> para <code>villain</code>, o <em>event listener</em> não va funcionar mais, já que não vai existir a classe <code>hero</code> no DOM.</p>
+}</code></pre><p>Este é um exemplo de programação imperativa em que nós consultamos manualmente um elemento e guardamos o estado dele no DOM. Em outras palavras, estamos focando em <em>como</em> conseguir alguma coisa. O maior problema com este código é que ele é frágil. Se alguém mudar o nome da classe no HTML de <code>hero</code> para <code>villain</code>, o <em>event listener</em> não va funcionar mais, já que não vai existir a classe <code>hero</code> no DOM.</p>
 <p>A programação declarativa resolve esse problema. Em vez de selecionar elementos, você deixa isso com o Framework ou a Biblioteca que você está usando. Esta função permite que você se concentre sobre <em>o que</em>, em vez do <em>como</em>. Para ler mais, confira <a href="http://www.tysoncadenhead.com/blog/the-state-of-javascript-a-shift-from-imperative-to-declarative#.Vz0WEZMrIUE">The State Of JavaScript — A Shift From Imperative To Declarative</a> e <a href="http://developer.telerik.com/featured/three-ds-of-web-development-1-declarative-vs-imperative">Three D’s of Web Development #1: Declarative vs. Imperative</a>.</p>
 <p>Este guia ensina primeiro a abordagem imperativa antes de introduzir a abordagem declarativa com frameworks como <a href="https://angular.io">Angular</a> e bibliotecas como <a href="https://facebook.github.io/react">React</a>. Eu recomendo o aprendizado nesta ordem porque ele permite que você veja o problema que a abordagem declarativa resolve.</p>
 <h3>Ajax</h3><p>Ao longo destes artigos e tutoriais, você provavelmente viu o termo <a href="https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started">Ajax</a> ser mencionado algumas vezes. Ajax é uma técnica que permite que as páginas da web interajam com o servidor usando JavaScript.</p>

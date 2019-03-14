@@ -12,43 +12,36 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 <h4>button</h4><p>Quantas vezes você já criou um link que não levava para lugar nenhum, simplesmente colocando um <code>[href=&#39;#&#39;</code> e mudando o comportamento via JavaScript?</p>
 <p>Na maioria das vezes o correto seria utilizar a tag <code>&lt;button&gt;</code>, mas por alguma limitação ou caracteristica do projeto, você pode ter utilizado a tag <code>&lt;a&gt;</code></p>
 <p>Então, bora dar um significado para esse botão!</p>
-<pre><code class="language-html">&lt;a href=&quot;#&quot; data-modal=&quot;#modal-1&quot; role=&quot;button&quot;&gt;Abre o modal!&lt;/a&gt;
-</code></pre>
+<pre><code class="language-html">&lt;a href=&quot;#&quot; data-modal=&quot;#modal-1&quot; role=&quot;button&quot;&gt;Abre o modal!&lt;/a&gt;</code></pre>
 <h4>logo</h4><p>Antigamente era comum utilizarmos a tag <code>&lt;h1&gt;</code> e adicionar a imagem e esconder o texto via CSS.</p>
 <pre><code class="language-html">&lt;h1 class=&quot;logo&quot;&gt;
   &lt;a href=&quot;#&quot;&gt;
     Empresa foda!
   &lt;/a&gt;
-&lt;/h1&gt;
-</code></pre>
+&lt;/h1&gt;</code></pre>
 <pre><code class="language-css">.logo {
   background: url
   height: 80px
   text-indent: -999em
   width: 160px
-}
-</code></pre>
+}</code></pre>
 <p>Pare de fazer isso o quanto antes!</p>
 <p>A imagem do logo é uma das informações mais importantes do projeto, e pode ter certeza que o cliente espera que ela (e não um texto) esteja sempre disponível.</p>
 <p>O WAI-ARIA nos ajuda a fornecer significado.</p>
 <pre><code class="language-html">&lt;a class=&quot;logo&quot; role=&quot;logo&quot;&gt;
   &lt;img src=&quot;/img/logo.svg&quot; alt=&quot;Empresa foda!&quot;&gt;
-&lt;/a&gt;
-</code></pre>
+&lt;/a&gt;</code></pre>
 <h4>banner</h4><p>É possível ter vários <code>&lt;header&gt;</code> no projeto, então essa <code>role</code> ajuda a informar aonde está o header principal, geralmente o do topo.</p>
 <pre><code class="language-html">&lt;header class=&quot;header&quot; role=&quot;banner&quot;&gt;
-&lt;/header&gt;
-</code></pre>
+&lt;/header&gt;</code></pre>
 <h4>contentinfo</h4><p>Também é possível que um projeto tenha vários <code>&lt;footer&gt;</code>, com essa <code>role</code> podemos marcar o rodapé da página.</p>
 <pre><code class="language-html">&lt;footer class=&quot;footer&quot; role=&quot;contentinfo&quot;&gt;
-&lt;/footer&gt;
-</code></pre>
+&lt;/footer&gt;</code></pre>
 <h4>search</h4><p>Ainda não temos um elemento <code>search</code> no HTML. Mas podemos dar uma mãozinha.</p>
 <pre><code class="language-html">&lt;form class=&quot;search&quot; role=&quot;search&quot;&gt;
   &lt;input type=&quot;search&quot; class=&quot;search--control&quot; placeholder=&quot;Faça uma busca :)&quot;&gt;
   &lt;button class=&quot;search--btn&quot;&gt;Buscar!&lt;/button&gt;
-&lt;/form&gt;
-</code></pre>
+&lt;/form&gt;</code></pre>
 <h4>dialog</h4><p>Normalmente usado para elementos como modal. Que só estarão ativos após a ação do usuário.</p>
 <pre><code class="language-html">&lt;div class=&quot;modal&quot; role=&quot;dialog&quot; tabindex=&quot;-1&quot;&gt;
 &lt;/div&gt;
@@ -58,26 +51,21 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 <p>E um <a href="http://html5doctor.com/on-html-belts-and-aria-braces">ótimo artigo sobre o tema aqui</a>.</p>
 <h5>main</h5><p>Essa <code>role</code> também deve ser única na página, normalmente utilizada em conjunto com a tag <code>&lt;main&gt;</code>.</p>
 <pre><code class="language-html">&lt;main class=&quot;main&quot; role=&quot;main&quot;&gt;
-&lt;/main&gt;
-</code></pre>
+&lt;/main&gt;</code></pre>
 <h5>navigation</h5><p>Essa <code>role</code> auxilia elementos de navegação.</p>
 <pre><code class="language-html">&lt;nav class=&quot;navbar&quot; role=&quot;navigation&quot;&gt;
-&lt;/nav&gt;
-</code></pre>
+&lt;/nav&gt;</code></pre>
 <h4>complementary</h4><p>Sabe aqueles conteúdos e informações que não são as mais importante da página, mas são complementares, onde você geralmente usa o <code>&lt;aside&gt;</code>?</p>
 <p>Podemos usar essa <code>role</code> para informar tal função.</p>
 <pre><code class="language-html">&lt;aside class=&quot;content__complementary&quot; role=&quot;complementary&quot;&gt;
-&lt;/aside&gt;
-</code></pre>
+&lt;/aside&gt;</code></pre>
 <h4>!important</h4><p>Como qualquer propriedade, as roles podem ser alteradas via CSS. Você sempre devia usar classes, mas caso você tenha algum problema quanto a isso, também é possível usar assim.</p>
 <pre><code class="language-html">&lt;a role=&quot;logo&quot;&gt;
   &lt;img src=&quot;/img/logo.svg&quot; alt=&quot;Empresa foda!&quot;&gt;
-&lt;/a&gt;
-</code></pre>
+&lt;/a&gt;</code></pre>
 <pre><code class="language-css">a[role=&quot;logo&quot;] {
   margin: 2rem
-}
-</code></pre>
+}</code></pre>
 <p>Existem MUITAS roles, que cobrem praticamente qualquer situação, você pode ver a <a href="https://www.w3.org/WAI/PF/HTML/wiki/RoleAttribute">lista completa aqui</a>.</p>
 <h3>Status / Properties</h3><p>Você consegue usar essas propriedades para informar se determinado elemento está escondido ou visível para o usuário, fornecer informações de texto ou mesmo, esconder elementos visuais desnecessários.</p>
 <h4>aria-hidden</h4><pre><code class="language-html">&lt;a href=&quot;#&quot; title=&quot;Acessar o Facebook&quot;&gt;
@@ -85,22 +73,18 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
   &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon&quot;&gt;
     &lt;use xlink:href=&quot;/assets/svg/icons.svg#facebook&quot;&gt;&lt;/use&gt;
   &lt;/svg&gt;
-&lt;/a&gt;
-</code></pre>
+&lt;/a&gt;</code></pre>
 <p>No exemplo acima, o link tem um ícone com um significado apenas visual, já que a informação importante está no texto. Sendo assim, o <a href="https://www.w3.org/TR/wai-aria/states_and_properties#aria-hidden">aria-hidden=&quot;true&quot;</a> faz com que leitores de tela ignorem esse elemento.</p>
 <h4>aria-label</h4><p>É usado para fornecer informações sobre o elemento caso o texto não esteja disponível na tela.</p>
 <p>De novo um exemplo com ícone.</p>
 <pre><code class="language-html">&lt;svg aria-label=&quot;Facebook&quot; class=&quot;icon&quot;&gt;
   &lt;use xlink:href=&quot;/assets/svg/icons.svg#facebook&quot;&gt;&lt;/use&gt;
-&lt;/svg&gt;
-</code></pre>
+&lt;/svg&gt;</code></pre>
 <p>Ao contrário do outro exemplo, dessa vez não tínhamos um texto ao lado, tornando o ícone um elemento importante na navegação. Então ao invés de usar o <code>aria-hidden=&quot;true&quot;</code>, usamos o <code>aria-label</code> para informar o significado do ícone.</p>
 <h5>Super exemplo!</h5><p>O <a href="https://twitter.com/deividmarques">Deivid Marques</a> adicionou no CSS Components, <a href="http://www.felipefialho.com/css-components/#component-tooltip">um dos melhores exemplos que já vi de aria-label</a>. Aqui é possível ver CSS e HTML trabalhando juntos para melhorar semanântica e acessibilidade.</p>
-<pre><code class="language-html">&lt;div class=&quot;tooltip&quot; aria-label=&quot;Informações em tooltip&quot;&gt;&lt;/div&gt;
-</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;tooltip&quot; aria-label=&quot;Informações em tooltip&quot;&gt;&lt;/div&gt;</code></pre>
 <pre><code class="language-css">.tooltip:after
-  content: attr(aria-label)
-</code></pre>
+  content: attr(aria-label)</code></pre>
 <h2>Conclusão</h2><p>Acredito que na maioria dos casos, os exemplos acima serão os mais utilizados no dia a dia.</p>
 <p>Mas tenha em mente que o assunto é <strong>extremamente</strong> extenso e existem milhares de propriedades WAI-ARIA, englobando várias situações para te ajudar a fornecer mais significado e semântica ao seu projeto.</p>
 <p>Portanto, vou deixar alguns links que costumo acessar quando tenho dúvidas ou quero procurar alguma propriedade.</p>

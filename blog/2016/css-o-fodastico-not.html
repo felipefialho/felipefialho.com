@@ -11,12 +11,10 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 <pre><code class="language-html">&lt;table&gt;
   &lt;tr class=&quot;even&quot;&gt; &lt;/tr&gt;
   &lt;tr class=&quot;odd&quot;&gt; &lt;/tr&gt;
-&lt;/table&gt;
-</code></pre>
+&lt;/table&gt;</code></pre>
 <p>E agora basta fazer isso.</p>
 <pre><code class="language-css">tr { background: #fff; }
-tr:nth-child(odd) { background: #eee; }
-</code></pre>
+tr:nth-child(odd) { background: #eee; }</code></pre>
 <p>Sem classe extra, sem porra nenhuma. Limpo e bonito. :)</p>
 <p>Mas tenho certeza que vocês já viram um milhão de artigos falando dessas pseudo-class mais conhecidas. E mesmo que muita gente também conheça e use o <code>:not()</code>, achei que ele merecia um artigo falando só dele.</p>
 <h2>O fodástico :not() [2]</h2><p>Poucas coisas me deixam tão agoniado no CSS do que propriedades sendo resetadas, é tão frustrante que bolei um jeito de usar as <a href="https://www.felipefialho.com/blog/2015/otimizando-e-organizando-as-media-queries">Media Queries evitando que isso acontecesse</a>, muito antes dessa técnica ficar famosa.</p>
@@ -32,46 +30,37 @@ tr:nth-child(odd) { background: #eee; }
   &amp;:last-child 
     border-bottom 0
     margin-bottom 0
-    padding-bottom 0
-</code></pre>
+    padding-bottom 0</code></pre>
 <p>Olhem essas três propriedades sendo resetadas, muito feio né?</p>
 <p>Agora observem a elegância com que o <code>:not()</code> resolve isso.</p>
 <pre><code class="language-stylus">li
   &amp;:not(:last-child)
     border-bottom 1px solid #eee
     margin-bottom 1rem
-    padding-bottom 1rem
-</code></pre>
+    padding-bottom 1rem </code></pre>
 <p>Quer que determinado estilo seja adicionado em todos os elementos, mas não em uma classe especifica?</p>
 <pre><code class="language-stylus">p:not(.foo)
-  font-size 2rem
-</code></pre>
+  font-size 2rem</code></pre>
 <p>Ou o inverso disso... que o estilo seja adicionado em uma classe, mas não em um elemento especifico. </p>
 <pre><code class="language-stylus">.title:not(h2)
-  color $brand-primary
-</code></pre>
+  color $brand-primary</code></pre>
 <h4>E tem mais...</h4><p>Também é possível usar o <code>:not()</code> combinado com outras pseud-class.</p>
 <p>Quer que o elemento tenha um comportamento caso ele seja o último filho, mas não se ele for ao mesmo tempo o primeiro?</p>
 <pre><code class="language-stylus">.btn:last-child:not(:first-child)
-  align-self flex-end
-</code></pre>
+  align-self flex-end</code></pre>
 <p>Quer negar dois elementos?</p>
 <pre><code class="language-stylus">.title:not(h2):not(h3)
-  color $brand-primary
-</code></pre>
+  color $brand-primary</code></pre>
 <p>Quer que o <code>:hover</code> e o <code>:focus</code> só funcionem se o elemento não tiver a classe <code>.active</code>? </p>
 <pre><code class="language-stylus">.btn:hover:not(.active),
 .btn:focus:not(.active)
-  ...
-</code></pre>
+  ...</code></pre>
 <p>Quer que o elemento tenha determinadas propriedades apenas Se não estiver vazio?</p>
 <pre><code class="language-stylus">.foo:not(:empty)
-  ...
-</code></pre>
+  ...</code></pre>
 <h5>Quer combinar com pseudo-selectors?</h5><p>Bora pegar a classe <code>.title</code> apenas se ela não for um <code>h2</code> e o <code>.header</code> não estiver ativo? </p>
 <pre><code class="language-stylus">.header:not(.active) + .main .title:not(h2)
-  ...
-</code></pre>
+  ...</code></pre>
 <p>O céu é o limite. </p>
 <p>Abraços!</p></div><aside class="share"><div data-url="https://www.felipefialho.com/blog/2016/css-o-fodastico-not" class="addthis_sharing_toolbox"></div></aside><aside class="blog__comments"><div id="disqus_thread"></div><script>(function() {
 var d = document, s = d.createElement('script');

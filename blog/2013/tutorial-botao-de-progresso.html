@@ -10,7 +10,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 <p>Nível do tutorial: <strong>Básico</strong></p>
 <p>A demo funcional está no <a href="http://codepen.io/felipefialho/pen/KviDw">CodePen</a>.</p>
 <h2>Tutorial</h2><h3>No HTML</h3><p>Apenas um botão.</p>
-<p></p><p data-height="400" data-theme-id="light" data-slug-hash="KviDw" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/KviDw/">Button Progress</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="light" data-slug-hash="KviDw" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/KviDw/">Button Progress</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 <h3>No CSS</h3><pre><code class="language-css">.btn{
@@ -32,8 +32,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 
 .btn:hover{
   opacity: .8;
-}
-</code></pre>
+}</code></pre>
 <p>Informações básicas do estilo do botão.</p>
 <pre><code class="language-css">.btn-progress{
   cursor: default;
@@ -43,8 +42,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 
 .btn-progress:hover{
   opacity: 1;
-}
-</code></pre>
+}</code></pre>
 <p>Quando o botão estiver no estado &quot;processando&quot;, vai ter posição relativa, e será zerada qualquer interação que o usuário possa ter, por exemplo &quot;cursor&quot; e &quot;hover&quot;.</p>
 <pre><code class="language-css">.btn-progress:after{
 
@@ -79,8 +77,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
   -o-animation: progress-bar-stripes 0.5s linear infinite;
   animation: progress-bar-stripes 0.5s linear infinite;
 
-}
-</code></pre>
+}</code></pre>
 <p>Use <strong>:after</strong> para adicionar os estilos.</p>
 <ol>
 <li>Em <strong>content</strong> adicione o texto que esse estado do botão terá.</li>
@@ -116,13 +113,11 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 @keyframes progress-bar-stripes {
   to  { background-position: 40px 0; }
   from    { background-position: 0 0; }
-}
-</code></pre>
+}</code></pre>
 <p>Agora criamos a animação apenas invertendo a posição do gradiente, dando o efeito desejado.</p>
 <h3>No JavaScript</h3><pre><code class="language-js">$(&quot;.btn&quot;).click( function(){
   $(this).toggleClass(&quot;btn-progress&quot;);
-});
-</code></pre>
+});</code></pre>
 <p>Apenas um &quot;gatilho&quot; para conseguirem ver o efeito funcionando.</p>
 <p>Mais um tutorial rápido que espero ser útil para algumas pessoas. Dias produtivos para todos vocês! :D</p></div><aside class="share"><div data-url="https://www.felipefialho.com/blog/2013/tutorial-botao-de-progresso" class="addthis_sharing_toolbox"></div></aside><aside class="blog__comments"><div id="disqus_thread"></div><script>(function() {
 var d = document, s = d.createElement('script');

@@ -15,7 +15,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 <p>Caso ainda esteja usando essa abordagem, talvez seja a hora de tentar utilizar outros conceitos.</p>
 <h3>E então o Mobile First ganhou força!</h3><p>Após algum tempo, com as pessoas usando smartphones de forma frenética, começamos a dar mais importância para o acesso mobile. E isso foi crescendo de tal forma, que concluímos que fazia mais sentido começar a concepção do projeto, e também o código, por dispositivos com telas menores e ir crescendo progressivamente, essa técnica ficou conhecida como <strong>Mobile First</strong>.</p>
 <h2>O meu estilo de Mobile First :)</h2><p>Como disse no inicio do artigo, quando se trata de otimizar o código para essa metodologia a minha principal regra é: Evitar ao <strong>máximo</strong> resetar propriedades.</p>
-<p>É bom avisar, que o IE7 e IE8 ignora Media Queries, portanto caso tenha que fornecer suporte para esses navegadores recomendo o Respond.js (<a href="https://github.com/scottjehl/Respond">https://github.com/scottjehl/Respond</a>). Assim tudo vai funcionar perfeitamente (até parece...) nesses navegadores.</p>
+<p>É bom avisar, que o IE7 e IE8 ignora Media Queries, portanto caso tenha que fornecer suporte para esses navegadores recomendo o Respond.js (<a href="https://github.com/scottjehl/Respond)">https://github.com/scottjehl/Respond)</a>. Assim tudo vai funcionar perfeitamente (até parece...) nesses navegadores.</p>
 <p>O primeiro ponto, é que crio algumas variáveis de breakpoints e replico elas conforme a necessidade. Peguei esse costume no tempo em que usava o Bootstrap e mantive até hoje, eu acho que faz todo sentido e torna o fluxo mais fluido.</p>
 <pre><code class="language-stylus">//
 // Media Queries
@@ -32,32 +32,30 @@ $screen-xs-max  = ($screen-sm - 1)
 $screen-sm-max  = ($screen-md - 1)
 $screen-md-max  = ($screen-lg - 1)
 $screen-lg-max  = ($screen-xlg - 1)
-$screen-xlg-max = ($screen-xxlg - 1)
-</code></pre>
+$screen-xlg-max = ($screen-xxlg - 1)</code></pre>
 <p>O segundo ponto é que eu uso Stylus e SEMPRE adiciono as linhas de Media Querie aninhadas dentro do elemento. E não no final do arquivo do componente, e muito menos em um arquivo separado.</p>
 <pre><code class="language-stylus">.header
     @media (min-width $screen-sm)
-       ...
-</code></pre>
+       ...</code></pre>
 <p>O terceiro ponto, é que nos exemplos desse artigo não vou levar em consideração propriedades muito especificas de cada dispositivo, resoluções em retina, nem nada do tipo, mas o conceito é exatamente o mesmo.</p>
 <h2>Situação real</h2><p>Vamos pensar na seguinte situação, que alias é muito comum: Você tem um menu, e a versão &quot;mobile&quot; e &quot;desktop&quot; são completamente diferentes uma da outra.</p>
 <ul>
 <li>Na versão mobile ele deve ser fixo, com um botão hambúrguer e o menu só ficará visível após clicar no botão. Quando os itens estiverem visíveis, eles devem estar em blocos um abaixo do outro</li>
 </ul>
 <p>Seria exatamente assim:</p>
-<p></p><p data-height="400" data-theme-id="light" data-slug-hash="jPvdgp" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/jPvdgp/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="light" data-slug-hash="jPvdgp" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/jPvdgp/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 <ul>
 <li>Já na versão desktop, ele deve estar sempre visível, não deve estar fixo e os itens devem ser posicionados um ao lado do outro</li>
 </ul>
 <p>Então ele ficaria dessa forma:</p>
-<p></p><p data-height="400" data-theme-id="light" data-slug-hash="LVJaEG" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/LVJaEG/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="light" data-slug-hash="LVJaEG" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/LVJaEG/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 <p>Observem que utilizo o mesmo HTML (Jade) em ambos os exemplos.</p>
 <h3>Agora vamos juntar os dois códigos seguindo a minha metodologia</h3><p>O resultado será esse! (pode dar resize para ver as mudanças)</p>
-<p></p><p data-height="400" data-theme-id="light" data-slug-hash="GJXeJv" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/GJXeJv/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="light" data-slug-hash="GJXeJv" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/GJXeJv/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 <p>Observem bem o código.</p>

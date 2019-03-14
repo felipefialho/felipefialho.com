@@ -9,7 +9,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 <h2>Primeira técnica</h2><h3>Sobre</h3><p>Cheguei nessa solução através <a href="http://elvery.net">desse artigo</a>, que mostra algumas demos de tabelas funcionais e responsiva. Após aplicar e comprovar a eficácia dessa técnica, descobri que a <a href="http://www.globo.com">Globo.com</a> também está usando.</p>
 <p>Ela consiste em inverter a posição do <strong>thead</strong> e posicionar o <strong>tbody</strong> na sua direita.</p>
 <p>A demo funcional está no <a href="http://codepen.io/felipefialho/pen/hsreD">CodePen</a> (redimensione o navegador para visualizar o efeito).</p>
-<h3>Tutorial</h3><h4>No HTML</h4><p></p><p data-height="500" data-theme-id="light" data-slug-hash="hsreD" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/hsreD/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<h3>Tutorial</h3><h4>No HTML</h4><p data-height="500" data-theme-id="light" data-slug-hash="hsreD" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/hsreD/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 <p>Observem que adiciono duas classes. A classe responsável pelo efeito é <strong>table-responsive</strong>, gosto de separar dessa forma e não deixar &quot;genérico&quot;, pois consigo definir quais tabelas vão ter esse comportamento.</p>
@@ -29,19 +29,16 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 .table-responsive td,
 .table-responsive tr {
   display: block;
-}
-</code></pre>
+}</code></pre>
 <p>Tabela funcionando como um bloco.</p>
 <pre><code class="language-css">.table-responsive td,
 .table-responsive th {
   height: 35px;
-}
-</code></pre>
+}</code></pre>
 <p>Defino um tamanho para as células.</p>
 <pre><code class="language-css">.table-responsive thead {
   float: left;
-}
-</code></pre>
+}</code></pre>
 <p>A &quot;mágica&quot; é feita aqui, o <strong>thead</strong> é “flotado” para esquerda.</p>
 <pre><code class="language-css">.table-responsive tbody {
   width: auto;
@@ -49,19 +46,17 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   white-space: nowrap;
-}
-</code></pre>
+}</code></pre>
 <p>Assim como definimos que o <strong>tbody</strong> terá um scroll horizontal quando não comportar todo o conteúdo. Além disso, é importante colocar <strong>-webkit-overflow-scrolling: touch</strong> para pleno funcionamento em alguns dispositivos touch.</p>
 <pre><code class="language-css">.table-responsive tbody tr {
   display: inline-block;
-}
-</code></pre>
+}</code></pre>
 <p>Por último, posicionamos as linhas lado-a-lado, isso causa o efeito que desejamos.</p>
 <h2>Segunda técnica</h2><h3>Sobre</h3><p>Essa solução foi inspirada no funcionamento do <a href="http://www.gmail.com">Gmail</a> para dispositivos menores.</p>
 <p>Funciona bem para tabelas que exigem por exemplo, um check. Ele agrupa as informações.</p>
 <p>Pode ser útil principalmente em CMS ou Gerenciadores.</p>
 <p>A demo funcional está no <a href="http://codepen.io/felipefialho/pen/beEoG">CodePen</a> (redimensione o navegador para visualizar o efeito).</p>
-<h3>Tutorial</h3><h4>No HTML</h4><p></p><p data-height="500" data-theme-id="light" data-slug-hash="hsreD" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/beEoG">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<h3>Tutorial</h3><h4>No HTML</h4><p data-height="500" data-theme-id="light" data-slug-hash="hsreD" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/beEoG">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 <p>Assim como no exemplo anterior, uso uma classe apenas para aplicar o efeito, no caso <strong>.table-action</strong>.</p>
@@ -70,21 +65,18 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 <p>Adiciono essas configurações apenas para resoluções de até 480px.</p>
 <pre><code class="language-css">.table-action thead {
   display: none;
-}
-</code></pre>
+}</code></pre>
 <p>Retiro o head ta tabela.</p>
 <pre><code class="language-css">.table-action tr {
   border-bottom: 1px solid #dddddd;
 }
 .table-action td {
   border: 0;
-}
-</code></pre>
+}</code></pre>
 <p>Mudo o posicionamento das bordas, para causar o efeito que necessito.</p>
 <pre><code class="language-css">.table-action td:not(:first-child) {
   display: block;
-}
-</code></pre>
+}</code></pre>
 <p>Por último... aviso que todas as td, com exceção da primeira, será um bloco, dessa forma vão se alinhar uma embaixo da outra.</p>
 <p>É isso pessoal, espero que ajude vocês com algum projeto responsivo que necessite de tabelas. Grande abraço!</p></div><aside class="share"><div data-url="https://www.felipefialho.com/blog/2013/tutorial-tabela-responsiva" class="addthis_sharing_toolbox"></div></aside><aside class="blog__comments"><div id="disqus_thread"></div><script>(function() {
 var d = document, s = d.createElement('script');

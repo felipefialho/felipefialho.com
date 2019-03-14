@@ -48,7 +48,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 <h4>Disclaimer</h4><p>Quero deixar claro que vou utilizar <a href="https://github.com/frontendbr/forum/issues/83">uma nomenclatura que estou usando nos meus projetos</a>. Me baseei no BEM e em outros modelos. Adotem a nomenclatura que mais gostarem e foquem no contexto dos exemplos.</p>
 <h3>Exemplo</h3><p>Observem esse componente retirado do site do <a href="https://www.airbnb.com.br">Airbnb</a>.</p>
 <p><img src="/assets/img/blog/exemplo-airbnb.jpg" alt="Exemplo Airbnb"></p>
-<p>Seguindo a lógica do Atomic CSS, os elementos <strong>1</strong> e <strong>2</strong> seriam títulos pertencentes a um organismo, enquanto os elementos <strong>3</strong>, <strong>4</strong> e <strong>5</strong> pertenceriam a uma molécula reaproveitável em diversos organismos.</p>
+<p>Seguindo a lógica do Atomic CSS, os elementos <strong>1** e **2</strong> seriam títulos pertencentes a um organismo, enquanto os elementos <strong>3*<em>, *</em>4</strong> e <strong>5</strong> pertenceriam a uma molécula reaproveitável em diversos organismos.</p>
 <p>Vamos imaginar que o nome do organismo é <code>.place</code> e o nome da molécula é <code>.card</code> na seguinte estrutura HTML.</p>
 <pre><code class="language-html">&lt;section class=&quot;place&quot;&gt;
   &lt;div class=&quot;place__container&quot;&gt;
@@ -82,8 +82,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
       &lt;p class=&quot;price&quot;&gt;R$551&lt;/p&gt;
     &lt;/a&gt;
   &lt;/div&gt;
-&lt;/section&gt;
-</code></pre>
+&lt;/section&gt;</code></pre>
 <h4>Como eu fazia e dava merda</h4><pre><code class="language-stylus">// A molécula
 .card
   h2
@@ -105,8 +104,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
   ...
 
   p
-  ...
-</code></pre>
+  ...</code></pre>
 <h5>Por que dava merda?</h5><ol>
 <li>Observem que tanto o <code>.place</code>, quanto o <code>.card</code>, tem o elemento <code>&lt;p&gt;</code>. Sendo assim, o elemento <code>&lt;p&gt;</code> do <code>.card</code>, que estava dentro do organismo <code>.place</code>, tinha propriedades que eu não queria que fossem herdadas. Muitas vezes era necessário dar <em>reset</em> nessas propriedades. Ou seja... gambiarra.</li>
 <li>Nesse contexto, o <code>.place</code> tem um <code>&lt;h1&gt;</code> e o <code>.card</code> tem um <code>&lt;h2&gt;</code>, mas contextos mudam, e a semântica muda. Ao atrelar o visual em um elemento, jamais poderíamos trocar por outro elemento mais semântico em outra situação.</li>
@@ -134,8 +132,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
   ...
 
   &gt; p
-  ...
-</code></pre>
+  ...</code></pre>
 <h5>Por que dava merda?</h5><p>Observem que o <code>.place</code> tem um <code>.place__container</code> e o <code>.card</code> tem um <code>.card__main</code>. Automáticamente, os elementos já não são filhos diretos. Poderiamos fazer com que eles fossem filhos dessas classes intermediarias, mas vocês percebem o quanto o código fica engessado?</p>
 <p>Dependemos que os elementos sejam filhos diretos de outros para que funcionem.</p>
 <h4>Como eu faço agora!</h4><p>Lembrando que uso Stylus...</p>
@@ -170,8 +167,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 
   // Etc
   &amp;__container
-  ...
-</code></pre>
+  ...</code></pre>
 <p>E no HTML fica assim.</p>
 <pre><code class="language-html">&lt;section class=&quot;place&quot;&gt;
   &lt;div class=&quot;place__container&quot;&gt;
@@ -206,8 +202,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
       &lt;p class=&quot;card--price&quot;&gt;R$551&lt;/p&gt;
     &lt;/a&gt;
   &lt;/div&gt;
-&lt;/section&gt;
-</code></pre>
+&lt;/section&gt;</code></pre>
 <h5>Porque isso da certo</h5><ol>
 <li>Nenhuma classe ou elemento vai sobrescrever outro. Nunca.</li>
 <li>Se o <code>&lt;h2&gt;</code> virar um <code>&lt;h3&gt;</code> em outro contexto, tudo bem, poderíamos usar <code>&lt;h3 class=&quot;card--title&quot;&gt;</code> e assim por diante.</li>
@@ -217,8 +212,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 <h3>Mas e a redundância?</h3><p>Um dos argumentos usados para customizar os elementos e não as classes, são possíveis redundâncias do código, já que que as classes de alguns elementos acabam ficando exatamente igual ao nome da tag.</p>
 <pre><code class="language-html">&lt;header class=&quot;header&quot;&gt;&lt;/header&gt;
 &lt;footer class=&quot;footer&quot;&gt;&lt;/footer&gt;
-&lt;main class=&quot;main&quot;&gt;&lt;/main&gt;
-</code></pre>
+&lt;main class=&quot;main&quot;&gt;&lt;/main&gt;</code></pre>
 <p>Não sei porque isso seria um problema, já que o HTML resolve semântica e o CSS resolve estilo. Mas caso isso incomode, nada te impede de utilizar outros nomes para as classes.</p>
 <p>Mas caso você realmente bata o pé e resolva estilizar diretamente os elementos, com certeza vão acontecer alguns problemas quando o projeto crescer.</p>
 <p>Pode ser que no inicio do projeto, você realmente tenha apenas um <code>&lt;header&gt;</code> previsto, mas todos sabemos que essa tag pode ser utilizada mais vezes. Então todos os estilos adicionados no primeiro elemento, seriam herdados pelo segundo, e seria necessário aplicar <em>resets</em>, sujando o código e causando diversos problemas de escalabilidade.</p>
@@ -248,8 +242,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 
 
   &gt; p
-  ...
-</code></pre>
+  ...</code></pre>
 <p>Dessa forma, é possível escrever o texto livremente, adicionar em qualquer lugar do projeto e as configurações vão funcionar.</p>
 <h3>Plus: Não se esqueça dos data-attributes</h3><p>Mesmo não sendo os campeões de performance, os <em>data-attributes</em> podem ser importantes aliados na construção de um código mais escalável.</p>
 <p>Em 2014, escrevi um artigo, chamado <a href="https://www.felipefialho.com/blog/2014/sobre-data-atributes-e-javascript">Sobre Data Atributes e JavaScript</a>, em que mostrava as vantagens usar <em>data-atributes</em> e não classes ou IDs para manipulações no JavaScript.</p>

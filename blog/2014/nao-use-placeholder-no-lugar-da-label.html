@@ -9,20 +9,18 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 <p>Essa prática é muito ruim, pois além de não ser semântico, já que o <code>&lt;placeholder&gt;</code> não funciona como rótulo, ainda trás problemas de acessibilidade. Leitores de tela, por exemplo, podem não ser capazes de passar a informação corretamente.</p>
 <p>Além disso, em um formulário grande, o usuário pode ficar confuso, já que o comportamento padrão do <code>&lt;placeholder&gt;</code> é sumir após o usuário clicar.</p>
 <p>Uma boa forma de contornar esse problema, é adicionar uma <code>&lt;label&gt;</code>, fora do campo. Mas muitas vezes nos deparamos com projetos que necessitam de um texto dentro do campo, e nesse caso vou passar uma boa solução para vocês.</p>
-<h2>A Solução</h2><p></p><p data-height="400" data-theme-id="light" data-slug-hash="ijBDF" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/ijBDF/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<h2>A Solução</h2><p data-height="400" data-theme-id="light" data-slug-hash="ijBDF" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/ijBDF/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 <p>Observem, que ao clicar sobre o campo, a <code>&lt;label&gt;</code> muda de posição e permanece sempre visível. Essa solução usa apenas CSS e é muito simples de ser implementada:</p>
 <h3>HTML</h3><pre><code class="language-html">&lt;div class=&quot;form-item&quot;&gt;
   &lt;input class=&quot;form-control&quot; id=&quot;name&quot; name=&quot;name&quot; type=&quot;text&quot; required&gt;
   &lt;label class=&quot;label-float&quot; for=&quot;name&quot;&gt;Nome&lt;/label&gt;
-&lt;/div&gt;
-</code></pre>
+&lt;/div&gt;</code></pre>
 <p>Uma marcação básica, apenas adicionei a <code>&lt;label&gt;</code> logo após o campo relacionado.</p>
 <h3>CSS</h3><pre><code class="language-stylus">.form-item {
   position: relative;
-}
-</code></pre>
+}</code></pre>
 <p>Deixo o <code>.form-item</code> como relativo, para os filhos absolutos se posicionarem a partir dele.</p>
 <pre><code class="language-stylus">.form-control {
   box-sizing: border-box;
@@ -42,8 +40,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
   &amp;:focus  {
     border-color: @blue;
   }
-}
-</code></pre>
+}</code></pre>
 <p>Uma estilização bem simples de um campo de formulário.</p>
 <pre><code class="language-stylus">.label-float {
   color: @gray-light;
@@ -60,8 +57,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
     font-size: 12px;
     line-height: 1.5;
   }
-}
-</code></pre>
+}</code></pre>
 <p>E aqui a mágica acontece.</p>
 <p>Primeiramente deixamos o elemento <code>absolute</code> e <code>top: 0</code> para ficar posicionado em cima do campo e no topo como base.</p>
 <p>Em seguida definimos o <code>line-height</code> igual ao do campo de formulário para que fique centralizado. Adicionamos ainda um <code>transition</code> no <code>line-height</code> para que faça uma transição animada.</p>

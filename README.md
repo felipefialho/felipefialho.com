@@ -30,8 +30,8 @@ First of all, install the dependencies to run this boilerplate.
 
 ```sh
 # Clone this repository
-$ git clone git@github.com:felipefialho/felipefialho.github.io.git
-$ cd felipefialho.github.io/harp/
+$ git clone git@github.com:LFeh/lfeh.github.io.git
+$ cd lfeh.github.io/harp/
 
 # install gulp globally
 $ npm install -g gulp
@@ -39,7 +39,7 @@ $ npm install -g gulp
 # install harp globally
 $ npm install -g harp
 
-# install dependencies 
+# install dependencies
 $ npm install
 
 ```
@@ -93,14 +93,14 @@ To view a reporter of CSS files, use a `npm run reporter` command.
 
 
 ### Tasks
-  
-- `gulp css`: compile stylus files 
+
+- `gulp css`: compile stylus files
 - `gulp images`: compress image files
-- `gulp icons`: generate sprite of icons 
-- `gulp watch`: call for watch files 
+- `gulp icons`: generate sprite of icons
+- `gulp watch`: call for watch files
 
 - `npm start`: run all tasks and initialize watch for changes and a server
-- `npm test`: test the javascript and css complexity 
+- `npm test`: test the javascript and css complexity
 - `npm run lint`: test the javascript
 - `npm run reporter`: test css complexity
 - `npm run deploy`: deploy to gh pages

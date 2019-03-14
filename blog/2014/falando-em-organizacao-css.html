@@ -119,8 +119,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 ├── pages/ (Estiliza páginas individualmente)
 │   ├── home
 |
-├── vendor/ (Estiliza dependencias externas)
-</code></pre><h2>Exemplos Práticos</h2><h3>Core</h3><h4>_core/margins:</h4><pre><code class="language-stylus">//
+├── vendor/ (Estiliza dependencias externas)</code></pre><h2>Exemplos Práticos</h2><h3>Core</h3><h4>_core/margins:</h4><pre><code class="language-stylus">//
 // Margins
 // --------------------------------------------------
 
@@ -129,8 +128,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
 @space-xs: (@space / 4); // Extra small space margin
 @space-sm: (@space / 2); // Small space margin
 @space-md: (@space * 2); // Medium space margin
-@space-lg: (@space * 3); // Large space margin
-</code></pre>
+@space-lg: (@space * 3); // Large space margin</code></pre>
 <h4>_core/type:</h4><pre><code class="language-stylus">//
 // Typography
 // --------------------------------------------------
@@ -151,8 +149,7 @@ ga('send', 'pageview');</script></head><body class="page-blog"><header role="ban
   .p1() {
     .font(16);
   }
-}
-</code></pre>
+}</code></pre>
 <p>Observem que defino alguns mixins e configurações reaproveitáveis em todo o projeto.</p>
 <h4>Atoms</h4><h4>atoms/headings:</h4><pre><code class="language-stylus">//
 // Headings
@@ -164,8 +161,7 @@ h1 {
 
 h1 {
   #type &gt; .h1();
-}
-</code></pre>
+}</code></pre>
 <h4>atoms/paragraph:</h4><pre><code class="language-stylus">//
 // Paragraph
 // --------------------------------------------------
@@ -177,8 +173,7 @@ p {
   &amp;:last-child {
     margin: 0;
   }
-}
-</code></pre>
+}</code></pre>
 <p>São definidas classes ou elementos bases, que serão utilizadas e modificadas conforme a necessidade das &#39;molecules&#39;, &#39;organisms&#39; ou &#39;pages&#39;.</p>
 <p>Os elementos devem ser únicos, nunca aninhados.</p>
 <h4>Molecules</h4><h4>molecules/wellness:</h4><pre><code class="language-stylus">//
@@ -197,8 +192,7 @@ p {
   p {
     color: @gray;
   }
-}
-</code></pre>
+}</code></pre>
 <p>Modifica os átomos para a criação de um componente especifico.</p>
 <h4>Organisms</h4><h4>organisms/header:</h4><pre><code class="language-stylus">//
 // Header
@@ -211,8 +205,7 @@ p {
   .wellness {
     text-align: center;
   }
-}
-</code></pre>
+}</code></pre>
 <p>Modifica os átomos e moléculas para a criação de uma sessão do projeto.</p>
 <h4>Pages</h4><h4>pages/home:</h4><pre><code class="language-stylus">//
 // Home
@@ -235,8 +228,7 @@ p {
     padding: @space @space-lg;
   }
 
-}
-</code></pre>
+}</code></pre>
 <p>Modifica os átomos, moléculas e organismos para a criação de uma página específica do projeto.</p>
 <h3>Dicas rápidas</h3><ul>
 <li>Não se prenda na metodologia, abra espaço para implementar mudanças que vão melhorar a utilização, seja para uso próprio ou para um escopo especifico.</li>
@@ -269,8 +261,7 @@ p {
     position: fixed;
     // O top, right e left está escalando na resolução &#39;sm&#39;, não precisa repetir :)
   }
-}
-</code></pre>
+}</code></pre>
 <p>Se tiverem alguma dúvida ou quiserem debater sobre o assunto, saiba que o Disqus escala e podem usar os comentários sem medo :p. Abraços!</p></div><aside class="share"><div data-url="https://www.felipefialho.com/blog/2014/falando-em-organizacao-css" class="addthis_sharing_toolbox"></div></aside><aside class="blog__comments"><div id="disqus_thread"></div><script>(function() {
 var d = document, s = d.createElement('script');
 s.src = '//felipefialho.disqus.com/embed.js';
