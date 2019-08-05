@@ -1,4 +1,8 @@
-**/.DS_Store
 .DS_Store
+_site
 node_modules
-*.log*
+_drafts
+.cache
+.vscode
+public
+.env
