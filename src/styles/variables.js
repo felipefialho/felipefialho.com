@@ -39,8 +39,13 @@ export const Screen = {
 // --------------------------------------------------
 
 export const Color = {
-  white: '#ffffff',
-  black: '#000000',
+  white: '#f0f0f0',
+  black: '#111111',
+  blue: '#0291A7',
+  grayDark: '#333333',
+  gray: '#666666',
+  grayLight: '#aaaaaa',
+  grayLighter: '#dddddd',
 }
 
 // --------------------------------------------------
