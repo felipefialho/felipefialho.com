@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
+import * as V from './variables';
+
 const GlobalStyles = createGlobalStyle`
   /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -18,11 +20,11 @@ const GlobalStyles = createGlobalStyle`
   figure, figcaption, footer, header, hgroup,
   menu, nav, output, ruby, section, summary,
   time, mark, audio, video {
+    border: 0;
+    font: inherit;
+    font-size: 100%;
     margin: 0;
     padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
   }
 
@@ -44,6 +46,36 @@ const GlobalStyles = createGlobalStyle`
     display: block;
   	height: auto;
   	max-width: 100%;
+  }
+
+  html {
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: auto;
+    font-size: 10px;
+  }
+
+  body {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    background-color: var(--bg);
+  }
+
+  body.theme--dark {
+    --bg: ${V.Color.black};
+    --bgSecondary: ${V.Color.grayDark};
+    --borderColor: ${V.Color.gray};
+    --highlightColor: ${V.Color.blue};
+    --primaryColor: ${V.Color.white};
+    --secondaryColor: ${V.Color.grayLighter};
+  }
+
+  body.theme--light {
+    --bg: ${V.Color.black};
+    --bgSecondary: ${V.Color.grayDark};
+    --borderColor: ${V.Color.gray};
+    --highlightColor: ${V.Color.blue};
+    --primaryColor: ${V.Color.white};
+    --secondaryColor: ${V.Color.grayLighter};
   }
 `
 export default GlobalStyles
