@@ -7,8 +7,24 @@
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:css": "stylelint './src/**/*.js'",
+    "lint:js": "eslint ./src/",
+    "lint:fix:js": "eslint ./src/ --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
   "dependencies": {
-    "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.13.50",
     "gatsby-image": "^2.2.8",
     "gatsby-plugin-feed": "^2.3.6",
@@ -35,14 +51,22 @@
     "react-typography": "^0.16.19",
     "styled-components": "^4.3.2",
     "styled-icons": "^8.3.0",
-    "styled-media-query": "^2.1.2",
-    "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.75",
-    "typography": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "babel-eslint": "^9.0.0",
+    "babel-plugin-styled-components": "^1.10.6",
+    "eslint": "^5.14.0",
+    "eslint-config-react-app": "^4.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.5.0",
+    "husky": "^3.0.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-order": "^3.0.1",
+    "stylelint-processor-styled-components": "^1.8.0"
   },
   "homepage": "https://github.com/felipefialho/felipefialho.github.io#readme",
   "keywords": [
@@ -52,13 +76,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/felipefialho/felipefialho.github.io.git"
-  },
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   }
 }
