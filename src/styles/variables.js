@@ -15,7 +15,7 @@ export const Space = {
   xxs: '.4rem',
   xs: '.8rem',
   sm: '1.6rem',
-  space: '2.4rem',
+  default: '2.4rem',
   md: '3.2rem',
   lg: '4.8rem',
   xlg: '6.4rem',
@@ -39,13 +39,15 @@ export const Screen = {
 // --------------------------------------------------
 
 export const Color = {
-  white: '#f0f0f0',
-  black: '#111111',
+  white: '#ffffff',
+  black: '#000000',
   blue: '#0291A7',
+  grayDarker: '#111111',
   grayDark: '#333333',
   gray: '#666666',
   grayLight: '#aaaaaa',
   grayLighter: '#dddddd',
+  grayWhite: '#f0f0f0',
 }
 
 // --------------------------------------------------
