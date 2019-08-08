@@ -2,17 +2,18 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import GlobalStyles from '../../styles/global'
+import Header from '../Header';
 
-import * as S from './styles'
+import * as S from './styled'
 
 const Layout = ({ children }) => {
   return (
     <S.Host>
       <Helmet>
-        <body className="theme--dark" />
+        <body className="theme--light" />
       </Helmet>
       <GlobalStyles />
-      <p>It works</p>
+      <Header />
     </S.Host>
   )
 }
