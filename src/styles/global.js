@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-import * as V from './variables';
+import * as V from './variables'
 
 const GlobalStyles = createGlobalStyle`
   /* http://meyerweb.com/eric/tools/css/reset/
@@ -61,8 +61,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body.theme--dark {
-    --bg: ${V.Color.black};
-    --bgSecondary: ${V.Color.grayDark};
+    --bg: ${V.Color.grayDarker};
+    --bgSecondary: ${V.Color.black};
     --borderColor: ${V.Color.gray};
     --highlightColor: ${V.Color.blue};
     --primaryColor: ${V.Color.white};
@@ -70,12 +70,12 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body.theme--light {
-    --bg: ${V.Color.black};
-    --bgSecondary: ${V.Color.grayDark};
+    --bg: ${V.Color.white};
+    --bgSecondary: ${V.Color.grayWhite};
     --borderColor: ${V.Color.gray};
     --highlightColor: ${V.Color.blue};
-    --primaryColor: ${V.Color.white};
-    --secondaryColor: ${V.Color.grayLighter};
+    --primaryColor: ${V.Color.dark};
+    --secondaryColor: ${V.Color.grayDark};
   }
 `
 export default GlobalStyles
