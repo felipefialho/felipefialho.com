@@ -6,6 +6,19 @@ import * as V from '../../styles/variables'
 export const Header = styled.header.attrs({
   role: 'banner',
 })`
+  display: block;
+  text-transform: lowercase;
+  width: 100%;
+  
+  ${media.greaterThan('medium')`
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+  `}
+`
+
+export const Main = styled.div`
   align-items: center;
   background-color: var(--bgSecondary);
   color: var(--colorPrimary);
@@ -15,16 +28,13 @@ export const Header = styled.header.attrs({
   padding-left: ${V.Space.sm};
   padding-right: ${V.Space.sm};
   transition: background-color .3s;
-  width: 100%;
   will-change: background-color;
   
   ${media.greaterThan('medium')`
-    background-color: ${V.Color.black};
+    background-color: ${V.Color.grayDarker};
     height: ${V.Height.headerLg};
     padding-left: ${V.Space.default};
     padding-right: ${V.Space.default};
-    position: fixed;
-    width: 100%;
   `}
 `
 
@@ -36,5 +46,27 @@ export const Brand = styled.div`
     > *:not(:last-child) {
       margin-right: ${V.Space.sm};
     }
+  `}
+`
+
+export const Bar = styled.div.attrs({
+  'aria-hidden': 'true',
+})`
+  background-color: ${V.Color.grayDarker};
+  color: ${V.Color.white}; 
+  padding: ${V.Space.sm};
+  
+  ${media.greaterThan('medium')`
+    display: none;
+  `}
+`
+
+export const Title = styled.h1`
+  display: none;
+
+  ${media.greaterThan('medium')`
+    color: ${V.Color.blueLight};
+    display: inline-block;
+    font-size: 2rem;
   `}
 `
