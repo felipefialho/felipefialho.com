@@ -1,7 +1,7 @@
 import styled from 'styled-components'
+import media from 'styled-media-query';
 
 import * as V from '../../styles/variables'
-import media from 'styled-media-query';
 
 export const Brand = styled.div.attrs({
   'role': 'logo',
