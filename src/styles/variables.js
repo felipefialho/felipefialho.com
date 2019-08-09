@@ -47,7 +47,8 @@ export const Screen = {
 export const Color = {
   white: '#ffffff',
   black: '#000000',
-  blue: '#0291A7',
+  blueLight: '#aceff9',
+  blue: '#349dad',
   grayDarker: '#111111',
   grayDark: '#333333',
   gray: '#666666',
