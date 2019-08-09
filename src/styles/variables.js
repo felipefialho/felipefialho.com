@@ -21,6 +21,12 @@ export const Space = {
   xlg: '6.4rem',
   xxlg: '9.6rem',
 };
+
+export const Height = {
+  headerSm: `${Space.lg}`,
+  headerLg: `${Space.xlg}`,
+};
+ 
  
 // --------------------------------------------------
 // 2. Media Queries

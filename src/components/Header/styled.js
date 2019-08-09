@@ -17,7 +17,7 @@ export const Host = styled.header.attrs({
   width: 100%;
   
   ${media.greaterThan(V.Screen.sm)`
-    height: ${V.Space.xlg};
+    height: ${V.Height.headerLg};
     position: fixed;
     width: 100%;
   `}
