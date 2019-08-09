@@ -58,6 +58,7 @@ const GlobalStyles = createGlobalStyle`
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     background-color: var(--bg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
 
   body.theme--dark {
@@ -76,6 +77,14 @@ const GlobalStyles = createGlobalStyle`
     --highlightColor: ${V.Color.blue};
     --primaryColor: ${V.Color.dark};
     --secondaryColor: ${V.Color.grayDark};
+  }
+
+  p a {
+    color: var(--highlightColor); 
+  }
+
+  ::selection {
+    background: var(--highlightColor); 
   }
 `
 export default GlobalStyles
