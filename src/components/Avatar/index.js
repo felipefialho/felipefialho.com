@@ -18,7 +18,7 @@ const Avatar = () => {
     `
   )
 
-  return <S.Host fluid={image.childImageSharp.fluid} />
+  return <S.Avatar fluid={image.childImageSharp.fluid} />
 }
 
 export default Avatar

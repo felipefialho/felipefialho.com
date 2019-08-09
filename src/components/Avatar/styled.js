@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 import * as V from '../../styles/variables'
 import media from 'styled-media-query';
 
-export const Host = styled(Img).attrs({
+export const Avatar = styled(Img).attrs({
   title: 'Felipe Fialho',
   'aria-label': 'Felipe Fialho',
 })`
