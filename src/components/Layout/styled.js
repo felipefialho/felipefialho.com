@@ -1,5 +1,5 @@
 import styled from 'styled-components'
 
-export const Host = styled.section`
+export const Layout = styled.section`
   display: flex;
 `
