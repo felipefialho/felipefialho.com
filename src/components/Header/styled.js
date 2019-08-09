@@ -3,7 +3,7 @@ import media from 'styled-media-query'
 
 import * as V from '../../styles/variables'
 
-export const Host = styled.header.attrs({
+export const Header = styled.header.attrs({
   role: 'banner',
 })`
   align-items: center;
@@ -12,13 +12,29 @@ export const Host = styled.header.attrs({
   display: flex;
   justify-content: space-between;
   height: ${V.Space.lg};
-  padding-left: ${V.Space.default};
-  padding-right: ${V.Space.default};
+  padding-left: ${V.Space.sm};
+  padding-right: ${V.Space.sm};
+  transition: background-color .3s;
   width: 100%;
+  will-change: background-color;
   
   ${media.greaterThan(V.Screen.sm)`
+    background-color: ${V.Color.black};
     height: ${V.Height.headerLg};
+    padding-left: ${V.Space.default};
+    padding-right: ${V.Space.default};
     position: fixed;
     width: 100%;
+  `}
+`
+
+export const Brand = styled.div`
+  ${media.greaterThan(V.Screen.sm)`
+    align-items: center;
+    display: flex;
+
+    > *:not(:last-child) {
+      margin-right: ${V.Space.sm};
+    }
   `}
 `
