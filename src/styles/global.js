@@ -59,6 +59,7 @@ const GlobalStyles = createGlobalStyle`
     overflow-x: hidden;
     background-color: var(--bg);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
   }
 
   body.theme--dark {
