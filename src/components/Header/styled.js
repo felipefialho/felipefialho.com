@@ -18,7 +18,7 @@ export const Header = styled.header.attrs({
   width: 100%;
   will-change: background-color;
   
-  ${media.greaterThan(V.Screen.sm)`
+  ${media.greaterThan('medium')`
     background-color: ${V.Color.black};
     height: ${V.Height.headerLg};
     padding-left: ${V.Space.default};
@@ -29,7 +29,7 @@ export const Header = styled.header.attrs({
 `
 
 export const Brand = styled.div`
-  ${media.greaterThan(V.Screen.sm)`
+  ${media.greaterThan('medium')`
     align-items: center;
     display: flex;
 

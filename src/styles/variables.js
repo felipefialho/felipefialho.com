@@ -1,8 +1,7 @@
 // ==================================================
 // Variables
 //
-// 1. Spaces
-// 2. Media Queries
+// 1. Spaces 
 // 3. Colors
 // 4. zIndex 
 // ==================================================
@@ -27,21 +26,8 @@ export const Height = {
   headerLg: `${Space.xlg}`,
 };
  
- 
 // --------------------------------------------------
-// 2. Media Queries
-// --------------------------------------------------
-
-export const Screen = {
-  xs: '360px',   // xExtra small screen / phone
-  sm: '768px',   // Extra small screen / phone
-  md: '960px',   // Small screen / tablet
-  lg: '1280px',  // Medium screen / desktop
-  xlg: '1920px',  // Extra Large screen / wide desktop
-}
- 
-// --------------------------------------------------
-// 3. Colors
+// 2. Colors
 // --------------------------------------------------
 
 export const Color = {
@@ -58,7 +44,7 @@ export const Color = {
 }
 
 // --------------------------------------------------
-// 4. zIndex
+// 3. zIndex
 // --------------------------------------------------
 
 export const ZIndex = {

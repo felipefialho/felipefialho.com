@@ -9,7 +9,7 @@ export const Brand = styled.div.attrs({
 })` 
   display: none;
 
-  ${media.greaterThan(V.Screen.sm)`
+  ${media.greaterThan('medium')`
     display: inline-block;
     fill: ${V.Color.blueLight};
     width: ${V.Space.xxlg};

@@ -14,7 +14,7 @@ export const Avatar = styled(Img).attrs({
   height: ${V.Space.md};
   width: ${V.Space.md};
 
-  ${media.greaterThan(V.Screen.sm)`
+  ${media.greaterThan('medium')`
     height: ${V.Space.lg};
     width: ${V.Space.lg};
   `}
