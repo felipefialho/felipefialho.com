@@ -29,6 +29,7 @@ const Layout = ({ children }) => {
   return (
     <S.Layout>
       <Helmet>
+        <title>{site.siteMetadata.title}</title>
         <body className="theme--light" />
       </Helmet>
       <GlobalStyles />
