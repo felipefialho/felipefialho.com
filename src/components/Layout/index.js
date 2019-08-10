@@ -16,6 +16,7 @@ const Layout = ({ children }) => {
         site {
           siteMetadata {
             title
+            author
             position
             description
             authorDescription
@@ -24,7 +25,7 @@ const Layout = ({ children }) => {
       }
     `
   )
-  
+
   return (
     <S.Layout>
       <Helmet>

@@ -5,25 +5,23 @@ import Avatar from '../Avatar';
 
 import * as S from './styled'
 
-const Header = ({ site: { title }}) => {
+const Header = ({ site: { author }}) => {
   return (
     <S.Header>
       <S.Main>
         <S.Brand>
           <Avatar />
-          <S.Title>{ title }</S.Title>
+          <S.Title>{ author }</S.Title>
         </S.Brand>
       </S.Main>
-      <S.Bar>{ title }</S.Bar>
+      <S.Bar>{ author }</S.Bar>
     </S.Header>
   )
 }
 
 Header.propTypes = {
   site: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    position: PropTypes.string.isRequired,
-    authorDescription: PropTypes.string.isRequired
+    author: PropTypes.string.isRequired
   })
 }
 
