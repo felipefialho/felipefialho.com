@@ -14,6 +14,12 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-svgr',
     {
+      resolve: "gatsby-plugin-transition-link",
+      options: {
+        layout: require.resolve(`./src/components/Layout.js`)
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: 'UA-40410936-1',
