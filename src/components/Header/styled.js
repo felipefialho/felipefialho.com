@@ -7,15 +7,12 @@ export const Header = styled.header.attrs({
   role: 'banner',
 })`
   display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
   text-transform: lowercase;
+  top: 0;
   width: 100%;
-  
-  ${media.greaterThan('medium')`
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-  `}
 `
 
 export const Main = styled.div`
