@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Felipe Fialho`,
-    position: 'Front-end Developer',
+    title: `Felipe Fialho - Front-end Developer`,
     author: `Felipe Fialho`,
+    position: 'Front-end Developer',
     authorDescription: `I need to improve it later`,
     description: `I need to improve it later`,
     siteUrl: `https://felipefialho.com/`,
@@ -13,6 +13,12 @@ module.exports = {
   plugins: [
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-svgr',
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-40410936-1',
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -61,7 +67,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Felipe Fialho Blog`,
+        name: `Felipe Fialho`,
         short_name: `felipefialho.com`,
         start_url: `/`,
         background_color: `#ffffff`,
