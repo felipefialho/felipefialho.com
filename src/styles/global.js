@@ -66,7 +66,7 @@ const GlobalStyles = createGlobalStyle`
     --bg: ${V.Color.grayDarker};
     --bgSecondary: ${V.Color.black};
     --borderColor: ${V.Color.gray};
-    --highlightColor: ${V.Color.blue};
+    --highlightColor: ${V.Color.blueLight};
     --primaryColor: ${V.Color.white};
     --secondaryColor: ${V.Color.grayLighter};
   }
