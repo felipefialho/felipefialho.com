@@ -6,32 +6,31 @@ import * as V from '../../styles/variables'
 export const Header = styled.header.attrs({
   role: 'banner',
 })`
+  background-color: var(--bgSecondary); 
+  color: var(--colorPrimary);
   display: block;
   position: fixed;
   left: 0;
   right: 0;
   text-transform: lowercase;
   top: 0;
+  transition: background-color .3s;
+  will-change: background-color;
   width: 100%;
+
+  ${media.greaterThan('medium')`
+    background-color: ${V.Color.grayDarker};
+  `}
 `
 
 export const Main = styled.div`
   align-items: center;
-  background-color: var(--bgSecondary);
-  color: var(--colorPrimary);
   display: flex;
   justify-content: space-between;
   height: ${V.Height.headerBarSm};
-  padding-left: ${V.Space.sm};
-  padding-right: ${V.Space.sm};
-  transition: background-color .3s;
-  will-change: background-color;
   
   ${media.greaterThan('medium')`
-    background-color: ${V.Color.grayDarker};
     height: ${V.Height.headerLg};
-    padding-left: ${V.Space.default};
-    padding-right: ${V.Space.default};
   `}
 `
 
