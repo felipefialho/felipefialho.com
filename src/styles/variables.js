@@ -23,7 +23,8 @@ export const Space = {
 };
 
 export const Height = {
-  headerSm: `${Space.lg}`,
+  headerBarSm: `${Space.lg}`,
+  headerSm: `${Space.xxlg}`,
   headerLg: `${Space.xlg}`,
 };
  
@@ -59,4 +60,9 @@ export const ZIndex = {
 
 export const Transition = {
   default: '.25s', 
+}
+
+export const MaxSize = {
+  md: '750px', 
+  lg: '1080px', 
 }

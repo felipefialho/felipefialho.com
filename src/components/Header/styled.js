@@ -21,7 +21,7 @@ export const Main = styled.div`
   color: var(--colorPrimary);
   display: flex;
   justify-content: space-between;
-  height: ${V.Space.lg};
+  height: ${V.Height.headerBarSm};
   padding-left: ${V.Space.sm};
   padding-right: ${V.Space.sm};
   transition: background-color .3s;
@@ -49,9 +49,13 @@ export const Brand = styled.div`
 export const Bar = styled.div.attrs({
   'aria-hidden': 'true',
 })`
+  align-items: center;
   background-color: ${V.Color.grayDarker};
   color: ${V.Color.white}; 
-  padding: ${V.Space.sm};
+  display: flex;
+  height: ${V.Height.headerBarSm};
+  padding-left: ${V.Space.sm};
+  padding-right: ${V.Space.sm};
   
   ${media.greaterThan('medium')`
     display: none;
