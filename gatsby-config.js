@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `${this.author} - ${this.position}`,
+    title: `Felipe Fialho - Front-end Developer`,
     author: `Felipe Fialho`,
     position: 'Front-end Developer',
     authorDescription: `Trabalho como Front-end Developer desde 2009. Sou apaixonado por projetos open-source, acredito que a disseminação de conhecimento e boas idéias inspira e melhora o mundo.`,
-    description: `${this.authorDescription}`,
+    description: `Apenas mais um site sobre Desenvolvimento Front-end`,
     siteUrl: `https://felipefialho.com/`,
     social: {
       twitter: `felipefialho_`,
@@ -16,15 +16,16 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-svgr',
     {
-      resolve: "gatsby-plugin-transition-link",
-      options: {
-        layout: require.resolve(`./src/components/Layout`)
-      }
-    },
-    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: 'UA-40410936-1',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/pages`,
+        name: `pages`,
       },
     },
     {
