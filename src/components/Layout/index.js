@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
+import { TransitionPortal } from 'gatsby-plugin-transition-link'
 
 import GlobalStyles from '../../styles/global'
 import Header from '../Header';
@@ -34,7 +35,9 @@ const Layout = ({ children }) => {
         <body className="theme--light" />
       </Helmet>
       <GlobalStyles />
-      <Header site={site.siteMetadata} />
+      <TransitionPortal>
+        <Header site={site.siteMetadata} />
+      </TransitionPortal>
       <S.Main>
         <Container children={children}></Container>
       </S.Main>
