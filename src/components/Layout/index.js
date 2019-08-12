@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import GlobalStyles from '../../styles/global'
 import Header from '../Header';
+import Container from '../Container';
 
 import * as S from './styled'
 
@@ -34,6 +35,9 @@ const Layout = ({ children }) => {
       </Helmet>
       <GlobalStyles />
       <Header site={site.siteMetadata} />
+      <S.Main>
+        <Container children={children}></Container>
+      </S.Main>
     </S.Layout>
   )
 }
