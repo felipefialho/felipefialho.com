@@ -14,7 +14,8 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-styled-components`,
-    'gatsby-plugin-svgr',
+    `gatsby-plugin-svgr`,
+    `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
