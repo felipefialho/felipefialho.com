@@ -6,11 +6,11 @@ import * as S from './styled'
 const useLocalStorage = (key) => {
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem(key) || null
-  );
+  )
 
-  useEffect(() => localStorage.setItem(key, darkMode));
+  useEffect(() => localStorage.setItem(key, darkMode))
 
-  return [darkMode, setDarkMode];
+  return [darkMode, setDarkMode]
 };
 
 const LightButton = () => {
