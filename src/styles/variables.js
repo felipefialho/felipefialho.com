@@ -37,12 +37,13 @@ export const Color = {
   black: '#000000',
   blueLight: '#aceff9',
   blue: '#349dad',
-  grayDarker: '#111111',
+  grayDarker: '#151515',
   grayDark: '#333333',
   gray: '#666666',
   grayLight: '#aaaaaa',
   grayLighter: '#dddddd',
   grayWhite: '#f0f0f0',
+  yellow: '#e6af05',
 }
 
 // --------------------------------------------------
