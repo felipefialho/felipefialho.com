@@ -19,7 +19,7 @@ export const Header = styled.header.attrs({
   width: 100%;
 
   ${media.greaterThan('medium')`
-    background-color: ${V.Color.grayDarker};
+    background-color: ${V.Color.black};
   `}
 `
 
@@ -49,21 +49,16 @@ export const Bar = styled.div.attrs({
   'aria-hidden': 'true',
 })`
   align-items: center;
-  background-color: ${V.Color.grayDarker};
+  background-color: ${V.Color.black};
   color: ${V.Color.white}; 
   display: flex;
+  justify-content: space-between;
   height: ${V.Height.headerBarSm};
   padding-left: ${V.Space.sm};
   padding-right: ${V.Space.sm};
-  
-  ${media.greaterThan('medium')`
-    display: none;
-  `}
 `
 
 export const Title = styled.h1`
-  display: none;
-
   ${media.greaterThan('medium')`
     color: ${V.Color.blueLight};
     display: inline-block;

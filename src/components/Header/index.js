@@ -5,7 +5,9 @@ import Avatar from '../Avatar';
 import Menu from '../Menu';
 
 import Container from '../Container';
+import LightButton from '../LightButton';
 
+import * as R from '../Responsive'
 import * as S from './styled'
 
 const Header = ({ site: { author }}) => {
@@ -15,12 +17,22 @@ const Header = ({ site: { author }}) => {
         <S.Main> 
           <S.Brand>
             <Avatar />
-            <S.Title>{ author }</S.Title>
+            <R.Tablet>
+              <S.Title>{ author }</S.Title>
+            </R.Tablet>
           </S.Brand>
           <Menu />
+          <R.Tablet>
+            <LightButton />
+          </R.Tablet>
         </S.Main>
       </Container>
-      <S.Bar>{ author }</S.Bar>
+      <R.Mobile>
+        <S.Bar>
+          <p>{ author }</p>
+          <LightButton />
+        </S.Bar>
+      </R.Mobile>
     </S.Header>
   )
 }
