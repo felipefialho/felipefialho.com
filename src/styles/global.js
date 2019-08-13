@@ -42,6 +42,12 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  button {
+    background: none;
+    border: 0;
+    padding: 0;
+  }
+
   img {
     display: block;
   	height: auto;
@@ -58,11 +64,14 @@ const GlobalStyles = createGlobalStyle`
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     background-color: var(--bg);
+    color: var(--primaryColor);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 1.6rem;
+    transition: background-color ${V.Transition.default};
+    will-change: background-color;
   }
 
-  body.theme--dark {
+  body.theme-dark {
     --bg: ${V.Color.grayDarker};
     --bgSecondary: ${V.Color.black};
     --borderColor: ${V.Color.gray};
@@ -71,7 +80,7 @@ const GlobalStyles = createGlobalStyle`
     --secondaryColor: ${V.Color.grayLighter};
   }
 
-  body.theme--light {
+  body.theme-light {
     --bg: ${V.Color.white};
     --bgSecondary: ${V.Color.grayWhite};
     --borderColor: ${V.Color.gray};
