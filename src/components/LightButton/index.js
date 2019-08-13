@@ -3,22 +3,28 @@ import { Helmet } from 'react-helmet'
 
 import * as S from './styled'
 
+const useLocalStorage = (key) => {
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem(key) || null
+  );
+
+  useEffect(() => localStorage.setItem(key, darkMode));
+
+  return [darkMode, setDarkMode];
+};
+
 const LightButton = () => {
-  const [active, setActive] = useState(true)
+  const [darkMode, setDarkMode] = useLocalStorage('darkMode')
 
-  const onChangeActive = () => {
-    setActive(!active)
-  }
+  const onChange = () => setDarkMode(!darkMode)
   
-  useEffect(() => {
-  }, [])
-
   return (
-    <S.LightButton active={active} onClick={() => onChangeActive()}>
+    <S.LightButton active={!darkMode} onClick={onChange}>
       <Helmet>
-        <body className={`${active ? 'theme-light' : 'theme-dark'}`} />
+        <body className={`${darkMode ? 'theme-dark' : 'theme-light'}`} />
       </Helmet>
       <S.LightButtonIcon />
+      {darkMode}
     </S.LightButton>
   )
 }
