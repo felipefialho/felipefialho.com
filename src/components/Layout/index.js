@@ -32,7 +32,6 @@ const Layout = ({ children }) => {
     <S.Layout>
       <Helmet>
         <title>{site.siteMetadata.title}</title>
-        <body className="theme--light" />
       </Helmet>
       <GlobalStyles />
       <TransitionPortal>
