@@ -42,6 +42,10 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   button {
     background: none;
     border: 0;
@@ -75,7 +79,7 @@ const GlobalStyles = createGlobalStyle`
     --bg: ${V.Color.grayDarker};
     --bgSecondary: ${V.Color.black};
     --borderColor: ${V.Color.gray};
-    --highlightColor: ${V.Color.blueLight};
+    --highlightColor: ${V.Color.blue};
     --primaryColor: rgba(250, 250, 250, .85);
     --secondaryColor: ${V.Color.grayLighter};
   }
