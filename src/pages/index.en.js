@@ -25,7 +25,7 @@ const IndexPage = () => {
       <Content>
         <p><small><a href="/" title="Ver em português">Ver em português</a></small></p>
 
-        <h1>Hi... <span class="small" role="img" aria-label="Emoji showing tongue">😜</span></h1>
+        <h1>Hi... <span className="small" role="img" aria-label="Emoji showing tongue">😜</span></h1>
 
         <p>{site.siteMetadata.descriptionEn}</p>
 
