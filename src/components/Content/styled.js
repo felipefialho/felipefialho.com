@@ -3,17 +3,11 @@ import styled from 'styled-components'
 import * as V from 'styles/variables'
 
 export const Content = styled.article`
-  font-size: 2.1rem;
+  font-size: 2rem;
+  font-weight: 300;
   letter-spacing: -0.04px;
   line-height: 1.58;
-
-  h1,
-  h2,
-  p,
-  i,
-  a {
-    text-rendering: optimizeLegibility;
-  }
+  text-rendering: optimizeLegibility;
 
   h1 {
     color: var(--primaryColor);
@@ -46,7 +40,26 @@ export const Content = styled.article`
 
   a {
     color: var(--highlightColor);
-    text-decoration: underline;
+    position: relative;
+    text-decoration: none;
+
+    &:after {
+      border-bottom: transparent solid 1px;
+      content: '';
+      margin-top: ${V.Space.xxs};
+      left: 0;
+      position: absolute;
+      top: 100%;
+      transition: border-color ${V.Transition.default};
+      width: 100%;
+      will-change: border-color;
+    }
+
+    &:hover {
+      &:after {
+        border-color: var(--highlightColor);
+      }
+    }
   }
 
   blockquote {

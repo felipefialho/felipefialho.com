@@ -33,11 +33,11 @@ export const Height = {
 // --------------------------------------------------
 
 export const Color = {
-  white: '#ffffff',
-  black: '#000000',
+  white: '#fefefe',
+  black: '#0e0e0e',
   blueLight: '#aceff9',
   blue: '#349dad',
-  grayDarker: '#151515',
+  grayDarker: '#181818',
   grayDark: '#333333',
   gray: '#666666',
   grayLight: '#aaaaaa',

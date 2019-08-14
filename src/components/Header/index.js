@@ -20,15 +20,17 @@ const Header = ({ site: { author }}) => {
               <S.Title>{ author }</S.Title>
             </R.GreaterThanTablet>
           </S.Brand>
-          <Menu />
-          <R.GreaterThanTablet>
-            <LightButton />
-          </R.GreaterThanTablet>
+          <S.Menu>
+            <Menu />
+            <R.GreaterThanTablet>
+              <LightButton />
+            </R.GreaterThanTablet>
+          </S.Menu>
         </S.Main>
       </Container>
       <R.Mobile>
         <S.Bar>
-          <p>{ author }</p>
+          <S.Title>{ author }</S.Title>
           <LightButton />
         </S.Bar>
       </R.Mobile>

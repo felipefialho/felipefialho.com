@@ -45,6 +45,17 @@ export const Brand = styled.div`
   `}
 `
 
+export const Menu = styled.div`
+  align-items: center;
+  display: flex;
+
+  > * {
+    &:not(:last-child) {
+      margin-right: ${V.Space.default};
+    }
+  }
+`
+
 export const Bar = styled.div.attrs({
   'aria-hidden': 'true',
 })`
@@ -59,9 +70,11 @@ export const Bar = styled.div.attrs({
 `
 
 export const Title = styled.h1`
+  display: inline-block;
+  font-size: 2rem;
+  letter-spacing: .1rem;
+
   ${media.greaterThan('medium')`
     color: ${V.Color.blueLight};
-    display: inline-block;
-    font-size: 2rem;
   `}
 `

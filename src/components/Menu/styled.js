@@ -11,6 +11,7 @@ export const Menu = styled.nav`
     cursor: pointer;
     display: inline-block;
     font-weight: bold;
+    letter-spacing: .15rem;
     text-decoration: none;
     transition: color ${V.Transition.default};
     will-change: color;
