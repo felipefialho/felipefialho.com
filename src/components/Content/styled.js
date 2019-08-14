@@ -4,7 +4,7 @@ import * as V from 'styles/variables'
 
 export const Content = styled.article`
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: -0.04px;
   line-height: 1.58;
   text-rendering: optimizeLegibility;
@@ -41,7 +41,6 @@ export const Content = styled.article`
   a {
     color: var(--highlightColor);
     position: relative;
-    text-decoration: none;
 
     &:after {
       border-bottom: transparent solid 1px;
@@ -65,6 +64,7 @@ export const Content = styled.article`
   blockquote {
     font-size: 3rem;
     font-style: italic;
+    font-weight: 400;
     letter-spacing: -0.36px;
     line-height: 4.4rem;
     overflow-wrap: break-word;
