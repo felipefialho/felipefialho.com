@@ -5,8 +5,8 @@ import Avatar from 'components/Avatar'
 import Menu from 'components/Menu'
 import Container from 'components/Container'
 import LightButton from 'components/LightButton'
+import * as R from 'components/Responsive'
 
-import * as R from '../Responsive'
 import * as S from './styled'
 
 const Header = ({ site: { author }}) => {
