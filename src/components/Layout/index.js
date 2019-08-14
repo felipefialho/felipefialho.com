@@ -1,5 +1,4 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 import { TransitionPortal } from 'gatsby-plugin-transition-link'
@@ -11,7 +10,6 @@ import Container from 'components/Container'
 import * as S from './styled'
 
 const Layout = ({ children }) => {
-
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -30,9 +28,6 @@ const Layout = ({ children }) => {
 
   return (
     <S.Layout>
-      <Helmet>
-        <title>{site.siteMetadata.title}</title>
-      </Helmet>
       <GlobalStyles />
       <TransitionPortal>
         <Header site={site.siteMetadata} />
