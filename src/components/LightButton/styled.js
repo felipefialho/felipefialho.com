@@ -21,4 +21,4 @@ export const LightButtonIcon = styled(LightBulb)`
   fill: currentColor;
   height: ${V.Space.default};
   width: ${V.Space.default};
-`;
+`
