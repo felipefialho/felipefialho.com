@@ -33,9 +33,14 @@ export const Content = styled.article`
   }
 
   p {
-    &:not(:first-child) {
-      margin-top: ${V.Space.default};
+    &:not(:last-child) {
+      margin-bottom: ${V.Space.default};
     }
+  }
+
+  .small,
+  small {
+    font-size: .8em;
   }
 
   a {
@@ -91,14 +96,14 @@ export const Content = styled.article`
     list-style: inherit;
     padding-left: ${V.Space.default};
 
-    &:not(:first-child) {
-      margin-top: ${V.Space.default};
+    &:not(:last-child) {
+      margin-bottom: ${V.Space.default};
     }
   }
 
   li {
-    &:not(:first-child) {
-      margin-top: ${V.Space.xs};
+    &:not(:last-child) {
+      margin-bottom: ${V.Space.xs};
     }
   }
 `
