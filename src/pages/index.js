@@ -1,13 +1,13 @@
 import React from 'react'
 
-import Layout from 'components/Layout/'
-import { Content } from 'components/Content/styled';
+import Layout from 'components/Layout'
+import Content from 'components/Content';
 
 const IndexPage = () => (
-  <Layout>
+  <Layout> 
     <Content>
-    
-    </Content>
+      <h1>Olá!</h1>
+    </Content> 
   </Layout>
 )
 
