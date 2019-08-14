@@ -32,7 +32,7 @@ export const SocialItem = styled.a.attrs(props => ({
   }
 
   &:not(:last-child) {
-    margin-right: ${V.Space.xs};
+    margin-right: ${V.Space.sm};
   }
 `
 
