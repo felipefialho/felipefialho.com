@@ -6,7 +6,7 @@ import * as V from 'styles/variables'
 
 export const Avatar = styled(Img).attrs({
   title: 'Felipe Fialho',
-  'aria-label': 'Felipe Fialho',
+  'aria-label': 'Felipe Fialho'
 })`
   border-radius: 50%;
   display: block;
