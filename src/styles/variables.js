@@ -1,9 +1,9 @@
 // ==================================================
 // Variables
 //
-// 1. Spaces 
+// 1. Spaces
 // 2. Colors
-// 3. zIndex 
+// 3. zIndex
 // 4. Misc
 // ==================================================
 
@@ -27,7 +27,7 @@ export const Height = {
   headerSm: `${Space.xxlg}`,
   headerLg: `${Space.xlg}`,
 };
- 
+
 // --------------------------------------------------
 // 2. Colors
 // --------------------------------------------------
@@ -35,8 +35,7 @@ export const Height = {
 export const Color = {
   white: '#fefefe',
   black: '#0e0e0e',
-  blueLight: '#9af2ff',
-  blue: '#2d91a0',
+  blue: '#0291a7',
   grayDarker: '#181818',
   grayDark: '#333333',
   gray: '#666666',
@@ -52,18 +51,18 @@ export const Color = {
 
 export const ZIndex = {
   bg: '-1',
-  default: '1', 
+  default: '1',
 }
- 
+
 // --------------------------------------------------
 // 4. Misc
 // --------------------------------------------------
 
 export const Transition = {
-  default: '.25s', 
+  default: '.25s',
 }
 
 export const MaxSize = {
-  md: '750px', 
-  lg: '1080px', 
+  md: '750px',
+  lg: '1080px',
 }

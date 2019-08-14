@@ -15,7 +15,7 @@ export const Menu = styled.nav`
     text-decoration: none;
     transition: color ${V.Transition.default};
     will-change: color;
-    
+
     &:not(:last-child) {
       margin-right: ${V.Space.default};
     }
@@ -25,7 +25,7 @@ export const Menu = styled.nav`
     &:hover {
       color: var(--highlightColor);
     }
-    
+
     ${media.greaterThan('medium')`
       color: ${V.Color.white};
       position: relative;
@@ -43,15 +43,15 @@ export const Menu = styled.nav`
       }
 
       &.active{
-        color: ${V.Color.blueLight};
+        color: var(--highlightColor);
       }
 
       &:focus,
       &:hover {
-        color: ${V.Color.blueLight};
+        color: var(--highlightColor);
 
         &:after {
-          background-color: ${V.Color.blueLight};
+          background-color: var(--highlightColor);
         }
       }
     `}
