@@ -17,6 +17,14 @@ export const Tablet = ({ children }) => {
   )
 }
 
+export const GreaterThanTablet = ({ children }) => {
+  return (
+    <MediaQuery minWidth={768}>
+      { children }
+    </MediaQuery>
+  )
+}
+
 export const Mobile = ({ children }) => {
   return (
     <MediaQuery maxWidth={767}>
