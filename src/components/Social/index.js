@@ -36,9 +36,6 @@ const Social = () => {
       <S.SocialItem href={site.siteMetadata.social.codepenLink} title="Codepen">
         <S.SocialCodepen />
       </S.SocialItem>
-      <S.SocialItem href={site.siteMetadata.social.mediumLink} title="Medium">
-        <S.SocialMedium />
-      </S.SocialItem>
     </S.Social>
   )
 }
