@@ -10,8 +10,8 @@ export const Avatar = styled(Img).attrs({
 })`
   border-radius: 50%;
   display: block;
-  object-fit: cover;
   height: ${V.Space.md};
+  object-fit: cover;
   width: ${V.Space.md};
 
   ${media.greaterThan('medium')`

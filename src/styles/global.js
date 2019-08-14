@@ -37,7 +37,7 @@ const GlobalStyles = createGlobalStyle`
   ol, ul {
     list-style: none;
   }
-  
+
   * {
     box-sizing: border-box;
   }
@@ -55,18 +55,18 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
+    font-size: 10px;
     -moz-osx-font-smoothing: auto;
     -webkit-font-smoothing: auto;
-    font-size: 10px;
   }
 
   body {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: hidden;
     background-color: var(--bg);
     color: var(--primaryColor);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 1.6rem;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
     transition: background-color ${V.Transition.default};
     will-change: background-color;
   }
@@ -90,11 +90,11 @@ const GlobalStyles = createGlobalStyle`
   }
 
   p a {
-    color: var(--highlightColor); 
+    color: var(--highlightColor);
   }
 
   ::selection {
-    background: var(--highlightColor); 
+    background: var(--highlightColor);
   }
 `
 export default GlobalStyles

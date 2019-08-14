@@ -11,9 +11,9 @@ export const Content = styled.article`
 
   h1 {
     color: var(--primaryColor);
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 4rem;
     line-height: 4.8rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 
     &:not(:last-child) {
       margin-bottom: ${V.Space.xxs};
@@ -22,10 +22,10 @@ export const Content = styled.article`
 
   h2 {
     color: var(--secondaryColor);
-    font-size: 2.4rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    line-height: 3.2rem;
+    font-size: 2.4rem;
     letter-spacing: -0.45px;
+    line-height: 3.2rem;
 
     &:not(:last-child) {
       margin-bottom: ${V.Space.sm};
@@ -46,8 +46,8 @@ export const Content = styled.article`
     &:after {
       border-bottom: transparent solid 1px;
       content: '';
-      margin-top: ${V.Space.xxs};
       left: 0;
+      margin-top: ${V.Space.xxs};
       position: absolute;
       top: 100%;
       transition: border-color ${V.Transition.default};
@@ -80,10 +80,10 @@ export const Content = styled.article`
   }
 
   code {
-    font-size: 1.8rem;
     background: ${V.Color.black};
     border-radius: 2px;
     color: ${V.Color.white};
+    font-size: 1.8rem;
     padding: ${V.Space.xxs} ${V.Space.xs};
   }
 
@@ -100,5 +100,5 @@ export const Content = styled.article`
     &:not(:first-child) {
       margin-top: ${V.Space.xs};
     }
-  } 
+  }
 `

@@ -6,17 +6,17 @@ import * as V from 'styles/variables'
 export const Header = styled.header.attrs({
   role: 'banner',
 })`
-  background-color: var(--bgSecondary); 
+  background-color: var(--bgSecondary);
   color: var(--colorPrimary);
   display: block;
-  position: fixed;
   left: 0;
+  position: fixed;
   right: 0;
   text-transform: lowercase;
   top: 0;
   transition: background-color .3s;
-  will-change: background-color;
   width: 100%;
+  will-change: background-color;
 
   ${media.greaterThan('medium')`
     background-color: ${V.Color.black};
@@ -26,9 +26,9 @@ export const Header = styled.header.attrs({
 export const Main = styled.div`
   align-items: center;
   display: flex;
-  justify-content: space-between;
   height: ${V.Height.headerBarSm};
-  
+  justify-content: space-between;
+
   ${media.greaterThan('medium')`
     height: ${V.Height.headerLg};
   `}
@@ -61,10 +61,10 @@ export const Bar = styled.div.attrs({
 })`
   align-items: center;
   background-color: ${V.Color.black};
-  color: ${V.Color.white}; 
+  color: ${V.Color.white};
   display: flex;
-  justify-content: space-between;
   height: ${V.Height.headerBarSm};
+  justify-content: space-between;
   padding-left: ${V.Space.sm};
   padding-right: ${V.Space.sm};
 `
