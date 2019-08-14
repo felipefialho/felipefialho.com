@@ -18,3 +18,11 @@ export const Main = styled.main.attrs({
     margin-top: ${V.Height.headerLg};
   `}
 `
+
+export const Template = styled.section`
+  ${media.greaterThan('large')`
+    display: grid;
+    grid-column-gap: ${V.Space.default};
+    grid-template-columns: minmax(13rem, 15rem) 1fr minmax(13rem, 15rem);
+  `}
+`
