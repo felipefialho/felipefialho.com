@@ -76,7 +76,7 @@ const GlobalStyles = createGlobalStyle`
     --bgSecondary: ${V.Color.black};
     --borderColor: ${V.Color.gray};
     --highlightColor: ${V.Color.blueLight};
-    --primaryColor: ${V.Color.white};
+    --primaryColor: rgba(250, 250, 250, .85);
     --secondaryColor: ${V.Color.grayLighter};
   }
 
@@ -85,7 +85,7 @@ const GlobalStyles = createGlobalStyle`
     --bgSecondary: ${V.Color.grayWhite};
     --borderColor: ${V.Color.gray};
     --highlightColor: ${V.Color.blue};
-    --primaryColor: ${V.Color.dark};
+    --primaryColor: rgba(0, 0, 0, .85);
     --secondaryColor: ${V.Color.grayDark};
   }
 
