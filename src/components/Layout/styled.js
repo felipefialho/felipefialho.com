@@ -10,10 +10,11 @@ export const Layout = styled.section`
 export const Main = styled.main.attrs({
   role: 'main',
 })`
-  padding-top: ${V.Height.headerSm};
+  margin-top: ${V.Height.headerSm};
+  padding-top: ${V.Space.default};
   width: 100%;
 
   ${media.greaterThan('medium')`
-    padding-top: ${V.Height.headerLg};
+    margin-top: ${V.Height.headerLg};
   `}
 `
