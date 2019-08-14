@@ -75,6 +75,6 @@ export const Title = styled.h1`
   letter-spacing: .1rem;
 
   ${media.greaterThan('medium')`
-    color: ${V.Color.blueLight};
+    color: ${V.Color.white};
   `}
 `
