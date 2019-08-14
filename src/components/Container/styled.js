@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import media from 'styled-media-query';
+import media from 'styled-media-query'
 
-import * as V from '../../styles/variables'
+import * as V from 'styles/variables'
 
 export const Container = styled.div`
   margin-left: auto;

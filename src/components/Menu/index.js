@@ -2,7 +2,7 @@ import React from 'react'
 import ReactGA from 'react-ga'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
-import links from './content'
+import menuLinks from './content'
 import * as S from './styled'
  
 const trackClick = item => {
@@ -16,7 +16,7 @@ const trackClick = item => {
 const Menu = () => {
   return (
     <S.Menu>
-      {links.map((link, i) => ( 
+      {menuLinks.map((link, i) => ( 
         <AniLink
           key={i}
           cover

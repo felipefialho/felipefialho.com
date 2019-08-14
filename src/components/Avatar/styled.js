@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import Img from 'gatsby-image'
+import media from 'styled-media-query'
 
-import * as V from '../../styles/variables'
-import media from 'styled-media-query';
+import * as V from 'styles/variables'
 
 export const Avatar = styled(Img).attrs({
   title: 'Felipe Fialho',

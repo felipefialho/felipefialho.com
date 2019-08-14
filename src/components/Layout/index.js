@@ -4,9 +4,9 @@ import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 import { TransitionPortal } from 'gatsby-plugin-transition-link'
 
-import GlobalStyles from '../../styles/global'
-import Header from '../Header';
-import Container from '../Container';
+import GlobalStyles from 'styles/global'
+import Header from 'components/Header'
+import Container from 'components/Container'
 
 import * as S from './styled'
 

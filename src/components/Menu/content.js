@@ -1,4 +1,4 @@
-const links = [
+const menuLinks = [
   {
     label: 'hi',
     url: '/'
@@ -13,4 +13,4 @@ const links = [
   }
 ]
 
-export default links
+export default menuLinks

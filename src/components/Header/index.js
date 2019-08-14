@@ -1,11 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Avatar from '../Avatar';
-import Menu from '../Menu';
-
-import Container from '../Container';
-import LightButton from '../LightButton';
+import Avatar from 'components/Avatar'
+import Menu from 'components/Menu'
+import Container from 'components/Container'
+import LightButton from 'components/LightButton'
 
 import * as R from '../Responsive'
 import * as S from './styled'
