@@ -45,7 +45,7 @@ export const Content = styled.article`
   }
 
   a {
-    color: var(--primaryColor);
+    color: var(--highlightColor);
     text-decoration: underline;
   }
 
