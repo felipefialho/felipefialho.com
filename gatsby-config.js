@@ -3,8 +3,10 @@ module.exports = {
     title: `Felipe Fialho - Front-end Developer`,
     author: `Felipe Fialho`,
     position: 'Front-end Developer',
-    authorDescription: `Trabalho como Front-end Developer desde 2009. Sou apaixonado por projetos open-source, acredito que a disseminação de conhecimento e boas idéias inspira e melhora o mundo.`,
-    description: `Apenas mais um site sobre Desenvolvimento Front-end`,
+    authorDescription: `Trabalho como Desenvolvedor Front-end desde 2009. Sou apaixonado por projetos open-source, acredito que a disseminação de conhecimento e boas idéias inspira e melhora o mundo.`,
+    description: `Trabalho como Desenvolvedor Front-end desde 2009. Sou apaixonado por projetos open-source, acredito que disseminação de conhecimento e boas idéias inspira e melhora o mundo.`,
+    descriptionEn: `I've been working as Front-End
+    Developer since 2009. I'm passionate about open source projects, I believe that the dissemination of knowledge and good ideas inspires and improves the world.`,
     siteUrl: `https://felipefialho.com/`,
     social: {
       twitter: `felipefialho_`,
@@ -17,6 +19,13 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-svgr`,
     `gatsby-plugin-transition-link`,
+    {
+      resolve: 'gatsby-plugin-i18n',
+      options: {
+        langKeyDefault: 'pt-br',
+        useLangKeyLayout: false
+      }
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
