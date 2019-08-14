@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Layout from 'components/Layout'
 import Content from 'components/Content';
 import SEO from 'components/Seo';
+import Social from 'components/Social';
 
 const IndexPage = () => {
   const { site } = useStaticQuery(
@@ -22,6 +23,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO lang="en" title={site.siteMetadata.title} description={site.siteMetadata.descriptionEn} />
+      <Social />
       <Content>
         <p><small><a href="/" title="Ver em português">Ver em português</a></small></p>
 

@@ -10,8 +10,11 @@ module.exports = {
     siteUrl: `https://felipefialho.com/`,
     social: {
       twitter: `felipefialho_`,
-      linkedin: `felipefialho`,
-      github: `felipefialho`,
+      twitterLink: `https://twitter.com/felipefialho_`,
+      linkedinLink: `https://www.linkedin.com/in/felipefialho/`,
+      githubLink: `https://github.com/felipefialho`,
+      codepenLink: `https://codepen.io/felipefialho`,
+      mediumLink: `https://medium.com/@felipefialho`,
     },
   },
   plugins: [
