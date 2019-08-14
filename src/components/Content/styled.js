@@ -3,6 +3,10 @@ import styled from 'styled-components'
 import * as V from 'styles/variables'
 
 export const Content = styled.article`
+  font-size: 2.1rem;
+  letter-spacing: -0.04px;
+  line-height: 1.58;
+
   h1,
   h2,
   p,
@@ -35,16 +39,13 @@ export const Content = styled.article`
   }
 
   p {
-    font-size: 2.1rem;
-    letter-spacing: -0.04px;
-    line-height: 1.58;
-
     &:not(:first-child) {
       margin-top: ${V.Space.default};
     }
   }
 
   a {
+    color: var(--primaryColor);
     text-decoration: underline;
   }
 
@@ -72,4 +73,19 @@ export const Content = styled.article`
     color: ${V.Color.white};
     padding: ${V.Space.xxs} ${V.Space.xs};
   }
+
+  ol, ul {
+    list-style: inherit;
+    padding-left: ${V.Space.default};
+
+    &:not(:first-child) {
+      margin-top: ${V.Space.default};
+    }
+  }
+
+  li {
+    &:not(:first-child) {
+      margin-top: ${V.Space.xs};
+    }
+  } 
 `
