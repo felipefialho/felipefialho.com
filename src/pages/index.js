@@ -1,34 +1,50 @@
 import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import Layout from 'components/Layout'
 import Content from 'components/Content';
+import SEO from 'components/Seo';
 
-const IndexPage = () => (
-  <Layout> 
-    <Content>
-      <h1>Hi!</h1>
+const IndexPage = () => {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+            description
+          }
+        }
+      }
+    `
+  )
 
-      <p>My name is Felipe Fialho from Brazil and I've been working as Front-End 
-      Developer since 2009.</p>
+  return (
+    <Layout>
+      <SEO title={site.siteMetadata.title} />
+      <Content>
+        <p><small><a href="/en" title="View in english">View in english</a></small></p>
 
-      <p>Currently, I'm a Developer at <a href="https://cubo.network/jobs" target="_blank" rel="noopener noreferrer" title="Ver">Cubo Itaú</a> and 
-      I've created the <a href="https://github.com/frontendbr" target="_blank" rel="noopener noreferrer" title="Ver">Front-end BR</a> organization on Github. I'm also a founder of Meetup CSS and I helped in organization of 
-      Conferência CSS Brasil 2015.</p>
+        <h1>Eai... <span class="small" role="img" aria-label="Emoji mostrando a lingua">😜</span></h1>
 
-      <p>I've been creating a lot of open-source projects in 
-      the last years, like:</p>
+        <p>{site.siteMetadata.description}</p>
 
-      <ul>
-        <li><a href="https://github.com/frontendbr" target="_blank" rel="noopener noreferrer" title="Ver">Front-end BR</a></li>
-        <li><a href="https://github.com/felipefialho/css-components" target="_blank" rel="noopener noreferrer" title="Ver">CSS Components</a></li> 
-        <li><a href="https://github.com/felipefialho/frontend-challenges" target="_blank" rel="noopener noreferrer" title="Ver">Front-end Challenges</a></li> 
-        <li><a href="https://github.com/felipefialho/kratos-boilerplate" target="_blank" rel="noopener noreferrer" title="Ver">Kratos Boilerplate</a></li> 
-        <li><a href="https://github.com/felipefialho/piano" target="_blank" rel="noopener noreferrer" title="Ver">Piano</a></li> 
-        <li><a href="https://github.com/felipefialho/despolitizador" target="_blank" rel="noopener noreferrer" title="Ver">Despolitizador</a></li> 
-        <li><a href="https://survey.frontendbr.com.br" target="_blank" rel="noopener noreferrer" title="Ver">Survey</a></li>
-      </ul>
-    </Content> 
-  </Layout>
-)
+        <p>Atualmente estou trabalhando no <a href="https://cubo.network/jobs" target="_blank" rel="noopener noreferrer" title="Ver">Cubo Itaú</a>. Sou criador da organização <a href="https://github.com/frontendbr" target="_blank" rel="noopener noreferrer" title="Ver">Front-end BR</a> no Github. Também sou um dos fundadores do Meetup CSS e ajudei a organizar a Conferencia CSS Brasil em 2015.</p>
+
+        <p>Nos últimos anos desenvolvi um monte de projetos open-source, como:</p>
+
+        <ul>
+          <li><a href="https://github.com/frontendbr" target="_blank" rel="noopener noreferrer" title="Ver Front-end BR">Front-end BR</a></li>
+          <li><a href="https://github.com/felipefialho/css-components" target="_blank" rel="noopener noreferrer" title="Ver CSS Components">CSS Components</a></li>
+          <li><a href="https://github.com/felipefialho/frontend-challenges" target="_blank" rel="noopener noreferrer" title="Ver Front-end Challenges">Front-end Challenges</a></li>
+          <li><a href="https://github.com/felipefialho/kratos-boilerplate" target="_blank" rel="noopener noreferrer" title="Ver Kratos Boilerplate">Kratos Boilerplate</a></li>
+          <li><a href="https://github.com/felipefialho/piano" target="_blank" rel="noopener noreferrer" title="Ver Piano">Piano</a></li>
+          <li><a href="https://github.com/felipefialho/despolitizador" target="_blank" rel="noopener noreferrer" title="Ver Despolitizador">Despolitizador</a></li>
+          <li><a href="https://survey.frontendbr.com.br" target="_blank" rel="noopener noreferrer" title="Ver Survey">Survey</a></li>
+        </ul>
+      </Content>
+    </Layout>
+  )
+}
 
 export default IndexPage
