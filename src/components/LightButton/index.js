@@ -1,14 +1,33 @@
 import React, { useState, useEffect } from 'react'
+import ReactGA from 'react-ga'
 import { Helmet } from 'react-helmet'
 
 import * as S from './styled'
 
+const trackGetTheme = (darkMode) => {
+  ReactGA.event({
+    category: 'Theme',
+    action: 'Get theme',
+    label: `Theme - Open with ${darkMode ? 'Dark' : 'Light'}`
+  })
+}
+
+const trackClickTheme = (darkMode) => {
+  ReactGA.event({
+    category: 'Theme',
+    action: 'Click',
+    label: `Theme - Change to ${!darkMode ? 'Dark' : 'Light'}`
+  })
+}
+
 const useDarkModeFromLocalStorage = () => {
-  const item = 'darkMode';  
+  const item = 'darkMode';
   const initialState = () => JSON.parse(localStorage.getItem(item) || false)
   const [ darkMode, setDarkMode ] = useState(initialState)
 
   useEffect(() => localStorage.setItem(item, JSON.stringify(darkMode)), [darkMode])
+
+  trackGetTheme(darkMode)
 
   return [ darkMode, setDarkMode ]
 };
@@ -16,7 +35,10 @@ const useDarkModeFromLocalStorage = () => {
 const LightButton = () => {
   const [ darkMode, setDarkMode ] = useDarkModeFromLocalStorage()
 
-  const onChange = () => setDarkMode(!darkMode)
+  const onChange = () => {
+    trackClickTheme(darkMode)
+    setDarkMode(!darkMode)
+  }
 
   return (
     <S.LightButton active={!darkMode} onClick={onChange}>
