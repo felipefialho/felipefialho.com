@@ -65,8 +65,8 @@ export const Bar = styled.div.attrs({
   display: flex;
   height: ${V.Height.headerBarSm};
   justify-content: space-between;
-  padding-left: ${V.Space.sm};
-  padding-right: ${V.Space.sm};
+  padding-left: ${V.Space.default};
+  padding-right: ${V.Space.default};
 `
 
 export const Title = styled.h1`
