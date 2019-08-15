@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
   return (
     <S.Layout>
       <GlobalStyles />
-      <TransitionPortal>
+      <TransitionPortal level='top'>
         <Header site={site.siteMetadata} />
       </TransitionPortal>
       <S.Main>
