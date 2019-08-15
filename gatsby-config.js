@@ -22,6 +22,12 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-svgr`,
     `gatsby-plugin-transition-link`,
+    `gatsby-transformer-json`, 
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-feed`, 
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-i18n',
       options: {
@@ -50,6 +56,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/lab`,
+        name: `lab`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -71,9 +84,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -85,8 +95,6 @@ module.exports = {
         display: `minimal-ui`,
         icon: `content/assets/icon.png`,
       },
-    },
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`
+    }
   ],
 }
