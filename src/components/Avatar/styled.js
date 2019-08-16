@@ -5,7 +5,7 @@ import media from 'styled-media-query'
 import * as V from 'styles/variables'
 
 export const Avatar = styled(Img).attrs({
-  title: 'Felipe Fialho',
+  alt: 'Felipe Fialho',
   'aria-label': 'Felipe Fialho'
 })`
   border-radius: 50%;
