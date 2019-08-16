@@ -10,7 +10,7 @@ import * as V from 'styles/variables'
 const trackClick = (item) => {
   ReactGA.event({
     category: 'Menu',
-    action: 'Click',
+    action: 'click',
     label: `Menu - ${item}`
   })
 }

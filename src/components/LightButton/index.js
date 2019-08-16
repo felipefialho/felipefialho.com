@@ -7,7 +7,7 @@ import * as S from './styled'
 const trackGetTheme = (darkMode) => {
   ReactGA.event({
     category: 'Theme',
-    action: 'Get theme',
+    action: 'get theme',
     label: `Theme - Open with ${darkMode ? 'Dark' : 'Light'}`
   })
 }
@@ -15,7 +15,7 @@ const trackGetTheme = (darkMode) => {
 const trackClickTheme = (darkMode) => {
   ReactGA.event({
     category: 'Theme',
-    action: 'Click',
+    action: 'click',
     label: `Theme - Change to ${!darkMode ? 'Dark' : 'Light'}`
   })
 }
