@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import Layout from 'components/Layout'
 import SEO from 'components/Seo';
+import Lab from 'components/Lab';
 
 const LabPage = () => {
   const { allLabJson } = useStaticQuery(
@@ -31,13 +32,7 @@ const LabPage = () => {
   return (
     <Layout>
       <SEO title='Lab' />
-      {content.map(({ node }) => {
-        return (
-          <a href={node.path} key={node.id}>
-            {node.date}
-          </a>
-        )
-      })}
+      <Lab content={content} />
     </Layout>
   )
 }
