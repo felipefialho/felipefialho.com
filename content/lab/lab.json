@@ -1,12 +1,5 @@
 [
   {
-    "path": "http://codepen.io/felipefialho/pen/LkOXBA",
-    "date": "Jul 2016",
-    "title": "Animate height with CSS transitions using scale()",
-    "description": "An example to simulate the transition height using scale()",
-    "imageSrc": "animate-height.png"
-  },
-  {
     "path": "https://github.com/felipefialho/kratos-boilerplate",
     "date": "Apr 2016",
     "title": "Kratos Boilerplate",
