@@ -41,7 +41,7 @@ export const Color = {
   gray: '#666666',
   grayLight: '#aaaaaa',
   grayLighter: '#dddddd',
-  grayWhite: '#f0f0f0',
+  grayWhite: '#f7f7f7',
   yellow: '#e6af05',
 }
 

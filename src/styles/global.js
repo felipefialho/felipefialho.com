@@ -81,7 +81,7 @@ const GlobalStyles = createGlobalStyle`
     --borderColor: ${V.Color.gray};
     --highlightColor: ${V.Color.blue};
     --primaryColor: rgba(250, 250, 250, .85);
-    --secondaryColor: ${V.Color.grayLighter};
+    --secondaryColor: ${V.Color.gray};
   }
 
   body.theme-light {
@@ -90,7 +90,7 @@ const GlobalStyles = createGlobalStyle`
     --borderColor: ${V.Color.gray};
     --highlightColor: ${V.Color.blue};
     --primaryColor: rgba(0, 0, 0, .85);
-    --secondaryColor: ${V.Color.grayDark};
+    --secondaryColor: ${V.Color.gray};
   }
 
   p a {
