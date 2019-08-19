@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
-import getActiveTheme from 'utils/getActiveTheme'
+import { getActiveTheme } from 'utils'
+
 import Avatar from 'components/Avatar'
 import Menu from 'components/Menu'
 import Container from 'components/Container'
@@ -20,7 +21,7 @@ const Header = ({ site: { author }}) => {
             cover
             bg={getActiveTheme()}
             direction="down"
-            to="/" 
+            to="/"
             title="Go to home">
             <S.Brand>
               <Avatar />
