@@ -5,24 +5,11 @@ import Layout from 'components/Layout'
 import Content from 'components/Content';
 import SEO from 'components/Seo';
 import Social from 'components/Social';
+import GridTemplate from 'components/GridTemplate';
 
-const IndexPage = () => {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            descriptionEn
-          }
-        }
-      }
-    `
-  )
-
+const content = ({ site }) => {
   return (
-    <Layout>
-      <SEO lang="en" title={site.siteMetadata.title} description={site.siteMetadata.descriptionEn} />
+    <article>
       <Social />
       <Content>
         <p><small><a href="/" title="Ver em português">Ver em português</a></small></p>
@@ -48,6 +35,28 @@ const IndexPage = () => {
           <li><a href="https://survey.frontendbr.com.br" target="_blank" rel="noopener noreferrer" title="View Survey">Survey</a></li>
         </ul>
       </Content>
+    </article>
+  )
+}
+
+const IndexPage = () => {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+            descriptionEn
+          }
+        }
+      }
+    `
+  )
+
+  return (
+    <Layout>
+      <SEO lang="en" title={site.siteMetadata.title} description={site.siteMetadata.descriptionEn} />
+      <GridTemplate content={content({ site })} />
     </Layout>
   )
 }

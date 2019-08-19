@@ -37,12 +37,7 @@ const Layout = ({ children }) => {
         <Header site={site.siteMetadata} />
       </TransitionPortal>
       <S.Main>
-        <Container>
-          <S.Template>
-            <aside></aside>
-            <div>{children}</div>
-          </S.Template>
-        </Container>
+        <Container>{children}</Container>
       </S.Main>
     </S.Layout>
   )
