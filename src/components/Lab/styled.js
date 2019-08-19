@@ -21,22 +21,42 @@ export const LabItem = styled.a.attrs(props => ({
   target: '_blank',
   rel: 'noopener noreferrer'
 }))`
+  background-color: var(--bgSecondary);
+  box-shadow: 0px 1px 2px 1px rgba(0,0,0, .05);
+  border: 1px solid transparent;
+  color: var(--primaryColor); 
   display: block;
   height: 100%;
+  padding: ${V.Space.default};
+  transition: border-color ${V.Transition.default};
+  will-change: border-color;
+
+  &:hover {
+    border-color: var(--highlightColor); 
+  }
 `
 
 export const LabImg = styled(Img).attrs(props => ({
   alt: props.title
 }))`
   display: block;
+  margin-bottom: ${V.Space.default};
 `
 
 export const LabDate = styled.time`
+  color: var(--secondaryColor); 
   display: block;
+  font-size: .8em;
   margin-bottom: ${V.Space.xxs};
 `
 
 export const LabTitle = styled.h1`
   display: block;
-  margin-bottom: ${V.Space.xxs};
+  font-weight: 600;
+  margin-bottom: ${V.Space.sm};
+`
+
+export const LabDescription = styled.p`
+  color: var(--secondaryColor); 
+  display: block;
 `

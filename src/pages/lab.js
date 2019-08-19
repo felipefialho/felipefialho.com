@@ -31,7 +31,7 @@ const LabPage = () => {
 
   return (
     <Layout>
-      <SEO title='Lab' />
+      <SEO title="Lab" lang="en" description="Check here all my open source projects and some experiences about coding" />
       <Lab content={content} />
     </Layout>
   )

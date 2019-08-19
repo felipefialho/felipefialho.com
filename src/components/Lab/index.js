@@ -50,6 +50,7 @@ const Lab = ({ content }) => {
               <LabImg imageSrc={node.imageSrc} />
               <S.LabDate>{node.date}</S.LabDate>
               <S.LabTitle>{node.title}</S.LabTitle>
+              <S.LabDescription>{node.description}</S.LabDescription>
             </S.LabItem>
           </article>
         )
