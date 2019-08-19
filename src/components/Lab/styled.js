@@ -9,7 +9,7 @@ export const LabList = styled.section`
   grid-column-gap: ${V.Space.default};
   grid-row-gap: ${V.Space.default};
   grid-template-columns: repeat(2, 1fr);
- 
+
   ${media.greaterThan('medium')`
     grid-template-columns: repeat(3, 1fr);
   `}
@@ -22,9 +22,9 @@ export const LabItem = styled.a.attrs(props => ({
   rel: 'noopener noreferrer'
 }))`
   background-color: var(--bgSecondary);
-  box-shadow: 0px 1px 2px 1px rgba(0,0,0, .05);
   border: 1px solid transparent;
-  color: var(--primaryColor); 
+  box-shadow: 0px 1px 2px 1px rgba(0,0,0, .05);
+  color: var(--primaryColor);
   display: block;
   height: 100%;
   padding: ${V.Space.default};
@@ -32,7 +32,7 @@ export const LabItem = styled.a.attrs(props => ({
   will-change: border-color;
 
   &:hover {
-    border-color: var(--highlightColor); 
+    border-color: var(--highlightColor);
   }
 `
 
@@ -44,7 +44,7 @@ export const LabImg = styled(Img).attrs(props => ({
 `
 
 export const LabDate = styled.time`
-  color: var(--secondaryColor); 
+  color: var(--secondaryColor);
   display: block;
   font-size: .8em;
   margin-bottom: ${V.Space.xxs};
@@ -57,6 +57,6 @@ export const LabTitle = styled.h1`
 `
 
 export const LabDescription = styled.p`
-  color: var(--secondaryColor); 
+  color: var(--secondaryColor);
   display: block;
 `
