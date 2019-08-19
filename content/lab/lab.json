@@ -1,31 +1,38 @@
 [
   {
     "path": "https://github.com/felipefialho/kratos-boilerplate",
-    "date": "Apr 2016",
+    "date": "Mar 2019",
     "title": "Kratos Boilerplate",
-    "description": "A simple and fast boilerplate for static projects using Gulp, Jade, Stylus and PostCSS",
+    "description": "A simple and fast boilerplate for static projects using Webpack",
     "imageSrc": "kratos.png"
+  },
+  {
+    "path": "https://www.felipefialho.com/despolitizador/",
+    "date": "Nov 2018",
+    "title": "Despolitizador!",
+    "description": "To translate political language for people's language",
+    "imageSrc": "despolitizador.png"
+  },
+  {
+    "path": "https://github.com/felipefialho/frontend-challenges",
+    "date": "Mar 2017",
+    "title": "Front-end Challenges",
+    "description": "Listing some playful open-source's challenges to test your knowledge",
+    "imageSrc": "frontend-challenges.png"
+  },
+  {
+    "path": "https://survey.frontendbr.com.br/",
+    "date": "Out 2018",
+    "title": "Survey - Front-End Brasil",
+    "description": "Market research with Front-enders of Brazil",
+    "imageSrc": "survey.png"
   },
   {
     "path": "https://github.com/frontendbr",
     "date": "Fev 2016",
     "title": "Front-End Brasil - Github",
-    "description": "Organization in Github to improve the discussions about Front-End on Brazil",
+    "description": "Organization on Github to improve discussions about Front-End on Brazil",
     "imageSrc": "frontend-br.png"
-  },
-  {
-    "path": "https://github.com/felipefialho/coding-style",
-    "date": "Nov 2014",
-    "title": "My Coding Style",
-    "description": "My rules coding for HTML, CSS and JavaScript development",
-    "imageSrc": "coding-style.png"
-  },
-  {
-    "path": "http://www.felipefialho.com/survey/",
-    "date": "Ago 2014",
-    "title": "Survey - Front-End Brasil",
-    "description": "Market research with Front-enders of Brazil",
-    "imageSrc": "survey.png"
   },
   {
     "path": "http://www.felipefialho.com/css-components/",
@@ -35,18 +42,25 @@
     "imageSrc": "css-components.png"
   },
   {
-    "path": "http://codepen.io/felipefialho/pen/kjlnJ",
-    "date": "Jan 2014",
-    "title": "A Clockwork Orange",
-    "description": "My tribute in Pure CSS to this great movie",
-    "imageSrc": "clockwork-orange.png"
-  },
-  {
     "path": "http://www.felipefialho.com/piano/",
     "date": "Out 2013",
     "title": "Piano Keyboard",
     "description": "Piano Keyboard developed in HTML, CSS and Javascript",
     "imageSrc": "piano-keyboard.png"
+  },
+  {
+    "path": "http://codepen.io/felipefialho/details/qzDCJ",
+    "date": "Aug 2012",
+    "title": "Eric Cartman",
+    "description": "Eric Cartman in Pure CSS",
+    "imageSrc": "cartman-css.jpg"
+  },
+  {
+    "path": "http://codepen.io/felipefialho/pen/kjlnJ",
+    "date": "Jan 2014",
+    "title": "A Clockwork Orange",
+    "description": "My tribute in Pure CSS to this great movie",
+    "imageSrc": "clockwork-orange.png"
   },
   {
     "path": "http://codepen.io/felipefialho/pen/beEoG",
@@ -63,10 +77,10 @@
     "imageSrc": "table-responsive.png"
   },
   {
-    "path": "http://codepen.io/felipefialho/details/qzDCJ",
-    "date": "Aug 2012",
-    "title": "Pure CSS - Eric Cartman",
-    "description": "Eric Cartman in Pure CSS (with animation)",
-    "imageSrc": "cartman-css.jpg"
+    "path": "https://github.com/felipefialho/coding-style",
+    "date": "Nov 2014",
+    "title": "My Coding Style",
+    "description": "My coding style for HTML, CSS and JavaScript development",
+    "imageSrc": "coding-style.png"
   }
 ]
