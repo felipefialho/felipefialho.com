@@ -1,7 +1,7 @@
 const menuLinks = [
   {
     label: 'hi',
-    url: '/'
+    url: '/hi/'
   },
   {
     label: 'blog',

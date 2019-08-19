@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
+import getActiveTheme from 'utils/getActiveTheme'
 import Avatar from 'components/Avatar'
 import Menu from 'components/Menu'
 import Container from 'components/Container'
@@ -15,14 +16,19 @@ const Header = ({ site: { author }}) => {
     <S.Header>
       <Container>
         <S.Main>
-          <Link to="/" title="Go to home">
+          <AniLink
+            cover
+            bg={getActiveTheme()}
+            direction="down"
+            to="/" 
+            title="Go to home">
             <S.Brand>
               <Avatar />
               <R.GreaterThanTablet>
                 <S.Title>{ author }</S.Title>
               </R.GreaterThanTablet>
             </S.Brand>
-            </Link>
+          </AniLink>
           <S.Menu>
             <Menu />
             <R.GreaterThanTablet>
