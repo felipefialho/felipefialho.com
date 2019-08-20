@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { Link } from 'components/Typography'
 import BlogPost from 'components/BlogPost'
 
 import * as S from './styled'
@@ -8,7 +9,7 @@ const BlogList = ({ list }) => {
   return (
     <S.BlogList>
       <S.Title>Últimas do blog</S.Title>
-      <nav>
+      <S.Nav>
         {list.map(({ node }, i) => (
           <BlogPost
             key={i}
@@ -18,7 +19,10 @@ const BlogList = ({ list }) => {
             description={node.frontmatter.description}
           />
         ))}
-      </nav>
+      </S.Nav>
+      <Link to='/blog/'>
+        Ver todos os posts
+      </Link>
     </S.BlogList>
   )
 }
