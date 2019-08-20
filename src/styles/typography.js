@@ -16,8 +16,6 @@ export const Subtitle = `
 `
 
 export const Text = `
-  font-size: 2rem;
-  font-weight: 400;
   letter-spacing: -0.04px;
   line-height: 1.58;
   text-rendering: optimizeLegibility;

@@ -68,7 +68,8 @@ const GlobalStyles = createGlobalStyle`
     background-color: var(--bg);
     color: var(--primaryColor);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 400;
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     transition: background-color ${V.Transition.default};
@@ -80,7 +81,7 @@ const GlobalStyles = createGlobalStyle`
     --bgSecondary: ${V.Color.black};
     --borderColor: ${V.Color.gray};
     --highlightColor: ${V.Color.blue};
-    --primaryColor: rgba(250, 250, 250, .85);
+    --primaryColor: rgba(250, 250, 250, .8);
     --secondaryColor: ${V.Color.gray};
   }
 
@@ -89,7 +90,7 @@ const GlobalStyles = createGlobalStyle`
     --bgSecondary: ${V.Color.grayWhite};
     --borderColor: ${V.Color.gray};
     --highlightColor: ${V.Color.blue};
-    --primaryColor: rgba(0, 0, 0, .85);
+    --primaryColor: rgba(0, 0, 0, .8);
     --secondaryColor: ${V.Color.gray};
   }
 

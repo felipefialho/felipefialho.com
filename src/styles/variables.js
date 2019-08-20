@@ -41,7 +41,7 @@ export const Color = {
   gray: '#666666',
   grayLight: '#aaaaaa',
   grayLighter: '#dddddd',
-  grayWhite: '#f7f7f7',
+  grayWhite: '#fdfdfd',
   yellow: '#e6af05',
 }
 
@@ -60,6 +60,10 @@ export const ZIndex = {
 
 export const Transition = {
   default: '.25s',
+}
+
+export const BoxShadow = {
+  box: '0px 1px 1px 1px rgba(0,0,0, .1)',
 }
 
 export const MaxSize = {
