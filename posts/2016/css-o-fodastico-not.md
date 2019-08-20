@@ -1,14 +1,14 @@
 ## As lindas pseudo-class
 
-Fui desenvolvedor em uma época terrível, tempos em que era necessário usar PNGs transparentes para emular `box-shadow` e `border-radius`, tempos em que precisávamos usar hacks para IE6 e IE7, tempos em que tudo era lento e de difícil manutenção. 
+Fui desenvolvedor em uma época terrível, tempos em que era necessário usar PNGs transparentes para emular `box-shadow` e `border-radius`, tempos em que precisávamos usar hacks para IE6 e IE7, tempos em que tudo era lento e de difícil manutenção.
 
 Felizmente o CSS evoluiu, e uma das novidades que mais gostei nos últimos anos foram as [pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes).
 
-Provavelmente as pseudo-class mais conhecidas sejam as `:nth-child()`, `:last-child` e `:first-child`. 
+Provavelmente as pseudo-class mais conhecidas sejam as `:nth-child()`, `:last-child` e `:first-child`.
 
 Só para contextualizar, no passado para fazer uma tabela com cores alternadas era preciso fazer isso aqui.
 
-````html 
+````html
 <table>
   <tr class="even"> </tr>
   <tr class="odd"> </tr>
@@ -28,7 +28,7 @@ Mas tenho certeza que vocês já viram um milhão de artigos falando dessas pseu
 
 ## O fodástico :not() [2]
 
-Poucas coisas me deixam tão agoniado no CSS do que propriedades sendo resetadas, é tão frustrante que bolei um jeito de usar as [Media Queries evitando que isso acontecesse](https://www.felipefialho.com/blog/2015/otimizando-e-organizando-as-media-queries), muito antes dessa técnica ficar famosa.
+Poucas coisas me deixam tão agoniado no CSS do que propriedades sendo resetadas, é tão frustrante que bolei um jeito de usar as [Media Queries evitando que isso acontecesse](/blog/2015/otimizando-e-organizando-as-media-queries), muito antes dessa técnica ficar famosa.
 
 Sério, não faz sentido nenhum resetar propriedades, se você precisou resetar, ela simplesmente não deveria existir dentro daquele escopo (mas claro... sempre tem as exceções).
 
@@ -46,7 +46,7 @@ li
   margin-bottom 2rem
   padding-bottom 2rem
 
-  &:last-child 
+  &:last-child
     border-bottom 0
     margin-bottom 0
     padding-bottom 0
@@ -61,7 +61,7 @@ li
   &:not(:last-child)
     border-bottom 1px solid #eee
     margin-bottom 1rem
-    padding-bottom 1rem 
+    padding-bottom 1rem
 ````
 
 Quer que determinado estilo seja adicionado em todos os elementos, mas não em uma classe especifica?
@@ -71,7 +71,7 @@ p:not(.foo)
   font-size 2rem
 ````
 
-Ou o inverso disso... que o estilo seja adicionado em uma classe, mas não em um elemento especifico. 
+Ou o inverso disso... que o estilo seja adicionado em uma classe, mas não em um elemento especifico.
 
 ````stylus
 .title:not(h2)
@@ -96,7 +96,7 @@ Quer negar dois elementos?
   color $brand-primary
 ````
 
-Quer que o `:hover` e o `:focus` só funcionem se o elemento não tiver a classe `.active`? 
+Quer que o `:hover` e o `:focus` só funcionem se o elemento não tiver a classe `.active`?
 
 ````stylus
 .btn:hover:not(.active),
@@ -111,16 +111,16 @@ Quer que o elemento tenha determinadas propriedades apenas Se não estiver vazio
   ...
 ````
 
-##### Quer combinar com pseudo-selectors? 
+##### Quer combinar com pseudo-selectors?
 
-Bora pegar a classe `.title` apenas se ela não for um `h2` e o `.header` não estiver ativo? 
+Bora pegar a classe `.title` apenas se ela não for um `h2` e o `.header` não estiver ativo?
 
 ````stylus
 .header:not(.active) + .main .title:not(h2)
   ...
 ````
 
-O céu é o limite. 
+O céu é o limite.
 
 Abraços!
 

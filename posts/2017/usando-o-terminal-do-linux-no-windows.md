@@ -6,7 +6,7 @@ Isso é possível porque o módulo "Subsistema do Windows para o Linux", fornece
 
 Por vezes temos a impressão que pouquíssimas pessoas ainda usam o Windows para desenvolvimento. Mas tenho certeza que essa impressão destoa da realidade. Fiz uma rápida pesquisa no Twitter (sendo que é bastante nichada) e os resultados foram:
 
-<blockquote class="twitter-tweet" data-lang="pt"><p lang="pt" dir="ltr">Curiosidade, qual sistema operacional vocês utilizam como Developers?</p>&mdash; Felipe Fialho (@LFeh) <a href="https://twitter.com/felipefialho/status/921109237501227013?ref_src=twsrc%5Etfw">19 de outubro de 2017</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="pt"><p lang="pt" dir="ltr">Curiosidade, qual sistema operacional vocês utilizam como Developers?</p>&mdash; Felipe Fialho (@felipefialho) <a href="https://twitter.com/felipefialho/status/921109237501227013?ref_src=twsrc%5Etfw">19 de outubro de 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Isso mostra que mesmo entre meus seguidores, muitas pessoas usam Windows, e isso realmente não deveria ser um problema.

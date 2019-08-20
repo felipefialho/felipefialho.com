@@ -17,7 +17,7 @@ Nesse caso aé desnecessário criar repositórios, teste rapidamente usando ferr
 
 Assim fica mais fácil para você ou outros desenvolvedores estudarem o código e fazer modificações caso queiram.
 
-Costumo usar o Codepen para pequenos projetos ou brincadeiras (olha algumas [aqui](http://codepen.io/LFeh)) e o JSFiddle para testes mais simples ou pedaços de código que quero deixar guardado. Veja o que se adapta melhor as suas necessidades.
+Costumo usar o Codepen para pequenos projetos ou brincadeiras (olha algumas [aqui](http://codepen.io/felipefialho)) e o JSFiddle para testes mais simples ou pedaços de código que quero deixar guardado. Veja o que se adapta melhor as suas necessidades.
 
 ### Quer testar uma solução com alguma finalidade definida?
 

@@ -1,6 +1,6 @@
 ## Sobre o projeto
 
-Sou apaixonado por qualquer coisa desenvolvida usando apenas CSS. Isso começou em meados de 2012, quando tive contato com o [Homer](http://bernarddeluna.com/project/pure-css3-homer) do Bernard de Luna, no mesmo dia desenvolvi o [Cartman](http://codepen.io/felipefialho/details/qzDCJ) e não parei mais, fiz [outras brincadeiras com CSS](http://codepen.io/LFeh), mas principalmente comecei a buscar no CSS, soluções utilizáveis para os projetos.
+Sou apaixonado por qualquer coisa desenvolvida usando apenas CSS. Isso começou em meados de 2012, quando tive contato com o [Homer](http://bernarddeluna.com/project/pure-css3-homer) do Bernard de Luna, no mesmo dia desenvolvi o [Cartman](http://codepen.io/felipefialho/details/qzDCJ) e não parei mais, fiz [outras brincadeiras com CSS](http://codepen.io/felipefialho), mas principalmente comecei a buscar no CSS, soluções utilizáveis para os projetos.
 
 Após desenvolver alguns componentes separadamente, imaginei que seria muito mais interessante deixar tudo em um local só.
 

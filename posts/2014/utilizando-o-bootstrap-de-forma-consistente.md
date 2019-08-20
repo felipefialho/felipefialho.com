@@ -4,7 +4,7 @@ Não é segredo que gosto muito do Bootstrap, faz parte do meu workflow e fiquei
 
 Para essa técnica, indico fortemente o uso do Grunt ou qualquer outro automatizador. Facilitar compilar o pré-processador CSS, concatenar o JavaScript e otimizar todo o processo.
 
-Se não conhece essas ferramentas, já escrevi sobre o [Grunt](https://www.felipefialho.com/blog/2013/grunt-voce-deveria-estar-usando), mas sugiro ler o excelente [artigo do Vitor Britto](http://www.vitorbritto.com.br/blog/automacao-de-tarefas-com-gruntjs-parte-1).
+Se não conhece essas ferramentas, já escrevi sobre o [Grunt](/blog/2013/grunt-voce-deveria-estar-usando), mas sugiro ler o excelente [artigo do Vitor Britto](http://www.vitorbritto.com.br/blog/automacao-de-tarefas-com-gruntjs-parte-1).
 
 ## Baixando o Bootstrap
 
@@ -18,19 +18,19 @@ Um detalhe importante é que o Bootstrap original utiliza LESS, caso utilize SAS
 
 ## Separando os arquivos
 
-Após baixar o arquivo, copie as pastas **less** e **js** para o seu projeto seguindo sua organização. Caso ainda não tenha nada muito definido, pode dar uma lida no artigo [Sobre organização de componentes com pré-processadores](https://www.felipefialho.com/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores).
+Após baixar o arquivo, copie as pastas **less** e **js** para o seu projeto seguindo sua organização. Caso ainda não tenha nada muito definido, pode dar uma lida no artigo [Sobre organização de componentes com pré-processadores](/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores).
 
 Pode copiar também a pasta **fonts** caso queira utilizar os icons fonts do Bootstrap. Eu prefiro criar minhas coleções no [Icomoon](icomoon.io/app), assim seleciono exatamente quais ícones vão ser usados. Mas faça como achar melhor.
 
 ## Selecionando os componentes
 
-Adoro componentes, e inclusive escrevi um artigo abordando [Componentização e Atomic Design](https://www.felipefialho.com/blog/2013/um-conto-sobre-componentizacao-e-quebra-de-paradigmas). Eles são a chave para um projeto consistente.
+Adoro componentes, e inclusive escrevi um artigo abordando [Componentização e Atomic Design](/blog/2013/um-conto-sobre-componentizacao-e-quebra-de-paradigmas). Eles são a chave para um projeto consistente.
 
 Lembra da sessão **customize** no site do Bootstrap? Vamos fazer a mesma coisa, mas de forma manual...
 
 O Bootstrap usa o arquivo **bootstrap.less** para carregar os componentes. Eu sugiro criar um arquivo diferente, como **style.less** e nele carregar todos os componentes que for utilizar.
 
-Faça o mesmo com os javascripts, selecione apenas o que vai usar no projeto.
+Faça o mesmo com os JavaScripts, selecione apenas o que vai usar no projeto.
 
 ## Otimize, otimize, otimize...
 

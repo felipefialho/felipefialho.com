@@ -1,4 +1,4 @@
-A importância de um CSS modularizado e o Atomic Design foi muito difundido nos últimos tempos, eu mesmo já escrevi um [artigo sobre o assunto](https://www.felipefialho.com/blog/2013/um-conto-sobre-componentizacao-e-quebra-de-paradigmas). Mas algo ainda me incomodava ao aplicar First Mobile em conjunto com CSS modular... os Media Queries.
+A importância de um CSS modularizado e o Atomic Design foi muito difundido nos últimos tempos, eu mesmo já escrevi um [artigo sobre o assunto](/blog/2013/um-conto-sobre-componentizacao-e-quebra-de-paradigmas). Mas algo ainda me incomodava ao aplicar First Mobile em conjunto com CSS modular... os Media Queries.
 
 ## O uso tradicional
 
@@ -26,7 +26,7 @@ Basta adicionar o seguinte código no `head` e como mágica Media Queries funcio
 
 ````html
 <!--[if lt IE 9]>
-<script type='text/javascript' src="assets/js/respond.min.js"></script>
+<script type='text/JavaScript' src="assets/js/respond.min.js"></script>
 <![endif]-->
 ````
 

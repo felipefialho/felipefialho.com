@@ -2,7 +2,7 @@
 
 Acabei de chegar da 9ª edição do [Meetup CSS](http://www.meetup.com/pt/CSS-SP) que teve como tema **Media Queries**, a talk foi muito bem apresentada pelo [Matheus Marsiglio](https://twitter.com/matmarsiglio) e em seguida tivemos um ótimo debate técnico sobre o assunto.
 
-Fiquei feliz em saber que muita gente já está utilizando a abordagem de componentização de Media Queries, assunto que já abordei [>nessa postagem](https://www.felipefialho.com/blog/2014/css-modular-com-mobile-first) e mais recentemente teve [um artigo](http://www.raphaelfabeni.com.br/componentes-responsivos) do [Raphael Fabeni](https://twitter.com/raphaelfabeni) sobre isso.
+Fiquei feliz em saber que muita gente já está utilizando a abordagem de componentização de Media Queries, assunto que já abordei [>nessa postagem](/blog/2014/css-modular-com-mobile-first) e mais recentemente teve [um artigo](http://www.raphaelfabeni.com.br/componentes-responsivos) do [Raphael Fabeni](https://twitter.com/raphaelfabeni) sobre isso.
 
 Apesar de já ter falado sobre isso, o assunto é tão interessante e importante que vale um novo artigo.
 
@@ -69,14 +69,14 @@ Vamos pensar na seguinte situação, que alias é muito comum: Você tem um menu
 
 Seria exatamente assim:
 
-<p data-height="400" data-theme-id="light" data-slug-hash="jPvdgp" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/jPvdgp/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="light" data-slug-hash="jPvdgp" data-default-tab="result" data-user="felipefialho" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/jPvdgp/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/felipefialho">@felipefialho</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 - Já na versão desktop, ele deve estar sempre visível, não deve estar fixo e os itens devem ser posicionados um ao lado do outro
 
 Então ele ficaria dessa forma:
 
-<p data-height="400" data-theme-id="light" data-slug-hash="LVJaEG" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/LVJaEG/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="light" data-slug-hash="LVJaEG" data-default-tab="result" data-user="felipefialho" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/LVJaEG/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/felipefialho">@felipefialho</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Observem que utilizo o mesmo HTML (Jade) em ambos os exemplos.
@@ -85,7 +85,7 @@ Observem que utilizo o mesmo HTML (Jade) em ambos os exemplos.
 
 O resultado será esse! (pode dar resize para ver as mudanças)
 
-<p data-height="400" data-theme-id="light" data-slug-hash="GJXeJv" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/GJXeJv/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="light" data-slug-hash="GJXeJv" data-default-tab="result" data-user="felipefialho" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/GJXeJv/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/felipefialho">@felipefialho</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Observem bem o código.

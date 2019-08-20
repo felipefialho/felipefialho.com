@@ -4,7 +4,7 @@ O texto a seguir é uma tradução livre do fantástico artigo [From Zero to Fro
 
 Então quero agradece-lo primeiro por ter escrito esse ótimo texto, segundo por ter permitido que eu fizesse essa tradução.
 
-Importante ressaltar que a tradução não é literal, adaptei algumas partes para facilitar a compreensão. Caso encontre erros graves de tradução pode abrir uma [pull-request](https://github.com/felipefialho/lfeh.github.io) com a correção do problema ou uma [issue informando aonde é o erro](https://github.com/felipefialho/lfeh.github.io/issues).
+Importante ressaltar que a tradução não é literal, adaptei algumas partes para facilitar a compreensão. Caso encontre erros graves de tradução pode abrir uma [pull-request](https://github.com/felipefialho/felipefialho.github.io) com a correção do problema ou uma [issue informando aonde é o erro](https://github.com/felipefialho/felipefialho.github.io/issues).
 
 ______
 

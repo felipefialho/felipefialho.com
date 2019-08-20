@@ -20,7 +20,7 @@ Existes milhares de tipos de carousel, e várias técnicas para desenvolve-los. 
 
 A funcionalidade do botão não foi feita, mas... tente fazer um scroll no carousel :)
 
-<p data-height="400" data-theme-id="0" data-slug-hash="rjXbra" data-default-tab="result" data-user="LFeh" data-embed-version="2" data-pen-title="Carousel - Example" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/rjXbra/">Carousel - Example</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="0" data-slug-hash="rjXbra" data-default-tab="result" data-user="felipefialho" data-embed-version="2" data-pen-title="Carousel - Example" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/rjXbra/">Carousel - Example</a> by Felipe Fialho (<a href="http://codepen.io/felipefialho">@felipefialho</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 Esse exemplo é a base de um Carousel simples, com o item ocupando 100% do espaço visível. Mas observem que o scroll termina no lugar correto, respeitando o número de elementos. Tudo isso sem usar uma linha de JavaScript.
@@ -37,7 +37,7 @@ E o mais legal, é que essa técnica fornece um puta fallback caso o JavaScript 
 
 Outro uso legal dessa técnica consiste em deixar automaticamente responsiva qualquer tipo de navegação.
 
-<p data-height="250" data-theme-id="0" data-slug-hash="LxwoQd" data-default-tab="result" data-user="LFeh" data-embed-version="2" data-pen-title="Navigation - Example" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/LxwoQd/">Navigation - Example</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="250" data-theme-id="0" data-slug-hash="LxwoQd" data-default-tab="result" data-user="felipefialho" data-embed-version="2" data-pen-title="Navigation - Example" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/LxwoQd/">Navigation - Example</a> by Felipe Fialho (<a href="http://codepen.io/felipefialho">@felipefialho</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 Observem agora que a navegação adiciona um scroll caso os elementos ultrapassem o tamanho do pai. Para testar melhor, recomendo que editem esse pen, e removam alguns items, deixando apenas dois. O scroll simplesmente não vai estar disponível.

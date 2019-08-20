@@ -2,7 +2,7 @@ Na verdade, no início do ano, ainda estava em processo de recuperação mental 
 
 Estava pensando em escrever um texto técnico mas como também faz 6 meses que estou trabalhando remoto, e muitas pessoas tem curiosidade nesse sentido, achei que seria legal abordar esse tema.
 
-Como a maioria que acompanha o meu site ou redes sociais devem saber, atualmente estou trabalhando remotamente na [Filtro](http://2014.filtro.us), inclusive falei um pouco disso no [post anterior](https://www.felipefialho.com/blog/2015/meu-dia-a-dia-como-dev-frontend) mas vou ser um pouco mais abrangente agora.
+Como a maioria que acompanha o meu site ou redes sociais devem saber, atualmente estou trabalhando remotamente na [Filtro](http://2014.filtro.us), inclusive falei um pouco disso no [post anterior](/blog/2015/meu-dia-a-dia-como-dev-frontend) mas vou ser um pouco mais abrangente agora.
 
 ## Produtividade e organização
 
