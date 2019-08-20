@@ -4,6 +4,7 @@ import ReactGA from 'react-ga'
 
 import { getActiveTheme } from 'utils'
 import { Date } from 'components/Typography'
+import BoxHandler from 'components/BoxHandler';
 
 import * as S from './styled'
 
@@ -28,11 +29,11 @@ const BlogPost = ({
       direction="bottom"
       bg={getActiveTheme()}
       onClick={trackClick(title)}>
-        <article>
+        <BoxHandler>
           <Date>{date}</Date>
           <S.Title>{title}</S.Title>
           <S.Subtitle>{description}</S.Subtitle>
-        </article>
+        </BoxHandler>
     </S.BlogPost>
   )
 }

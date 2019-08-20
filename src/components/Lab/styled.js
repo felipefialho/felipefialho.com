@@ -22,20 +22,8 @@ export const LabItem = styled.a.attrs(props => ({
   target: '_blank',
   rel: 'noopener noreferrer'
 }))`
-  background-color: var(--bg);
-  border: ${V.Border.box};
-  border-radius: ${V.BorderRadius.box};
-  box-shadow: ${V.BoxShadow.box};
   color: var(--primaryColor);
   display: block;
-  height: 100%;
-  padding: ${V.Space.default};
-  transition: border-color ${V.Transition.default};
-  will-change: border-color;
-
-  &:hover {
-    border-color: var(--highlightColor);
-  }
 `
 
 export const Image = styled(Img).attrs(props => ({
