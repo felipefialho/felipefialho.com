@@ -15,7 +15,7 @@ const BlogPost = ({
   return (
     <S.BlogPost to={slug} cover direction="bottom" bg={getActiveTheme()}>
       <Date>{date}</Date>
-      <h1>{title}</h1>
+      <S.Title>{title}</S.Title>
       <p>{description}</p>
     </S.BlogPost>
   )
