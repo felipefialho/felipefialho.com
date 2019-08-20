@@ -20,13 +20,13 @@ export const Space = {
   lg: '4.8rem',
   xlg: '6.4rem',
   xxlg: '9.6rem',
-};
+}
 
 export const Height = {
   headerBarSm: `${Space.lg}`,
   headerSm: `${Space.xxlg}`,
   headerLg: `${Space.xlg}`,
-};
+}
 
 // --------------------------------------------------
 // 2. Colors
