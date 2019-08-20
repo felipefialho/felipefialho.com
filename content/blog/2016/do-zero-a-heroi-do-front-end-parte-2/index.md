@@ -1,6 +1,6 @@
 ---
 title: Do Zero a Herói Front-End (Parte 2)
-date: "2016-05-20"
+date: "2016-06-14"
 description: Um guia completo para aprender desenvolvimento Front-End.
 featured: featured.png
 ---
