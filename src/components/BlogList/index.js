@@ -1,9 +1,18 @@
 import React from 'react'
+import ReactGA from 'react-ga'
 
 import { Link } from 'components/Typography'
 import BlogPost from 'components/BlogPost'
 
 import * as S from './styled'
+
+const trackClickAllPosts = () => {
+  ReactGA.event({
+    category: 'Blog',
+    action: 'click',
+    label: `Blog - Click to view all posts`
+  })
+}
 
 const BlogList = ({ list }) => {
   return (
@@ -20,7 +29,7 @@ const BlogList = ({ list }) => {
           />
         ))}
       </S.Nav>
-      <Link to='/blog/'>
+      <Link to='/blog/' onClick={trackClickAllPosts}>
         Ver todos os posts
       </Link>
     </S.BlogList>
