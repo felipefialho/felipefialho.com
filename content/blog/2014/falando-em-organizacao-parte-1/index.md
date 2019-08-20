@@ -1,3 +1,9 @@
+---
+title: Falando em organização de código
+date: "2014-15-10"
+description: O Universo, é um lugar desconcertantemente grande, um fato que, para continuar levando uma vida tranquila, a maioria das pessoas tende a ignorar.
+---
+
 Já escrevi alguns artigos que mostram um pouco da metodologia que eu estava utilizando, são eles:
 
 - [Sobre organização de componentes com pré-processadores](/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores)

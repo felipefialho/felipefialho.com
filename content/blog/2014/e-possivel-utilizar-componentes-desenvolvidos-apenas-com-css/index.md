@@ -1,3 +1,9 @@
+---
+title: É possível utilizar componentes desenvolvidos apenas com CSS?
+date: "2014-04-22"
+description: Após o lançamento do CSS Components, escrevo as minhas impressões sobre o quanto é possível utilizar componentes desenvolvidos apenas com CSS.
+---
+
 ## Sobre o projeto
 
 Sou apaixonado por qualquer coisa desenvolvida usando apenas CSS. Isso começou em meados de 2012, quando tive contato com o [Homer](http://bernarddeluna.com/project/pure-css3-homer) do Bernard de Luna, no mesmo dia desenvolvi o [Cartman](http://codepen.io/felipefialho/details/qzDCJ) e não parei mais, fiz [outras brincadeiras com CSS](http://codepen.io/felipefialho), mas principalmente comecei a buscar no CSS, soluções utilizáveis para os projetos.

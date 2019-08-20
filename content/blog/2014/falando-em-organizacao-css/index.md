@@ -1,3 +1,9 @@
+---
+title: Falando em organização CSS...
+date: "2014-11-13"
+description: Durante anos escrevemos CSS como se não houvesse amanhã e tínhamos como maiores problemas as diferenças de renderização no IE(ca). E já não era simples.
+---
+
 Dando continuidade a série [sobre minha organização e fluxo de trabalho atual](/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores), vou contar um pouco sobre como tenho trabalhado o CSS.
 
 ## "CSS é muito fácil"... Será?

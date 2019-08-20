@@ -1,3 +1,9 @@
+---
+title: Estamos realmente interessados em formar bons profissionais?
+date: "2014-08-25"
+description: Esse texto não é técnico e também não é direcionado apenas para Desenvolvedores Front-End, é um desabafo de quem também teve dificuldades para iniciar a carreira.
+---
+
 Já faz tempo que observo de longe a dificuldade de novos profissionais ingressarem no mercado de trabalho. Mas atualmente pessoas mais próximas estão iniciando suas carreiras e estou vendo de perto o quanto a coisa está fora de controle.
 
 ## Começou a faculdade, e agora está empolgado para arrumar um estágio?

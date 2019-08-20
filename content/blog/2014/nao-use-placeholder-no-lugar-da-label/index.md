@@ -1,3 +1,9 @@
+---
+title: Não use Placeholder no lugar da Label
+date: "2014-02-06"
+description: O placeholder ajuda muito com informações complementares do campo de formulário, mas não deveria ser utilizado para substituir o label
+---
+
 ## Label x Placeholder
 
 O `<label>` deve ser utilizado como rótulo de um campo de formulário e deve ser sempre utilizado. Já o `<placeholder>` passa informações complementares sobre o campo antes do usuário digitar e seu uso é opcional.

@@ -1,3 +1,9 @@
+---
+title: E 5 anos atrás eu me tornava o menino do HTML...
+date: "2014-21-07"
+description: Parece que foi ontem, mas faz 5 anos que oficialmente escrevi a primeira linha de código e dava meus primeiros passos em uma profissão que se quer existia.. ou existia?
+---
+
 ## Essa história começou um pouco antes...
 
 Na verdade essa história começou um pouquinho antes... já "brincava" com HTML e CSS desde 2002/2003 (tinha entre 12 e 13 anos). O meu tio assinava uma revista daquelas que enviava um CD todo mês, e além daqueles saudosos 5-mil-templates-prontos-para-usar, elas tinham uma parte com tutoriais que "ensinavam a construir seu próprio website", e lembro de passar tardes e mais tardes tentando desenvolver um site de "Emuladores e Roms" que nunca foi para o ar.
@@ -14,9 +20,9 @@ Acabei começando esse curso (que era técnologo) aos 16 anos, então terminei a
 
 Estava totalmente perdido e sem saber o que estudar ou para qual área seguir. Sendo assim levei quase 6 meses para conseguir a primeira oportunidade, e então ela chegou quando eu menos esperava...
 
-![Primeira oportunidade como desenvolvedor :)](/assets/img/blog/primeira-oportunidade.jpg)
+![Primeira oportunidade como desenvolvedor :)](/primeira-chance.png)
 
-Esse e-mail foi enviado pelo [Eduardo Afonso](https://plus.google.com/u/0/107403752074165444907/about) e posso dizer que foi oficialmente meu inicio como desenvolvedor.
+Posso dizer que foi oficialmente meu inicio como desenvolvedor.
 
 ## O presente :)
 
@@ -24,7 +30,7 @@ Em 2009 sequer tinha escutado falar no termo "Front-End", era um mercado realmen
 
 Nesses 5 anos tive o prazer de ver o termo "Desenvolvedor Front-End" ganhar força e em seguida conquistar um papel importante no mercado web, e agora acredito que estamos em um momento cada vez mais maduro e com perspectivas interessantes para o futuro.
 
-Pode não parecer muita coisa, mas 5 anos é metade de uma década (bela constatação heim? :p), e acredito que seja um momento de comemoração e reflexão. Tive a sorte de sempre ter profissionais de extrema qualidade do meu lado, e isso sem dúvidas facilitou muito minha evolução. Alias, fica aqui um grande abraço para todos que trabalharam comigo nesse período, não vou citar nomes para não cometer injustiças :D.
+Pode não parecer muita coisa, mas 5 anos é metade de uma década (bela constatação heim? :p), e acredito que seja um momento de comemoração e reflexão. Tive a sorte de sempre ter profissionais de extrema qualidade do meu lado, e isso sem dúvidas facilitou muito minha evolução. Alias, fica aqui um grande abraço para todos que trabalharam comigo nesse período, não vou citar nomes para não cometer injustiças :D
 
 ## Ahhh o futuro...
 
