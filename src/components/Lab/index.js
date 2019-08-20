@@ -39,7 +39,7 @@ const LabImg = ({ imageSrc }) => {
     return image.node.relativePath === imageSrc.relativePath
   })
 
-  return <S.LabImg fluid={image.node.childImageSharp.fluid} />
+  return <S.Image fluid={image.node.childImageSharp.fluid} />
 }
 
 const Lab = ({ content }) => {
@@ -51,8 +51,8 @@ const Lab = ({ content }) => {
             <S.LabItem href={node.path} title={node.title} onClick={trackClickLab}>
               <LabImg imageSrc={node.imageSrc} />
               <Date>{node.date}</Date>
-              <S.LabTitle>{node.title}</S.LabTitle>
-              <S.LabDescription>{node.description}</S.LabDescription>
+              <S.Title>{node.title}</S.Title>
+              <S.Text>{node.description}</S.Text>
             </S.LabItem>
           </article>
         )

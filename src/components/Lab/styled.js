@@ -24,7 +24,7 @@ export const LabItem = styled.a.attrs(props => ({
 }))`
   background-color: var(--bgSecondary);
   border: 1px solid transparent;
-  box-shadow: 0px 1px 2px 1px rgba(0,0,0, .05);
+  box-shadow: ${V.BoxShadow.box};
   color: var(--primaryColor);
   display: block;
   height: 100%;
@@ -37,21 +37,19 @@ export const LabItem = styled.a.attrs(props => ({
   }
 `
 
-export const LabImg = styled(Img).attrs(props => ({
+export const Image = styled(Img).attrs(props => ({
   alt: props.title
 }))`
   display: block;
   margin-bottom: ${V.Space.default};
 `
 
-export const LabTitle = styled.h1`
-  display: block;
+export const Title = styled.h1`
   font-weight: 600;
   margin-bottom: ${V.Space.sm};
 `
 
-export const LabDescription = styled.p`
+export const Text = styled.p`
   ${T.Text}
   color: var(--secondaryColor);
-  display: block;
 `
