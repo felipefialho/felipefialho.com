@@ -36,26 +36,7 @@ export const Content = styled.article`
   }
 
   a {
-    color: var(--highlightColor);
-    position: relative;
-
-    &:after {
-      border-bottom: transparent solid 1px;
-      content: '';
-      left: 0;
-      margin-top: ${V.Space.xxs};
-      position: absolute;
-      top: 100%;
-      transition: border-color ${V.Transition.default};
-      width: 100%;
-      will-change: border-color;
-    }
-
-    &:hover {
-      &:after {
-        border-color: var(--highlightColor);
-      }
-    }
+    ${T.Link}
   }
 
   blockquote {
