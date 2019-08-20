@@ -1,6 +1,12 @@
+---
+title: Sobre organização de componentes com pré-processadores
+date: "2013-06-18"
+description: No último artigo dei uma passada pelo Grunt e mostrei como ele pode ajudar a otimizar suas tarefas. Se você usa pré-processadores a organização dos componentes é essencial...
+---
+
 ## Breve introdução
 
-Na eterna dúvida entre usar SASS ou LESS, acabei optando por LESS. Não tenho uma explicação certa, mas acredito que foi pelo fato do [Bootstrap](http://twitter.github.io/bootstrap) (na qual baseei meu Framework) usar LESS (apesar de ter uma adaptação em SASS). O fato dele ser baseado em javascript também me agradou.
+Na eterna dúvida entre usar SASS ou LESS, acabei optando por LESS. Não tenho uma explicação certa, mas acredito que foi pelo fato do [Bootstrap](http://twitter.github.io/bootstrap) (na qual baseei meu Framework) usar LESS (apesar de ter uma adaptação em SASS). O fato dele ser baseado em JavaScript também me agradou.
 
 O SASS é mais robusto e tem plugins interessantíssimos como o Compass. O gerador de sprites dele é uma mão na roda e sinto falta disso no LESS.
 

@@ -1,6 +1,12 @@
+---
+title: Tutorial - Tabela Responsiva
+date: "2013-10-14"
+description: Em layouts responsivos, um dos componentes que sempre me incomodava eram as tabelas. Acredito que isso também ocorra com outros desenvolvedores.
+---
+
 Por algum tempo usei (e até contribui) com um ótimo plugin chamado [Footable](http://bit.ly/17CGaeG), ele adiciona funcionalidades bem legais nas tabelas e ajuda a resolver um pouco desse problema.
 
-Mas nunca considerei uma solução definitiva, não gostava de depender de javascript para resolver essa questão e comecei a vasculhar outras soluções.
+Mas nunca considerei uma solução definitiva, não gostava de depender de JavaScript para resolver essa questão e comecei a vasculhar outras soluções.
 
 ## Primeira técnica
 
@@ -12,16 +18,14 @@ Ela consiste em inverter a posição do **thead** e posicionar o **tbody** na su
 
 A demo funcional está no [CodePen](http://codepen.io/felipefialho/pen/hsreD) (redimensione o navegador para visualizar o efeito).
 
-### Tutorial
+### No HTML
 
-#### No HTML
-
-<p data-height="500" data-theme-id="light" data-slug-hash="hsreD" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/hsreD/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="500" data-theme-id="light" data-slug-hash="hsreD" data-default-tab="result" data-user="felipefialho" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/hsreD/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/felipefialho">@felipefialho</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Observem que adiciono duas classes. A classe responsável pelo efeito é **table-responsive**, gosto de separar dessa forma e não deixar "genérico", pois consigo definir quais tabelas vão ter esse comportamento.
 
-#### No CSS
+### No CSS
 
 A primeira parte do bloco, trata apenas de estilos, vou pular diretamente para o efeito.
 
@@ -89,8 +93,6 @@ Por último, posicionamos as linhas lado-a-lado, isso causa o efeito que desejam
 
 ## Segunda técnica
 
-### Sobre
-
 Essa solução foi inspirada no funcionamento do [Gmail](http://www.gmail.com) para dispositivos menores.
 
 Funciona bem para tabelas que exigem por exemplo, um check. Ele agrupa as informações.
@@ -99,16 +101,14 @@ Pode ser útil principalmente em CMS ou Gerenciadores.
 
 A demo funcional está no [CodePen](http://codepen.io/felipefialho/pen/beEoG) (redimensione o navegador para visualizar o efeito).
 
-### Tutorial
+### No HTML
 
-#### No HTML
-
-<p data-height="500" data-theme-id="light" data-slug-hash="hsreD" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/beEoG">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="500" data-theme-id="light" data-slug-hash="hsreD" data-default-tab="result" data-user="felipefialho" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/beEoG">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/felipefialho">@felipefialho</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Assim como no exemplo anterior, uso uma classe apenas para aplicar o efeito, no caso **.table-action**.
 
-#### No CSS
+### No CSS
 
 ````css
 @media (max-width: 480px) {

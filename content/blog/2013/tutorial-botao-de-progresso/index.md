@@ -1,6 +1,12 @@
+---
+title: Tutorial - Botão de Progresso
+date: "2013-10-12"
+description: Nesse artigo, vou mostrar mais um tutorial simples... o desenvolvimento de um botão de progresso, que pode fornecer um feedback importante para o usuário.
+---
+
 Continuo trabalhando em diversos projetos paralelos, em razão disso estou um pouco desaparecido das comunidades que participo.
 
-Mas durante esses projetos, estou pensando e aplicando algumas soluções interessantes, uma delas foi a [caixa de compartilhar](https://www.felipefialho.com/blog/2013/tutorial-caixa-de-compartilhar-em-puro-css), agora vou mostrar um "botão de progresso".
+Mas durante esses projetos, estou pensando e aplicando algumas soluções interessantes, uma delas foi a [caixa de compartilhar](/blog/2013/tutorial-caixa-de-compartilhar-em-puro-css), agora vou mostrar um "botão de progresso".
 
 ## Sobre
 
@@ -16,7 +22,7 @@ A demo funcional está no [CodePen](http://codepen.io/felipefialho/pen/KviDw).
 
 Apenas um botão.
 
-<p data-height="400" data-theme-id="light" data-slug-hash="KviDw" data-default-tab="result" data-user="LFeh" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/KviDw/">Button Progress</a> by Felipe Fialho (<a href="http://codepen.io/LFeh">@LFeh</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="light" data-slug-hash="KviDw" data-default-tab="result" data-user="felipefialho" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/KviDw/">Button Progress</a> by Felipe Fialho (<a href="http://codepen.io/felipefialho">@felipefialho</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ### No CSS

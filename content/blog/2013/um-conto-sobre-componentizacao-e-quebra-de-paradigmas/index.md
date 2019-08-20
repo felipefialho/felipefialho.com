@@ -1,8 +1,10 @@
-## Mas sou apenas um "mero desenvolvedor"
+---
+title: Um conto sobre componentização e quebra de paradigmas
+date: "2013-07-29"
+description: Melhorar processos é parte essencial do nosso trabalho, mas em algum momento percebemos que só melhorar pode não ser o suficiente, as vezes é preciso quebrar paradigmas.
+---
 
-No [último drops](http://tableless.com.br/drops-14-sou-um-mero-desenvolvedor/#.UfKtxNK1zIg) do [Diego Eis](https://twitter.com/diegoeis ), ele conta sobre uma conversa no tuiter, na qual um dos desenvolvedores faz esse comentário.
-
-Não, você não é apenas um "mero desenvolvedor", você está no centro de mudanças importantes no nosso mercado e pode influenciar positivamente.
+Não, você não é apenas um "mero desenvolvedor", você está no centro de mudanças importantes no nosso mercado e pode influenciar positivamente esse cenário.
 
 ## O processo padrão
 
@@ -37,7 +39,7 @@ Trabalho com pessoas muito competentes e inovadoras do meu lado, então as coisa
 
 A estrutura HTML/CSS/JS dos componentes geralmente seguem linhas de código parecidas, mesmo quando são visualmente muito diferentes de um projeto para outro, então a criação de um Framework otimizaria muito o trabalho.
 
-Após alguns meses e bastante teste, cheguei em um modelo estrutural e organizacional que considero o ideal por enquanto, podem ver nesse artigo: [Sobre organização de componentes com pré-processadores](https://www.felipefialho.com/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores)
+Após alguns meses e bastante teste, cheguei em um modelo estrutural e organizacional que considero o ideal por enquanto, podem ver nesse artigo: [Sobre organização de componentes com pré-processadores](/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores)
 
 ### Como trabalhamos atualmente
 
