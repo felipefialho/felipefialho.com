@@ -1,3 +1,10 @@
+---
+title: Apresento o Rucksack
+date: "2015-21-10"
+description: Nesse artigo vou mostrar para vocês o Rucksack, um pacote de features desenvolvido em PostCSS que pode ser de grande ajuda no seu workflow.
+featured: featured.jpg
+---
+
 ## Introdução
 
 Tenho certeza absoluta que o [PostCSS](https://github.com/postcss/postcss) vai estar cada vez mais presente no nosso dia a dia, já que é absolutamente fantástico e pode ser usado de várias formas, inclusive junto com o pré-processador da sua preferencia, ou seja, a escalabilidade é total.

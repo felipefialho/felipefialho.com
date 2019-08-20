@@ -1,3 +1,10 @@
+---
+title: Sobre trabalhar remoto
+date: "2015-06-10"
+description: Depois de 6 meses, sim, 6 meses, resolvi sair da inércia e voltar a escrever.
+featured: featured.jpg
+---
+
 Na verdade, no início do ano, ainda estava em processo de recuperação mental do super corrido final de 2014 e logo em seguida as energias foram focadas na [Conferência CSS Brasil](http://cssconfbrasil.com.br).
 
 Estava pensando em escrever um texto técnico mas como também faz 6 meses que estou trabalhando remoto, e muitas pessoas tem curiosidade nesse sentido, achei que seria legal abordar esse tema.

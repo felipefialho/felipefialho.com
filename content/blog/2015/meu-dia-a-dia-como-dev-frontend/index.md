@@ -1,3 +1,9 @@
+---
+title: Meu dia a dia como desenvolvedor Front-End
+date: "2015-01-20"
+description: Enfim o primeiro post de 2015. Vou contar um pouco sobre meu dia a dia como desenvolvedor Front-End, equipamentos, aplicativos, workflow...
+---
+
 ## Mas antes...
 
 Muitos já devem ter visto, mas [criei um repositório](https://github.com/felipefialho/1-post-por-dia) para resolver um dos maiores problemas na hora de escrever um novo artigo: escolher um assunto/tema.

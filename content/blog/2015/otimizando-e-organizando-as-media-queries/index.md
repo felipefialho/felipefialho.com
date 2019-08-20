@@ -1,3 +1,10 @@
+---
+title: Otimizando e Organizando as Media Queries
+date: "2015-23-07"
+description: Quando o assunto é Mobile First, Media Queries e otimização de código eu tenho uma regra. Evitar ao máximo resetar propriedades.
+featured: featured.jpg
+---
+
 ## Começando do começo
 
 Acabei de chegar da 9ª edição do [Meetup CSS](http://www.meetup.com/pt/CSS-SP) que teve como tema **Media Queries**, a talk foi muito bem apresentada pelo [Matheus Marsiglio](https://twitter.com/matmarsiglio) e em seguida tivemos um ótimo debate técnico sobre o assunto.

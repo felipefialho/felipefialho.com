@@ -1,3 +1,10 @@
+---
+title: Aproximando seus estudos de cenários reais
+date: "2015-02-07"
+description: Sobre aquela velha questão de Teoria x Prática e como solucionar isso.
+featured: featured.jpg
+---
+
 ## O problema
 
 Uma das perguntas mais comuns entre desenvolvedores iniciantes ou que estão estudando alguma ferramenta nova, é: "Certo, estudei um monte de coisa legal, tudo parece muito útil e totalmente incrível! Mas... como testar isso na prática?"
