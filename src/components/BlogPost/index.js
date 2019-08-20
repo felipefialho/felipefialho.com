@@ -11,7 +11,7 @@ const trackClick = (item) => {
   ReactGA.event({
     category: 'Blog',
     action: 'click',
-    label: `Blog - Go to ${item}`
+    label: `Blog List - Go to ${item}`
   })
 }
 
