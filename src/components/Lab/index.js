@@ -1,8 +1,10 @@
 import React from 'react'
 import ReactGA from 'react-ga'
+import { graphql, useStaticQuery } from 'gatsby'
+
+import { Date } from 'components/Typography'
 
 import * as S from './styled'
-import { graphql, useStaticQuery } from 'gatsby';
 
 const trackClickLab = (item) => {
   ReactGA.event({
@@ -48,7 +50,7 @@ const Lab = ({ content }) => {
           <article key={node.id}>
             <S.LabItem href={node.path} title={node.title} onClick={trackClickLab}>
               <LabImg imageSrc={node.imageSrc} />
-              <S.LabDate>{node.date}</S.LabDate>
+              <Date>{node.date}</Date>
               <S.LabTitle>{node.title}</S.LabTitle>
               <S.LabDescription>{node.description}</S.LabDescription>
             </S.LabItem>

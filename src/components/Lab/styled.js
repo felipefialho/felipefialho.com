@@ -3,6 +3,7 @@ import Img from 'gatsby-image'
 import media from 'styled-media-query'
 
 import * as V from 'styles/variables'
+import * as T from 'styles/typography'
 
 export const LabList = styled.section`
   display: grid;
@@ -43,13 +44,6 @@ export const LabImg = styled(Img).attrs(props => ({
   margin-bottom: ${V.Space.default};
 `
 
-export const LabDate = styled.time`
-  color: var(--secondaryColor);
-  display: block;
-  font-size: .8em;
-  margin-bottom: ${V.Space.xxs};
-`
-
 export const LabTitle = styled.h1`
   display: block;
   font-weight: 600;
@@ -57,6 +51,7 @@ export const LabTitle = styled.h1`
 `
 
 export const LabDescription = styled.p`
+  ${T.Text}
   color: var(--secondaryColor);
   display: block;
 `
