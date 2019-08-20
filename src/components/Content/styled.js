@@ -8,7 +8,6 @@ export const Content = styled.article`
 
   h1 {
     ${T.Title}
-    color: var(--primaryColor);
 
     &:not(:last-child) {
       margin-bottom: ${V.Space.xxs};
@@ -25,6 +24,8 @@ export const Content = styled.article`
   }
 
   p {
+    font-weight: 400;
+
     &:not(:last-child) {
       margin-bottom: ${V.Space.default};
     }

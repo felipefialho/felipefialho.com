@@ -7,7 +7,8 @@ import * as T from 'styles/typography'
 export const Date = styled.time`
   color: var(--secondaryColor);
   display: block;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
   margin-bottom: ${V.Space.xxs};
 `
 

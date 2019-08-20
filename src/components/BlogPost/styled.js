@@ -5,9 +5,9 @@ import * as V from 'styles/variables'
 import * as T from 'styles/typography'
 
 export const BlogPost = styled(AniLink)`
-  ${T.Text}
-  background-color: var(--bgSecondary);
-  border: 1px solid transparent;
+  background-color: var(--bg);
+  border: ${V.Border.box};
+  border-radius: ${V.BorderRadius.box};
   box-shadow: ${V.BoxShadow.box};
   color: var(--primaryColor);
   display: block;
@@ -24,7 +24,11 @@ export const BlogPost = styled(AniLink)`
   }
 `
 
-export const Title = styled.h2`
-  font-weight: 600;
-  margin-bottom: ${V.Space.xxs};
+export const Title = styled.h1`
+  ${T.Subheading}
+  margin-bottom: ${V.Space.sm};
+`
+
+export const Subtitle = styled.h2`
+  ${T.Subtitle}
 `

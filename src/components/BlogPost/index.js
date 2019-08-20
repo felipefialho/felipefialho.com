@@ -28,9 +28,11 @@ const BlogPost = ({
       direction="bottom"
       bg={getActiveTheme()}
       onClick={trackClick(title)}>
-        <Date>{date}</Date>
-        <S.Title>{title}</S.Title>
-        <p>{description}</p>
+        <article>
+          <Date>{date}</Date>
+          <S.Title>{title}</S.Title>
+          <S.Subtitle>{description}</S.Subtitle>
+        </article>
     </S.BlogPost>
   )
 }

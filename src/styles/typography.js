@@ -5,22 +5,30 @@
 import * as V from 'styles/variables'
 
 export const Title = `
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 4rem;
-  line-height: 4.8rem;
+  color: var(--primaryColor);
+  font-size: 3.2rem;
+  line-height: 1.2em;
+`
+
+export const Subheading = `
+  color: var(--primaryColor);
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: -0.022em;
+  line-height: 1.3em;
 `
 
 export const Subtitle = `
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 2.4rem;
+  color: var(--secondaryColor);
+  font-size: 2rem;
   letter-spacing: -0.45px;
-  line-height: 3.2rem;
+  line-height: 1.4em;
 `
 
 export const Text = `
+  font-size: 1.8rem;
   letter-spacing: -0.04px;
-  line-height: 1.58;
-  text-rendering: optimizeLegibility;
+  line-height: 1.4em;
 `
 
 export const Link = `

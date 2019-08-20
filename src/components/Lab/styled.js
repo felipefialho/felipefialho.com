@@ -22,8 +22,9 @@ export const LabItem = styled.a.attrs(props => ({
   target: '_blank',
   rel: 'noopener noreferrer'
 }))`
-  background-color: var(--bgSecondary);
-  border: 1px solid transparent;
+  background-color: var(--bg);
+  border: ${V.Border.box};
+  border-radius: ${V.BorderRadius.box};
   box-shadow: ${V.BoxShadow.box};
   color: var(--primaryColor);
   display: block;

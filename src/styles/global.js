@@ -67,11 +67,11 @@ const GlobalStyles = createGlobalStyle`
   body {
     background-color: var(--bg);
     color: var(--primaryColor);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
     font-size: 1.8rem;
-    font-weight: 400;
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
+    text-rendering: optimizeLegibility;
     transition: background-color ${V.Transition.default};
     will-change: background-color;
   }
@@ -79,19 +79,21 @@ const GlobalStyles = createGlobalStyle`
   body.theme-dark {
     --bg: ${V.Color.grayDarker};
     --bgSecondary: ${V.Color.black};
-    --borderColor: ${V.Color.gray};
+    --borderColor: ${V.Color.grayDark};
     --highlightColor: ${V.Color.blue};
-    --primaryColor: rgba(250, 250, 250, .8);
-    --secondaryColor: ${V.Color.gray};
+    --primaryColor: ${V.Color.grayWhite};
+    --secondaryColor: ${V.Color.grayLight};
+    --boxShadow: rgba(250, 250, 250, 0.1);
   }
 
   body.theme-light {
     --bg: ${V.Color.white};
     --bgSecondary: ${V.Color.grayWhite};
-    --borderColor: ${V.Color.gray};
+    --borderColor: ${V.Color.grayLighter};
     --highlightColor: ${V.Color.blue};
-    --primaryColor: rgba(0, 0, 0, .8);
+    --primaryColor: ${V.Color.black};
     --secondaryColor: ${V.Color.gray};
+    --boxShadow: rgba(0, 0, 0, 0.1);
   }
 
   p a {
