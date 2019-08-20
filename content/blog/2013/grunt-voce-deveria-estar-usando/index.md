@@ -1,3 +1,9 @@
+---
+title: Grunt - Você deveria estar usando
+date: "2013-06-04"
+featured: featured.png
+---
+
 ### O projeto
 
 Como sempre, deixei a base que estou utilizando no [Github](https://github.com/felipefialho/Grunt-Base), forka lá se quiser usar.
@@ -179,3 +185,4 @@ Como viram, você pode adaptar o Grunt exatamente as suas necessidades.
 Uma tarefa, que tentei vários plugins e não consegui achar um que considero ideal é **gerar sprites**, sei que tem o Compass para o Grunt, mas não queria usar SASS apenas para gerar sprites. Se alguém tiver uma solução ou usa algum plugin bacana... sou todo ouvidos.
 
 O objetivo desse artigo é atiçar a criatividade de quem ainda não está familiarizado com o Grunt, e não servir de tutorial. De qualquer forma, espero que tenha sido útil. É nóis.
+

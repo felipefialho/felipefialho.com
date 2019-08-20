@@ -1,3 +1,10 @@
+---
+title: Primeiros passos com o Docpad
+date: "2013-05-21"
+description: Nesse post, mostrarei os primeiros passos com o gerador estático Docpad
+featured: featured.gif
+---
+
 ## NodeJS e o NPM
 
 O primeiro passo, como havia falado, é entender o mínimo do funcionamento do [NodeJS](http://nodejs.org) e seu gerenciador de pacotes, o [NPM](https://npmjs.org).
@@ -8,19 +15,9 @@ Nesse momento não é necessária nenhuma configuração especial, apenas deixe 
 
 Para instalar em outros sistemas operacionais, pode ler esse [passo a passo](http://bevry.me/learn/node-install).
 
-Agora um item importante. No Windows, é necessário dar permissão total para a pasta do NodeJS. Com isso ele conseguirá instalar outros módulos.
-
-1.  Vá até a pasta que instalou o NodeJS. No meu caso: **C:\Program Files\nodejs**
-
-2.  **Botão Direito > Propriedades > Segurança > Editar > Usuários > Marque a caixa "Controle total"**
-
-    ![Propriedades do NodeJS](/assets/img/blog/propriedades-nodejs.png)
-
 ## Instalando o Docpad
 
-1.  Abra o "Node.js command prompt" e terá essa tela:
-
-    ![NodeJS](/assets/img/blog/nodejs.png)
+1.  Abra seu terminal
 
 2.  Procure atualizações no NPM com o comando
 
@@ -36,7 +33,7 @@ Agora um item importante. No Windows, é necessário dar permissão total para a
 
 ## Criando um projeto
 
-1.  Através do "Node.js command prompt" vá até a pasta que deseja criar o projeto.
+1.  No terminal vá até a pasta que deseja criar o projeto.
 
 2.  Crie uma nova pasta para o projeto
  
