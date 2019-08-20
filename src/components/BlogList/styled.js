@@ -21,6 +21,6 @@ export const Title = styled.h1`
 
 export const Nav = styled.nav`
   &:not(:last-child) {
-    margin-bottom: ${V.Space.sm};
+    margin-bottom: ${V.Space.default};
   }
 `

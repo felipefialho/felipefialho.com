@@ -15,20 +15,20 @@ export const Subheading = `
   font-size: 2.4rem;
   font-weight: 600;
   letter-spacing: -0.022em;
-  line-height: 1.3em;
+  line-height: 1.4em;
 `
 
 export const Subtitle = `
   color: var(--secondaryColor);
   font-size: 2rem;
   letter-spacing: -0.45px;
-  line-height: 1.4em;
+  line-height: 1.5em;
 `
 
 export const Text = `
   font-size: 1.8rem;
   letter-spacing: -0.04px;
-  line-height: 1.4em;
+  line-height: 1.5em;
 `
 
 export const Link = `
