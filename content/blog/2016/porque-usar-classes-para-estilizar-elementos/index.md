@@ -1,3 +1,10 @@
+---
+title: Porquê usar classes para estilizar elementos
+date: "2016-09-21"
+description: Nesse artigo vou defender meu ponto de vista que é totalmente favorável ao uso de classes.
+featured: featured.png
+---
+
 ## Introdução
 
 Quem conversa comigo sobre o assunto, sabe que sou totalmente favorável ao uso de classes e quase obcecado em defende-las. Existem algumas razões para isso.
@@ -28,19 +35,19 @@ Quer comprovar? [Nesse site você pode passar um bom tempo brincando de testar p
 
 Porém estamos falando de seletores únicos. Você não criaria algo como `#header-title` usando IDs. É mais provável que faça algo como `#header h1`
 
-![Performance de IDs](/assets/img/blog/performance-id.png)
+![Performance de IDs](performance-id.png)
 
 Ou mesmo...
 
-![Performance de elementos](/assets/img/blog/performance-elemento.png)
+![Performance de elementos](performance-elemento.png)
 
 Ou se você for maluco...
 
-![Performance de elementos aninhados](/assets/img/blog/performance-aninhados.png)
+![Performance de elementos aninhados](performance-aninhados.png)
 
 Sendo que usando uma class, o resultado seria...
 
-![Performance de class](/assets/img/blog/performance-class.png)
+![Performance de class](performance-class.png)
 
 ### Mas quer saber? Só performance não importa
 
@@ -76,7 +83,7 @@ Quero deixar claro que vou utilizar [uma nomenclatura que estou usando nos meus 
 
 Observem esse componente retirado do site do [Airbnb](https://www.airbnb.com.br).
 
-![Exemplo Airbnb](/assets/img/blog/exemplo-airbnb.jpg)
+![Exemplo Airbnb](exemplo-airbnb.jpg)
 
 Seguindo a lógica do Atomic CSS, os elementos **1** e **2** seriam títulos pertencentes a um organismo, enquanto os elementos **3**, **4** e **5** pertenceriam a uma molécula reaproveitável em diversos organismos.
 

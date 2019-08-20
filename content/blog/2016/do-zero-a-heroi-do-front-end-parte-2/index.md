@@ -1,3 +1,10 @@
+---
+title: Do Zero a Herói Front-End (Parte 2)
+date: "2016-05-20"
+description: Um guia completo para aprender desenvolvimento Front-End.
+featured: featured.png
+---
+
 ## Sobre esse artigo
 
 O texto a seguir é uma tradução livre do fantástico artigo [From Zero to Front-End Hero (Part 2)](https://medium.freecodecamp.com/from-zero-to-front-end-hero-part-2-adfa4824da9b#.342vpy7aq) publicado no Medium pelo [@jonathanzwhite](https://twitter.com/jonathanzwhite).

@@ -1,3 +1,10 @@
+---
+title: O fodástico :not()
+date: "2016-17-11"
+description: Quando se trata de evitar resetar propriedades, o :not() é o cara.
+featured: featured.png
+---
+
 ## As lindas pseudo-class
 
 Fui desenvolvedor em uma época terrível, tempos em que era necessário usar PNGs transparentes para emular `box-shadow` e `border-radius`, tempos em que precisávamos usar hacks para IE6 e IE7, tempos em que tudo era lento e de difícil manutenção.

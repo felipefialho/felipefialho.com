@@ -2,7 +2,7 @@
 title: Grunt - Você deveria estar usando
 date: "2013-06-04"
 description: Dessa vez vou explicar as tarefas que atualmente estou utilizando para automatizar meu trabalho
-featured: featured.png
+featured: featured.jpg
 ---
 
 ### O projeto

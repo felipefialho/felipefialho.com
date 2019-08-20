@@ -1,8 +1,15 @@
+---
+title: Dark Theme no DevTools
+date: "2016-05-10"
+description: Que tal deixar o seu DevTools com o tema escuro?
+featured: featured.png
+---
+
 ## Sobre esse tipo de artigo
 
 Todo dia aprendemos alguma coisa. Seja através de um bug, seja lendo artigos, seja conversando com as pessoas.
 
-Ontem por exemplo, postei no Fórum Front-End BR no Github uma [dica para resolver o problema do position: fixed, em dispositivos mobile](https://github.com/frontendbr/forum/issues/314). 
+Ontem por exemplo, postei no Fórum Front-End BR no Github uma [dica para resolver o problema do position: fixed, em dispositivos mobile](https://github.com/frontendbr/forum/issues/314).
 
 Acabei chegando a conclusão, que talvez seja melhor postar esse tipo de informação no meu site. Então, sempre que tiver uma dica simples e rápida, vou mostra-lá aqui.
 
@@ -16,11 +23,11 @@ Nada pior do que viciar o olhar nesses temas escuros, mudar a janela para o o De
 
 Tenho certeza que você ia achar bem melhor que o DevTools do Chrome fosse assim:
 
-![Tema escuro do DevTools no Chrome](/assets/img/blog/dark-theme-chrome.png)
+![Tema escuro do DevTools no Chrome](dark-theme-chrome.png)
 
 Ou assim no Firefox:
 
-![Tema escuro do DevTools no Firefox](/assets/img/blog/dark-theme-firefox.png)
+![Tema escuro do DevTools no Firefox](dark-theme-firefox.png)
 
 E isso é muito simples!
 
@@ -28,18 +35,18 @@ E isso é muito simples!
 
 ### No Chrome
 
-1. No canto superior direito do DevTools. 
-  ![Configurações do DevTools do Chrome](/assets/img/blog/dark-theme-chrome-place.png)
+1. No canto superior direito do DevTools.
+  ![Configurações do DevTools do Chrome](dark-theme-chrome-place.png)
 
-1. Depois vá em **settings** e selecione **Theme: Dark**. 
-  ![Configurações de tema do DevTools do Chrome](/assets/img/blog/dark-theme-chrome-config.png)
+1. Depois vá em **settings** e selecione **Theme: Dark**.
+  ![Configurações de tema do DevTools do Chrome](dark-theme-chrome-config.png)
 
 ### Firefox
- 
+
 1. No canto superior direito do DevTools, clique no botão de engrenagem.
 2. Depois vá em **Temas** e selecione **tema escuro**.
 
-![Configurações de tema do DevTools do Firefox](/assets/img/blog/dark-theme-firefox-config.png)
+![Configurações de tema do DevTools do Firefox](dark-theme-firefox-config.png)
 
 __________
 
