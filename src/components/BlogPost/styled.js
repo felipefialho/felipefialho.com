@@ -2,8 +2,10 @@ import styled from 'styled-components'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import * as V from 'styles/variables'
+import * as T from 'styles/typography'
 
 export const BlogPost = styled(AniLink)`
+  ${T.Text}
   background-color: var(--bgSecondary);
   border: 1px solid transparent;
   box-shadow: ${V.BoxShadow.box};
