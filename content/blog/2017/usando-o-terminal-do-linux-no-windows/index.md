@@ -1,3 +1,10 @@
+---
+title: Sobre WAI-ARIA, acessibilidade e semântica
+date: "2016-09-14"
+description: WAI-ARIA já é um assunto bem antigo. Porém, observo que muitas pessoas desconhecem sua existência ou não sabem como utilizar nos projetos.
+featured: featured.jpg
+---
+
 No inicio de 2016 o Windows entregou uma nova funcionalidade que era muito aguardada: A possibilidade de rodar o Bash do Linux.
 
 Isso é possível porque o módulo "Subsistema do Windows para o Linux", fornece um ambiente Linux rodando dentro do próprio Windows 10, sem necessidade de maquinas virtuais, funcionando de forma integrada com o Windows.
@@ -32,15 +39,15 @@ Tenho o *Windows 10* rodando em uma maquina virtual dentro do Mac, portanto toda
 
 Primeiro de tudo vá até as _System Settings_ e ative o *Developer Mode*
 
-![Developer Mode](/assets/img/blog/windows-developer-mode.png)
+![Developer Mode](windows-developer-mode.png)
 
 Em seguida vá até o Control Panel (Painel de Controle), clique em Programs e clique em *Turn Windows Features On or Off*. Depois procure por *Windows Subsystem for Linux (Beta)*, ative e reinicie o sistema.
 
-![Turn Windows Features On or Off](/assets/img/blog/windows-turn-on.png)
+![Turn Windows Features On or Off](windows-turn-on.png)
 
 Após reiniciar. Faça uma busca por **bash** e inicie o terminal.
 
-![Bash on Ubuntu](/assets/img/blog/windows-bash.png)
+![Bash on Ubuntu](windows-bash.png)
 
 Na primeira execução você vai precisar aceitar os termos de uso e então vai começar o download do _Bash on Ubuntu_. Quando a instalação finalizar crie seu nome de usuário e sua senha e pronto!
 
@@ -52,7 +59,7 @@ Agora vamos melhorar as coisas. Os terminais padrões do Windows são péssimos 
 
 ### Hyper
 
-![Hyper](/assets/img/blog/hyper.gif)
+![Hyper](hyper.gif)
 
 O [Hyper](https://hyper.is/) é um terminal open source, bastante configurável, leve e poderoso. Sabe o melhor? Todas as configurações são feitas usando HTML, CSS e JavaScript.
 
@@ -64,7 +71,7 @@ Para integrar com o _Bash on Ubuntu_ basta acessar as configurações do Hyper (
 
 ### VSCode
 
-![VSCode](/assets/img/blog/vscode.png)
+![VSCode](vscode.png)
 
 Já faz algum tempo que é minha IDE principal, acho o [VSCode](https://code.visualstudio.com/) fantástico e virei quase um evangelista.
 

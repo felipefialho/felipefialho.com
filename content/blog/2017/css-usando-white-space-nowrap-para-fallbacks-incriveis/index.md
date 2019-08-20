@@ -1,3 +1,10 @@
+---
+title: Sobre WAI-ARIA, acessibilidade e semântica
+date: "2016-09-14"
+description: WAI-ARIA já é um assunto bem antigo. Porém, observo que muitas pessoas desconhecem sua existência ou não sabem como utilizar nos projetos.
+featured: featured.png
+---
+
 CSS é uma grande gambiarra, e isso faz parte do seu encanto. Particularmente, desde que me conheço como desenvolvedor, adoro "perder" horas buscando soluções em Pure CSS, quase sempre usando técnicas que inicialmente servem para resolver outros problemas.
 
 ## white-space: nowrap?
