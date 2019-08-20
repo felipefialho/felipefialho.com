@@ -16,13 +16,13 @@ Esse ano comecei a trabalhar remoto. Portanto minha casa também virou meu local
 
 Considero apartamentos uma boa alternativa, já que normalmente oferecem coisas como piscina e academia. Além de ter uma coisa fundamental para relaxar a mente quando necessário: Uma sacada.
 
-![Foto de uma sacada](/assets/img/blog/sacada-do-predio.jpg)
+![Foto de uma sacada](sacada-do-predio.jpg)
 
 ## Equipamentos
 
 Uma bancada para os seus equipamentos é uma solução barata e que funciona muito bem. Também é legal manter por perto um caderninho para anotações rápidas.
 
-![Local de trabalho, com 1 monitor, 1 notebook e uma TV](/assets/img/blog/workstation.jpg)
+![Local de trabalho, com 1 monitor, 1 notebook e uma TV](workstation.jpg)
 
 Um sistema operacional robusto e confiável é muito importante. Por isso eu uso Windows :). Tirando a parte do "robusto e confiável" eu realmente uso Windows, como podem confirmar na foto acima. Sendo mais preciso <strike>Windows 8.1</strike> **Windows 10**.
 
@@ -41,7 +41,7 @@ Além disso, tenho um monitor de 23' IPS da LG como tela secundária. Nada como 
 
 E claro... tenho um gato, eles são fontes inesgotáveis de entretenimento e diversão.
 
-![Foto da Agnes (um gato) deitada](/assets/img/blog/agnes.jpg)
+![Foto da Agnes (um gato) deitada](agnes.jpg)
 
 ## Aplicativos
 

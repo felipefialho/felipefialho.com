@@ -38,7 +38,7 @@ Na raiz da pasta `less` crio mais dois arquivos: `project.less` e `style.less`. 
 
 A estrutura final da pasta `less` fica assim:
 
-![Organização final](/assets/img/blog/organizacao-less.jpg)
+![Organização final](organizacao-less.jpg)
 
 Pode ter uma ideia de como organizo os arquivos acessando o [fork do meu site.](https://github.com/felipefialho/Website/tree/master/src/files/css/less) Já fiz várias melhorias de lá pra cá, mas o principio segue o mesmo.
 

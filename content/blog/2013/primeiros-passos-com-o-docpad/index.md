@@ -17,15 +17,15 @@ Para instalar em outros sistemas operacionais, pode ler esse [passo a passo](htt
 
 ## Instalando o Docpad
 
-1.  Abra seu terminal
+1. Abra seu terminal
 
-2.  Procure atualizações no NPM com o comando
+2. Procure atualizações no NPM com o comando
 
     ````bash
     npm install -g npm
     ````
 
-3.  Instale o Docpad
+3. Instale o Docpad
 
     ````bash
     npm install -g docpad
@@ -33,28 +33,29 @@ Para instalar em outros sistemas operacionais, pode ler esse [passo a passo](htt
 
 ## Criando um projeto
 
-1.  No terminal vá até a pasta que deseja criar o projeto.
+1. No terminal vá até a pasta que deseja criar o projeto.
 
-2.  Crie uma nova pasta para o projeto
+2. Crie uma nova pasta para o projeto
 
-    ````bash
-    mkdir NOME-DO-PROJETO
-    ````
+````bash
+mkdir NOME-DO-PROJETO
+````
 
-3.  Entre na pasta
+3. Entre na pasta
 
-    ````bash
-    cd NOME-DO-PROJETO
-    ````
+````bash
+cd NOME-DO-PROJETO
+````
 
-4.  Inicie o projeto
+4. Inicie o projeto
 
-    ````bash
-    docpad run
-    ````
-5.  Escolha o esqueleto que deseja usar
+````bash
+docpad run
+````
 
-    ![Docpad](/assets/img/blog/docpad.png)
+5. Escolha o esqueleto que deseja usar
+
+![Docpad](docpad.png)
 
 ## Comece a brincar!
 
@@ -62,9 +63,9 @@ Após escolher um esqueleto (menos quando escolher a opção 15), já terá uma 
 
 Para criar esse site, usei o esqueleto 1 - HTML5 Boilerplate.
 
-1.  Aperte "CRTL + C" e saia da aplicação.
+1. Aperte "CRTL + C" e saia da aplicação.
 
-2.  Agora considerando que você TENHA escolhido um esqueleto, na pasta do projeto digite
+2. Agora considerando que você TENHA escolhido um esqueleto, na pasta do projeto digite
 
     ````bash
     npm install
@@ -72,7 +73,7 @@ Para criar esse site, usei o esqueleto 1 - HTML5 Boilerplate.
 
     Isso vai instalar as dependências do projeto.
 
-3.  Rode novamente
+3. Rode novamente
 
     ````bash
     docpad run
