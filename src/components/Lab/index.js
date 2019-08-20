@@ -8,7 +8,7 @@ const trackClickLab = (item) => {
   ReactGA.event({
     category: 'Lab',
     action: 'click',
-    label: `Lab - Going to ${!item ? 'Dark' : 'Light'}`
+    label: `Lab - Going to ${item}`
   })
 }
 
