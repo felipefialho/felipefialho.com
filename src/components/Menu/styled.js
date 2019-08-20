@@ -10,6 +10,7 @@ export const Menu = styled.nav`
     color: var(--primaryColor);
     cursor: pointer;
     display: inline-block;
+    font-size: 1.6rem;
     font-weight: bold;
     letter-spacing: .15rem;
     text-decoration: none;
