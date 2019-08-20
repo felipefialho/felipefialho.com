@@ -7,7 +7,7 @@ export const BlogList = styled.section`
   display: block;
 
   &:not(:first-child) {
-    margin-top: ${V.Space.default};
+    margin-top: ${V.Space.md};
   }
 `
 
@@ -15,6 +15,6 @@ export const Title = styled.h1`
   ${T.Subtitle}
 
   &:not(:last-child) {
-    margin-bottom: ${V.Space.xxs};
+    margin-bottom: ${V.Space.sm};
   }
 `
