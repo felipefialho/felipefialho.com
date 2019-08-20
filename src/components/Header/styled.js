@@ -72,7 +72,7 @@ export const Bar = styled.div.attrs({
 export const Title = styled.h1`
   display: inline-block;
   font-size: 2rem;
-  letter-spacing: .05rem;
+  letter-spacing: .025rem;
 
   ${media.greaterThan('medium')`
     color: ${V.Color.white};
