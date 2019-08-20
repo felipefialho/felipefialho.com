@@ -1,7 +1,7 @@
 ---
-title: Sobre WAI-ARIA, acessibilidade e semântica
-date: "2016-09-14"
-description: WAI-ARIA já é um assunto bem antigo. Porém, observo que muitas pessoas desconhecem sua existência ou não sabem como utilizar nos projetos.
+title: Usando white-space nowrap para fallbacks incríveis
+date: "2017-02-21"
+description: Pouco conhecida, essa técnica pode economizar muitas linhas de código e até mesmo melhorar a acessibilidade do seu projeto.
 featured: featured.png
 ---
 

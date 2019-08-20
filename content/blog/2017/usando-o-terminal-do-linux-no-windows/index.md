@@ -1,7 +1,7 @@
 ---
-title: Sobre WAI-ARIA, acessibilidade e semântica
-date: "2016-09-14"
-description: WAI-ARIA já é um assunto bem antigo. Porém, observo que muitas pessoas desconhecem sua existência ou não sabem como utilizar nos projetos.
+title: Usando o Terminal do Linux no Windows
+date: "2017-10-22"
+description: No inicio de 2016 o Windows entregou uma nova funcionalidade que era muito aguardada... A possibilidade de rodar o Bash do Linux.
 featured: featured.jpg
 ---
 
