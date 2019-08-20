@@ -5,28 +5,28 @@ import Layout from 'components/Layout'
 import SEO from 'components/Seo';
 import Lab from 'components/Lab';
 
-const LabPage = () => {
-  const { allLabJson } = useStaticQuery(
-    graphql`
-      query {
-        allLabJson {
-          edges {
-            node {
-              id,
-              path
-              title
-              date
-              description
-              imageSrc {
-                relativePath
-              }
+const { allLabJson } = useStaticQuery(
+  graphql`
+    query {
+      allLabJson {
+        edges {
+          node {
+            id,
+            path
+            title
+            date
+            description
+            imageSrc {
+              relativePath
             }
           }
         }
       }
-    `
-  )
+    }
+  `
+)
 
+const LabPage = () => {
   const content = allLabJson.edges
 
   return (
