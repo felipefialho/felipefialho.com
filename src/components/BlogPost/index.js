@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { getActiveTheme } from 'utils'
-import { Date } from 'components/Typography';
+import { Date } from 'components/Typography'
 
 import * as S from './styled'
 
