@@ -30,10 +30,11 @@ const blogListQuery = graphql`
             slug
           }
           frontmatter {
-            date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+            date(locale: "pt-br", formatString: "DD MMM[,] YYYY")
             description
             title
-          }
+          },
+          timeToRead
         }
       }
     }
