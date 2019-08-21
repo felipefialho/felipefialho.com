@@ -9,7 +9,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: `slug`,
-      value: `${slug}`
+      value: `blog${slug}`
     })
   }
 }
@@ -59,7 +59,7 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-  
+
   if (result.errors) throw result.errors
 
   // Create blog posts pages.
