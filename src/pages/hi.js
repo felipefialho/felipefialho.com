@@ -21,7 +21,7 @@ const content = ({ site }) => {
   return (
     <article>
       <Social />
-      <ButtonLink to="/en/hi" title="View in english" onClick={trackLanguageClick()}>
+      <ButtonLink to="/en/hi/" title="View in english" onClick={trackLanguageClick()}>
         View in english
       </ButtonLink>
       <Content>
