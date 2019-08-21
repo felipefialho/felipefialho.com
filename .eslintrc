@@ -1,3 +1,8 @@
 {
-  "extends": "react-app"
+  "extends": "react-app",
+  "rules": {
+    "semi": [
+      2, "never"
+    ]
+  }
 }
