@@ -78,6 +78,27 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          {
+            resolve: `@raae/gatsby-remark-oembed`,
+            options: {
+              usePrefix: false,
+              providers: {
+                include: [
+                  'Youtube',
+                  'Twitter',
+                  'Codepen',
+                ],
+                exclude: [
+                  'Reddit',
+                  'Flickr',
+                  'Instagram'
+                ],
+                settings: {
+                  Twitter: { theme: 'dark' }
+                },
+              },
+            },
+          },
           `gatsby-plugin-catch-links`,
           `gatsby-remark-lazy-load`,
           `gatsby-remark-prismjs`,
