@@ -7,7 +7,12 @@ import * as S from './styled'
 
 const ButtonLink = ({ children, to }) => {
   return (
-    <S.ButtonLink to={to} cover direction="bottom" bg={getActiveTheme()}>
+    <S.ButtonLink 
+      to={to}
+      duration={.6}
+      cover 
+      direction="bottom" 
+      bg={getActiveTheme()}>
       { children }
     </S.ButtonLink>
   )
