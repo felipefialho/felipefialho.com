@@ -3,8 +3,20 @@ import { graphql } from 'gatsby'
 
 import Layout from 'components/Layout'
 import SEO from 'components/Seo'
+import GridTemplate from 'components/GridTemplate'
+import Content from 'components/Content'
 
-export default props => {
+const content = ({ post }) => {
+  return (
+    <section>
+      <Content>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </Content>
+    </section>
+  )
+}
+
+const BlogPost = (props) => {
   const post = props.data.markdownRemark
   const next = props.pageContext.next
   const previous = props.pageContext.previous
@@ -16,9 +28,12 @@ export default props => {
         description={post.frontmatter.description}
         image={`https://felipefialho.com${post.frontmatter.image}`}
       />
+      <GridTemplate content={content({ post })} />
     </Layout>
   )
 }
+
+export default BlogPost
 
 export const query = graphql`
   query Post($slug: String!) {
