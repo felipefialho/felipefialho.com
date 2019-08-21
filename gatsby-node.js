@@ -32,7 +32,7 @@ exports.createPages = async ({ graphql, actions }) => {
               slug
             }
             frontmatter {
-              date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+              date(locale: "pt-br", formatString: "DD MMM[,] YYYY")
               description
               title
             }
@@ -43,7 +43,7 @@ exports.createPages = async ({ graphql, actions }) => {
             }
             frontmatter {
               title
-              date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+              date(locale: "pt-br", formatString: "DD MMM[,] YYYY")
             }
           }
           previous {
@@ -52,7 +52,7 @@ exports.createPages = async ({ graphql, actions }) => {
             }
             frontmatter {
               title
-              date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+              date(locale: "pt-br", formatString: "DD MMM[,] YYYY")
             }
           }
         }
