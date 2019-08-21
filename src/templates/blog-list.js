@@ -24,7 +24,7 @@ const content = ({ list }) => {
   )
 }
 
-const BlogList = props => {
+const BlogList = (props) => {
   const { currentPage, numPages } = props.pageContext
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
