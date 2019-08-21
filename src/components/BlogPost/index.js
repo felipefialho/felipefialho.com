@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import ReactGA from 'react-ga'
 
 import { getActiveTheme } from 'utils'
-import { Date } from 'components/Typography'
-import BoxHandler from 'components/BoxHandler';
+import DateTime from 'components/DateTime'
+import BoxHandler from 'components/BoxHandler'
 
 import * as S from './styled'
 
@@ -30,7 +30,7 @@ const BlogPost = ({
       bg={getActiveTheme()}
       onClick={trackClick(title)}>
         <BoxHandler>
-          <Date>{date}</Date>
+          <DateTime>{date}</DateTime>
           <S.Title>{title}</S.Title>
           <S.Subtitle>{description}</S.Subtitle>
         </BoxHandler>

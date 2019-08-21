@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactGA from 'react-ga'
 
-import { Link } from 'components/Typography'
+import ButtonLink from 'components/ButtonLink'
 import BlogPost from 'components/BlogPost'
 
 import * as S from './styled'
@@ -29,9 +29,9 @@ const BlogList = ({ list }) => {
           />
         ))}
       </S.Nav>
-      <Link to='/blog/' onClick={trackClickAllPosts}>
+      <ButtonLink to='/blog/' onClick={trackClickAllPosts}>
         Ver todos os posts
-      </Link>
+      </ButtonLink>
     </S.BlogList>
   )
 }

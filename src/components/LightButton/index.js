@@ -21,7 +21,7 @@ const trackClickTheme = (darkMode) => {
 }
 
 const useDarkModeFromLocalStorage = () => {
-  const item = 'darkMode';
+  const item = 'darkMode'
   const initialState = () => JSON.parse(localStorage.getItem(item) || false)
   const [ darkMode, setDarkMode ] = useState(initialState)
 
@@ -30,7 +30,7 @@ const useDarkModeFromLocalStorage = () => {
   trackGetTheme(darkMode)
 
   return [ darkMode, setDarkMode ]
-};
+}
 
 const LightButton = () => {
   const [ darkMode, setDarkMode ] = useDarkModeFromLocalStorage()

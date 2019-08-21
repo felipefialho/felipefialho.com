@@ -2,8 +2,8 @@ import React from 'react'
 import ReactGA from 'react-ga'
 import { graphql, useStaticQuery } from 'gatsby'
 
-import { Date } from 'components/Typography'
-import BoxHandler from 'components/BoxHandler';
+import DateTime from 'components/DateTime'
+import BoxHandler from 'components/BoxHandler'
 
 import * as S from './styled'
 
@@ -51,7 +51,7 @@ const Lab = ({ content }) => {
           <BoxHandler key={node.id}>
             <S.LabItem href={node.path} title={node.title} onClick={trackClickLab}>
               <LabImg imageSrc={node.imageSrc} />
-              <Date>{node.date}</Date>
+              <DateTime>{node.date}</DateTime>
               <S.Title>{node.title}</S.Title>
               <S.Text>{node.description}</S.Text>
             </S.LabItem>

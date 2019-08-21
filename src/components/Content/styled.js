@@ -6,6 +6,14 @@ import * as T from 'styles/typography'
 export const Content = styled.article`
   ${T.Text}
 
+  &:not(:first-child) {
+    margin-top: ${V.Space.md};
+  }
+
+  &:not(:last-child) {
+    margin-bottom: ${V.Space.md};
+  }
+
   h1 {
     ${T.Title}
 
