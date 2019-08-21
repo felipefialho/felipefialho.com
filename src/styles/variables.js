@@ -36,7 +36,7 @@ export const Color = {
   white: `#fefefe`,
   black: `#0e0e0e`,
   blue: `#0291a7`,
-  grayDarker: `#181818`,
+  grayDarker: `#1b1b1b`,
   grayDark: `#333333`,
   gray: `#757575`,
   grayLight: `#aaaaaa`,
