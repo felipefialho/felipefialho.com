@@ -78,12 +78,8 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          {
-            resolve: `gatsby-plugin-catch-links`,
-            options: {
-              excludePattern: /(excluded-link|external)/,
-            },
-          },
+          `gatsby-plugin-catch-links`,
+          `gatsby-remark-lazy-load`,
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
