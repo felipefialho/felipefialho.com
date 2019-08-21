@@ -32,7 +32,7 @@ export const Content = styled.article`
   }
 
   p {
-    font-weight: 400;
+    font-weight: 300;
 
     &:not(:last-child) {
       margin-bottom: ${V.Space.default};
