@@ -25,7 +25,7 @@ const BlogPost = ({
 }) => {
   return (
     <S.BlogPost
-      to={`${slug}`}
+      to={`/${slug}`}
       cover
       direction="bottom"
       bg={getActiveTheme()}
