@@ -19,7 +19,7 @@ const trackLanguageClick = () => {
 
 const content = ({ site }) => {
   return (
-    <article>
+    <section>
       <Social />
       <ButtonLink to="/" title="View in english" onClick={trackLanguageClick()}>
         Ver em português
@@ -32,7 +32,7 @@ const content = ({ site }) => {
         <p>Currently, I'm a Developer at <a href="https://cubo.network/jobs" target="_blank" rel="noopener noreferrer" title="Ver">Cubo Itaú</a> and
         I've created the <a href="https://github.com/frontendbr" target="_blank" rel="noopener noreferrer" title="Ver">Front-end BR</a> organization on Github.</p>
       </Content>
-    </article>
+    </section>
   )
 }
 

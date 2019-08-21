@@ -43,7 +43,7 @@ const blogListQuery = graphql`
 
 const content = ({ site, allBlogList }) => {
   return (
-    <article>
+    <section>
       <Social />
       <ButtonLink to="/en" title="View in english" onClick={trackLanguageClick()}>
         View in english
@@ -56,7 +56,7 @@ const content = ({ site, allBlogList }) => {
         <p>Atualmente estou trabalhando no <a href="https://cubo.network/jobs" target="_blank" rel="noopener noreferrer" title="Ver">Cubo Itaú</a> e sou criador da organização <a href="https://github.com/frontendbr" target="_blank" rel="noopener noreferrer" title="Ver">Front-end BR</a> no Github.</p>
       </Content>
       <BlogList list={allBlogList.allMarkdownRemark.edges} />
-    </article>
+    </section>
   )
 }
 
