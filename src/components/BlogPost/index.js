@@ -19,18 +19,24 @@ const trackClick = (item) => {
 const BlogPost = ({
   slug,
   date,
+  timeToRead,
   title,
   description
 }) => {
   return (
     <S.BlogPost
-      to={slug}
+      to={`/blog${slug}`}
       cover
       direction="bottom"
       bg={getActiveTheme()}
       onClick={trackClick(title)}>
         <BoxHandler>
-          <DateTime>{date}</DateTime>
+          <DateTime>
+            {date}
+            {timeToRead && (
+              <span> · Leitura de {timeToRead} min</span>
+            )}
+          </DateTime>
           <S.Title>{title}</S.Title>
           <S.Subtitle>{description}</S.Subtitle>
         </BoxHandler>
@@ -39,10 +45,10 @@ const BlogPost = ({
 }
 
 BlogPost.propTypes = {
-  slug: PropTypes.node.isRequired,
-  date: PropTypes.node.isRequired,
-  title: PropTypes.node.isRequired,
-  description: PropTypes.node.isRequired
+  slug: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
 }
 
 export default BlogPost

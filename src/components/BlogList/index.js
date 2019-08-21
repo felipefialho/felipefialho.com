@@ -26,6 +26,7 @@ const BlogList = ({ list }) => {
             date={node.frontmatter.date}
             title={node.frontmatter.title}
             description={node.frontmatter.description}
+            timeToRead={node.timeToRead}
           />
         ))}
       </S.Nav>
