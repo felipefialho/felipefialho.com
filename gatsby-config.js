@@ -25,7 +25,7 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-svgr`,
     `gatsby-plugin-transition-link`,
-    `gatsby-plugin-feed`, 
+    `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
@@ -76,6 +76,12 @@ module.exports = {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          {
+            resolve: `gatsby-plugin-catch-links`,
+            options: {
+              excludePattern: /(excluded-link|external)/,
             },
           },
           `gatsby-remark-prismjs`,
