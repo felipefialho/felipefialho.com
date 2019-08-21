@@ -1,6 +1,6 @@
 ---
 title: Falando em organização CSS...
-date: "2014-11-13"
+date: 2014-11-13 00:00:01
 description: Durante anos escrevemos CSS como se não houvesse amanhã e tínhamos como maiores problemas as diferenças de renderização no IE(ca). E já não era simples.
 ---
 

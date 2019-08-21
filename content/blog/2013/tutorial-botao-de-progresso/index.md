@@ -1,6 +1,6 @@
 ---
 title: Tutorial - Botão de Progresso
-date: "2013-10-12"
+date: 2013-10-12 00:00:01
 description: Nesse artigo, vou mostrar mais um tutorial simples... o desenvolvimento de um botão de progresso, que pode fornecer um feedback importante para o usuário.
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: Sobre inspirar pessoas com suas iniciativas
-date: "2016-06-20"
+date: 2016-06-20 00:00:01
 description: Um post sobre inspiração e comunidade de desenvolvimento
-featured: featured.jpg
+image: featured.jpg
 ---
 
 ## Eventos, Comunidade & Design

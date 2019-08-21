@@ -1,8 +1,8 @@
 ---
 title: Retrospectiva 2016
-date: "2016-12-14"
+date: 2016-12-14 00:00:01
 description: Minha retrospectiva profissional desse ótimo ano
-featured: featured.png
+image: featured.png
 ---
 
 Após um 2014 absurdamente corrido, e um 2015 praticamente sabático, resolvi retomar um ritmo de trabalho mais intenso. Desde o primeiro dia útil de janeiro comecei a estabelecer metas e tomar decisões importantes para o resto do ano.

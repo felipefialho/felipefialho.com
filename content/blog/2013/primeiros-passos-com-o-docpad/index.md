@@ -1,8 +1,8 @@
 ---
 title: Primeiros passos com o Docpad
-date: "2013-05-21"
+date: 2013-05-21 00:00:01
 description: No último post dei uma breve explicação sobre geradores estáticos. Algumas pessoas me pediram para fazer um tutorial básico do Docpad.
-featured: featured.gif
+image: featured.gif
 ---
 
 ## NodeJS e o NPM

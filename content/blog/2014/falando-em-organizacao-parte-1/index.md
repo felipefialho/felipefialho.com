@@ -1,6 +1,6 @@
 ---
 title: Falando em organização de código
-date: "2014-15-10"
+date: 2014-15-10 00:00:01
 description: O Universo, é um lugar desconcertantemente grande, um fato que, para continuar levando uma vida tranquila, a maioria das pessoas tende a ignorar.
 ---
 

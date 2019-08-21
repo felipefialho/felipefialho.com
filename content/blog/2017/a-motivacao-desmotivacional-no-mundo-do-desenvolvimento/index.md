@@ -1,8 +1,8 @@
 ---
 title: A motivação desmotivacional no mundo do Desenvolvimento
-date: "2017-06-28"
+date: 2017-06-28 00:00:01
 description: E então você, Developer super antenado(a), lê sobre os melhores frameworks e práticas do mercado… e se empolga. Mas quando chega no trabalho precisar dar suporte para IE7.
-featured: featured.png
+image: featured.png
 ---
 
 Sim, uma nova solução sensacional surge todos os dias no mundo do desenvolvimento, [isso é bom pra carario e ninguém vai me convencer que não](https://medium.com/@lfeh/o-inicio-o-fim-e-o-meio-do-desenvolvimento-front-end-dfc5a123b90f), mas causa um efeito colateral muito chato…

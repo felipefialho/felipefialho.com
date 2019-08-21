@@ -1,6 +1,6 @@
 ---
 title: Sobre organização de componentes com pré-processadores
-date: "2013-06-18"
+date: 2013-06-18 00:00:01
 description: No último artigo dei uma passada pelo Grunt e mostrei como ele pode ajudar a otimizar suas tarefas. Se você usa pré-processadores a organização dos componentes é essencial...
 ---
 

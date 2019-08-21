@@ -1,8 +1,8 @@
 ---
 title: Como foi o Desenvolvimento Front-end em 2018 e o que esperar para 2019
-date: "2019-01-07"
+date: 2019-01-07 00:00:01
 description: O mundo do desenvolvimento front-end se move rápido. Muito rápido. Este artigo vai recapitular as principais notícias, eventos notáveis e tendências que ocorreram em 2018 e fazer algumas previsões para 2019.
-featured: featured.png
+image: featured.png
 ---
 
 ## Sobre esse artigo

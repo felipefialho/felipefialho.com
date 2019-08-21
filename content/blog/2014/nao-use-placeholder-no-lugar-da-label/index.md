@@ -1,6 +1,6 @@
 ---
 title: Não use Placeholder no lugar da Label
-date: "2014-02-06"
+date: 2014-02-06 00:00:01
 description: O placeholder ajuda muito com informações complementares do campo de formulário, mas não deveria ser utilizado para substituir o label
 ---
 

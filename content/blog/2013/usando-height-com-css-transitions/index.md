@@ -1,6 +1,6 @@
 ---
 title: Usando height com CSS Transitions
-date: "2013-11-18"
+date: 2013-11-18 00:00:01
 description: Hoje me deparei com um problema que alguns de vocês já devem ter passado, e coloco aqui a resolução da limitação do uso de height com CSS Transitions.
 ---
 

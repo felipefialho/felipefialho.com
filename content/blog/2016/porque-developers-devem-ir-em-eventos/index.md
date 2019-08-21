@@ -1,8 +1,8 @@
 ---
 title: Por que todo desenvolvedor deve ir em eventos
-date: "2016-04-05"
+date: 2016-04-05 00:00:01
 description: Existem milhares de textos sobre a importância dos eventos para desenvolvedores, mas todos precisam entender que eventos podem mudar a carreiras.
-featured: featured.jpg
+image: featured.jpg
 ---
 
 Eu já trabalhava como Desenvolvedor Front-End desde 2009, mas não conhecia muitas pessoas que atuavam na área. Talvez por esse motivo eu não era tão engajado na minha carreira.

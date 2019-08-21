@@ -1,8 +1,8 @@
 ---
 title: Usando white-space nowrap para fallbacks incríveis
-date: "2017-02-21"
+date: 2017-02-21 00:00:01
 description: Pouco conhecida, essa técnica pode economizar muitas linhas de código e até mesmo melhorar a acessibilidade do seu projeto.
-featured: featured.png
+image: featured.png
 ---
 
 CSS é uma grande gambiarra, e isso faz parte do seu encanto. Particularmente, desde que me conheço como desenvolvedor, adoro "perder" horas buscando soluções em Pure CSS, quase sempre usando técnicas que inicialmente servem para resolver outros problemas.

@@ -1,6 +1,6 @@
 ---
 title: O que são Geradores estáticos?
-date: "2013-05-06"
+date: 2013-05-06 00:00:01
 description: Quando escutamos falar pela primeira vez em geradores estáticos, normalmente não compreendemos quais as vantagens.
 ---
 

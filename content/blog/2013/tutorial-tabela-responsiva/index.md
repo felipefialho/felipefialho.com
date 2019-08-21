@@ -1,6 +1,6 @@
 ---
 title: Tutorial - Tabela Responsiva
-date: "2013-10-14"
+date: 2013-10-14 00:00:01
 description: Em layouts responsivos, um dos componentes que sempre me incomodava eram as tabelas. Acredito que isso também ocorra com outros desenvolvedores.
 ---
 

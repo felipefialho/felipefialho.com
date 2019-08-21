@@ -1,6 +1,6 @@
 ---
 title: Como foi trabalhar no meu primeiro produto e a sensação de entregar o MVP
-date: "2017-09-20"
+date: 2017-09-20 00:00:01
 description: E o que aprendi nesses 6 meses de Cubo
 ---
 

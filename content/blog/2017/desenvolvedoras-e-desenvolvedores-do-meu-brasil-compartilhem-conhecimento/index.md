@@ -1,8 +1,8 @@
 ---
 title: Desenvolvedoras e desenvolvedores do meu Brasil... Compartilhem conhecimento!
-date: "2017-10-27"
+date: 2017-10-27 00:00:01
 description: No fim esse texto todo é apenas licença poética de Filtro Solar…
-featured: featured.png
+image: featured.png
 ---
 
 Desenvolvedoras e desenvolvedores do meu Brasil:

@@ -1,6 +1,6 @@
 ---
 title: Tutorial - Caixa de compartilhar
-date: "2013-09-20"
+date: 2013-09-20 00:00:01
 description: Esse artigo é tutorial simples para criar caixas de compartilhar com CSS e um pouco de JavaScript.
 ---
 

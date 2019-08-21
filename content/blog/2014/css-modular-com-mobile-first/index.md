@@ -1,6 +1,6 @@
 ---
 title: CSS Modular com Mobile First
-date: "2014-03-10"
+date: 2014-03-10 00:00:01
 description: Mobile First vai muito além de código, é um pensamento que precisa existir desde o inicio do projeto. Mas nesse artigo vou abordar apenas codificação para tentar deixar o workflow mais agradável.
 ---
 

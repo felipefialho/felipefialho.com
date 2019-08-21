@@ -1,8 +1,8 @@
 ---
 title: Aproximando seus estudos de cenários reais
-date: "2015-02-07"
+date: 2015-02-07 00:00:01
 description: Sobre aquela velha questão de Teoria x Prática e como solucionar isso.
-featured: featured.jpg
+image: featured.jpg
 ---
 
 ## O problema

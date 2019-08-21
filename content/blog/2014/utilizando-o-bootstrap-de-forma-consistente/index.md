@@ -1,6 +1,6 @@
 ---
 title: Utilizando o Bootstrap de forma consistente
-date: "2014-09-01"
+date: 2014-09-01 00:00:01
 description: Parte do sucesso do Bootstrap está ligado a facilidade de uso, responsividade e soluções interessantes prontas para usar. Mas será que podemos aperfeiçoar essa utilização?
 ---
 

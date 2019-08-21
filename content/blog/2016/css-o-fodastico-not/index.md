@@ -1,8 +1,8 @@
 ---
 title: O fodástico :not()
-date: "2016-17-11"
+date: 2016-17-11 00:00:01
 description: Quando se trata de evitar resetar propriedades, o :not() é o cara.
-featured: featured.png
+image: featured.png
 ---
 
 ## As lindas pseudo-class

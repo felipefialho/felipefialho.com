@@ -1,8 +1,8 @@
 ---
 title: Sobre WAI-ARIA, acessibilidade e semântica
-date: "2016-09-14"
+date: 2016-09-14 00:00:01
 description: WAI-ARIA já é um assunto bem antigo. Porém, observo que muitas pessoas desconhecem sua existência ou não sabem como utilizar nos projetos.
-featured: featured.png
+image: featured.png
 ---
 
 Vou demonstrar que é simples, não machuca, não vai aumentar o tempo de desenvolvimento e ainda vai melhorar a semântica e consequentemente a acessibilidade do projeto.
