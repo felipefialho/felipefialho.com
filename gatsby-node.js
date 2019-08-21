@@ -5,11 +5,11 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` })
+    const slug = createFilePath({ node, getNode, basePath: `blog` })
     createNodeField({
       node,
       name: `slug`,
-      value: `/${slug}`
+      value: `${slug}`
     })
   }
 }
@@ -84,7 +84,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
-      path: i === 0 ? `/blog` : `/page/${i + 1}`,
+      path: i === 0 ? `/blog` : `/blog/page/${i + 1}`,
       component: path.resolve('./src/templates/blog-list.js'),
       context: {
         limit: postsPerPage,

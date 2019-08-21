@@ -20,6 +20,7 @@ const Menu = () => {
     <S.Menu>
       {menuLinks.map((link, i) => (
         <AniLink
+          partiallyActive={true}
           key={i}
           cover
           bg={getActiveTheme()}
