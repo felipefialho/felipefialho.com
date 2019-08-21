@@ -2,8 +2,8 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import Layout from 'components/Layout'
-import SEO from 'components/Seo';
-import Lab from 'components/Lab';
+import SEO from 'components/Seo'
+import Lab from 'components/Lab'
 
 const labJsonQuery = graphql`
   query {

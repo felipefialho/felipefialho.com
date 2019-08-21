@@ -2,10 +2,10 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import Layout from 'components/Layout'
-import Content from 'components/Content';
-import SEO from 'components/Seo';
-import Social from 'components/Social';
-import GridTemplate from 'components/GridTemplate';
+import Content from 'components/Content'
+import SEO from 'components/Seo'
+import Social from 'components/Social'
+import GridTemplate from 'components/GridTemplate'
 
 const content = ({ site }) => {
   return (
