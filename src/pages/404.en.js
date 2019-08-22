@@ -18,51 +18,35 @@ const trackLabsClick = () => {
   })
 }
 
-const trackBlogClick = () => {
-  ReactGA.event({
-    category: '404',
-    action: 'click',
-    label: `404 - Go to blog`
-  })
-}
-
 const content = () => {
   return (
     <section>
       <Social />
       <Content>
-        <h1>Não tem nada aqui... <span 
+        <h1>There's nothing here... <span 
           className="small" 
           role="img" 
-          aria-label="Emoji assustado">😱</span>
+          aria-label="Scared emoji">😱</span>
         </h1>
 
-        <h2>Mas não se preocupe! <span 
+        <h2>But don't worry! <span 
           className="small" 
           role="img" 
-          aria-label="Emoji feliz">😄</span>
+          aria-label="Happy emoji">😄</span>
         </h2>
 
-        <p>Enquanto isso você pode dar uma olhadinha nos meus <AniLink
+        <p>In the meantime you can take a look at my <AniLink
           cover
           bg={getActiveTheme()}
           duration={.6}
           direction="down"
           to="/lab/"
           onClick={trackLabsClick()}>
-          projetos pessoais
-        </AniLink> ou <AniLink
-          cover
-          bg={getActiveTheme()}
-          duration={.6}
-          direction="down"
-          to="/blog/"
-          onClick={trackBlogClick()}>
-          ler meu blog
+          personal projects
         </AniLink>! <span 
           className="small" 
           role="img" 
-          aria-label="Emoji com olhos apaixonados">😍
+          aria-label="Passionate eyes emoji">😍
         </span></p>
       </Content>
     </section>
@@ -72,7 +56,7 @@ const content = () => {
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO title="Página não encontrada" />
+      <SEO title="Page not found" />
       <GridTemplate content={content()} />
     </Layout>
   )
