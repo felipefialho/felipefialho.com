@@ -21,11 +21,18 @@ const content = ({ site }) => {
   return (
     <section>
       <Social />
-      <ButtonLink to="/" title="View in english" onClick={trackLanguageClick()}>
-        Ver em português
+      <ButtonLink
+        to="/"
+        title="View in english"
+        onClick={trackLanguageClick()}>
+          Ver em português
       </ButtonLink>
       <Content>
-        <h1>Hi... <span className="small" role="img" aria-label="Emoji showing tongue">😜</span></h1>
+        <h1>Hi...<span
+          className="small"
+          role="img"
+          aria-label="Emoji showing tongue">😜</span>
+        </h1>
 
         <p>{site.siteMetadata.descriptionEn}</p>
 
