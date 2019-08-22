@@ -5,7 +5,7 @@ import * as V from 'styles/variables'
 
 export const Tags = styled.div`
   align-items: center;
-  color: var(--secondaryColor);
+  color: var(--primaryColor);
   display: flex;
 `
 
