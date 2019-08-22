@@ -20,8 +20,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
   const result = await graphql(
-    `
-      {
+    `{
       allMarkdownRemark(
         sort: { fields: [frontmatter___date], order: DESC }
         limit: 1000
@@ -35,6 +34,7 @@ exports.createPages = async ({ graphql, actions }) => {
               date(locale: "pt-br", formatString: "DD MMM[,] YYYY")
               description
               title
+              tags
             }
           }
           next {
