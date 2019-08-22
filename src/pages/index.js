@@ -18,30 +18,7 @@ const trackLanguageClick = () => {
   })
 }
 
-const blogListQuery = graphql`
-  query {
-    allMarkdownRemark(
-      limit: 2
-      sort: { fields: frontmatter___date, order: DESC }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            date(locale: "pt-br", formatString: "DD MMM[,] YYYY")
-            description
-            title
-          },
-          timeToRead
-        }
-      }
-    }
-  }
-`
-
-const content = ({ site, allBlogList }) => {
+const content = ({ site }) => {
   return (
     <section>
       <Social />
@@ -55,14 +32,12 @@ const content = ({ site, allBlogList }) => {
 
         <p>Atualmente estou trabalhando no <a href="https://cubo.network/jobs" target="_blank" rel="noopener noreferrer" title="Ver">Cubo Itaú</a> e sou criador da organização <a href="https://github.com/frontendbr" target="_blank" rel="noopener noreferrer" title="Ver">Front-end BR</a> no Github.</p>
       </Content>
-      <BlogList list={allBlogList.allMarkdownRemark.edges} />
+      <BlogList />
     </section>
   )
 }
 
 const IndexPage = () => {
-  const allBlogList = useStaticQuery(blogListQuery)
-
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -79,7 +54,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title={site.siteMetadata.title} />
-      <GridTemplate content={content({ site, allBlogList })} />
+      <GridTemplate content={content({ site })} />
     </Layout>
   )
 }

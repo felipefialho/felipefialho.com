@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactGA from 'react-ga'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import ButtonLink from 'components/ButtonLink'
 import BlogPost from 'components/BlogPost'
@@ -14,7 +15,34 @@ const trackClickAllPosts = () => {
   })
 }
 
-const BlogList = ({ list }) => {
+const blogListQuery = graphql`
+  query {
+    allMarkdownRemark(
+      limit: 2
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            date(locale: "pt-br", formatString: "DD MMM[,] YYYY")
+            description
+            title
+            tags
+          },
+          timeToRead
+        }
+      }
+    }
+  }
+`
+
+const BlogList = () => {
+  const allBlogList = useStaticQuery(blogListQuery)
+  const list = allBlogList.allMarkdownRemark.edges
+
   return (
     <S.BlogList>
       <S.Title>Últimas do blog</S.Title>
