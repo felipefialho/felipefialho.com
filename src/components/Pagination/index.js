@@ -5,7 +5,7 @@ import ButtonLink from 'components/ButtonLink'
 
 import * as S from './styled'
 
-const Pagination = ({ 
+const Pagination = ({
   isFirst,
   isLast,
   nextPage,
@@ -20,7 +20,7 @@ const Pagination = ({
       </ButtonLink>
     )}
     <span>{currentPage} de {numPages}</span>
-    {!isLast && ( 
+    {!isLast && (
       <ButtonLink rel="next" to={nextPage}>
         Próxima →
       </ButtonLink>

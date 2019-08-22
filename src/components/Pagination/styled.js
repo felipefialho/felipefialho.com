@@ -7,8 +7,9 @@ export const Pagination = styled.nav`
   border-top: ${V.Border.box};
   color: var(--secondaryColor);
   display: flex;
+  font-size: 1.4rem;
   justify-content: space-between;
   margin-top: ${V.Space.lg};
-  padding-bottom: ${V.Space.default};
-  padding-top: ${V.Space.default};
+  padding-bottom: ${V.Space.sm};
+  padding-top: ${V.Space.sm};
 `
