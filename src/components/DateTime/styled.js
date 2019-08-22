@@ -7,5 +7,8 @@ export const DateTime = styled.time`
   display: block;
   font-size: 1.2rem;
   letter-spacing: .1rem;
-  margin-bottom: ${V.Space.xxs};
+
+  &:not(:last-child) {
+    margin-bottom: ${V.Space.xxs};
+  }
 `

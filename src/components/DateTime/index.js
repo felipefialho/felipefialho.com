@@ -5,9 +5,7 @@ import * as S from './styled'
 
 const DateTime = ({ children }) => {
   return (
-    <S.DateTime>
-      { children }
-    </S.DateTime>
+    <S.DateTime>{children}</S.DateTime>
   )
 }
 
