@@ -18,7 +18,6 @@ export const LightButton = styled.button.attrs(props => ({
 
 export const LightButtonIcon = styled(LightBulb)`
   display: block;
-  fill: currentColor;
   height: ${V.Space.default};
   width: ${V.Space.default};
 `

@@ -58,6 +58,10 @@ const GlobalStyles = createGlobalStyle`
   	max-width: 100%;
   }
 
+  svg {
+    fill: currentColor;
+  }
+
   html {
     font-size: 10px;
     -moz-osx-font-smoothing: auto;
