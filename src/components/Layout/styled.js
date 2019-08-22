@@ -12,7 +12,7 @@ export const Main = styled.main.attrs({
 })`
   margin-top: ${V.Height.headerSm};
   padding-bottom: ${V.Space.md};
-  padding-top: ${V.Space.default};
+  padding-top: ${V.Height.mainTop};
   width: 100%;
 
   ${media.greaterThan('medium')`
