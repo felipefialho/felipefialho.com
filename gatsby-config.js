@@ -92,10 +92,7 @@ module.exports = {
                   'Reddit',
                   'Flickr',
                   'Instagram'
-                ],
-                settings: {
-                  Twitter: { theme: 'dark' }
-                },
+                ]
               },
             },
           },
