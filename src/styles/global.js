@@ -90,9 +90,9 @@ const GlobalStyles = createGlobalStyle`
     --bgSecondary: ${V.Color.black};
     --borderColor: ${V.Color.grayDark};
     --highlightColor: ${V.Color.blue};
-    --primaryColor: ${V.Color.grayWhite};
+    --primaryColor: rgba(250, 250, 250, .8);
     --secondaryColor: ${V.Color.grayLight};
-    --boxShadow: rgba(250, 250, 250, 0.1);
+    --boxShadow: rgba(250, 250, 250, .1);
   }
 
   body.theme-light {
@@ -100,9 +100,9 @@ const GlobalStyles = createGlobalStyle`
     --bgSecondary: ${V.Color.grayWhite};
     --borderColor: ${V.Color.grayLighter};
     --highlightColor: ${V.Color.blue};
-    --primaryColor: ${V.Color.black};
+    --primaryColor: rgba(0, 0, 0, .8);
     --secondaryColor: ${V.Color.gray};
-    --boxShadow: rgba(0, 0, 0, 0.1);
+    --boxShadow: rgba(0, 0, 0, .1);
   }
 
   p a {

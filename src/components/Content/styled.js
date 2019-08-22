@@ -23,8 +23,7 @@ export const Content = styled.article`
   }
 
   h2 {
-    ${T.Subtitle}
-    color: var(--secondaryColor);
+    ${T.Subheading}
 
     &:not(:last-child) {
       margin-bottom: ${V.Space.sm};
@@ -44,34 +43,34 @@ export const Content = styled.article`
   }
 
   blockquote {
-    font-size: 3rem;
+    border-left: ${V.Space.xxs} solid var(--highlightColor);
+    font-size: 2.4rem;
     font-style: italic;
     font-weight: 400;
     letter-spacing: -0.36px;
-    line-height: 4.4rem;
+    line-height: 1.5;
     overflow-wrap: break-word;
-    padding-left: ${V.Space.lg};
+    padding-left: ${V.Space.default};
 
     &:not(:first-child) {
       margin-top: ${V.Space.lg};
     }
 
     &:not(:last-child) {
-      margin-bottom: ${V.Space.md};
+      margin-bottom: ${V.Space.lg};
     }
   }
 
-  code {
-    background: ${V.Color.black};
-    border-radius: 2px;
-    color: ${V.Color.white};
-    font-size: 1.8rem;
-    padding: ${V.Space.xxs} ${V.Space.xs};
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul {
+    list-style-type: disc;
   }
 
   ol, ul {
-    list-style: inherit;
-    padding-left: ${V.Space.default};
+    padding-left: ${V.Space.lg};
 
     &:not(:last-child) {
       margin-bottom: ${V.Space.default};
@@ -80,7 +79,45 @@ export const Content = styled.article`
 
   li {
     &:not(:last-child) {
-      margin-bottom: ${V.Space.xs};
+      margin-bottom: ${V.Space.default};
+    }
+  }
+
+  .gatsby-highlight {
+    pre[class*="language-"] {
+      border-left: ${V.Space.xxs} solid var(--highlightColor);
+      padding-left: ${V.Space.default};
+    }
+
+    &:not(:last-child) {
+      margin-bottom: ${V.Space.default};
+    }
+  }
+
+  .language-text {
+    background-color: var(--bgSecondary);
+    color: var(--colorPrimary);
+    padding-left: ${V.Space.xxs};
+    padding-right: ${V.Space.xxs};
+    text-shadow: none;
+  }
+
+  .twitter-tweet {
+    font-size: 1.8rem;
+    font-style: normal;
+
+    p {
+      font-size: 2.4rem;
+      font-style: italic;
+    }
+
+    a {
+      font-size: 1.6rem;
+
+      &:before {
+        content: '';
+        display: block;
+      }
     }
   }
 `
