@@ -5,10 +5,19 @@ import Layout from 'components/Layout'
 import SEO from 'components/Seo'
 import GridTemplate from 'components/GridTemplate'
 import Content from 'components/Content'
+import BlogHeader from 'components/BlogHeader'
 
 const content = ({ post }) => {
   return (
     <section>
+      <BlogHeader
+        image={post.frontmatter.image}
+        tags={post.frontmatter.tags}
+        date={post.frontmatter.date}
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+        timeToRead={post.timeToRead}
+      />
       <Content>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </Content>
@@ -46,8 +55,14 @@ export const query = graphql`
         date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
         description
         title
+        tags
         image {
           id
+          childImageSharp {
+            fluid(maxWidth: 1280, quality: 60) {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
       }
       timeToRead
