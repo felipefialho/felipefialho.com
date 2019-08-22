@@ -39,11 +39,6 @@ export const Content = styled.article`
     }
   }
 
-  .small,
-  small {
-    font-size: .8em;
-  }
-
   a {
     ${T.Link}
   }

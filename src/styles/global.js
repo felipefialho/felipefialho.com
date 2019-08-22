@@ -62,6 +62,11 @@ const GlobalStyles = createGlobalStyle`
     fill: currentColor;
   }
 
+  .small,
+  small {
+    font-size: .8em;
+  }
+
   html {
     font-size: 10px;
     -moz-osx-font-smoothing: auto;
