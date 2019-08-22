@@ -17,6 +17,7 @@ const content = ({ list }) => {
           date={node.frontmatter.date}
           title={node.frontmatter.title}
           description={node.frontmatter.description}
+          tags={node.frontmatter.tags}
           timeToRead={node.timeToRead}
         />
       ))}
@@ -65,6 +66,7 @@ export const BlogListQuery = graphql`
             date(locale: "pt-br", formatString: "DD MMM[,] YYYY")
             description
             title
+            tags
           }
           timeToRead
         }

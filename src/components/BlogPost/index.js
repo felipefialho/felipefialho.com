@@ -5,6 +5,7 @@ import ReactGA from 'react-ga'
 import { getActiveTheme } from 'utils'
 import DateTime from 'components/DateTime'
 import BoxHandler from 'components/BoxHandler'
+import Tags from 'components/Tags'
 
 import * as S from './styled'
 
@@ -21,6 +22,7 @@ const BlogPost = ({
   date,
   timeToRead,
   title,
+  tags,
   description
 }) => {
   return (
@@ -39,6 +41,7 @@ const BlogPost = ({
           </DateTime>
           <S.Title>{title}</S.Title>
           <S.Subtitle>{description}</S.Subtitle>
+          <Tags tags={tags} />
         </BoxHandler>
     </S.BlogPost>
   )

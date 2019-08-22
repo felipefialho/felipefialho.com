@@ -54,6 +54,7 @@ const BlogList = () => {
             date={node.frontmatter.date}
             title={node.frontmatter.title}
             description={node.frontmatter.description}
+            tags={node.frontmatter.tags}
             timeToRead={node.timeToRead}
           />
         ))}
