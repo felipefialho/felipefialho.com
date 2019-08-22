@@ -3,7 +3,7 @@ import ReactGA from 'react-ga'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import ButtonLink from 'components/ButtonLink'
-import BlogPost from 'components/BlogPost'
+import BlogItem from 'components/BlogItem'
 
 import * as S from './styled'
 
@@ -48,7 +48,7 @@ const BlogList = () => {
       <S.Title>Últimas do blog</S.Title>
       <S.Nav>
         {list.map(({ node }, i) => (
-          <BlogPost
+          <BlogItem
             key={i}
             slug={node.fields.slug}
             date={node.frontmatter.date}

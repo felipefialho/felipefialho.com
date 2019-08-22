@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 
 import Layout from 'components/Layout'
 import SEO from 'components/Seo'
-import BlogPost from 'components/BlogPost'
+import BlogItem from 'components/BlogItem'
 import GridTemplate from 'components/GridTemplate'
 import Pagination from 'components/Pagination'
 
@@ -11,7 +11,7 @@ const content = ({ list }) => {
   return (
     <nav>
       {list.map(({ node }, i) => (
-        <BlogPost
+        <BlogItem
           key={i}
           slug={node.fields.slug}
           date={node.frontmatter.date}
