@@ -2,6 +2,7 @@
 title: O que são Geradores estáticos?
 date: 2013-05-06 00:00:01
 description: Quando escutamos falar pela primeira vez em geradores estáticos, normalmente não compreendemos quais as vantagens.
+tags: []
 ---
 
 Falando de forma resumida, geradores estáticos usam de várias funcionalidades que estamos acostumados a utilizar nas linguagens de programação, como includes, loopings, templates, entre outras coisas legais. Mas... gera um HTML estático, sem banco de dados, sem dependências server-side, tudo é gerado em um HTML puro e simples.

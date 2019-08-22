@@ -3,6 +3,7 @@ title: Como contribuir com open-source
 date: 2017-12-01 00:00:01
 description: …e um pouco sobre filosofia, o Github, o universo e tudo mais
 image: featured.jpg
+tags: []
 ---
 
 Estou no mundo de desenvolvimento web desde 2009.

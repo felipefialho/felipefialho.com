@@ -3,6 +3,7 @@ title: É possível utilizar componentes desenvolvidos apenas com CSS?
 date: 2014-04-22 00:00:01
 description: Após o lançamento do CSS Components, escrevo as minhas impressões sobre o quanto é possível utilizar componentes desenvolvidos apenas com CSS.
 image: featured.jpg
+tags: []
 ---
 
 ## Sobre o projeto

@@ -2,6 +2,7 @@
 title: Tutorial - Tabela Responsiva
 date: 2013-10-14 00:00:01
 description: Em layouts responsivos, um dos componentes que sempre me incomodava eram as tabelas. Acredito que isso também ocorra com outros desenvolvedores.
+tags: []
 ---
 
 Por algum tempo usei (e até contribui) com um ótimo plugin chamado [Footable](http://bit.ly/17CGaeG), ele adiciona funcionalidades bem legais nas tabelas e ajuda a resolver um pouco desse problema.

@@ -1,7 +1,8 @@
 ---
 title: Usando height com CSS Transitions
 date: 2013-11-18 00:00:01
-description: Hoje me deparei com um problema que alguns de vocês já devem ter passado, e coloco aqui a resolução da limitação do uso de height com CSS Transitions.
+description: "Hoje me deparei com um problema que alguns de vocês já devem ter passado: A limitação do uso de height com CSS Transitions"
+tags: []
 ---
 
 Hoje me deparei com um problema que alguns de vocês já devem ter passado, e coloco aqui a resolução: A limitação do uso de "height: auto" em CSS Transitions.
@@ -12,8 +13,7 @@ Esse post é bem antigo, escrevi em meados de 2013. Ano passado desenvolvi uma s
 
 O resultado pode ser visto no Codepen.
 
-<p data-height="650" data-theme-id="0" data-slug-hash="LkOXBA" data-user="felipefialho" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/felipefialho/pen/LkOXBA'>Animate height with CSS transitions using scale()</a> by Felipe Fialho (<a href='http://codepen.io/felipefialho'>@felipefialho</a>) on <a href='http://codepen.io'>CodePen</a>
-<script async src="//codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/felipefialho/pen/LkOXBA?height=400&default-tab=result
 
 ## O problema
 

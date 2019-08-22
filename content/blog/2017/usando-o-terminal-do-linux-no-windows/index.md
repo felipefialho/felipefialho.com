@@ -3,6 +3,7 @@ title: Usando o Terminal do Linux no Windows
 date: 2017-10-22 00:00:01
 description: No inicio de 2016 o Windows entregou uma nova funcionalidade que era muito aguardada... A possibilidade de rodar o Bash do Linux.
 image: featured.jpg
+tags: []
 ---
 
 No inicio de 2016 o Windows entregou uma nova funcionalidade que era muito aguardada: A possibilidade de rodar o Bash do Linux.

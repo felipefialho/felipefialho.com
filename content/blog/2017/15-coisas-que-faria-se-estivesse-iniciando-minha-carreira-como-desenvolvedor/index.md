@@ -3,6 +3,7 @@ title: 15 coisas que faria se estivesse iniciando minha carreira como desenvolve
 date: 2017-10-01 00:00:01
 description: Ou se pudesse entrar em uma maquina do tempo e dar conselhos para eu mesmo no passado
 image: featured.png
+tags: []
 ---
 
 Esse é um texto absolutamente pessoal e recheado de clichês.

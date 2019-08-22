@@ -3,6 +3,7 @@ title: Retrospectiva </2017>
 date: 2017-12-31 00:00:01
 description: Minha retrospectiva profissional de 2017!
 image: featured.jpg
+tags: []
 ---
 
 Se quiserem podem acompanhar minhas retrospectivas de [2013](https://www.felipefialho.com/blog/2013/retrospectiva-2013) e [2016](https://medium.com/felipefialho/retrospectiva-2016-df06dfdf0c2e).

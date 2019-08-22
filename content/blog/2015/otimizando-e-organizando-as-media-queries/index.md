@@ -3,6 +3,7 @@ title: Otimizando e Organizando as Media Queries
 date: 2015-07-23 00:00:01
 description: Quando o assunto é Mobile First, Media Queries e otimização de código eu tenho uma regra. Evitar ao máximo resetar propriedades.
 image: featured.jpg
+tags: []
 ---
 
 ## Começando do começo
@@ -42,7 +43,8 @@ O primeiro ponto, é que crio algumas variáveis de breakpoints e replico elas c
 ````stylus
 //
 // Media Queries
-// --------------------------------------------------
+// -----------------------------------------------tags: []
+---
 
 $screen-xs   = 480px // Extra small screen
 $screen-sm   = 768px // Small screen

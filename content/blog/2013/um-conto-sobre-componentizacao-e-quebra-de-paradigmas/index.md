@@ -2,6 +2,7 @@
 title: Um conto sobre componentização e quebra de paradigmas
 date: 2013-07-29 00:00:01
 description: Melhorar processos é parte essencial do nosso trabalho, mas em algum momento percebemos que só melhorar pode não ser o suficiente, as vezes é preciso quebrar paradigmas.
+tags: []
 ---
 
 Não, você não é apenas um "mero desenvolvedor", você está no centro de mudanças importantes no nosso mercado e pode influenciar positivamente esse cenário.

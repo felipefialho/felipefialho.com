@@ -3,6 +3,7 @@ title: Uma reflexão sobre salários, valor hora e qualidade de vida
 date: 2014-09-28 00:00:01
 description: Esses dias estava observando os carros presos no transito e as pessoas na correria maluca do dia-a-dia quando fiz uma reflexão sobre qualidade de vida, salários, valor hora, a vida, o universo e tudo mais.
 image: featured.jpg
+tags: []
 ---
 
 ## A questão

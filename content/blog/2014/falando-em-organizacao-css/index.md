@@ -2,6 +2,7 @@
 title: Falando em organização CSS...
 date: 2014-11-13 00:00:01
 description: Durante anos escrevemos CSS como se não houvesse amanhã e tínhamos como maiores problemas as diferenças de renderização no IE(ca). E já não era simples.
+tags: []
 ---
 
 Dando continuidade a série [sobre minha organização e fluxo de trabalho atual](/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores), vou contar um pouco sobre como tenho trabalhado o CSS.
@@ -152,7 +153,8 @@ less/
 ````stylus
 //
 // Margins
-// --------------------------------------------------
+// -----------------------------------------------tags: []
+---
 
 @space:    20px; // Regular space margin
 
@@ -167,12 +169,14 @@ less/
 ````stylus
 //
 // Typography
-// --------------------------------------------------
+// -----------------------------------------------tags: []
+---
 
 #type {
 
   // Headings
-  // --------------------------------------------------
+  // -----------------------------------------------tags: []
+---
 
   .h1() {
     .font(36, 700);
@@ -180,7 +184,8 @@ less/
   }
 
   // Paragraphs
-  // --------------------------------------------------
+  // -----------------------------------------------tags: []
+---
 
   .p1() {
     .font(16);
@@ -197,7 +202,8 @@ Observem que defino alguns mixins e configurações reaproveitáveis em todo o p
 ````stylus
 //
 // Headings
-// --------------------------------------------------
+// -----------------------------------------------tags: []
+---
 
 h1 {
   margin: 0;
@@ -213,7 +219,8 @@ h1 {
 ````stylus
 //
 // Paragraph
-// --------------------------------------------------
+// -----------------------------------------------tags: []
+---
 
 p {
   #type > .p1();
@@ -236,7 +243,8 @@ Os elementos devem ser únicos, nunca aninhados.
 ````stylus
 //
 // Wellness
-// --------------------------------------------------
+// -----------------------------------------------tags: []
+---
 
 .wellness {
   text-align: center;
@@ -262,7 +270,8 @@ Modifica os átomos para a criação de um componente especifico.
 ````stylus
 //
 // Header
-// --------------------------------------------------
+// -----------------------------------------------tags: []
+---
 
 .header {
 
@@ -283,7 +292,8 @@ Modifica os átomos e moléculas para a criação de uma sessão do projeto.
 ````stylus
 //
 // Home
-// --------------------------------------------------
+// -----------------------------------------------tags: []
+---
 
 .home {
 
@@ -329,7 +339,8 @@ Vamos imaginar que o `.header` precise ser absoluto em resoluções médias, fix
 ````stylus
 //
 // Header
-// --------------------------------------------------
+// -----------------------------------------------tags: []
+---
 
 .header {
   padding: @space; // Padrão para todas as resoluções

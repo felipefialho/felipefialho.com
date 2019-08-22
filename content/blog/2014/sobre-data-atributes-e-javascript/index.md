@@ -2,6 +2,7 @@
 title: Sobre Data Atributes e JavaScript
 date: 2014-07-08 00:00:01
 description: Nos últimos projetos comecei a testar o uso do [data-*] do HTML5 como seletor no JavaScript. Agora vou listar algumas coisas que observei com essa prática.
+tags: []
 ---
 
 ## O que é?

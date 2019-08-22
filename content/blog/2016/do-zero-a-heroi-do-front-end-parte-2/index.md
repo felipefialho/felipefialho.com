@@ -3,6 +3,7 @@ title: Do Zero a Herói Front-End (Parte 2)
 date: 2016-06-14 00:00:01
 description: Um guia completo para aprender desenvolvimento Front-End.
 image: featured.png
+tags: []
 ---
 
 ## Sobre esse artigo
