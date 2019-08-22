@@ -33,6 +33,7 @@ const BlogPost = ({
       bg={getActiveTheme()}
       onClick={trackClick(title)}>
         <BoxHandler>
+          <Tags tags={tags} />
           <DateTime>
             {date}
             {timeToRead && (
@@ -41,7 +42,6 @@ const BlogPost = ({
           </DateTime>
           <S.Title>{title}</S.Title>
           <S.Subtitle>{description}</S.Subtitle>
-          <Tags tags={tags} />
         </BoxHandler>
     </S.BlogPost>
   )
@@ -51,7 +51,8 @@ BlogPost.propTypes = {
   slug: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired
+  description: PropTypes.string.isRequired,
+  tags: PropTypes.node.isRequired,
 }
 
 export default BlogPost

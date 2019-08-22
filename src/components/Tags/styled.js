@@ -7,6 +7,10 @@ export const Tags = styled.div`
   align-items: center;
   color: var(--primaryColor);
   display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: ${V.Space.xs};
+  }
 `
 
 export const TagItem = styled.span`
