@@ -21,10 +21,10 @@ const LabImg = ({ imageSrc }) => {
       query {
         images: allFile(filter: { sourceInstanceName: { eq: "lab" } }) {
           edges {
-              node {
-                extension
-                relativePath
-                childImageSharp {
+            node {
+              extension
+              relativePath
+              childImageSharp {
                 fluid(maxWidth: 300) {
                   ...GatsbyImageSharpFluid
                 }
