@@ -6,4 +6,5 @@ import * as T from 'styles/typography'
 export const ButtonLink = styled(AniLink)`
   ${T.Link}
   display: inline-block;
+  font-size: 1.6rem;
 `
