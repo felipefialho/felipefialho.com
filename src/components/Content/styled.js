@@ -29,8 +29,24 @@ export const Content = styled.article`
   h2 {
     ${T.Heading1}
 
+    &:not(:first-child) {
+      margin-top: ${V.Space.md};
+    }
+
     &:not(:last-child) {
       margin-bottom: ${V.Space.default};
+    }
+  }
+
+  h3 {
+    ${T.Heading2}
+
+    &:not(:first-child) {
+      margin-top: ${V.Space.md};
+    }
+
+    &:not(:last-child) {
+      margin-bottom: ${V.Space.sm};
     }
   }
 
@@ -47,8 +63,11 @@ export const Content = styled.article`
   blockquote {
     ${T.Heading3}
     border-left: ${V.Space.xxs} solid var(--highlightColor);
+    font-style: italic;
     overflow-wrap: break-word;
+    padding-bottom:  ${V.Space.sm};
     padding-left: ${V.Space.default};
+    padding-top:  ${V.Space.sm};
 
     &:not(:first-child) {
       margin-top: ${V.Space.lg};
@@ -81,6 +100,15 @@ export const Content = styled.article`
     }
   }
 
+  img,
+  .gatsby-resp-image-wrapper {
+    width: 100%;
+
+    & + em {
+      font-size: 1.4rem;
+    }
+  }
+
   .gatsby-highlight {
     pre[class*="language-"] {
       border-left: ${V.Space.xxs} solid var(--highlightColor);
@@ -106,6 +134,7 @@ export const Content = styled.article`
     p {
       ${T.Heading3}
       border-bottom: ${V.Border.box};
+      font-style: normal;
       margin-bottom: ${V.Space.sm};
       padding-bottom: ${V.Space.sm};
     }

@@ -26,7 +26,7 @@ export const Subtitle2 = `
 
 export const Heading1 = `
   color: var(--primaryColor);
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   font-weight: 600;
   letter-spacing: -0.022em;
   line-height: 1.5em;
@@ -34,7 +34,7 @@ export const Heading1 = `
 
 export const Heading2 = `
   color: var(--primaryColor);
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 600;
   letter-spacing: -0.04px;
   line-height: 1.5em;
@@ -42,7 +42,8 @@ export const Heading2 = `
 
 export const Heading3 = `
   color: var(--primaryColor);
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-weight: 400;
   letter-spacing: -0.04px;
   line-height: 1.5em;
 `
