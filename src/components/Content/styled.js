@@ -27,7 +27,7 @@ export const Content = styled.article`
   }
 
   h2 {
-    ${T.Heading2}
+    ${T.Heading1}
 
     &:not(:last-child) {
       margin-bottom: ${V.Space.default};
@@ -106,8 +106,8 @@ export const Content = styled.article`
     p {
       ${T.Heading3}
       border-bottom: ${V.Border.box};
-      margin-bottom: ${V.Space.sm}; 
-      padding-bottom: ${V.Space.sm}; 
+      margin-bottom: ${V.Space.sm};
+      padding-bottom: ${V.Space.sm};
     }
 
     a {

@@ -82,11 +82,11 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    -webkit-overflow-scrolling: touch;
     background-color: var(--bg);
     color: var(--primaryColor);
     font-family: -apple-system, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
     font-size: 1.8rem;
+    -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     text-rendering: optimizeLegibility;
     transition: background-color ${V.Transition.default};
