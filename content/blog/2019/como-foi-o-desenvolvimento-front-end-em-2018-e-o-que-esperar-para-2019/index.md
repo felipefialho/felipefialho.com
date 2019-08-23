@@ -3,7 +3,7 @@ title: "Como foi o Desenvolvimento Front-end em 2018 e o que esperar para 2019"
 date: 2019-01-07 00:00:01
 description: "O mundo do desenvolvimento front-end se move rápido. Muito rápido. Este artigo vai recapitular as principais notícias, eventos notáveis e tendências que ocorreram em 2018 e fazer algumas previsões para 2019."
 image: featured.png
-tags: ["html", "javascript", "css"]
+tags: ["front-end", "carreira"]
 ---
 
 ## Sobre esse artigo
@@ -13,8 +13,6 @@ O texto a seguir é uma tradução livre do artigo [A Recap of Frontend Developm
 Primeiro quero agradece-lo por ter escrito esse texto, segundo por permitir que eu fizesse essa tradução.
 
 Importante ressaltar que a tradução não é literal, adaptei algumas partes para facilitar a compreensão. Caso encontre erros me avise que faço a correção 😊
-[**Coding News for Developers | gitconnected**
-*The developer homepage — join the programming community from gitconnected. Discover and share coding news, with the…*gitconnected.com](https://gitconnected.com)
 
 ## O WebAssembly faz um grande lançamento com o Core Specification Reaching 1.0
 
@@ -32,7 +30,7 @@ No final de 2017, todos os principais navegadores anunciaram que suportam WebAss
 
 React, jQuery, Angular e Vue estão entre as 4 libs mais populares. Abaixo, continue lendo para ver os lançamentos mais recentes para algumas destas bibliotecas.
 
-![](https://cdn-images-1.medium.com/max/4496/1*e036ugWPXTbBzMTSRsXiEw.png)
+![](4496/1*e036ugWPXTbBzMTSRsXiEw.png)
 
 ## React continua o seu reinado enquanto a biblioteca evolui
 
@@ -44,7 +42,7 @@ A equipe principal do React é muito ativa nas atualizações da biblioteca e na
 
 No vídeo a seguir, [Ryan Florence]() mostra como o React Hooks fez o seu aplicativo de exemplo ficar 90% mais limpo.
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/wXLf18DsV-I" frameborder="0" allowfullscreen></iframe></center>
+https://www.youtube.com/embed/wXLf18DsV-I
 
 O outro grande lançamento, o *React Suspense*, é uma maneira de gerenciar o *data fetching* dentro dos próprios componentes do React. Ele suspende a renderização de dados enquanto aguarda por uma resposta assíncrona. *Suspense* é o que está por trás da função lazy para gerenciar o *code splitting* dos componentes. A ideia é conseguir gerenciar todo o carregamento assíncrono, como solicitações de API. Ele também permitirá o armazenamento em cache dos resultados de uma solicitação.
 
@@ -52,19 +50,13 @@ Esse exemplo mostra vários *load spinners* na tela enquanto a flag isFetching �
 
 Veja a talk do [Dan Abramov]() construindo uma aplicação usando a *Suspense API* 🔥.
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/nLF0n9SACd4" frameborder="0" allowfullscreen></iframe></center>
-[**Learn React — Best React Tutorials (2018) | gitconnected**
-*The top 45 React tutorials. Courses are submitted and voted on by developers, enabling you find the best React lessons…*gitconnected.com](https://gitconnected.com/learn/react)
+https://www.youtube.com/embed/nLF0n9SACd4
 
 ## Vue continua crescendo e passa o React em número de estrelas no GitHub
 
 Depois de explodir em 2017, o Vue continuou crescendo em 2018. Inclusive, superou o React no número de estrelas recebidas no GitHub.
 
-<iframe src="https://medium.com/media/0269432094f6116a7ed116994c9f9ff2" frameborder=0></iframe>
-
 Vue é muito amado, mas ainda está atrás de React e Angular no uso real por uma margem alta. No entanto, o Vue tem uma base apaixonada de usuários que está crescendo, e a biblioteca provavelmente será uma força nos próximos anos.
-[**Learn Vue.js — Best Vue.js Tutorials (2018) | gitconnected**
-*The top 26 Vue.js tutorials. Courses are submitted and voted on by developers, enabling you find the best Vue.js…*gitconnected.com](https://gitconnected.com/learn/vue-js)
 
 ## Evan You (criador do Vue) nos da um gostinho do Vue 3 enquanto o release se aproxima do lançamento
 
@@ -89,15 +81,13 @@ O Angular é um framework completo e altamente opinativo, com um CLI gerenciando
 Angular mostrou seu valor no mundo do desenvolvimento web e continua vendo seu uso aumentar.
 > NOTA: *@angular/core* representa o novo Angular e *angular* representa o antigo AngularJS
 
-![](https://cdn-images-1.medium.com/max/2062/1*SXOEH2cmEaC9SBHNp-nvtA.png)
-[**Learn Angular — Best Angular Tutorials (2018) | gitconnected**
-*The top 47 Angular tutorials. Courses are submitted and voted on by developers, enabling you find the best Angular…*gitconnected.com](https://gitconnected.com/learn/angular)
+![](2062/1*SXOEH2cmEaC9SBHNp-nvtA.png)
 
 ## GraphQL cresce no “desejo de aprender”, mas não ultrapassou REST
 
 GraphQL teve alguma adoção por líderes de tecnologia, como o [GitHub](https://developer.github.com/v4/). Entretanto, não decolou tão rapidamente quanto alguns previram. De acordo com o [State of JS survey](https://2018.stateofjs.com/data-layer/overview/), somente 1/5 frontend developers tem usado GraphQL, mas cerca de 62.5% dos desenvolvedores já ouviram falar e querem usá-lo.
 
-![](https://cdn-images-1.medium.com/max/3088/1*m6vDkicw6EUt8uc6EhcXAQ.png)
+![](3088/1*m6vDkicw6EUt8uc6EhcXAQ.png)
 
 ## CSS-in-JS teve aumento no uso
 
@@ -105,38 +95,42 @@ O Desenvolvimento Web parece ter caminhado para unificar tudo com JavaScript, e 
 
 Para gerenciar estilos dinâmicos com CSS, você precisa gerenciar nomes de classes no componente e atualizá-los com base no *state*/*props*. Você também precisa de uma classe CSS para as variações:
 
-    // Component JS file
-    const MyComp = ({ isActive }) => {
-      const className = isActive ? 'active' : 'inactive';
+```js
+// Component JS file
+const MyComp = ({ isActive }) => {
+  const className = isActive ? 'active' : 'inactive';
 
-    return <div className={className}>HI</div>
-    }
+return <div className={className}>HI</div>
+}
+```
 
-    // CSS file
-    .active { color: green; }
-    .inactive { color: red; }
+```css
+// CSS file
+.active { color: green; }
+.inactive { color: red; }
+```
 
 Com o CSS-in-JS, você não gerencia mais as classes CSS. Você simplesmente passa *props* ao componente estilizado e lida com o estilo dinâmico. O código é muito mais limpo e temos uma separação mais clara entre os estilos e o React, permitindo que o CSS gerencie os estilos dinâmicos baseados em *props*. Tudo é lido como código React e JavaScript normal agora:
 
-    const Header = styled.div`
-      color: ${({ isActive }) => isActive ? 'green' : 'red'};
-    `;
+```js
+const Header = styled.div`
+  color: ${({ isActive }) => isActive ? 'green' : 'red'};
+`;
 
-    const MyComp = ({ isActive }} => (
-      <Header isActive={isActive}>HI</Header>
-    )
+const MyComp = ({ isActive }} => (
+  <Header isActive={isActive}>HI</Header>
+)
+```
 
 As duas bibliotecas mais populares de CSS-in-JS são [styled-components](https://www.styled-components.com/) e [emotion](https://emotion.sh/).
 
 Styled-components tem mais tempo de vida e mais adoção, mas o Emotion tem ganhado espaço rapidamente, tornando-se a lib favorita de muitos desenvolvedores. Até mesmo o [Kent C. Dodds]() depreciou o uso de sua biblioteca CSS-in-JS, a Glamorous, em favor da Emotion.
 
-![](https://cdn-images-1.medium.com/max/2000/1*WfbUcGwcI4hmuD80S9XsCg.png)
+![](2000/1*WfbUcGwcI4hmuD80S9XsCg.png)
 
 Vue também suporta CSS* out of the box* ao usar *Single File Components*. Apenas adicionando a propriedade scoped para a tag style do componente, o Vue vai usar técnicas de CSS-in-JS para criar escopo e não vazar estilos para outros componentes.
 
 Além disso, o Angular suporta escopo de CSS *out of the box *através da “[view encapsulation](https://angular.io/guide/component-styles#view-encapsulation)”. Isso está ativado por padrão.
-[**React & Redux Tutorial-Build a Hacker News Clone**
-*In this tutorial, we are going to build a production-quality Hacker News clone. We will walk through the steps of…*gitconnected.com](https://gitconnected.com/courses/learn-react-redux-tutorial-build-a-hacker-news-clone)
 
 ## Developers encontram alivio após com ferramentas de CLI Tools
 
@@ -173,32 +167,26 @@ JavaScript recebe críticas por não ter variáveis tipadas estaticamente. As du
 Tudo indica que o TypeScript é a solução definitiva para tipagem estática no JS, e muitas pessoas estão optando por isso em relação ao JavaScript normal.
 
 Em 2018, o número de downloads do npm para o TS cresceu substancialmente enquanto o Flow permaneceu muito estável. O TypeScript parece estar se movendo em alta velocidade para adoção generalizada. Além disso, o [TypeScript recebeu sua atualização v3](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html).
-[**Learn TypeScript — Best TypeScript Tutorials (2018) | gitconnected**
-*The top 18 TypeScript tutorials. Courses are submitted and voted on by developers, enabling you find the best…*gitconnected.com](https://gitconnected.com/learn/typescript)
 
-![](https://cdn-images-1.medium.com/max/2000/1*frSWl5Yp4FoIUla7wxPIXA.png)
+![](2000/1*frSWl5Yp4FoIUla7wxPIXA.png)
 
 ## Accelerate Mobile Pages (AMP) cresce rapidamente
 
 AMPs são páginas criadas especificamente para dispositivos móveis.
 
-![](https://cdn-images-1.medium.com/max/2000/1*2A6tPpauW8KI5Pn4MhsG0w.png)
+![](2000/1*2A6tPpauW8KI5Pn4MhsG0w.png)
 
 ## Webpack 4 chegou em 2018
 
 Apenas 8 meses após o lançamento do Webpack 3, a versão 4 foi lançada.
 
 O Webpack 4 continua focando na simplicidade e build rápido, prometendo uma melhoria de até 98%. Ele opta por *sensible defaults*, lida com mais funcionalidades nativas, sem plugins, e não é mais necessário usar um arquivo de configuração para começar. O Webpack agora também suporta WebAssembly e permite que você importe os arquivos de WebAssembly diretamente.
-[**🎼webpack 4: released today!!✨**
-*Codename: Legato 🎶*medium.com](https://medium.com/webpack/webpack-4-released-today-6cdb994702d4)
 
 ## Babel 7.0 foi lançado
 
 Depois de quase 3 anos desde o lançamento da versão 6, o Babel 7 foi lançado em 2018.
 
 Babel é a biblioteca que transpila código ES6 + JavaScript para ES5, tornando nosso código JavaScript compatível com vários navegadores. O artigo de lançamento do Babel afirma que as melhorias na v7 são “mais rápida, criação de uma ferramenta de update, JS config, config ‘overrides’, mais opções para minificação, *JSX Fragments*, TypeScript, novas propostas e muito mais!”. O Babel também alterou os seus pacotes para o namespace @babel.
-[**Babel 7 Released · Babel**
-*After almost 2 years, 4k commits, over 50 pre-releases, and a lot of help we are excited to announce the release of…*babeljs.io](https://babeljs.io/blog/2018/08/27/7.0.0)
 
 ## VS Code domina os Text Editor/IDE
 
@@ -206,15 +194,16 @@ Text editors e IDEs são campos de batalhas para desenvolvedores desde o passado
 
 Com a criação do [Electron](https://electronjs.org/), editores open-source baseados em plugins explodem com o [Atom](https://atom.io/) tomando parte desse novo mercado. Entretanto, [VS Code](https://code.visualstudio.com/) recentemente provou ser o favorito dos desenvolvedores e o principal editor de uso geral por uma margem significativa em 2018.
 
-![](https://cdn-images-1.medium.com/max/4352/1*mLBjsSYDWEAdOy8pUjOjOg.png)
+![](4352/1*mLBjsSYDWEAdOy8pUjOjOg.png)
 
 ## Artigos mais influentes de 2018
 
 Lista completa dos principais artigos de 2018 (todos em inglês):
+
 [**Top Web Development Articles of 2018**
 *A list of the best JavaScript, React, Vue, Angular, and frontend stories of 2018. Required reading for all web…*levelup.gitconnected.com](https://levelup.gitconnected.com/top-web-development-articles-of-2018-bd5c3900110b)
 
-[Addy Osmani](undefined) nos mostrou o custo do JavaScript
+Addy Osmani nos mostrou o custo do JavaScript
 [**The Cost Of JavaScript In 2018**
 *Building interactive sites can involve sending JavaScript to your users. Often, too much of it. Have you been on a…*medium.com](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4)
 
@@ -240,7 +229,7 @@ GitHub é comprado pela Microsoft
 
 Ryan Dhal (o criador do Node) nos conta os erros que cometeu com o Node e nos dá um vislumbre do TypeScript *runtime*, o Deno
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/M3BM9TB-8yA" frameborder="0" allowfullscreen></iframe></center>
+https://www.youtube.com/embed/M3BM9TB-8yA
 
 ## Previsões para 2019
 

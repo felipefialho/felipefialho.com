@@ -22,7 +22,7 @@ Também [criei um Moment para facilitar a visualização dentro do Twitter](http
 
 Mas na internet nada escala melhor que texto escrito, então vamos a ele.
 
-# 100 dicas rápidas sobre Front-end
+## 100 dicas rápidas sobre Front-end
 
 <b>1.</b> Visualmente `<b>` e `<strong>` deixam o elemento negrito. A diferença é que o `<b>` não carrega qualquer semântica e o `<strong>` representa um texto importante.
 
