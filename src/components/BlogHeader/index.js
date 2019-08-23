@@ -13,7 +13,6 @@ const BlogHeader = ({ image, tags, date, timeToRead, title, description }) => {
       <R.GreaterThanTablet>
         <S.BlogHeaderImage fluid={image.childImageSharp.fluid} />
       </R.GreaterThanTablet>
-      <Tags tags={tags} />
       <DateTime>
         {date}
         {timeToRead && (
@@ -22,6 +21,7 @@ const BlogHeader = ({ image, tags, date, timeToRead, title, description }) => {
       </DateTime>
       <S.Title>{title}</S.Title>
       <S.Subtitle>{description}</S.Subtitle>
+      <Tags tags={tags} />
     </S.BlogHeader>
   )
 }

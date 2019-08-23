@@ -21,11 +21,20 @@ export const Menu = styled.nav`
       margin-right: ${V.Space.default};
     }
 
-    &.active,
-    &:focus,
-    &:hover {
-      color: var(--highlightColor);
-    }
+    ${media.lessThan('small')`
+      &.active {
+        color: var(--highlightColor);
+      }
+
+      &:focus,
+      &:hover {
+        color: var(--highlightColor);
+
+        &:after {
+          background-color: var(--highlightColor);
+        }
+      }
+    `}
 
     ${media.greaterThan('medium')`
       color: ${V.Color.white};
@@ -43,16 +52,16 @@ export const Menu = styled.nav`
         will-change: background-color;
       }
 
-      &.active{
-        color: var(--highlightColor);
+      &.active {
+        color: ${V.Color.blueLight};
       }
 
       &:focus,
       &:hover {
-        color: var(--highlightColor);
+        color: ${V.Color.blueLight};
 
         &:after {
-          background-color: var(--highlightColor);
+          background-color: ${V.Color.blueLight};
         }
       }
     `}

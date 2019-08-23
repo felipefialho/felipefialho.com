@@ -20,12 +20,17 @@ const trackLanguageClick = () => {
 const content = ({ site }) => {
   return (
     <article>
-      <Social />
-      <ButtonLink to="/hi/" title="View in english" onClick={trackLanguageClick()}>
-        Ver em português
+      <ButtonLink
+        to="/"
+        title="View in english"
+        onClick={trackLanguageClick()}>
+          Ver em português
       </ButtonLink>
+
+      <Social />
+
       <Content>
-        <h1>Hi... <span className="small" role="img" aria-label="Emoji showing tongue">😜</span></h1>
+        <h1>Hi!</h1>
 
         <p>{site.siteMetadata.descriptionEn}</p>
 

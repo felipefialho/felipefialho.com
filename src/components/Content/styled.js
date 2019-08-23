@@ -4,7 +4,7 @@ import * as V from 'styles/variables'
 import * as T from 'styles/typography'
 
 export const Content = styled.article`
-  ${T.Text}
+  ${T.Text1}
 
   &:not(:first-child) {
     margin-top: ${V.Space.md};
@@ -15,24 +15,26 @@ export const Content = styled.article`
   }
 
   h1 {
-    ${T.Title}
+    ${T.Heading1}
+
+    &:not(:first-child) {
+      margin-top: ${V.Space.lg};
+    }
 
     &:not(:last-child) {
-      margin-bottom: ${V.Space.xxs};
+      margin-bottom: ${V.Space.default};
     }
   }
 
   h2 {
-    ${T.Subheading}
+    ${T.Heading2}
 
     &:not(:last-child) {
-      margin-bottom: ${V.Space.sm};
+      margin-bottom: ${V.Space.default};
     }
   }
 
   p {
-    font-weight: 300;
-
     &:not(:last-child) {
       margin-bottom: ${V.Space.default};
     }
@@ -43,12 +45,8 @@ export const Content = styled.article`
   }
 
   blockquote {
+    ${T.Heading3}
     border-left: ${V.Space.xxs} solid var(--highlightColor);
-    font-size: 2.4rem;
-    font-style: italic;
-    font-weight: 400;
-    letter-spacing: -0.36px;
-    line-height: 1.5;
     overflow-wrap: break-word;
     padding-left: ${V.Space.default};
 
@@ -79,7 +77,7 @@ export const Content = styled.article`
 
   li {
     &:not(:last-child) {
-      margin-bottom: ${V.Space.default};
+      margin-bottom: ${V.Space.sm};
     }
   }
 
@@ -103,16 +101,17 @@ export const Content = styled.article`
   }
 
   .twitter-tweet {
-    font-size: 1.8rem;
-    font-style: normal;
+    ${T.Text2}
 
     p {
-      font-size: 2.4rem;
-      font-style: italic;
+      ${T.Heading3}
+      border-bottom: ${V.Border.box};
+      margin-bottom: ${V.Space.sm}; 
+      padding-bottom: ${V.Space.sm}; 
     }
 
     a {
-      font-size: 1.6rem;
+      ${T.Text2}
 
       &:before {
         content: '';

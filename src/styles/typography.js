@@ -10,7 +10,21 @@ export const Title = `
   line-height: 1.2em;
 `
 
-export const Subheading = `
+export const Subtitle1 = `
+  color: var(--secondaryColor);
+  font-size: 2.2rem;
+  letter-spacing: -0.45px;
+  line-height: 1.5em;
+`
+
+export const Subtitle2 = `
+  color: var(--secondaryColor);
+  font-size: 1.8rem;
+  letter-spacing: -0.04px;
+  line-height: 1.5em;
+`
+
+export const Heading1 = `
   color: var(--primaryColor);
   font-size: 2.4rem;
   font-weight: 600;
@@ -18,16 +32,32 @@ export const Subheading = `
   line-height: 1.5em;
 `
 
-export const Subtitle = `
-  color: var(--secondaryColor);
-  font-size: 2.2rem;
-  letter-spacing: -0.45px;
+export const Heading2 = `
+  color: var(--primaryColor);
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.04px;
   line-height: 1.5em;
 `
 
-export const Text = `
-  font-size: 1.8rem;
+export const Heading3 = `
+  color: var(--primaryColor);
+  font-size: 2rem;
   letter-spacing: -0.04px;
+  line-height: 1.5em;
+`
+
+export const Text1 = `
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: -0.04px;
+  line-height: 1.65em;
+`
+
+export const Text2 = `
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: -0.14px;
   line-height: 1.65em;
 `
 

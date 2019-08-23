@@ -34,15 +34,16 @@ export const Height = {
 // --------------------------------------------------
 
 export const Color = {
-  white: `#fefefe`,
-  black: `#0e0e0e`,
+  white: `rgba(250, 250, 250, .95)`,
+  black: `rgba(18, 18, 18, .95)`,
   blue: `#0291a7`,
+  blueLight: `#aceff9`,
   grayDarker: `#1b1b1b`,
   grayDark: `#333333`,
   gray: `#757575`,
   grayLight: `#aaaaaa`,
   grayLighter: `#dddddd`,
-  grayWhite: `#f5f5f5`,
+  grayWhite: `#f1f1f1`,
   yellow: `#e6af05`,
 }
 
@@ -72,7 +73,7 @@ export const Border = {
 }
 
 export const BoxShadow = {
-  box: `0 1px 4px var(--boxShadow)`,
+  box: `0 1px 3px var(--boxShadow)`,
 }
 
 export const MaxSize = {

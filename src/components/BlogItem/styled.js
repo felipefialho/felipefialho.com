@@ -13,15 +13,19 @@ export const BlogPost = styled(AniLink)`
 `
 
 export const Title = styled.h1`
-  ${T.Subheading}
+  ${T.Heading1}
+
+  &:not(:first-child) {
+    margin-top: ${V.Space.default};
+  }
 
   &:not(:last-child) {
-    margin-bottom: ${V.Space.sm};
+    margin-bottom: ${V.Space.xs};
   }
 `
 
 export const Subtitle = styled.h2`
-  ${T.Subtitle}
+  ${T.Subtitle2}
 
   &:not(:last-child) {
     margin-bottom: ${V.Space.default};

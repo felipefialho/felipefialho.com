@@ -33,7 +33,6 @@ const BlogPost = ({
       bg={getActiveTheme()}
       onClick={trackClick(title)}>
         <BoxHandler>
-          <Tags tags={tags} />
           <DateTime>
             {date}
             {timeToRead && (
@@ -42,6 +41,7 @@ const BlogPost = ({
           </DateTime>
           <S.Title>{title}</S.Title>
           <S.Subtitle>{description}</S.Subtitle>
+          <Tags tags={tags} />
         </BoxHandler>
     </S.BlogPost>
   )

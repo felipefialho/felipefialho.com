@@ -34,11 +34,17 @@ export const Image = styled(Img).attrs(props => ({
 `
 
 export const Title = styled.h1`
-  font-weight: 600;
-  margin-bottom: ${V.Space.sm};
+  ${T.Heading2}
+
+  &:not(:first-child) {
+    margin-top: ${V.Space.sm};
+  }
+
+  &:not(:last-child) {
+    margin-bottom: ${V.Space.xxs};
+  }
 `
 
 export const Text = styled.p`
-  ${T.Text}
-  color: var(--secondaryColor);
+  ${T.Subtitle2}
 `

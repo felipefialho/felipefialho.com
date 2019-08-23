@@ -15,7 +15,7 @@ export const BlogHeaderImage = styled(Img).attrs({
   'aria-hidden': 'true'
 })`
   display: block;
-  height: 50vh;
+  height: 20vh;
   left: calc(-50vw + 50%);
   margin-top: -${V.Height.mainTop};
   object-fit: cover;
@@ -23,20 +23,35 @@ export const BlogHeaderImage = styled(Img).attrs({
   width: 100vw;
 
   &:not(:last-child) {
-    margin-bottom: ${V.Space.default};
+    margin-bottom: ${V.Space.lg};
+  }
+
+  &:after {
+    background-color: rgba(0, 0, 0, .5);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: ${V.ZIndex.default};
   }
 `
 
 export const Title = styled.h1`
   ${T.Title}
 
+  &:not(:first-child) {
+    margin-top: ${V.Space.default};
+  }
+
   &:not(:last-child) {
-    margin-bottom: ${V.Space.sm};
+    margin-bottom: ${V.Space.xs};
   }
 `
 
 export const Subtitle = styled.h2`
-  ${T.Subtitle}
+  ${T.Subtitle1}
 
   &:not(:last-child) {
     margin-bottom: ${V.Space.default};

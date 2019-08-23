@@ -69,16 +69,24 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     font-size: 10px;
-    -moz-osx-font-smoothing: auto;
-    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  b, strong {
+    font-weight: 600;
+  }
+
+  i, em {
+    font-style: italic;
   }
 
   body {
+    -webkit-overflow-scrolling: touch;
     background-color: var(--bg);
     color: var(--primaryColor);
-    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-family: -apple-system, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
     font-size: 1.8rem;
-    -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     text-rendering: optimizeLegibility;
     transition: background-color ${V.Transition.default};
@@ -89,20 +97,20 @@ const GlobalStyles = createGlobalStyle`
     --bg: ${V.Color.grayDarker};
     --bgSecondary: ${V.Color.black};
     --borderColor: ${V.Color.grayDark};
-    --highlightColor: ${V.Color.blue};
-    --primaryColor: rgba(250, 250, 250, .8);
+    --highlightColor: ${V.Color.blueLight};
+    --primaryColor: ${V.Color.white};
     --secondaryColor: ${V.Color.grayLight};
-    --boxShadow: rgba(250, 250, 250, .1);
+    --boxShadow: rgba(250, 250, 250, .12);
   }
 
   body.theme-light {
     --bg: ${V.Color.white};
     --bgSecondary: ${V.Color.grayWhite};
-    --borderColor: ${V.Color.grayLighter};
+    --borderColor: ${V.Color.grayWhite};
     --highlightColor: ${V.Color.blue};
-    --primaryColor: rgba(0, 0, 0, .8);
+    --primaryColor: ${V.Color.black};
     --secondaryColor: ${V.Color.gray};
-    --boxShadow: rgba(0, 0, 0, .1);
+    --boxShadow: rgba(18, 18, 18, .12);
   }
 
   p a {

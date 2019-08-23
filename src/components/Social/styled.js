@@ -12,8 +12,14 @@ const Icon = `
 
 export const Social = styled.div`
   display: flex;
-  margin-bottom: ${V.Space.sm};
-  margin-top: ${V.Space.sm};
+
+  &:not(:first-child) {
+    margin-top: ${V.Space.md};
+  }
+
+  &:not(:last-child) {
+    margin-bottom: ${V.Space.md};
+  }
 `
 
 export const SocialItem = styled.a.attrs(props => ({
