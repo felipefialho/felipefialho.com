@@ -42,7 +42,7 @@ export const Color = {
   grayDark: `#333333`,
   gray: `#757575`,
   grayLight: `#aaaaaa`,
-  grayLighter: `#dddddd`,
+  grayLighter: `#efefef`,
   grayWhite: `#f1f1f1`,
   yellow: `#e6af05`,
 }
