@@ -7,8 +7,9 @@ import GridTemplate from 'components/GridTemplate'
 import Content from 'components/Content'
 import BlogHeader from 'components/BlogHeader'
 import BlogFooter from 'components/BlogFooter'
+import DisqusWrapper from 'components/DisqusWrapper'
 
-const content = ({ post }) => {
+const content = ({ post, disqusConfig }) => {
   return (
     <section>
       <BlogHeader
@@ -23,6 +24,8 @@ const content = ({ post }) => {
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <BlogFooter />
       </Content>
+
+      <DisqusWrapper disqusConfig={disqusConfig} />
     </section>
   )
 }
@@ -32,6 +35,12 @@ const BlogPost = (props) => {
   const next = props.pageContext.next
   const previous = props.pageContext.previous
 
+  const disqusConfig = {
+    url: `https://felipefialho.com${post.slug}`,
+    identifier: post.id,
+    title: post.title,
+  }
+
   return (
     <Layout>
       <SEO
@@ -39,7 +48,7 @@ const BlogPost = (props) => {
         description={post.frontmatter.description}
         image={`https://felipefialho.com${post.frontmatter.image}`}
       />
-      <GridTemplate content={content({ post })} />
+      <GridTemplate content={content({ post, disqusConfig })} />
     </Layout>
   )
 }
