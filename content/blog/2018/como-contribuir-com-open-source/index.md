@@ -1,9 +1,9 @@
 ---
-title: Como contribuir com open-source
-date: 2017-12-01 00:00:01
-description: …e um pouco sobre filosofia, o Github, o universo e tudo mais
-image: featured.jpg
-tags: []
+title: "Como contribuir com open-source"
+date: 2018-12-01 00:00:01
+description: "…e um pouco sobre filosofia, o Github, o universo e tudo mais"
+image: featured.png
+tags: ["open-source", "github", "comunidade"]
 ---
 
 Estou no mundo de desenvolvimento web desde 2009.
@@ -12,7 +12,7 @@ De lá pra cá tive acesso a milhares e milhares de libs gratuitas, desenvolvida
 
 Mas esse é só um ponto. E é só código.
 
-<blockquote class="twitter-tweet"><p lang="pt" dir="ltr">Mesmo que você nunca esteve num projeto open source, o open source sempre esteve dentro de você.</p>&mdash; felipe.js (@felipefialho_) <a href="https://twitter.com/felipefialho_/status/1034779078606430208?ref_src=twsrc%5Etfw">August 29, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+https://twitter.com/felipefialho_/status/1034779078606430208
 
 ## Tem todos os outros pontos
 
@@ -42,12 +42,7 @@ Sou Felipe, e no decorrer da minha carreira criei e participei de milhares de in
 
 Em 2012 criei esse Cartman para estudar CSS e não parei mais.
 
-<p class="codepen" data-height="440" data-theme-id="0" data-default-tab="result" data-user="felipefialho" data-slug-hash="qzDCJ" style="height: 440px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Eric Cartman in Pure CSS (2012)">
-  <span>See the Pen <a href="https://codepen.io/felipefialho/pen/qzDCJ/">
-  Eric Cartman in Pure CSS (2012)</a> by Felipe Fialho (<a href="https://codepen.io/felipefialho">@felipefialho</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/felipefialho/pen/qzDCJ
 
 Só para citar algumas:
 
@@ -79,9 +74,10 @@ São coisas das mais variadas: eventos, organizações, idéias, projetos, ideai
 
 E pra mim, em todas elas, fiz open-source.
 
-![esse dia foi loko](https://cdn-images-1.medium.com/max/2048/0*rXUrjovcX0o9roLU.jpeg)*esse dia foi loko*
+![esse dia foi loko](0_rXUrjovcX0o9roLU.jpeg)*esse dia foi loko*
 
 ### E por que contribuo?
+
 > Temos acesso a inúmeros conteúdos, projetos, libs e ajuda das pessoas.
 Todos nós deveríamos retribuir com o que nos foi disponibilizado de graça.
 [Felipe Fialho](https://twitter.com/felipefialho/status/1055430035534942209)
@@ -95,7 +91,7 @@ O reflexo disso é sentido até mesmo no mercado de trabalho, com mais gente cap
 
 ### E não é só isso…
 
-![bruxo](https://cdn-images-1.medium.com/max/2000/1*oPFFezJfh1uwzKO1F6qldQ.gif)*bruxo*
+![bruxo](1_oPFFezJfh1uwzKO1F6qldQ.gif)*bruxo*
 
 Open-source também pode ajudar a mostrar suas habilidades para o mercado.
 
@@ -201,7 +197,7 @@ Basta dar uma rápida passada no Github e vai notar diversos projetos em que voc
 
 ## Falando em Github
 
-![](https://cdn-images-1.medium.com/max/2400/0*RspmpLKEQLa-Uy9X.png)
+![](0_RspmpLKEQLa-Uy9X.png)
 
 Não é exagero falar que o Github está para projetos open-source como o Google está para a internet.
 
@@ -255,7 +251,7 @@ Isso vai ajudar não só no projeto, como vai servir como grande fonte de estudo
 
 Até hoje não esqueço desse meu pull-request mergeado no Boostrap, num inglês bizarrísimo 😍
 
-![](https://cdn-images-1.medium.com/max/3124/1*ukSvk4hGI4nw4sEhte7kyQ.png)
+![](1_ukSvk4hGI4nw4sEhte7kyQ.png)
 
 ### 5. Siga os padrões do projeto
 
