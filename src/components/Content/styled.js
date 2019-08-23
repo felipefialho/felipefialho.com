@@ -87,7 +87,7 @@ export const Content = styled.article`
   }
 
   ol, ul {
-    padding-left: ${V.Space.lg};
+    padding-left: 2.5rem;
 
     &:not(:last-child) {
       margin-bottom: ${V.Space.default};
