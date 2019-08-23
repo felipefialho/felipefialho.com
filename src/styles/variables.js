@@ -70,6 +70,7 @@ export const BorderRadius = {
 
 export const Border = {
   box: `1px solid var(--borderColor)`,
+  default: `1px solid var(--bgSecondary)`,
 }
 
 export const BoxShadow = {

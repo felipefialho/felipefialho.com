@@ -105,7 +105,7 @@ const GlobalStyles = createGlobalStyle`
 
   body.theme-light {
     --bg: ${V.Color.white};
-    --bgSecondary: ${V.Color.grayWhite};
+    --bgSecondary: ${V.Color.grayLighter};
     --borderColor: ${V.Color.grayWhite};
     --highlightColor: ${V.Color.blue};
     --primaryColor: ${V.Color.black};

@@ -6,6 +6,7 @@ import SEO from 'components/Seo'
 import GridTemplate from 'components/GridTemplate'
 import Content from 'components/Content'
 import BlogHeader from 'components/BlogHeader'
+import BlogFooter from 'components/BlogFooter'
 
 const content = ({ post }) => {
   return (
@@ -20,6 +21,7 @@ const content = ({ post }) => {
       />
       <Content>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <BlogFooter />
       </Content>
     </section>
   )

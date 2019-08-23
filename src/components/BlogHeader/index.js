@@ -7,7 +7,14 @@ import * as R from 'components/Responsive'
 
 import * as S from './styled'
 
-const BlogHeader = ({ image, tags, date, timeToRead, title, description }) => {
+const BlogHeader = ({ 
+  image, 
+  tags, 
+  date, 
+  timeToRead, 
+  title, 
+  description 
+}) => {
   return (
     <S.BlogHeader>
       <R.GreaterThanTablet>
