@@ -2,9 +2,9 @@ import React from 'react'
 
 import * as S from './styled'
 
-const BlogFooter = () => {
+const PostFooter = () => {
   return (
-    <S.BlogFooter>
+    <S.PostFooter>
       <S.Title>Me acompanhe por ai! <span
         className="small"
         role="img"
@@ -16,8 +16,8 @@ const BlogFooter = () => {
         - Github: <a href="https://github.com/felipefialho" target="_blank" rel="noopener noreferrer" title="Ver Github">@felipefialho</a> <br />
         - Linkedin: <a href="https://www.linkedin.com/in/felipefialho/" target="_blank" rel="noopener noreferrer" title="Ver Linkedin">@felipefialho</a>
       </p>
-    </S.BlogFooter>
+    </S.PostFooter>
   )
 }
 
-export default BlogFooter
+export default PostFooter

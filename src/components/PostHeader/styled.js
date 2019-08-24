@@ -4,13 +4,13 @@ import Img from 'gatsby-image'
 import * as V from 'styles/variables'
 import * as T from 'styles/typography'
 
-export const BlogHeader = styled.header`
+export const PostHeader = styled.header`
   &:not(:last-child) {
     margin-bottom: ${V.Space.lg};
   }
 `
 
-export const BlogHeaderImage = styled(Img).attrs({
+export const PostImage = styled(Img).attrs({
   alt: 'Imagem de introdução',
   'aria-hidden': 'true'
 })`

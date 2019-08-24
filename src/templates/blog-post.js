@@ -5,14 +5,16 @@ import Layout from 'components/Layout'
 import SEO from 'components/Seo'
 import GridTemplate from 'components/GridTemplate'
 import Content from 'components/Content'
-import BlogHeader from 'components/BlogHeader'
-import BlogFooter from 'components/BlogFooter'
 import DisqusWrapper from 'components/DisqusWrapper'
 
-const content = ({ post, disqusConfig }) => {
+import PostHeader from 'components/PostHeader'
+import PostFooter from 'components/PostFooter'
+import PostNav from 'components/PostNav'
+
+const content = ({ post, disqusConfig, next, previous }) => {
   return (
     <section>
-      <BlogHeader
+      <PostHeader
         image={post.frontmatter.image}
         tags={post.frontmatter.tags}
         date={post.frontmatter.date}
@@ -22,8 +24,11 @@ const content = ({ post, disqusConfig }) => {
       />
       <Content>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <BlogFooter />
       </Content>
+
+      <PostFooter />
+
+      <PostNav previous={previous} next={next} />
 
       <DisqusWrapper disqusConfig={disqusConfig} />
     </section>
@@ -34,7 +39,7 @@ const BlogPost = (props) => {
   const post = props.data.markdownRemark
   const next = props.pageContext.next
   const previous = props.pageContext.previous
-
+ 
   const disqusConfig = {
     url: `https://felipefialho.com${post.slug}`,
     identifier: post.id,
@@ -48,7 +53,7 @@ const BlogPost = (props) => {
         description={post.frontmatter.description}
         image={`https://felipefialho.com${post.frontmatter.image}`}
       />
-      <GridTemplate content={content({ post, disqusConfig })} />
+      <GridTemplate content={content({ post, disqusConfig, next, previous })} />
     </Layout>
   )
 }

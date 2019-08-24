@@ -7,7 +7,7 @@ import * as R from 'components/Responsive'
 
 import * as S from './styled'
 
-const BlogHeader = ({ 
+const PostHeader = ({ 
   image, 
   tags, 
   date, 
@@ -16,9 +16,9 @@ const BlogHeader = ({
   description 
 }) => {
   return (
-    <S.BlogHeader>
+    <S.PostHeader>
       <R.GreaterThanTablet>
-        <S.BlogHeaderImage fluid={image.childImageSharp.fluid} />
+        <S.PostImage fluid={image.childImageSharp.fluid} />
       </R.GreaterThanTablet>
       <DateTime>
         {date}
@@ -29,15 +29,15 @@ const BlogHeader = ({
       <S.Title>{title}</S.Title>
       <S.Subtitle>{description}</S.Subtitle>
       <Tags tags={tags} />
-    </S.BlogHeader>
+    </S.PostHeader>
   )
 }
 
-BlogHeader.propTypes = {
+PostHeader.propTypes = {
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   tags: PropTypes.node.isRequired,
 }
 
-export default BlogHeader
+export default PostHeader
