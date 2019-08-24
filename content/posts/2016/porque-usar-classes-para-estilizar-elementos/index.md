@@ -90,7 +90,7 @@ Seguindo a lógica do Atomic CSS, os elementos **1** e **2** seriam títulos per
 
 Vamos imaginar que o nome do organismo é `.place` e o nome da molécula é `.card` na seguinte estrutura HTML.
 
-````html
+```html
 <section class="place">
   <div class="place__container">
     <h1>Lugares vistos recentemente</h1>
@@ -124,11 +124,11 @@ Vamos imaginar que o nome do organismo é `.place` e o nome da molécula é `.ca
     </a>
   </div>
 </section>
-````
+```
 
 #### Como eu fazia e dava merda
 
-````stylus
+```stylus
 // A molécula
 .card
   h2
@@ -151,7 +151,7 @@ Vamos imaginar que o nome do organismo é `.place` e o nome da molécula é `.ca
 
   p
   ...
-````
+```
 
 ##### Por que dava merda?
 
@@ -163,7 +163,7 @@ Vamos imaginar que o nome do organismo é `.place` e o nome da molécula é `.ca
 
 Para evitar que as moléculas herdassem o estilo dos organismos, tentei dar estilos apenas para os filhos diretos.
 
-````stylus
+```stylus
 // A mólecula
 .card
   > h2
@@ -186,7 +186,7 @@ Para evitar que as moléculas herdassem o estilo dos organismos, tentei dar esti
 
   > p
   ...
-````
+```
 
 ##### Por que dava merda?
 
@@ -198,7 +198,7 @@ Dependemos que os elementos sejam filhos diretos de outros para que funcionem.
 
 Lembrando que uso Stylus...
 
-````stylus
+```stylus
 // A molécula
 .card
   // Textos
@@ -231,11 +231,11 @@ Lembrando que uso Stylus...
   // Etc
   &__container
   ...
-````
+```
 
 E no HTML fica assim.
 
-````html
+```html
 <section class="place">
   <div class="place__container">
     <h1 class="place--title">Lugares vistos recentemente</h1>
@@ -270,7 +270,7 @@ E no HTML fica assim.
     </a>
   </div>
 </section>
-````
+```
 
 ##### Porque isso da certo
 
@@ -283,11 +283,11 @@ E no HTML fica assim.
 
 Um dos argumentos usados para customizar os elementos e não as classes, são possíveis redundâncias do código, já que que as classes de alguns elementos acabam ficando exatamente igual ao nome da tag.
 
-````html
+```html
 <header class="header"></header>
 <footer class="footer"></footer>
 <main class="main"></main>
-````
+```
 
 Não sei porque isso seria um problema, já que o HTML resolve semântica e o CSS resolve estilo. Mas caso isso incomode, nada te impede de utilizar outros nomes para as classes.
 
@@ -305,7 +305,7 @@ Textos de conteúdo ou de blogs, gerados por um CMS por exemplo, de maneira nenh
 
 Nesse caso, seguindo a lógica do Atomic CSS, teríamos uma molécula chamada `.content`, com as configurações de tipografia.
 
-````stylus
+```stylus
 .content
   > h1
   ...
@@ -329,7 +329,7 @@ Nesse caso, seguindo a lógica do Atomic CSS, teríamos uma molécula chamada `.
 
   > p
   ...
-````
+```
 
 Dessa forma, é possível escrever o texto livremente, adicionar em qualquer lugar do projeto e as configurações vão funcionar.
 

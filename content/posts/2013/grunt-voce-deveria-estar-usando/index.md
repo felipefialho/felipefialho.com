@@ -3,7 +3,7 @@ title: "Grunt - Você deveria estar usando"
 date: 2013-06-04 00:00:01
 description: "Dessa vez vou explicar as tarefas que atualmente estou utilizando para automatizar meu trabalho"
 image: featured.jpg
-tags: ["js"]
+tags: ["javascript"]
 ---
 
 ### O projeto
@@ -14,19 +14,19 @@ Como sempre, deixei a base que estou utilizando no [Github](https://github.com/f
 
 #### [Clean](https://github.com/gruntjs/grunt-contrib-clean)
 
-````js
+```js
 clean: {
   dist: {
     src: ["dist/"]
   }
 },
-````
+```
 
 Limpo a pasta de distribuição.
 
 #### [Copy](https://github.com/gruntjs/grunt-contrib-copy)
 
-````js
+```js
 copy: {
   dist: {
     files: [
@@ -45,13 +45,13 @@ copy: {
     ]
   }
 },
-````
+```
 
 Copio os arquivos necessários para rodar o projeto para a pasta de distribuição, observem que excluo `!` alguns arquivos (less, plugins, etc...) pois são desnecessários na versão final, já que ficarão concatenados e minificados depois.
 
 #### [Uglify](https://github.com/gruntjs/grunt-contrib-uglify)
 
-````js
+```js
 uglify: {
   options: {
     mangle : false
@@ -74,13 +74,13 @@ uglify: {
     }
   }
 },
-````
+```
 
 Aqui concateno/minifico os scripts. Reparem que crio duas versões, **dist** e **dev**, isso porque na versão de desenvolvimento deixo o debug ativado através da opção `beautify`. Adiciono todos os plugins que vou usar no projeto.
 
 #### [Less](https://github.com/gruntjs/grunt-contrib-less)
 
-````js
+```js
 less: {
   dist: {
     options: {
@@ -101,13 +101,13 @@ less: {
     }
   }
 },
-````
+```
 
 Transformo os arquivos LESS em CSS. O mesmo caso da tarefa anterior, crio duas versões, pois na versão **dev** não minifico o CSS. Reparem que aponto para o **style.less**, porque é nele que chamo todos os componentes.
 
 #### [HTMLMin](https://github.com/gruntjs/grunt-contrib-htmlmin)
 
-````js
+```js
 htmlmin: {
   dist: {
     options: {
@@ -122,13 +122,13 @@ htmlmin: {
     }],
   }
 },
-````
+```
 
 Minifico o HTML.
 
 #### [ImageMin](https://github.com/gruntjs/grunt-contrib-imagemin)
 
-````js
+```js
 imagemin: {
   dist: {
     options: {
@@ -142,13 +142,13 @@ imagemin: {
     }],
   }
 },
-````
+```
 
 Um dos plugins mais interessantes. Aqui comprimimos as imagens, sem perder qualidade. Fundamental para qualquer projeto.
 
 #### [Watch](https://github.com/gruntjs/grunt-contrib-watch)
 
-````js
+```js
 watch: {
   dev : {
     files : [
@@ -158,13 +158,13 @@ watch: {
     tasks : [ 'uglify:dev', 'less:dev']
   }
 }
-````
+```
 
 Pedimos para o Grunt "olhar" as modificações e iniciar determinada tarefa. No caso peço para ele observar qualquer alteração nos arquivos .less, .js e no arquivo base do Grunt. Dessa forma ele realiza as tarefas em tempo real.
 
 #### Comandos para executar
 
-````js
+```js
 // Dev
 grunt.registerTask( 'dev', ['uglify:dev', 'less:dev'] );
 
@@ -174,7 +174,7 @@ grunt.registerTask( 'build', [ 'clean', 'copy:dist',
 
 // Watch
 grunt.registerTask( 'w', [ 'watch' ] );
-````
+```
 
 Uso `grunt dev` para compilar a versão de desenvolvimento e `grunt build` para compilar a versão de distribuição. Observem que algumas ações executo apenas na versão final. Para o Grunt "olhar" o projeto rodo `grunt w`.
 

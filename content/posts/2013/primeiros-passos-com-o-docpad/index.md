@@ -3,7 +3,7 @@ title: "Primeiros passos com o Docpad"
 date: 2013-05-21 00:00:01
 description: "No último post dei uma breve explicação sobre geradores estáticos. Algumas pessoas me pediram para fazer um tutorial básico do Docpad"
 image: featured.gif
-tags: ["js"]
+tags: ["javascript"]
 ---
 
 ## NodeJS e o NPM
@@ -22,15 +22,15 @@ Para instalar em outros sistemas operacionais, pode ler esse [passo a passo](htt
 
 2. Procure atualizações no NPM com o comando
 
-````bash
+```bash
 npm install -g npm
-````
+```
 
 3. Instale o Docpad
 
-````bash
+```bash
 npm install -g docpad
-````
+```
 
 ## Criando um projeto
 
@@ -38,21 +38,21 @@ npm install -g docpad
 
 **2.** Crie uma nova pasta para o projeto
 
-````bash
+```bash
 mkdir NOME-DO-PROJETO
-````
+```
 
 **3.** Entre na pasta
 
-````bash
+```bash
 cd NOME-DO-PROJETO
-````
+```
 
 **4.** Inicie o projeto
 
-````bash
+```bash
 docpad run
-````
+```
 
 **5.** Escolha o esqueleto que deseja usar
 
@@ -66,17 +66,17 @@ Para criar esse site, usei o esqueleto 1 - HTML5 Boilerplate.
 
 Agora considerando que você tenha escolhido um esqueleto, na pasta do projeto digite
 
-````bash
+```bash
 npm install
-````
+```
 
 Isso vai instalar as dependências do projeto.
 
 Rode novamente
 
-````bash
+```bash
 docpad run
-````
+```
 
 Você deve alterar os arquivos da pasta **src/**, o Docpad automaticamente vai gerar uma pasta **out/** com os HTMLs gerados, essa pasta você não deve alterar.
 

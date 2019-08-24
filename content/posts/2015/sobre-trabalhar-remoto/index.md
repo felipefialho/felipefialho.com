@@ -1,9 +1,9 @@
 ---
-title: Sobre trabalhar remoto
+title: "Sobre trabalhar remoto"
 date: 2015-06-10 00:00:01
-description: Depois de 6 meses, sim, 6 meses, resolvi sair da inércia e voltar a escrever.
+description: "Depois de 6 meses, sim, 6 meses, resolvi sair da inércia e voltar a escrever"
 image: featured.jpg
-tags: []
+tags: ["carreira", "lifestyle", "misc"]
 ---
 
 Na verdade, no início do ano, ainda estava em processo de recuperação mental do super corrido final de 2014 e logo em seguida as energias foram focadas na [Conferência CSS Brasil](http://cssconfbrasil.com.br).
@@ -34,7 +34,7 @@ Fora isso, assinei o [Spotify](https://www.spotify.com), isso ajuda a manter min
 
 ## Horários
 
-Não é porque não tem ninguém te supervionando diretamente que você vai dormir as 5:00 e acordar depois do 12:00.
+Não é porque não tem ninguém te supervisionando diretamente que você vai dormir as 5:00 e acordar depois do 12:00.
 
 O ideal é ajustar sua rotina de acordo com as outras pessoas da sua equipe.
 

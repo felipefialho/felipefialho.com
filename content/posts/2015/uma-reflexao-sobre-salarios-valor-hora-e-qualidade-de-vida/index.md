@@ -1,9 +1,9 @@
 ---
-title: Uma reflexão sobre salários, valor hora e qualidade de vida
-date: 2014-09-28 00:00:01
-description: Esses dias estava observando os carros presos no transito e as pessoas na correria maluca do dia-a-dia quando fiz uma reflexão sobre qualidade de vida, salários, valor hora, a vida, o universo e tudo mais.
+title: "Uma reflexão sobre salários, valor hora e qualidade de vida"
+date: 2015-09-28 00:00:01
+description: "Esses dias estava observando os carros presos no transito e as pessoas na correria maluca do dia-a-dia quando fiz uma reflexão sobre qualidade de vida, salários, valor hora, a vida, o universo e tudo mais"
 image: featured.jpg
-tags: []
+tags: ["carreira", "lifestyle", "misc"]
 ---
 
 ## A questão
@@ -14,9 +14,9 @@ Seguindo as regras do regime CLT, a renda liquida mensal seria de R$ 4.692,09 (R
 
 Mas o que importa de verdade é o valor hora. Quanto maior seu valor hora, em tese, maior será sua qualidade de vida, já que vai precisar trabalhar menos horas para ter um salário compatível com seu estilo de vida. Mas por enquanto não vou focar nessa questão. Vamos fazer uma conta e ver qual o valor hora dessa pessoa:
 
-8 horas por dia x 22 dias = 176
-
-4.692,09 / 176 = R$ 26,65 é o valor hora.
+> 8 horas por dia x 22 dias = 176
+>
+> 4.692,09 / 176 = R$ 26,65 é o valor hora.
 
 ## Aprofundando essa questão
 
@@ -30,9 +30,9 @@ Observem, esse tempo de 8h já pulou para 12h!
 
 Vamos as contas:
 
-12h por dia x 22 dias = 264
-
-4.692,09 / 264 = **R$ 17,77** é o valor hora real dessa pessoa.
+> 12h por dia x 22 dias = 264
+>
+> 4.692,09 / 264 = **R$ 17,77** é o valor hora real dessa pessoa.
 
 Se a pessoa tiver que gastar com gasolina, estacionamento e etc, esse valor hora pode ser ainda menor!
 
@@ -54,7 +54,9 @@ Vamos as contas novamente!
 
 Ou seja, ele gastaria 9:25h envolvido com o trabalho.
 
-4.692,09 / 203,5 = **R$ 23,05** seria o valor hora do nosso amigo agora.
+> 4.692,09 / 203,5 = **R$ 23,05** 
+>
+> Esse seria o valor hora do nosso amigo agora.
 
 ### Empresa B
 
@@ -64,13 +66,15 @@ Ou seja, ele gastaria 9:25h envolvido com o trabalho.
 
 O salário liquido mensal, já prevendo 13º e férias seria de R$ 6.303,20.
 
-6.303,20 / 292,6 = **R$ 21,54** seria o valor hora caso ele aceitasse esse emprego.
+> 6.303,20 / 292,6 = **R$ 21,54** 
+>
+> Esse seria o valor hora caso ele aceitasse esse emprego.
 
 ### Qual seria sua escolha?
 
 Mesmo com um salário mensal menor nosso amigo teria uma qualidade de vida muito maior no primeiro emprego, e nessa vaga ele teria a oportunidade de estudar e se desenvolver, ou seja, seria mais interessante a longo prazo. Afinal, ele ficaria menos cansado, mais disposto, possivelmente renderia mais e não ficaria estagnado.Dessa forma novas oportunidades iriam aparecer na sua vida, não só no aspecto profissional, como também no pessoal.
 
-E o mais incrível: o seu valor hora seria maior.
+> E o mais incrível: o seu valor hora seria maior.
 
 ## Sugestões para "aumentar" seu valor hora
 

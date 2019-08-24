@@ -26,7 +26,7 @@ Isso porque, através dessas técnicas conseguimos de fato fornecer um estado pa
 
 Vamos observar o HTML:
 
-````html
+```html
 <!-- Carousel -->
 <div class="carousel">
   <div class="carousel-inner">
@@ -55,7 +55,7 @@ Vamos observar o HTML:
     </ol>
   </div>
 </div>
-````
+```
 
 Existe um `<input class="carousel-open" type="radio" hidden >` antes de cada item.
 
@@ -65,35 +65,35 @@ Para os bullets de indicadores, também usamos `<label>` com o `for` apotando pa
 
 E agora o CSS passo a passo:
 
-````css
+```css
 .carousel-inner {
   position: relative;
   overflow: hidden;
 }
-````
+```
 
 O `overflow: hidden` para nada aparecer fora do bloco e o `position: relative` para os filhos ficarem absolutos em relação a ele.
 
-````css
+```css
 .carousel-item {
   position: absolute;
   .opacity(0);
   .transition(opacity .6s ease-out);
 }
-````
+```
 
 Deixamos todos os itens invisíveis através da opacidade 0\. É definida uma animação de 6 segundos durante a mudança de opacidade. O `position: absolute` serve para os itens ficarem posicionados sem influenciar no tamanho do container.
 
-````css
+```css
 .carousel-open:checked + .carousel-item {
   position: static;
   .opacity(100);
 }
-````
+```
 
 Atribuímos que quando o `.carousel-item` for o irmão imediato `+` do `.carousel-open` (no caso um `<input radio hidden>`) que estiver checkado, ficará visível e vai ficar com o `position: static`, e assim terá um tamanho que vai influenciar o container.
 
-````css
+```css
 .carousel-control {
   display: none;
 }
@@ -101,13 +101,13 @@ Atribuímos que quando o `.carousel-item` for o irmão imediato `+` do `.carouse
 #carousel-1:checked ~ .control-1,
 #carousel-2:checked ~ .control-2,
 #carousel-3:checked ~ .control-3 {display: block;}
-````
+```
 
 Esse pedaço de código é para que os controles (as setas) funcionem da maneira esperada. Por padrão elas ficam com `display: none` e passam a ter `display: block` quando o irmão `~` especifico estiver checkado.
 
 No HTML, definimos três pares de `label` que servirão como controles (no caso um carrossel com três itens), cada um deles habilita um item, e esses vão habilitar o par de `label` necessária.
 
-````css
+```css
 .carousel-bullet {
   color: #fff;
 }
@@ -117,7 +117,7 @@ No HTML, definimos três pares de `label` que servirão como controles (no caso 
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
   color: @color-primary;
 }
-````
+```
 
 Aqui ativamos o indicador. Basicamente, quando o item ativo for irmão do par de controle especifico, e esse também for irmão do indicador que desejamos alcançar (exemplo `li:nth-child(x)`)... ele também ficará ativo.
 
@@ -127,7 +127,7 @@ Aqui ativamos o indicador. Basicamente, quando o item ativo for irmão do par de
 
 O HTML:
 
-````html
+```html
 <!-- Collapse -->
 <div class="collapse">
   <label class="collapse-open" for="collapse-1">Lorem ipsum dolor sit amet</label>
@@ -138,7 +138,7 @@ O HTML:
     </div>
   </div>
 </div>
-````
+```
 
 Também vamos usar `<input hidden />`, mas nesse caso vamos usar um `type="checkbox"`.
 
@@ -146,7 +146,7 @@ E se precisar que o Collapse funcione como um "accordion", basta usar `type="rad
 
 E o CSS:
 
-````css
+```css
 .collapse-painel {
   display: none;
 }
@@ -154,7 +154,7 @@ E o CSS:
 .collapse-open:checked ~ .collapse-painel {
   display: block;
 }
-````
+```
 
 Esse é bem simples, por padrão todos os `.collapse-painel` vão ser `display: none` e quando o elemento `.collapse-open` estiver checkado, o `.collapse-painel` irmão `~` vai assumir `display: block`.
 
@@ -164,7 +164,7 @@ Esse é bem simples, por padrão todos os `.collapse-painel` vão ser `display: 
 
 O HTML:
 
-````html
+```html
 <!-- Dropdown -->
 <div class="dropdown">
   <label for="dropdown-1" class="btn btn-dropdown">One Dropdown</label>
@@ -173,30 +173,30 @@ O HTML:
     ...
   </div>
 </div>
-````
+```
 
 O funcionamento é muito parecido com o Collapse, um `<input hidden />`, com `type="checkbox"`.
 
 E o CSS:
 
-````css
+```css
 .dropdown-inner {
   position: absolute;
   .opacity(0);
   .transition(opacity .1s);
   visibility: hidden;
 }
-````
+```
 
 O dropdown terá `position: absolute` e por padrão vai ter `.opacity(0)` e `visibility: hidden` para ficar escondido. O motivo de usar `visibility: hidden` e não `display: none` é porque dessa forma conseguimos adicionar efeito de transição, aplicado com `.transition(opacity .1s);`.
 
-````css
+```css
 .dropdown-hover:hover .dropdown-inner,
 .dropdown-open:checked ~ .dropdown-inner {
   .opacity(100);
   visibility: visible;
 }
-````
+```
 
 Quando o `.dropdown-hover` ou `.dropdown-open` estiverem com status `:hover ou :checked`, o `.dropdown-inner` irmão `~` vai ficar visível.
 
@@ -206,7 +206,7 @@ Quando o `.dropdown-hover` ou `.dropdown-open` estiverem com status `:hover ou :
 
 O HTML:
 
-````html
+```html
 <a href="#modal-one" class="btn">Example</a>
 
 <!-- Modal -->
@@ -224,13 +224,13 @@ O HTML:
     </div>
   </div>
 </div>
-````
+```
 
 Também poderia ser usado a técnica do `<input hidden />`, mas dessa vez vamos usar o `:target`. Temos portanto uma estrutura padrão de Modal com o botão fazendo referencia ao `id` do modal que desejamos ativar.
 
 O CSS:
 
-````css
+```css
 .modal {
 
   // This is modal bg
@@ -257,13 +257,13 @@ O CSS:
   }
 
 }
-````
+```
 
 O `:before` cria o background do modal (o fundo escuro), dessa forma não precisamos criar nenhum elemento adicional, por padrão ele tem `display: none`.
 
 Através do `:target` informamos que o background (`:before`) terá `display: block` e o elemento `.modal-dialog` terá o translate zerado e `top: 20%`.
 
-````css
+```css
 // Mixin for transition/transform
 .transition-transform(@transition) {
   -webkit-transition: -webkit-transform @transition;
@@ -284,7 +284,7 @@ Através do `:target` informamos que o background (`:before`) terá `display: bl
   max-width: 600px;
   z-index: 1111;
 }
-````
+```
 
 Deixamos com `.translate(0, -500%)`, assim ele fica fora da área visível, para a animação usamos `.transition-transform(~"0.3s ease-out")`, que está definido em um mixin. O `top` inicial fica definido com `-100%`.
 
@@ -294,7 +294,7 @@ Deixamos com `.translate(0, -500%)`, assim ele fica fora da área visível, para
 
 O HTML:
 
-````html
+```html
 <!-- Tab -->
 <div class="tab">
 
@@ -324,7 +324,7 @@ O HTML:
   </div>
 
 </div>
-````
+```
 
 Mais um caso de uso do `<input hidden />` do tipo `radio`.
 
@@ -332,7 +332,7 @@ A maior diferença dessa estrutura para a usada normalmente para tabs, é não t
 
 O CSS:
 
-````css
+```css
 .tab{
   position: relative;
 }
@@ -341,11 +341,11 @@ O CSS:
   display: inline-block;
   min-height: 150px;
 }
-````
+```
 
 Adicionamos `position: relative` na `.tab` para que os elementos absolutos se posicionem a partir dele. No `.tab-painel` colocamos um tamanho minimo e `display: inline-block` para que fique lado-a-lado.
 
-````css
+```css
 .tab-nav {
   border: @gray-light solid 1px;
   cursor: pointer;
@@ -358,11 +358,11 @@ Adicionamos `position: relative` na `.tab` para que os elementos absolutos se po
 .tab-open:checked ~ .tab-nav {
   background-color: @gray-lighter;
 }
-````
+```
 
 Aqui damos algumas características visuais simples para a `.tab-nav`.
 
-````css
+```css
 .tab-inner {
   .opacity(0);
   margin-top: @space;
@@ -375,7 +375,7 @@ Aqui damos algumas características visuais simples para a `.tab-nav`.
   .opacity(100);
   visibility: visible;
 }
-````
+```
 
 Definimos que a `.tab-inner` por padrão seja invisível e absoluta. Em seguida definimos que ela ficará visível quando o `.tab-open` irmão estiver como `:checked`.
 

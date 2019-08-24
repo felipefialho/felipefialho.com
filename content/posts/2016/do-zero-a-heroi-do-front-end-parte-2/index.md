@@ -1,20 +1,10 @@
 ---
-title: Do Zero a Herói Front-End (Parte 2)
+title: "Do Zero a Herói Front-End (Parte 2)"
 date: 2016-06-14 00:00:01
-description: Um guia completo para aprender desenvolvimento Front-End.
+description: "Um guia completo para aprender desenvolvimento Front-End"
 image: featured.png
-tags: []
+tags: ["carreira", "estudos", "css", "html", "javascript"]
 ---
-
-## Sobre esse artigo
-
-O texto a seguir é uma tradução livre do fantástico artigo [From Zero to Front-End Hero (Part 2)](https://medium.freecodecamp.com/from-zero-to-front-end-hero-part-2-adfa4824da9b#.342vpy7aq) publicado no Medium pelo [@jonathanzwhite](https://twitter.com/jonathanzwhite).
-
-Então quero agradece-lo primeiro por ter escrito esse ótimo texto, segundo por ter permitido que eu fizesse essa tradução.
-
-Importante ressaltar que a tradução não é literal, adaptei algumas partes para facilitar a compreensão. Caso encontre erros graves de tradução pode abrir uma [pull-request](https://github.com/felipefialho/felipefialho.github.io) com a correção do problema ou uma [issue informando aonde é o erro](https://github.com/felipefialho/felipefialho.github.io/issues).
-
-______
 
 Este artigo é a segunda parte da série "Do Zero a Herói Front-End". Na primeira parte, você aprendeu a criar layouts com HTML e CSS, usando algumas das melhores práticas. Na parte dois, vamos nos focar em aprender JavaScript como uma linguagem independente, adicionar interatividade a interfaces, design JavaScript, padrões de arquitetura e como construir aplicações web.
 
@@ -53,10 +43,10 @@ O DOM é uma estrutura representacional dos documentos HTML. É uma árvore estr
 
 JavaScript interage com o DOM para mudar e atualizar ele. Aqui está um exemplo onde podemos selecionar um elemento HTML e alterar o seu conteúdo:
 
-````
+```
 var container = document.getElementById('container');
 container.innerHTML = 'New Content!';
-````
+```
 
 Não se preocupe, foi só um exemplo simples. Você pode fazer muito mais do que isso manipulando o DOM com JavaScript. Para saber mais sobre como usar JavaScript para interagir com o DOM, leia as seguintes sessões do MDN, [The Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model).
 
@@ -105,10 +95,10 @@ Eu escolhi o site do AirBnB porque os nomes de classe CSS são relativamente sim
 
 Se você ficar preso, use o guia [JavaScript Functions and Helpers](https://plainjs.com/JavaScript) como referência. Eu baseei a maioria dessas tarefas fora dele, abaixo está um exemplo de como completar o primeiro bullet:
 
-````
+```
 var header = document.querySelector('.text-branding')
 header.innerText = ‘Boop'
-````
+```
 
 O principal objetivo deste experimento é fazer algumas das coisas que você aprendeu sobre JavaScript e manipulação de DOM.
 
@@ -118,10 +108,13 @@ O principal objetivo deste experimento é fazer algumas das coisas que você apr
 
 Usando CodePen, escreva um JavaScript básico que usa manipulação do DOM e requer alguma lógica de programação para funcionar. O foco deste experimento é pegar algumas das coisas que você aprendeu no [Do Zero a Herói Front-End](/blog/2016/do-zero-a-heroi-do-front-end-parte-1) e combinar com JavaScript. Aqui estão alguns exemplos para referência que podem servir de inspiração.
 
-- [Mood Color Generator](http://codepen.io/mecarter/pen/RNomVo)
-- [Calculator](http://codepen.io/nodws/pen/heILd)
-- [JavaScript Quiz](http://codepen.io/jasonchan/pen/wMaEwN)
-- [Playable Canvas Asteroids](http://codepen.io/jeffibacache/pen/bzBsp)
+http://codepen.io/mecarter/pen/RNomVo
+
+http://codepen.io/nodws/pen/heILd
+
+http://codepen.io/jasonchan/pen/wMaEwN
+
+http://codepen.io/jeffibacache/pen/bzBsp
 
 ### Mais JavaScript
 
@@ -145,7 +138,7 @@ Quando você fazer mais projetos com JavaScript, você encontrará alguns concei
 
 Existem dois tipos de abordagens de como o JavaScript interage com o DOM: imperativa e declarativa. De um lado, a programação declarativa foca no _o que_ acontece. Do outro lado, programação imperativa foca no _o que_ e também em _como_.
 
-````
+```
 var hero = document.querySelector('.hero')
 hero.addEventListener(‘click’, function() {
 var newChild = document.createElement(‘p’)
@@ -155,7 +148,7 @@ newChild.setAttribute(‘data-info’, ‘header’)
 hero.appendChild(newChild)
 })
 }
-````
+```
 
 Este é um exemplo de programação imperativa em que nós consultamos manualmente um elemento e guardamos o estado dele no DOM. Em outras palavras, estamos focando em _como_ conseguir alguma coisa. O maior problema com este código é que ele é frágil. Se alguém mudar o nome da classe no HTML de `hero` para `villain`, o _event listener_ não va funcionar mais, já que não vai existir a classe `hero` no DOM.
 
@@ -370,3 +363,11 @@ Não consigo enfatizar o quanto é útil é ler um bom código. Aprenda como pro
 No final deste guia, você deve ter uma compreensão sólida de fundamentos do JavaScript e como aplicá-los na Web. Lembre-se, este guia te fornece um mapa geral do caminho. Se você quer se tornar um herói Front-End, é importante que você gaste tempo trabalhando em projetos para aplicar estes conceitos. Quanto mais projetos você fazer, e quanto mais se apaixonar por eles, mais você vai aprender.
 
 Este artigo é a segunda parte da série de duas partes. O que está faltando neste guia é uma introdução do [Node](https://nodejs.org/en), que é uma plataforma que permite que o JavaScript rode em servidores. No futuro, posso escrever uma parte três que vai falar sobre o desenvolvimento do lado do servidor com o Node e coisas como bancos de dados [noSQL](https://en.wikipedia.org/wiki/NoSQL).
+
+## Sobre esse artigo
+
+Esse texto foi uma tradução livre do fantástico artigo [From Zero to Front-End Hero (Part 2)](https://medium.freecodecamp.com/from-zero-to-front-end-hero-part-2-adfa4824da9b#.342vpy7aq) publicado no Medium pelo [@jonathanzwhite](https://twitter.com/jonathanzwhite).
+
+Então quero agradece-lo primeiro por ter escrito esse ótimo texto, segundo por ter permitido que eu fizesse essa tradução.
+
+Importante ressaltar que a tradução não é literal, adaptei algumas partes para facilitar a compreensão. Caso encontre erros graves de tradução pode abrir uma [pull-request](https://github.com/felipefialho/felipefialho.github.io) com a correção do problema ou uma [issue informando aonde é o erro](https://github.com/felipefialho/felipefialho.github.io/issues).

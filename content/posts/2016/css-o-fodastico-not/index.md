@@ -1,9 +1,9 @@
 ---
-title: O fodástico :not()
+title: "O fodástico :not()"
 date: 2016-17-11 00:00:01
-description: Quando se trata de evitar resetar propriedades, o :not() é o cara.
+description: "Quando se trata de evitar resetar propriedades, o :not() é o cara"
 image: featured.png
-tags: []
+tags: ["css"]
 ---
 
 ## As lindas pseudo-class
@@ -16,19 +16,19 @@ Provavelmente as pseudo-class mais conhecidas sejam as `:nth-child()`, `:last-ch
 
 Só para contextualizar, no passado para fazer uma tabela com cores alternadas era preciso fazer isso aqui.
 
-````html
+```html
 <table>
   <tr class="even"> </tr>
   <tr class="odd"> </tr>
 </table>
-````
+```
 
 E agora basta fazer isso.
 
-````css
+```css
 tr { background: #fff; }
 tr:nth-child(odd) { background: #eee; }
-````
+```
 
 Sem classe extra, sem porra nenhuma. Limpo e bonito. :)
 
@@ -48,7 +48,7 @@ Sabe aquela `li` cheia de bordas e margins que deixa o layout feio no último el
 
 Muita gente faz algo assim.
 
-````stylus
+```stylus
 li
   border-bottom 1px solid #eee
   margin-bottom 2rem
@@ -58,77 +58,76 @@ li
     border-bottom 0
     margin-bottom 0
     padding-bottom 0
-````
+```
 
 Olhem essas três propriedades sendo resetadas, muito feio né?
 
 Agora observem a elegância com que o `:not()` resolve isso.
 
-````stylus
+```stylus
 li
   &:not(:last-child)
     border-bottom 1px solid #eee
     margin-bottom 1rem
     padding-bottom 1rem
-````
+```
 
 Quer que determinado estilo seja adicionado em todos os elementos, mas não em uma classe especifica?
 
-````stylus
+```stylus
 p:not(.foo)
   font-size 2rem
-````
+```
 
 Ou o inverso disso... que o estilo seja adicionado em uma classe, mas não em um elemento especifico.
 
-````stylus
+```stylus
 .title:not(h2)
   color $brand-primary
-````
+```
 
-#### E tem mais...
+## E tem mais...
 
-Também é possível usar o `:not()` combinado com outras pseud-class.
+Também é possível usar o `:not()` combinado com outras pseudo-class.
 
 Quer que o elemento tenha um comportamento caso ele seja o último filho, mas não se ele for ao mesmo tempo o primeiro?
 
-````stylus
+```stylus
 .btn:last-child:not(:first-child)
   align-self flex-end
-````
+```
 
 Quer negar dois elementos?
 
-````stylus
+```stylus
 .title:not(h2):not(h3)
   color $brand-primary
-````
+```
 
 Quer que o `:hover` e o `:focus` só funcionem se o elemento não tiver a classe `.active`?
 
-````stylus
+```stylus
 .btn:hover:not(.active),
 .btn:focus:not(.active)
   ...
-````
+```
 
 Quer que o elemento tenha determinadas propriedades apenas Se não estiver vazio?
 
-````stylus
+```stylus
 .foo:not(:empty)
   ...
-````
+```
 
-##### Quer combinar com pseudo-selectors?
+### Quer combinar com pseudo-selectors?
 
 Bora pegar a classe `.title` apenas se ela não for um `h2` e o `.header` não estiver ativo?
 
-````stylus
+```stylus
 .header:not(.active) + .main .title:not(h2)
   ...
-````
+```
 
 O céu é o limite.
 
 Abraços!
-

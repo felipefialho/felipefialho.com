@@ -19,7 +19,7 @@ Você precisa expandir a altura de algum elemento que está escondido e ao invé
 
 Então você faz algo desse tipo:
 
-````css
+```css
 .accordion-content{
   transition: height 1s;
   overflow: hidden;
@@ -29,7 +29,7 @@ Então você faz algo desse tipo:
 .accordion-content.active{
   height: auto;
 }
-````
+```
 
 Estranhamente isso não funciona e você se pergunta o motivo.
 
@@ -45,7 +45,7 @@ A boa notícia é que a resolução dessa limitação é simples!
 
 Usaremos "max-height" para contornar isso.
 
-````css
+```css
 .accordion-content{
   transition: max-height 1s;
   overflow: hidden;
@@ -55,7 +55,7 @@ Usaremos "max-height" para contornar isso.
 .accordion-content.active{
   max-height: 300px;
 }
-````
+```
 
 Adicione uma altura próxima ao tamanho máximo do elemento.
 

@@ -23,7 +23,7 @@ https://codepen.io/felipefialho/pen/KviDw?height=400&default-tab=result
 
 ### No CSS
 
-````css
+```css
 .btn {
   background: #4A8CF6;
   border: 0;
@@ -42,11 +42,11 @@ https://codepen.io/felipefialho/pen/KviDw?height=400&default-tab=result
 .btn:hover{
   opacity: .8;
 }
-````
+```
 
 Informações básicas do estilo do botão.
 
-````css
+```css
 .btn-progress {
   cursor: default;
   overflow: hidden;
@@ -56,11 +56,11 @@ Informações básicas do estilo do botão.
 .btn-progress:hover {
   opacity: 1;
 }
-````
+```
 
 Quando o botão estiver no estado "processando", vai ter posição relativa, e será zerada qualquer interação que o usuário possa ter, por exemplo "cursor" e "hover".
 
-````css
+```css
 .btn-progress:after {
   animation: progress-bar-stripes 0.5s linear infinite;
   background-color: #0b4986;
@@ -74,7 +74,7 @@ Quando o botão estiver no estado "processando", vai ter posição relativa, e s
   top: 0;
   width: 100%;
 }
-````
+```
 
 Use `:after` para adicionar os estilos.
 
@@ -83,22 +83,22 @@ Use `:after` para adicionar os estilos.
 3. Em seguida use "background-gradients" para criar listras diagonais.
 4. E por último, as chamadas da animação.
 
-````css
+```css
 @keyframes progress-bar-stripes {
   to   { background-position: 40px 0; }
   from { background-position: 0 0; }
 }
-````
+```
 
 Agora criamos a animação apenas invertendo a posição do gradiente, dando o efeito desejado.
 
 ### No JavaScript
 
-````js
+```js
 $('.btn').click( function(){
   $(this).toggleClass('btn-progress');
 });
-````
+```
 
 Apenas um "gatilho" para conseguirem ver o efeito funcionando.
 

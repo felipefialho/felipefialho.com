@@ -1,20 +1,10 @@
 ---
-title: Do Zero a Herói Front-End (Parte I)
+title: "Do Zero a Herói Front-End (Parte I)"
 date: 2016-05-20 00:00:01
-description: Um guia completo para aprender desenvolvimento Front-End.
+description: "Um guia completo para aprender desenvolvimento Front-End"
 image: featured.png
-tags: []
+tags: ["carreira", "estudos", "css", "html", "javascript"]
 ---
-
-## Sobre esse artigo
-
-O texto a seguir é uma tradução livre do fantástico artigo [From Zero to Front-end Hero (Part 1)](https://medium.freecodecamp.com/from-zero-to-front-end-hero-part-1-7d4f7f0bff02#.vg97q5yd8) publicado no Medium pelo [@jonathanzwhite](https://twitter.com/jonathanzwhite).
-
-Então quero agradece-lo primeiro por ter escrito esse ótimo texto, segundo por ter permitido que eu fizesse essa tradução.
-
-Importante ressaltar que a tradução não é literal, adaptei algumas partes para facilitar a compreensão. Caso encontre erros graves de tradução pode abrir uma [pull-request](https://github.com/felipefialho/felipefialho.github.io) com a correção do problema ou uma [issue informando aonde é o erro](https://github.com/felipefialho/felipefialho.github.io/issues).
-
-______
 
 Lembro-me quando eu comecei a aprender desenvolvimento Front-End. Encontrei tantos artigos e fiquei tão sobrecarregado pela quantidade de material que seria necessário aprender que não sabia nem por onde começar.
 
@@ -54,9 +44,11 @@ Vá para o Dribbble e procure um design que seja simples o bastante para você c
 
 Depois que você tiver escolhido um design, vá em frente e tente codificar no CodePen. Se você ficar travado, lembre-se que o [StackOverflow](http://stackoverflow.com) é seu amigo. Outra prática útil é ir em sites como [Medium](http://medium.com), [AirBnB](http://www.airbnb.com) e [Dropbox](http://www.dropbox.com), usando a ferramenta de inspeção do seu browser, para ver como eles conseguem alcançar diferentes layouts e estilos. Também dê uma olhada em algumas [pens no CodePen](http://codepen.io/pens). Peguei algumas referencias legais:
 
-- [Twitter Widget](http://codepen.io/cameronbaney/pen/gfjLJ)
-- [Article News Card](http://codepen.io/jonathanzwhite/pen/GZVKmE)
-- [Simple Flat Menu](http://codepen.io/Jeplaa/pen/adnoH)
+https://codepen.io/cameronbaney/pen/gfjLJ
+
+https://codepen.io/jonathanzwhite/pen/GZVKmE
+
+https://codepen.io/Jeplaa/pen/adnoH
 
 Se sua versão ficar diferente da original, não se sinta desencorajado. Continue praticando com diferentes layouts e você vai notar melhorias a cada tentativa.
 
@@ -148,9 +140,9 @@ Ser capaz de efetivamente refatorar código é uma habilidade importante de um d
 
 A seguir temos algumas coisas para perguntar para você mesmo quando você estiver refatorando seu código.
 
-- O nome das suas classes são ambiguas? Daqui 6 meses você ainda vai ser capaz de entender o que o nome da classe significa?
+- O nome das suas classes são ambíguas? Daqui 6 meses você ainda vai ser capaz de entender o que o nome da classe significa?
 - O seu HTML e CSS são semânticos? Ao olhar para seu código você é capaz de discernir rapidamente significado estrutural e relacional?
-- Você está utilizando o mesmo código de cor hexadecimal mais de uma vez em seu código? Faria mais sentido refatorar e colocar em uma váriavel do Sass?
+- Você está utilizando o mesmo código de cor hexadecimal mais de uma vez em seu código? Faria mais sentido refatorar e colocar em uma variável do Sass?
 - Será que seu trabalho funciona tão bem no Safari quanto funciona no Chrome?
 - Você poderia substituir o seu código de layout para algum *grid system* como o [Skeleton](http://getskeleton.com)?
 - Você está usando `!important` frequentemente? Como você pode corrigir isso?
@@ -207,3 +199,11 @@ Convenções de código são projetadas para manter o seu código legível e de 
 ## Considerações finais
 
 Esperamos que no final desse artigo você esteja familiarizado com HTML e CSS e tenha alguns projetos em desenvolvimento. A melhor maneira de aprender desenvolvimento Front-End é através de construção de projetos e experimentação. Lembre-se, todo desenvolvedor Front-End teve que começar de algum lugar. É melhor começar agora do que amanhã!
+
+## Sobre esse artigo
+
+Esse texto é uma tradução livre do fantástico artigo [From Zero to Front-end Hero (Part 1)](https://medium.freecodecamp.com/from-zero-to-front-end-hero-part-1-7d4f7f0bff02#.vg97q5yd8) publicado no Medium pelo [@jonathanzwhite](https://twitter.com/jonathanzwhite).
+
+Então quero agradece-lo primeiro por ter escrito esse ótimo texto, segundo por ter permitido que eu fizesse essa tradução.
+
+Importante ressaltar que a tradução não é literal, adaptei algumas partes para facilitar a compreensão. Caso encontre erros graves de tradução pode abrir uma [pull-request](https://github.com/felipefialho/felipefialho.github.io) com a correção do problema ou uma [issue informando aonde é o erro](https://github.com/felipefialho/felipefialho.github.io/issues).

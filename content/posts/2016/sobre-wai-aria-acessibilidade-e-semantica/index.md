@@ -28,30 +28,30 @@ Na maioria das vezes o correto seria utilizar a tag `<button>`, mas por alguma l
 
 Então, bora dar um significado para esse botão!
 
-````html
+```html
 <a href="#" data-modal="#modal-1" role="button">Abre o modal!</a>
-````
+```
 
 #### logo
 
 Antigamente era comum utilizarmos a tag `<h1>` e adicionar a imagem e esconder o texto via CSS.
 
-````html
+```html
 <h1 class="logo">
   <a href="#">
     Empresa foda!
   </a>
 </h1>
-````
+```
 
-````css
+```css
 .logo {
   background: url
   height: 80px
   text-indent: -999em
   width: 160px
 }
-````
+```
 
 Pare de fazer isso o quanto antes!
 
@@ -59,50 +59,50 @@ A imagem do logo é uma das informações mais importantes do projeto, e pode te
 
 O WAI-ARIA nos ajuda a fornecer significado.
 
-````html
+```html
 <a class="logo" role="logo">
   <img src="/img/logo.svg" alt="Empresa foda!">
 </a>
-````
+```
 
 #### banner
 
 É possível ter vários `<header>` no projeto, então essa `role` ajuda a informar aonde está o header principal, geralmente o do topo.
 
-````html
+```html
 <header class="header" role="banner">
 </header>
-````
+```
 
 #### contentinfo
 
 Também é possível que um projeto tenha vários `<footer>`, com essa `role` podemos marcar o rodapé da página.
 
-````html
+```html
 <footer class="footer" role="contentinfo">
 </footer>
-````
+```
 
 #### search
 
 Ainda não temos um elemento `search` no HTML. Mas podemos dar uma mãozinha.
 
-````html
+```html
 <form class="search" role="search">
   <input type="search" class="search--control" placeholder="Faça uma busca :)">
   <button class="search--btn">Buscar!</button>
 </form>
-````
+```
 
 #### dialog
 
 Normalmente usado para elementos como modal. Que só estarão ativos após a ação do usuário.
 
-````html
+```html
 <div class="modal" role="dialog" tabindex="-1">
 </div>
 
-````
+```
 
 #### Vamos falar sobre redundância
 
@@ -116,19 +116,19 @@ E um [ótimo artigo sobre o tema aqui](http://html5doctor.com/on-html-belts-and-
 
 Essa `role` também deve ser única na página, normalmente utilizada em conjunto com a tag `<main>`.
 
-````html
+```html
 <main class="main" role="main">
 </main>
-````
+```
 
 ##### navigation
 
 Essa `role` auxilia elementos de navegação.
 
-````html
+```html
 <nav class="navbar" role="navigation">
 </nav>
-````
+```
 
 #### complementary
 
@@ -136,26 +136,26 @@ Sabe aqueles conteúdos e informações que não são as mais importante da pág
 
 Podemos usar essa `role` para informar tal função.
 
-````html
+```html
 <aside class="content__complementary" role="complementary">
 </aside>
-````
+```
 
 #### !important
 
 Como qualquer propriedade, as roles podem ser alteradas via CSS. Você sempre devia usar classes, mas caso você tenha algum problema quanto a isso, também é possível usar assim.
 
-````html
+```html
 <a role="logo">
   <img src="/img/logo.svg" alt="Empresa foda!">
 </a>
-````
+```
 
-````css
+```css
 a[role="logo"] {
   margin: 2rem
 }
-````
+```
 
 Existem MUITAS roles, que cobrem praticamente qualquer situação, você pode ver a [lista completa aqui](https://www.w3.org/WAI/PF/HTML/wiki/RoleAttribute).
 
@@ -165,14 +165,14 @@ Você consegue usar essas propriedades para informar se determinado elemento est
 
 #### aria-hidden
 
-````html
+```html
 <a href="#" title="Acessar o Facebook">
   Facebook
   <svg aria-hidden="true" class="icon">
     <use xlink:href="/assets/svg/icons.svg#facebook"></use>
   </svg>
 </a>
-````
+```
 
 No exemplo acima, o link tem um ícone com um significado apenas visual, já que a informação importante está no texto. Sendo assim, o [aria-hidden="true"](https://www.w3.org/TR/wai-aria/states_and_properties#aria-hidden) faz com que leitores de tela ignorem esse elemento.
 
@@ -182,11 +182,11 @@ No exemplo acima, o link tem um ícone com um significado apenas visual, já que
 
 De novo um exemplo com ícone.
 
-````html
+```html
 <svg aria-label="Facebook" class="icon">
   <use xlink:href="/assets/svg/icons.svg#facebook"></use>
 </svg>
-````
+```
 
 Ao contrário do outro exemplo, dessa vez não tínhamos um texto ao lado, tornando o ícone um elemento importante na navegação. Então ao invés de usar o `aria-hidden="true"`, usamos o `aria-label` para informar o significado do ícone.
 
@@ -194,14 +194,14 @@ Ao contrário do outro exemplo, dessa vez não tínhamos um texto ao lado, torna
 
 O [Deivid Marques](https://twitter.com/deividmarques) adicionou no CSS Components, [um dos melhores exemplos que já vi de aria-label](http://www.felipefialho.com/css-components/#component-tooltip). Aqui é possível ver CSS e HTML trabalhando juntos para melhorar semanântica e acessibilidade.
 
-````html
+```html
 <div class="tooltip" aria-label="Informações em tooltip"></div>
-````
+```
 
-````css
+```css
 .tooltip:after
   content: attr(aria-label)
-````
+```
 
 ## Conclusão
 

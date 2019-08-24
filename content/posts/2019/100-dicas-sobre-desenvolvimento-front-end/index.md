@@ -3,7 +3,7 @@ title: "100 dicas sobre desenvolvimento Front-end"
 date: 2019-01-14 00:00:01
 description: "👉 Brincadeira que virou uma thread bem legal: 💯 dicas rápidas sobre Desenvolvimento Front-end"
 image: featured.png
-tags: ["html", "js", "css"]
+tags: ["html", "javascript", "css"]
 ---
 
 Nos últimos dias o Twitter recebeu várias threads super úteis partindo do principio: “Dá um RT ou uma curtida que eu faço um tweet sobre o tema”.

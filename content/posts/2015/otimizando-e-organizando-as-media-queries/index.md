@@ -1,9 +1,9 @@
 ---
-title: Otimizando e Organizando as Media Queries
+title: "Otimizando e Organizando as Media Queries"
 date: 2015-07-23 00:00:01
-description: Quando o assunto é Mobile First, Media Queries e otimização de código eu tenho uma regra. Evitar ao máximo resetar propriedades.
+description: "Quando o assunto é Mobile First, Media Queries e otimização de código eu tenho uma regra. Evitar ao máximo resetar propriedades"
 image: featured.jpg
-tags: []
+tags: ["css", "workflow"]
 ---
 
 ## Começando do começo
@@ -40,12 +40,7 @@ Como disse no inicio do artigo, quando se trata de otimizar o código para essa 
 
 O primeiro ponto, é que crio algumas variáveis de breakpoints e replico elas conforme a necessidade. Peguei esse costume no tempo em que usava o Bootstrap e mantive até hoje, eu acho que faz todo sentido e torna o fluxo mais fluido.
 
-````stylus
-//
-// Media Queries
-// -----------------------------------------------tags: []
----
-
+```styl
 $screen-xs   = 480px // Extra small screen
 $screen-sm   = 768px // Small screen
 $screen-md   = 992px // Medium screen
@@ -58,15 +53,15 @@ $screen-sm-max  = ($screen-md - 1)
 $screen-md-max  = ($screen-lg - 1)
 $screen-lg-max  = ($screen-xlg - 1)
 $screen-xlg-max = ($screen-xxlg - 1)
-````
+```
 
 O segundo ponto é que eu uso Stylus e SEMPRE adiciono as linhas de Media Querie aninhadas dentro do elemento. E não no final do arquivo do componente, e muito menos em um arquivo separado.
 
-````stylus
+```styl
 .header
     @media (min-width $screen-sm)
        ...
-````
+```
 
 O terceiro ponto, é que nos exemplos desse artigo não vou levar em consideração propriedades muito especificas de cada dispositivo, resoluções em retina, nem nada do tipo, mas o conceito é exatamente o mesmo.
 
@@ -78,37 +73,32 @@ Vamos pensar na seguinte situação, que alias é muito comum: Você tem um menu
 
 Seria exatamente assim:
 
-<p data-height="400" data-theme-id="light" data-slug-hash="jPvdgp" data-default-tab="result" data-user="felipefialho" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/jPvdgp/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/felipefialho">@felipefialho</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/felipefialho/pen/jPvdgp
 
 - Já na versão desktop, ele deve estar sempre visível, não deve estar fixo e os itens devem ser posicionados um ao lado do outro
 
 Então ele ficaria dessa forma:
 
-<p data-height="400" data-theme-id="light" data-slug-hash="LVJaEG" data-default-tab="result" data-user="felipefialho" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/LVJaEG/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/felipefialho">@felipefialho</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/felipefialho/pen/LVJaEG/
 
 Observem que utilizo o mesmo HTML (Jade) em ambos os exemplos.
 
 ### Agora vamos juntar os dois códigos seguindo a minha metodologia
 
-O resultado será esse! (pode dar resize para ver as mudanças)
-
-<p data-height="400" data-theme-id="light" data-slug-hash="GJXeJv" data-default-tab="result" data-user="felipefialho" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/GJXeJv/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/felipefialho">@felipefialho</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/felipefialho/pen/GJXeJv/
 
 Observem bem o código.
 
 Como foi feito?
 
 - Tudo que é padrão para ambas as resoluções fica fora das Media Queries
-- Propriedades especificas, que só devem funcionar em determinada resolução, ficam dentro da Media Querie relacionada
+- Propriedades especificas, que só devem funcionar em determinada resolução, ficam dentro das Media Queries relacionadas
 
 Eu não zerei **nenhuma** propriedade e evitei que código desnecessário fosse renderizado em resoluções que não deveriam funcionar.
 
-### "Mas se eu adicionar um monte de breakpoints aninhados dentro dos elementos não vou adicionar muito código extra?"
+> "Mas se eu adicionar um monte de breakpoints aninhados dentro dos elementos não vou adicionar muito código extra?"
 
-NÃO! :D
+NÃO! 😄
 
 Por sorte, temos plugins [para o Grunt](https://github.com/buildingblocks/grunt-combine-media-queries) e [para o Gulp](https://www.npmjs.com/package/gulp-combine-media-queries) que resolvem esse problema.
 

@@ -73,7 +73,7 @@ O scripts que modificamos o tempo todo vão ser concatenados com esse arquivo de
 
 ### Exemplo de uso:
 
-````js
+```js
 // Task: Concat
 // ---------------------------------
 concat: {
@@ -115,7 +115,7 @@ watch: {
     tasks: ['concat', 'uglify']
   }
 }
-````
+```
 
 Observem que gero um arquivo JavaScript chamado `_vendor.js` através do [Concat](https://github.com/gruntjs/grunt-contrib-concat), e nesse arquivo estão as dependências externas do bower. O `_vendor.js` só vai ser alterado caso seja necessário modificar essas dependências.
 

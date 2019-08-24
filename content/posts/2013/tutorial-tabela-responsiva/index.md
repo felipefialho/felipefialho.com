@@ -29,14 +29,14 @@ Observem que adiciono duas classes. A classe responsável pelo efeito é `table-
 
 A primeira parte do bloco, trata apenas de estilos, vou pular diretamente para o efeito.
 
-````css
+```css
 @media (max-width: 767px) {
 
-````
+```
 
 Adiciono essas configurações apenas para resoluções de até 767px.
 
-````css
+```css
 .table-responsive {
   display: block;
   position: relative;
@@ -50,28 +50,28 @@ Adiciono essas configurações apenas para resoluções de até 767px.
 .table-responsive tr {
   display: block;
 }
-````
+```
 
 Tabela funcionando como um bloco.
 
-````css
+```css
 .table-responsive td,
 .table-responsive th {
   height: 35px;
 }
-````
+```
 
 Defino um tamanho para as células.
 
-````css
+```css
 .table-responsive thead {
   float: left;
 }
-````
+```
 
 A "mágica" é feita aqui, o `thead` é “flotado” para esquerda.
 
-````css
+```css
 .table-responsive tbody {
   width: auto;
   position: relative;
@@ -79,15 +79,15 @@ A "mágica" é feita aqui, o `thead` é “flotado” para esquerda.
   -webkit-overflow-scrolling: touch;
   white-space: nowrap;
 }
-````
+```
 
 Assim como definimos que o `tbody` terá um scroll horizontal quando não comportar todo o conteúdo. Além disso, é importante colocar `-webkit-overflow-scrolling: touch` para pleno funcionamento em alguns dispositivos touch.
 
-````css
+```css
 .table-responsive tbody tr {
   display: inline-block;
 }
-````
+```
 
 Por último, posicionamos as linhas lado-a-lado, isso causa o efeito que desejamos.
 
@@ -109,37 +109,37 @@ Assim como no exemplo anterior, uso uma classe apenas para aplicar o efeito, no 
 
 ### No CSS
 
-````css
+```css
 @media (max-width: 480px) {
 
-````
+```
 
 Adiciono essas configurações apenas para resoluções de até 480px.
 
-````css
+```css
 .table-action thead {
   display: none;
 }
-````
+```
 
 Retiro o head ta tabela.
 
-````css
+```css
 .table-action tr {
   border-bottom: 1px solid #dddddd;
 }
 .table-action td {
   border: 0;
 }
-````
+```
 
 Mudo o posicionamento das bordas, para causar o efeito que necessito.
 
-````css
+```css
 .table-action td:not(:first-child) {
   display: block;
 }
-````
+```
 
 Por último... aviso que todas as `td`, com exceção da primeira, será um bloco, dessa forma vão se alinhar uma embaixo da outra.
 

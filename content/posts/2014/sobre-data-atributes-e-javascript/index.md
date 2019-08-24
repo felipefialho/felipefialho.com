@@ -2,7 +2,7 @@
 title: "Sobre Data Atributes e JavaScript"
 date: 2014-07-08 00:00:01
 description: "Nos últimos projetos comecei a testar o uso do [data-*] do HTML5 como seletor no JavaScript. Agora vou listar algumas coisas que observei com essa prática"
-tags: ["js"]
+tags: ["javascript"]
 ---
 
 A [W3C](http://www.w3.org/html/wg/drafts/html/master/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes) diz o seguinte:
@@ -19,21 +19,21 @@ Ao invés de acessar o elemento via JavaScript através de `.class` ou `#id`, po
 
 Por exemplo (em jQuery) para iniciar uma interação touch em um menu, podemos chamar via `.class`:
 
-````js
+```js
 $('.nav');
-````
+```
 
 Ou via `#id`:
 
-````js
+```js
 $('#nav');
-````
+```
 
 Mas a ideia aqui é fazer a chamada via `[data-*]`:
 
-````js
+```js
 $('[data-trigger="nav-touch"]');
-````
+```
 
 ## Por que usar dessa forma?
 
@@ -41,31 +41,31 @@ O principal motivo, é para separar o estilo da funcionalidade JavaScript. Apres
 
 Imaginem novamente o menu do exemplo acima, ele apresenta uma função para interação em _swipe_ em telas Touch. Então chamamos a função, atribuindo em todas a classes `.nav`:
 
-````js
+```js
 $('.nav');
-````
+```
 
 Porém, em uma das páginas. O menu precisa ter o mesmo estilo, mas não deveria ter essa funcionalidade de _swipe_. Poderíamos atribuir a interação a um #id e adicionar o id nos elementos que devem apresentar esse comportamento.
 
-````js
+```js
 $('#nav-touch');
-````
+```
 
 Para complicar mais, esse menu aparece duas vezes em outra página, porém como sabemos, não podemos repetir um #id na mesma página. E fazer a chamada para cada #id separadamente também não é uma solução adequada.
 
 Poderíamos então usar uma classe sem estilo, que serviria somente para a chamada no JavaScript, algo como:
 
-````js
+```js
 $('.js-nav-touch');
-````
+```
 
 Essa é uma solução viável e funcional, mas manter as classes apenas para estilização no CSS seria mais elegante.
 
 Então finalmente, podemos usar o [data-*] para isso.
 
-````js
+```js
 $('[data-trigger="nav-touch"]');
-````
+```
 
 Dessa forma, basta adicionar [data-trigger="nav-touch"] ao elemento que deve apresentar esse comportamento.
 
@@ -74,11 +74,11 @@ Dessa forma, basta adicionar [data-trigger="nav-touch"] ao elemento que deve apr
 
 E claro, também é possível manipular os Data Atributes através de CSS, portanto, podemos adicionar animações ou algum estilo específico:
 
-````css
+```css
 .nav[data-trigger="nav-touch"] {
   ...
 }
-````
+```
 
 ## Na prática!
 

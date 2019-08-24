@@ -11,11 +11,11 @@ A importância de um CSS modularizado e o Atomic Design foi muito difundido nos 
 
 Imagino que a maneira na qual os Media Queries são mais utilizados é adicionando as condicionais no fim do CSS, algo como:
 
-````css
+```css
 @media (max-width: 767px) {
   ...
 }
-````
+```
 
 Um dos principais motivos para eu utilizar dessa forma, era nosso bom (só que não) e velho amigo IE8\. Ainda forneço suporte mínimo para esse navegador e como ele não aceita Media Queries, eu desenvolvia a versão mais "básica" para desktop, e ia "limpando" conforme a resolução.
 
@@ -33,7 +33,7 @@ Lembrei então que o [Bootstrap 3](http://getbootstrap.com) já estava trabalhan
 
 Não tem segredo. Simplesmente adiciono os Media Queries em sequencia da classe que desejo alterar. Caso use algum pré-processador, isso será ainda mais simples, porque você pode deixar tudo organizado. Usando o LESS como exemplo:
 
-````css
+```css
 .navbar {
   margin-top: 20px;
   @media (min-width: @screen-sm-min) {
@@ -45,11 +45,11 @@ Não tem segredo. Simplesmente adiciono os Media Queries em sequencia da classe 
     top: 40px; left: 20px;
   }
 }
-````
+```
 
 Isso vai gerar:
 
-````css
+```css
 .navbar {
   margin-top: 20px;
 }
@@ -66,7 +66,7 @@ Isso vai gerar:
     left: 20px;
   }
 }
-````
+```
 
 Dessa forma conseguimos trabalhar com Mobile First de um jeito realmente interessante, e tudo flui muito naturalmente. Setamos primeiro as propriedades que são comuns para todas as resoluções e _progressivamente_ vamos adicionando as funcionalidades para resoluções maiores.
 

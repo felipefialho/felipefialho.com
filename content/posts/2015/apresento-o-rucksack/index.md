@@ -1,9 +1,9 @@
 ---
-title: Apresento o Rucksack
-date: 2015-21-10 00:00:01
-description: Nesse artigo vou mostrar para vocês o Rucksack, um pacote de features desenvolvido em PostCSS que pode ser de grande ajuda no seu workflow.
+title: "Apresento o Rucksack"
+date: 2015-10-21 00:00:01
+description: "Nesse artigo vou mostrar para vocês o Rucksack, um pacote de features desenvolvido em PostCSS que pode ser de grande ajuda no seu workflow"
 image: featured.jpg
-tags: []
+tags: ["css"]
 ---
 
 ## Introdução
@@ -28,31 +28,31 @@ Vou mostrar uma configuração utilizando o Grunt + Stylus, mas é possível ver
 
 Baixe o [PostStylus](https://github.com/seaneking/poststylus) e o Rucksack.
 
-````bash
+```bash
 $ npm install --save poststylus rucksack-css
-````
+```
 
 Em seguida crie uma função para utilizar o PostCSS na sua configuração do Stylus no Grunt:
 
-````js
+```js
 var rucksack = require('rucksack-css');
 
 var postcss = function(){
   return require('poststylus')(['rucksack-css']);
 }
-````
+```
 
 Caso queira utilizar outra ferramenta em PostCSS, como o Lost, também deve chamar dessa forma, por exemplo:
 
-````js
+```js
 var postcss = function(){
   return require('poststylus')(['rucksack-css', 'lost']);
 }
-````
+```
 
 Depois é só chamar no `use` do Stylus dentro do seu Gruntfile:
 
-````js
+```js
 stylus: {
   dev: {
     options: {
@@ -60,7 +60,7 @@ stylus: {
     }
   }
 }
-````
+```
 
 ### Opções
 
@@ -72,19 +72,19 @@ Adiciona compatibilidade de algumas propriedades para navegadores antigos.
 
 Por exemplo:
 
-````stylus
+```stylus
 .foo
   opacity 0.8
-````
+```
 
 Vai gerar:
 
-````css
+```css
 foo {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   opacity: 0.8;
 }
-````
+```
 
 #### Autoprefixer
 
@@ -92,32 +92,32 @@ Faz a mágica de adicionar prefixos automaticamente para você, e sempre se base
 
 Por exemplo:
 
-````stylus
+```css
 .foo
   display flex
-````
+```
 
 Vai gerar:
 
-````css
+```css
 .foo {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex
 }
-````
+```
 
 Como acho essas funções importantes, deixei ambas habilitadas.
 
-````js
+```js
 var postcss = function() {
   return require('poststylus')([rucksack({
     autoprefixer: true,
     fallbacks: true
   })]);
 }
-````
+```
 
 ## Features
 
@@ -133,10 +133,10 @@ Pode ler toda a documentação [aqui](http://simplaio.github.io/rucksack/docs/#r
 
 Como utilizo REM, defino no HTML um range entre 7px e 10px.
 
-````stylus
+```stylus
 html
   font-size responsive 7px 10px
-````
+```
 
 E pronto!
 
@@ -150,14 +150,14 @@ Outra mão na roda, sabe quando a gente precisa deixar um elemento absoluto ou f
 
 Basta fazer isso:
 
-````stylus
+```stylus
 .foo
   position absolute 0
-````
+```
 
 E você terá isso:
 
-````css
+```css
 .foo {
   position: absolute;
   top: 0;
@@ -165,7 +165,7 @@ E você terá isso:
   bottom: 0;
   left: 0;
 }
-````
+```
 
 ### Property Aliases
 
@@ -173,37 +173,37 @@ Tem preguiça de escrever o nome completo de alguma propriedade?
 
 Crie um alias!
 
-````stylus
+```stylus
 @alias
   fs font-size
 
 .foo
   fs 16px
-````
+```
 
 Para ter isso:
 
-````css
+```css
 .foo {
   font-size: 16px;
 }
-````
+```
 
 ### Font Src Expansion
 
 Sabe aquelas funções que criamos no pré-processador para gerar nosso font-face mais facilmente? É coisa do passado, agora podemos usar "nativamente".
 
-````stylus
+```stylus
 @font-face
   font-family 'My Font'
   font-path '/my/font/file'
   font-weight normal
   font-style normal
-````
+```
 
 E vai gerar o código completo:
 
-````css
+```css
 @font-face {
   font-family: 'My Font';
   src: url("/my/font/file.eot");
@@ -214,7 +214,7 @@ E vai gerar o código completo:
   font-weight: normal;
   font-style: normal;
 }
-````
+```
 
 ### All The Easings
 
@@ -222,17 +222,17 @@ Um pacote completo com transições incríveis.
 
 Escreva:
 
-````stylus
+```stylus
 .foo
   transition all 250ms ease-in-cubic
-````
+```
 
 E terá:
 
-````css
+```css
 .foo {
   transition: all 250ms cubic-bezier(0.55, 0.055, 0.675, 0.19);}
-````
+```
 
 Chega de perder tempo entrando em sites para gerar o código pra você :)
 
