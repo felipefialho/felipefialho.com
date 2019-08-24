@@ -1,7 +1,7 @@
 import React from 'react'
 import MediaQuery from 'react-responsive'
 
-export const Desktop = ({ children }) => {
+export const GreaterThanDesktop = ({ children }) => {
   return (
     <MediaQuery minWidth={992}>
       { children }
@@ -9,7 +9,7 @@ export const Desktop = ({ children }) => {
   )
 }
 
-export const Tablet = ({ children }) => {
+export const IsTablet = ({ children }) => {
   return (
     <MediaQuery minWidth={768} maxWidth={991}>
       { children }
@@ -25,7 +25,7 @@ export const GreaterThanTablet = ({ children }) => {
   )
 }
 
-export const Mobile = ({ children }) => {
+export const LessThenMobile = ({ children }) => {
   return (
     <MediaQuery maxWidth={767}>
       { children }

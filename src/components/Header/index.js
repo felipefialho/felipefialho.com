@@ -38,12 +38,12 @@ const Header = ({ site: { author }}) => {
           </S.Menu>
         </S.Main>
       </Container>
-      <R.Mobile>
+      <R.LessThenMobile>
         <S.Bar>
           <S.Title>{ author }</S.Title>
           <LightButton />
         </S.Bar>
-      </R.Mobile>
+      </R.LessThenMobile>
     </S.Header>
   )
 }
