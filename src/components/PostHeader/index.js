@@ -16,10 +16,12 @@ const PostHeader = ({
   description 
 }) => {
   return (
-    <S.PostHeader>
-      <R.GreaterThanTablet>
-        <S.PostImage fluid={image.childImageSharp.fluid} />
-      </R.GreaterThanTablet>
+    <S.PostHeader> 
+      {image && (
+        <R.GreaterThanTablet>
+          <S.PostImage fluid={image.childImageSharp.fluid} />
+        </R.GreaterThanTablet>
+      )}
       <DateTime>
         {date}
         {timeToRead && (
