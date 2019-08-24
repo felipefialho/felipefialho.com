@@ -5,7 +5,6 @@ import * as V from 'styles/variables'
 
 const Icon = `
   display: block;
-  fill: currentColor;
   height: ${V.Space.default};
   width: ${V.Space.default};
 `
