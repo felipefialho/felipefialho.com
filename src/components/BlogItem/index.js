@@ -9,50 +9,54 @@ import Tags from 'components/Tags'
 
 import * as S from './styled'
 
-const trackClick = (item) => {
+const trackClick = ({ item, label }) => {
   ReactGA.event({
     category: 'Blog',
     action: 'click',
-    label: `Blog List - Go to ${item}`
+    label: `${label || 'Blog List'} - Go to ${item}`
   })
 }
 
-const BlogPost = ({
+const BlogItem = ({
   slug,
   date,
   timeToRead,
   title,
   tags,
-  description
+  description,
+  isMini
 }) => {
   return (
-    <S.BlogPost
+    <S.BlogItem
       to={`/${slug}`}
       cover
       direction="bottom"
       bg={getActiveTheme()}
       onClick={trackClick(title)}>
         <BoxHandler>
-          <DateTime>
-            {date}
-            {timeToRead && (
-              <span> · Leitura de {timeToRead} min</span>
-            )}
-          </DateTime>
-          <S.Title>{title}</S.Title>
-          <S.Subtitle>{description}</S.Subtitle>
-          <Tags tags={tags} />
+          {date && (
+            <DateTime>
+              {date}
+              {timeToRead && (
+                <span> · Leitura de {timeToRead} min</span>
+              )}
+            </DateTime>
+          )}
+          <S.Title isMini={isMini}>{title}</S.Title>
+          {description && (
+            <S.Subtitle>{description}</S.Subtitle>
+          )}
+          {tags && (
+            <Tags tags={tags} />
+          )}
         </BoxHandler>
-    </S.BlogPost>
+    </S.BlogItem>
   )
 }
 
-BlogPost.propTypes = {
+BlogItem.propTypes = {
   slug: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  tags: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired
 }
 
-export default BlogPost
+export default BlogItem

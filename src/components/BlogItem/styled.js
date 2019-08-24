@@ -4,7 +4,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import * as V from 'styles/variables'
 import * as T from 'styles/typography'
 
-export const BlogPost = styled(AniLink)`
+export const BlogItem = styled(AniLink)`
   display: block;
 
   &:not(:last-child) {
@@ -13,7 +13,8 @@ export const BlogPost = styled(AniLink)`
 `
 
 export const Title = styled.h1`
-  ${T.Heading1}
+  ${props => (props.isMini ? `${T.Heading4}` : `${T.Heading1}`)};
+  
 
   &:not(:first-child) {
     margin-top: ${V.Space.default};
