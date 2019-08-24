@@ -2,7 +2,6 @@
 title: E 5 anos atrás eu me tornava o menino do HTML...
 date: 2014-07-21 00:00:01
 description: Parece que foi ontem, mas faz 5 anos que oficialmente escrevi a primeira linha de código e dava meus primeiros passos em uma profissão que se quer existia.. ou existia?
-image: featured.jpg
 tags: []
 ---
 
