@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 
 import * as S from './styled'
 
-const GridTemplate = ({ content, aside }) => {
+const GridTemplate = ({ content, sidebar }) => {
   return (
     <S.GridTemplate>
-      <aside aria-hidden={!aside}>{aside}</aside>
-      {content}
+      <aside aria-hidden={!sidebar}>{sidebar}</aside>
+      <S.GridContent>{content}</S.GridContent>
     </S.GridTemplate>
   )
 }

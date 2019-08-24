@@ -5,11 +5,11 @@ import * as S from './styled'
 const BlogFooter = () => {
   return (
     <S.BlogFooter>
-      <h2>Me acompanhe por ai! <span
+      <S.Title>Me acompanhe por ai! <span
         className="small"
         role="img"
         aria-label="Emoji mostrando a lingua">😜</span>
-      </h2>
+      </S.Title>
 
       <p>
         - Twitter: <a href="https://twitter.com/felipefialho_" target="_blank" rel="noopener noreferrer" title="Ver Twitter">@felipefialho_</a> <br />
