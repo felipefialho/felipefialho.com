@@ -54,7 +54,6 @@ Vá para o Dribbble e procure um design que seja simples o bastante para você c
 
 Depois que você tiver escolhido um design, vá em frente e tente codificar no CodePen. Se você ficar travado, lembre-se que o [StackOverflow](http://stackoverflow.com) é seu amigo. Outra prática útil é ir em sites como [Medium](http://medium.com), [AirBnB](http://www.airbnb.com) e [Dropbox](http://www.dropbox.com), usando a ferramenta de inspeção do seu browser, para ver como eles conseguem alcançar diferentes layouts e estilos. Também dê uma olhada em algumas [pens no CodePen](http://codepen.io/pens). Peguei algumas referencias legais:
 
-- [Menu App Interface](http://codepen.io/ManarKamel/pen/BooXJw)
 - [Twitter Widget](http://codepen.io/cameronbaney/pen/gfjLJ)
 - [Article News Card](http://codepen.io/jonathanzwhite/pen/GZVKmE)
 - [Simple Flat Menu](http://codepen.io/Jeplaa/pen/adnoH)

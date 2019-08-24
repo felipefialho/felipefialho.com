@@ -118,7 +118,6 @@ O principal objetivo deste experimento é fazer algumas das coisas que você apr
 
 Usando CodePen, escreva um JavaScript básico que usa manipulação do DOM e requer alguma lógica de programação para funcionar. O foco deste experimento é pegar algumas das coisas que você aprendeu no [Do Zero a Herói Front-End](/blog/2016/do-zero-a-heroi-do-front-end-parte-1) e combinar com JavaScript. Aqui estão alguns exemplos para referência que podem servir de inspiração.
 
-- [Periodic Table](http://codepen.io/tony_the_coder/pen/GZdNQY)
 - [Mood Color Generator](http://codepen.io/mecarter/pen/RNomVo)
 - [Calculator](http://codepen.io/nodws/pen/heILd)
 - [JavaScript Quiz](http://codepen.io/jasonchan/pen/wMaEwN)
