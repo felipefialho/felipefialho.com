@@ -12,9 +12,17 @@ export const BlogItem = styled(AniLink)`
   }
 `
 
+const TitleSmall = `
+  ${T.Heading4}
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+`
+
 export const Title = styled.h1`
-  ${props => (props.isMini ? `${T.Heading4}` : `${T.Heading1}`)};
-  
+  ${props => (props.isMini ? `${TitleSmall}` : `${T.Heading1}`)};
 
   &:not(:first-child) {
     margin-top: ${V.Space.default};
