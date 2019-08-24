@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import * as V from 'styles/variables'
 import * as T from 'styles/typography'
 
-export const BlogFooter = styled.footer`
+export const BlogFooter = styled.div`
   ${T.Text1}
   margin-bottom: ${V.Space.lg};
 
