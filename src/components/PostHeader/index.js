@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 import Tags from 'components/Tags'
 import DateTime from 'components/DateTime'
+import ButtonLink from 'components/ButtonLink'
 import * as R from 'components/Responsive'
 
 import * as S from './styled'
@@ -22,6 +23,11 @@ const PostHeader = ({
           <S.PostImage fluid={image.childImageSharp.fluid} />
         </R.GreaterThanTablet>
       )}
+      <S.ButtonBack>
+        <ButtonLink rel="prev" to="/blog/">
+          ← Voltar na listagem
+        </ButtonLink>
+      </S.ButtonBack>
       <DateTime>
         {date}
         {timeToRead && (

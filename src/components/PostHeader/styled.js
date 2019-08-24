@@ -10,12 +10,22 @@ export const PostHeader = styled.header`
   }
 `
 
+export const ButtonBack = styled.div`
+  &:not(:first-child) {
+    margin-top: ${V.Space.default};
+  }
+
+  &:not(:last-child) {
+    margin-bottom: ${V.Space.default};
+  }
+`
+
 export const PostImage = styled(Img).attrs({
   alt: 'Imagem de introdução',
   'aria-hidden': 'true'
 })`
   display: block;
-  height: 20vh;
+  height: 25vh;
   left: calc(-50vw + 50%);
   margin-top: -${V.Height.mainTop};
   object-fit: cover;
@@ -23,7 +33,7 @@ export const PostImage = styled(Img).attrs({
   width: 100vw;
 
   &:not(:last-child) {
-    margin-bottom: ${V.Space.lg};
+    margin-bottom: ${V.Space.default};
   }
 
   &:after {
