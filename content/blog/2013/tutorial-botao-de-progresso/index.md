@@ -1,8 +1,8 @@
 ---
-title: Tutorial - Botão de Progresso
+title: "Tutorial - Botão de Progresso"
 date: 2013-10-12 00:00:01
-description: Nesse artigo, vou mostrar mais um tutorial simples... o desenvolvimento de um botão de progresso, que pode fornecer um feedback importante para o usuário.
-tags: []
+description: "Nesse artigo, vou mostrar mais um tutorial simples... o desenvolvimento de um botão de progresso, que pode fornecer um feedback importante para o usuário"
+tags: ["css"]
 ---
 
 Continuo trabalhando em diversos projetos paralelos, em razão disso estou um pouco desaparecido das comunidades que participo.
@@ -76,9 +76,9 @@ Quando o botão estiver no estado "processando", vai ter posição relativa, e s
 }
 ````
 
-Use **:after** para adicionar os estilos.
+Use `:after` para adicionar os estilos.
 
-1. Em **content** adicione o texto que esse estado do botão terá.
+1. Em `content` adicione o texto que esse estado do botão terá.
 2. Ao definir a posição absoluta, width e height como 100%, ele ficará exatamente em cima do botão (definimos como relativo).
 3. Em seguida use "background-gradients" para criar listras diagonais.
 4. E por último, as chamadas da animação.
@@ -95,8 +95,8 @@ Agora criamos a animação apenas invertendo a posição do gradiente, dando o e
 ### No JavaScript
 
 ````js
-$(".btn").click( function(){
-  $(this).toggleClass("btn-progress");
+$('.btn').click( function(){
+  $(this).toggleClass('btn-progress');
 });
 ````
 

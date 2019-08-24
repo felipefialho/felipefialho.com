@@ -64,7 +64,7 @@ Só para citar algumas:
 
 * [Surveys Frontender](https://survey.frontendbr.com.br/)
 
-* [Escrevi artigos técnicos](https://www.felipefialho.com/blog/)
+* [Escrevi artigos técnicos](/blog/)
 
 * [Escrevi artigos não-técnicos](https://medium.com/@felipefialho)
 

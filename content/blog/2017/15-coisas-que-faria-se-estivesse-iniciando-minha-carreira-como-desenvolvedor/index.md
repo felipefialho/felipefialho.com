@@ -138,7 +138,7 @@ Para alcançar os resultados de forma mais eficaz e conseguir entender o quão d
 
 E seria interessante que esses estudos estivessem atrelados em prazos. Portanto, além de ter um guia das coisas que gostaria de aprender, definiria também um prazo de “entrega” para cada uma dessas metas.
 
-Tenho um artigo chamado “[Aproximando seus estudos de cenários reais](https://www.felipefialho.com/blog/2015/aproximando-seus-estudos-de-cenarios-reais)” em que falo justamente sobre isso, e com certeza teria me ajudado se tivesse descoberto antes sobre a importância de lidar com prazos.
+Tenho um artigo chamado “[Aproximando seus estudos de cenários reais](/blog/2015/aproximando-seus-estudos-de-cenarios-reais)” em que falo justamente sobre isso, e com certeza teria me ajudado se tivesse descoberto antes sobre a importância de lidar com prazos.
 
 ## 14. Não deixaria de ter hobbies ou praticar atividades físicas
 

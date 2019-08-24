@@ -1,8 +1,8 @@
 ---
-title: Falando em organização CSS...
+title: "Falando em organização CSS..."
 date: 2014-11-13 00:00:01
-description: Durante anos escrevemos CSS como se não houvesse amanhã e tínhamos como maiores problemas as diferenças de renderização no IE(ca). E já não era simples.
-tags: []
+description: "Durante anos escrevemos CSS como se não houvesse amanhã e tínhamos como maiores problemas as diferenças de renderização no IE(ca)..."
+tags: ["css"]
 ---
 
 Dando continuidade a série [sobre minha organização e fluxo de trabalho atual](/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores), vou contar um pouco sobre como tenho trabalhado o CSS.
@@ -39,7 +39,7 @@ Como sempre explico, estou dando um exemplo de estrutura em LESS, mas ela serve 
 
 Dentro das (), adicionei uma pequena descrição de cada pasta principal.
 
-````
+```
 less/
 ├── _core/ (Configurações básicas do projeto)
 │   ├── mixins/
@@ -142,19 +142,18 @@ less/
 │   ├── home
 |
 ├── vendor/ (Estiliza dependencias externas)
-````
+```
 
 ## Exemplos Práticos
 
 ### Core
 
-#### _core/margins:
+_core/margins:
 
-````stylus
+```stylus
 //
 // Margins
-// -----------------------------------------------tags: []
----
+// --------------------------------
 
 @space:    20px; // Regular space margin
 
@@ -162,21 +161,19 @@ less/
 @space-sm: (@space / 2); // Small space margin
 @space-md: (@space * 2); // Medium space margin
 @space-lg: (@space * 3); // Large space margin
-````
+```
 
-#### _core/type:
+_core/type:
 
-````stylus
+```stylus
 //
 // Typography
-// -----------------------------------------------tags: []
----
+// --------------------------------
 
 #type {
 
   // Headings
-  // -----------------------------------------------tags: []
----
+  // --------------------------------
 
   .h1() {
     .font(36, 700);
@@ -184,26 +181,24 @@ less/
   }
 
   // Paragraphs
-  // -----------------------------------------------tags: []
----
+  // --------------------------------
 
   .p1() {
     .font(16);
   }
 }
-````
+```
 
 Observem que defino alguns mixins e configurações reaproveitáveis em todo o projeto.
 
-#### Atoms
+### Atoms
 
-#### atoms/headings:
+atoms/headings:
 
-````stylus
+```stylus
 //
 // Headings
-// -----------------------------------------------tags: []
----
+// --------------------------------
 
 h1 {
   margin: 0;
@@ -212,15 +207,14 @@ h1 {
 h1 {
   #type > .h1();
 }
-````
+```
 
-#### atoms/paragraph:
+atoms/paragraph:
 
-````stylus
+```stylus
 //
 // Paragraph
-// -----------------------------------------------tags: []
----
+// --------------------------------
 
 p {
   #type > .p1();
@@ -230,21 +224,20 @@ p {
     margin: 0;
   }
 }
-````
+```
 
 São definidas classes ou elementos bases, que serão utilizadas e modificadas conforme a necessidade das 'molecules', 'organisms' ou 'pages'.
 
 Os elementos devem ser únicos, nunca aninhados.
 
-#### Molecules
+### Molecules
 
-#### molecules/wellness:
+### molecules/wellness:
 
-````stylus
+```stylus
 //
 // Wellness
-// -----------------------------------------------tags: []
----
+// --------------------------------
 
 .wellness {
   text-align: center;
@@ -259,19 +252,18 @@ Os elementos devem ser únicos, nunca aninhados.
     color: @gray;
   }
 }
-````
+```
 
 Modifica os átomos para a criação de um componente especifico.
 
-#### Organisms
+### Organisms
 
-#### organisms/header:
+organisms/header:
 
-````stylus
+```stylus
 //
 // Header
-// -----------------------------------------------tags: []
----
+// --------------------------------
 
 .header {
 
@@ -281,19 +273,18 @@ Modifica os átomos para a criação de um componente especifico.
     text-align: center;
   }
 }
-````
+```
 
 Modifica os átomos e moléculas para a criação de uma sessão do projeto.
 
-#### Pages
+### Pages
 
-#### pages/home:
+pages/home:
 
-````stylus
+```stylus
 //
 // Home
-// -----------------------------------------------tags: []
----
+// --------------------------------
 
 .home {
 
@@ -313,16 +304,16 @@ Modifica os átomos e moléculas para a criação de uma sessão do projeto.
   }
 
 }
-````
+```
 
 Modifica os átomos, moléculas e organismos para a criação de uma página específica do projeto.
 
 ### Dicas rápidas
 
-*   Não se prenda na metodologia, abra espaço para implementar mudanças que vão melhorar a utilização, seja para uso próprio ou para um escopo especifico.
-*   A organização das pastas é muito importante. Você precisa se sentir confortável com a estrutura para não ficar pensando aonde está determinado arquivo.
-*   Não faça aninhamentos maiores do que três níveis, geralmente você não vai precisar passar do segundo nível, quando chegar no terceiro ligue o sinal de alerta e confirme se realmente faz sentido.
-*   Lembre-se que seu workflow não é definitivo. Sempre surgirão ideias e ferramentas para agregar no seu trabalho, esteja de cabeça aberta para mudanças. Porém não faça alterações drásticas antes de amadurecer a idéia.
+* Não se prenda na metodologia, abra espaço para implementar mudanças que vão melhorar a utilização, seja para uso próprio ou para um escopo especifico.
+* A organização das pastas é muito importante. Você precisa se sentir confortável com a estrutura para não ficar pensando aonde está determinado arquivo.
+* Não faça aninhamentos maiores do que três níveis, geralmente você não vai precisar passar do segundo nível, quando chegar no terceiro ligue o sinal de alerta e confirme se realmente faz sentido.
+* Lembre-se que seu workflow não é definitivo. Sempre surgirão ideias e ferramentas para agregar no seu trabalho, esteja de cabeça aberta para mudanças. Porém não faça alterações drásticas antes de amadurecer a idéia.
 
 ### Um plus sobre 'Media Queries'
 
@@ -330,17 +321,16 @@ No começo do ano eu escrevi um post sobre [CSS Modular com Mobile First](/blog/
 
 Não precisa mais ter um arquivo específico para ajustar media-queries. Nessa organização de CSS, cada elemento pode ter sua própria customização aplicada seguindo a idéia do Mobile First.
 
-#### Como?
+### Como
 
 Vamos imaginar que o `.header` precise ser absoluto em resoluções médias, fixo em resoluções grandes e tenha o background branco em telas menores:
 
-#### organisms/header:
+organisms/header:
 
-````stylus
+```stylus
 //
 // Header
-// -----------------------------------------------tags: []
----
+// --------------------------------
 
 .header {
   padding: @space; // Padrão para todas as resoluções
@@ -361,6 +351,6 @@ Vamos imaginar que o `.header` precise ser absoluto em resoluções médias, fix
     // O top, right e left está escalando na resolução 'sm', não precisa repetir :)
   }
 }
-````
+```
 
 Se tiverem alguma dúvida ou quiserem debater sobre o assunto, saiba que o Disqus escala e podem usar os comentários sem medo :p. Abraços!

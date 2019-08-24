@@ -1,8 +1,8 @@
 ---
-title: E 5 anos atrás eu me tornava o menino do HTML...
+title: "E 5 anos atrás eu me tornava o menino do HTML..."
 date: 2014-07-21 00:00:01
-description: Parece que foi ontem, mas faz 5 anos que oficialmente escrevi a primeira linha de código e dava meus primeiros passos em uma profissão que se quer existia.. ou existia?
-tags: []
+description: "Parece que foi ontem, mas faz 5 anos que oficialmente escrevi a primeira linha de código e dava meus primeiros passos em uma profissão que se quer existia.. ou existia?"
+tags: ["carreira"]
 ---
 
 ## Essa história começou um pouco antes...
@@ -17,7 +17,7 @@ Fiz faculdade (ou curso, sei lá) de Comunicação Web e entre as matérias tinh
 
 Apesar desse interesse por Desenvolvimento Web desde pequeno, o mais curioso é que literalmente virei desenvolvedor quase por acaso.
 
-Acabei começando esse curso (que era técnologo) aos 16 anos, então terminei aos 18 anos. Como estava naquela idade de reservista, tive dificuldade para arrumar estágios nessa época. Então quando conclui o curso, não tinha nenhuma experiência e nem acervo técnico que me ajudassem a iniciar em alguma área.
+Comecei esse curso (que era técnologo) aos 16 anos, então terminei aos 18 anos. Como estava naquela idade de reservista, tive dificuldade para arrumar estágios na área nessa época. Consegui apenas empregos com Telemarketing e Suporte. Então quando conclui o curso, não tinha nenhuma experiência e nem acervo técnico que me ajudassem a iniciar em alguma área.
 
 Estava totalmente perdido e sem saber o que estudar ou para qual área seguir. Sendo assim levei quase 6 meses para conseguir a primeira oportunidade, e então ela chegou quando eu menos esperava...
 

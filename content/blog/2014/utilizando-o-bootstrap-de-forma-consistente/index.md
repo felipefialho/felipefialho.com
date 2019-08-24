@@ -1,8 +1,8 @@
 ---
-title: Utilizando o Bootstrap de forma consistente
+title: "Utilizando o Bootstrap de forma consistente"
 date: 2014-09-01 00:00:01
-description: Parte do sucesso do Bootstrap está ligado a facilidade de uso, responsividade e soluções interessantes prontas para usar. Mas será que podemos aperfeiçoar essa utilização?
-tags: []
+description: "Parte do sucesso do Bootstrap está ligado a facilidade de uso, responsividade e soluções interessantes prontas para usar. Mas será que podemos aperfeiçoar essa utilização?"
+tags: ["workflow"]
 ---
 
 Não é segredo que gosto muito do Bootstrap, faz parte do meu workflow e fiquei muito feliz quando minha [primeira contribuição](https://github.com/twbs/bootstrap/pull/11162/files#r7084342) foi aprovada. Dessa forma vou detalhar para vocês como costumo utilizar esse Framework.

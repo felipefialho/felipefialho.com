@@ -1,8 +1,8 @@
 ---
-title: Um conto sobre componentização e quebra de paradigmas
+title: "Um conto sobre componentização e quebra de paradigmas"
 date: 2013-07-29 00:00:01
-description: Melhorar processos é parte essencial do nosso trabalho, mas em algum momento percebemos que só melhorar pode não ser o suficiente, as vezes é preciso quebrar paradigmas.
-tags: []
+description: "Melhorar processos é parte essencial do nosso trabalho, mas em algum momento percebemos que só melhorar pode não ser o suficiente, as vezes é preciso quebrar paradigmas"
+tags: ["workflow"]
 ---
 
 Não, você não é apenas um "mero desenvolvedor", você está no centro de mudanças importantes no nosso mercado e pode influenciar positivamente esse cenário.
@@ -11,10 +11,10 @@ Não, você não é apenas um "mero desenvolvedor", você está no centro de mud
 
 Na maioria das vezes, essas são as etapas resumidas de um projeto...
 
-1.  São criados Wireframes (geralmente pelo Diretor de Arte ou por alguém focado nessa parte)
-2.  Em seguida o Diretor de Arte cria PSD's para TODAS as páginas, não é incomum uns 40 PSD's serem criados.
-3.  O desenvolvedor Front-End cria HTML's e os estilos para todas as páginas e interações.
-4.  Então o desenvolvedor Back-End coloca "vida" no projeto.
+1. São criados Wireframes (geralmente pelo Diretor de Arte ou por alguém focado nessa parte)
+2. Em seguida o Diretor de Arte cria PSD's para TODAS as páginas, não é incomum uns 40 PSD's serem criados.
+3. O desenvolvedor Front-End cria HTML's e os estilos para todas as páginas e interações.
+4. Então o desenvolvedor Back-End coloca "vida" no projeto.
 
 Inclusive em alguns casos praticamente não existe contato entre os integrantes do projeto.
 
@@ -26,7 +26,7 @@ Em algum momento, observei que receber 40 PSD's simplesmente não fazia sentido,
 
 Cheguei a conclusão que seria muito mais lógico trabalhar os **componentes** de forma isolada, e usar eles nas páginas de acordo com a necessidade.
 
-## A importancia do trabalho em equipe
+## A importância do trabalho em equipe
 
 De nada adianta ter idéias para melhorar o processo e não tentar coloca-las em prática e ouvir sugestões do resto da equipe.
 
@@ -42,19 +42,19 @@ A estrutura HTML/CSS/JS dos componentes geralmente seguem linhas de código pare
 
 Após alguns meses e bastante teste, cheguei em um modelo estrutural e organizacional que considero o ideal por enquanto, podem ver nesse artigo: [Sobre organização de componentes com pré-processadores](/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores)
 
-### Como trabalhamos atualmente
+### Como trabalho nesse momento
 
 É um resumo do resumo do processo que estamos seguindo (e que está sempre em estado 'beta')...
 
-1.  Todos os envolvidos participam com o Diretor de Arte no desenvolvimento dos Wireframes.
-2.  Fazemos um levantamento dos componentes que serão utilizados no projeto.
-3.  Diretor de Arte cria layouts base (home e algumas internas) para aprovação e em paralelo trabalha nos componentes.
-4.  Desenvolvo a estrutura base do site (header, footer...).
-5.  Agora já tenho todo o aparato para trabalhar os componentes e pensar em escalabilidade.
-6.  Com a estrutura básica e os componentes prontos, montar prótotipos funcionais passa a ser um "quebra-cabeça", basta juntar as peças e a página está criada!
-7.  Nessa etapa o Diretor de Arte, na maioria dos casos, trabalha apenas nos Wireframes ou rascunhos.
-8.  Faço validações com o Diretor de Arte e com o Back-End após cada página desenvolvida.
-9.  Nas etapas mais avançadas do projeto, o programador Back-End já consegue sozinho criar páginas com os componentes necessários sem precisar alterar nada no HTML/CSS.
+1. Todos os envolvidos participam com o Diretor de Arte no desenvolvimento dos Wireframes.
+2. Fazemos um levantamento dos componentes que serão utilizados no projeto.
+3. Diretor de Arte cria layouts base (home e algumas internas) para aprovação e em paralelo trabalha nos componentes.
+4. Desenvolvo a estrutura base do site (header, footer...).
+5. Agora já tenho todo o aparato para trabalhar os componentes e pensar em escalabilidade.
+6. Com a estrutura básica e os componentes prontos, montar prótotipos funcionais passa a ser um "quebra-cabeça", basta juntar as peças e a página está criada!
+7. Nessa etapa o Diretor de Arte, na maioria dos casos, trabalha apenas nos Wireframes ou rascunhos.
+8. Faço validações com o Diretor de Arte e com o Back-End após cada página desenvolvida.
+9. Nas etapas mais avançadas do projeto, o programador Back-End já consegue sozinho criar páginas com os componentes necessários sem precisar alterar nada no HTML/CSS.
 
 ## Atomic Design
 
@@ -72,7 +72,7 @@ Existem dois ótimos artigos em português, um do [Fabricio Teixeira](http://arq
 
 **OOCSS** (Object Oriented CSS) casa perfeitamente com a idéia de componentes, você passa a criar classes baseadas na função, e pode reutilizar em vários lugares. Tem um post muito bacana do [William Bruno falando sobre isso](http://wbruno.com.br/css/object-oriented-css-a-teoria-das-classes-reutilizaveis-oocss).
 
-Mas CUIDADO, é preciso usar essa técnica com prudencia, algo como `"box full side"` faz sentido, mas `"box big float-left font18 red border"` engessa o código.
+Mas CUIDADO, é preciso usar essa técnica com prudência, algo como `"box full side"` faz sentido, mas `"box big float-left font18 red border"` engessa o código.
 
 ### Pense na manutenção (sem esquecer da performance!)
 

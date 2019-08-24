@@ -1,11 +1,9 @@
 ---
-title: Usando height com CSS Transitions
+title: "Usando height com CSS Transitions"
 date: 2013-11-18 00:00:01
 description: "Hoje me deparei com um problema que alguns de vocês já devem ter passado: A limitação do uso de height com CSS Transitions"
-tags: []
+tags: ["css"]
 ---
-
-Hoje me deparei com um problema que alguns de vocês já devem ter passado, e coloco aqui a resolução: A limitação do uso de "height: auto" em CSS Transitions.
 
 ## Atualização - 20/09/2016
 
@@ -63,9 +61,8 @@ Adicione uma altura próxima ao tamanho máximo do elemento.
 
 Ou seja, na versão ativa do elemento, ele terá uma altura máxima setada, e assim o CSS tem uma base para calcular a transição.
 
-O maior problema é caso o conteúdo seja dinamico e ultrapasse o tamanho máximo que você setou. Nesse caso pode usar JavaScript para calcular a altura.
+O maior problema é caso o conteúdo seja dinâmico e ultrapasse o tamanho máximo que você setou. Nesse caso pode usar JavaScript para calcular a altura.
 
 Deixei um exemplo funcional no <a href="http://codepen.io/felipefialho/pen/ICkwe">CodePen</a> para demonstrar melhor o funcionamento.
 
-<p data-height="368" data-theme-id="0" data-slug-hash="ICkwe" data-user="felipefialho" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/felipefialho/pen/ICkwe'>Animate "height" with CSS Transitions</a> by Felipe Fialho (<a href='http://codepen.io/felipefialho'>@felipefialho</a>) on <a href='http://codepen.io'>CodePen</a>
-<script async src="//codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/felipefialho/pen/ICkwe

@@ -3,7 +3,7 @@ title: É possível utilizar componentes desenvolvidos apenas com CSS?
 date: 2014-04-22 00:00:01
 description: Após o lançamento do CSS Components, escrevo as minhas impressões sobre o quanto é possível utilizar componentes desenvolvidos apenas com CSS.
 image: featured.jpg
-tags: []
+tags: ["css"]
 ---
 
 ## Sobre o projeto
@@ -263,7 +263,7 @@ O `:before` cria o background do modal (o fundo escuro), dessa forma não precis
 
 Através do `:target` informamos que o background (`:before`) terá `display: block` e o elemento `.modal-dialog` terá o translate zerado e `top: 20%`.
 
-````
+````css
 // Mixin for transition/transform
 .transition-transform(@transition) {
   -webkit-transition: -webkit-transform @transition;

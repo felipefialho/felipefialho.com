@@ -1,8 +1,8 @@
 ---
-title: CSS Modular com Mobile First
+title: "CSS Modular com Mobile First"
 date: 2014-03-10 00:00:01
-description: Mobile First vai muito além de código, é um pensamento que precisa existir desde o inicio do projeto. Mas nesse artigo vou abordar apenas codificação para tentar deixar o workflow mais agradável.
-tags: []
+description: "Mobile First vai muito além de código, é um pensamento que precisa existir desde o inicio do projeto. Mas nesse artigo vou abordar apenas codificação para tentar deixar o workflow mais agradável"
+tags: ["css"]
 ---
 
 A importância de um CSS modularizado e o Atomic Design foi muito difundido nos últimos tempos, eu mesmo já escrevi um [artigo sobre o assunto](/blog/2013/um-conto-sobre-componentizacao-e-quebra-de-paradigmas). Mas algo ainda me incomodava ao aplicar First Mobile em conjunto com CSS modular... os Media Queries.
@@ -28,14 +28,6 @@ Mês passado iniciei um novo projeto, e adicionar Media Queries no final do CSS 
 A explicação é simples. Imaginem um componente, é de se esperar que toda a funcionalidade atrelada a ele esteja dentro do seu próprio 'include' (para quem usa pré-processadores). Mas a partir do momento que era necessário "ajustar" o funcionamento dele para outras resoluções no 'include' do media querie, as coisas ficavam esquisitas e eu me sentia desconfortável.
 
 Lembrei então que o [Bootstrap 3](http://getbootstrap.com) já estava trabalhando de uma maneira muito próxima da que eu considerava ideal, e fornecia com a ajuda de plugins, suporte para o IE8\. Então conheci o [Respond.js](https://github.com/scottjehl/Respond) e todos meus problemas com o IE8 se resolveram.
-
-Basta adicionar o seguinte código no `head` e como mágica Media Queries funcionarão perfeitamente no IE.
-
-````html
-<!--[if lt IE 9]>
-<script type='text/JavaScript' src="assets/js/respond.min.js"></script>
-<![endif]-->
-````
 
 ## Modern Workflow...
 

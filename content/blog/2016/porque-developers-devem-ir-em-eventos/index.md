@@ -16,7 +16,7 @@ Por coincidência, alguns dias antes do evento eu tinha criado um [Eric Cartman 
 
 Essa foto é emblemática. Alguns anos depois muitas dessas pessoas tornaram-se desenvolvedores importantes no Brasil e no mundo.
 
-Após esse evento, fui para casa com milhares de ideias. Comecei a estudar muito e passei a ser mais ativo na comunidade. Algum tempo depois desenvolvi um monte de [projetos no Codepen](http://codepen.io/felipefialho), [Piano Keyboard usando CSS e JavaScript](https://www.felipefialho.com/piano), um [Blog](https://www.felipefialho.com/blog), o [CSS Components](https://www.felipefialho.com/csscomponents), o Meetup CSS, ajudei a organizar a primeira Conferencia CSS Brasil e mais recentemente a org [FrontEnd BR no Github](https://github.com/frontendbr/).
+Após esse evento, fui para casa com milhares de ideias. Comecei a estudar muito e passei a ser mais ativo na comunidade. Algum tempo depois desenvolvi um monte de [projetos no Codepen](http://codepen.io/felipefialho), [Piano Keyboard usando CSS e JavaScript](https://www.felipefialho.com/piano), um [Blog](/blog/), o [CSS Components](https://www.felipefialho.com/csscomponents), o Meetup CSS, ajudei a organizar a primeira Conferencia CSS Brasil e mais recentemente a org [FrontEnd BR no Github](https://github.com/frontendbr/).
 
 ![Front in Sampa 2013](front-in-sampa-2013.jpg)
 

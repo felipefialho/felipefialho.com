@@ -1,8 +1,8 @@
 ---
-title: Tutorial - Caixa de compartilhar
+title: "Tutorial - Caixa de compartilhar"
 date: 2013-09-20 00:00:01
-description: Esse artigo é tutorial simples para criar caixas de compartilhar com CSS e um pouco de JavaScript.
-tags: []
+description: "Esse artigo é tutorial simples para criar caixas de compartilhar com CSS e um pouco de JavaScript"
+tags: ["css"]
 ---
 
 Primeiramente, a falta de novas postagens tem um motivo. Estou trabalhando muito e em vários projetos, portanto meu tempo livre diminuiu.
@@ -20,24 +20,10 @@ Nível do tutorial: **Básico**
 A demo funcional está no [CodePen](http://codepen.io/felipefialho/details/IvmJD).
 
 ## Tutorial
-
-### No HTML
-
+ 
 A estrutura é muito simples, um botão de "gatilho" para acionar a funcionalidade e uma lista das redes sociais usadas
 
-<div data-height="354" data-theme-id="0" data-slug-hash="IvmJD" data-user="felipefialho" data-default-tab="html" class="codepen">
-
-  <div class="social-media">
-    <button class="btn-share"><img src="https://cdn2.iconfinder.com/data/icons/internet/512/Share-128.png"></button>
-    <ul class="social-list">
-      <li class="item-1"><a href="#" class="social-link" target="_blank"><img src="http://files.softicons.com/download/social-media-icons/free-social-icons-by-icondrawer/png/128x128/facebook.png"></a></li>
-      <li class="item-2"><a href="#" class="social-link" target="_blank"><img src="http://files.softicons.com/download/social-media-icons/free-social-icons-by-icondrawer/png/128x128/twitter.png"></a></li>
-      <li class="item-3"><a href="#" class="social-link" target="_blank"><img src="http://files.softicons.com/download/social-media-icons/free-social-icons-by-icondrawer/png/128x128/linkedin.png"></a></li>
-    </ul>
-  </div>
-
-  See the Pen [%= penName %>](http://codepen.io/felipefialho/pen/IvmJD) by Felipe Fialho ([@felipefialho](http://codepen.io/felipefialho)) on [CodePen](http://codepen.io)
-</div>
+http://codepen.io/felipefialho/details/IvmJD
 
 ### No CSS
 

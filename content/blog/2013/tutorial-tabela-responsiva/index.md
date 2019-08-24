@@ -1,8 +1,8 @@
 ---
-title: Tutorial - Tabela Responsiva
+title: "Tutorial - Tabela Responsiva"
 date: 2013-10-14 00:00:01
-description: Em layouts responsivos, um dos componentes que sempre me incomodava eram as tabelas. Acredito que isso também ocorra com outros desenvolvedores.
-tags: []
+description: "Em layouts responsivos, um dos componentes que sempre me incomodava eram as tabelas. Nesse artigo vamos tentar contornar esse problema"
+tags: ["css"]
 ---
 
 Por algum tempo usei (e até contribui) com um ótimo plugin chamado [Footable](http://bit.ly/17CGaeG), ele adiciona funcionalidades bem legais nas tabelas e ajuda a resolver um pouco desse problema.
@@ -15,16 +15,15 @@ Mas nunca considerei uma solução definitiva, não gostava de depender de JavaS
 
 Cheguei nessa solução através [desse artigo](http://elvery.net), que mostra algumas demos de tabelas funcionais e responsiva. Após aplicar e comprovar a eficácia dessa técnica, descobri que a [Globo.com](http://www.globo.com) também está usando.
 
-Ela consiste em inverter a posição do **thead** e posicionar o **tbody** na sua direita.
+Ela consiste em inverter a posição do `thead` e posicionar o `tbody` na sua direita.
 
-A demo funcional está no [CodePen](http://codepen.io/felipefialho/pen/hsreD) (redimensione o navegador para visualizar o efeito).
+A demo funcional está no [CodePen](https://codepen.io/felipefialho/pen/hsreD) (redimensione o navegador para visualizar o efeito).
+
+https://codepen.io/felipefialho/pen/hsreD
 
 ### No HTML
 
-<p data-height="500" data-theme-id="light" data-slug-hash="hsreD" data-default-tab="result" data-user="felipefialho" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/hsreD/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/felipefialho">@felipefialho</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-
-Observem que adiciono duas classes. A classe responsável pelo efeito é **table-responsive**, gosto de separar dessa forma e não deixar "genérico", pois consigo definir quais tabelas vão ter esse comportamento.
+Observem que adiciono duas classes. A classe responsável pelo efeito é `table-responsive`, gosto de separar dessa forma e não deixar "genérico", pois consigo definir quais tabelas vão ter esse comportamento.
 
 ### No CSS
 
@@ -70,7 +69,7 @@ Defino um tamanho para as células.
 }
 ````
 
-A "mágica" é feita aqui, o **thead** é “flotado” para esquerda.
+A "mágica" é feita aqui, o `thead` é “flotado” para esquerda.
 
 ````css
 .table-responsive tbody {
@@ -82,7 +81,7 @@ A "mágica" é feita aqui, o **thead** é “flotado” para esquerda.
 }
 ````
 
-Assim como definimos que o **tbody** terá um scroll horizontal quando não comportar todo o conteúdo. Além disso, é importante colocar **-webkit-overflow-scrolling: touch** para pleno funcionamento em alguns dispositivos touch.
+Assim como definimos que o `tbody` terá um scroll horizontal quando não comportar todo o conteúdo. Além disso, é importante colocar `-webkit-overflow-scrolling: touch` para pleno funcionamento em alguns dispositivos touch.
 
 ````css
 .table-responsive tbody tr {
@@ -102,12 +101,11 @@ Pode ser útil principalmente em CMS ou Gerenciadores.
 
 A demo funcional está no [CodePen](http://codepen.io/felipefialho/pen/beEoG) (redimensione o navegador para visualizar o efeito).
 
+https://codepen.io/felipefialho/pen/beEoG?height=400&default-tab=result
+
 ### No HTML
-
-<p data-height="500" data-theme-id="light" data-slug-hash="hsreD" data-default-tab="result" data-user="felipefialho" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/beEoG">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/felipefialho">@felipefialho</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-
-Assim como no exemplo anterior, uso uma classe apenas para aplicar o efeito, no caso **.table-action**.
+ 
+Assim como no exemplo anterior, uso uma classe apenas para aplicar o efeito, no caso `.table-action`.
 
 ### No CSS
 
@@ -143,6 +141,6 @@ Mudo o posicionamento das bordas, para causar o efeito que necessito.
 }
 ````
 
-Por último... aviso que todas as td, com exceção da primeira, será um bloco, dessa forma vão se alinhar uma embaixo da outra.
+Por último... aviso que todas as `td`, com exceção da primeira, será um bloco, dessa forma vão se alinhar uma embaixo da outra.
 
 É isso pessoal, espero que ajude vocês com algum projeto responsivo que necessite de tabelas. Grande abraço!

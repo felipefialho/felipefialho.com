@@ -1,23 +1,19 @@
 ---
-title: Sobre Data Atributes e JavaScript
+title: "Sobre Data Atributes e JavaScript"
 date: 2014-07-08 00:00:01
-description: Nos últimos projetos comecei a testar o uso do [data-*] do HTML5 como seletor no JavaScript. Agora vou listar algumas coisas que observei com essa prática.
-tags: []
+description: "Nos últimos projetos comecei a testar o uso do [data-*] do HTML5 como seletor no JavaScript. Agora vou listar algumas coisas que observei com essa prática"
+tags: ["js"]
 ---
-
-## O que é?
 
 A [W3C](http://www.w3.org/html/wg/drafts/html/master/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes) diz o seguinte:
 
-<blockquote>
-  <cite>A custom Data Atributes is an attribute in no namespace whose name starts with the string "data-", has at least one character after the hyphen, is XML-compatible, and contains no uppercase ASCII letters.</cite>
-</blockquote>
+> A custom Data Atributes is an attribute in no namespace whose name starts with the string "data-", has at least one character after the hyphen, is XML-compatible, and contains no uppercase ASCII letters.
 
 Ou seja, através do atributo data você pode armazenar e recuperar dados. Com isso você guarda pequenas informações de texto e pode manipular através de Javasript.
 
 Como podemos criar qualquer atributo através do prefixo `[data-*]`, esses atributos tem sido utilizados também para iniciar funções.
 
-## Como funciona?
+## Como funciona
 
 Ao invés de acessar o elemento via JavaScript através de `.class` ou `#id`, podemos usar os `[data-attributes]` do HTML5.
 
@@ -86,17 +82,11 @@ E claro, também é possível manipular os Data Atributes através de CSS, porta
 
 ## Na prática!
 
-Para mostrar em funcionamento, criei uma base de código bem rápida (peço que desconsiderem a qualidade do mesmo :p) e imaginei o seguinte cenário:
+Imagine o seguinte cenário:
 
-1.  Uma página que vai apresentar dois menus idênticos visualmente
-2.  Um deles servirá como filtro para tags usando um plugin de "tabs"
-3.  O outro será um menu comum com link para outras páginas
-
-### Em funcionamento:
-
-<iframe width="100%" height="500" src="http://jsfiddle.net/felipefialho/5Qr7b/2/embedded/result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-
-Ou seja, para ativar o plugin de **tabs**, simplesmente usei `[data-toggle="tab"]`, evitando assim atrelar o plugin na classe de estilo `.nav` ou adicionar uma classe extra apenas para chamar a função.
+1. Uma página que vai apresentar dois menus idênticos visualmente
+2. Um deles servirá como filtro para tags usando um plugin de "tabs"
+3. O outro será um menu comum com link para outras páginas
 
 ## E a performance?
 

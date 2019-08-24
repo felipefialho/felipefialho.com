@@ -1,8 +1,8 @@
 ---
-title: Não use Placeholder no lugar da Label
+title: "Não use Placeholder no lugar da Label"
 date: 2014-02-06 00:00:01
-description: O placeholder ajuda muito com informações complementares do campo de formulário, mas não deveria ser utilizado para substituir o label
-tags: []
+description: "O placeholder ajuda muito com informações complementares do campo de formulário, mas não deveria ser utilizado para substituir o label"
+tags: ["css"]
 ---
 
 ## Label x Placeholder
@@ -19,33 +19,32 @@ Uma boa forma de contornar esse problema, é adicionar uma `<label>`, fora do ca
 
 ## A Solução
 
-<p data-height="400" data-theme-id="light" data-slug-hash="ijBDF" data-default-tab="result" data-user="felipefialho" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/felipefialho/pen/ijBDF/">Table Responsive</a> by Felipe Fialho (<a href="http://codepen.io/felipefialho">@felipefialho</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/felipefialho/pen/ijBDF
 
 Observem, que ao clicar sobre o campo, a `<label>` muda de posição e permanece sempre visível. Essa solução usa apenas CSS e é muito simples de ser implementada:
 
 ### HTML
 
-````html
+```html
 <div class="form-item">
   <input class="form-control" id="name" name="name" type="text" required>
   <label class="label-float" for="name">Nome</label>
 </div>
-````
+```
 
 Uma marcação básica, apenas adicionei a `<label>` logo após o campo relacionado.
 
 ### CSS
 
-````stylus
+```css
 .form-item {
   position: relative;
 }
-````
+```
 
 Deixo o `.form-item` como relativo, para os filhos absolutos se posicionarem a partir dele.
 
-````stylus
+```css
 .form-control {
   box-sizing: border-box;
   border-radius: 2px;
@@ -65,11 +64,11 @@ Deixo o `.form-item` como relativo, para os filhos absolutos se posicionarem a p
     border-color: @blue;
   }
 }
-````
+```
 
 Uma estilização bem simples de um campo de formulário.
 
-````stylus
+```css
 .label-float {
   color: @gray-light;
   position: absolute;
@@ -86,7 +85,7 @@ Uma estilização bem simples de um campo de formulário.
     line-height: 1.5;
   }
 }
-````
+```
 
 E aqui a mágica acontece.
 
@@ -95,12 +94,6 @@ Primeiramente deixamos o elemento `absolute` e `top: 0` para ficar posicionado e
 Em seguida definimos o `line-height` igual ao do campo de formulário para que fique centralizado. Adicionamos ainda um `transition` no `line-height` para que faça uma transição animada.
 
 Agora definimos que quando o `.form-control` irmão for `:valid` ou `:focus` ele terá uma cor mais clara, uma tamanho de fonte menor e ai o `line-height` alterado, assim ele ficará posicionado próximo do topo e não mais centralizado.
-
-## Uso real
-
-Utilizei essa abordagem em um projeto recente, e vocês podem ver o [resultado aqui](http://trendi.com.br/contato).
-
-Mostrei apenas uma abordagem padrão de uso, partindo do mesmo conceito é possível criar vários tipos interação, use de acordo com a necessidade do projeto.
 
 ## Referencias
 
