@@ -123,8 +123,10 @@ export const Content = styled.article`
   .language-text {
     background-color: var(--bgSecondary);
     color: var(--colorPrimary);
-    padding-left: ${V.Space.xxs};
-    padding-right: ${V.Space.xxs};
+    padding-bottom: .3em;
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-top: .4em;
     text-shadow: none;
   }
 
