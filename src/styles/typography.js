@@ -48,6 +48,14 @@ export const Heading3 = `
   line-height: 1.5em;
 `
 
+export const Heading4 = `
+  color: var(--primaryColor);
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: -0.04px;
+  line-height: 1.5em;
+`
+
 export const Text1 = `
   font-size: 1.8rem;
   font-weight: 300;
