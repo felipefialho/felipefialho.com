@@ -120,6 +120,15 @@ export const Content = styled.article`
     }
   }
 
+  hr {
+    border: 0;
+    margin: 0;
+    background-color: var(--borderColor); 
+    height: 1px;
+    margin-bottom: ${V.Space.default};
+    margin-top: ${V.Space.default};
+  }
+
   .language-text {
     background-color: var(--bgSecondary);
     color: var(--colorPrimary);

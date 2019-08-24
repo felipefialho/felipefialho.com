@@ -10,6 +10,7 @@ export const BoxHandler = styled.article`
   color: var(--primaryColor);
   display: block;
   height: 100%;
+  min-height: 15rem;
   padding: ${V.Space.default};
   transition: border-color ${V.Transition.default};
   will-change: border-color;

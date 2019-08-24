@@ -24,6 +24,5 @@ export const Title = styled.h2`
 
 export const NavItem = styled.div`
   display: block;
-  height: 100%;
   max-width: calc(50% - ${V.Space.xs});
 `
