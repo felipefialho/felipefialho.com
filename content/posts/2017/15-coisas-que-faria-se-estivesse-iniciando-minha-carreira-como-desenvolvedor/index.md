@@ -1,9 +1,9 @@
 ---
-title: 15 coisas que faria se estivesse iniciando minha carreira como desenvolvedor
+title: "15 coisas que faria se estivesse iniciando minha carreira como desenvolvedor"
 date: 2017-10-01 00:00:01
-description: Ou se pudesse entrar em uma maquina do tempo e dar conselhos para eu mesmo no passado
+description: "Ou se pudesse entrar em uma maquina do tempo e dar conselhos para eu mesmo no passado"
 image: featured.png
-tags: []
+tags: ["carreira"]
 ---
 
 Esse é um texto absolutamente pessoal e recheado de clichês.
@@ -36,7 +36,7 @@ Seguiria as pessoas que mais trazem impacto na comunidade e são tidas como refe
 
 Tentaria então entender porque são tidas como referências. O que fizeram? O que criaram? Que tipo de postura profissional elas tem? O que comem? Onde vivem?
 
-E me inspiraria para construir a minha própria história.
+> E me inspiraria para construir a minha própria história.
 
 ## 4. Focaria nas linguagens básicas
 
@@ -82,7 +82,7 @@ Desenvolvimento vai muito além de código, então para ser um profissional cada
 
 Metodologias, UX, Design, SEO, Acessibilidade, o próprio mercado e funcionamento do dinheiro… e mais várias e várias coisas que impactam diretamente no desenvolvimento.
 
-Cada uma delas, iria me ajudar a ter uma visão mais ampla e entender além da tela do IDE.
+> Cada uma dessas coisas, iria me ajudar a ter uma visão mais ampla e entender além da tela do IDE.
 
 ## 8. Iria em eventos
 
@@ -156,7 +156,7 @@ Jamais deixaria os resultados dos estudos, os aprendizados dos projetos ou os co
 
 Sendo assim, desde o inicio buscaria formas de compartilhar tudo que estivesse aprendendo, seja escrevendo artigos, gravando podcasts ou através de vídeos.
 
-Conhecimento deve ser trocado entre todas as pessoas, sempre.
+> Conhecimento deve ser trocado entre todas as pessoas, sempre.
 
 E vocês? Se tivesse a oportunidade de voltar no tempo ou estivesse iniciando suas carreiras, o que fariam?
 

@@ -1,9 +1,9 @@
 ---
-title: Retrospectiva 2016
+title: "Retrospectiva 2016"
 date: 2016-12-14 00:00:01
-description: Minha retrospectiva profissional desse ótimo ano
+description: "Minha retrospectiva profissional desse ótimo ano"
 image: featured.png
-tags: []
+tags: ["comunidade", carreira"]
 ---
 
 Após um 2014 absurdamente corrido, e um 2015 praticamente sabático, resolvi retomar um ritmo de trabalho mais intenso. Desde o primeiro dia útil de janeiro comecei a estabelecer metas e tomar decisões importantes para o resto do ano.
@@ -92,7 +92,7 @@ Junto com o [Raphael Fabeni](https://twitter.com/raphaelfabeni), também tivemos
 
 * Expliquei como escolher o [Dark Theme no DevTools](http://www.felipefialho.com/blog/2016/dark-theme-no-dev-tools)
 
-* Lançei o [Survey 2016](http://www.felipefialho.com/survey/), pesquisa de mercado com Frontenders tupiniquins
+* Lancei o [Survey 2016](http://www.felipefialho.com/survey/), pesquisa de mercado com Frontenders do Brasil
 
 * [MeetupCSS #22](https://www.meetup.com/pt-BR/CSS-SP/events/235413480/) com live coding da [Keit Oliveira](https://twitter.com/seescrevekeit), do [Vitor Mendrone](https://twitter.com/VhMendrone) e do [Marco Bruno](https://twitter.com/marcobrunobr)
 

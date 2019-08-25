@@ -1,14 +1,14 @@
 ---
-title: O inicio, o fim e o meio do Desenvolvimento Front-End
+title: "O inicio, o fim e o meio do Desenvolvimento Front-End"
 date: 2017-06-20 00:00:01
-description: Sou desenvolvedor desde 2009, nessa época ainda não existia o termo Front-End Developer e essa profissão passou por diversas mudanças desde então.
+description: "Sou desenvolvedor desde 2009, nessa época ainda não existia o termo Front-End Developer e essa profissão passou por diversas mudanças desde então"
 image: featured.png
-tags: []
+tags: ["carreira", "front-end"]
 ---
 
 ## O inicio
 
-Estou no mercado desde 2009, ou seja, 8 anos. Em uma profissão tradicional, 8 anos é quase nada. Mas no mundo do desenvolvimento, ainda em amadurecimento e cheio de jovens criando coisas incríveis, sou quase um veterano.
+Estou no mercado desde 2009, ou seja, 8 anos. Em uma profissão tradicional, 8 anos não é quase nada. Mas no mundo do desenvolvimento, ainda em amadurecimento e cheio de jovens criando coisas incríveis, sou quase um veterano.
 
 Mas mesmo assim 8 anos continuam sendo pouco, muito pouco. Conheço pessoas que estão a 15 ou 20 anos no mercado, e se eu vi muitas coisas mudarem e se transformarem, fico imaginando elas.
 
@@ -27,6 +27,8 @@ Não, não é “O Fim” de final, é “O Fim” de **finalidade**… afinal d
 ### Node.js é um marco na história
 
 Foi criado em 2009 e o [mundo nunca mais foi o mesmo](https://twitter.com/felipefialho_/status/872606926915481601).
+
+https://twitter.com/felipefialho_/status/872606926915481601
 
 E não, eu não estava exagerando. O [Node.js](https://nodejs.org/en/) é um marco na história do desenvolvimento e transformou todo o ecossistema ao seu redor.
 
@@ -69,6 +71,8 @@ Mas ontem, hoje ou amanhã, a finalidade será sempre a mesma: **desenvolver ent
 ## O Meio
 
 E qual o meio para isso? [Sim, código](https://twitter.com/felipefialho_/status/861745079714799617).
+
+https://twitter.com/felipefialho_/status/861745079714799617
 
 Você pode fazer um código extraordinário e ficar horas olhando para a tela impressionado com a criação, mas se o resultado desse código incrível for um produto sem relevância, ele vai servir só para alimentar seu próprio ego.
 

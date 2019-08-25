@@ -1,8 +1,8 @@
 ---
-title: Como foi trabalhar no meu primeiro produto e a sensação de entregar o MVP
+title: "Como foi trabalhar no meu primeiro produto e a sensação de entregar o MVP"
 date: 2017-09-20 00:00:01
-description: E o que aprendi nesses 6 meses de Cubo
-tags: []
+description: "E o que aprendi nesses 6 meses de Cubo"
+tags: ["carreira", "misc"]
 ---
 
 ![[https://dribbble.com/shots/1753131-MVP](https://dribbble.com/shots/1753131-MVP)](mvp.png)*[https://dribbble.com/shots/1753131-MVP](https://dribbble.com/shots/1753131-MVP)*
@@ -25,13 +25,13 @@ Mas então veio o convite para trabalhar no Cubo, com produtos digitais focados 
 
 Começava então uma grande mudança. Minhas conversas deixaram de ser sobre alinhamentos, espaçamentos e código. Termos como D*esign Sprint, Lean, Scrum, Kamban, MVP… *começaram a fazer parte da minha rotina e comecei a entender finalmente, o que é trabalhar em um produto.
 
-Logo nas primeiras semanas, começamos a pensar no nossos objetivos, enquanto trabalhavamos em produtos que já estavam rodando.
+Logo nas primeiras semanas, começamos a pensar no nossos objetivos, enquanto trabalhávamos em produtos que já estavam rodando.
 
 Então, algum tempo depois, começamos a colocar em prática tudo que vínhamos conversando.
 
 ### Entrevistas com o público alvo e pesquisas
 
-Sabiamos que precisavamos trazer valor na vida das startups, mas não sabiamos como. Tinhamos suposições, mas apenas isso. Para entender de verdade, era necessário entrar de fato nesse ecossistema, e foi o que fizemos.
+Sabíamos que precisávamos trazer valor na vida das startups, mas não sabíamos como. Tinhamos suposições, mas apenas isso. Para entender de verdade, era necessário entrar de fato nesse ecossistema, e foi o que fizemos.
 
 Durante duas semanas, todas as atividades foram paralisadas (sim, duas semanas sem codar), e começamos a fazer entrevistas com todos os públicos que compõem nosso negócio.
 
@@ -63,7 +63,7 @@ Nisso, chegamos em uma data de lançamento oficial: 14/09/2017, aniversário de 
 
 Teríamos então pouco mais de 3 semanas para entregar o MVP, um prazo aparentemente suicida.
 
-Especialmente porque também temos a missão (e dever) de testar novas tecnologias (muito louco né? 😍), então estamos trabalhando com algumas coisas ainda pouco documentadas e usadas, como o Serveless (vamos falar mais sobre isso depois). Sim, toda nossa stack usaria JavaScript.
+Especialmente porque também temos a missão (e dever) de testar novas tecnologias (muito louco né? 😍), então estamos trabalhando com algumas coisas ainda pouco documentadas e usadas, como o Serverless (vamos falar mais sobre isso depois). Sim, toda nossa stack usaria JavaScript.
 
 Challenge Accept!
 

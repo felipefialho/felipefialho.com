@@ -1,9 +1,9 @@
 ---
-title: Usando o Terminal do Linux no Windows
+title: "Usando o Terminal do Linux no Windows"
 date: 2017-10-22 00:00:01
-description: No inicio de 2016 o Windows entregou uma nova funcionalidade que era muito aguardada... A possibilidade de rodar o Bash do Linux.
+description: "No inicio de 2016 o Windows entregou uma nova funcionalidade que era muito aguardada: A possibilidade de rodar o Bash do Linux"
 image: featured.jpg
-tags: []
+tags: ["workflow"]
 ---
 
 No inicio de 2016 o Windows entregou uma nova funcionalidade que era muito aguardada: A possibilidade de rodar o Bash do Linux.
@@ -14,8 +14,7 @@ Isso é possível porque o módulo "Subsistema do Windows para o Linux", fornece
 
 Por vezes temos a impressão que pouquíssimas pessoas ainda usam o Windows para desenvolvimento. Mas tenho certeza que essa impressão destoa da realidade. Fiz uma rápida pesquisa no Twitter (sendo que é bastante nichada) e os resultados foram:
 
-<blockquote class="twitter-tweet" data-lang="pt"><p lang="pt" dir="ltr">Curiosidade, qual sistema operacional vocês utilizam como Developers?</p>&mdash; Felipe Fialho (@felipefialho) <a href="https://twitter.com/felipefialho/status/921109237501227013?ref_src=twsrc%5Etfw">19 de outubro de 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+https://twitter.com/felipefialho/status/921109237501227013
 
 Isso mostra que mesmo entre meus seguidores, muitas pessoas usam Windows, e isso realmente não deveria ser um problema.
 

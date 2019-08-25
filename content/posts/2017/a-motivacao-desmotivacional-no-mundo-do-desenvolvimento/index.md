@@ -1,18 +1,18 @@
 ---
-title: A motivação desmotivacional no mundo do Desenvolvimento
+title: "A motivação desmotivacional no mundo do Desenvolvimento"
 date: 2017-06-28 00:00:01
-description: E então você, Developer super antenado(a), lê sobre os melhores frameworks e práticas do mercado… e se empolga. Mas quando chega no trabalho precisar dar suporte para IE7.
+description: "E então você, Developer super antenado(a), lê sobre os melhores frameworks e práticas do mercado… e se empolga. Mas quando chega no trabalho precisar dar suporte para IE7"
 image: featured.png
-tags: []
+tags: ["carreira", "estudos", "front-end"]
 ---
 
-Sim, uma nova solução sensacional surge todos os dias no mundo do desenvolvimento, [isso é bom pra carario e ninguém vai me convencer que não](https://medium.com/@lfeh/o-inicio-o-fim-e-o-meio-do-desenvolvimento-front-end-dfc5a123b90f), mas causa um efeito colateral muito chato…
+Sim, uma nova solução sensacional surge todos os dias no mundo do desenvolvimento, [isso é bom pra caralho e ninguém vai me convencer que não](https://medium.com/@lfeh/o-inicio-o-fim-e-o-meio-do-desenvolvimento-front-end-dfc5a123b90f), mas causa um efeito colateral muito chato…
 
 ### Nem todas as pessoas podem aplicar essas coisas no dia-a-dia
 
 Esses dias recebi o seguinte comentário [no meu site](http://www.felipefialho.com/):
 
-> Felipe, uma dúvida cara, eu utilizo muito bootstrap pois eu faço muitos sites empresariais, e institucionais utilizando Wordpress… e construiu um tema que utiliza o Bootstrap 4, e em questão de praticidade, algumas coisas prontas como slider, breadcrumbs, paginação (entre muitas outras) que ele já me oferece deixa meu ‘desenvolvimento’ muito mais rápido… e claro que eu posso estilizar essas coisas com meu proprio CSS. Eu vejo muitas coisas que você escreve pela comunidade e acompanho sobre outros framework css como LOST, BULMA entre outros… Você acha que tem problema eu continuar utilizando o Bootstrap principalmente para esses ‘sites’ que desenvolvo pois acelera muito o processo?
+> Felipe, uma dúvida cara, eu utilizo muito bootstrap pois eu faço muitos sites empresariais, e institucionais utilizando Wordpress… e construiu um tema que utiliza o Bootstrap 4, e em questão de praticidade, algumas coisas prontas como slider, breadcrumbs, paginação (entre muitas outras) que ele já me oferece deixa meu ‘desenvolvimento’ muito mais rápido… e claro que eu posso estilizar essas coisas com meu próprio CSS. Eu vejo muitas coisas que você escreve pela comunidade e acompanho sobre outros framework css como LOST, BULMA entre outros… Você acha que tem problema eu continuar utilizando o Bootstrap principalmente para esses ‘sites’ que desenvolvo pois acelera muito o processo?
 
 Se atentem que claramente é o caso de alguém que se atualiza e estuda, mas usa ferramentas que não são “bem vistas” pela comunidade para agilizar o seu trabalho.
 
@@ -36,7 +36,7 @@ Primeiro de tudo… entenda o que sua empresa faz, como ela espera ganhar dinhei
 
 Saiba que boa parte dos frameworks do mercado foram feitos para desenvolver produtos e aplicações, e se você desenvolve sites institucionais e precisa entregar em três dias, dificilmente fará sentido usar essas soluções.
 
-<blockquote class="twitter-tweet"><p lang="pt">Se você desenvolve sites institucionais ou trabalha com agências que fazem pasteis, não se sinta mal por não usar workflows da &quot;moda&quot;. 😉</p>&mdash; felipe.js (@felipefialho_) <a href="https://twitter.com/felipefialho_/status/870471694531559424?ref_src=twsrc%5Etfw">June 2, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+https://twitter.com/felipefialho_/status/870471694531559424
 
 Isso pode ser surpreendente no mundo com milhares de coisas para estudar, em que developers vivem, mas…
 

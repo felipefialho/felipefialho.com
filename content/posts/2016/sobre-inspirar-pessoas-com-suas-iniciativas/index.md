@@ -1,9 +1,9 @@
 ---
-title: Sobre inspirar pessoas com suas iniciativas
+title: "Sobre inspirar pessoas com suas iniciativas"
 date: 2016-06-20 00:00:01
-description: Um post sobre inspiração e comunidade de desenvolvimento
+description: "Um post sobre inspiração e comunidade de desenvolvimento"
 image: featured.jpg
-tags: []
+tags: ["carreira", "comunidade"]
 ---
 
 ## Eventos, Comunidade & Design
@@ -114,8 +114,8 @@ Não pense duas vezes! Coloque em prática e pague pra ver.
 Não está tendo muitas ideias ultimamente? Sem problemas! Comece a participar de iniciativas de outras pessoas, como disse lá em cima, ideias geram ideias. Você sem dúvida vai se sentir inspirado e motivado, e quem sabe daqui um tempo não seja você que vai estar inspirando e motivando alguém…
 
 > It’s been so long now
-Since the latest reb has gone
-Who knows you’ll be the next
-To go down the history
-> ***Raul Seixas***
-> How Could I Know
+> Since the latest reb has gone
+> Who knows you’ll be the next
+> To go down the history
+>
+> Raul Seixas - How Could I Know
