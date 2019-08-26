@@ -2,7 +2,7 @@
 title: "Meu dia a dia como desenvolvedor Front-End"
 date: 2015-01-20 00:00:01
 description: "Enfim o primeiro post de 2015. Vou contar um pouco sobre meu dia a dia como desenvolvedor Front-End, equipamentos, aplicativos, workflow..."
-tags: []
+tags: ["front-end", "workflow"]
 ---
 
 ## Mas antes...
