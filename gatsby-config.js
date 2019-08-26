@@ -111,7 +111,7 @@ if (process.env.NODE_ENV === 'production') {
     options: {
       appId: process.env.GATSBY_ALGOLIA_APP_ID,
       apiKey: process.env.ALGOLIA_ADMIN_KEY,
-      algolia_queries,
+      queries: algolia_queries,
       chunkSize: 10000, // default: 1000
       enablePartialUpdates: true
     }
