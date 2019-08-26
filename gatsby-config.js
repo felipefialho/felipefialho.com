@@ -1,6 +1,131 @@
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+require('dotenv').config()
+
+const algolia_queries = require('./src/utils/algolia')
+
+const plugins = [
+  `gatsby-plugin-sharp`,
+  `gatsby-transformer-json`,
+  `gatsby-transformer-sharp`,
+  'gatsby-plugin-resolve-src',
+  `gatsby-plugin-styled-components`,
+  `gatsby-plugin-svgr`,
+  `gatsby-plugin-transition-link`,
+  `gatsby-plugin-feed`,
+  `gatsby-plugin-offline`,
+  `gatsby-plugin-react-helmet`,
+  {
+    resolve: `gatsby-plugin-disqus`,
+    options: {
+      shortname: `felipefialho`
+    }
+  },
+  {
+    resolve: 'gatsby-plugin-i18n',
+    options: {
+      langKeyDefault: 'pt-br',
+      useLangKeyLayout: false
+    }
+  },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      path: `${__dirname}/content/posts`,
+      name: `blog`,
+    },
+  },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      path: `${__dirname}/content/assets`,
+      name: `assets`,
+    },
+  },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      path: `${__dirname}/content/lab`,
+      name: `lab`,
+    },
+  },
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        {
+          resolve: `gatsby-remark-images`,
+          options: {
+            maxWidth: 650,
+          },
+        },
+        {
+          resolve: `gatsby-remark-responsive-iframe`,
+          options: {
+            wrapperStyle: `margin-bottom: 1.0725rem`,
+          },
+        },
+        {
+          resolve: `@raae/gatsby-remark-oembed`,
+          options: {
+            usePrefix: false,
+            providers: {
+              include: [
+                'Youtube',
+                'Twitter',
+                'Codepen',
+              ],
+              exclude: [
+                'Reddit',
+                'Flickr',
+                'Instagram'
+              ]
+            },
+          },
+        },
+        `gatsby-plugin-catch-links`,
+        `gatsby-remark-lazy-load`,
+        `gatsby-remark-prismjs`,
+        `gatsby-remark-copy-linked-files`,
+        `gatsby-remark-smartypants`,
+      ],
+    },
+  },
+  {
+    resolve: `gatsby-plugin-manifest`,
+    options: {
+      name: `Felipe Fialho`,
+      short_name: `felipefialho.com`,
+      start_url: `/`,
+      background_color: `#ffffff`,
+      theme_color: `#111111`,
+      display: `minimal-ui`,
+      icon: `content/assets/icon.png`,
+    },
+  },
+]
+
+if (process.env.CONTEXT === 'production') {
+  const algolia = {
+    resolve: `gatsby-plugin-algolia-search`,
+    options: {
+      appId: process.env.GATSBY_ALGOLIA_APP_ID,
+      apiKey: process.env.ALGOLIA_ADMIN_KEY,
+      algolia_queries,
+      chunkSize: 10000, // default: 1000
+      enablePartialUpdates: true
+    }
+  }
+
+  const analytics = {
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId: process.env.GOOGLE_ANALYTICS_ID,
+      head: false
+    }
+  }
+
+  plugins.push(algolia)
+  plugins.push(analytics)
+}
 
 module.exports = {
   siteMetadata: {
@@ -21,121 +146,5 @@ module.exports = {
       mediumLink: `https://medium.com/@felipefialho`,
     },
   },
-  plugins: [
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-json`,
-    `gatsby-transformer-sharp`,
-    'gatsby-plugin-resolve-src',
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-svgr`,
-    `gatsby-plugin-transition-link`,
-    `gatsby-plugin-feed`,
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-disqus`,
-      options: {
-        shortname: `felipefialho`
-      }
-    },
-    {
-      resolve: 'gatsby-plugin-i18n',
-      options: {
-        langKeyDefault: 'pt-br',
-        useLangKeyLayout: false
-      }
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
-        head: false
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/posts`,
-        name: `blog`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/lab`,
-        name: `lab`,
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 650,
-            },
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          {
-            resolve: `@raae/gatsby-remark-oembed`,
-            options: {
-              usePrefix: false,
-              providers: {
-                include: [
-                  'Youtube',
-                  'Twitter',
-                  'Codepen',
-                ],
-                exclude: [
-                  'Reddit',
-                  'Flickr',
-                  'Instagram'
-                ]
-              },
-            },
-          },
-          `gatsby-plugin-catch-links`,
-          `gatsby-remark-lazy-load`,
-          `gatsby-remark-prismjs`,
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
-        ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Felipe Fialho`,
-        short_name: `felipefialho.com`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#111111`,
-        display: `minimal-ui`,
-        icon: `content/assets/icon.png`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-algolia-search`,
-      options: {
-        appId: process.env.GATSBY_ALGOLIA_APP_ID,
-        apiKey: process.env.ALGOLIA_ADMIN_KEY,
-        queries: require('./src/utils/algolia'),
-        chunkSize: 10000, // default: 1000
-        enablePartialUpdates: true
-      },
-    },
-  ],
+  plugins
 }
