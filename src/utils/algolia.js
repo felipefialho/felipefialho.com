@@ -1,6 +1,6 @@
 const postQuery = `{
   posts: allMarkdownRemark(
-    filter: { fileAbsolutePath: { regex: "/posts/" } }
+    filter: { fileAbsolutePath: { regex: "/content/posts/" } }
   ) {
     edges {
       node {
@@ -9,10 +9,12 @@ const postQuery = `{
           slug
         }
         frontmatter {
+          date(locale: "pt-br", formatString: "DD MMM[,] YYYY")
+          description
           title
-          date(formatString: "MMM D, YYYY")
           tags
         }
+        timeToRead
         excerpt(pruneLength: 5000)
       }
     }

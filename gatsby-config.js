@@ -1,4 +1,6 @@
-require('dotenv').config()
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 const algolia_queries = require('./src/utils/algolia')
 
@@ -103,7 +105,7 @@ const plugins = [
   },
 ]
 
-if (process.env.CONTEXT === 'production') {
+if (process.env.NODE_ENV === 'production') {
   const algolia = {
     resolve: `gatsby-plugin-algolia-search`,
     options: {

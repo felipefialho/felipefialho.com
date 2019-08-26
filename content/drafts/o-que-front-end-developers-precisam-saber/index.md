@@ -3,7 +3,7 @@ title: O que Front-end Developers precisam saber?
 date: 2013-04-29 00:00:01
 description: É fundamental que você saiba JavaScript, HTML e CSS. Precisa entender de componentes, como eles funcionam e qual a melhor maneira de reaproveitar seu código no projeto.
 image: featured.png
-tags: []
+tags: ["front-end", "carreira"]
 ---
 
 ### Preciso saber design?
