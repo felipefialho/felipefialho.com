@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Felipe Fialho - Front-end Developer`,
@@ -44,8 +48,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-40410936-1',
-      },
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        head: false
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -129,6 +134,7 @@ module.exports = {
         apiKey: process.env.ALGOLIA_ADMIN_KEY,
         options: require('./src/utils/algolia'),
         chunkSize: 10000, // default: 1000
+        enablePartialUpdates: true
       },
     },
   ],
