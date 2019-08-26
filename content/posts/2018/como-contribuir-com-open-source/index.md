@@ -68,8 +68,6 @@ Só para citar algumas:
 
 * [Escrevi artigos não-técnicos](https://medium.com/@felipefialho)
 
-* [Fiz experimentos no Codepen](https://codepen.io/felipefialho/)
-
 São coisas das mais variadas: eventos, organizações, idéias, projetos, ideais, geração de conteúdo.
 
 E pra mim, em todas elas, fiz open-source.
