@@ -28,6 +28,7 @@
     "@raae/gatsby-remark-oembed": "^0.1.1",
     "@svgr/webpack": "^4.3.2",
     "algoliasearch": "^3.33.0",
+    "core-js": "^2.6.5",
     "dotenv": "^8.1.0",
     "gatsby": "^2.13.73",
     "gatsby-image": "^2.2.10",
