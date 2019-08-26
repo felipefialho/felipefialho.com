@@ -32,7 +32,7 @@ const algoliaQueries = [
   {
     query: postQuery,
     transformer: ({ data }) => flatten(data.posts.edges),
-    indexName: `posts`,
+    indexName: `Posts`,
     settings,
   },
 ]
