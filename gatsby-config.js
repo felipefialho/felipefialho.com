@@ -121,6 +121,15 @@ module.exports = {
         display: `minimal-ui`,
         icon: `content/assets/icon.png`,
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-algolia`,
+      options: {
+        appId: process.env.GATSBY_ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_ADMIN_KEY,
+        options: require('./src/utils/algolia'),
+        chunkSize: 10000, // default: 1000
+      },
+    },
   ],
 }
