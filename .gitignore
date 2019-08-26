@@ -6,3 +6,5 @@ _drafts
 .vscode
 public
 .env
+.env.development
+.env.production
