@@ -6,22 +6,35 @@ import SEO from 'components/Seo'
 import BlogItem from 'components/BlogItem'
 import GridTemplate from 'components/GridTemplate'
 import Pagination from 'components/Pagination'
+import Search from 'components/Search'
 
 const content = ({ list }) => {
+  const blogList = list.map(({ node }, i) => (
+    <BlogItem
+      key={i}
+      slug={node.fields.slug}
+      date={node.frontmatter.date}
+      title={node.frontmatter.title}
+      description={node.frontmatter.description}
+      tags={node.frontmatter.tags}
+      timeToRead={node.timeToRead}
+    />
+  ))
+
+  const algolia = {
+    appId: process.env.GATSBY_ALGOLIA_APP_ID,
+    searchOnlyApiKey: process.env.GATSBY_ALGOLIA_SEARCH_KEY,
+    indexName: process.env.ALGOLIA_ADMIN_KEY
+  }
+
   return (
-    <nav>
-      {list.map(({ node }, i) => (
-        <BlogItem
-          key={i}
-          slug={node.fields.slug}
-          date={node.frontmatter.date}
-          title={node.frontmatter.title}
-          description={node.frontmatter.description}
-          tags={node.frontmatter.tags}
-          timeToRead={node.timeToRead}
-        />
-      ))}
-    </nav>
+    <>
+      {algolia && algolia.appId ? (
+        <Search algolia={algolia} callback={blogList} />
+      ) : (
+        <nav>{blogList}</nav>
+      )}
+    </>
   )
 }
 

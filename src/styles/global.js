@@ -80,6 +80,23 @@ const GlobalStyles = createGlobalStyle`
   i, em {
     font-style: italic;
   }
+  
+  input[type="search"] {
+    -webkit-appearance: textfield;
+  }
+
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+
+  *::placeholder {
+    color: var(--secondaryColor); 
+  } 
+
+  *::-webkit-input-placeholder {
+    color: var(--secondaryColor); 
+  }
 
   body {
     background-color: var(--bg);
