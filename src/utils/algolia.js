@@ -1,13 +1,15 @@
 const postQuery = `{
   posts: allMarkdownRemark(
-    filter: { fileAbsolutePath: { regex: "/blog/" } }
+    filter: { fileAbsolutePath: { regex: "/posts/" } }
   ) {
     edges {
       node {
         objectID: id
+        fields {
+          slug
+        }
         frontmatter {
           title
-          slug
           date(formatString: "MMM D, YYYY")
           tags
         }
