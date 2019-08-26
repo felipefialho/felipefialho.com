@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
-import { getActiveTheme } from 'utils'
+import getActiveTheme from 'utils/getActiveTheme'
 
 import Avatar from 'components/Avatar'
 import Menu from 'components/Menu'
