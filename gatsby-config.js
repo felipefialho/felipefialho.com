@@ -128,11 +128,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-algolia`,
+      resolve: `gatsby-plugin-algolia-search`,
       options: {
         appId: process.env.GATSBY_ALGOLIA_APP_ID,
         apiKey: process.env.ALGOLIA_ADMIN_KEY,
-        options: require('./src/utils/algolia'),
+        queries: require('./src/utils/algolia'),
         chunkSize: 10000, // default: 1000
         enablePartialUpdates: true
       },
