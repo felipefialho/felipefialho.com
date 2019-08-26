@@ -9,9 +9,6 @@ export const GridTemplate = styled.div`
     grid-column-gap: ${V.Space.default};
     grid-template-columns: minmax(10rem, 15rem) minmax(65rem, 1fr) minmax(10rem, 15rem);
   `}
-
-  > .grid-content {
-  }
 `
 
 export const GridContent = styled.div`

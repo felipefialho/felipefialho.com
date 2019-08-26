@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import media from 'styled-media-query'
 import { Algolia } from 'styled-icons/fa-brands/Algolia'
 
 import * as V from 'styles/variables'
@@ -17,12 +16,12 @@ export const Search = styled.section`
 
       &-input {
         -webkit-appearance: none;
-        background-color: var(--bg); 
+        background-color: var(--bg);
         border: ${V.Border.box};
-        color: var(--primaryColor); 
+        color: var(--primaryColor);
         display: block;
-        height: ${V.Space.lg};
         font-size: 1.8rem;
+        height: ${V.Space.lg};
         line-height: ${V.Space.lg};
         padding-left: ${V.Space.sm};
         padding-right: ${V.Space.xxlg};
@@ -33,21 +32,23 @@ export const Search = styled.section`
       &-submit {
         align-items: center;
         border-left: ${V.Border.box};
-        color: var(--secondaryColor); 
+        color: var(--secondaryColor);
         cursor: pointer;
         display: flex;
         height: 100%;
         justify-content: center;
         position: absolute;
         right: 0;
-        top: 0; 
+        top: 0;
         transition: color ${V.Transition.default};
         width: ${V.Space.lg};
         will-change: color;
+      }
 
+      &-submit {
         &:hover,
         &:focus {
-          color: var(--highlightColor); 
+          color: var(--highlightColor);
         }
       }
 
@@ -57,6 +58,11 @@ export const Search = styled.section`
 
         &[hidden] {
           display: none;
+        }
+
+        &:hover,
+        &:focus {
+          color: var(--highlightColor);
         }
       }
 
@@ -78,7 +84,7 @@ export const SearchResults = styled.div`
 
 export const Title = styled.h1`
   align-items: center;
-  color: var(--secondaryColor); 
+  color: var(--secondaryColor);
   display: flex;
   font-size: 1.4rem;
   font-weight: 300;

@@ -9,10 +9,6 @@ import Container from 'components/Container'
 
 import * as S from './styled'
 
-import ReactGA from 'react-ga'
-ReactGA.initialize('UA-40410936-1')
-ReactGA.pageview(window.location.pathname + window.location.search)
-
 const Layout = ({ children }) => {
   const { site } = useStaticQuery(
     graphql`

@@ -121,9 +121,8 @@ export const Content = styled.article`
   }
 
   hr {
+    background-color: var(--borderColor);
     border: 0;
-    margin: 0;
-    background-color: var(--borderColor); 
     height: 1px;
     margin-bottom: ${V.Space.default};
     margin-top: ${V.Space.default};
