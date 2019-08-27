@@ -80,7 +80,7 @@ const GlobalStyles = createGlobalStyle`
   i, em {
     font-style: italic;
   }
-  
+
   input[type="search"] {
     -webkit-appearance: textfield;
   }
@@ -91,11 +91,11 @@ const GlobalStyles = createGlobalStyle`
   }
 
   *::placeholder {
-    color: var(--secondaryColor); 
-  } 
+    color: var(--secondaryColor);
+  }
 
   *::-webkit-input-placeholder {
-    color: var(--secondaryColor); 
+    color: var(--secondaryColor);
   }
 
   body {

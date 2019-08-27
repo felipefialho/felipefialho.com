@@ -5,6 +5,7 @@ import * as V from 'styles/variables'
 import * as T from 'styles/typography'
 
 export const BlogItem = styled(AniLink)`
+  color: var(--primaryColor);
   display: block;
 
   &:not(:last-child) {
