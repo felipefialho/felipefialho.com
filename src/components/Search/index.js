@@ -4,7 +4,7 @@ import ReactGA from 'react-ga'
 
 import { InstantSearch, SearchBox, Stats, Configure, Hits } from 'react-instantsearch-dom'
 
-import Result from './Result'
+import Hit from './Hit'
 import * as S from './styled'
 
 const trackSearch = (term) => {
@@ -35,8 +35,7 @@ const Search = ({ algolia, callback }) => {
               }
             }} />
             <S.SearchResults>
-              <Hits hitComponent={Result} />
-              {callback}
+              <Hits hitComponent={Hit} />
             </S.SearchResults>
           </InstantSearch>
           <S.Title>
