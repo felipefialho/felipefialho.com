@@ -3,23 +3,25 @@ import PropTypes from 'prop-types'
 
 import BlogItem from 'components/BlogItem'
 
-const Result = ({ props }) => {
+const Hit = (props) => {
   const { hit } = props
-  
+
+  console.log(hit)
+
   return (
     <BlogItem
       slug={hit.fields.slug}
-      date={hit.frontmatter.date}
-      title={hit.frontmatter.title}
-      description={hit.frontmatter.description}
-      tags={hit.frontmatter.tags}
+      date={hit.date}
+      title={hit.title}
+      description={hit.description}
+      tags={hit.tags}
       timeToRead={hit.timeToRead}
     />
   )
 }
 
-Result.propTypes = {
+Hit.propTypes = {
   hit: PropTypes.object.isRequired
 }
 
-export default Result
+export default Hit
