@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import ReactGA from 'react-ga'
 
@@ -16,6 +16,14 @@ const trackSearch = (term) => {
 }
 
 const Search = ({ algolia, callback }) => {
+  const [ search, setSearch ] = useState('')
+
+  const onSearchStateChange = (searchState) => {
+    console.log({ searchState, search })
+    trackSearch(searchState.query)
+    setSearch(searchState)
+  }
+
   return (
     <S.Search>
       {algolia && algolia.appId ? (
@@ -23,20 +31,24 @@ const Search = ({ algolia, callback }) => {
           <InstantSearch
             appId={algolia.appId}
             apiKey={algolia.searchOnlyApiKey}
-            onSearchStateChange={({ query }) => trackSearch(query)}
+            onSearchStateChange={(searchState) => onSearchStateChange(searchState)}
             indexName={algolia.indexName}>
             <Configure hitsPerPage={100} distinct />
             <SearchBox
               autoFocus
               translations={{ placeholder: 'Pesquisar no blog...' }} />
-            <Stats translations={{
-              stats(nbHits, timeSpentMS) {
-                return `${nbHits} resultados encontrados`
-              }
-            }} />
-            <S.SearchResults>
-              <Hits hitComponent={Hit} />
-            </S.SearchResults>
+            {search && search.query ? (
+              <>
+                <Stats translations={{
+                  stats(nbHits, timeSpentMS) {
+                    return `${nbHits} resultados encontrados`
+                  }
+                }} />
+                <Hits hitComponent={Hit} />
+              </>
+              ) : (
+                <nav>{callback}</nav>
+            )}
           </InstantSearch>
           <S.Title>
             Powered by Algolia
@@ -45,7 +57,7 @@ const Search = ({ algolia, callback }) => {
         </div>
       ) : (
         <nav>{callback}</nav>
-      )}}
+      )}
     </S.Search>
   )
 }
