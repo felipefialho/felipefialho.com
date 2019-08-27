@@ -2,7 +2,7 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-const algolia_queries = require('./src/utils/algolia')
+const queries = require('./src/utils/algolia')
 
 const plugins = [
   `gatsby-plugin-sharp`,
@@ -105,13 +105,13 @@ const plugins = [
   },
 ]
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.CONTEXT === 'production') {
   const algolia = {
     resolve: `gatsby-plugin-algolia-search`,
     options: {
       appId: process.env.GATSBY_ALGOLIA_APP_ID,
       apiKey: process.env.ALGOLIA_ADMIN_KEY,
-      queries: algolia_queries,
+      queries,
       chunkSize: 10000, // default: 1000
       enablePartialUpdates: true
     }
@@ -124,6 +124,8 @@ if (process.env.NODE_ENV === 'production') {
       head: false
     }
   }
+
+  console.log(analytics)
 
   plugins.push(algolia)
   plugins.push(analytics)

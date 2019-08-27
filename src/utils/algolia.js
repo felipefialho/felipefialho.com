@@ -30,7 +30,7 @@ const flatten = arr => {
 
 const settings = { attributesToSnippet: [`excerpt: 20`] }
 
-const algoliaQueries = [
+const queries = [
   {
     query: postQuery,
     transformer: ({ data }) => flatten(data.posts.edges),
@@ -39,4 +39,4 @@ const algoliaQueries = [
   },
 ]
 
-module.exports = algoliaQueries
+module.exports = queries
