@@ -70,25 +70,30 @@ export const Text2 = `
   line-height: 1.65em;
 `
 
-export const Link = `
-  color: var(--highlightColor);
+export const LinkTransition = `
   position: relative;
 
   &:after {
-    border-bottom: transparent solid 1px;
+    background-color: var(--highlightColor);
     content: '';
+    height: 2px;
     left: 0;
-    margin-top: ${V.Space.xxs};
+    margin-top: ${V.Space.xs};
     position: absolute;
     top: 100%;
-    transition: border-color ${V.Transition.default};
+    transform: scaleX(0);
+    transition: transform ${V.Transition.default};
     width: 100%;
-    will-change: border-color;
   }
 
   &:hover {
     &:after {
-      border-color: var(--highlightColor);
+      transform: scaleX(1)
     }
   }
+`
+
+export const Link = `
+  color: var(--highlightColor);
+  ${LinkTransition}
 `
