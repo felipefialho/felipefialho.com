@@ -15,7 +15,7 @@ const plugins = [
   `gatsby-plugin-feed`,
   `gatsby-plugin-offline`,
   `gatsby-plugin-react-helmet`,
-  `gatsby-plugin-netlify-cms`,
+  `gatsby-plugin-sitemap`,
   {
     resolve: `gatsby-plugin-disqus`,
     options: {
