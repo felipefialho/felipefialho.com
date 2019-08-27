@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { Algolia } from 'styled-icons/fa-brands/Algolia'
 
 import * as V from 'styles/variables'
+import * as T from 'styles/typography'
 
 export const Search = styled.section`
   display: block;
@@ -12,6 +13,7 @@ export const Search = styled.section`
     }
 
     &-SearchBox {
+      margin-bottom: ${V.Space.md};
       position: relative;
 
       &-input {
@@ -73,21 +75,26 @@ export const Search = styled.section`
     }
 
     &-Stats {
-      color: var(--texts);
+      ${T.Text2}
+      color: var(--secondaryColor);
+      margin-bottom: ${V.Space.xs};
+    }
+
+    &-Hits {
+      &-item {
+        &:not(:last-child) {
+          margin-bottom: ${V.Space.default};
+        }
+      }
     }
   }
 `
 
-export const SearchResults = styled.div`
-  margin-top: ${V.Space.md};
-`
-
 export const Title = styled.h1`
+  ${T.Text2}
   align-items: center;
   color: var(--secondaryColor);
   display: flex;
-  font-size: 1.4rem;
-  font-weight: 300;
   justify-content: flex-end;
   padding-bottom: ${V.Space.sm};
   padding-top: ${V.Space.sm};
