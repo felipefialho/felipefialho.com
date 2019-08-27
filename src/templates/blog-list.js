@@ -28,13 +28,7 @@ const content = ({ list }) => {
   }
 
   return (
-    <>
-      {algolia && algolia.appId ? (
-        <Search algolia={algolia} callback={blogList} />
-      ) : (
-        <nav>{blogList}</nav>
-      )}
-    </>
+    <Search algolia={algolia} callback={blogList} />
   )
 }
 
