@@ -27,9 +27,7 @@ const content = ({ post, disqusConfig, next, previous }) => {
       </Content>
 
       <PostFooter />
-
       <PostNav previous={previous} next={next} />
-
       <DisqusWrapper disqusConfig={disqusConfig} />
     </section>
   )
