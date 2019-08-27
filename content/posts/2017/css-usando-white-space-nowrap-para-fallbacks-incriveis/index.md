@@ -28,7 +28,7 @@ Existes milhares de tipos de carousel, e várias técnicas para desenvolve-los. 
 
 A funcionalidade do botão não foi feita, mas... tente fazer um scroll no carousel :)
 
-https://codepen.io/felipefialho/pen/rjXbra/
+https://codepen.io/felipefialho/pen/rjXbra
 
 Esse exemplo é a base de um Carousel simples, com o item ocupando 100% do espaço visível. Mas observem que o scroll termina no lugar correto, respeitando o número de elementos. Tudo isso sem usar uma linha de JavaScript.
 

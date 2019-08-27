@@ -43,7 +43,7 @@ O DOM é uma estrutura representacional dos documentos HTML. É uma árvore estr
 
 JavaScript interage com o DOM para mudar e atualizar ele. Aqui está um exemplo onde podemos selecionar um elemento HTML e alterar o seu conteúdo:
 
-```
+```js
 var container = document.getElementById('container');
 container.innerHTML = 'New Content!';
 ```
@@ -95,7 +95,7 @@ Eu escolhi o site do AirBnB porque os nomes de classe CSS são relativamente sim
 
 Se você ficar preso, use o guia [JavaScript Functions and Helpers](https://plainjs.com/JavaScript) como referência. Eu baseei a maioria dessas tarefas fora dele, abaixo está um exemplo de como completar o primeiro bullet:
 
-```
+```js
 var header = document.querySelector('.text-branding')
 header.innerText = ‘Boop'
 ```
@@ -138,14 +138,14 @@ Quando você fazer mais projetos com JavaScript, você encontrará alguns concei
 
 Existem dois tipos de abordagens de como o JavaScript interage com o DOM: imperativa e declarativa. De um lado, a programação declarativa foca no _o que_ acontece. Do outro lado, programação imperativa foca no _o que_ e também em _como_.
 
-```
+```js
 var hero = document.querySelector('.hero')
 hero.addEventListener(‘click’, function() {
-var newChild = document.createElement(‘p’)
-newChild.appendChild(document.createTextNode(‘Hello world!’))
-newChild.setAttribute(‘class’, ‘text’)
-newChild.setAttribute(‘data-info’, ‘header’)
-hero.appendChild(newChild)
+  var newChild = document.createElement(‘p’)
+  newChild.appendChild(document.createTextNode(‘Hello world!’))
+  newChild.setAttribute(‘class’, ‘text’)
+  newChild.setAttribute(‘data-info’, ‘header’)
+  hero.appendChild(newChild)
 })
 }
 ```
