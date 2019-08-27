@@ -2,7 +2,7 @@ import React from 'react'
 import ReactGA from 'react-ga'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
-import getActiveTheme from 'utils/getActiveTheme'
+import { getActiveTheme } from 'utils/themes'
 
 import Layout from 'components/Layout'
 import Content from 'components/Content'
