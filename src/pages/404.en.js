@@ -18,46 +18,40 @@ const trackLabsClick = () => {
   })
 }
 
-const content = () => {
-  return (
-    <section>
-      <Social />
-      <Content>
-        <h1>There's nothing here... <span 
-          className="small" 
-          role="img" 
-          aria-label="Scared emoji">😱</span>
-        </h1>
-
-        <h2>But don't worry! <span 
-          className="small" 
-          role="img" 
-          aria-label="Happy emoji">😄</span>
-        </h2>
-
-        <p>In the meantime you can take a look at my <AniLink
-          cover
-          bg={getActiveTheme()}
-          duration={.6}
-          direction="down"
-          to="/lab/"
-          onClick={trackLabsClick()}>
-          personal projects
-        </AniLink>! <span 
-          className="small" 
-          role="img" 
-          aria-label="Passionate eyes emoji">😍
-        </span></p>
-      </Content>
-    </section>
-  )
-}
-
 const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Page not found" />
-      <GridTemplate content={content()} />
+      <GridTemplate>
+        <Social />
+        <Content>
+          <h1>There's nothing here... <span
+            className="small"
+            role="img"
+            aria-label="Scared emoji">😱</span>
+          </h1>
+
+          <h2>But don't worry! <span
+            className="small"
+            role="img"
+            aria-label="Happy emoji">😄</span>
+          </h2>
+
+          <p>In the meantime you can take a look at my <AniLink
+            cover
+            bg={getActiveTheme()}
+            duration={.6}
+            direction="down"
+            to="/lab/"
+            onClick={trackLabsClick()}>
+            personal projects
+          </AniLink>! <span
+            className="small"
+            role="img"
+            aria-label="Passionate eyes emoji">😍
+          </span></p>
+        </Content>
+      </GridTemplate>
     </Layout>
   )
 }

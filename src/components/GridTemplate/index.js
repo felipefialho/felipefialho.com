@@ -3,18 +3,16 @@ import PropTypes from 'prop-types'
 
 import * as S from './styled'
 
-const GridTemplate = ({ content, sidebarLeft, sidebarRight }) => {
+const GridTemplate = ({ children }) => {
   return (
     <S.GridTemplate>
-      <aside aria-hidden={!sidebarLeft}>{sidebarLeft}</aside>
-      <S.GridContent>{content}</S.GridContent>
-      <aside aria-hidden={!sidebarRight}>{sidebarRight}</aside>
+      {children}
     </S.GridTemplate>
   )
 }
 
 GridTemplate.propTypes = {
-  content: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired
 }
 
 export default GridTemplate

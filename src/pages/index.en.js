@@ -17,30 +17,6 @@ const trackLanguageClick = () => {
   })
 }
 
-const content = ({ site }) => {
-  return (
-    <section>
-      <ButtonLink
-        to="/"
-        title="View in english"
-        onClick={trackLanguageClick()}>
-          Ver em português
-      </ButtonLink>
-
-      <Social />
-
-      <Content>
-        <h1>Hi!</h1>
-
-        <p>{site.siteMetadata.descriptionEn}</p>
-
-        <p>Currently, I'm a Developer at <a href="https://cubo.network/jobs" target="_blank" rel="noopener noreferrer" title="Ver">Cubo Itaú</a> and
-        I've created the <a href="https://github.com/frontendbr" target="_blank" rel="noopener noreferrer" title="Ver">Front-end BR</a> organization on Github.</p>
-      </Content>
-    </section>
-  )
-}
-
 const IndexPage = () => {
   const { site } = useStaticQuery(
     graphql`
@@ -58,7 +34,23 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO lang="en" title={site.siteMetadata.title} description={site.siteMetadata.descriptionEn} />
-      <GridTemplate content={content({ site })} />
+      <GridTemplate>
+        <ButtonLink
+          to="/"
+          title="View in english"
+          onClick={trackLanguageClick()}>
+            Ver em português
+        </ButtonLink>
+
+        <Social />
+
+        <Content>
+          <h1>Hi!</h1>
+          <p>{site.siteMetadata.descriptionEn}</p>
+          <p>Currently, I'm a Developer at <a href="https://cubo.network/jobs" target="_blank" rel="noopener noreferrer" title="Ver">Cubo Itaú</a> and
+          I've created the <a href="https://github.com/frontendbr" target="_blank" rel="noopener noreferrer" title="Ver">Front-end BR</a> organization on Github.</p>
+        </Content>
+      </GridTemplate>
     </Layout>
   )
 }

@@ -8,30 +8,6 @@ import GridTemplate from 'components/GridTemplate'
 import Pagination from 'components/Pagination'
 import Search from 'components/Search'
 
-const content = ({ list }) => {
-  const blogList = list.map(({ node }, i) => (
-    <BlogItem
-      key={i}
-      slug={node.fields.slug}
-      date={node.frontmatter.date}
-      title={node.frontmatter.title}
-      description={node.frontmatter.description}
-      tags={node.frontmatter.tags}
-      timeToRead={node.timeToRead}
-    />
-  ))
-
-  const algolia = {
-    appId: process.env.GATSBY_ALGOLIA_APP_ID,
-    searchOnlyApiKey: process.env.GATSBY_ALGOLIA_SEARCH_KEY,
-    indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME
-  }
-
-  return (
-    <Search algolia={algolia} callback={blogList} />
-  )
-}
-
 const BlogList = (props) => {
   const { currentPage, numPages } = props.pageContext
   const isFirst = currentPage === 1
@@ -41,18 +17,45 @@ const BlogList = (props) => {
 
   const list = props.data.allMarkdownRemark.edges
 
+  const content = () => {
+    return (
+      <>
+        {list.map(({ node }, i) => (
+          <BlogItem
+            key={i}
+            slug={node.fields.slug}
+            date={node.frontmatter.date}
+            title={node.frontmatter.title}
+            description={node.frontmatter.description}
+            tags={node.frontmatter.tags}
+            timeToRead={node.timeToRead}
+          />
+        ))}
+
+        <Pagination
+          currentPage={currentPage}
+          numPages={numPages}
+          isFirst={isFirst}
+          isLast={isLast}
+          prevPage={prevPage}
+          nextPage={nextPage}
+        />
+      </>
+    )
+  }
+
+  const algolia = {
+    appId: process.env.GATSBY_ALGOLIA_APP_ID,
+    searchOnlyApiKey: process.env.GATSBY_ALGOLIA_SEARCH_KEY,
+    indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME
+  }
+
   return (
     <Layout>
       <SEO title='Blog' />
-      <GridTemplate content={content({ list })} />
-      <Pagination
-        currentPage={currentPage}
-        numPages={numPages}
-        isFirst={isFirst}
-        isLast={isLast}
-        prevPage={prevPage}
-        nextPage={nextPage}
-      />
+      <GridTemplate>
+        <Search algolia={algolia} callback={content()} />
+      </GridTemplate>
     </Layout>
   )
 }
