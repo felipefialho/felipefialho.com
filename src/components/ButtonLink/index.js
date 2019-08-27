@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import getActiveTheme from 'utils/getActiveTheme'
+import { getActiveTheme } from 'utils/themes'
 
 import * as S from './styled'
 

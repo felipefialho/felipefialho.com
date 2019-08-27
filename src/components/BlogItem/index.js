@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ReactGA from 'react-ga'
 
-import getActiveTheme from 'utils/getActiveTheme'
+import { getActiveTheme } from 'utils/themes'
 import DateTime from 'components/DateTime'
 import BoxHandler from 'components/BoxHandler'
 import Tags from 'components/Tags'
