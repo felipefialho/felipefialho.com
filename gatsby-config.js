@@ -4,6 +4,43 @@ require('dotenv').config({
 
 const queries = require('./src/utils/algolia')
 
+const feeds = [
+  {
+    serialize: ({ query: { site, allMarkdownRemark } }) => {
+      return allMarkdownRemark.edges.map(edge => {
+        return Object.assign({}, edge.node.frontmatter, {
+          description: edge.node.frontmatter.description,
+          date: edge.node.frontmatter.date,
+          url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+          guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+          custom_elements: [{ 'content:encoded': edge.node.html }]
+        })
+      })
+    },
+    query: `
+      {
+        allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                description
+                date
+              }
+              excerpt(truncate: true, pruneLength: 500, format: HTML)
+            }
+          }
+        }
+      }
+    `,
+    output: '/feed.xml',
+    title: 'Felipe Fialho - RSS Feed'
+  }
+]
+
 const plugins = [
   `gatsby-plugin-sharp`,
   `gatsby-transformer-json`,
@@ -12,10 +49,27 @@ const plugins = [
   `gatsby-plugin-styled-components`,
   `gatsby-plugin-svgr`,
   `gatsby-plugin-transition-link`,
-  `gatsby-plugin-feed`,
   `gatsby-plugin-offline`,
   `gatsby-plugin-react-helmet`,
   `gatsby-plugin-sitemap`,
+  {
+    resolve: `gatsby-plugin-feed`,
+    options: {
+      query: `
+        {
+          site {
+            siteMetadata {
+              title
+              description
+              siteUrl
+              site_url: siteUrl
+            }
+          }
+        }
+      `,
+      feeds
+    }
+  },
   {
     resolve: `gatsby-plugin-disqus`,
     options: {
