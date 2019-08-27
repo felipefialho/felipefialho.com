@@ -8,7 +8,7 @@ const Tags = ({ tags }) => {
     <S.Tags>
       <S.TagIcon />
       {tags.map((tag, i) => (
-        <S.TagItem key={i} aria-describedby={tag}>{tag}</S.TagItem>
+        <S.TagItem key={i}>{tag}</S.TagItem>
       ))}
     </S.Tags>
   )

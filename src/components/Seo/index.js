@@ -26,7 +26,7 @@ function SEO({ description, lang, meta, title, image }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const ogImage = image || 'https://felipefialho.com/images/og-image.jpg'
+  const ogImage = image || 'https://felipefialho.com/assets/og-image.jpg'
 
   return (
     <Helmet
