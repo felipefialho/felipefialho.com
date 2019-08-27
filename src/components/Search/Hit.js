@@ -6,8 +6,6 @@ import BlogItem from 'components/BlogItem'
 const Hit = (props) => {
   const { hit } = props
 
-  console.log(hit)
-
   return (
     <BlogItem
       slug={hit.fields.slug}
