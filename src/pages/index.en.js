@@ -24,7 +24,7 @@ const IndexPage = () => {
         site {
           siteMetadata {
             title
-            descriptionEn
+            authorDescriptionEn
           }
         }
       }
@@ -33,7 +33,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO lang="en" title={site.siteMetadata.title} description={site.siteMetadata.descriptionEn} />
+      <SEO lang="en" title={site.siteMetadata.title} description={site.siteMetadata.authorDescriptionEn} />
       <GridTemplate>
         <ButtonLink
           to="/"
@@ -46,7 +46,7 @@ const IndexPage = () => {
 
         <Content>
           <h1>Hi!</h1>
-          <p>{site.siteMetadata.descriptionEn}</p>
+          <p>{site.siteMetadata.authorDescriptionEn}</p>
           <p>Currently, I'm a Developer at <a href="https://cubo.network/jobs" target="_blank" rel="noopener noreferrer" title="Ver">Cubo Itaú</a> and
           I've created the <a href="https://github.com/frontendbr" target="_blank" rel="noopener noreferrer" title="Ver">Front-end BR</a> organization on Github.</p>
         </Content>
