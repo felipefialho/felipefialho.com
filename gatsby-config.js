@@ -15,6 +15,7 @@ const plugins = [
   `gatsby-plugin-feed`,
   `gatsby-plugin-offline`,
   `gatsby-plugin-react-helmet`,
+  `gatsby-plugin-netlify-cms`,
   {
     resolve: `gatsby-plugin-disqus`,
     options: {
@@ -26,6 +27,13 @@ const plugins = [
     options: {
       langKeyDefault: 'pt-br',
       useLangKeyLayout: false
+    }
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      path: `${__dirname}/static/assets`,
+      name: 'uploads'
     }
   },
   {
@@ -102,6 +110,14 @@ const plugins = [
       display: `minimal-ui`,
       icon: `content/assets/icon.png`,
     },
+  },
+  `gatsby-plugin-netlify-cms`,
+  `gatsby-plugin-netlify`,
+  {
+    resolve: 'gatsby-plugin-netlify-cache',
+    options: {
+      cachePublic: true
+    }
   },
 ]
 
