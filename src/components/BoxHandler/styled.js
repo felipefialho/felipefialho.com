@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import * as V from 'styles/variables'
 
 export const BoxHandler = styled.article`
+  border: ${V.Border.box};
   border-radius: ${V.BorderRadius.box};
   box-shadow: ${V.BoxShadow.box};
   color: var(--primaryColor);
