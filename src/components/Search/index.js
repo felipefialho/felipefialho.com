@@ -19,7 +19,6 @@ const Search = ({ algolia, callback }) => {
   const [ search, setSearch ] = useState('')
 
   const onSearchStateChange = (searchState) => {
-    console.log({ searchState, search })
     trackSearch(searchState.query)
     setSearch(searchState)
   }

@@ -125,8 +125,6 @@ if (process.env.CONTEXT === 'production') {
     }
   }
 
-  console.log(analytics)
-
   plugins.push(algolia)
   plugins.push(analytics)
 }
