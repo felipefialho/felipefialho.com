@@ -131,10 +131,10 @@ export const Content = styled.article`
   .language-text {
     background-color: var(--bgSecondary);
     color: var(--colorPrimary);
-    padding-bottom: .3em;
-    padding-left: .5em;
-    padding-right: .5em;
-    padding-top: .4em;
+    padding-bottom: .2em;
+    padding-left: .3em;
+    padding-right: .3em;
+    padding-top: .3em;
     text-shadow: none;
   }
 
@@ -158,7 +158,7 @@ export const Content = styled.article`
       }
     }
   }
- 
+
   .support-title {
     ${T.Subtitle1}
   }
