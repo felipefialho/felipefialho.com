@@ -2,7 +2,7 @@
 title: "Uma reflexão sobre salários, valor hora e qualidade de vida"
 date: 2015-09-28 00:00:01
 description: "Esses dias estava observando os carros presos no transito e as pessoas na correria maluca do dia-a-dia quando fiz uma reflexão sobre qualidade de vida, salários, valor hora, a vida, o universo e tudo mais"
-image: featured.jpg
+image: assets/2015-09-28-uma-reflexao-sobre-salarios-valor-hora-e-qualidade-de-vida.jpg
 tags: ["carreira", "lifestyle", "misc"]
 ---
 
@@ -54,7 +54,7 @@ Vamos as contas novamente!
 
 Ou seja, ele gastaria 9:25h envolvido com o trabalho.
 
-> 4.692,09 / 203,5 = **R$ 23,05** 
+> 4.692,09 / 203,5 = **R$ 23,05**
 >
 > Esse seria o valor hora do nosso amigo agora.
 
@@ -66,7 +66,7 @@ Ou seja, ele gastaria 9:25h envolvido com o trabalho.
 
 O salário liquido mensal, já prevendo 13º e férias seria de R$ 6.303,20.
 
-> 6.303,20 / 292,6 = **R$ 21,54** 
+> 6.303,20 / 292,6 = **R$ 21,54**
 >
 > Esse seria o valor hora caso ele aceitasse esse emprego.
 

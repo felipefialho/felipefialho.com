@@ -2,7 +2,7 @@
 title: "Sobre trabalhar remoto"
 date: 2015-06-10 00:00:01
 description: "Depois de 6 meses, sim, 6 meses, resolvi sair da inércia e voltar a escrever"
-image: featured.jpg
+image: assets/2015-06-10-sobre-trabalhar-remoto.jpg
 tags: ["carreira", "lifestyle", "misc"]
 ---
 
