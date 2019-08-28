@@ -2,23 +2,22 @@ backend:
   name: github
   repo: felipefialho/felipefialho.com
   branch: master
-  site_domain: felipefialho.com
+  # site_domain: felipefialho.com
 
-media_folder: static/assets/posts
-public_folder: assets/posts
+media_folder: static/assets
+public_folder: assets
 publish_mode: editorial_workflow
 
 collections:
-  - name: posts # Used in routes, e.g. /admin/collections/blog
-    label: posts # Used in the UI
+  - name: blog # Used in routes, e.g. /admin/collections/blog
+    label: Blog # Used in the UI
     folder: content/posts
     create: true # Allow users to create new documents in this collection
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template i.e. title.md
     fields: # The fields for each document, usually in front matter
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
-      - { label: 'Date', name: 'date', widget: 'datetime', format: 'YYYY-MM-DD hh:mm:ss' }
-      - { label: 'Header Image', name: 'image', widget: 'image' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Tags', name: 'tags', widget: 'list', default: [''] }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: Date, name: date, widget: datetime, format: YYYY-MM-DD hh:mm:ss }
+      - { label: Header Image, name: image, widget: image }
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string }
+      - { label: Tags, name: tags, widget: list, default: [''] }
+      - { label: Body, name: body, widget: markdown }
