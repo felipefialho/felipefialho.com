@@ -158,4 +158,8 @@ export const Content = styled.article`
       }
     }
   }
+ 
+  .support-title {
+    ${T.Subtitle1}
+  }
 `

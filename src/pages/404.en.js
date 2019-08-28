@@ -31,11 +31,11 @@ const IndexPage = () => {
             aria-label="Scared emoji">😱</span>
           </h1>
 
-          <h2>But don't worry! <span
+          <p class="support-title">But don't worry! <span
             className="small"
             role="img"
             aria-label="Happy emoji">😄</span>
-          </h2>
+          </p>
 
           <p>In the meantime you can take a look at my <AniLink
             cover

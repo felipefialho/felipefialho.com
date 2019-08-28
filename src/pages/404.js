@@ -39,33 +39,34 @@ const IndexPage = () => {
             aria-label="Emoji assustado">😱</span>
           </h1>
 
-          <h2>Mas não se preocupe! <span
+          <p class="support-title">Mas não se preocupe! <span
             className="small"
             role="img"
             aria-label="Emoji feliz">😄</span>
-          </h2>
+          </p>
 
-          <p>Enquanto isso você pode dar uma olhadinha nos meus <AniLink
-            cover
-            bg={getActiveTheme()}
-            duration={.6}
-            direction="down"
-            to="/lab/"
-            onClick={trackLabsClick()}>
-            projetos pessoais
-          </AniLink> ou <AniLink
-            cover
-            bg={getActiveTheme()}
-            duration={.6}
-            direction="down"
-            to="/blog/"
-            onClick={trackBlogClick()}>
-            ler meu blog
-          </AniLink>! <span
-            className="small"
-            role="img"
-            aria-label="Emoji com olhos apaixonados">😍
-          </span></p>
+          <ul>
+            <li>Que tal dar uma olhadinha nos meus <AniLink
+                cover
+                bg={getActiveTheme()}
+                duration={.6}
+                direction="down"
+                to="/lab/"
+                onClick={trackLabsClick()}>
+                projetos pessoais
+              </AniLink>?
+            </li>
+            <li>Ou mesmo <AniLink
+                cover
+                bg={getActiveTheme()}
+                duration={.6}
+                direction="down"
+                to="/blog/"
+                onClick={trackBlogClick()}>
+                ler meu blog
+              </AniLink>?
+            </li>
+          </ul>
         </Content>
       </GridTemplate>
     </Layout>

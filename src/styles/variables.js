@@ -26,7 +26,7 @@ export const Height = {
   headerBarSm: `${Space.lg}`,
   headerSm: `${Space.xxlg}`,
   headerLg: `${Space.xlg}`,
-  mainTop: `${Space.default}`
+  mainTop: `${Space.md}`
 }
 
 // --------------------------------------------------
