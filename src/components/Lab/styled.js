@@ -9,7 +9,10 @@ export const LabList = styled.section`
   display: grid;
   grid-column-gap: ${V.Space.default};
   grid-row-gap: ${V.Space.default};
-  grid-template-columns: repeat(2, 1fr);
+
+  ${media.greaterThan('small')`
+    grid-template-columns: repeat(2, 1fr);
+  `}
 
   ${media.greaterThan('medium')`
     grid-template-columns: repeat(3, 1fr);
