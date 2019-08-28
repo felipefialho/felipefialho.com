@@ -31,9 +31,10 @@ const BlogItem = ({
       to={`/${slug}`}
       cover
       direction="bottom"
+      title={title}
       bg={getActiveTheme()}
       onClick={trackClick(title)}>
-        <BoxHandler>
+      <BoxHandler>
           {date && (
             <DateTime>
               {date}

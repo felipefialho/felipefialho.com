@@ -122,7 +122,7 @@ const GlobalStyles = createGlobalStyle`
 
   body.theme-light {
     --bg: ${V.Color.white};
-    --bgSecondary: ${V.Color.grayLighter};
+    --bgSecondary: ${V.Color.grayWhite};
     --borderColor: ${V.Color.grayWhite};
     --highlightColor: ${V.Color.blue};
     --primaryColor: ${V.Color.black};
