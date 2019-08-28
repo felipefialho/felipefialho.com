@@ -2,7 +2,7 @@
 title: "Usando white-space: nowrap para fallbacks incríveis"
 date: 2017-02-21 00:00:01
 description: "Pouco conhecida, essa técnica pode economizar muitas linhas de código e até mesmo melhorar a acessibilidade do seu projeto"
-image: featured.png
+image: assets/2017-02-21-css-usando-white-space-nowrap-para-fallbacks-incriveis.png
 tags: ["css"]
 ---
 

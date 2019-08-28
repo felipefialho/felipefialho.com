@@ -2,7 +2,7 @@
 title: "Meu dia-a-dia como desenvolvedor em 2018"
 date: 2018-01-15 00:00:01
 description: "Bora contar um pouco sobre como anda meu workflow!"
-image: featured.jpg
+image: assets/2018-01-15-meu-dia-a-dia-como-desenvolvedor-em-2018.jpg
 tags: ["workflow", "front-end", "misc"]
 ---
 

@@ -2,7 +2,7 @@
 title: "O inicio, o fim e o meio do Desenvolvimento Front-End"
 date: 2017-06-20 00:00:01
 description: "Sou desenvolvedor desde 2009, nessa época ainda não existia o termo Front-End Developer e essa profissão passou por diversas mudanças desde então"
-image: featured.png
+image: assets/2017-06-20-o-inicio-o-fim-e-o-meio-do-desenvolvimento-front-end.png
 tags: ["carreira", "front-end"]
 ---
 

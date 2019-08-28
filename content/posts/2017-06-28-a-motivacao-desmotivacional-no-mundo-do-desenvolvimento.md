@@ -2,7 +2,7 @@
 title: "A motivação desmotivacional no mundo do Desenvolvimento"
 date: 2017-06-28 00:00:01
 description: "E então você, Developer super antenado(a), lê sobre os melhores frameworks e práticas do mercado… e se empolga. Mas quando chega no trabalho precisar dar suporte para IE7"
-image: featured.png
+image: assets/2017-06-28-a-motivacao-desmotivacional-no-mundo-do-desenvolvimento.png
 tags: ["carreira", "estudos", "front-end"]
 ---
 

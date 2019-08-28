@@ -2,7 +2,7 @@
 title: "Retrospectiva </2017>"
 date: 2017-12-31 00:00:01
 description: "Minha retrospectiva profissional de 2017!"
-image: featured.jpg
+image: assets/2017-12-31-retrospectiva-2017.jpg
 tags: ["comunidade", "carreira"]
 ---
 
@@ -14,7 +14,7 @@ Vou focar apenas na vida profissional, separada por trimestre. E para a leitura 
 
 ## Janeiro / Fevereiro / Março
 
-![Edição final do Meetup CSS](meetup-css.png)*Edição final do Meetup CSS*
+![Edição final do Meetup CSS](meetup-css-4.png)*Edição final do Meetup CSS*
 
 * Logo no inicio do ano, [escrevi um artigo mostrando vários eventos frontenders legais que aconteceriam em 2017](https://medium.com/felipefialho/eventos-front-end-para-ir-em-2017-em-s%C3%A3o-paulo-72c8a88428fa)
 
@@ -50,7 +50,7 @@ Aqui as coisas foram bem agitadas…
 
 * Rolou então a segunda edição da Front-end Week, simplesmente espetacular, podem ter uma noção completa dos eventos de 2017 [lendo esse texto](https://medium.com/@diogomoretti/2017-o-ano-mais-intenso-da-minha-vida-dd886c334266) do [Diogo Moretti](undefined)
 
-![Zeno Rocha no Meetup CSS](meetup-css-2.png)*Zeno Rocha no Meetup CSS*
+![Zeno Rocha no Meetup CSS](meetup-css-3.png)*Zeno Rocha no Meetup CSS*
 
 * Aproveitamos para fazer uma [edição surpresa do Meetup CSS](https://www.meetup.com/CSS-SP/events/239847887/), com talks de dois mitos do desenvolvimento brasileiro: [Sérgio Lopes](undefined) e [Zeno Rocha](undefined)
 
@@ -78,7 +78,7 @@ Aqui as coisas foram bem agitadas…
 
 ## Outubro / Novembro / Dezembro
 
-![Front-end BR foi uma comunidade oficial da InterCon 2017](frontend-br.png)*Front-end BR foi uma comunidade oficial da InterCon 2017*
+![Front-end BR foi uma comunidade oficial da InterCon 2017](frontend-br-2.png)*Front-end BR foi uma comunidade oficial da InterCon 2017*
 
 * [Falei sobre 15 coisas que eu faria se estivesse iniciando como desenvolvedor](https://medium.com/felipefialho/15-coisas-que-faria-se-estivesse-iniciando-minha-carreira-como-desenvolvedor-9fdd0c17b473)
 

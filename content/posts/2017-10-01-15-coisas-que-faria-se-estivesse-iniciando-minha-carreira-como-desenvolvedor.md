@@ -2,7 +2,7 @@
 title: "15 coisas que faria se estivesse iniciando minha carreira como desenvolvedor"
 date: 2017-10-01 00:00:01
 description: "Ou se pudesse entrar em uma maquina do tempo e dar conselhos para eu mesmo no passado"
-image: featured.png
+image: assets/2017-10-01-15-coisas-que-faria-se-estivesse-iniciando-minha-carreira-como-desenvolvedors.png
 tags: ["carreira"]
 ---
 
@@ -86,7 +86,7 @@ Metodologias, UX, Design, SEO, Acessibilidade, o próprio mercado e funcionament
 
 ## 8. Iria em eventos
 
-![MeetupCSS no Cubo](meetup-css.png)*MeetupCSS no Cubo*
+![MeetupCSS no Cubo](meetup-css-2017.png)*MeetupCSS no Cubo*
 
 Já escrevi algumas vezes da [importância de eventos para developers](https://codetalks.net/por-qual-motivo-todo-desenvolvedor-deve-ir-em-eventos-d1f276cf16b), portanto não vou me estender nesse assunto.
 
@@ -104,7 +104,7 @@ Não exitaria em aprender e absorver o máximo possível de profissionais mais v
 
 ## 10. Teria minha própria opinião
 
-![[https://www.pensador.com/frase/MTYzNzA/](raul.png)*[https://www.pensador.com/frase/MTYzNzA/](https://www.pensador.com/frase/MTYzNzA/)*
+![[https://www.pensador.com/frase/MTYzNzA/](raul-2017.png)*[https://www.pensador.com/frase/MTYzNzA/](https://www.pensador.com/frase/MTYzNzA/)*
 
 Fazendo contra ponto do número oito.
 

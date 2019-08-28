@@ -2,7 +2,7 @@
 title: "Desenvolvedoras e desenvolvedores do meu Brasil... Compartilhem conhecimento!"
 date: 2017-10-27 00:00:01
 description: "No fim esse texto todo é apenas licença poética de Filtro Solar…"
-image: featured.png
+image: assets/2017-10-27-desenvolvedoras-e-desenvolvedores-do-meu-brasil-compartilhem-conhecimento.png
 tags: ["comunidade", "misc"]
 ---
 

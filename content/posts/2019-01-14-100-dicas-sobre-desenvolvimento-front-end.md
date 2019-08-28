@@ -2,7 +2,7 @@
 title: "100 dicas sobre desenvolvimento Front-end"
 date: 2019-01-14 00:00:01
 description: "👉 Brincadeira que virou uma thread bem legal: 💯 dicas rápidas sobre Desenvolvimento Front-end"
-image: featured.png
+image: assets/2019-01-14-100-dicas-sobre-desenvolvimento-front-end.png
 tags: ["html", "javascript", "css"]
 ---
 
