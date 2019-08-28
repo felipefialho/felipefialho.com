@@ -42,53 +42,20 @@ const feeds = [
 ]
 
 const plugins = [
-  `gatsby-plugin-sharp`,
-  `gatsby-transformer-json`,
-  `gatsby-transformer-sharp`,
-  'gatsby-plugin-resolve-src',
-  `gatsby-plugin-styled-components`,
-  `gatsby-plugin-svgr`,
-  `gatsby-plugin-transition-link`,
-  `gatsby-plugin-offline`,
-  `gatsby-plugin-react-helmet`,
-  `gatsby-plugin-sitemap`,
   {
-    resolve: `gatsby-plugin-feed`,
-    options: {
-      query: `
-        {
-          site {
-            siteMetadata {
-              title
-              description
-              siteUrl
-              site_url: siteUrl
-            }
-          }
-        }
-      `,
-      feeds
-    }
-  },
-  {
-    resolve: `gatsby-plugin-disqus`,
-    options: {
-      shortname: `felipefialho`
-    }
-  },
-  {
-    resolve: 'gatsby-plugin-i18n',
-    options: {
-      langKeyDefault: 'pt-br',
-      useLangKeyLayout: false
-    }
-  },
-  {
+    // keep as first gatsby-source-filesystem plugin for gatsby image support
     resolve: 'gatsby-source-filesystem',
     options: {
       path: `${__dirname}/static/assets`,
-      name: 'uploads'
+      name: 'assets'
     }
+  },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      path: `${__dirname}/content/assets`,
+      name: `content`,
+    },
   },
   {
     resolve: `gatsby-source-filesystem`,
@@ -100,26 +67,46 @@ const plugins = [
   {
     resolve: `gatsby-source-filesystem`,
     options: {
-      path: `${__dirname}/content/assets`,
-      name: `assets`,
-    },
-  },
-  {
-    resolve: `gatsby-source-filesystem`,
-    options: {
       path: `${__dirname}/content/lab`,
       name: `lab`,
     },
   },
+  `gatsby-plugin-sharp`,
+  `gatsby-transformer-sharp`,
+  `gatsby-transformer-json`,
+  'gatsby-plugin-resolve-src',
+  `gatsby-plugin-styled-components`,
+  `gatsby-plugin-svgr`,
+  `gatsby-plugin-transition-link`,
+  `gatsby-plugin-offline`,
+  `gatsby-plugin-react-helmet`,
+  `gatsby-plugin-sitemap`,
   {
     resolve: `gatsby-transformer-remark`,
     options: {
       plugins: [
         {
+          resolve: `gatsby-plugin-netlify-cms-paths`,
+          options: {
+            cmsConfig: `/static/admin/config.yml`
+          }
+        },
+        `gatsby-remark-relative-images`,
+        {
           resolve: `gatsby-remark-images`,
           options: {
+            // It's important to specify the maxWidth (in pixels) of
+            // the content container as this plugin uses this as the
+            // base for generating different widths of each image.
             maxWidth: 650,
+            linkImagesToOriginal: false
           },
+        },
+        {
+          resolve: 'gatsby-remark-copy-linked-files',
+          options: {
+            destinationDir: 'static/assets/'
+          }
         },
         {
           resolve: `gatsby-remark-responsive-iframe`,
@@ -152,6 +139,37 @@ const plugins = [
         `gatsby-remark-smartypants`,
       ],
     },
+  },
+  {
+    resolve: `gatsby-plugin-feed`,
+    options: {
+      query: `
+        {
+          site {
+            siteMetadata {
+              title
+              description
+              siteUrl
+              site_url: siteUrl
+            }
+          }
+        }
+      `,
+      feeds
+    }
+  },
+  {
+    resolve: `gatsby-plugin-disqus`,
+    options: {
+      shortname: `felipefialho`
+    }
+  },
+  {
+    resolve: 'gatsby-plugin-i18n',
+    options: {
+      langKeyDefault: 'pt-br',
+      useLangKeyLayout: false
+    }
   },
   {
     resolve: `gatsby-plugin-manifest`,
