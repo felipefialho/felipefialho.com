@@ -2,7 +2,7 @@
 title: "O fodástico :not()"
 date: 2016-11-17 00:00:01
 description: "Quando se trata de evitar resetar propriedades, o :not() é o cara"
-image: assets/2016-17-11-css-o-fodastico-not.png
+image: /assets/2016-11-17-css-o-fodastico-not.png
 tags: ["css"]
 ---
 

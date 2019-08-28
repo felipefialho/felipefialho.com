@@ -2,7 +2,7 @@
 title: "Retrospectiva 2016"
 date: 2016-12-14 00:00:01
 description: "Minha retrospectiva profissional desse ótimo ano"
-image: assets/2016-12-14-retrospectiva-2016.png
+image: /assets/2016-12-14-retrospectiva-2016.png
 tags: ["comunidade", carreira"]
 ---
 

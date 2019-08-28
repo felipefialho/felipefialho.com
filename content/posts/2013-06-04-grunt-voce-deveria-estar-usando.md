@@ -2,7 +2,7 @@
 title: "Grunt - Você deveria estar usando"
 date: 2013-06-04 00:00:01
 description: "Dessa vez vou explicar as tarefas que atualmente estou utilizando para automatizar meu trabalho"
-image: assets/2013-06-04-grunt-voce-deveria-estar-usando.jpg
+image: /assets/2013-06-04-grunt-voce-deveria-estar-usando.jpg
 tags: ["javascript"]
 ---
 

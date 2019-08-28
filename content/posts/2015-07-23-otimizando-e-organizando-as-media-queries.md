@@ -2,7 +2,7 @@
 title: "Otimizando e Organizando as Media Queries"
 date: 2015-07-23 00:00:01
 description: "Quando o assunto é Mobile First, Media Queries e otimização de código eu tenho uma regra. Evitar ao máximo resetar propriedades"
-image: assets/2015-07-23-otimizando-e-organizando-as-media-queries.jpg
+image: /assets/2015-07-23-otimizando-e-organizando-as-media-queries.jpg
 tags: ["css", "workflow"]
 ---
 

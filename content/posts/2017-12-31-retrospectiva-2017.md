@@ -2,7 +2,7 @@
 title: "Retrospectiva </2017>"
 date: 2017-12-31 00:00:01
 description: "Minha retrospectiva profissional de 2017!"
-image: assets/2017-12-31-retrospectiva-2017.jpg
+image: /assets/2017-12-31-retrospectiva-2017.jpg
 tags: ["comunidade", "carreira"]
 ---
 

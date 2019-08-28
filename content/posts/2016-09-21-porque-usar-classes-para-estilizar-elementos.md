@@ -2,7 +2,7 @@
 title: Porquê usar classes para estilizar elementos
 date: 2016-09-21 00:00:01
 description: Nesse artigo vou defender meu ponto de vista que é totalmente favorável ao uso de classes.
-image: assets/2016-21-09-porque-usar-classes-para-estilizar-elementos.png
+image: /assets/2016-09-21-porque-usar-classes-para-estilizar-elementos.png
 tags: ["css", "workflow"]
 ---
 

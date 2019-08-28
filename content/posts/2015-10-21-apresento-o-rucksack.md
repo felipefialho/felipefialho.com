@@ -2,7 +2,7 @@
 title: "Apresento o Rucksack"
 date: 2015-10-21 00:00:01
 description: "Nesse artigo vou mostrar para vocês o Rucksack, um pacote de features desenvolvido em PostCSS que pode ser de grande ajuda no seu workflow"
-image: assets/2015-10-21-apresento-o-rucksack.jpg
+image: /assets/2015-10-21-apresento-o-rucksack.jpg
 tags: ["css"]
 ---
 

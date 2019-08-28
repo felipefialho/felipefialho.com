@@ -2,7 +2,7 @@
 title: "Aproximando seus estudos de cenários reais"
 date: 2015-02-07 00:00:01
 description: "Sobre aquela velha questão de Teoria x Prática e como solucionar isso"
-image: assets/2015-02-07-aproximando-seus-estudos-de-cenarios-reais.jpg
+image: /assets/2015-02-07-aproximando-seus-estudos-de-cenarios-reais.jpg
 tags: ["estudos", "carreira"]
 ---
 

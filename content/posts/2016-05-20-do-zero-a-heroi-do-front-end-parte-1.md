@@ -2,7 +2,7 @@
 title: "Do Zero a Herói Front-End (Parte I)"
 date: 2016-05-20 00:00:01
 description: "Um guia completo para aprender desenvolvimento Front-End"
-image: assets/2016-05-20-do-zero-a-heroi-do-front-end-parte-1.png
+image: /assets/2016-05-20-do-zero-a-heroi-do-front-end-parte-1.png
 tags: ["carreira", "estudos", "css", "html", "javascript"]
 ---
 
