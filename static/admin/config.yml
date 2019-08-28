@@ -2,7 +2,7 @@ backend:
   name: github
   repo: felipefialho/felipefialho.com
   branch: master
-  site_domain: felipefialho.com
+  #site_domain: felipefialho.com
 
 media_folder: static/assets
 public_folder: assets
