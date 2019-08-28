@@ -99,7 +99,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: ${V.Color.black};
+    background-color: var(--bg);
     color: var(--primaryColor);
     font-family: -apple-system, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
     font-size: 1.8rem;
