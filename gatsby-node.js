@@ -2,22 +2,6 @@ const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
-exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions
-
-  fmImagesToRelative(node)
-
-  if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `posts` })
-    createNodeField({
-      node,
-      name: `slug`,
-      value: `blog${slug}`
-    })
-  }
-}
-
-// To create the posts pages
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
@@ -97,4 +81,19 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
   })
+}
+
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions
+
+  fmImagesToRelative(node)
+
+  if (node.internal.type === `MarkdownRemark`) {
+    const slug = createFilePath({ node, getNode, basePath: `posts` })
+    createNodeField({
+      node,
+      name: `slug`,
+      value: `blog${slug}`
+    })
+  }
 }
