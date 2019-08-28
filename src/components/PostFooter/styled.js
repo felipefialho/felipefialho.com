@@ -6,11 +6,21 @@ import * as T from 'styles/typography'
 export const PostFooter = styled.div`
   ${T.Text1}
   margin-bottom: ${V.Space.lg};
+`
 
-  &:not(:first-child) {
+export const PostFooterContent = styled.div`
+  margin-bottom: ${V.Space.md};
+  margin-top: ${V.Space.md};
+  padding-top: ${V.Space.md};
+  position: relative;
+
+  &:after {
     border-top: ${V.Border.default}; 
-    margin-top: ${V.Space.lg};
-    padding-top: ${V.Space.default};
+    content: '';
+    left: 20%;
+    position: absolute;
+    right: 20%;
+    top: 0;
   }
 `
 
