@@ -2,7 +2,7 @@
 title: "Sobre inspirar pessoas com suas iniciativas"
 date: 2016-06-20 00:00:01
 description: "Um post sobre inspiração e comunidade de desenvolvimento"
-image: featured.jpg
+image: assets/2016-06-20-sobre-inspirar-pessoas-com-suas-iniciativas.jpg
 tags: ["carreira", "comunidade"]
 ---
 

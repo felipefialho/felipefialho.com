@@ -2,7 +2,7 @@
 title: "Por que todo desenvolvedor deve ir em eventos"
 date: 2016-04-05 00:00:01
 description: "Existem milhares de textos sobre a importância dos eventos para desenvolvedores, mas todos precisam entender que eventos podem mudar a carreiras"
-image: featured.jpg
+image: assets/2016-04-05-porque-developers-devem-ir-em-eventos.jpg
 tags: ["carreira", "comunidade"]
 ---
 

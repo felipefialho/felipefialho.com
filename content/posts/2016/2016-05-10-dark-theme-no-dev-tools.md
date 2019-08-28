@@ -2,7 +2,7 @@
 title: "Dark Theme no DevTools"
 date: 2016-05-10 00:00:01
 description: "Que tal deixar o seu DevTools com o tema escuro?"
-image: featured.png
+image: assets/2016-05-10-dark-theme-no-dev-tools.png
 tags: ["workflow"]
 ---
 
