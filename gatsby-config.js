@@ -42,19 +42,21 @@ const feeds = [
 ]
 
 const plugins = [
+  `gatsby-plugin-sharp`,
+  `gatsby-transformer-sharp`,
   {
     // keep as first gatsby-source-filesystem plugin for gatsby image support
     resolve: 'gatsby-source-filesystem',
     options: {
       path: `${__dirname}/static/assets`,
-      name: 'assets'
+      name: 'uploads'
     }
   },
   {
     resolve: `gatsby-source-filesystem`,
     options: {
       path: `${__dirname}/content/assets`,
-      name: `content`,
+      name: `assets`,
     },
   },
   {
@@ -71,8 +73,6 @@ const plugins = [
       name: `lab`,
     },
   },
-  `gatsby-plugin-sharp`,
-  `gatsby-transformer-sharp`,
   `gatsby-transformer-json`,
   'gatsby-plugin-resolve-src',
   `gatsby-plugin-styled-components`,
@@ -86,12 +86,8 @@ const plugins = [
     options: {
       plugins: [
         {
-          resolve: `gatsby-plugin-netlify-cms-paths`,
-          options: {
-            cmsConfig: `/static/admin/config.yml`
-          }
+          resolve: 'gatsby-remark-relative-images',
         },
-        `gatsby-remark-relative-images`,
         {
           resolve: `gatsby-remark-images`,
           options: {
@@ -135,7 +131,7 @@ const plugins = [
         `gatsby-plugin-catch-links`,
         `gatsby-remark-lazy-load`,
         `gatsby-remark-prismjs`,
-        `gatsby-remark-copy-linked-files`,
+        `gatsby-remark-external-links`,
         `gatsby-remark-smartypants`,
       ],
     },
