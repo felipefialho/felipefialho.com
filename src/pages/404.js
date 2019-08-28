@@ -9,6 +9,7 @@ import Content from 'components/Content'
 import SEO from 'components/Seo'
 import Social from 'components/Social'
 import GridTemplate from 'components/GridTemplate'
+import BlogList from 'components/BlogList'
 
 const trackLabsClick = () => {
   ReactGA.event({
@@ -56,6 +57,7 @@ const IndexPage = () => {
                 projetos pessoais
               </AniLink>?
             </li>
+
             <li>Ou mesmo <AniLink
                 cover
                 bg={getActiveTheme()}
@@ -68,6 +70,8 @@ const IndexPage = () => {
             </li>
           </ul>
         </Content>
+
+        <BlogList />
       </GridTemplate>
     </Layout>
   )
