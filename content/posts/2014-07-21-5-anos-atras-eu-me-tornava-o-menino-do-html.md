@@ -21,7 +21,7 @@ Comecei esse curso (que era técnologo) aos 16 anos, então terminei aos 18 anos
 
 Estava totalmente perdido e sem saber o que estudar ou para qual área seguir. Sendo assim levei quase 6 meses para conseguir a primeira oportunidade, e então ela chegou quando eu menos esperava...
 
-![Primeira oportunidade como desenvolvedor :)](/primeira-chance.png)
+![Primeira oportunidade como desenvolvedor :)](assets/primeira-chance.png)
 
 Posso dizer que foi oficialmente meu inicio como desenvolvedor.
 

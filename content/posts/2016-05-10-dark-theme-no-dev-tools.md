@@ -24,11 +24,11 @@ Nada pior do que viciar o olhar nesses temas escuros, mudar a janela para o o De
 
 Tenho certeza que você ia achar bem melhor que o DevTools do Chrome fosse assim:
 
-![Tema escuro do DevTools no Chrome](dark-theme-chrome.png)
+![Tema escuro do DevTools no Chrome](assets/dark-theme-chrome.png)
 
 Ou assim no Firefox:
 
-![Tema escuro do DevTools no Firefox](dark-theme-firefox.png)
+![Tema escuro do DevTools no Firefox](assets/dark-theme-firefox.png)
 
 E isso é muito simples!
 
@@ -37,17 +37,17 @@ E isso é muito simples!
 ### No Chrome
 
 1. No canto superior direito do DevTools.
-  ![Configurações do DevTools do Chrome](dark-theme-chrome-place.png)
+  ![Configurações do DevTools do Chrome](assets/dark-theme-chrome-place.png)
 
 1. Depois vá em **settings** e selecione **Theme: Dark**.
-  ![Configurações de tema do DevTools do Chrome](dark-theme-chrome-config.png)
+  ![Configurações de tema do DevTools do Chrome](assets/dark-theme-chrome-config.png)
 
 ### Firefox
 
 1. No canto superior direito do DevTools, clique no botão de engrenagem.
 2. Depois vá em **Temas** e selecione **tema escuro**.
 
-![Configurações de tema do DevTools do Firefox](dark-theme-firefox-config.png)
+![Configurações de tema do DevTools do Firefox](assets/dark-theme-firefox-config.png)
 
 __________
 

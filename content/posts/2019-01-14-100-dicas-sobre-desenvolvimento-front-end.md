@@ -59,7 +59,7 @@ Mas na internet nada escala melhor que texto escrito, então vamos a ele.
 
 <b>15.</b> Isso se estende para qualquer propriedade nos elementos HTML, isso significa que é possível combinar WAI-ARIA com CSS e criar coisas bem legais, como esse Tooltip no CSS Components.
 
-[![CSS Components](css-components.jpg)](https://www.felipefialho.com/css-components/#component-tooltip)
+[![CSS Components](assets/css-components.jpg)](https://www.felipefialho.com/css-components/#component-tooltip)
 
 <b>16.</b> Interessante notar, que até classes, podem ser usadas dessa forma, por exemplo:
 

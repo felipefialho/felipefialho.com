@@ -32,7 +32,7 @@ Nessa roda de debate, os desenvolvedores envolvidos no evento contam seus proble
 
 A nossa última edição foi fantástica, tivemos mais de 150 pessoas no Google Brasil durante a FrontEnd Week no mês de junho/2016.
 
-![#MeetupCSS no Google Brasil](meetup-css.jpg)*#MeetupCSS no Google Brasil*
+![#MeetupCSS no Google Brasil](assets/meetup-css.jpg)*#MeetupCSS no Google Brasil*
 
 E o mais importante é que o MeetupCSS serviu de inspiração para a criação de outros Meetups e eventos. Como [Matheus Marsiglio](undefined) contou no último [Dev na Estrada](http://devnaestrada.com.br/2016/07/08/entrevista-matheus-marsiglio.html), ele e o [Guilherme Moura](undefined) se conheceram no Meetup CSS e tiveram a ideia de criar o [FrontUX](undefined) [(FrontUX](http://www.meetup.com/pt-BR/FrontUX/)), que se tornou uma verdadeira referência entre os Meetups do Brasil e conta com quase 2000 membros.
 
@@ -46,13 +46,13 @@ Conversei com o [Raphael Fabeni](https://twitter.com/raphaelfabeni), ele curtiu 
 
 Quase que por osmose outros eventos da cidade, como o [FEMUG SP](https://sp.femug.com/) e o [Meetup JSSP](http://www.meetup.com/pt-BR/Javascript-SP/), também se encaixaram nessa semana.
 
-![Gif de pessoas batendo palmas](gif-palmas.gif)
+![Gif de pessoas batendo palmas](assets/gif-palmas.gif)
 
 Foi uma semana simplesmente SENSACIONAL.
 
 ## O Front-End Brasil no Github
 
-![Logo do Front-end BR](frontend-br.png)
+![Logo do Front-end BR](assets/frontend-br.png)
 
 Desde o ano passado eu reclamava de não ter um espaço consolidado para Front-Enders brasileiros debaterem e trocarem ideias sobre temas da nossa área.
 
@@ -88,7 +88,7 @@ E tem um tópico chamado [**Obrigado FrontendBr](https://github.com/frontendbr/f
 
 ## Ideias geram ideias
 
-![Crédito: [http://amexopenforum.tumblr.com/post/44721671431/4-steps-to-successful-brainstorming](http://amexopenforum.tumblr.com/post/44721671431/4-steps-to-successful-brainstorming)](ideias.jpg)*Crédito: [http://amexopenforum.tumblr.com/post/44721671431/4-steps-to-successful-brainstorming](http://amexopenforum.tumblr.com/post/44721671431/4-steps-to-successful-brainstorming)*
+![Crédito: [http://amexopenforum.tumblr.com/post/44721671431/4-steps-to-successful-brainstorming](http://amexopenforum.tumblr.com/post/44721671431/4-steps-to-successful-brainstorming)](assets/ideias.jpg)*Crédito: [http://amexopenforum.tumblr.com/post/44721671431/4-steps-to-successful-brainstorming](http://amexopenforum.tumblr.com/post/44721671431/4-steps-to-successful-brainstorming)*
 
 E depois do fórum, através de sugestões dos próprios usuários durante as discussões e debates, surgiram outras iniciativas na nossa organização, como por exemplo:
 
@@ -98,11 +98,11 @@ E depois do fórum, através de sugestões dos próprios usuários durante as di
 
 Iniciativas essas que têm ajudado várias pessoas a se desenvolverem como profissionais e até mesmo a conseguirem um emprego.
 
-![Crédito: [http://thebrandguysmarketing.com/brainstorming-brief/](http://thebrandguysmarketing.com/brainstorming-brief/)](ideia.jpg)*Crédito: [http://thebrandguysmarketing.com/brainstorming-brief/](http://thebrandguysmarketing.com/brainstorming-brief/)*
+![Crédito: [http://thebrandguysmarketing.com/brainstorming-brief/](http://thebrandguysmarketing.com/brainstorming-brief/)](assets/ideia.jpg)*Crédito: [http://thebrandguysmarketing.com/brainstorming-brief/](http://thebrandguysmarketing.com/brainstorming-brief/)*
 
 ## Seja aquele que pensa e FAZ
 
-![Crédito: [http://www.significadodossonhosonline.com/2013/07/frases-raul-seixas.html](http://www.significadodossonhosonline.com/2013/07/frases-raul-seixas.html)](raul.png)*Crédito: [http://www.significadodossonhosonline.com/2013/07/frases-raul-seixas.html](http://www.significadodossonhosonline.com/2013/07/frases-raul-seixas.html)*
+![Crédito: [http://www.significadodossonhosonline.com/2013/07/frases-raul-seixas.html](http://www.significadodossonhosonline.com/2013/07/frases-raul-seixas.html)](assets/raul.png)*Crédito: [http://www.significadodossonhosonline.com/2013/07/frases-raul-seixas.html](http://www.significadodossonhosonline.com/2013/07/frases-raul-seixas.html)*
 
 Sou muito fã do Raul Seixas e uma coisa que é padrão nas letras dele é o foco no PENSAR e FAZER. E tento levar isso para minha vida.
 

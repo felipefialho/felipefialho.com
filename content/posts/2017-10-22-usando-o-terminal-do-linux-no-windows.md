@@ -39,15 +39,15 @@ Tenho o *Windows 10* rodando em uma maquina virtual dentro do Mac, portanto toda
 
 Primeiro de tudo vá até as _System Settings_ e ative o *Developer Mode*
 
-![Developer Mode](windows-developer-mode.png)
+![Developer Mode](assets/windows-developer-mode.png)
 
 Em seguida vá até o Control Panel (Painel de Controle), clique em Programs e clique em *Turn Windows Features On or Off*. Depois procure por *Windows Subsystem for Linux (Beta)*, ative e reinicie o sistema.
 
-![Turn Windows Features On or Off](windows-turn-on.png)
+![Turn Windows Features On or Off](assets/windows-turn-on.png)
 
 Após reiniciar. Faça uma busca por **bash** e inicie o terminal.
 
-![Bash on Ubuntu](windows-bash.png)
+![Bash on Ubuntu](assets/windows-bash.png)
 
 Na primeira execução você vai precisar aceitar os termos de uso e então vai começar o download do _Bash on Ubuntu_. Quando a instalação finalizar crie seu nome de usuário e sua senha e pronto!
 
@@ -59,7 +59,7 @@ Agora vamos melhorar as coisas. Os terminais padrões do Windows são péssimos 
 
 ### Hyper
 
-![Hyper](hyper.gif)
+![Hyper](assets/hyper.gif)
 
 O [Hyper](https://hyper.is/) é um terminal open source, bastante configurável, leve e poderoso. Sabe o melhor? Todas as configurações são feitas usando HTML, CSS e JavaScript.
 

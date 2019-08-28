@@ -385,15 +385,15 @@ E a melhor maneira de testar, é aplicando em um projeto real. Para isso escolhi
 
 Aqui um resultado de teste no [GTMetrix](gtmetrix.com) antes da alteração.
 
-![Resultado com JavaScript](gt-metrix-old.jpg)
+![Resultado com JavaScript](assets/gt-metrix-old.jpg)
 
 Fui radical e removi todo o JavaScript do projeto. Passei a usar o CSS Componentes de Modal e Collapse.
 
-![Resultado sem JavaScript](gt-metrix-new.jpg)
+![Resultado sem JavaScript](assets/gt-metrix-new.jpg)
 
 Como plus, otimizei o carregamento dos icones e retirei a imagem de "fork".
 
-![Resultado Otimizado](gt-metrix-plus.jpg)
+![Resultado Otimizado](assets/gt-metrix-plus.jpg)
 
 Como podem observar, o resultado ao usar o CSS Components foi satisfatório. Mas o que trouxe mais resultados foi essa pequena otimização, retirando a imagem de "fork" e melhorando o carregamento dos ícones adicionando direto no CSS, evitando assim mais requisições.
 

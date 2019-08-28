@@ -14,7 +14,7 @@ Vou focar apenas na vida profissional, separada por trimestre. E para a leitura 
 
 ## Janeiro / Fevereiro / Março
 
-![Edição final do Meetup CSS](meetup-css-4.png)*Edição final do Meetup CSS*
+![Edição final do Meetup CSS](assets/meetup-css-4.png)*Edição final do Meetup CSS*
 
 * Logo no inicio do ano, [escrevi um artigo mostrando vários eventos frontenders legais que aconteceriam em 2017](https://medium.com/felipefialho/eventos-front-end-para-ir-em-2017-em-s%C3%A3o-paulo-72c8a88428fa)
 
@@ -34,7 +34,7 @@ Vou focar apenas na vida profissional, separada por trimestre. E para a leitura 
 
 Aqui as coisas foram bem agitadas…
 
-![Foto clássica do Cubo](cubo.png)*Foto clássica do Cubo*
+![Foto clássica do Cubo](assets/cubo.png)*Foto clássica do Cubo*
 
 * O [William Oliveira](undefined) [fez uma entrevista sobre meu dia-a-dia como desenvolvedor](https://medium.com/trainingcenter/como-%C3%A9-trabalhar-como-desenvolvedor-front-end-por-felipe-fialho-1e3efbadef90) para publicar no [Training Center](undefined)
 
@@ -42,7 +42,7 @@ Aqui as coisas foram bem agitadas…
 
 * E assim que mudei de emprego, [decidi me mudar pra perto dele para não perder a qualidade de vida que tinha enquanto trabalhava remoto](/blog/2015/uma-reflexao-sobre-salarios-valor-hora-e-qualidade-de-vida)
 
-![Foto clássica do terraço do prédio](ap.png)*Foto clássica do terraço do prédio*
+![Foto clássica do terraço do prédio](assets/ap.png)*Foto clássica do terraço do prédio*
 
 * Escrevi um texto [contando minha percepção sobre o momento atual do desenvolvimento Front-end](https://medium.com/felipefialho/o-inicio-o-fim-e-o-meio-do-desenvolvimento-front-end-dfc5a123b90f)
 
@@ -50,7 +50,7 @@ Aqui as coisas foram bem agitadas…
 
 * Rolou então a segunda edição da Front-end Week, simplesmente espetacular, podem ter uma noção completa dos eventos de 2017 [lendo esse texto](https://medium.com/@diogomoretti/2017-o-ano-mais-intenso-da-minha-vida-dd886c334266) do [Diogo Moretti](undefined)
 
-![Zeno Rocha no Meetup CSS](meetup-css-3.png)*Zeno Rocha no Meetup CSS*
+![Zeno Rocha no Meetup CSS](assets/meetup-css-3.png)*Zeno Rocha no Meetup CSS*
 
 * Aproveitamos para fazer uma [edição surpresa do Meetup CSS](https://www.meetup.com/CSS-SP/events/239847887/), com talks de dois mitos do desenvolvimento brasileiro: [Sérgio Lopes](undefined) e [Zeno Rocha](undefined)
 
@@ -58,7 +58,7 @@ Aqui as coisas foram bem agitadas…
 
 * Aproveitamos esse dia, para gravar diretamente do Cubo uma live no Youtube, com várias pessoas participando e fazendo perguntas. Participaram dessa live [Zeno Rocha](undefined), [Bernard De Luna](undefined), [Afonso Pacifer](undefined), [Giovanni Keppelen](undefined) e eu.
 
-![Codando no Code in The Dark](code-in-the-dark.png)*Codando no Code in The Dark*
+![Codando no Code in The Dark](assets/code-in-the-dark.png)*Codando no Code in The Dark*
 
 * Teve uma das melhores edições do [Front in Sampa](http://frontinsampa.com.br/)
 
@@ -68,7 +68,7 @@ Aqui as coisas foram bem agitadas…
 
 ## Julho/Agosto/Setembro
 
-![Teve tatuagem pra caraio esse ano 😹](tattoo.png)*Teve tatuagem pra caraleo esse ano 😹*
+![Teve tatuagem pra caraio esse ano 😹](assets/tattoo.png)*Teve tatuagem pra caraleo esse ano 😹*
 
 * Iniciamos o desenvolvimento da plataforma digital do Cubo
 
@@ -78,7 +78,7 @@ Aqui as coisas foram bem agitadas…
 
 ## Outubro / Novembro / Dezembro
 
-![Front-end BR foi uma comunidade oficial da InterCon 2017](frontend-br-2.png)*Front-end BR foi uma comunidade oficial da InterCon 2017*
+![Front-end BR foi uma comunidade oficial da InterCon 2017](assets/frontend-br-2.png)*Front-end BR foi uma comunidade oficial da InterCon 2017*
 
 * [Falei sobre 15 coisas que eu faria se estivesse iniciando como desenvolvedor](https://medium.com/felipefialho/15-coisas-que-faria-se-estivesse-iniciando-minha-carreira-como-desenvolvedor-9fdd0c17b473)
 

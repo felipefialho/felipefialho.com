@@ -58,7 +58,7 @@ Vou listar a base das tecnologias que mais uso atualmente, porém dentro dessa l
 
 ### JavaScript: [Angular](https://angular.io/)
 
-![](1_-PswmeK78oWOOjuvX0QLMQ.png)
+![](assets/1_-PswmeK78oWOOjuvX0QLMQ.png)
 
 Comecei a usar assim que entrei no Cubo, e agora na versão 5, penso que atingiu um bom nível de maturidade. O foco da equipe de desenvolvimento do Angular tem sido em: PWA e Performance.
 
@@ -66,7 +66,7 @@ Atualmente os SPAs são muito parecidos, com features próximas e performance eq
 
 ### CSS: [Stylus](http://learnboost.github.io/stylus/) e [PostCSS](https://github.com/postcss)
 
-![](1_psa-ZKW_iJNL5M7-67USfg.png)
+![](assets/1_psa-ZKW_iJNL5M7-67USfg.png)
 
 Sou fã desse combo. Leve e poderoso. Uso em conjunto com algumas libs como [cssnano](http://cssnano.co/), [Font Magician](https://github.com/jonathantneal/postcss-font-magician/), [Lost](https://github.com/peterramsing/lost), [Rupture](https://github.com/jescalan/rupture) e [Rucksack](http://simplaio.github.io/rucksack/).
 
@@ -74,7 +74,7 @@ O Angular tem uma feature chamada [Component Styles](https://angular.io/guide/co
 
 ### Back-End: [Serverless Framework](https://serverless.com/) e [NodeJS](https://nodejs.org/en/)
 
-![](1_Ar1zkHFDb2cTqfwAZalCrQ.png)
+![](assets/1_Ar1zkHFDb2cTqfwAZalCrQ.png)
 
 Somos malucos aqui no Cubo e caímos de cabeça em uma metodologia ainda pouco usada no mundo real (mas que cresce a cada dia): Serverless.
 
@@ -82,25 +82,25 @@ Para quem ainda não conhece, o [xhamps](undefined) escreveu um [artigo fazendo 
 
 ### Controle de versão: [Git](http://git-scm.com/)
 
-![](1_NayGR2rZDaYyt4XsZ2_SBg.png)
+![](assets/1_NayGR2rZDaYyt4XsZ2_SBg.png)
 
 Unanimidade no mundo inteiro. Dispensa apresentações.
 
 ### Package manager: [NPM](https://www.npmjs.com/)
 
-![](1_cDx5NIRCGxxc04JecbKuww.png)
+![](assets/1_cDx5NIRCGxxc04JecbKuww.png)
 
 E sim, tentei usar o [Yarn](https://github.com/yarnpkg/yarn). Continuo não vendo motivos para mudar.
 
 ### Task Builder: [NPM Scripts](https://docs.npmjs.com/misc/scripts)
 
-![](1_XFFhSO9l9waHG_FsOZGDXA.png)
+![](assets/1_XFFhSO9l9waHG_FsOZGDXA.png)
 
 Abandonei de vez task-runners como o [GulpJS](http://gulpjs.com/). NPM Scripts são simples o suficiente para configurar e rodar sem dependências extras.
 
 ### Projetos pessoais: [Kratos Boilerplate](https://github.com/LFeh/kratos-boilerplate)
 
-![](1_9L--wr90lM7mS4aoN7N1lg.png)
+![](assets/1_9L--wr90lM7mS4aoN7N1lg.png)
 
 Uso para projetos estáticos, é simples, rápido e cumpre bem seu papel.
 
@@ -110,7 +110,7 @@ Assim
 
 ### Text editor: [VSCode](https://code.visualstudio.com/)
 
-![](1_EU6f3fRsM81AN62KQm1oNA.png)
+![](assets/1_EU6f3fRsM81AN62KQm1oNA.png)
 
 Comecei a usar o [VSCode](https://code.visualstudio.com/) quando entrei no Cubo, pela ótima integração com o Angular e TypeScript. Mas foi amor a primeira vista.
 
@@ -118,67 +118,67 @@ Comecei a usar o [VSCode](https://code.visualstudio.com/) quando entrei no Cubo,
 
 ### Navegador pessoal: [Google Chrome](https://www.google.com.br/chrome/browser/desktop/index.html)
 
-![](1_st6O_91q_5ZCw2f7jDapTQ.png)
+![](assets/1_st6O_91q_5ZCw2f7jDapTQ.png)
 
 Gosto do [Chrome](https://www.google.com.br/chrome/browser/desktop/index.html), dizem ser lento, mas nunca tive problemas nesse sentido. Tudo fica sincronizado e não tenho problemas com compatibilidade com a maioria das páginas na web.
 
 ### Debugger: [Chrome Canary + DevTools](https://www.google.com.br/chrome/browser/canary.html)
 
-![](1_dFAIAKk-OPR7AfIlKOQFrQ.png)
+![](assets/1_dFAIAKk-OPR7AfIlKOQFrQ.png)
 
 Várias features de debug ficam disponíveis primeiro no [Canary](https://www.google.com.br/chrome/browser/canary.html). No passado existia uma diferença grande entre o Chrome padrão e o Canary, sendo complicado para atestar compatibilidade no desenvolvimento, mas não sinto mais essa diferença hoje.
 
 ### Terminal: [Hyper](https://hyper.is/)
 
-![](1_i-i-ELyV66s-vkHIebsx6g.png)
+![](assets/1_i-i-ELyV66s-vkHIebsx6g.png)
 
 Gosto do [Hyper.](https://hyper.is/) Apesar de algumas pessoas contestarem sua velocidade, funciona muito bem pra mim. Além disso é [open-source](https://github.com/zeit/hyper) e você pode usar HTML, CSS e JavaScript para customiza-lo.
 
 ### Editor de imagens: [Gimp](https://www.gimp.org/)
 
-![](1_JfQW5aFK1fm24tTboriqvg.png)
+![](assets/1_JfQW5aFK1fm24tTboriqvg.png)
 
 É open-source e bastante completo. Ele não tem muitas features presentes em editores como o Photoshop, mas para as coisas que preciso no dia-a-dia ele cumpre muito bem seu papel.
 
 ### Issues e tasks: [Jira](https://br.atlassian.com/software/jira)
 
-![](1_lE5tWOJA4n5b77HxJkLUFg.png)
+![](assets/1_lE5tWOJA4n5b77HxJkLUFg.png)
 
 O [Jira](https://br.atlassian.com/software/jira) é um canhão, e muitas vezes você só precisava matar uma formiga. Mesmo assim é o mais completo gerenciador de tarefas do mercado.
 
 ### Comunicação: [Slack](https://slack.com/)
 
-![](1_3l8tcGI7C0xNm-tAeh6FNA.png)
+![](assets/1_3l8tcGI7C0xNm-tAeh6FNA.png)
 
 Unanimidade. Acho o [Slack](https://slack.com/) um grande come-come de memória, mas é a melhor ferramenta de comunicação que existe hoje em dia.
 
 ### Cloud storage: [Dropbox](https://www.dropbox.com/h)
 
-![](1__gKCBFhPmNKzjjVGGaPUyA.png)
+![](assets/1__gKCBFhPmNKzjjVGGaPUyA.png)
 
 Apesar de usar o Drive para documentos e planilhas. É o [Dropbox](https://www.dropbox.com/h) que uso para armazenamento dos meus arquivos pessoais.
 
 ### Organização pessoal: [Google Calendar](https://calendar.google.com/calendar/r?pli=1)
 
-![](1_BolaEa-OYb8bNb0ZHJQabw.png)
+![](assets/1_BolaEa-OYb8bNb0ZHJQabw.png)
 
 Rolou uma [issue bacana no Front-End BR ](https://github.com/frontendbr/forum/issues/679)sobre ferramentas para organização. Mas continuo no bom e velho [Calendar](https://calendar.google.com/calendar/r?pli=1). Me perco quando uso muitas ferramentas e o Calendar tem tudo que preciso para controlar meu dia.
 
 ### Password manager: [1Password](https://1password.com/)
 
-![](1_j4WTdRCsDfgtIhR4KCO3SQ.png)
+![](assets/1_j4WTdRCsDfgtIhR4KCO3SQ.png)
 
 Acho o [1Password](https://1password.com/) fácil de usar, e integra muito bem com qualquer navegador e com o celular.
 
 ### Notas: [iA Writer](https://ia.net/writer/)
 
-![](1_e9XAspotSPeYZ1eFs5txlg.png)
+![](assets/1_e9XAspotSPeYZ1eFs5txlg.png)
 
 Bom, com o [iA Writer](https://ia.net/writer/) tenho um aplicativo leve (bem leve) que me permite escrever em markdown. Awesome.
 
 ### Leitores: [Feedly](https://feedly.com/) e [Medium](https://medium.com)
 
-![](1_NgRkkDG2YPJ3odJreHJ9vQ.png)
+![](assets/1_NgRkkDG2YPJ3odJreHJ9vQ.png)
 
 Uso o Feedly para receber os artigos dos blogs e sites que acompanho e o Medium para descobrir textos legais.
 
@@ -186,7 +186,7 @@ Também devem ter percebido que estou usando bastante o Medium como publicador d
 
 ### Rede Social: [Twitter](https://twitter.com/LFeh), [Github](https://github.com/) e [Instagram](https://www.instagram.com/?hl=pt-br)
 
-![](1_M3Icf6qej5wirg5i1l1uUA.png)
+![](assets/1_M3Icf6qej5wirg5i1l1uUA.png)
 
 [O Twitter é a rede social que developers deveriam usar](https://medium.com/@lfeh/sou-um-entusiasta-do-twitter-e-fico-muito-feliz-de-sido-citado-como-front-ender-nessa-lista-bab3a533f077). É rápida, focada, você escolhe as pessoas que deseja acompanhar (e receber conteúdo) e apesar do número máximo de carácter ter subido pra 280. Não tem textão.
 
@@ -196,25 +196,25 @@ Uso o Instagram simplesmente porque o Facebook morreu como rede social 😇
 
 ### Fórum de discussão: [FrontEndBR](https://github.com/frontendbr/forum)
 
-![](1_z3H6zLnMBw-qWIA-RBhRBQ.png)
+![](assets/1_z3H6zLnMBw-qWIA-RBhRBQ.png)
 
 O FrontEnd BR surgiu em um lapso e é o projeto open-source que mais me orgulho. Discussões fodas, vagas de emprego, eventos… tem tudo lá.
 
 ### Música: [Spotify](https://www.spotify.com/br/)
 
-![](1_p7kumcQmveN6I6bveG3iWA.png)
+![](assets/1_p7kumcQmveN6I6bveG3iWA.png)
 
 Dispensa apresentações.
 
 ### Entretenimento: [Netflix](https://www.netflix.com/br/)
 
-![](1_eC7cOUj8sngxw10yfG87KQ.png)
+![](assets/1_eC7cOUj8sngxw10yfG87KQ.png)
 
 Dispensa apresentações [2]
 
 ### Controle Financeiro: [Guia Bolso](https://www.guiabolso.com.br/)
 
-![](1_TB0msmKHv4V0lal6FTcQ0A.png)
+![](assets/1_TB0msmKHv4V0lal6FTcQ0A.png)
 
 Descobri o Guia Bolso ano passado e virei fã. Apesar da interface web ainda não ser boa, o aplicativo funciona muito bem e realmente facilita saber como e com o que estamos gastando.
 

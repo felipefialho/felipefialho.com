@@ -44,7 +44,7 @@ As coisas ficaram velozes desde então, com Back-Enders e Front-Enders trabalhan
 
 Alguns odeiam hypes, mas eles são essenciais para a evolução do mercado. Toda e qualquer ferramenta ou framework consolidados surgiram inspirados em conceitos de algum hype, e eles próprios já foram um hype no passado.
 
-![Diagrama sobre hypes](hypes.png)
+![Diagrama sobre hypes](assets/hypes.png)
 
 Isso significa que por mais que pareça assustador surgir libs todos os dias, são elas que servem de inspiração ou de base para que alguma pessoa ou empresa crie soluções espetaculares como o [React](https://facebook.github.io/react/), o [Angular](https://angular.io/) ou o [Vue.js](https://vuejs.org/).
 

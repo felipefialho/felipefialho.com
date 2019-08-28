@@ -56,7 +56,7 @@ docpad run
 
 **5.** Escolha o esqueleto que deseja usar
 
-![Docpad](docpad.png)
+![Docpad](assets/docpad.png)
 
 ## Comece a brincar!
 

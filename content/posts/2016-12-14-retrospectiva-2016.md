@@ -12,7 +12,7 @@ Junto com o [Raphael Fabeni](https://twitter.com/raphaelfabeni), também tivemos
 
 ## Janeiro / Fevereiro / Março
 
-![Organização Front-End BR](frontend-br.png)*Organização Front-End BR*
+![Organização Front-End BR](assets/frontend-br.png)*Organização Front-End BR*
 
 * Fiz matricula em um curso de inglês ([Centro Britânico](http://www.centrobritanicoidiomas.com.br/))
 
@@ -34,7 +34,7 @@ Junto com o [Raphael Fabeni](https://twitter.com/raphaelfabeni), também tivemos
 
 ## Abril/Maio/Junho
 
-![MeetupCSS no Google Brasil](meetup-css.png)*MeetupCSS no Google Brasil*
+![MeetupCSS no Google Brasil](assets/meetup-css.png)*MeetupCSS no Google Brasil*
 
 * Criei o [Kratos Boilerplate](https://github.com/LFeh/kratos-boilerplate) com base no fodástico [Qualy](https://github.com/Qualy-org/qualy-front) do [Willian Justen](https://twitter.com/Willian_justen)
 
@@ -58,7 +58,7 @@ Junto com o [Raphael Fabeni](https://twitter.com/raphaelfabeni), também tivemos
 
 ## Julho/Agosto/Setembro
 
-![Front in Sampa 2017](front-in-sampa-2017.png)*Front in Sampa 2017*
+![Front in Sampa 2017](assets/front-in-sampa-2017.png)*Front in Sampa 2017*
 
 * [Code in the Dark Brasil](http://www.codeinthedark.com.br/), primeira edição desse fodástico evento
 
@@ -80,7 +80,7 @@ Junto com o [Raphael Fabeni](https://twitter.com/raphaelfabeni), também tivemos
 
 ## Outubro / Novembro / Dezembro
 
-![Praia Mole em Floripa](floripa.png)*Praia Mole em Floripa*
+![Praia Mole em Floripa](assets/floripa.png)*Praia Mole em Floripa*
 
 * Trabalhar remoto tem dessas coisas e por 1 semana esse foi o cenário que a equipe da Filtro pode desfrutar na incrível Florianópolis
 

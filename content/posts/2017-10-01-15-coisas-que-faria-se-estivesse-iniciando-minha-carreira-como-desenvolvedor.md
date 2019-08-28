@@ -24,7 +24,7 @@ Antes de aprender qualquer linguagem de programação, eu teria focado no inglê
 
 ## 2. Aprenderia lógica de programação
 
-![[https://www.123rf.com/photo_16084282_abstract-word-cloud-for-logic-programming-with-related-tags-and-terms.html](https://www.123rf.com/photo_16084282_abstract-word-cloud-for-logic-programming-with-related-tags-and-terms.html)](logica.png)*[https://www.123rf.com/photo_16084282_abstract-word-cloud-for-logic-programming-with-related-tags-and-terms.html](https://www.123rf.com/photo_16084282_abstract-word-cloud-for-logic-programming-with-related-tags-and-terms.html)*
+![[https://www.123rf.com/photo_16084282_abstract-word-cloud-for-logic-programming-with-related-tags-and-terms.html](https://www.123rf.com/photo_16084282_abstract-word-cloud-for-logic-programming-with-related-tags-and-terms.html)](assets/logica.png)*[https://www.123rf.com/photo_16084282_abstract-word-cloud-for-logic-programming-with-related-tags-and-terms.html](https://www.123rf.com/photo_16084282_abstract-word-cloud-for-logic-programming-with-related-tags-and-terms.html)*
 
 Como não tive background como programador no inicio da carreira, sinto falta de uma base mais sólida em lógica de programação, tenho certeza que meus códigos seriam muito melhores atualmente.
 
@@ -40,7 +40,7 @@ Tentaria então entender porque são tidas como referências. O que fizeram? O q
 
 ## 4. Focaria nas linguagens básicas
 
-![CSS, HTML e JavaScript](css-html-js.png)
+![CSS, HTML e JavaScript](assets/css-html-js.png)
 
 Sempre trabalhei com desenvolvimento web, então, essas linguagens são HTML, CSS e JavaScript, simples assim.
 
@@ -68,7 +68,7 @@ E assim que estivesse totalmente confortável, eu cairia de cabeça em JavaScrip
 
 ## 6. Contribuiria em projetos open-source de terceiros
 
-![Github](github.png)
+![Github](assets/github.png)
 
 Se atentem que além do já clichê: “faça open-source”, adicionei “de terceiros”. E isso tem explicação.
 
@@ -86,7 +86,7 @@ Metodologias, UX, Design, SEO, Acessibilidade, o próprio mercado e funcionament
 
 ## 8. Iria em eventos
 
-![MeetupCSS no Cubo](meetup-css-2017.png)*MeetupCSS no Cubo*
+![MeetupCSS no Cubo](assets/meetup-css-2017.png)*MeetupCSS no Cubo*
 
 Já escrevi algumas vezes da [importância de eventos para developers](https://codetalks.net/por-qual-motivo-todo-desenvolvedor-deve-ir-em-eventos-d1f276cf16b), portanto não vou me estender nesse assunto.
 
@@ -104,7 +104,7 @@ Não exitaria em aprender e absorver o máximo possível de profissionais mais v
 
 ## 10. Teria minha própria opinião
 
-![[https://www.pensador.com/frase/MTYzNzA/](raul-2017.png)*[https://www.pensador.com/frase/MTYzNzA/](https://www.pensador.com/frase/MTYzNzA/)*
+![[https://www.pensador.com/frase/MTYzNzA/](assets/raul-2017.png)*[https://www.pensador.com/frase/MTYzNzA/](https://www.pensador.com/frase/MTYzNzA/)*
 
 Fazendo contra ponto do número oito.
 
@@ -142,7 +142,7 @@ Tenho um artigo chamado “[Aproximando seus estudos de cenários reais](/blog/2
 
 ## 14. Não deixaria de ter hobbies ou praticar atividades físicas
 
-![Sagrado futebol de domingo](futebol.png)*Sagrado futebol de domingo*
+![Sagrado futebol de domingo](assets/futebol.png)*Sagrado futebol de domingo*
 
 É natural quando você está focado nos estudos e na profissão, que atividades que você adorava realizar e te deixavam feliz, fiquem para segundo plano.
 

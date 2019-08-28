@@ -89,7 +89,7 @@ O reflexo disso é sentido até mesmo no mercado de trabalho, com mais gente cap
 
 ### E não é só isso…
 
-![bruxo](1_oPFFezJfh1uwzKO1F6qldQ.gif)*bruxo*
+![bruxo](assets/1_oPFFezJfh1uwzKO1F6qldQ.gif)*bruxo*
 
 Open-source também pode ajudar a mostrar suas habilidades para o mercado.
 
@@ -195,7 +195,7 @@ Basta dar uma rápida passada no Github e vai notar diversos projetos em que voc
 
 ## Falando em Github
 
-![](0_RspmpLKEQLa-Uy9X.png)
+![](assets/0_RspmpLKEQLa-Uy9X.png)
 
 Não é exagero falar que o Github está para projetos open-source como o Google está para a internet.
 
@@ -249,7 +249,7 @@ Isso vai ajudar não só no projeto, como vai servir como grande fonte de estudo
 
 Até hoje não esqueço desse meu pull-request mergeado no Boostrap, num inglês bizarrísimo 😍
 
-![](1_ukSvk4hGI4nw4sEhte7kyQ.png)
+![](assets/1_ukSvk4hGI4nw4sEhte7kyQ.png)
 
 ### 5. Siga os padrões do projeto
 

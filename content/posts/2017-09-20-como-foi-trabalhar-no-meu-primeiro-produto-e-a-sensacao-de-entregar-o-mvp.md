@@ -5,7 +5,7 @@ description: "E o que aprendi nesses 6 meses de Cubo"
 tags: ["carreira", "misc"]
 ---
 
-![[https://dribbble.com/shots/1753131-MVP](https://dribbble.com/shots/1753131-MVP)](mvp.png)*[https://dribbble.com/shots/1753131-MVP](https://dribbble.com/shots/1753131-MVP)*
+![[https://dribbble.com/shots/1753131-MVP](https://dribbble.com/shots/1753131-MVP)](assets/mvp.png)*[https://dribbble.com/shots/1753131-MVP](https://dribbble.com/shots/1753131-MVP)*
 
 ## A transição
 
@@ -19,7 +19,7 @@ Antes de entrar no Cubo, estava trabalhando remoto para uma agência de New York
 
 Mas então veio o convite para trabalhar no Cubo, com produtos digitais focados no mercado de startups, não seria mais remoto, o foco não seria mais layout e CSS, teria um puta desafio e a ideia era montar um time *high level*.
 
-![Ambiente interno no Cubinho](cubinho.png)*Ambiente interno no Cubinho*
+![Ambiente interno no Cubinho](assets/cubinho.png)*Ambiente interno no Cubinho*
 
 ## A concepção do produto
 
@@ -39,7 +39,7 @@ Paralelo a isso, fizemos diversas pesquisas sobre tecnologias que poderiam nos a
 
 ### Design Sprint
 
-![Apresentando uma das pesquisas](team.png)*Apresentando uma das pesquisas*
+![Apresentando uma das pesquisas](assets/team.png)*Apresentando uma das pesquisas*
 
 Finalmente, começamos a juntar tudo isso para descobrir o que faríamos (e a ordem de prioridade). Tivemos então mais uma semana de Design Sprint (isso, três semanas sem codar).
 
@@ -51,7 +51,7 @@ E na verdade, a confirmação de que aquelas ideias vão ser realmente úteis, s
 
 Após essa semana de aprofundamento intenso, fizemos um protótipo para poder validar essas primeiras ideias com algumas pessoas e startups que nos ajudaram a chegar nelas.
 
-![Etapa de Design Sprint](design-sprint.png)*Etapa de Design Sprint*
+![Etapa de Design Sprint](assets/design-sprint.png)*Etapa de Design Sprint*
 
 ### Organizando tudo
 
@@ -71,7 +71,7 @@ Challenge Accept!
 
 Foi corrido, muito corrido. Foi intenso, muito intenso.
 
-![Imagem dos primeiros produtos](product.png)
+![Imagem dos primeiros produtos](assets/product.png)
 
 Decidimos que iríamos tentar tirar qualquer barreira entre Back-End, Front-End ou whatever, sendo assim, a ideia era pegar tarefas que faziam sentido e que dessem agilidade e vazão no desenvolvimento, mas sem se apegar a sua função oficial.
 
@@ -85,7 +85,7 @@ Finalmente, após quase 1 mês de trabalho duro e muito código e testes, o MVP 
 
 ## A apresentação do produto
 
-![Cubo Digital sendo apresentado durante o Cubo Conecta](apresentacao.png)*Cubo Digital sendo apresentado durante o Cubo Conecta*
+![Cubo Digital sendo apresentado durante o Cubo Conecta](assets/apresentacao.png)*Cubo Digital sendo apresentado durante o Cubo Conecta*
 
 Dia 14/09/2017, enfim nosso produto, fruto de um trabalho fodástico de todos que participaram, seria mostrado para o público.
 

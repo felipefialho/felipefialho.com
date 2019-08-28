@@ -30,7 +30,7 @@ No final de 2017, todos os principais navegadores anunciaram que suportam WebAss
 
 React, jQuery, Angular e Vue estão entre as 4 libs mais populares. Abaixo, continue lendo para ver os lançamentos mais recentes para algumas destas bibliotecas.
 
-![](4496/1*e036ugWPXTbBzMTSRsXiEw.png)
+![](assets/1_e036ugWPXTbBzMTSRsXiEw.png)
 
 ## React continua o seu reinado enquanto a biblioteca evolui
 
@@ -81,13 +81,13 @@ O Angular é um framework completo e altamente opinativo, com um CLI gerenciando
 Angular mostrou seu valor no mundo do desenvolvimento web e continua vendo seu uso aumentar.
 > NOTA: *@angular/core* representa o novo Angular e *angular* representa o antigo AngularJS
 
-![](2062/1*SXOEH2cmEaC9SBHNp-nvtA.png)
+![](assets/1_SXOEH2cmEaC9SBHNp-nvtA.png)
 
 ## GraphQL cresce no “desejo de aprender”, mas não ultrapassou REST
 
 GraphQL teve alguma adoção por líderes de tecnologia, como o [GitHub](https://developer.github.com/v4/). Entretanto, não decolou tão rapidamente quanto alguns previram. De acordo com o [State of JS survey](https://2018.stateofjs.com/data-layer/overview/), somente 1/5 frontend developers tem usado GraphQL, mas cerca de 62.5% dos desenvolvedores já ouviram falar e querem usá-lo.
 
-![](3088/1*m6vDkicw6EUt8uc6EhcXAQ.png)
+![](assets/1_m6vDkicw6EUt8uc6EhcXAQ.png)
 
 ## CSS-in-JS teve aumento no uso
 
@@ -126,7 +126,7 @@ As duas bibliotecas mais populares de CSS-in-JS são [styled-components](https:/
 
 Styled-components tem mais tempo de vida e mais adoção, mas o Emotion tem ganhado espaço rapidamente, tornando-se a lib favorita de muitos desenvolvedores. Até mesmo o [Kent C. Dodds]() depreciou o uso de sua biblioteca CSS-in-JS, a Glamorous, em favor da Emotion.
 
-![](2000/1*WfbUcGwcI4hmuD80S9XsCg.png)
+![](assets/1_WfbUcGwcI4hmuD80S9XsCg.png)
 
 Vue também suporta CSS* out of the box* ao usar *Single File Components*. Apenas adicionando a propriedade scoped para a tag style do componente, o Vue vai usar técnicas de CSS-in-JS para criar escopo e não vazar estilos para outros componentes.
 
@@ -168,13 +168,13 @@ Tudo indica que o TypeScript é a solução definitiva para tipagem estática no
 
 Em 2018, o número de downloads do npm para o TS cresceu substancialmente enquanto o Flow permaneceu muito estável. O TypeScript parece estar se movendo em alta velocidade para adoção generalizada. Além disso, o [TypeScript recebeu sua atualização v3](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html).
 
-![](2000/1*frSWl5Yp4FoIUla7wxPIXA.png)
+![](assets/1_frSWl5Yp4FoIUla7wxPIXA.png)
 
 ## Accelerate Mobile Pages (AMP) cresce rapidamente
 
 AMPs são páginas criadas especificamente para dispositivos móveis.
 
-![](2000/1*2A6tPpauW8KI5Pn4MhsG0w.png)
+![](assets/1_2A6tPpauW8KI5Pn4MhsG0w.png)
 
 ## Webpack 4 chegou em 2018
 
@@ -194,7 +194,7 @@ Text editors e IDEs são campos de batalhas para desenvolvedores desde o passado
 
 Com a criação do [Electron](https://electronjs.org/), editores open-source baseados em plugins explodem com o [Atom](https://atom.io/) tomando parte desse novo mercado. Entretanto, [VS Code](https://code.visualstudio.com/) recentemente provou ser o favorito dos desenvolvedores e o principal editor de uso geral por uma margem significativa em 2018.
 
-![](4352/1*mLBjsSYDWEAdOy8pUjOjOg.png)
+![](assets/1_mLBjsSYDWEAdOy8pUjOjOg.png)
 
 ## Artigos mais influentes de 2018
 
