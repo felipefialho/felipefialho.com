@@ -159,7 +159,7 @@ const plugins = [
       name: `Felipe Fialho`,
       short_name: `felipefialho.com`,
       start_url: `/`,
-      background_color: `#ffffff`,
+      background_color: `#fcfcfc`,
       theme_color: `#111111`,
       display: `minimal-ui`,
       icon: `content/assets/icon.png`,
