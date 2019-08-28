@@ -24,7 +24,7 @@ const IndexPage = () => {
         site {
           siteMetadata {
             title
-            description
+            authorDescription
           }
         }
       }
@@ -47,7 +47,9 @@ const IndexPage = () => {
         <Content>
           <h1>Olá!</h1>
 
-          <p>{site.siteMetadata.description}</p>
+          <p>{site.siteMetadata.authorDescription}</p>
+
+          <p>Sou apaixonado por futebol, seja assistindo, seja jogando, como dizem "futebol é a coisa mais importante entre as menos importantes". Também gosto de cerveja e música, especialmente os dois juntos. No tempo livre curto assistir filmes e séries, eventualmente ler livros e filosofar sobre a vida.</p>
 
           <p>Atualmente estou trabalhando no <a href="https://cubo.network/jobs" target="_blank" rel="noopener noreferrer" title="Ver">Cubo Itaú</a>. Sou criador da organização <a href="https://github.com/frontendbr" target="_blank" rel="noopener noreferrer" title="Ver">Front-end BR</a> no Github. Também sou um dos fundadores do Meetup CSS e ajudei a organizar a Conferencia CSS Brasil em 2015.</p>
 

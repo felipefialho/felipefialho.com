@@ -24,7 +24,7 @@ const IndexPage = () => {
         site {
           siteMetadata {
             title
-            descriptionEn
+            authorDescriptionEn
           }
         }
       }
@@ -47,7 +47,9 @@ const IndexPage = () => {
         <Content>
           <h1>Hi!</h1>
 
-          <p>{site.siteMetadata.descriptionEn}</p>
+          <p>{site.siteMetadata.authorDescriptionEn}</p>
+          
+          <p> I'm in love with football (soccer), whether watching or playing, as people say "football is the most important thing among the least important things." I also like beer and music, especially both together. In my free time I like to watch movies and series, eventually I like to read books and philosophizing about life. </p>
 
           <p>Currently, I'm a Developer at <a href="https://cubo.network/jobs" target="_blank" rel="noopener noreferrer" title="Ver">Cubo Itaú</a> and
           I've created the <a href="https://github.com/frontendbr" target="_blank" rel="noopener noreferrer" title="Ver">Front-end BR</a> organization on Github. I'm also a founder of Meetup CSS and I helped in organization of
