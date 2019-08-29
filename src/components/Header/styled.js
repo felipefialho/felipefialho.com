@@ -72,6 +72,6 @@ export const Bar = styled.div.attrs({
 export const Title = styled.h1`
   color: ${V.Color.white};
   display: inline-block;
-  font-size: 2rem;
+  font-size: 2.1rem;
   letter-spacing: .025rem;
 `

@@ -16,7 +16,7 @@ export const Tags = styled.div`
 export const TagItem = styled.span`
   align-items: center;
   display: inline-flex;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   height: ${V.Space.sm};
   letter-spacing: .1rem;
   text-transform: lowercase;

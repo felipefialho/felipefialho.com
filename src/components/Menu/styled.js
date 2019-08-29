@@ -11,7 +11,7 @@ export const Menu = styled.nav`
     color: var(--primaryColor);
     cursor: pointer;
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 600;
     letter-spacing: .05rem;
     text-decoration: none;
