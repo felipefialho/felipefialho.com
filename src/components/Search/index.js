@@ -34,7 +34,6 @@ const Search = ({ algolia, callback }) => {
             indexName={algolia.indexName}>
             <Configure hitsPerPage={100} distinct />
             <SearchBox
-              autoFocus
               translations={{ placeholder: 'Pesquisar no blog...' }} />
             {search && search.query ? (
               <>
