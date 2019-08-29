@@ -103,7 +103,7 @@ const GlobalStyles = createGlobalStyle`
     background-color: var(--bg);
     color: var(--primaryColor);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     text-rendering: optimizeLegibility;
@@ -113,7 +113,7 @@ const GlobalStyles = createGlobalStyle`
 
   body.theme-dark {
     --bg: ${V.Color.grayDarker};
-    --bgSecondary: ${V.Color.black};
+    --bgSecondary: ${V.Color.grayDark};
     --borderColor: ${V.Color.grayDark};
     --highlightColor: ${V.Color.blueLight};
     --primaryColor: ${V.Color.white};
@@ -138,6 +138,13 @@ const GlobalStyles = createGlobalStyle`
   ::selection {
     background: var(--highlightColor);
     color: ${V.Color.white};
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none;
+      transition: none;
+    }
   }
 `
 export default GlobalStyles
