@@ -4,5 +4,5 @@ export const getActiveTheme = () => {
   if (typeof document === 'undefined') return
 
   const body = document.querySelector('body')
-  return body.classList.contains('theme-dark') ? V.Color.black : V.Color.white
+  return body.classList.contains('theme-dark') ? V.Color.blackSolid : V.Color.whiteSolid
 }

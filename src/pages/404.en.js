@@ -40,7 +40,6 @@ const IndexPage = () => {
           <p>In the meantime you can take a look at my <AniLink
             cover
             bg={getActiveTheme()}
-            duration={.6}
             direction="down"
             to="/lab/"
             onClick={trackLabsClick()}>

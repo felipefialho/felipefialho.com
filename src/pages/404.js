@@ -50,7 +50,6 @@ const IndexPage = () => {
             <li>Que tal dar uma olhadinha nos meus <AniLink
                 cover
                 bg={getActiveTheme()}
-                duration={.6}
                 direction="down"
                 to="/lab/"
                 onClick={trackLabsClick()}>
@@ -61,7 +60,7 @@ const IndexPage = () => {
             <li>Ou mesmo <AniLink
                 cover
                 bg={getActiveTheme()}
-                duration={.6}
+
                 direction="down"
                 to="/blog/"
                 onClick={trackBlogClick()}>
