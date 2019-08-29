@@ -48,14 +48,14 @@ const Lab = ({ content }) => {
     <S.LabList>
       {content.map(({ node }) => {
         return (
-          <BoxHandler key={node.id}>
-            <S.LabItem href={node.path} title={node.title} onClick={trackClickLab}>
+          <S.LabItem href={node.path} title={node.title} onClick={trackClickLab}>
+            <BoxHandler key={node.id}>
               <LabImg imageSrc={node.imageSrc} />
               <DateTime>{node.date}</DateTime>
               <S.Title>{node.title}</S.Title>
               <S.Text>{node.description}</S.Text>
-            </S.LabItem>
-          </BoxHandler>
+            </BoxHandler>
+          </S.LabItem>
         )
       })}
     </S.LabList>
