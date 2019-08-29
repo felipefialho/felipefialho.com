@@ -7,7 +7,7 @@ import * as T from 'styles/typography'
 export const Content = styled.article`
   ${T.Text1}
 
-  ${media.lessThan('mobile')`
+  ${media.lessThan('medium')`
     text-align: justify;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
