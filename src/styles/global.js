@@ -71,6 +71,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 10px;
     -moz-osx-font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
   }
 
   b, strong {
@@ -106,6 +107,7 @@ const GlobalStyles = createGlobalStyle`
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     text-rendering: optimizeLegibility;
+    transform: translateZ(0);
     transition: background-color ${V.Transition.default};
     will-change: background-color;
   }
