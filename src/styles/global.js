@@ -107,7 +107,6 @@ const GlobalStyles = createGlobalStyle`
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     text-rendering: optimizeLegibility;
-    transform: translateZ(0);
     transition: background-color ${V.Transition.default};
     will-change: background-color;
   }

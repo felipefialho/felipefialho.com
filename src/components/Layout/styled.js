@@ -12,6 +12,7 @@ export const Main = styled.main.attrs({
   role: 'main',
 })`
   margin-top: ${V.Height.headerSm};
+  min-height: 100vh;
   padding-bottom: ${V.Space.md};
   padding-top: ${V.Height.mainTop};
   width: 100%;
