@@ -4,40 +4,43 @@ import { Helmet } from 'react-helmet'
 
 import * as S from './styled'
 
-const trackGetTheme = (darkMode) => {
+const trackGetTheme = (theme) => {
   ReactGA.event({
     category: 'Theme',
-    action: 'get theme',
-    label: `Theme - Open with ${darkMode ? 'Dark' : 'Light'}`
+    action: 'view',
+    label: `Theme - Open page with ${theme}`,
+    nonInteraction: true
   })
 }
 
-const trackClickTheme = (darkMode) => {
+const trackClickTheme = (theme) => {
   ReactGA.event({
     category: 'Theme',
     action: 'click',
-    label: `Theme - Change to ${!darkMode ? 'Dark' : 'Light'}`
+    label: `Theme - Change to ${theme}`
   })
 }
 
-const useDarkModeFromLocalStorage = () => {
-  const item = 'darkMode'
-  const initialState = () => JSON.parse(localStorage.getItem(item) || false)
-  const [ darkMode, setDarkMode ] = useState(initialState)
-
-  useEffect(() => localStorage.setItem(item, JSON.stringify(darkMode)), [darkMode])
-
-  trackGetTheme(darkMode)
-
-  return [ darkMode, setDarkMode ]
-}
-
 const LightButton = () => {
-  const [ darkMode, setDarkMode ] = useDarkModeFromLocalStorage()
+  const [theme, setTheme] = useState(null)
+  const darkMode = theme === 'dark'
+
+  useEffect(() => {
+    setTheme(window.__theme)
+    window.__onThemeChange = () => setTheme(window.__theme)
+  }, [])
+
+  if (theme !== null) {
+    trackGetTheme(theme)
+  }
 
   const onChange = () => {
-    trackClickTheme(darkMode)
-    setDarkMode(!darkMode)
+    trackClickTheme(theme)
+    window.__setTheme(darkMode ? 'light' : 'dark')
+
+    if (window.DISQUS !== undefined) {
+      window.setTimeout(() => window.DISQUS.reset({ reload: true }), 600)
+    }
   }
 
   return (
@@ -46,7 +49,6 @@ const LightButton = () => {
         <body className={`${darkMode ? 'theme-dark' : 'theme-light'}`} />
       </Helmet>
       <S.LightButtonIcon />
-      {darkMode}
     </S.LightButton>
   )
 }
