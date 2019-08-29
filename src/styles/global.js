@@ -103,7 +103,7 @@ const GlobalStyles = createGlobalStyle`
     background-color: var(--bg);
     color: var(--primaryColor);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    font-size: 1.9rem;
+    font-size: 2rem;
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     text-rendering: optimizeLegibility;

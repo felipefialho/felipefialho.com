@@ -19,7 +19,7 @@ export const Subtitle1 = `
 
 export const Subtitle2 = `
   color: var(--secondaryColor);
-  font-size: 1.9rem;
+  font-size: 2rem;
   letter-spacing: -0.04px;
   line-height: 1.5em;
 `
@@ -50,14 +50,14 @@ export const Heading3 = `
 
 export const Heading4 = `
   color: var(--primaryColor);
-  font-size: 1.9rem;
+  font-size: 2rem;
   font-weight: 600;
   letter-spacing: -0.04px;
   line-height: 1.5em;
 `
 
 export const Text1 = `
-  font-size: 1.9rem;
+  font-size: 2rem;
   font-weight: 400;
   letter-spacing: -0.04px;
   line-height: 1.7em;

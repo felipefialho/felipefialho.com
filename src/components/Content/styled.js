@@ -1,10 +1,19 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 import * as V from 'styles/variables'
 import * as T from 'styles/typography'
 
 export const Content = styled.article`
   ${T.Text1}
+
+  ${media.lessThan('mobile')`
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  `}
 
   &:not(:first-child) {
     margin-top: ${V.Space.md};
@@ -112,6 +121,7 @@ export const Content = styled.article`
   .gatsby-highlight {
     pre[class*="language-"] {
       border-left: ${V.Space.xxs} solid var(--highlightColor);
+      font-size: 1.8rem;
       padding-left: ${V.Space.default};
     }
 
@@ -120,22 +130,23 @@ export const Content = styled.article`
     }
   }
 
+  .language-text {
+    background-color: var(--bgSecondary);
+    color: var(--colorPrimary);
+    font-size: 1.8rem;
+    padding-bottom: .2em;
+    padding-left: .3em;
+    padding-right: .3em;
+    padding-top: .3em;
+    text-shadow: none;
+  }
+
   hr {
     background-color: var(--borderColor);
     border: 0;
     height: 1px;
     margin-bottom: ${V.Space.default};
     margin-top: ${V.Space.default};
-  }
-
-  .language-text {
-    background-color: var(--bgSecondary);
-    color: var(--colorPrimary);
-    padding-bottom: .2em;
-    padding-left: .3em;
-    padding-right: .3em;
-    padding-top: .3em;
-    text-shadow: none;
   }
 
   .twitter-tweet {
