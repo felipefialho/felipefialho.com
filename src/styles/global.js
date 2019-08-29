@@ -136,6 +136,7 @@ const GlobalStyles = createGlobalStyle`
 
   ::selection {
     background: var(--highlightColor);
+    color: ${V.Color.white};
   }
 `
 export default GlobalStyles
