@@ -40,7 +40,7 @@ Trabalho com pessoas muito competentes e inovadoras do meu lado, então as coisa
 
 A estrutura HTML/CSS/JS dos componentes geralmente seguem linhas de código parecidas, mesmo quando são visualmente muito diferentes de um projeto para outro, então a criação de um Framework otimizaria muito o trabalho.
 
-Após alguns meses e bastante teste, cheguei em um modelo estrutural e organizacional que considero o ideal por enquanto, podem ver nesse artigo: [Sobre organização de componentes com pré-processadores](/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores)
+Após alguns meses e bastante teste, cheguei em um modelo estrutural e organizacional que considero o ideal por enquanto, podem ver nesse artigo: [Sobre organização de componentes com pré-processadores](/blog/sobre-organizacao-de-componentes-com-pre-processadores)
 
 ### Como trabalho nesse momento
 

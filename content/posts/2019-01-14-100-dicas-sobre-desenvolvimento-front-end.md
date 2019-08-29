@@ -129,7 +129,7 @@ li:not(:last-child} {
 }
 ```
 
-<b>25.</b> O :not é uma das minhas pseudo-classes favoritas do CSS, [já escrevi um artigo inteiro](/blog/2016/css-o-fodastico-not) falando disso:
+<b>25.</b> O :not é uma das minhas pseudo-classes favoritas do CSS, [já escrevi um artigo inteiro](/blog/css-o-fodastico-not) falando disso:
 
 <b>26.</b> Usando apenas CSS é possível remover um elemento da tela caso ele não tenha conteúdo:
 
@@ -193,7 +193,7 @@ input[type=”checkbox”]:checked ~ p {
 
 Essa é a base de todos os joguinhos e componentes desenvolvidos somente com CSS e apesar de parecer bruxaria, você acabou de ver que é super simples.
 
-<b>35.</b> Anos atrás (muitos anos) [escrevi um artigo mostrando como fiz todos os componentes do CSS Componentes](/blog/2014/e-possivel-utilizar-componentes-desenvolvidos-apenas-com-css):
+<b>35.</b> Anos atrás (muitos anos) [escrevi um artigo mostrando como fiz todos os componentes do CSS Componentes](/blog/e-possivel-utilizar-componentes-desenvolvidos-apenas-com-css):
 
 <b>36.</b> Falando em seletores, eles possuem performance de leitura nos navegadores. E é importante levar isso em conta na hora de escrever seu código.
 
@@ -217,7 +217,7 @@ body header ul li
 
 <b>39.</b> O ideal mesmo, caso não esteja usando CSS-in-JS, é usar classe para estilizar elementos e evitar fazer aninhamentos grandes.
 
-<b>40.</b> Já escrevi um [artigo explicando todas as vantagens de usar classe](/blog/2016/porque-usar-classes-para-estilizar-elementos)
+<b>40.</b> Já escrevi um [artigo explicando todas as vantagens de usar classe](/blog/porque-usar-classes-para-estilizar-elementos)
 
 <b>41.</b> Justamente para deixar o CSS menos caótico e facilitar a manutenção de código que metodologias como BEM ou RCSS foram criadas.
 
@@ -268,7 +268,7 @@ Também funciona muito bem para criar uma lista de cards por exemplo. Além de e
 
 Isso significa que pode manter tudo que for genérico pra todas as resoluções fora das media-queries e dentro dela apenas o que for especifico daquela resolução.
 
-<b>54.</b> Anos atrás escrevi esse [artigo explicando como criar escopos de media-queries](/blog/2015/otimizando-e-organizando-as-media-queries), e de lá pra cá a ideia não mudou muito:
+<b>54.</b> Anos atrás escrevi esse [artigo explicando como criar escopos de media-queries](/blog/otimizando-e-organizando-as-media-queries), e de lá pra cá a ideia não mudou muito:
 
 <b>55.</b> No passado, usávamos `<div>` e `<span>` pra muita coisa que deveria carregar semântica. As tags inseridas a partir do HTML5 resolveram boa parte desses problemas.
 
@@ -349,7 +349,7 @@ De novo um exemplo com ícone:
 
 <blockquote class="twitter-tweet"><p lang="pt" dir="ltr">👉 Criei um exemplo de código usando React, daquela solução em Pure CSS p/ adicionar label no Slider do Material.<br><br>Observe que uso apenas:<br><br>- [aria-valuenow]<br>- :after<br><br>Sem modificar nada no JavaScript do componente.<br><br>CSS é incrível, confia 💙<a href="https://t.co/7TsG1kkZgH">https://t.co/7TsG1kkZgH</a></p>&mdash; felipe.js (@felipefialho_) <a href="https://twitter.com/felipefialho_/status/1067093417451290624?ref_src=twsrc%5Etfw">November 26, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<b>75.</b> Já escrevi um [artigo sobre WAI-ARIA com alguns exemplos legais](/blog/2016/sobre-wai-aria-acessibilidade-e-semantica).
+<b>75.</b> Já escrevi um [artigo sobre WAI-ARIA com alguns exemplos legais](/blog/sobre-wai-aria-acessibilidade-e-semantica).
 
 <b>76.</b> Nunca se esqueça que :after e :before no CSS não funcionam sem a propriedade content 😋
 

@@ -6,7 +6,7 @@ image: /assets/2017-12-31-retrospectiva-2017.jpg
 tags: ["comunidade", "carreira"]
 ---
 
-Se quiserem podem acompanhar minhas retrospectivas de [2013](/blog/2013/retrospectiva-2013) e [2016](/blog/retrospectiva-2016).
+Se quiserem podem acompanhar minhas retrospectivas de [2013](/blog/retrospectiva-2013) e [2016](/blog/retrospectiva-2016).
 
 Esse foi definitivamente um ano cheio de conquistas profissionais e pessoais, teve várias viagens, um monte de shows, mudança de apartamento, mudança de emprego, um puta crescimento da Front-end [BR](https://github.com/frontendbr), entre outras coisas.
 
@@ -22,7 +22,7 @@ Vou focar apenas na vida profissional, separada por trimestre. E para a leitura 
 
 * Rolou a [edição 23 do Meetup CSS](https://www.meetup.com/CSS-SP/events/237412266/) dentro da Anhembi Morumbi para os alunos de lá com talk do [Raphael Fabeni](undefined)
 
-* Escrevi uma dica bem legal, [ensinando a usar uma técnica usando white-space: nowrap no CSS para fazer uns fallbacks legais](/blog/2017/css-usando-white-space-nowrap-para-fallbacks-incriveis)
+* Escrevi uma dica bem legal, [ensinando a usar uma técnica usando white-space: nowrap no CSS para fazer uns fallbacks legais](/blog/css-usando-white-space-nowrap-para-fallbacks-incriveis)
 
 * O [Raphael Fabeni](undefined) e eu, decidimos dar um tempo com o Meetup CSS
 
@@ -40,7 +40,7 @@ Aqui as coisas foram bem agitadas…
 
 * Mudei de emprego e vim trabalhar no Cubo, um lugar fantástico com pessoas incríveis
 
-* E assim que mudei de emprego, [decidi me mudar pra perto dele para não perder a qualidade de vida que tinha enquanto trabalhava remoto](/blog/2015/uma-reflexao-sobre-salarios-valor-hora-e-qualidade-de-vida)
+* E assim que mudei de emprego, [decidi me mudar pra perto dele para não perder a qualidade de vida que tinha enquanto trabalhava remoto](/blog/uma-reflexao-sobre-salarios-valor-hora-e-qualidade-de-vida)
 
 ![Foto clássica do terraço do prédio](assets/ap.png)*Foto clássica do terraço do prédio*
 
@@ -86,7 +86,7 @@ Aqui as coisas foram bem agitadas…
 
 * O [Front-end BR foi convidado para ser uma comunidade oficial da InterCon 2017](https://github.com/frontendbr/forum/issues/777), vocês são fodas
 
-* Depois de meses sem escrever no meu site, [fiz um tutorial mostrando que o terminal do Linux está rodando muito bem dentro do Windows](/blog/2017/usando-o-terminal-do-linux-no-windows)
+* Depois de meses sem escrever no meu site, [fiz um tutorial mostrando que o terminal do Linux está rodando muito bem dentro do Windows](/blog/usando-o-terminal-do-linux-no-windows)
 
 * Tive um bate papo com a [Yanka Santos](undefined) do Do Porto Ao Vale, [contando um pouco sobre minha carreira](https://soundcloud.com/yankasantos/dvp05-felipe-fialho?in=yankasantos%2Fsets%2Fdoportoaovale)
 

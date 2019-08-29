@@ -10,7 +10,7 @@ Este artigo é a segunda parte da série "Do Zero a Herói Front-End". Na primei
 
 Assim como com HTML e CSS, existem milhares de tutoriais JavaScript por aí. No entanto, especialmente para alguém novo no mundo Front-End, é difícil descobrir quais tutoriais usar e qual a ordem para fazê-las. O principal objetivo desta série é fornecer um roteiro para ajudar a aprender Front-End.
 
-Se você ainda não leu a [primeira parte, faça isso antes de continuar a leitura](/blog/2016/do-zero-a-heroi-do-front-end-parte-1).
+Se você ainda não leu a [primeira parte, faça isso antes de continuar a leitura](/blog/do-zero-a-heroi-do-front-end-parte-1).
 
 ## O básico do JavaScript
 
@@ -106,7 +106,7 @@ O principal objetivo deste experimento é fazer algumas das coisas que você apr
 
 ![JavaScript permite que os desenvolvedores criem interfaces interativas](https://d262ilb51hltx0.cloudfront.net/max/800/1*7365CToqHiLkXf16Di8xRw.gif)
 
-Usando CodePen, escreva um JavaScript básico que usa manipulação do DOM e requer alguma lógica de programação para funcionar. O foco deste experimento é pegar algumas das coisas que você aprendeu no [Do Zero a Herói Front-End](/blog/2016/do-zero-a-heroi-do-front-end-parte-1) e combinar com JavaScript. Aqui estão alguns exemplos para referência que podem servir de inspiração.
+Usando CodePen, escreva um JavaScript básico que usa manipulação do DOM e requer alguma lógica de programação para funcionar. O foco deste experimento é pegar algumas das coisas que você aprendeu no [Do Zero a Herói Front-End](/blog/do-zero-a-heroi-do-front-end-parte-1) e combinar com JavaScript. Aqui estão alguns exemplos para referência que podem servir de inspiração.
 
 http://codepen.io/mecarter/pen/RNomVo
 
@@ -221,7 +221,7 @@ Você pode usar jQuery, mas sinta-se livre para usar o JavaScript simples.
 
 Com você sabendo o básico de JavaScript, é hora de aprender sobre Frameworks JavaScript.
 
-Frameworks são bibliotecas de JavaScript que vão te ajudar a estruturar e organizar seu código. Eles fornecem aos desenvolvedores soluções repetíveis para problemas complexos de Front-End, como gerenciamento de estado, roteamento e otimização de desempenho. Eles são comumente usados para criar [web apps](http://www.visionmobile.com/blog/2013/07/web-sites-vs-web-apps-what-the-experts-think).
+Frameworks são bibliotecas de JavaScript que vão te ajudar a estruturar e organizar seu código. Eles fornecem aos desenvolvedores soluções repetíveis para problemas complexos de Front-End, como gerenciamento de estado, roteamento e otimização de desempenho. Eles são comumente usados para criar [web apps](http://www.visionmobile.com/blog/07/web-sites-vs-web-apps-what-the-experts-think).
 
 Eu não vou incluir uma descrição de cada estrutura do JavaScript. Mas aqui está uma lista rápida de alguns Frameworks:
 

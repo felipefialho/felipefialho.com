@@ -66,8 +66,8 @@ Como aplicativos de suporte:
 
 Podem ter uma noção melhor do meu workflow técnico (de 2014, desatualizado) lendo os posts abaixo:
 
-- [Falando em organização - Parte I](/blog/2014/falando-em-organizacao-parte-1)
-- [Falando em organização CSS](/blog/2014/falando-em-organizacao-css)
+- [Falando em organização - Parte I](/blog/falando-em-organizacao-parte-1)
+- [Falando em organização CSS](/blog/falando-em-organizacao-css)
 
 E pode ver meu estilo de código e boilerplate aqui:
 

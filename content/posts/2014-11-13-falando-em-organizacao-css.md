@@ -5,7 +5,7 @@ description: "Durante anos escrevemos CSS como se não houvesse amanhã e tínha
 tags: ["css"]
 ---
 
-Dando continuidade a série [sobre minha organização e fluxo de trabalho atual](/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores), vou contar um pouco sobre como tenho trabalhado o CSS.
+Dando continuidade a série [sobre minha organização e fluxo de trabalho atual](/blog/sobre-organizacao-de-componentes-com-pre-processadores), vou contar um pouco sobre como tenho trabalhado o CSS.
 
 ## "CSS é muito fácil"... Será?
 
@@ -25,7 +25,7 @@ No último [Meetup CSS](http://www.meetup.com/CSS-SP) o [Rafael Rinaldi](https:/
 
 Dentro dessas metodologias, a que mais me agradou foi o conceito de [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design), proposta pelo Brad Frost, que deu origem ao [Pattern Lab](http://patternlab.io).
 
-Essa metodologia me agradou de cara, e ia de encontro com tudo que pensava sobre o desenvolvimento de CSS, em 2013 eu já estava [usando um conceito parecido](/blog/2013/sobre-organizacao-de-componentes-com-pre-processadores) e incorporei várias idéias no meu workflow.
+Essa metodologia me agradou de cara, e ia de encontro com tudo que pensava sobre o desenvolvimento de CSS, em 2013 eu já estava [usando um conceito parecido](/blog/sobre-organizacao-de-componentes-com-pre-processadores) e incorporei várias idéias no meu workflow.
 
 Mas foi apenas no segundo semestre de 2014 que me aproximei de vez do Atomic Design e cheguei a uma estrutura muito parecida com a que foi proposta inicialmente.
 
@@ -317,7 +317,7 @@ Modifica os átomos, moléculas e organismos para a criação de uma página esp
 
 ### Um plus sobre 'Media Queries'
 
-No começo do ano eu escrevi um post sobre [CSS Modular com Mobile First](/blog/2014/css-modular-com-mobile-first) e agora essa idéia fica ainda mais aplicável.
+No começo do ano eu escrevi um post sobre [CSS Modular com Mobile First](/blog/css-modular-com-mobile-first) e agora essa idéia fica ainda mais aplicável.
 
 Não precisa mais ter um arquivo específico para ajustar media-queries. Nessa organização de CSS, cada elemento pode ter sua própria customização aplicada seguindo a idéia do Mobile First.
 

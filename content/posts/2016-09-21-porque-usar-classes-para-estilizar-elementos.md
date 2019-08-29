@@ -10,7 +10,7 @@ tags: ["css", "workflow"]
 
 Quem conversa comigo sobre o assunto, sabe que sou totalmente favorável ao uso de classes e quase obcecado em defende-las. Existem algumas razões para isso.
 
-Depois do [último artigo](/blog/2016/sobre-wai-aria-acessibilidade-e-semantica), algumas pessoas ficaram com dúvidas ou pediram para explicar essa frase:
+Depois do [último artigo](/blog/sobre-wai-aria-acessibilidade-e-semantica), algumas pessoas ficaram com dúvidas ou pediram para explicar essa frase:
 
 > [..] Como qualquer propriedade, as roles podem ser alteradas via CSS. Você sempre devia usar classes, mas caso você tenha algum problema quanto a isso [..]
 
@@ -337,7 +337,7 @@ Dessa forma, é possível escrever o texto livremente, adicionar em qualquer lug
 
 Mesmo não sendo os campeões de performance, os _data-attributes_ podem ser importantes aliados na construção de um código mais escalável.
 
-Em 2014, escrevi um artigo, chamado [Sobre Data Atributes e JavaScript](/blog/2014/sobre-data-atributes-e-JavaScript), em que mostrava as vantagens usar _data-atributes_ e não classes ou IDs para manipulações no JavaScript.
+Em 2014, escrevi um artigo, chamado [Sobre Data Atributes e JavaScript](/blog/sobre-data-atributes-e-JavaScript), em que mostrava as vantagens usar _data-atributes_ e não classes ou IDs para manipulações no JavaScript.
 
 E esse conceito está cada vez mais consolidado.
 

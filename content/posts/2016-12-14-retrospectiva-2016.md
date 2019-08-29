@@ -46,7 +46,7 @@ Junto com o [Raphael Fabeni](https://twitter.com/raphaelfabeni), também tivemos
 
 * [MeetupCSS #16](https://www.meetup.com/pt-BR/CSS-SP/events/231096531/) com talk do [Ivan Banov](https://github.com/ivanbanov) sobre Grids
 
-* Traduzi o fenomenal [Do Zero a Herói Front-End (Parte I)](http://www.felipefialho.com/blog/2016/do-zero-a-heroi-do-front-end-parte-1) e [Do Zero a Herói Front-End (Parte II)](http://www.felipefialho.com/blog/2016/do-zero-a-heroi-do-front-end-parte-2)
+* Traduzi o fenomenal [Do Zero a Herói Front-End (Parte I)](http://www.felipefialho.com/blog/do-zero-a-heroi-do-front-end-parte-1) e [Do Zero a Herói Front-End (Parte II)](http://www.felipefialho.com/blog/do-zero-a-heroi-do-front-end-parte-2)
 
 * [MeetupCSS #1](https://www.meetup.com/pt-BR/CSS-SP/events/231096531/)7 no Google Brasil para quase 150 pessoas durante a [Front-End Week em São Paulo](https://medium.com/nossa-coletividad/quando-como-e-o-que-foi-a-front-week-2016-frontweek-7a4bf2567b37), com direito a talk dos amigos [Willian Justen](https://twitter.com/Willian_justen) e [Afonso Pacifer](https://twitter.com/afonsopacifer)
 
@@ -70,11 +70,11 @@ Junto com o [Raphael Fabeni](https://twitter.com/raphaelfabeni), também tivemos
 
 * [MeetupCSS #18](https://www.meetup.com/pt-BR/CSS-SP/events/232545681/) sobre Arquitetura CSS
 
-* Escrevi o artigo [Sobre WAI-ARIA, acessibilidade e semântica](http://www.felipefialho.com/blog/2016/sobre-wai-aria-acessibilidade-e-semantica)
+* Escrevi o artigo [Sobre WAI-ARIA, acessibilidade e semântica](http://www.felipefialho.com/blog/sobre-wai-aria-acessibilidade-e-semantica)
 
 * [MeetupCSS #19](https://www.meetup.com/pt-BR/CSS-SP/events/233231383/) com um dojo foda organizado pelo [Marco Bruno](https://twitter.com/marcobrunobr)
 
-* Mais um artigo, dessa vez explicando [Porquê usar classes para estilizar elementos](http://www.felipefialho.com/blog/2016/porque-usar-classes-para-estilizar-elementos)
+* Mais um artigo, dessa vez explicando [Porquê usar classes para estilizar elementos](http://www.felipefialho.com/blog/porque-usar-classes-para-estilizar-elementos)
 
 * [MeetupCSS #20](https://www.meetup.com/pt-BR/CSS-SP/events/234102615/) com o [Ricardo Junior](https://twitter.com/ricardojunior_) falando sobre minha metodologia favorita, o Atomic CSS
 
@@ -90,7 +90,7 @@ Junto com o [Raphael Fabeni](https://twitter.com/raphaelfabeni), também tivemos
 
 * [MeetupCSS #21](https://www.meetup.com/pt-BR/CSS-SP/events/234501775/) com talk sensacional da [Andréa Zambrana](https://twitter.com/akfzambrana)
 
-* Expliquei como escolher o [Dark Theme no DevTools](http://www.felipefialho.com/blog/2016/dark-theme-no-dev-tools)
+* Expliquei como escolher o [Dark Theme no DevTools](http://www.felipefialho.com/blog/dark-theme-no-dev-tools)
 
 * Lancei o [Survey 2016](http://www.felipefialho.com/survey/), pesquisa de mercado com Frontenders do Brasil
 
@@ -98,7 +98,7 @@ Junto com o [Raphael Fabeni](https://twitter.com/raphaelfabeni), também tivemos
 
 * Contei um pouco do workflow que usamos na Filtro no [ProdutoSP #3](https://www.meetup.com/pt-BR/produtoSP/events/235574074/)
 
-* Mais um artigo, dessa vez sobre [O fodástico :not()](http://www.felipefialho.com/blog/2016/css-o-fodastico-not)
+* Mais um artigo, dessa vez sobre [O fodástico :not()](http://www.felipefialho.com/blog/css-o-fodastico-not)
 
 * [Diogo Moretti](https://twitter.com/coletividad), [Fernando Daciuk](https://twitter.com/fdaciuk) e eu, lançamos o [awesome-stylus](https://github.com/diogomoretti/awesome-stylus)
 

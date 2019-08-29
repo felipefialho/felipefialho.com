@@ -6,13 +6,13 @@ image: /assets/2018-01-15-meu-dia-a-dia-como-desenvolvedor-em-2018.jpg
 tags: ["workflow", "front-end", "misc"]
 ---
 
-Escrevi meu dia-a-dia como desenvolvedor em [2015](/blog/2015/meu-dia-a-dia-como-dev-frontend) e [2017](https://medium.com/@lfeh/my-day-to-day-as-front-end-developer-in-2017-6d68b5ac2055) (em inglês). Como em 1 ano, muita coisa muda, bora atualizar.
+Escrevi meu dia-a-dia como desenvolvedor em [2015](/blog/meu-dia-a-dia-como-dev-frontend) e [2017](https://medium.com/@lfeh/my-day-to-day-as-front-end-developer-in-2017-6d68b5ac2055) (em inglês). Como em 1 ano, muita coisa muda, bora atualizar.
 
 ## Rotina
 
-Não trabalho mais remoto desde abril do ano passado, quando comecei a trabalhar no Cubo ([podem ver como foram os primeiros seis meses nesse artigo](/blog/2017/como-foi-trabalhar-no-meu-primeiro-produto-e-a-sensacao-de-entregar-o-mvp)).
+Não trabalho mais remoto desde abril do ano passado, quando comecei a trabalhar no Cubo ([podem ver como foram os primeiros seis meses nesse artigo](/blog/como-foi-trabalhar-no-meu-primeiro-produto-e-a-sensacao-de-entregar-o-mvp)).
 
-Existem [vantagens e desvantagens em trabalhar remoto](/blog/2015/sobre-trabalhar-remoto), porém a maior vantagem e o fator mais determinante nessa modalidade é a qualidade de vida: Não se preocupar mais com deslocamento, trânsito, caos na cidade e consequentemente [aumento do valor hora](/blog/2015/uma-reflexao-sobre-salarios-valor-hora-e-qualidade-de-vida).
+Existem [vantagens e desvantagens em trabalhar remoto](/blog/sobre-trabalhar-remoto), porém a maior vantagem e o fator mais determinante nessa modalidade é a qualidade de vida: Não se preocupar mais com deslocamento, trânsito, caos na cidade e consequentemente [aumento do valor hora](/blog/uma-reflexao-sobre-salarios-valor-hora-e-qualidade-de-vida).
 
 Sendo assim, a primeira atitude que tomei quando entrei no Cubo foi procurar um apartamento próximo do trabalho. E esse é o melhor investimento que pode ser feito para melhorar qualidade de vida no dia-a-dia.
 

@@ -5,7 +5,7 @@ description: "Mobile First vai muito além de código, é um pensamento que prec
 tags: ["css"]
 ---
 
-A importância de um CSS modularizado e o Atomic Design foi muito difundido nos últimos tempos, eu mesmo já escrevi um [artigo sobre o assunto](/blog/2013/um-conto-sobre-componentizacao-e-quebra-de-paradigmas). Mas algo ainda me incomodava ao aplicar First Mobile em conjunto com CSS modular... os Media Queries.
+A importância de um CSS modularizado e o Atomic Design foi muito difundido nos últimos tempos, eu mesmo já escrevi um [artigo sobre o assunto](/blog/um-conto-sobre-componentizacao-e-quebra-de-paradigmas). Mas algo ainda me incomodava ao aplicar First Mobile em conjunto com CSS modular... os Media Queries.
 
 ## O uso tradicional
 
