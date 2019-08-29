@@ -22,7 +22,7 @@ const Header = ({ site: { author }}) => {
             bg={getActiveTheme()}
             direction="down"
             to="/"
-            title="Go to home">
+            title="Voltar para home">
             <S.Brand>
               <Avatar />
               <R.GreaterThanTablet>
@@ -40,7 +40,14 @@ const Header = ({ site: { author }}) => {
       </Container>
       <R.LessThenMobile>
         <S.Bar>
-          <S.Title>{ author }</S.Title>
+          <AniLink
+            cover
+            bg={getActiveTheme()}
+            direction="down"
+            to="/"
+            title="Voltar para home">
+            <S.Title>{ author }</S.Title>
+          </AniLink>
           <LightButton />
         </S.Bar>
       </R.LessThenMobile>
