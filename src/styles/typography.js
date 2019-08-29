@@ -72,6 +72,7 @@ export const Text2 = `
 
 export const LinkTransition = `
   position: relative;
+  will-change: transform;
 
   &:after {
     background-color: var(--highlightColor);
