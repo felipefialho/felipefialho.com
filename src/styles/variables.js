@@ -39,7 +39,7 @@ export const Color = {
   blue: `#187888`,
   blueLight: `#a1ecf7`,
   grayDarker: `#1b1b1b`,
-  grayDark: `#333333`,
+  grayDark: `#252525`,
   gray: `#757575`,
   grayLight: `#aaaaaa`,
   grayLighter: `#efefef`,
