@@ -6,6 +6,8 @@ import * as V from 'styles/variables'
 export const Layout = styled.section`
   background-color: var(--bg);
   display: block;
+  transition: background-color ${V.Transition.default};
+  will-change: background-color;
 `
 
 export const Main = styled.main.attrs({
