@@ -21,7 +21,7 @@ const BlogPost = (props) => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
-        image={`https://felipefialho.com/assets/${post.frontmatter.image.relativePath}`}
+        image={post.frontmatter.image.relativePath ? `https://felipefialho.com/assets/${post.frontmatter.image.relativePath}` : 'https://felipefialho.com/assets/og-image.jpg'}
       />
       <GridTemplate>
         <PostHeader
