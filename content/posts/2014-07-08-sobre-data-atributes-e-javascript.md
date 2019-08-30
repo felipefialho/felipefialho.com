@@ -2,7 +2,7 @@
 title: "Sobre Data Atributes e JavaScript"
 date: 2014-07-08 00:00:01
 description: "Nos últimos projetos comecei a testar o uso do [data-*] do HTML5 como seletor no JavaScript. Agora vou listar algumas coisas que observei com essa prática"
-tags: ["javascript"]
+tags: ["javascript", "html"]
 ---
 
 A [W3C](http://www.w3.org/html/wg/drafts/html/master/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes) diz o seguinte:
