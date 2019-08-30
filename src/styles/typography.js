@@ -60,7 +60,7 @@ export const Text1 = `
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: -0.04px;
-  line-height: 1.7em;
+  line-height: 1.65em;
 `
 
 export const Text2 = `
