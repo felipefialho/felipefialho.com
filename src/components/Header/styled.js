@@ -6,7 +6,7 @@ import * as V from 'styles/variables'
 export const Header = styled.header.attrs({
   role: 'banner',
 })`
-  background-color: var(--bgSecondary);
+  background-color: var(--bg);
   color: var(--colorPrimary);
   display: block;
   left: 0;
