@@ -1,19 +1,26 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Disqus } from 'gatsby-plugin-disqus'
+import ReactDisqusComments from 'react-disqus-comments'
 
 import * as S from './styled'
 
-const DisqusWrapper = ({ disqusConfig }) => {
+const DisqusWrapper = ({ slug, title }) => {
+  const url = `https://felipefialho.com${slug}`
   return (
     <S.DisqusWrapper>
-      <Disqus config={disqusConfig} />
+      <ReactDisqusComments
+        shortname="felipefialho"
+        identifier={url}
+        title={title}
+        url={url}
+      />
     </S.DisqusWrapper>
   )
 }
 
 DisqusWrapper.propTypes = {
-  disqusConfig: PropTypes.object.isRequired
+  title: PropTypes.string.isRequired,
+  slug: PropTypes.string.isRequired
 }
 
 export default DisqusWrapper

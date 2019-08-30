@@ -155,12 +155,6 @@ const plugins = [
     }
   },
   {
-    resolve: `gatsby-plugin-disqus`,
-    options: {
-      shortname: `felipefialho`
-    }
-  },
-  {
     resolve: 'gatsby-plugin-i18n',
     options: {
       langKeyDefault: 'pt-br',

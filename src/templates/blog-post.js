@@ -16,12 +16,6 @@ const BlogPost = (props) => {
   const next = props.pageContext.next
   const previous = props.pageContext.previous
 
-  const disqusConfig = {
-    url: `https://felipefialho.com${post.slug}`,
-    identifier: post.id,
-    title: post.title,
-  }
-
   return (
     <Layout>
       <SEO
@@ -44,7 +38,7 @@ const BlogPost = (props) => {
 
         <PostFooter />
         <PostNav previous={previous} next={next} />
-        <DisqusWrapper disqusConfig={disqusConfig} />
+        <DisqusWrapper title={post.frontmatter.title} slug={post.fields.slug} />
       </GridTemplate>
     </Layout>
   )
