@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
+import qs from 'qs'
 import ReactGA from 'react-ga'
 
 import { InstantSearch, SearchBox, Stats, Configure, Hits } from 'react-instantsearch-dom'
@@ -15,12 +16,16 @@ const trackSearch = (term) => {
   })
 }
 
-const Search = ({ algolia, callback }) => {
-  const [ search, setSearch ] = useState('')
+const urlToSearchState = ({ search }) => qs.parse(search.slice(1))
 
-  const onSearchStateChange = (searchState) => {
-    trackSearch(searchState.query)
-    setSearch(searchState)
+const Search = ({ algolia, callback, props }) => {
+  const { location } = props
+  
+  const [searchState, setSearchState] = useState(urlToSearchState(location))
+
+  const onSearchStateChange = (updatedSearchState) => {
+    trackSearch(updatedSearchState.query)
+    setSearchState(updatedSearchState)
   }
 
   return (
@@ -30,38 +35,38 @@ const Search = ({ algolia, callback }) => {
           <InstantSearch
             appId={algolia.appId}
             apiKey={algolia.searchOnlyApiKey}
-            onSearchStateChange={(searchState) => onSearchStateChange(searchState)}
-            indexName={algolia.indexName}>
+            indexName={algolia.indexName}
+            searchState={searchState}
+            onSearchStateChange={onSearchStateChange}>
             <Configure hitsPerPage={100} distinct />
             <SearchBox
               translations={{ placeholder: 'Pesquisar no blog...' }} />
-            {search && search.query ? (
+            {searchState && searchState.query ? (
               <>
                 <Stats translations={{
-                  stats(nbHits, timeSpentMS) {
+                  stats(nbHits) {
                     return `${nbHits} resultados encontrados`
                   }
                 }} />
                 <Hits hitComponent={Hit} />
               </>
-              ) : (
-                <nav>{callback}</nav>
-            )}
+              ) : (<nav>{callback}</nav>)
+            }
           </InstantSearch>
           <S.Title>
             Powered by Algolia
             <S.AlgoliaIcon />
           </S.Title>
         </div>
-      ) : (
-        <nav>{callback}</nav>
-      )}
+        ) : (<nav>{callback}</nav>)
+      }
     </S.Search>
   )
 }
 
 Search.propTypes = {
-  algolia: PropTypes.object.isRequired
+  algolia: PropTypes.object.isRequired,
+  callback: PropTypes.node
 }
 
 export default Search

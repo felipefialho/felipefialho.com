@@ -54,7 +54,11 @@ const BlogList = (props) => {
     <Layout>
       <SEO title='Blog' />
       <GridTemplate>
-        <Search algolia={algolia} callback={content()} />
+        <Search
+          algolia={algolia}
+          callback={content()}
+          props={props}
+        />
       </GridTemplate>
     </Layout>
   )
