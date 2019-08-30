@@ -30,27 +30,28 @@ const BlogItem = ({
     <S.BlogItem
       to={`/${slug}`}
       cover
-      direction="bottom"
+      direction="down"
+      duration={1}
       title={title}
       bg={getActiveTheme()}
       onClick={trackClick(title)}>
       <BoxHandler>
-          {date && (
-            <DateTime>
-              {date}
-              {timeToRead && (
-                <span> · Leitura de {timeToRead} min</span>
-              )}
-            </DateTime>
-          )}
-          <S.Title isMini={isMini}>{title}</S.Title>
-          {description && (
-            <S.Subtitle>{description}</S.Subtitle>
-          )}
-          {tags && (
-            <Tags tags={tags} />
-          )}
-        </BoxHandler>
+        {date && (
+          <DateTime>
+            {date}
+            {timeToRead && (
+              <span> · Leitura de {timeToRead} min</span>
+            )}
+          </DateTime>
+        )}
+        <S.Title isMini={isMini}>{title}</S.Title>
+        {description && (
+          <S.Subtitle>{description}</S.Subtitle>
+        )}
+        {tags && (
+          <Tags tags={tags} />
+        )}
+      </BoxHandler>
     </S.BlogItem>
   )
 }

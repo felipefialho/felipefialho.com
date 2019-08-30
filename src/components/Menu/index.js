@@ -24,7 +24,8 @@ const Menu = () => {
           key={i}
           cover
           bg={getActiveTheme()}
-          direction="down"
+          direction="down" 
+          duration={1}
           to={link.url}
           onClick={trackClick(link.label)}
           activeClassName="active">

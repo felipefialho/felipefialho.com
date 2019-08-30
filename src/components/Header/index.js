@@ -21,6 +21,7 @@ const Header = ({ site: { author }}) => {
             cover
             bg={getActiveTheme()}
             direction="down"
+            duration={1}
             to="/"
             title="Voltar para home">
             <S.Brand>
@@ -44,6 +45,7 @@ const Header = ({ site: { author }}) => {
             cover
             bg={getActiveTheme()}
             direction="down"
+            duration={1}
             to="/"
             title="Voltar para home">
             <S.Title>{ author }</S.Title>

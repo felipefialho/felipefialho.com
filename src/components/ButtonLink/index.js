@@ -10,7 +10,8 @@ const ButtonLink = ({ children, to }) => {
     <S.ButtonLink
       to={to}
       cover
-      direction="bottom"
+      direction="down"
+      duration={1}
       bg={getActiveTheme()}>
       { children }
     </S.ButtonLink>
