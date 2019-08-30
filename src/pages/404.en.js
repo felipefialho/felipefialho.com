@@ -41,6 +41,7 @@ const IndexPage = () => {
             cover
             bg={getActiveTheme()}
             direction="down"
+            duration={1}
             to="/lab/"
             onClick={trackLabsClick()}>
             personal projects

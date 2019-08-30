@@ -51,6 +51,7 @@ const IndexPage = () => {
                 cover
                 bg={getActiveTheme()}
                 direction="down"
+                duration={1}
                 to="/lab/"
                 onClick={trackLabsClick()}>
                 projetos pessoais
@@ -60,8 +61,8 @@ const IndexPage = () => {
             <li>Ou mesmo <AniLink
                 cover
                 bg={getActiveTheme()}
-
                 direction="down"
+                duration={1}
                 to="/blog/"
                 onClick={trackBlogClick()}>
                 ler meu blog
