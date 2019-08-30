@@ -21,7 +21,7 @@ const BlogPost = (props) => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
-        image={post.frontmatter.image.relativePath ? `https://felipefialho.com/assets/${post.frontmatter.image.relativePath}` : 'https://felipefialho.com/assets/og-image.jpg'}
+        image={post.frontmatter.image ? `https://felipefialho.com/assets/${post.frontmatter.image}` : 'https://felipefialho.com/assets/og-image.jpg'}
       />
       <GridTemplate>
         <PostHeader
@@ -60,7 +60,6 @@ export const query = graphql`
         tags
         image {
           id
-          relativePath
           childImageSharp {
             fluid(maxWidth: 1280, quality: 60) {
               ...GatsbyImageSharpFluid
