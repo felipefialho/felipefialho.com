@@ -215,8 +215,8 @@ module.exports = {
     authorDescription: `Trabalho como Desenvolvedor Front-end desde 2009. Sou apaixonado por projetos open-source, acredito que a disseminação de conhecimento e boas idéias inspira e melhora o mundo.`,
     authorDescriptionEn: `I've been working as Front-End
     Developer since 2009. I'm passionate about open source projects, I believe that the dissemination of knowledge and good ideas inspires and improves the world.`,
-    description: `Site pessoal e blog de um desenvolvedor Front-end apaixonado por compartilhar boas idéias.`,
-    descriptionEn: `Personal website of a Front End developer passionate about sharing good ideas.`,
+    description: `Site pessoal e blog de um desenvolvedor Front-end apaixonado por criar coisas e compartilhar boas idéias.`,
+    descriptionEn: `Personal website of a Front End developer passionate about create things and sharing good ideas.`,
     siteUrl: `https://felipefialho.com/`,
     social: {
       twitter: `felipefialho_`,

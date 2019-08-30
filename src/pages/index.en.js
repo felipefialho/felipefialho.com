@@ -33,7 +33,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO lang="en" title='Home' description={site.siteMetadata.authorDescriptionEn} />
+      <SEO lang="en" title={site.siteMetadata.titleEn} description={site.siteMetadata.authorDescriptionEn} />
       <GridTemplate>
         <ButtonLink
           to="/"
