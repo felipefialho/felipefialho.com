@@ -38,7 +38,7 @@ const LightButton = () => {
     trackClickTheme(theme)
     window.__setTheme(darkMode ? 'light' : 'dark')
 
-    if (window.DISQUS !== undefined) {
+    if (window && window.DISQUS !== undefined) {
       window.setTimeout(() => window.DISQUS.reset({ reload: true }), 600)
     }
   }
