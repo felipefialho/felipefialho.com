@@ -34,7 +34,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title='Chega mais' />
+      <SEO title='Home' />
       <GridTemplate>
         <ButtonLink
           to="/en/"
