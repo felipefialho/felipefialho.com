@@ -36,7 +36,7 @@ const PostHeader = ({
       </DateTime>
       <S.Title>{title}</S.Title>
       <S.Subtitle>{description}</S.Subtitle>
-      <Tags tags={tags} />
+      <Tags tags={tags} isLink={true} />
     </S.PostHeader>
   )
 }
