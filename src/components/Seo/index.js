@@ -61,12 +61,8 @@ function SEO({ description, lang, meta, title, image }) {
           content: `summary_large_image`
         },
         {
-          name: `twitter:image:src`,
+          name: `twitter:image`,
           content: ogImage
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author
         },
         {
           name: `twitter:title`,
