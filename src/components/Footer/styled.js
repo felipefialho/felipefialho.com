@@ -7,7 +7,7 @@ export const Footer = styled.footer.attrs({
   'role': 'dialog',
 })`
   align-items: center;
-  background-color: var(--bg);
+  background-color: var(--bgSolid);
   border-top: ${V.Border.default};
   bottom: 0;
   color: ${V.Color.white};
