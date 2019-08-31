@@ -26,7 +26,7 @@ export const Title = styled.h1`
   ${props => (props.isMini ? `${TitleSmall}` : `${T.Heading1}`)}
 
   &:not(:first-child) {
-    margin-top: ${V.Space.default};
+    margin-top: ${V.Space.sm};
   }
 
   &:not(:last-child) {

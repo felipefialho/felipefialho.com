@@ -1,8 +1,17 @@
 import React from 'react'
+import ReactGA from 'react-ga'
 
 import BlogItem from 'components/BlogItem'
 
 import * as S from './styled'
+
+const trackClick = (item) => {
+  ReactGA.event({
+    category: 'Post Navigation',
+    action: 'click',
+    label: `Post Navigation - Go to ${item}`
+  })
+}
 
 const PostNav = ({ next, previous }) => {
   return (
@@ -17,6 +26,7 @@ const PostNav = ({ next, previous }) => {
             timeToRead={previous.timeToRead}
             isMini={true}
             gaLabel='Post Navigation'
+            onClick={() => trackClick(`previous page ${previous.frontmatter.title}`)}
           />
         </S.NavItem>
       )}
@@ -30,6 +40,7 @@ const PostNav = ({ next, previous }) => {
             timeToRead={next.timeToRead}
             isMini={true}
             gaLabel='Post Navigation'
+            onClick={() => trackClick(`next page ${next.frontmatter.title}`)}
           />
         </S.NavItem>
       )}
