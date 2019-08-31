@@ -8,7 +8,7 @@ export const Menu = styled.nav`
   display: flex;
 
   > a {
-    color: var(--primaryColor);
+    color: ${V.Color.white};
     cursor: pointer;
     display: inline-block;
     font-size: 1.7rem;
@@ -38,7 +38,6 @@ export const Menu = styled.nav`
     `}
 
     ${media.greaterThan('medium')`
-      color: ${V.Color.white};
       ${T.LinkTransition}
 
       &.active {

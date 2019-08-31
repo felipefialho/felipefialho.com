@@ -23,8 +23,7 @@ export const Space = {
 }
 
 export const Height = {
-  headerBarSm: `${Space.lg}`,
-  headerSm: `${Space.xxlg}`,
+  headerSm: `${Space.lg}`,
   headerLg: `${Space.xlg}`,
   footer: `4rem`,
   mainTop: `${Space.md}`
