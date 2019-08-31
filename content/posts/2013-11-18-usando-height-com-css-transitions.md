@@ -11,7 +11,7 @@ Esse post é bem antigo, escrevi em meados de 2013. Ano passado desenvolvi uma s
 
 O resultado pode ser visto no Codepen.
 
-https://codepen.io/felipefialho/pen/LkOXBA?height=400&default-tab=result
+https://codepen.io/felipefialho/pen/LkOXBA
 
 ## O problema
 

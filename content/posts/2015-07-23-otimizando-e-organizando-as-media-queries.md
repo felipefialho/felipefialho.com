@@ -85,7 +85,7 @@ Observem que utilizo o mesmo HTML (Jade) em ambos os exemplos.
 
 ### Agora vamos juntar os dois códigos seguindo a minha metodologia
 
-https://codepen.io/felipefialho/pen/GJXeJv/
+https://codepen.io/felipefialho/pen/GJXeJv
 
 Observem bem o código.
 

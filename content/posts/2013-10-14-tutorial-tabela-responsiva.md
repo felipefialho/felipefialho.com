@@ -17,7 +17,7 @@ Cheguei nessa solução através [desse artigo](http://elvery.net), que mostra a
 
 Ela consiste em inverter a posição do `thead` e posicionar o `tbody` na sua direita.
 
-A demo funcional está no [CodePen](https://codepen.io/felipefialho/pen/hsreD) (redimensione o navegador para visualizar o efeito).
+A demo funcional está no Codepen(redimensione o navegador para visualizar o efeito).
 
 https://codepen.io/felipefialho/pen/hsreD
 
@@ -101,7 +101,7 @@ Pode ser útil principalmente em CMS ou Gerenciadores.
 
 A demo funcional está no [CodePen](http://codepen.io/felipefialho/pen/beEoG) (redimensione o navegador para visualizar o efeito).
 
-https://codepen.io/felipefialho/pen/beEoG?height=400&default-tab=result
+https://codepen.io/felipefialho/pen/beEoG
 
 ### No HTML
  
