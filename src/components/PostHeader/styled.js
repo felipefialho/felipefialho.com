@@ -24,8 +24,8 @@ export const PostPicture = styled.div`
   height: 25vh;
   left: calc(-50vw + 50%);
   margin-top: -${V.Height.mainTop};
-  position: relative;
   overflow: hidden;
+  position: relative;
   width: 100vw;
 
   &:not(:last-child) {
