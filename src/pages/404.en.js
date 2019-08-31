@@ -43,7 +43,7 @@ const IndexPage = () => {
             direction="down"
             duration={1}
             to="/lab/"
-            onClick={trackLabsClick()}>
+            onClick={() => trackLabsClick()}>
             personal projects
           </AniLink>! <span
             className="small"

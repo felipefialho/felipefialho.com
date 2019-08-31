@@ -59,7 +59,7 @@ const BlogList = () => {
           />
         ))}
       </S.Nav>
-      <ButtonLink to='/blog/' onClick={trackClickAllPosts}>
+      <ButtonLink to='/blog/' onClick={() => trackClickAllPosts()}>
         Ver todos os posts
       </ButtonLink>
     </S.BlogList>

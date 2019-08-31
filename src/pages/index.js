@@ -39,7 +39,7 @@ const IndexPage = () => {
         <ButtonLink
           to="/en/"
           title="View in english"
-          onClick={trackLanguageClick()}>
+          onClick={() => trackLanguageClick()}>
           View in english
         </ButtonLink>
 

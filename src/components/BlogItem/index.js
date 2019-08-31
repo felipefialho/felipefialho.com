@@ -34,7 +34,7 @@ const BlogItem = ({
       duration={1}
       title={title}
       bg={getActiveTheme()}
-      onClick={trackClick(title)}>
+      onClick={() => trackClick(title)}>
       <BoxHandler>
         {date && (
           <DateTime>

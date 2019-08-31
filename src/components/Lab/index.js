@@ -48,7 +48,11 @@ const Lab = ({ content }) => {
     <S.LabList>
       {content.map(({ node }) => {
         return (
-          <S.LabItem key={node.id} href={node.path} title={node.title} onClick={trackClickLab}>
+          <S.LabItem 
+            key={node.id} 
+            href={node.path} 
+            title={node.title} 
+            onClick={() => trackClickLab}>
             <BoxHandler>
               <LabImg imageSrc={node.imageSrc} />
               <DateTime>{node.date}</DateTime>
