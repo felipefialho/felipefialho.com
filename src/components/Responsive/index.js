@@ -41,3 +41,10 @@ export const LessThanMobile = ({ children }) => {
   )
 }
 
+export const LessThanSmallMobile = ({ children }) => {
+  return (
+    <MediaQuery maxWidth={399}>
+      {children}
+    </MediaQuery>
+  )
+}

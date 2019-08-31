@@ -26,6 +26,9 @@ const Header = ({ site: { author }}) => {
             title="Voltar para home">
             <S.Brand>
               <Avatar />
+              <R.LessThanSmallMobile>
+                <S.Title>FFialho</S.Title>
+              </R.LessThanSmallMobile>
               <R.GreaterThanSmallMobile>
                 <S.Title>{author}</S.Title>
               </R.GreaterThanSmallMobile>

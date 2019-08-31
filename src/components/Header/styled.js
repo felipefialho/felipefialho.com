@@ -58,8 +58,12 @@ export const Menu = styled.div`
 export const Title = styled.h1`
   color: ${V.Color.white};
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   letter-spacing: .025rem;
+
+  ${media.lessThan('370px')`
+    display: none;
+  `}
 
   ${media.greaterThan('small')`
     font-size: 2.1rem;
