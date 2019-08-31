@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import media from 'styled-media-query'
 
 import * as V from 'styles/variables'
-import * as T from 'styles/typography'
 
 export const Menu = styled.nav`
   display: flex;
@@ -24,33 +23,16 @@ export const Menu = styled.nav`
 
     ${media.lessThan('small')`
       &.active {
-        color: var(--highlightColor);
+        color: ${V.Color.blueLight};
       }
 
       &:focus,
       &:hover {
-        color: var(--highlightColor);
+        color: ${V.Color.blueLight};
 
         &:after {
-          background-color: var(--highlightColor);
+          background-color: ${V.Color.blueLight};
         }
-      }
-    `}
-
-    ${media.greaterThan('medium')`
-      ${T.LinkTransition}
-
-      &.active {
-        color: ${V.Color.blueLight};
-      }
-
-      &:after {
-        background-color: ${V.Color.blueLight};
-      }
-
-      &:focus,
-      &:hover {
-        color: ${V.Color.blueLight};
       }
     `}
   }
