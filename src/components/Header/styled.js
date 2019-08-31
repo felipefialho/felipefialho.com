@@ -17,6 +17,7 @@ export const Header = styled.header.attrs({
   transition: background-color .3s;
   width: 100%;
   will-change: background-color;
+  z-index: ${V.ZIndex.header};
 
   ${media.greaterThan('medium')`
     background-color: ${V.Color.black};

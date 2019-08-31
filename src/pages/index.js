@@ -6,7 +6,6 @@ import ButtonLink from 'components/ButtonLink'
 import Layout from 'components/Layout'
 import Content from 'components/Content'
 import SEO from 'components/Seo'
-import Social from 'components/Social'
 import GridTemplate from 'components/GridTemplate'
 import BlogList from 'components/BlogList'
 
@@ -42,8 +41,6 @@ const IndexPage = () => {
           onClick={() => trackLanguageClick()}>
           View in english
         </ButtonLink>
-
-        <Social />
 
         <Content>
           <h1>Olá!</h1>

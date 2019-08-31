@@ -8,7 +8,6 @@ import Avatar from 'components/Avatar'
 import Menu from 'components/Menu'
 import Container from 'components/Container'
 import LightButton from 'components/LightButton'
-import Social from 'components/Social'
 import * as R from 'components/Responsive'
 
 import * as S from './styled'

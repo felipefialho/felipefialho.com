@@ -5,7 +5,6 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Layout from 'components/Layout'
 import Content from 'components/Content'
 import SEO from 'components/Seo'
-import Social from 'components/Social'
 import GridTemplate from 'components/GridTemplate'
 import ButtonLink from 'components/ButtonLink'
 
@@ -41,8 +40,6 @@ const IndexPage = () => {
           onClick={() => trackLanguageClick()}>
             Ver em português
         </ButtonLink>
-
-        <Social />
 
         <Content>
           <h1>Hi!</h1>
