@@ -20,7 +20,9 @@ const PostHeader = ({
     <S.PostHeader> 
       {image && (
         <R.GreaterThanTablet>
-          <S.PostImage fluid={image.childImageSharp.fluid} />
+          <S.PostPicture>
+            <S.PostImage fluid={image.childImageSharp.fluid} />
+          </S.PostPicture>
         </R.GreaterThanTablet>
       )}
       <S.ButtonBack>

@@ -20,15 +20,9 @@ export const ButtonBack = styled.div`
   }
 `
 
-export const PostImage = styled(Img).attrs({
-  alt: 'Imagem de introdução',
-  'aria-hidden': 'true'
-})`
-  display: block;
-  height: 25vh;
+export const PostPicture = styled.div`
   left: calc(-50vw + 50%);
   margin-top: -${V.Height.mainTop};
-  object-fit: cover;
   position: relative;
   width: 100vw;
 
@@ -46,6 +40,15 @@ export const PostImage = styled(Img).attrs({
     top: 0;
     z-index: ${V.ZIndex.default};
   }
+`
+
+export const PostImage = styled(Img).attrs({
+  alt: 'Imagem de introdução',
+  'aria-hidden': 'true'
+})`
+  display: block;
+  height: 25vh;
+  object-fit: cover;
 `
 
 export const Title = styled.h1`
