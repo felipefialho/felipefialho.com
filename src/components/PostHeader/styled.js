@@ -21,9 +21,11 @@ export const ButtonBack = styled.div`
 `
 
 export const PostPicture = styled.div`
+  height: 25vh;
   left: calc(-50vw + 50%);
   margin-top: -${V.Height.mainTop};
   position: relative;
+  overflow: hidden;
   width: 100vw;
 
   &:not(:last-child) {
@@ -47,8 +49,9 @@ export const PostImage = styled(Img).attrs({
   'aria-hidden': 'true'
 })`
   display: block;
-  height: 25vh;
+  height: 100%;
   object-fit: cover;
+  width: 100%;
 `
 
 export const Title = styled.h1`
