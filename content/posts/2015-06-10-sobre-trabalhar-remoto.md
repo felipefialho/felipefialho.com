@@ -26,7 +26,7 @@ Como quase tudo na vida, o equilíbrio é fundamental.
 
 Tento também finalizar todas as issues previstas para o dia e nunca deixar trabalho para o dia seguinte. Essa meta ajuda para eu não perder produtividade e continuar focado até o fim do expediente. Nós usamos o [Jira](www.atlassian.com/JIRA‎) para delegar prioridades e gerenciar as issues.
 
-Na realidade, trabalhando remoto me sinto ainda mais obrigado em entregar o melhor trabalho possível. Me cobro bastante nesse sentido.
+Na realidade, trabalhando em home office me sinto ainda mais obrigado em entregar o melhor trabalho possível. Me cobro bastante nesse sentido.
 
 Apesar de teoricamente poder trabalhar de qualquer lugar, sendo necessário apenas o notebook e internet, o ideal é tentar desenvolver em um local que ofereça a melhor infraestrutura possível e trabalhar em outras condições apenas esporadicamente.
 
@@ -64,7 +64,7 @@ Com o pessoal da na [Filtro](http://2014.filtro.us) a interação é espetacular
 
 ## Finanças
 
-Existem várias formas de contratação para trabalhos remotos, inclusive CLT.
+Existem várias formas de contratação para home office, inclusive CLT.
 
 Mas a mais comum é PJ, onde você vai ter um CNPJ e prestar serviço para a empresa na qual você trabalha.
 
