@@ -8,7 +8,6 @@ export const Content = styled.article`
   ${T.Text1}
 
   ${media.lessThan('medium')`
-    text-align: justify;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
