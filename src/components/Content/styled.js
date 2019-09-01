@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 import * as V from 'styles/variables'
 import * as T from 'styles/typography'
@@ -114,6 +115,12 @@ export const Content = styled.article`
       border-left: ${V.Space.xxs} solid var(--highlightColor);
       font-size: 1.8rem;
       padding-left: ${V.Space.default};
+
+      ${media.lessThan('medium')`
+        border-radius: 0;
+        margin-left: -${V.Space.sm};
+        margin-right: -${V.Space.sm};
+      `}
     }
 
     &:not(:last-child) {
