@@ -62,10 +62,6 @@ Vue é muito amado, mas ainda está atrás de React e Angular no uso real por um
 
 O Vue está se aproximando do seu release 3.0. O criador Evan You nos deu uma visão geral em novembro, tanto na VueConf Toronto quanto no artigo mencionado abaixo. Ele colocou seus slides online e o vídeo estará disponível em breve.
 
-<iframe src="https://medium.com/media/8e640ac77660de129ddffb14a6ab2ecd" frameborder=0></iframe>
-[**Plans for the Next Iteration of Vue.js**
-*Last week at Vue.js London I gave a brief sneak peek of what’s coming in the next major version of Vue. This post…*medium.com](https://medium.com/the-vue-point/plans-for-the-next-iteration-of-vue-js-777ffea6fabf)
-
 ## Angular continua sendo usado constantemente, a v7 foi lançada
 
 Em outubro, o Angular teve outro grande lançamento com a versão 7. O Angular tem tido toneladas de crescimento e melhorias desde a sua arquitetura AngularJS MVC inicial até o seu pacote mais moderno utilizando componentes. Com esse crescimento, ele recebeu novas adoções.
