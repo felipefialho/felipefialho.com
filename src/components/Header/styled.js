@@ -65,7 +65,7 @@ export const Title = styled.h1`
   font-size: 1.7rem;
   letter-spacing: .025rem;
 
-  ${media.lessThan('370px')`
+  ${media.lessThan('350px')`
     display: none;
   `}
 
