@@ -58,7 +58,12 @@ const BlogItem = ({
 
 BlogItem.propTypes = {
   slug: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string,
+  timeToRead: PropTypes.number,
+  tags: PropTypes.array,
+  description: PropTypes.string,
+  isMini: PropTypes.bool
 }
 
 export default BlogItem

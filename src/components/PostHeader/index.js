@@ -47,7 +47,9 @@ PostHeader.propTypes = {
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  tags: PropTypes.node.isRequired,
+  tags: PropTypes.array.isRequired,
+  image: PropTypes.object,
+  timeToRead: PropTypes.number
 }
 
 export default PostHeader

@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactGA from 'react-ga'
+import PropTypes from 'prop-types'
 
 import BlogItem from 'components/BlogItem'
 
@@ -46,6 +47,11 @@ const PostNav = ({ next, previous }) => {
       )}
     </S.PostNav>
   )
+}
+
+PostNav.propTypes = {
+  previous: PropTypes.object,
+  next: PropTypes.object
 }
 
 export default PostNav

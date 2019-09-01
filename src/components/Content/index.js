@@ -5,9 +5,7 @@ import * as S from './styled'
 
 const Content = ({ children }) => {
   return (
-    <S.Content>
-      { children }
-    </S.Content>
+    <S.Content>{ children }</S.Content>
   )
 }
 

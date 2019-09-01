@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactGA from 'react-ga'
+import PropTypes from 'prop-types'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import DateTime from 'components/DateTime'
@@ -64,6 +65,10 @@ const Lab = ({ content }) => {
       })}
     </S.LabList>
   )
+}
+
+Lab.propTypes = {
+  children: PropTypes.node.isRequired
 }
 
 export default Lab
