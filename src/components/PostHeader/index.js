@@ -31,13 +31,14 @@ const PostHeader = ({
         </ButtonLink>
       </S.ButtonBack>
       <DateTime>
-        {date}
+        <span itemProp="datePublished">{date}</span>
         {timeToRead && (
           <span> · Leitura de {timeToRead} min</span>
         )}
       </DateTime>
       <S.Title>{title}</S.Title>
       <S.Subtitle>{description}</S.Subtitle>
+      <S.Author>Felipe Fialho</S.Author>
       <Tags tags={tags} isLink={true} />
     </S.PostHeader>
   )

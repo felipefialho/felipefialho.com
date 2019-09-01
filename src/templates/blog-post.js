@@ -24,21 +24,23 @@ const BlogPost = (props) => {
         image={post.frontmatter.image ? `https://felipefialho.com${post.frontmatter.image.publicURL}` : 'https://felipefialho.com/assets/og-image.jpg'}
       />
       <GridTemplate>
-        <PostHeader
-          image={post.frontmatter.image}
-          tags={post.frontmatter.tags}
-          date={post.frontmatter.date}
-          title={post.frontmatter.title}
-          description={post.frontmatter.description}
-          timeToRead={post.timeToRead}
-        />
-        <Content>
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        </Content>
+        <div itemscope itemtype="http://schema.org/Article">
+          <PostHeader
+            image={post.frontmatter.image}
+            tags={post.frontmatter.tags}
+            date={post.frontmatter.date}
+            title={post.frontmatter.title}
+            description={post.frontmatter.description}
+            timeToRead={post.timeToRead}
+          />
+          <Content>
+            <div itemProp="articleBody" dangerouslySetInnerHTML={{ __html: post.html }} />
+          </Content>
 
-        <PostFooter />
-        <PostNav previous={previous} next={next} />
-        <DisqusWrapper title={post.frontmatter.title} slug={post.fields.slug} />
+          <PostFooter />
+          <PostNav previous={previous} next={next} />
+          <DisqusWrapper title={post.frontmatter.title} slug={post.fields.slug} />
+        </div>
       </GridTemplate>
     </Layout>
   )
