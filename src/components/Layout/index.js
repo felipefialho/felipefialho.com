@@ -20,7 +20,6 @@ const Layout = ({ children }) => {
             author
             position
             description
-            authorDescription
           }
         }
       }
