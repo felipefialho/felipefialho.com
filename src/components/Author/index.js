@@ -5,7 +5,8 @@ import Content from 'components/Content'
 
 const Author = ({ language, fullText }) => {
   return (
-    <Content itemScope itemType="http://schema.org/Person">
+    <Content>
+      <div itemScope itemType="http://schema.org/Person">
       { language === 'en' ? (
         <>
           <h1>Hi!</h1>
@@ -57,6 +58,7 @@ const Author = ({ language, fullText }) => {
           </ul>
         </>
       )}
+      </div>
     </Content>
   )
 }
