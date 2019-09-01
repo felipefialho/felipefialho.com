@@ -1,18 +1,10 @@
 import styled from 'styled-components'
-import media from 'styled-media-query'
 
 import * as V from 'styles/variables'
 import * as T from 'styles/typography'
 
 export const Content = styled.article`
   ${T.Text1}
-
-  ${media.lessThan('medium')`
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-  `}
 
   &:not(:first-child) {
     margin-top: ${V.Space.md};
