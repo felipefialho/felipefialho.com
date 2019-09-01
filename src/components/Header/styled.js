@@ -48,9 +48,13 @@ export const Menu = styled.div`
   align-items: center;
   display: flex;
 
+  ${media.lessThan('small')`
+    margin-right: -${V.Space.xs};
+  `}
+
   > * {
     &:not(:last-child) {
-      margin-right: ${V.Space.default};
+      margin-right: ${V.Space.xs};
     }
   }
 `

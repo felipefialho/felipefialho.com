@@ -19,18 +19,18 @@ export const SocialItem = styled.a.attrs(props => ({
   target: '_blank',
   rel: 'noopener noreferrer',
 }))`
+  align-items: center;
   color: var(--primaryColor);
-  display: inline-block;
+  display: inline-flex;
+  height: ${V.Height.footer};
+  padding-left: ${V.Space.sm};
+  padding-right: ${V.Space.sm};
   transition: color ${V.Transition.default};
   will-change: color;
 
   &:focus,
   &:hover {
-    color: ${V.Color.blueLight};
-  }
-
-  &:not(:last-child) {
-    margin-right: ${V.Space.sm};
+    color: var(--highlightColor);
   }
 `
 

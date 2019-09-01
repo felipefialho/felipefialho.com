@@ -9,6 +9,7 @@ export const Footer = styled.footer.attrs({
   align-items: center;
   background-color: var(--bgSolid);
   border-top: ${V.Border.default};
+  box-shadow: 2px 3px 4px var(--boxShadow);
   bottom: 0;
   color: ${V.Color.white};
   display: flex;
