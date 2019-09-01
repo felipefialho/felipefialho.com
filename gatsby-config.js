@@ -124,7 +124,10 @@ const plugins = [
                 'Reddit',
                 'Flickr',
                 'Instagram'
-              ]
+              ],
+              settings: {
+                Twitter: { theme: 'dark' }
+              },
             },
           },
         },
