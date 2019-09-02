@@ -52,10 +52,8 @@ export const Menu = styled.div`
     margin-right: -${V.Space.xs};
   `}
 
-  > * {
-    &:not(:last-child) {
-      margin-right: ${V.Space.xs};
-    }
+  > *:not(:last-child) {
+    margin-right: ${V.Space.xs};
   }
 `
 
