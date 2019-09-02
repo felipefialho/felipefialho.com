@@ -114,6 +114,7 @@ const GlobalStyles = createGlobalStyle`
 
   body.theme-dark {
     --bg: ${V.Color.grayDarker};
+    --bgSolid: ${V.Color.blackSolid};
     --bgSecondary: ${V.Color.grayDark};
     --borderColor: ${V.Color.grayDark};
     --highlightColor: ${V.Color.blueLight};
@@ -124,6 +125,7 @@ const GlobalStyles = createGlobalStyle`
 
   body.theme-light {
     --bg: ${V.Color.white};
+    --bgSolid: ${V.Color.whiteSolid};
     --bgSecondary: ${V.Color.grayWhite};
     --borderColor: ${V.Color.grayWhite};
     --highlightColor: ${V.Color.blue};

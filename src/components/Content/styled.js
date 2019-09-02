@@ -7,14 +7,6 @@ import * as T from 'styles/typography'
 export const Content = styled.article`
   ${T.Text1}
 
-  ${media.lessThan('medium')`
-    text-align: justify;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-  `}
-
   &:not(:first-child) {
     margin-top: ${V.Space.md};
   }
@@ -123,6 +115,12 @@ export const Content = styled.article`
       border-left: ${V.Space.xxs} solid var(--highlightColor);
       font-size: 1.8rem;
       padding-left: ${V.Space.default};
+
+      ${media.lessThan('medium')`
+        border-radius: 0;
+        margin-left: -${V.Space.sm};
+        margin-right: -${V.Space.sm};
+      `}
     }
 
     &:not(:last-child) {

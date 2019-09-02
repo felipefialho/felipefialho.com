@@ -6,6 +6,7 @@ import { TransitionPortal } from 'gatsby-plugin-transition-link'
 import GlobalStyles from 'styles/global'
 import Header from 'components/Header'
 import Container from 'components/Container'
+import Footer from 'components/Footer'
 
 import * as S from './styled'
 
@@ -19,7 +20,6 @@ const Layout = ({ children }) => {
             author
             position
             description
-            authorDescription
           }
         }
       }
@@ -35,6 +35,9 @@ const Layout = ({ children }) => {
       <S.Main>
         <Container>{children}</Container>
       </S.Main>
+      <TransitionPortal level='bottom'>
+        <Footer />
+      </TransitionPortal>
     </S.Layout>
   )
 }

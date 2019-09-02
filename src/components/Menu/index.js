@@ -27,7 +27,7 @@ const Menu = () => {
           direction="down" 
           duration={1}
           to={link.url}
-          onClick={trackClick(link.label)}
+          onClick={() => trackClick(link.label)}
           activeClassName="active">
             {link.label}
         </AniLink>

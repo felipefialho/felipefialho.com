@@ -5,20 +5,12 @@ import * as V from 'styles/variables'
 
 const Icon = `
   display: block;
-  height: ${V.Space.default};
-  width: ${V.Space.default};
+  height: 2rem;
+  width: 2rem;
 `
 
 export const Social = styled.div`
   display: flex;
-
-  &:not(:first-child) {
-    margin-top: ${V.Space.md};
-  }
-
-  &:not(:last-child) {
-    margin-bottom: ${V.Space.md};
-  }
 `
 
 export const SocialItem = styled.a.attrs(props => ({
@@ -27,17 +19,18 @@ export const SocialItem = styled.a.attrs(props => ({
   target: '_blank',
   rel: 'noopener noreferrer',
 }))`
+  align-items: center;
   color: var(--primaryColor);
-  display: inline-block;
+  display: inline-flex;
+  height: ${V.Height.footer};
+  padding-left: ${V.Space.sm};
+  padding-right: ${V.Space.sm};
   transition: color ${V.Transition.default};
   will-change: color;
 
+  &:focus,
   &:hover {
     color: var(--highlightColor);
-  }
-
-  &:not(:last-child) {
-    margin-right: ${V.Space.sm};
   }
 `
 

@@ -1,7 +1,7 @@
 ---
 title: "Como foi o Desenvolvimento Front-end em 2018 e o que esperar para 2019"
 date: 2019-01-07 00:00:01
-description: "O mundo do desenvolvimento front-end se move rápido. Muito rápido. Este artigo vai recapitular as principais notícias, eventos notáveis e tendências que ocorreram em 2018 e fazer algumas previsões para 2019."
+description: "Este artigo vai recapitular as principais notícias que ocorreram em 2018 e fazer algumas previsões para 2019."
 image: /assets/2019-01-07-como-foi-o-desenvolvimento-front-end-em-2018-e-o-que-esperar-para-2019.png
 tags: ["front-end", "carreira"]
 ---
@@ -42,7 +42,7 @@ A equipe principal do React é muito ativa nas atualizações da biblioteca e na
 
 No vídeo a seguir, [Ryan Florence]() mostra como o React Hooks fez o seu aplicativo de exemplo ficar 90% mais limpo.
 
-https://www.youtube.com/embed/wXLf18DsV-I
+<iframe width="650" height="400" src="https://www.youtube.com/embed/wXLf18DsV-I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 O outro grande lançamento, o *React Suspense*, é uma maneira de gerenciar o *data fetching* dentro dos próprios componentes do React. Ele suspende a renderização de dados enquanto aguarda por uma resposta assíncrona. *Suspense* é o que está por trás da função lazy para gerenciar o *code splitting* dos componentes. A ideia é conseguir gerenciar todo o carregamento assíncrono, como solicitações de API. Ele também permitirá o armazenamento em cache dos resultados de uma solicitação.
 
@@ -50,7 +50,7 @@ Esse exemplo mostra vários *load spinners* na tela enquanto a flag isFetching �
 
 Veja a talk do [Dan Abramov]() construindo uma aplicação usando a *Suspense API* 🔥.
 
-https://www.youtube.com/embed/nLF0n9SACd4
+<iframe width="650" height="400" src="https://www.youtube.com/embed/nLF0n9SACd4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Vue continua crescendo e passa o React em número de estrelas no GitHub
 
@@ -61,10 +61,6 @@ Vue é muito amado, mas ainda está atrás de React e Angular no uso real por um
 ## Evan You (criador do Vue) nos da um gostinho do Vue 3 enquanto o release se aproxima do lançamento
 
 O Vue está se aproximando do seu release 3.0. O criador Evan You nos deu uma visão geral em novembro, tanto na VueConf Toronto quanto no artigo mencionado abaixo. Ele colocou seus slides online e o vídeo estará disponível em breve.
-
-<iframe src="https://medium.com/media/8e640ac77660de129ddffb14a6ab2ecd" frameborder=0></iframe>
-[**Plans for the Next Iteration of Vue.js**
-*Last week at Vue.js London I gave a brief sneak peek of what’s coming in the next major version of Vue. This post…*medium.com](https://medium.com/the-vue-point/plans-for-the-next-iteration-of-vue-js-777ffea6fabf)
 
 ## Angular continua sendo usado constantemente, a v7 foi lançada
 
@@ -229,7 +225,7 @@ GitHub é comprado pela Microsoft
 
 Ryan Dhal (o criador do Node) nos conta os erros que cometeu com o Node e nos dá um vislumbre do TypeScript *runtime*, o Deno
 
-https://www.youtube.com/embed/M3BM9TB-8yA
+<iframe width="650" height="400" src="https://www.youtube.com/embed/M3BM9TB-8yA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Previsões para 2019
 

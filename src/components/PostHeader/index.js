@@ -20,7 +20,9 @@ const PostHeader = ({
     <S.PostHeader> 
       {image && (
         <R.GreaterThanTablet>
-          <S.PostImage fluid={image.childImageSharp.fluid} />
+          <div>
+            <S.PostImage fluid={image.childImageSharp.fluid} />
+          </div>
         </R.GreaterThanTablet>
       )}
       <S.ButtonBack>
@@ -29,13 +31,14 @@ const PostHeader = ({
         </ButtonLink>
       </S.ButtonBack>
       <DateTime>
-        {date}
+        <span itemProp="datePublished">{date}</span>
         {timeToRead && (
           <span> · Leitura de {timeToRead} min</span>
         )}
       </DateTime>
       <S.Title>{title}</S.Title>
       <S.Subtitle>{description}</S.Subtitle>
+      <S.Author>Felipe Fialho</S.Author>
       <Tags tags={tags} isLink={true} />
     </S.PostHeader>
   )
@@ -45,7 +48,9 @@ PostHeader.propTypes = {
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  tags: PropTypes.node.isRequired,
+  tags: PropTypes.array.isRequired,
+  image: PropTypes.object,
+  timeToRead: PropTypes.number
 }
 
 export default PostHeader

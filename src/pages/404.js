@@ -7,7 +7,6 @@ import { getActiveTheme } from 'utils/themes'
 import Layout from 'components/Layout'
 import Content from 'components/Content'
 import SEO from 'components/Seo'
-import Social from 'components/Social'
 import GridTemplate from 'components/GridTemplate'
 import BlogList from 'components/BlogList'
 
@@ -32,7 +31,6 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Página não encontrada" />
       <GridTemplate>
-        <Social />
         <Content>
           <h1>Não tem nada aqui... <span
             className="small"
@@ -53,7 +51,7 @@ const IndexPage = () => {
                 direction="down"
                 duration={1}
                 to="/lab/"
-                onClick={trackLabsClick()}>
+                onClick={() => trackLabsClick()}>
                 projetos pessoais
               </AniLink>?
             </li>
@@ -64,7 +62,7 @@ const IndexPage = () => {
                 direction="down"
                 duration={1}
                 to="/blog/"
-                onClick={trackBlogClick()}>
+                onClick={() => trackBlogClick()}>
                 ler meu blog
               </AniLink>?
             </li>

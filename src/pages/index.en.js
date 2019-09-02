@@ -3,11 +3,10 @@ import ReactGA from 'react-ga'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import Layout from 'components/Layout'
-import Content from 'components/Content'
 import SEO from 'components/Seo'
-import Social from 'components/Social'
 import GridTemplate from 'components/GridTemplate'
 import ButtonLink from 'components/ButtonLink'
+import Author from 'components/Author'
 
 const trackLanguageClick = () => {
   ReactGA.event({
@@ -24,7 +23,7 @@ const IndexPage = () => {
         site {
           siteMetadata {
             title
-            authorDescriptionEn
+            descriptionEn
           }
         }
       }
@@ -33,23 +32,16 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO lang="en" title='Home' description={site.siteMetadata.authorDescriptionEn} />
+      <SEO lang="en" title='Home' description={site.siteMetadata.descriptionEn} />
       <GridTemplate>
         <ButtonLink
           to="/"
           title="View in english"
-          onClick={trackLanguageClick()}>
+          onClick={() => trackLanguageClick()}>
             Ver em português
         </ButtonLink>
 
-        <Social />
-
-        <Content>
-          <h1>Hi!</h1>
-          <p>{site.siteMetadata.authorDescriptionEn}</p>
-          <p>Currently, I'm a Developer at <a href="https://cubo.network/jobs" target="_blank" rel="noopener noreferrer" title="Ver">Cubo Itaú</a> and
-          I've created the <a href="https://github.com/frontendbr" target="_blank" rel="noopener noreferrer" title="Ver">Front-end BR</a> organization on Github.</p>
-        </Content>
+        <Author language="en" />
       </GridTemplate>
     </Layout>
   )

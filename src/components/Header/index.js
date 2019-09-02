@@ -26,33 +26,20 @@ const Header = ({ site: { author }}) => {
             title="Voltar para home">
             <S.Brand>
               <Avatar />
-              <R.GreaterThanTablet>
-                <S.Title>{ author }</S.Title>
-              </R.GreaterThanTablet>
+              <R.LessThanSmallMobile>
+                <S.Title>FFialho</S.Title>
+              </R.LessThanSmallMobile>
+              <R.GreaterThanSmallMobile>
+                <S.Title>{author}</S.Title>
+              </R.GreaterThanSmallMobile>
             </S.Brand>
           </AniLink>
           <S.Menu>
             <Menu />
-            <R.GreaterThanTablet>
-              <LightButton />
-            </R.GreaterThanTablet>
+            <LightButton />
           </S.Menu>
         </S.Main>
       </Container>
-      <R.LessThenMobile>
-        <S.Bar>
-          <AniLink
-            cover
-            bg={getActiveTheme()}
-            direction="down"
-            duration={1}
-            to="/"
-            title="Voltar para home">
-            <S.Title>{ author }</S.Title>
-          </AniLink>
-          <LightButton />
-        </S.Bar>
-      </R.LessThenMobile>
     </S.Header>
   )
 }

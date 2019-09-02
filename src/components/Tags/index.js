@@ -27,7 +27,7 @@ const Tags = ({ tags, isLink }) => {
               cover
               direction="down"
               duration={1}
-              onClick={trackClick(tag)}
+              onClick={() => trackClick(tag)}
               bg={getActiveTheme()}>
                 <S.TagItem>{tag}</S.TagItem>
             </AniLink>

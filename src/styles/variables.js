@@ -23,9 +23,9 @@ export const Space = {
 }
 
 export const Height = {
-  headerBarSm: `${Space.lg}`,
-  headerSm: `${Space.xxlg}`,
+  headerSm: `${Space.lg}`,
   headerLg: `${Space.xlg}`,
+  footer: `4rem`,
   mainTop: `${Space.md}`
 }
 
@@ -56,6 +56,8 @@ export const Color = {
 export const ZIndex = {
   bg: `-1`,
   default: `1`,
+  footer: `5`,
+  header: `5`,
 }
 
 // --------------------------------------------------

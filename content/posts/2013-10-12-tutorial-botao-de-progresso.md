@@ -15,9 +15,9 @@ Mas durante esses projetos, estou pensando e aplicando algumas soluções intere
 
 Nível do tutorial: **Básico**
 
-A demo funcional está no [CodePen](http://codepen.io/felipefialho/pen/KviDw).
+A demo funcional está no Codepen.
 
-https://codepen.io/felipefialho/pen/KviDw?height=400&default-tab=result
+https://codepen.io/felipefialho/pen/KviDw
 
 ## Tutorial
 

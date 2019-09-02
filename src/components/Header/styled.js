@@ -6,8 +6,8 @@ import * as V from 'styles/variables'
 export const Header = styled.header.attrs({
   role: 'banner',
 })`
-  background-color: var(--bg);
-  color: var(--colorPrimary);
+  background-color: ${V.Color.black};
+  color: ${V.Color.white};
   display: block;
   left: 0;
   position: fixed;
@@ -17,6 +17,7 @@ export const Header = styled.header.attrs({
   transition: background-color .3s;
   width: 100%;
   will-change: background-color;
+  z-index: ${V.ZIndex.header};
 
   ${media.greaterThan('medium')`
     background-color: ${V.Color.black};
@@ -26,7 +27,7 @@ export const Header = styled.header.attrs({
 export const Main = styled.div`
   align-items: center;
   display: flex;
-  height: ${V.Height.headerBarSm};
+  height: ${V.Height.headerSm};
   justify-content: space-between;
 
   ${media.greaterThan('medium')`
@@ -35,43 +36,40 @@ export const Main = styled.div`
 `
 
 export const Brand = styled.div`
-  ${media.greaterThan('medium')`
-    align-items: center;
-    display: flex;
+  align-items: center;
+  display: flex;
 
-    > *:not(:last-child) {
-      margin-right: ${V.Space.sm};
-    }
-  `}
+  > *:not(:last-child) {
+    margin-right: ${V.Space.sm};
+  }
 `
 
 export const Menu = styled.div`
   align-items: center;
   display: flex;
 
+  ${media.lessThan('small')`
+    margin-right: -${V.Space.xs};
+  `}
+
   > * {
     &:not(:last-child) {
-      margin-right: ${V.Space.default};
+      margin-right: ${V.Space.xs};
     }
   }
-`
-
-export const Bar = styled.div.attrs({
-  'aria-hidden': 'true',
-})`
-  align-items: center;
-  background-color: ${V.Color.black};
-  color: ${V.Color.white};
-  display: flex;
-  height: ${V.Height.headerBarSm};
-  justify-content: space-between;
-  padding-left: ${V.Space.default};
-  padding-right: ${V.Space.default};
 `
 
 export const Title = styled.h1`
   color: ${V.Color.white};
   display: inline-block;
-  font-size: 2.1rem;
+  font-size: 1.7rem;
   letter-spacing: .025rem;
+
+  ${media.lessThan('350px')`
+    display: none;
+  `}
+
+  ${media.greaterThan('small')`
+    font-size: 2.1rem;
+  `}
 `

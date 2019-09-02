@@ -48,7 +48,9 @@ export const PostImage = styled(Img).attrs({
   }
 `
 
-export const Title = styled.h1`
+export const Title = styled.h1.attrs({
+  "itemProp": "name"
+})`
   ${T.Title}
 
   &:not(:first-child) {
@@ -60,10 +62,18 @@ export const Title = styled.h1`
   }
 `
 
-export const Subtitle = styled.h2`
+export const Subtitle = styled.h2.attrs({
+  "itemProp": "description"
+})`
   ${T.Subtitle1}
 
   &:not(:last-child) {
     margin-bottom: ${V.Space.default};
   }
+`
+export const Author = styled.h3.attrs({
+  "itemProp": "author"
+})`
+  position: absolute;
+  top: -100vh;
 `

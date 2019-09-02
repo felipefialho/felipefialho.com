@@ -7,7 +7,6 @@ import { getActiveTheme } from 'utils/themes'
 import Layout from 'components/Layout'
 import Content from 'components/Content'
 import SEO from 'components/Seo'
-import Social from 'components/Social'
 import GridTemplate from 'components/GridTemplate'
 
 const trackLabsClick = () => {
@@ -23,7 +22,6 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Page not found" />
       <GridTemplate>
-        <Social />
         <Content>
           <h1>There's nothing here... <span
             className="small"
@@ -43,7 +41,7 @@ const IndexPage = () => {
             direction="down"
             duration={1}
             to="/lab/"
-            onClick={trackLabsClick()}>
+            onClick={() => trackLabsClick()}>
             personal projects
           </AniLink>! <span
             className="small"

@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactGA from 'react-ga'
+import PropTypes from 'prop-types'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import DateTime from 'components/DateTime'
@@ -48,7 +49,11 @@ const Lab = ({ content }) => {
     <S.LabList>
       {content.map(({ node }) => {
         return (
-          <S.LabItem key={node.id} href={node.path} title={node.title} onClick={trackClickLab}>
+          <S.LabItem 
+            key={node.id} 
+            href={node.path} 
+            title={node.title} 
+            onClick={() => trackClickLab}>
             <BoxHandler>
               <LabImg imageSrc={node.imageSrc} />
               <DateTime>{node.date}</DateTime>
@@ -60,6 +65,10 @@ const Lab = ({ content }) => {
       })}
     </S.LabList>
   )
+}
+
+Lab.propTypes = {
+  children: PropTypes.node.isRequired
 }
 
 export default Lab

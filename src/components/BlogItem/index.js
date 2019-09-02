@@ -34,7 +34,7 @@ const BlogItem = ({
       duration={1}
       title={title}
       bg={getActiveTheme()}
-      onClick={trackClick(title)}>
+      onClick={() => trackClick(title)}>
       <BoxHandler>
         {date && (
           <DateTime>
@@ -58,7 +58,12 @@ const BlogItem = ({
 
 BlogItem.propTypes = {
   slug: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string,
+  timeToRead: PropTypes.number,
+  tags: PropTypes.array,
+  description: PropTypes.string,
+  isMini: PropTypes.bool
 }
 
 export default BlogItem
