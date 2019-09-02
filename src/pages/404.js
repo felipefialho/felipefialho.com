@@ -7,7 +7,6 @@ import { getActiveTheme } from 'utils/themes'
 import Layout from 'components/Layout'
 import Content from 'components/Content'
 import SEO from 'components/Seo'
-import Social from 'components/Social'
 import GridTemplate from 'components/GridTemplate'
 import BlogList from 'components/BlogList'
 
@@ -32,7 +31,6 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Página não encontrada" />
       <GridTemplate>
-        <Social />
         <Content>
           <h1>Não tem nada aqui... <span
             className="small"
