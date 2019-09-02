@@ -1,6 +1,13 @@
+http://felipefialho.netlify.com/* http://www.felipefialho.com/:splat 301!
+http://felipefialho-piano.netlify.com/* http://piano.felipefialho.com/:splat 301!
+http://css-components.netlify.com/* http://css-components.felipefialho.com/:splat 301!
+http://despolitizador.netlify.com/* http://despolitizador.felipefialho.com/:splat 301!
+http://frontendbr-survey-2016.netlify.com/* http://survey.felipefialho.com/:splat 301!
+
 /piano/ https://piano.felipefialho.com/ 301
 /survey/ https://survey.felipefialho.com/ 301
 /despolitizador/ https://despolitizador.felipefialho.com/ 301
+/css-components/ https://css-components.felipefialho.com/ 301
 
 /blog/2013/geradores-estaticos-breve-explicacao /blog/geradores-estaticos-breve-explicacao/ 301
 
