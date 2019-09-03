@@ -137,7 +137,7 @@ Como disse, existem muitas maneiras de ajudar.
 
 * Criar experimentos no Codepen
 
-* Criar conteúdos em vídeo
+* Criar conteúdo em vídeo
 
 * Criar cursos
 
@@ -261,7 +261,7 @@ De quebra você vai ter contato com novas formas de estruturar e desenvolver.
 
 ### 6. Não tenha medo de feedbacks
 
-Sempre que estiver participando de qualquer projetos com terceiros ou desenvolver códigos abertos, você pode receber criticas.
+Sempre que estiver participando de qualquer projetos com terceiros ou desenvolver códigos abertos, você pode receber críticas.
 
 Caso receba um feedback construtivo, encare de forma positiva. Tente absorver as informações e melhorar nos pontos citados.
 
@@ -269,7 +269,7 @@ Isso vai te fazer evoluir profissionalmente e pessoalmente.
 
 ### 7. Tenha responsabilidade
 
-nfelizmente é comum ver pessoas empolgadas com um projeto, se comprometendo com tasks, mas sumindo na hora de desenvolver.
+Infelizmente é comum ver pessoas empolgadas com um projeto, se comprometendo com tasks, mas sumindo na hora de desenvolver.
 
 E isso acontece em todas as “áreas” do open-source, desde pessoas que se oferecem para ajudar nos eventos, até pessoas que se comprometem com pull-requests.
 
