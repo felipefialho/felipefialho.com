@@ -1,5 +1,12 @@
 [
   {
+    "path": "https://github.com/felipefialho/felipefialho.com",
+    "date": "2019",
+    "title": "felipefialho.com",
+    "description": "My personal website",
+    "imageSrc": "felipefialhocom.jpg"
+  },
+  {
     "path": "https://github.com/felipefialho/kratos-boilerplate",
     "date": "2019",
     "title": "Kratos Boilerplate",
