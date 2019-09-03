@@ -9,7 +9,7 @@ This project uses Gatsby (React), GraphQL, Styled Components, Algolia Instant Se
 Maybe you want to read about them:
 
 - [Gatsby](https://www.gatsbyjs.org/)
-= [GraphQL](https://graphql.org/)
+- [GraphQL](https://graphql.org/)
 - [Styled Components](https://www.styled-components.com/)
 - [Algolia Instant Search](https://www.algolia.com/products/instantsearch/)
 - [Netlify CMS](https://www.netlifycms.org/)
