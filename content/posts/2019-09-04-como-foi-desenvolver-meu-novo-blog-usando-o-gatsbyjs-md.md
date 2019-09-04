@@ -35,3 +35,19 @@ Em 2015, comecei a [trabalhar remoto](/blog/sobre-trabalhar-remoto/) e novamente
 Então trabalhei na segunda versão do meu site, que ficou com essa carinha aqui:
 
 ![Imagem do meu segundo site](/assets/second-site.png)
+
+Nessa altura já tínhamos stacks mais legais disponíveis, então as escolhas dessa vez foram:
+
+\- [Harp](http://harpjs.com/)
+
+\- [Jade](http://jade-lang.com/)
+
+\- [Stylus](http://stylus-lang.com/) 
+
+\- [BEM](http://getbem.com/introduction/)
+
+\- [Gulp](https://gulpjs.com/)
+
+A maior vantagem dessa stack, era a possibilidade de criar novos artigos usando markdown, o que dava muita fluidez. Foram escolhas muito boas, e ainda hoje acredito que são tecnologias legais para trabalhar.
+
+# Mas tudo passa, e o novo sempre chega
