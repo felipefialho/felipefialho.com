@@ -31,7 +31,7 @@ export const Content = styled.article`
     ${T.Heading1}
 
     &:not(:first-child) {
-      margin-top: ${V.Space.md};
+      margin-top: ${V.Space.lg};
     }
 
     &:not(:last-child) {
