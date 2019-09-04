@@ -24,7 +24,7 @@ const BlogPost = (props) => {
         image={post.frontmatter.image ? `https://felipefialho.com${post.frontmatter.image.publicURL}` : 'https://felipefialho.com/assets/og-image.jpg'}
       />
       <GridTemplate>
-        <div itemscope itemtype="http://schema.org/Article">
+        <div itemScope itemType="http://schema.org/Article">
           <PostHeader
             image={post.frontmatter.image}
             tags={post.frontmatter.tags}
