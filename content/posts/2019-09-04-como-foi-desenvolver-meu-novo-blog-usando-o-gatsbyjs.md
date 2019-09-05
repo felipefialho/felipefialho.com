@@ -1,6 +1,6 @@
 ---
 layout: post
-date: '2019-09-04 06:46:38'
+date: '2019-09-05 06:46:38'
 image: /assets/gatsby.jpg
 title: "Como foi desenvolver meu novo blog usando o GatsbyJS"
 description: "Nesse artigo vou passar por todas as técnologias que usei aqui: GraphQL, Styled Components, Algolia, Netlify CMS e mais um monte de coisa 😜"
@@ -120,9 +120,9 @@ Ou seja, um lazyload, com a imagem otimizada e fazendo um crop para todos os tam
 
 ![GraphQL](/assets/graphql.jpg)
 
-O GraphQL foi criado pelo Facebook para facilitar a manipulação de dados, a princípio pensando em components React. De um jeito bastante simples, você faz consultas descrevendo que tipo de dados você precisa e ele vai retornar exatamente esses valores pra você.
+O GraphQL foi criado pelo Facebook para facilitar a manipulação de dados, a princípio pensando em componentes React. De um jeito bastante simples, você faz consultas descrevendo que tipo de dados você precisa e ele vai retornar exatamente esses valores pra você.
 
-Usando em conjunto com o Gatsby, conseguimos informar por exemplo, quais dados determinado componente vai precisar, e o Gatsby se encarrega de receber esses dados quando esse componente for utilizado no Browser. Simples e performático.
+Usando em conjunto com o Gatsby, conseguimos informar por exemplo, quais dados determinado componente vai precisar, e o Gatsby se encarrega de receber esses dados quando esse componente for utilizado no Browser. Simples e performatico.
 
 Assim, conseguimos manipular muitas coisas, como as imagens que comentei acima ou mesmo fazer coisas do tipo:
 
@@ -145,7 +145,7 @@ Especificidade talvez seja o maior problema do CSS, colisão de classes pode lit
 
 Então surgiram sopas de letrinhas como OOCSS, SMACSS, BEM, DRY CSS, RCSS. Todas elas buscavam trazer conceitos para evitar colisões e tornar mais lógico o desenvolvimento de CSS.
 
-Essas metodologias são legais, mas não são escalaveis, porque dependem de atuacão humana para funcionar. Sendo assim, começaram a surgir soluções baseadas em JavaScript como [CSS Modules](https://github.com/css-modules/css-modules).
+Essas metodologias são legais, mas não são escaláveis, porque dependem de atuacão humana para funcionar. Sendo assim, começaram a surgir soluções baseadas em JavaScript como [CSS Modules](https://github.com/css-modules/css-modules).
 
 Assim você foca em coisas mais importantes do que nome de classes, invés de escrever:
 
