@@ -3,7 +3,7 @@ layout: post
 date: '2019-09-05 06:46:38'
 image: /assets/gatsby.jpg
 title: "Como foi desenvolver meu novo blog usando o GatsbyJS"
-description: "Nesse artigo vou passar por todas as técnologias que usei aqui: GraphQL, Styled Components, Algolia, Netlify CMS e mais um monte de coisa 😜"
+description: "Nesse artigo vou passar por todas as tecnologias que usei aqui: GraphQL, Styled Components, Algolia, Netlify CMS e mais um monte de coisa 😜"
 tags: ['javascript', 'css', 'gatsby']
 ---
 
@@ -68,7 +68,7 @@ Gatsby é um SSG (Static Site Generator), mas tem como diferencial ser totalment
 
 Ou seja, Gatsby é um framework poderoso. Uma das suas principais vantagens é gerar arquivos estáticos (olá SEO) no build, enquanto usamos React em tempo de desenvolvimento.
 
-Além disso, o Gatsby [possuí milhares de plugins](https://www.gatsbyjs.org/plugins/). Eles elevam a DevXP (Dev Experience) para outro patamar, porque fornecem soluções performáticas para várias questões do dia-a-dia, fazendo com que a pessoa que está desenvolvendo perca menos tempo com trivilidades e tenha mais tempo para focar coisas essenciais para o produto.
+Além disso, o Gatsby [possuí milhares de plugins](https://www.gatsbyjs.org/plugins/). Eles elevam a DevXP (Dev Experience) para outro patamar, porque fornecem soluções performáticas para várias questões do dia-a-dia, fazendo com que a pessoa que está desenvolvendo perca menos tempo com trivialidades e tenha mais tempo para focar coisas essenciais para o produto.
 
 Por gerar arquivos estáticos e ter sistemas de cache, a performance é simplesmente espetacular.
 
@@ -122,7 +122,7 @@ Ou seja, um lazyload, com a imagem otimizada e fazendo um crop para todos os tam
 
 O GraphQL foi criado pelo Facebook para facilitar a manipulação de dados, a princípio pensando em componentes React. De um jeito bastante simples, você faz consultas descrevendo que tipo de dados você precisa e ele vai retornar exatamente esses valores pra você.
 
-Usando em conjunto com o Gatsby, conseguimos informar por exemplo, quais dados determinado componente vai precisar, e o Gatsby se encarrega de receber esses dados quando esse componente for utilizado no Browser. Simples e performatico.
+Usando em conjunto com o Gatsby, conseguimos informar por exemplo, quais dados determinado componente vai precisar, e o Gatsby se encarrega de receber esses dados quando esse componente for utilizado no Browser. Simples e performático.
 
 Assim, conseguimos manipular muitas coisas, como as imagens que comentei acima ou mesmo fazer coisas do tipo:
 
@@ -257,7 +257,7 @@ const RedZap = styled(Zap)`
 const App = () => <RedZap />
 ```
 
-E pronto! Seu icone estará disponível em SVG, o que significa que você pode, por exemplo alterar facilmente a cor, usando um simples `fill: gray`.
+E pronto! Seu ícone estará disponível em SVG, o que significa que você pode, por exemplo alterar facilmente a cor, usando um simples `fill: gray`.
 
 ## Algolia
 
