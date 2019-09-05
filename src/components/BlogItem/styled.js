@@ -15,11 +15,6 @@ export const BlogItem = styled(AniLink)`
 
 const TitleSmall = `
   ${T.Heading4}
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 2;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
 `
 
 export const Title = styled.h1`
