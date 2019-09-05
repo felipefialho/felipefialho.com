@@ -195,7 +195,7 @@ Se quiser saber mais, pode ver um [exemplo de implementação no meu site](https
 
 Desde a época que usava Stylus para escrever CSS, uso o [Rupture](https://www.npmjs.com/package/rupture-sass) para facilitar a implementação de media queries.
 
-O [styled-media-query](https://github.com/morajabi/styled-media-query) segue a mesma idéia, e deixa muito mais simples e organizado o tratamento de media queries.
+O [styled-media-query](https://github.com/morajabi/styled-media-query) segue a mesma ideia, e deixa muito mais simples e organizado o tratamento de media queries.
 
 Basta escrever:
 
