@@ -315,9 +315,9 @@ Ah, novamente é totalmente gratuito para projetos pessoais.
 
 Toda essa stack foi inspirada na stack do site do [Willian Justem](https://twitter.com/Willian_justen), que [inclusive já tinha escrito um post sobre ela](https://willianjusten.com.br/making-of-blog-novo/).
 
-Não satisfeito, ele lançou um [curso muito legal](https://click.linksynergy.com/deeplink?id=16ht5juwidA&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fgatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms) abordando várias das tecnologias que falei aqui.
+Não satisfeito, ele lançou um [curso muito legal](https://click.linksynergy.com/deeplink?id=16ht5juwidA&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fgatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms%2F%3FcouponCode%3DPROMOFIALHO) abordando várias das tecnologias que falei aqui.
 
-Se você se interessou pelo tema, vale muito a [investir nesse curso](https://click.linksynergy.com/deeplink?id=16ht5juwidA&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fgatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms).
+Se você se interessou pelo tema, vale muito a [investir nesse curso](https://click.linksynergy.com/deeplink?id=16ht5juwidA&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fgatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms%2F%3FcouponCode%3DPROMOFIALHO).
 
 ## Conclusão
 
