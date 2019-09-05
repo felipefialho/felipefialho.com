@@ -165,7 +165,7 @@ Gerando:
 ._link_12ie2_1 { }
 ```
 
-Você pode ver pode ver uma implementação de CSS Modules no [Kratos Boilerplate](https://github.com/felipefialho/kratos-boilerplate).
+Você pode ver uma implementação de CSS Modules no [Kratos Boilerplate](https://github.com/felipefialho/kratos-boilerplate).
 
 Styled Components é uma dessas soluções CSS-in-JS, mas acaba sendo ainda mais automatizada, porque aproveita métodos atuais de componentização para criar componentes a prova de colisão.
 
