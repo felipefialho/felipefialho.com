@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 import * as V from 'styles/variables'
 
@@ -10,9 +11,13 @@ export const BoxHandler = styled.article`
   display: block;
   height: 100%;
   min-height: 15rem;
-  padding: ${V.Space.default};
+  padding: ${V.Space.sm};
   position: relative;
   will-change: border-color;
+
+  ${media.greaterThan('medium')`
+    padding: ${V.Space.default};
+  `}
 
   &:after,
   &:before {

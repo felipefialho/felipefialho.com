@@ -1,11 +1,14 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 import * as V from 'styles/variables'
 import * as T from 'styles/typography'
 
 export const PostNav = styled.nav`
-  display: flex;
-  justify-content: space-between;
+  ${media.greaterThan('small')`
+    display: flex;
+    justify-content: space-between;
+  `}
 
   &:not(:first-child) {
     border-top: ${V.Border.default};
@@ -22,10 +25,19 @@ export const Title = styled.h2`
 
 export const NavItem = styled.div`
   display: block;
-  max-width: calc(50% - ${V.Space.xs});
-  width: 50%;
 
-  > a {
-    height: calc(100% - ${V.Space.default} - ${V.Space.sm});
-  }
+  ${media.lessThan('small')`
+    &:not(:last-child) {
+      margin-bottom: ${V.Space.default};
+    }
+  `}
+
+  ${media.greaterThan('small')`
+    max-width: calc(50% - ${V.Space.xs});
+    width: 50%;
+
+    > a {
+      height: calc(100% - ${V.Space.default} - ${V.Space.sm});
+    }
+  `}
 `
