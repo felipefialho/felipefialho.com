@@ -267,7 +267,7 @@ Ele viabiliza APIs com um sistema de busca extremamente poderoso, de acordo com 
 
 O Algolia ainda possui um componente chamado [InstantSearch](https://www.algolia.com/products/instantsearch/), que tem integração com os principais frameworks do mercado.
 
-Aqui um exemplo de indice que ele criou automagicamente através de um [plugin do Gatsby](https://www.gatsbyjs.org/docs/adding-search-with-algolia/):
+Olha esse exemplo de um indice que ele criou automagicamente através de um [plugin do Gatsby](https://www.gatsbyjs.org/docs/adding-search-with-algolia/):
 
 ```js
 {
@@ -313,11 +313,11 @@ Ah, novamente é totalmente gratuito para projetos pessoais.
 
 ## Quer aprender tudo isso que falei?
 
-Toda essa stack foi inspirada na stack do site do Willian Justem, que [inclusive já tinha escrito um post sobre ela](https://willianjusten.com.br/making-of-blog-novo/).
+Toda essa stack foi inspirada na stack do site do [Willian Justem](https://twitter.com/Willian_justen), que [inclusive já tinha escrito um post sobre ela](https://willianjusten.com.br/making-of-blog-novo/).
 
 Não satisfeito, ele lançou um [curso muito legal](https://click.linksynergy.com/deeplink?id=16ht5juwidA&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fgatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms) abordando várias das tecnologias que falei aqui.
 
-Se você se interessou pelo tema, vale muito a [investir nesse curso]((https://click.linksynergy.com/deeplink?id=16ht5juwidA&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fgatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms) ).
+Se você se interessou pelo tema, vale muito a [investir nesse curso](https://click.linksynergy.com/deeplink?id=16ht5juwidA&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fgatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms).
 
 ## Conclusão
 
