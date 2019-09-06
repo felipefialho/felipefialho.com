@@ -118,6 +118,7 @@ export const Content = styled.article`
 
       ${media.lessThan('medium')`
         border-radius: 0;
+        font-size: 1.6rem;
         margin-left: -${V.Space.sm};
         margin-right: -${V.Space.sm};
       `}
