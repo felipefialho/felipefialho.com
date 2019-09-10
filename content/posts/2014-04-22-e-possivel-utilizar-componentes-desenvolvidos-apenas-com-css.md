@@ -8,7 +8,7 @@ tags: ["css"]
 
 ## Sobre o projeto
 
-Sou apaixonado por qualquer coisa desenvolvida usando apenas CSS. Isso começou em meados de 2012, quando tive contato com o [Homer](http://bernarddeluna.com/project/pure-css3-homer) do Bernard de Luna, no mesmo dia desenvolvi o [Cartman](http://codepen.io/felipefialho/details/qzDCJ) e não parei mais, fiz [outras brincadeiras com CSS](http://codepen.io/felipefialho), mas principalmente comecei a buscar no CSS, soluções utilizáveis para os projetos.
+Sou apaixonado por qualquer coisa desenvolvida usando apenas CSS. Isso começou em meados de 2012, quando tive contato com o [Homer](https://jsfiddle.net/bernarddeluna/G7J5D/) do Bernard de Luna, no mesmo dia desenvolvi o [Cartman](http://codepen.io/felipefialho/details/qzDCJ) e não parei mais, fiz [outras brincadeiras com CSS](http://codepen.io/felipefialho), mas principalmente comecei a buscar no CSS, soluções utilizáveis para os projetos.
 
 Após desenvolver alguns componentes separadamente, imaginei que seria muito mais interessante deixar tudo em um local só.
 
@@ -22,7 +22,7 @@ Isso porque, através dessas técnicas conseguimos de fato fornecer um estado pa
 
 ### Carrossel
 
-[Ver componente](http://www.felipefialho.com/css-components/#component-carousel).
+[Ver componente](https://css-components.felipefialho.com/#component-carousel).
 
 Vamos observar o HTML:
 
@@ -123,7 +123,7 @@ Aqui ativamos o indicador. Basicamente, quando o item ativo for irmão do par de
 
 ### Collapse
 
-[Ver componente](http://www.felipefialho.com/css-components/#component-collapse).
+[Ver componente](https://css-components.felipefialho.com/#component-collapse).
 
 O HTML:
 
@@ -160,7 +160,7 @@ Esse é bem simples, por padrão todos os `.collapse-painel` vão ser `display: 
 
 ### Dropdown
 
-[Ver componente](http://www.felipefialho.com/css-components/#component-dropdown).
+[Ver componente](https://css-components.felipefialho.com/#component-dropdown).
 
 O HTML:
 
@@ -202,7 +202,7 @@ Quando o `.dropdown-hover` ou `.dropdown-open` estiverem com status `:hover ou :
 
 ### Modal
 
-[Ver componente](http://www.felipefialho.com/css-components/#component-modal).
+[Ver componente](https://css-components.felipefialho.com/#component-modal).
 
 O HTML:
 
@@ -290,7 +290,7 @@ Deixamos com `.translate(0, -500%)`, assim ele fica fora da área visível, para
 
 ### Tab
 
-[Ver componente](http://www.felipefialho.com/css-components/#component-tab).
+[Ver componente](https://css-components.felipefialho.com/#component-tab).
 
 O HTML:
 

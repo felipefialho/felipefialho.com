@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import Img from 'gatsby-image'
-import media from 'styled-media-query'
 
 import * as V from 'styles/variables'
 import * as T from 'styles/typography'
@@ -9,14 +8,7 @@ export const LabList = styled.section`
   display: grid;
   grid-column-gap: ${V.Space.default};
   grid-row-gap: ${V.Space.default};
-
-  ${media.greaterThan('small')`
-    grid-template-columns: repeat(2, 1fr);
-  `}
-
-  ${media.greaterThan('medium')`
-    grid-template-columns: repeat(3, 1fr);
-  `}
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 `
 
 export const LabItem = styled.a.attrs(props => ({

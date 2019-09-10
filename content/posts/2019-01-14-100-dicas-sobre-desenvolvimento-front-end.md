@@ -469,7 +469,7 @@ console.log(felipe) // ['corinthiano', 'maloqueiro', 'sofredor']
 <b>91.</b> Para variáveis const serem imutáveis é necessário adicionar Object.freeze:
 
 ```js
-const d2k = Object.freeze(['javascript', 'ninja', 'react])
+const d2k = Object.freeze(['javascript', 'ninja', 'react'])
 d2k.push('jquery') // Uncaught TypeError: Cannot add property 3, object is not extensible
 ```
 
