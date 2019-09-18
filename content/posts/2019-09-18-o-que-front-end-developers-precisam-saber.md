@@ -139,7 +139,7 @@ Algumas das maiores e melhores empresas do mundo, como Google, AWS e várias out
 
 ![Git](assets/2019-o-que-front-enders-precisam-saber-git-.jpg)
 
-Passar algum tempo estudando Git e seus comandos é muito importante. Todos os projetos e produtos que você trabalhar deve utilizar essa tecnologia para fazer versionamento de código e ela extremamente poderosa.
+Passar algum tempo estudando Git e seus comandos é muito importante. Todos os projetos e produtos que você trabalhar deve utilizar essa tecnologia para fazer versionamento de código e ela é extremamente poderosa.
 
 Importante também dizer que Git e Github são coisas diferentes, assim como Java e JavaScript.
 
