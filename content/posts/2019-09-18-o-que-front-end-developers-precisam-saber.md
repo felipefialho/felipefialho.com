@@ -28,7 +28,51 @@ Dito isso, vou listar algumas habilidades que considero importantes para trabalh
 
 Bora lá! 😜
 
-## HTML, CSS e JavaScript é a base
+## O básico de Desenvolvimento Web
+
+Essas são algumas coisas que endereçam desenvolvimento web em geral e são de extrema importância para uma carreira sólida.
+
+### Configuração de domínio e hospedagem
+
+Não importa o projeto que você faça ou esteja, ele vai precisar estar hospedado em algum lugar e precisa ter um domínio configurado.
+
+Cada vez mais temos soluções que automatizam essas etapas, como por exemplo o [Netlify](https://www.netlify.com/), [Heroku](https://www.heroku.com/) e produtos da {AWS][https://aws.amazon.com]. Mas nem sempre essas possibilidades estarão disponíveis, por isso é interessante entender como esse processo funciona e saber configurar manualmente.
+
+### Terminal
+
+![Terminal](assets/2019-o-que-front-enders-precisam-saber-terminal.png)
+
+O terminal segue sendo uma das ferramentas mais usadas no nosso dia a dia. Boa parte das tecnologias usadas no Desenvolvimento Front-end moderno, precisam ser utilizadas a partir de um terminal.
+
+A boa notícia, é que atualmente temos várias libs com alguns atalhos que facilitam o uso desse, muitas vezes assustador, recurso. Além disso, alguns editores de códigos como o [VSCode](https://code.visualstudio.com/) já possuem terminal integrado, ajudando demais no dia a dia.
+
+### Como _client-side_ e _server-side_ se comunicam
+
+Também é muito importante entender como é feita a comunicação entre _client-side_ e _server-side_. Boa parte do trabalho no desenvolvimento Front-end é integrar e interagir com APIs.
+
+Alguns tópicos legais para estudo:
+
+- Web Services RESTful
+- Operações: POST, GET, PUT, PATCH, and DELETE
+- Protocolo HTTP
+
+O canal do [Akita](https://twitter.com/AkitaOnRails) no Youtube tem um monte de vídeos explicando muito bem alguns desses tópicos, [sugiro assistir alguns deles](https://www.youtube.com/user/AkitaOnRails).
+
+### Git e Versionamento
+
+É quase impossível imaginar desenvolvimento de software sem um sistema de controle de versões. E já faz anos que o [Git](https://git-scm.com/) se tornou o maior expoente dessa categoria.
+
+![Git](assets/2019-o-que-front-enders-precisam-saber-git-.jpg)
+
+Passar algum tempo estudando Git e seus comandos é muito importante. Todos os projetos e produtos que você trabalhar deve utilizar essa tecnologia para fazer versionamento de código e ela é extremamente poderosa.
+
+Importante também dizer que Git e Github são coisas diferentes, assim como Java e JavaScript.
+
+https://twitter.com/felipefialho_/status/1172208296213864448
+
+Muitas pessoas ainda fazem essa confusão, mas Git é a tecnologia para controle de versões. Github, Bitbucket, Gitlab e etc, são sites com interfaces visuais para navegar e visualizar o resultado desse versionamento. Sendo que o Github por exemplo, também funciona como uma rede social de desenvolvimento.
+
+## HTML, CSS e JavaScript
 
 https://twitter.com/felipefialho_/status/1146852062027767808
 
@@ -133,21 +177,7 @@ Porém, com o tempo acho importante adquirir mais conhecimento, mesmo que não s
 
 Algumas das maiores e melhores empresas do mundo, como Google, AWS e várias outras, buscam profissionais com esse perfil de _Software Engineer_. Além disso, a própria transição para cargos de liderança também fica facilitada por conta da visão mais ampla de todas as etapas de desenvolvimento.
 
-## Git e Versionamento
-
-É quase impossível imaginar desenvolvimento de software sem um sistema de controle de versões. E já faz anos que o [Git](https://git-scm.com/) se tornou o maior expoente dessa categoria.
-
-![Git](assets/2019-o-que-front-enders-precisam-saber-git-.jpg)
-
-Passar algum tempo estudando Git e seus comandos é muito importante. Todos os projetos e produtos que você trabalhar deve utilizar essa tecnologia para fazer versionamento de código e ela é extremamente poderosa.
-
-Importante também dizer que Git e Github são coisas diferentes, assim como Java e JavaScript.
-
-https://twitter.com/felipefialho_/status/1172208296213864448
-
-Muitas pessoas ainda fazem essa confusão, mas Git é a tecnologia para controle de versões. Github, Bitbucket, Gitlab e etc, são sites com interfaces visuais para navegar e visualizar o resultado desse versionamento. Sendo que o Github por exemplo, também funciona como uma rede social de desenvolvimento.
-
-## As flamigeradas _soft skills_
+## As _soft skills_
 
 Você já deve ter escutado muitas vezes da importância de desenvolver suas _soft skills_. Mas deveria escutar ainda mais. Sério, elas são essenciais, precisamos melhorar como pessoas para lidar com outras pessoas.
 
@@ -170,6 +200,17 @@ A questão emocional também é muito importante, saber lidar com pressão, prio
 Também precisamos buscar uma vida equilibrada, pela natureza dessa profissão é muito fácil sermos engolidos pelo código, negligenciando nossa saúde (física e mental) e também nossa vida pessoal. Saber equilibrar tudo isso também é uma _soft skill_, e das mais importantes, se você não estiver bem consigo mesmo, não vai conseguir dar o seu melhor.
 
 https://twitter.com/felipefialho_/status/1022092350254968833
+
+## Roadmap de Desenvolvimento Front-end
+
+Caso queira se aprofundar mais em tópicos do Desenvolvimento Front-end moderno, uma boa dica é consultar _roadmaps_ e diagramas.
+
+Eles mostram o "caminho das pedras" sobre algumas tecnologias e conceitos que você fatalmente viu ou vai ver durante a carreira. E mais, eles são frequentemente atualizados, conforme vão surgindo novas tecnologias ou conceitos relevantes.
+
+Vou deixar dois deles aqui, ambos em inglês:
+
+- [Step by step guide to becoming a modern frontend developer](https://roadmap.sh/frontend)
+- [About Web Development](https://coggle.it/diagram/Vz9LvW8byvN0I38x/t/web-development)
 
 ## Conclusão
 
