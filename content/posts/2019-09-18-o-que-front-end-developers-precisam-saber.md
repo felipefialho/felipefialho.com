@@ -36,7 +36,7 @@ Essas são algumas coisas que endereçam desenvolvimento web em geral e são de 
 
 Não importa o projeto que você faça ou esteja, ele vai precisar estar hospedado em algum lugar e precisa ter um domínio configurado.
 
-Cada vez mais temos soluções que automatizam essas etapas, como por exemplo o [Netlify](https://www.netlify.com/), [Heroku](https://www.heroku.com/) e produtos da {AWS][https://aws.amazon.com]. Mas nem sempre essas possibilidades estarão disponíveis, por isso é interessante entender como esse processo funciona e saber configurar manualmente.
+Cada vez mais temos soluções que automatizam essas etapas, como por exemplo o [Netlify](https://www.netlify.com/), [Heroku](https://www.heroku.com/) e produtos da [AWS](https://aws.amazon.com). Mas nem sempre essas possibilidades estarão disponíveis, por isso é interessante entender como esse processo funciona e saber configurar manualmente.
 
 ### Terminal
 
