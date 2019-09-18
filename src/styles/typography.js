@@ -99,7 +99,7 @@ export const LinkTransition = `
     content: '';
     height: 2px;
     left: 0;
-    margin-top: ${V.Space.xs};
+    margin-top: ${V.Space.xxs};
     position: absolute;
     top: 100%;
     transform: scaleX(0);
