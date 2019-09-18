@@ -185,7 +185,7 @@ Você já deve ter escutado muitas vezes da importância de desenvolver suas _so
 
 Entenda como _soft skills_ todas suas habilidades comportamentais, emocionais e sociais. Ou seja, ao passo que _hard skills_ são habilidades técnicas e fáceis de avaliar, as _soft skills_ são extremamente subjetivas e de difícil avaliação.
 
-Aquela figura caricata de pessoas da programação com pouca habilidade social faz cada vez menos sentido no mercado de trabalho. Por mais tímido ou tímida que você seja seja, é cada vez mais importante melhorar sua comunicação e desenvolver suas habilidades interpessoais.
+Aquela figura caricata de pessoas da programação com pouca habilidade social faz cada vez menos sentido no mercado de trabalho. Por mais tímido ou tímida que você seja, é cada vez mais importante melhorar sua comunicação e desenvolver suas habilidades interpessoais.
 
 Além disso, você precisa entender o produto na qual está trabalhando.
 
