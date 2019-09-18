@@ -63,7 +63,7 @@ Isso seria impossível se eu não tivesse um bom conhecimento da base.
 
 https://twitter.com/felipefialho_/status/1045659621820694528
 
-Existem outras coisas essenciais, e vou citar algumas delas agora.
+Existem outras coisas essenciais, e vou falar sobre algumas delas agora.
 
 ## Conceitos e Metodologias
 
