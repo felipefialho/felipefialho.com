@@ -16,7 +16,7 @@ Esse foi o resultado no mundo:
 
 ![Google Trends: Front-end Developer](assets/2019-o-que-front-enders-precisam-saber-front-end-developer.png)
 
-No Brasil o, apesar de altos e baixos, o cenário não é muito diferente:
+No Brasil, apesar de altos e baixos, o cenário não é muito diferente:
 
 ![Google Trends: Desenvolvedor Front-end](assets/2019-o-que-front-enders-precisam-saber-desenvolvedor-front-end.png)
 
@@ -52,7 +52,7 @@ Também é muito importante entender como é feita a comunicação entre _client
 
 Alguns tópicos legais para estudo:
 
-- Web Services REST e GraphQL
+- Web Services, REST e GraphQL
 - Operações: POST, GET, PUT, PATCH, and DELETE
 - Protocolo HTTP
 
