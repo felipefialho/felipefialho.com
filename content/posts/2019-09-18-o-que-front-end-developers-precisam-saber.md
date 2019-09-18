@@ -52,7 +52,7 @@ Também é muito importante entender como é feita a comunicação entre _client
 
 Alguns tópicos legais para estudo:
 
-- Web Services RESTful
+- Web Services REST e GraphQL
 - Operações: POST, GET, PUT, PATCH, and DELETE
 - Protocolo HTTP
 
