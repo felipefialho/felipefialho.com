@@ -20,7 +20,7 @@ No Brasil, apesar de altos e baixos, o cenário não é muito diferente:
 
 ![Google Trends: Desenvolvedor Front-end](assets/2019-o-que-front-enders-precisam-saber-desenvolvedor-front-end.png)
 
-Ou seja, Desenvolvimento Front-end segue em alta e deve se manter assim nos próximos anos. Empresas cada vez mais estão buscando esse perfil profissional e cada vez vez mais pessoas se interessam e buscam informações para entrar nessa profissão.
+Ou seja, Desenvolvimento Front-end segue em alta e deve se manter assim nos próximos anos. Empresas cada vez mais estão buscando esse perfil profissional e cada vez mais pessoas se interessam e buscam informações para entrar nessa profissão.
 
 Algumas coisas que podem fazer sentido nesse momento, podem não fazer sentido no futuro. O mundo de desenvolvimento se move com extrema velocidade, assim como minhas opiniões 😂
 
@@ -34,7 +34,7 @@ Essas são algumas coisas que endereçam desenvolvimento web em geral e são de 
 
 ### Configuração de domínio e hospedagem
 
-Não importa o projeto que você faça ou esteja, ele vai precisar estar hospedado em algum lugar e precisa ter um domínio configurado.
+Não importa o projeto que você faça ou esteja, ele estará hospedado em algum lugar e precisa ter um domínio configurado.
 
 Cada vez mais temos soluções que automatizam essas etapas, como por exemplo o [Netlify](https://www.netlify.com/), [Heroku](https://www.heroku.com/) e produtos da [AWS](https://aws.amazon.com). Mas nem sempre essas possibilidades estarão disponíveis, por isso é interessante entender como esse processo funciona e saber configurar manualmente.
 
@@ -64,7 +64,7 @@ O canal do [Akita](https://twitter.com/AkitaOnRails) no Youtube tem um monte de 
 
 ![Git](assets/2019-o-que-front-enders-precisam-saber-git-.jpg)
 
-Passar algum tempo estudando Git e seus comandos é muito importante. Todos os projetos e produtos que você trabalhar deve utilizar essa tecnologia para fazer versionamento de código e ela é extremamente poderosa.
+Passar algum tempo estudando Git e seus comandos é muito importante. Todos os projetos e produtos que você trabalhar devem utilizar essa tecnologia para fazer versionamento de código e ela é extremamente poderosa.
 
 Importante também dizer que Git e Github são coisas diferentes, assim como Java e JavaScript.
 
@@ -92,7 +92,7 @@ Essa sopa de letrinhas tem uma coisa em comum:
 
 ### E tem a curva de aprendizado
 
-Não importa a nova lib que bombou no mercado, ou tão complexa parece ser aquela nova tecnologia que está todo mundo comentando... quanto mais você souber da santíssima trindade do front-end, mais tranquilo vai ser seu aprendizado em tudo que derive delas.
+Não importa a nova lib que bombou no mercado, ou quão complexa parece ser aquela nova tecnologia que está todo mundo comentando... quanto mais você souber da santíssima trindade do front-end, mais tranquilo vai ser seu aprendizado em tudo que derive delas.
 
 Gosto de criar [projetos pessoais para aprender coisas novas](/lab/), então no desenvolvimento da nova versão desse site, usei [uma stack](/blog/como-foi-desenvolver-meu-novo-blog-usando-o-gatsbyjs/) com tecnologias que nunca tinha trabalhado antes. Citando algumas:
 
@@ -141,7 +141,7 @@ Durante o _boom_ do desenvolvimento Front-end alguns anos atrás, era comum dize
 
 Entendo que existam diferentes perfis, e que naturalmente algumas pessoas vão se sentir mais a vontade criando algoritmos, enquanto outras vão gostar mais de criar interfaces. Mas elas caminham juntas, cada vez mais juntas.
 
-Experiência de usuário é o que separa produtos incríveis, que você ama usar todos os dias de produtos nem tão legais assim. UX também envolve acessibilidade e usabilidade, pontos imprescindíveis.
+Experiência de usuário é o que separa produtos incríveis, que você ama usar todos os dias, de produtos nem tão legais assim. UX também envolve acessibilidade e usabilidade, pontos imprescindíveis.
 
 No fim, Desenvolvimento Front-end traduz em código toda experiência pensada pelo time de UX/UI. E experiência vai desde uma interface bonita, acessível e agradável de navegar, até um projeto performático, rápido no carregamento e que não acabe com a bateria ou rede de dados da pessoa que está acessando.
 
