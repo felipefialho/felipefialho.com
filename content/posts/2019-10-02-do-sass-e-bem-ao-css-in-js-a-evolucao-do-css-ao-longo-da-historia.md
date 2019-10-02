@@ -105,7 +105,7 @@ Colisão de estilos acontece quando você estiliza uma [tag sem o uso de classes
 
 Esse é um dos motivos que geram o gif mais famoso do mundo sobre CSS.
 
-![GIF clássico sobre CSS](assets/2019-10-02-do-sass-e-bem-ao-css-in-js-a-evolucao-do-css-ao-longo-da-historia-gif.gif)
+![GIF clássico sobre CSS](assets/2019-10-02-do-sass-e-bem-ao-css-in-js-a-evolucao-do-css-ao-longo-da-historia-css-gif.gif)
 
 Essa bagunça toda, também tende a aumentar o uso de `!important`. E quando usado, a manutenção fica extremamente complexa, sendo necessário aninhar cada vez mais (e usar outro `!important`) para sobrescrever as coisas.
 
