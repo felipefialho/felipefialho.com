@@ -24,7 +24,7 @@ Como quase tudo na vida, o equilíbrio é fundamental.
 
 É importante ter um espaço longe de interrupções e tranqüilo, uma rotina bem definida todos os dias também ajuda muito. Fazer pausas para se alimentar e descansar são imprescindíveis mas não pode chutar o balde... Elas não podem demorar mais do que 10 ou 15 minutos.
 
-Tento também finalizar todas as issues previstas para o dia e nunca deixar trabalho para o dia seguinte. Essa meta ajuda para eu não perder produtividade e continuar focado até o fim do expediente. Nós usamos o [Jira](www.atlassian.com/JIRA‎) para delegar prioridades e gerenciar as issues.
+Tento também finalizar todas as issues previstas para o dia e nunca deixar trabalho para o dia seguinte. Essa meta ajuda para eu não perder produtividade e continuar focado até o fim do expediente. Nós usamos o [Jira](https://www.atlassian.com/JIRA) para delegar prioridades e gerenciar as issues.
 
 Na realidade, trabalhando em home office me sinto ainda mais obrigado em entregar o melhor trabalho possível. Me cobro bastante nesse sentido.
 
@@ -38,7 +38,7 @@ Não é porque não tem ninguém te supervisionando diretamente que você vai do
 
 O ideal é ajustar sua rotina de acordo com as outras pessoas da sua equipe.
 
-Trabalho na [Filtro](http://2014.filtro.us), que é uma agência de Nova Iorque. A diferença de horário não é grande com relação ao daqui. Então trabalho em horário comercial, entre 9h e 19h, dependendo da hora que comecei.
+Trabalho na [Filtro](http://filtro.us), que é uma agência de Nova Iorque. A diferença de horário não é grande com relação ao daqui. Então trabalho em horário comercial, entre 9h e 19h, dependendo da hora que comecei.
 
 Mas por padrão, procuro sempre começar perto das 9h. Acordo um pouco mais cedo, ligo o notebook e vou tomar café, escovar os dentes, cuidar da minha Agnes, entre outras coisas que todos fazem pela manhã.
 
@@ -48,7 +48,7 @@ A hora do almoço é outro momento importante. Gosto de fazer a comida a noite, 
 
 Caso precise sair mais cedo ou resolver alguma coisa durante o dia, é importante avisar a equipe para que não fiquem te esperando caso precisem de você.
 
-Uso o [Jira Timer](www.atlassian.com/JIRA‎) para gerir o tempo de trabalho e o quanto foi gasto com cada tarefa.
+Uso o [Jira Timer](https://marketplace.atlassian.com/archive/1214410) para gerir o tempo de trabalho e o quanto foi gasto com cada tarefa.
 
 ## Interações
 
