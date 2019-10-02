@@ -8,7 +8,7 @@ tags: ["open-source", "github", "comunidade"]
 
 Estou no mundo de desenvolvimento web desde 2009.
 
-De lá pra cá tive acesso a milhares e milhares de libs gratuitas, desenvolvidas por pessoas que não se limitaram a criar algo só pra elas usarem, pensaram no todo, e *compartilharam* para que outras pessoas também pudessem usar.
+De lá pra cá tive acesso a milhares e milhares de libs gratuitas, desenvolvidas por pessoas que não se limitaram a criar algo só pra elas usarem, pensaram no todo, e **compartilharam** para que outras pessoas também pudessem usar.
 
 Mas esse é só um ponto. E é só código.
 
@@ -98,13 +98,13 @@ E também dá pra analisar suas soft skills como:
 
 Para organizar eventos, a pessoa precisa de TODAS as soft skills listadas acima.
 
-E ela está mostrando na *prática* que tem essas qualidades
+E ela está mostrando na **prática** que tem essas qualidades
 
 ## Interessado em contribuir? Aqui vão dicas
 
 Como disse, existem muitas maneiras de ajudar.
 
-### **Gerar conteúdo**
+### Gerar conteúdo
 
 - Escrever artigos
 - Criar experimentos no Codepen
