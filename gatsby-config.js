@@ -181,6 +181,14 @@ const plugins = [
       cachePublic: true
     }
   },
+  {
+    resolve: "gatsby-plugin-google-tagmanager",
+    options: {
+      id: process.env.GOOGLE_GTM_ID,
+      includeInDevelopment: false,
+      defaultDataLayer: { platform: "gatsby" }
+    },
+  },
 ]
 
 if (process.env.CONTEXT === 'production') {
@@ -195,16 +203,7 @@ if (process.env.CONTEXT === 'production') {
     }
   }
 
-  const analytics = {
-    resolve: `gatsby-plugin-google-analytics`,
-    options: {
-      trackingId: process.env.GOOGLE_ANALYTICS_ID,
-      head: false
-    }
-  }
-
   plugins.push(algolia)
-  plugins.push(analytics)
 }
 
 module.exports = {
