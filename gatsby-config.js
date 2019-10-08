@@ -182,11 +182,11 @@ const plugins = [
     }
   },
   {
-    resolve: "gatsby-plugin-google-tagmanager",
+    resolve: 'gatsby-plugin-google-tagmanager',
     options: {
       id: process.env.GOOGLE_GTM_ID,
       includeInDevelopment: false,
-      defaultDataLayer: { platform: "gatsby" }
+      defaultDataLayer: { platform: 'gatsby' }
     },
   },
 ]
