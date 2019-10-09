@@ -11,8 +11,8 @@ const feeds = [
         return Object.assign({}, edge.node.frontmatter, {
           description: edge.node.frontmatter.description,
           date: edge.node.frontmatter.date,
-          url: site.siteMetadata.siteUrl + '/' + edge.node.fields.slug,
-          guid: site.siteMetadata.siteUrl + '/' + edge.node.fields.slug,
+          url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+          guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
           custom_elements: [{ 'content:encoded': edge.node.html }]
         })
       })
@@ -181,14 +181,6 @@ const plugins = [
       cachePublic: true
     }
   },
-  {
-    resolve: 'gatsby-plugin-google-tagmanager',
-    options: {
-      id: process.env.GOOGLE_GTM_ID,
-      includeInDevelopment: false,
-      defaultDataLayer: { platform: 'gatsby' }
-    },
-  },
 ]
 
 if (process.env.CONTEXT === 'production') {
@@ -203,7 +195,16 @@ if (process.env.CONTEXT === 'production') {
     }
   }
 
+  const analytics = {
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId: process.env.GOOGLE_ANALYTICS_ID,
+      head: false
+    }
+  }
+
   plugins.push(algolia)
+  plugins.push(analytics)
 }
 
 module.exports = {
