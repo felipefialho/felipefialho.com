@@ -7,6 +7,7 @@ import GlobalStyles from 'styles/global'
 import Header from 'components/Header'
 import Container from 'components/Container'
 import Footer from 'components/Footer'
+import FooterData from 'components/FooterData'
 
 import * as S from './styled'
 
@@ -34,6 +35,7 @@ const Layout = ({ children }) => {
       </TransitionPortal>
       <S.Main>
         <Container>{children}</Container>
+        <FooterData />
       </S.Main>
       <TransitionPortal level='bottom'>
         <Footer />
