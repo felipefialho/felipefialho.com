@@ -2,7 +2,7 @@
 title: "Do Sass e BEM ao CSS-in-JS: A (re)evolução do CSS ao longo da história 🚀"
 date: 2019-10-02 00:00:01
 description: "Um artigo sobre CSS e como foi a evolução das suas metodologias nos últimos anos."
-image: /assets/2019-10-02-do-sass-e-bem-ao-css-in-js-a-evolucao-do-css-ao-longo-da-historia-cover.jpg
+image: /assets/2019-10-02-cover.jpg
 tags: ["css", "javascript", "styled-components", "css-in-js"]
 ---
 
@@ -14,7 +14,7 @@ Nesse artigo vou falar um pouco sobre a evolução do CSS e porque pode ser uma 
 
 ## Começando do começo, a evolução do CSS
 
-![CSS3](assets/2019-10-02-do-sass-e-bem-ao-css-in-js-a-evolucao-do-css-ao-longo-da-historia-css.jpg)
+![CSS3](assets/2019-10-02-css.jpg)
 
 CSS foi lançado em 17 de dezembro de 1996, mais de 20 anos atrás. Seu nome completo é Cascading Style Sheets (CSS) e serve para adicionar estilo num documento web.
 
@@ -71,7 +71,7 @@ Todas essas coisas seriam impossíveis alguns anos antes e isso refletiu na poss
 
 ## Pré-processadores e pós-processadores
 
-![Pré-processadores](assets/2019-10-02-do-sass-e-bem-ao-css-in-js-a-evolucao-do-css-ao-longo-da-historia-preprocessors.png)*Crédito da imagem: [growingwiththeweb](https://www.growingwiththeweb.com/2014/03/css-preprocessors-are-here-to-stay.html)*
+![Pré-processadores](assets/2019-10-02-preprocessors.png)*Crédito da imagem: [growingwiththeweb](https://www.growingwiththeweb.com/2014/03/css-preprocessors-are-here-to-stay.html)*
 
 No começo da década surgiram muitos pré-processadores, como:
 
@@ -105,7 +105,7 @@ Colisão de estilos acontece quando você estiliza uma [tag sem o uso de classes
 
 Esse é um dos motivos que geram o gif mais famoso do mundo sobre CSS.
 
-![GIF clássico sobre CSS](assets/2019-10-02-do-sass-e-bem-ao-css-in-js-a-evolucao-do-css-ao-longo-da-historia-css-gif.gif)
+![GIF clássico sobre CSS](assets/2019-10-02-css-gif.gif)
 
 Essa bagunça toda, também tende a aumentar o uso de `!important`. E quando usado, a manutenção fica extremamente complexa, sendo necessário aninhar cada vez mais (e usar outro `!important`) para sobrescrever as coisas.
 
@@ -119,7 +119,7 @@ E o CSS sozinho, não possui mecanismos para evitar que isso aconteça.
 
 ## As metodologias CSS
 
-![OOCSS + SMACSS + BEM](assets/assets/2019-10-02-do-sass-e-bem-ao-css-in-js-a-evolucao-do-css-ao-longo-da-historia-organizing.jpg)*Crédito da imagem: [Gainesville Front-end Developers Meetup](https://www.youtube.com/watch?v=IKFq2cSbQ4Q)*
+![OOCSS + SMACSS + BEM](assets/assets/2019-10-02-organizing.jpg)*Crédito da imagem: [Gainesville Front-end Developers Meetup](https://www.youtube.com/watch?v=IKFq2cSbQ4Q)*
 
 Para ajudar nisso, uma série de metodologias CSS surgiram, você já deve ter escutado falar de siglas como:
 
@@ -168,7 +168,7 @@ Além disso, algumas classes podem ficar enormes e muitas vezes pouco semântica
 
 ## CSS Modules
 
-![CSS Modules](assets/2019-10-02-do-sass-e-bem-ao-css-in-js-a-evolucao-do-css-ao-longo-da-historia-css-modules.jpg)
+![CSS Modules](assets/2019-10-02-css-modules.jpg)
 
 Diante desse cenário, entre 2015 e 2016, surgiu o [CSS Modules](https://github.com/css-modules), que literalmente passa a oferecer a possibilidade de escrever módulos para o CSS usando um bundler de módulo como o Webpack. 
 
@@ -204,7 +204,7 @@ Acredito que existam possibilidades reais de acontecer implementações nesse se
 
 ## E finalmente: CSS-in-JS
 
-![CSS in JS](assets/assets/2019-10-02-do-sass-e-bem-ao-css-in-js-a-evolucao-do-css-ao-longo-da-historia-css-in-js.jpg)*Crédito da imagem: [ruanyifeng](http://www.ruanyifeng.com/blog/)*
+![CSS in JS](assets/assets/2019-10-02-css-in-js.jpg)*Crédito da imagem: [ruanyifeng](http://www.ruanyifeng.com/blog/)*
 
 Levando em conta todo o contexto que expliquei anteriormente, soluções CSS-in-JS fazem muito sentido, porque aproveitam métodos atuais de componentização em JavaScript para criar componentes performáticos a prova de colisão, sendo esse processo extremamente automatizado.
 

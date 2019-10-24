@@ -12,7 +12,7 @@ De lá pra cá tive acesso a milhares e milhares de libs gratuitas, desenvolvida
 
 Mas esse é só um ponto. E é só código.
 
-https://twitter.com/felipefialho_/status/1034779078606430208
+https://twitter.com/felipefialho_/status/1105801949377716225
 
 ## Tem todos os outros pontos
 
