@@ -23,7 +23,6 @@ const GoogleAds = ({ slot, layout = 'image' }) => (
           data-ad-slot={slot}></ins>
       )}
     </S.AdsGoogle>
-    <script dangerouslySetInnerHTML={{ __html: '(window.adsbygoogle = window.adsbygoogle || []).push({});' }}></script>
   </>
 )
 
