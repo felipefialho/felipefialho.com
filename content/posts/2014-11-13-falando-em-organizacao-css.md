@@ -39,7 +39,7 @@ Como sempre explico, estou dando um exemplo de estrutura em LESS, mas ela serve 
 
 Dentro das (), adicionei uma pequena descrição de cada pasta principal.
 
-```
+```bash
 less/
 ├── _core/ (Configurações básicas do projeto)
 │   ├── mixins/
