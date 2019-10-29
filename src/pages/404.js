@@ -38,7 +38,7 @@ const IndexPage = () => {
             aria-label="Emoji assustado">😱</span>
           </h1>
 
-          <p class="support-title">Mas não se preocupe! <span
+          <p className="support-title">Mas não se preocupe! <span
             className="small"
             role="img"
             aria-label="Emoji feliz">😄</span>

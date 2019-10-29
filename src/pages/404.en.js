@@ -29,7 +29,7 @@ const IndexPage = () => {
             aria-label="Scared emoji">😱</span>
           </h1>
 
-          <p class="support-title">But don't worry! <span
+          <p className="support-title">But don't worry! <span
             className="small"
             role="img"
             aria-label="Happy emoji">😄</span>

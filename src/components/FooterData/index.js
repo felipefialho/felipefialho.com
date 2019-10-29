@@ -9,8 +9,8 @@ const FooterData = () => {
     <S.FooterData>
       <Container>
         ©2019 felipefialho.com
-        <a class="link" href="/policies">Política de Privacidade</a>
-        <a class="link" href="https://github.com/felipefialho/felipefialho.com/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">Termos de Uso</a>
+        <a className="link" href="/policies">Política de Privacidade</a>
+        <a className="link" href="https://github.com/felipefialho/felipefialho.com/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">Termos de Uso</a>
       </Container>
     </S.FooterData>
   )
