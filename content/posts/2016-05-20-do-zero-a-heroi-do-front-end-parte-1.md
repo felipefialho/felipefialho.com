@@ -48,8 +48,6 @@ https://codepen.io/cameronbaney/pen/gfjLJ
 
 https://codepen.io/jonathanzwhite/pen/GZVKmE
 
-https://codepen.io/Jeplaa/pen/adnoH
-
 Se sua versão ficar diferente da original, não se sinta desencorajado. Continue praticando com diferentes layouts e você vai notar melhorias a cada tentativa.
 
 Se você não tiver um background como designer, é provável que seu olhar de designer seja subdesenvolvido. Um desenvolvedor Front-End com um bom olho de designer será capaz de identificar bons projetos e replica-los perfeitamente. Eu escrevi um artigo há algumas semanas sobre como [desenvolver seu olhar de designer](https://medium.com/@JonathanZWhite/developing-your-eye-for-design-cce944bbeae4#.tsg9204dm).
