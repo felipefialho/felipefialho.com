@@ -8,6 +8,8 @@ export const FooterData = styled.aside`
   font-size: 1.2rem;
   margin-bottom: ${V.Space.sm};
   position: absolute;
+  text-align: center;
+  width: 100%;
 
   .link {
     color: var(--secondaryColor);
