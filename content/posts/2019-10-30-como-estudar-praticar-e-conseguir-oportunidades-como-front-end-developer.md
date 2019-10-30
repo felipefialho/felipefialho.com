@@ -6,7 +6,7 @@ image: /assets/2019-10-30-cover.png
 tags: ["carreira", "estudos", "misc", "open source"]
 ---
 
-Já tinha escrito um texto sobre [o que Front-end Developers precisam saber](blog/o-que-front-end-developers-precisam-saber/) e outro sobre [15 coisas que faria se estivesse iniciando minha carreira](blog/15-coisas-que-faria-se-estivesse-iniciando-minha-carreira-como-desenvolvedor).
+Já tinha escrito um texto sobre [o que Front-end Developers precisam saber](/blog/o-que-front-end-developers-precisam-saber/) e outro sobre [15 coisas que faria se estivesse iniciando minha carreira](/blog/15-coisas-que-faria-se-estivesse-iniciando-minha-carreira-como-desenvolvedor).
 
 Agora vou escrever uma espécie de guia prático com alguns caminhos para quem está iniciando (ou não) profissionalmente.
 
@@ -92,7 +92,7 @@ Existem várias maneiras de praticar, vou listar algumas, e nelas você não só
 
 É uma maneira divertida e extremamente eficaz de praticar, porque você não só vai ratificar coisas que está estudando, como também vai desenvolver sua criatividade.
 
-Vou dar um exemplo, no passado teve um _boom_ de novidades no CSS, várias propriedades novas surgiram. Em 2013 eu estava adorando desenhar com CSS, estudando JavaScript... e sempre quis aprender piano, então porque não tentar criar um piano com CSS e JavaScript? 
+Vou dar um exemplo, no passado teve um _boom_ de novidades no CSS, várias propriedades novas surgiram. Em 2013 eu estava adorando desenhar com CSS, estudando JavaScript... e sempre quis aprender piano, então porque não tentar criar um piano com CSS e JavaScript?
 
 O resultado foi esse:
 
@@ -137,7 +137,7 @@ Além de contribuir com projetos abertos que podem ajudar várias pessoas, o que
 
 No chamado _mundo real_ do mercado de trabalho, nem sempre é uma boa idéia _recriar a roda_, existem milhares de soluções que endereçam muito dos problemas no Desenvolvimento de Software moderno.
 
-Mas durante seus estudos você tem toda a flexibilidade de desenvolver o que achar melhor. 
+Mas durante seus estudos você tem toda a flexibilidade de desenvolver o que achar melhor.
 
 Tentar recriar ou reproduzir libs famosas, ou o conceito aplicados por elas, é mais uma maneira interessante de praticar.
 
@@ -263,7 +263,7 @@ Tire todas as suas dúvidas, pergunte coisas como:
 
 Existe uma lista bem legal com várias perguntas interessantes [nesse repositório](https://github.com/viraptor/reverse-interview/).
 
-Se a vaga for alocada na empresa, você vai passar a maior parte do seu dia nesse ambiente, mesmo que a vaga seja para trabalhar _home office_ você vai interagir a maior parte do dia com processos e pessoas da empresa. 
+Se a vaga for alocada na empresa, você vai passar a maior parte do seu dia nesse ambiente, mesmo que a vaga seja para trabalhar _home office_ você vai interagir a maior parte do dia com processos e pessoas da empresa.
 
 Por isso não deixe de tirar **todas** as suas dúvidas, tenha certeza absoluta que você se sente confortável no fim da entrevista.
 
@@ -359,8 +359,8 @@ Elas não são verdades absolutas e o que funcionou pra mim, pode não funcionar
 
 Como leitura complementar, caso ainda não tenha lido, sugiro dar uma olhada nos dois artigos que citei no começo desse texto:
 
-- [O que Front-end Developers precisam saber](blog/o-que-front-end-developers-precisam-saber/) 
-- [15 coisas que faria se estivesse iniciando minha carreira](blog/15-coisas-que-faria-se-estivesse-iniciando-minha-carreira-como-desenvolvedor)
+- [O que Front-end Developers precisam saber](b/log/o-que-front-end-developers-precisam-saber/)
+- [15 coisas que faria se estivesse iniciando minha carreira](/blog/15-coisas-que-faria-se-estivesse-iniciando-minha-carreira-como-desenvolvedor)
 
 Espero que tenham gostado e aguardo comentários.
 
