@@ -21,7 +21,7 @@ const Author = ({ language, fullText }) => {
 
               <p> In my free time I like to watch movies and series, eventually I like to read books and philosophizing about life. And I need to say: I have two cats and I love they <span className="small" role="img" aria-label="Cat's emoji">😽</span></p>
 
-              <p>I've been creating a lot of open-source projects in the last years, for example:</p>
+              <p>I've been creating a lot of open source projects in the last years, for example:</p>
             </>
           )}
         </>
@@ -29,7 +29,7 @@ const Author = ({ language, fullText }) => {
         <>
           <h1>Olá!</h1>
 
-          <p>Meu nome é <span itemProp="name">Felipe Fialho</span>. Trabalho como <span itemProp="jobTitle">Desenvolvedor Front-end</span> desde 2009. Sou apaixonado por projetos open-source, acredito que a disseminação de conhecimento e boas idéias inspira e melhora o mundo.</p>
+          <p>Meu nome é <span itemProp="name">Felipe Fialho</span>. Trabalho como <span itemProp="jobTitle">Desenvolvedor Front-end</span> desde 2009. Sou apaixonado por projetos open source, acredito que a disseminação de conhecimento e boas idéias inspira e melhora o mundo.</p>
 
           <p>Atualmente estou trabalhando no <a href="https://cubo.network/jobs" target="_blank" rel="noopener noreferrer" title="Ver" itemProp="affiliation">Cubo Itaú</a>. Sou criador da organização <a href="https://github.com/frontendbr" target="_blank" rel="noopener noreferrer" title="Ver" itemProp="owns">Front-end BR</a> no Github. Também sou um dos fundadores do <span itemProp="organizer">Meetup CSS</span> e ajudei a organizar a <span itemProp="organizer">Conferência CSS Brasil 2015</span>.</p>
 
@@ -39,7 +39,7 @@ const Author = ({ language, fullText }) => {
 
               <p>No tempo livre curto assistir filmes e séries, eventualmente ler livros e filosofar sobre a vida. E não posso deixar de comentar: Tenho dois gatos e sou apaixonado por eles <span className="small" role="img" aria-label="Emoji de gato">😽</span></p>
 
-              <p>Nos últimos anos desenvolvi um monte de projetos open-source, como:</p>
+              <p>Nos últimos anos desenvolvi um monte de projetos open source, como:</p>
             </>
           )}
         </>

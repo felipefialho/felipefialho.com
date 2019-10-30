@@ -96,7 +96,7 @@ Acredito que em 2017 atingi o meu melhor momento profissional, penso que hoje so
 
 Talvez por causa disso, foi um momento de mudança de posicionamento profissional, pela primeira vez na carreira deixei de focar tanto em Front-end (especialmente CSS), para melhorar em outras frentes, incluindo desde desenvolvimento Back-end até planejamento do produto.
 
-Foi portanto um ano de muita reflexão, e isso resultou em textos (e até tuites!) menos técnicos e menos participação em projetos open-source do que tive em outros anos.
+Foi portanto um ano de muita reflexão, e isso resultou em textos (e até tuites!) menos técnicos e menos participação em projetos open source do que tive em outros anos.
 
 Estou bastante animado com o rumo das coisas em 2018. Vamos todos juntos nessa!
 

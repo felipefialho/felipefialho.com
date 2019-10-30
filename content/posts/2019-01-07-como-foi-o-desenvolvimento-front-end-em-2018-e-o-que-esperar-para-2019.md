@@ -142,7 +142,7 @@ Sites estáticos são ótimos porque fornecem uma combinação ideal de desempen
 
 Com arquivos HTML renderizados em tempo de compilação, podemos enviar imediatamente ao usuário uma página sem precisar de SSR ou CSR, permitindo que eles carreguem o site quase instantaneamente. Os arquivos JavaScript necessários são baixados no cliente, permitindo uma experiência de *single page*.
 
-São perfeitos para criar sites pessoais ou blogs, mas podem ser ampliados para aplicativos maiores facilmente. Vimos o surgimento de estruturas populares para a criação de websites estáticos, como os aplicativos Gatsby e React Static para React e os aplicativos VuePress para Vue. Na verdade, os sites estáticos se tornaram tão populares que a Gatsby formou uma empresa e recebeu financiamento VC em torno de sua biblioteca open-source no ano passado.
+São perfeitos para criar sites pessoais ou blogs, mas podem ser ampliados para aplicativos maiores facilmente. Vimos o surgimento de estruturas populares para a criação de websites estáticos, como os aplicativos Gatsby e React Static para React e os aplicativos VuePress para Vue. Na verdade, os sites estáticos se tornaram tão populares que a Gatsby formou uma empresa e recebeu financiamento VC em torno de sua biblioteca open source no ano passado.
 
 ## Arquitetura Serverless e JAMStack
 
@@ -188,7 +188,7 @@ Babel é a biblioteca que transpila código ES6 + JavaScript para ES5, tornando 
 
 Text editors e IDEs são campos de batalhas para desenvolvedores desde o passado com o Vim vs emacs.
 
-Com a criação do [Electron](https://electronjs.org/), editores open-source baseados em plugins explodem com o [Atom](https://atom.io/) tomando parte desse novo mercado. Entretanto, [VS Code](https://code.visualstudio.com/) recentemente provou ser o favorito dos desenvolvedores e o principal editor de uso geral por uma margem significativa em 2018.
+Com a criação do [Electron](https://electronjs.org/), editores open source baseados em plugins explodem com o [Atom](https://atom.io/) tomando parte desse novo mercado. Entretanto, [VS Code](https://code.visualstudio.com/) recentemente provou ser o favorito dos desenvolvedores e o principal editor de uso geral por uma margem significativa em 2018.
 
 ![](assets/1_mLBjsSYDWEAdOy8pUjOjOg.png)
 

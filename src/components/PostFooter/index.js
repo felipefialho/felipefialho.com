@@ -14,7 +14,7 @@ const PostFooter = () => {
           aria-label="Emoji sorrindo">😁</span>
         </S.Title>
 
-        <p>Esse projeto é open-source, então basta alterar o arquivo de texto, <a href="https://github.com/felipefialho/felipefialho.com/tree/master/content/posts" target="_blank" rel="noopener noreferrer" title="Alterar texto">diretamente no Github</a> e abrir um pull-request. É uma maneira simples e eficaz de contribuir com a comunidade de desenvolvimento web.</p>
+        <p>Esse projeto é open source, então basta alterar o arquivo de texto, <a href="https://github.com/felipefialho/felipefialho.com/tree/master/content/posts" target="_blank" rel="noopener noreferrer" title="Alterar texto">diretamente no Github</a> e abrir um pull-request. É uma maneira simples e eficaz de contribuir com a comunidade de desenvolvimento web.</p>
       </S.PostFooterContent>
 
       <S.PostFooterContent>

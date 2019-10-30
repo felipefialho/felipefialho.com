@@ -114,7 +114,7 @@ Assim
 
 Comecei a usar o [VSCode](https://code.visualstudio.com/) quando entrei no Cubo, pela ótima integração com o Angular e TypeScript. Mas foi amor a primeira vista.
 
-É [open-source](https://github.com/Microsoft/vscode), rápido, leve, com vários e vários plugins disponíveis (quase impossível não achar algum) e ainda tem uma ótima integração com git e de quebra tem um terminal integrado.
+É [open source](https://github.com/Microsoft/vscode), rápido, leve, com vários e vários plugins disponíveis (quase impossível não achar algum) e ainda tem uma ótima integração com git e de quebra tem um terminal integrado.
 
 ### Navegador pessoal: [Google Chrome](https://www.google.com.br/chrome/browser/desktop/index.html)
 
@@ -132,13 +132,13 @@ Várias features de debug ficam disponíveis primeiro no [Canary](https://www.go
 
 ![](assets/1_i-i-ELyV66s-vkHIebsx6g.png)
 
-Gosto do [Hyper.](https://hyper.is/) Apesar de algumas pessoas contestarem sua velocidade, funciona muito bem pra mim. Além disso é [open-source](https://github.com/zeit/hyper) e você pode usar HTML, CSS e JavaScript para customiza-lo.
+Gosto do [Hyper.](https://hyper.is/) Apesar de algumas pessoas contestarem sua velocidade, funciona muito bem pra mim. Além disso é [open source](https://github.com/zeit/hyper) e você pode usar HTML, CSS e JavaScript para customiza-lo.
 
 ### Editor de imagens: [Gimp](https://www.gimp.org/)
 
 ![](assets/1_JfQW5aFK1fm24tTboriqvg.png)
 
-É open-source e bastante completo. Ele não tem muitas features presentes em editores como o Photoshop, mas para as coisas que preciso no dia-a-dia ele cumpre muito bem seu papel.
+É open source e bastante completo. Ele não tem muitas features presentes em editores como o Photoshop, mas para as coisas que preciso no dia-a-dia ele cumpre muito bem seu papel.
 
 ### Issues e tasks: [Jira](https://br.atlassian.com/software/jira)
 
@@ -198,7 +198,7 @@ Uso o Instagram simplesmente porque o Facebook morreu como rede social 😇
 
 ![](assets/1_z3H6zLnMBw-qWIA-RBhRBQ.png)
 
-O FrontEnd BR surgiu em um lapso e é o projeto open-source que mais me orgulho. Discussões fodas, vagas de emprego, eventos… tem tudo lá.
+O FrontEnd BR surgiu em um lapso e é o projeto open source que mais me orgulho. Discussões fodas, vagas de emprego, eventos… tem tudo lá.
 
 ### Música: [Spotify](https://www.spotify.com/br/)
 

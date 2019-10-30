@@ -66,15 +66,15 @@ Terceiro, porque as lógicas de CSS e JavaScript são completamente diferentes, 
 
 E assim que estivesse totalmente confortável, eu cairia de cabeça em JavaScript, essa linguagem é poderosa, incrível e mudou (e continua mudando) o mundo de desenvolvimento.
 
-## 6. Contribuiria em projetos open-source de terceiros
+## 6. Contribuiria em projetos open source de terceiros
 
 ![Github](assets/github.png)
 
-Se atentem que além do já clichê: “faça open-source”, adicionei “de terceiros”. E isso tem explicação.
+Se atentem que além do já clichê: “faça open source”, adicionei “de terceiros”. E isso tem explicação.
 
 Primeiro, que existem milhares e milhares de projetos, de todos os tipos. Então, praticamente qualquer ideia que você tenha, já deve existir uma lib criada e esperando contribuições.
 
-Segundo que ao participar de projetos open-source de terceiros, você é obrigado a fazer commits e pull-requests decentes, entender e ter humildade para usar o padrão código usado.
+Segundo que ao participar de projetos open source de terceiros, você é obrigado a fazer commits e pull-requests decentes, entender e ter humildade para usar o padrão código usado.
 
 ## 7. Entenderia tudo que abrange meu ecossistema
 
@@ -118,7 +118,7 @@ Escutaria e absorveria tudo que profissionais mais experientes me dissessem, mas
 
 Que fique claro, como disse no começo do texto, as pessoas vivem em realidades diferentes, então isso pode fazer sentido pra mim, mas talvez não faça pra você, nenhum problema nisso.
 
-Então, a não ser que eu precisasse MUITO de uma renda extra no fim do mês, evitaria fazer freelas e focaria totalmente nos meus estudos, em ir aos eventos e em projetos open-source.
+Então, a não ser que eu precisasse MUITO de uma renda extra no fim do mês, evitaria fazer freelas e focaria totalmente nos meus estudos, em ir aos eventos e em projetos open source.
 
 Na maior parte das vezes você vai receber muito menos do que deveria receber e vai trabalhar muito mais do que deveria trabalhar.
 

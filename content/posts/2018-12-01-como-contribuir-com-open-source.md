@@ -3,7 +3,7 @@ title: "Como contribuir com open source"
 date: 2018-12-01 00:00:01
 description: "...e um pouco sobre filosofia, o Github, o universo e tudo mais."
 image: /assets/2018-12-01-como-contribuir-com-open-source.png
-tags: ["open-source", "github", "comunidade"]
+tags: ["open source", "github", "comunidade"]
 ---
 
 Estou no mundo de desenvolvimento web desde 2009.

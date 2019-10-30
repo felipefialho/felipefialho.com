@@ -54,7 +54,7 @@ Aprendendo a base do desenvolvimento, a curva de aprendizado vai ser bem pequena
 
 Alguns anos atrás escrevi um artigo chamado [Aproximando seus estudos de cenários reais — Sobre aquela velha questão de Teoria x Prática e como solucionar isso](/blog/aproximando-seus-estudos-de-cenarios-reais) que fala **exatamente **sobre isso. **Recomendo fortemente a leitura**.
 
-A melhor forma de aplicar os conceitos e técnicas que você esta estudando, mas não pode usar no trabalho, é participando de projetos open-source e existem milhares deles esperando sua ajuda.
+A melhor forma de aplicar os conceitos e técnicas que você esta estudando, mas não pode usar no trabalho, é participando de projetos open source e existem milhares deles esperando sua ajuda.
 
 Evite que a motivação e vontade de utilizar novos frameworks e técnicas, vire ansiedade e por consequência vire desmotivação.
 
