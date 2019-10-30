@@ -15,7 +15,7 @@ const GoogleAds = ({ slot, layout = 'image' }) => (
           data-full-width-responsive='true'></ins>
       ) : (
         <ins className='adsbygoogle'
-          style={{ display: 'block', 'text-align': 'center' }}
+          style={{ display: 'block', 'textAlign': 'center' }}
           data-adtest={process.env.NODE_ENV !== 'production'}
           data-ad-layout='in-article'
           data-ad-format='fluid'
