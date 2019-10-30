@@ -72,7 +72,7 @@ O salário liquido mensal, já prevendo 13º e férias seria de R$ 6.303,20.
 
 ### Qual seria sua escolha?
 
-Mesmo com um salário mensal menor nosso amigo teria uma qualidade de vida muito maior no primeiro emprego, e nessa vaga ele teria a oportunidade de estudar e se desenvolver, ou seja, seria mais interessante a longo prazo. Afinal, ele ficaria menos cansado, mais disposto, possivelmente renderia mais e não ficaria estagnado.Dessa forma novas oportunidades iriam aparecer na sua vida, não só no aspecto profissional, como também no pessoal.
+Mesmo com um salário mensal menor nosso amigo teria uma qualidade de vida muito maior no primeiro emprego, e nessa vaga ele teria a oportunidade de estudar e se desenvolver, ou seja, seria mais interessante a longo prazo. Afinal, ele ficaria menos cansado, mais disposto, possivelmente renderia mais e não ficaria estagnado. Dessa forma novas oportunidades iriam aparecer na sua vida, não só no aspecto profissional, como também no pessoal.
 
 > E o mais incrível: o seu valor hora seria maior.
 
