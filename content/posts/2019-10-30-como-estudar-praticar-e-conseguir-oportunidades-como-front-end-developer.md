@@ -30,7 +30,7 @@ Felizmente cada vez mais empresas estão removendo a necessidade de possuir uma 
 
 Sobre aprendizado, acredito que pode ser interessante para estabelecer e aprender conceitos mais acadêmicos sobre design, lógica de programação, engenharia de software, ciências de computação e etc, parte desse conhecimento vai ser super útil ao longo do tempo.
 
-Alguns exemplos de gradução são:
+Alguns exemplos de graduação são:
 
 - Engenharia de Software
 - Engenharia da Computação
