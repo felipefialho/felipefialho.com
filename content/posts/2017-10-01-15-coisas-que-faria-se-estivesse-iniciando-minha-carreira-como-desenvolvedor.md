@@ -161,9 +161,3 @@ Sendo assim, desde o inicio buscaria formas de compartilhar tudo que estivesse a
 E vocês? Se tivesse a oportunidade de voltar no tempo ou estivesse iniciando suas carreiras, o que fariam?
 
 É nóis 🤘
-
-## Me acompanhe por aí…
-
-**Twitter: [**@felipefialho_ ](https://twitter.com/felipefialho_)**
-Github: [**@felipefialho](https://github.com/felipefialho)**
-Site: [**felipefialho.com](https://www.felipefialho.com/)
