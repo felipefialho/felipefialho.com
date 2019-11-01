@@ -169,7 +169,7 @@ Que você literalmente vai desafiar suas habilidades em testes que as empresas u
 
 Mais do que isso, as empresas estão buscando desenvolvedoras e desenvolvedores o tempo inteiro, se você fizer um teste muito bom existem chances reais dessa empresa te chamar para bater um papo.
 
-E mesmo que isso não aconteça, é possível pedir feedbacks sobre a qualidade do seu teste, o que é muito valioso e pode te ajudar a corrigir diversos as aspectos do seu código ou da sua linha de raciocínio.
+E mesmo que isso não aconteça, é possível pedir feedbacks sobre a qualidade do seu teste, o que é muito valioso e pode te ajudar a corrigir diversos aspectos do seu código ou da sua linha de raciocínio.
 
 ## Procurar oportunidades (ou ser encontrado)
 
