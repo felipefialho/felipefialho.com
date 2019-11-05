@@ -287,7 +287,7 @@ Coisas como:
 
 Essas habilidades são essências para qualquer profissional e isso vai ser avaliado em processos seletivos e no seu dia-a-dia como developer. E sim, elas podem realmente afetar no sucesso profissional.
 
-A boa noticia é que são habilidades como qualquer outras, portanto, mesmo que inicialmente você tenha dificuldade em algumas delas, todas elas são passíveis de serem melhoradas e desenvolvidas.
+A boa noticia é que são habilidades como quaisquer outras, portanto, mesmo que inicialmente você tenha dificuldade em algumas delas, todas elas são passíveis de serem melhoradas e desenvolvidas.
 
 ### Vá bem no teste
 
