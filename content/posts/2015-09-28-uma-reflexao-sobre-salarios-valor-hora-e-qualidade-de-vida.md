@@ -188,6 +188,6 @@ Tente trabalhar em uma profissão e em um lugar que você se divirta!
 
 Verificar seu valor hora, é uma boa forma de saber se o que você está ganhando é realmente justo.
 
-Não escolha mudar de emprego, ou permanecer no atual, olhando apenas o salário no fim do mês. Qualidade de vida e as possibilidades de desenvolvimento pessoais e profissionais oferecidos podem ser tão ou mais importantes do que o salário.
+Não escolha mudar de emprego, ou permanecer no atual, olhando apenas o salário no fim do mês. Qualidade de vida e as possibilidades de desenvolvimento pessoal e profissional oferecidos podem ser tão ou mais importantes do que o salário.
 
 Afinal, seu tempo é finito, limitado e uma das coisas mais preciosas que você tem. Por quanto está disposto a vende-lo?
