@@ -18,7 +18,7 @@ Vamos imaginar uma pessoa que mora em São Paulo, trabalha 8 horas por dia, de s
 
 Essa pessoa recebe R$ 5,000 reais mensais.
 
-Para facilitar o desenvolvimento da ideia que vou apresentar nesse texto, vou considerar apenas salário liquido, sem benefícios como VA ou VR, FGTS e descontos, ou seja, o que de fato cai na conta todo mês. 
+Para facilitar o desenvolvimento da ideia que vou apresentar nesse texto, vou considerar apenas salário liquido, sem benefícios como VA ou VR, FGTS e descontos, ou seja, o que de fato cai na conta todo mês.
 
 Seguindo as regras do regime CLT, a renda liquida mensal seria de R$ 4.692,09 (R$ 56.305,09 anuais, já considerando 13º e férias).
 
@@ -132,7 +132,7 @@ Alguns exemplos de benefícios:
 - Vale alimentação
 - Entre outros
 
-Algumas empresas fornecem ainda benefícios como GymPass e cursos, por exemplo, que fariam com que você não precisasse gastar com academia nem para estudar.
+Algumas empresas fornecem ainda benefícios como _Gympass_ e cursos, por exemplo, que fariam com que você não precisasse gastar com academia nem para estudar.
 
 Minha dica é, some tudo que você recebe:
 
@@ -168,9 +168,17 @@ Que tal entrar perto do horário do almoço? Ou 6:00 da manhã?
 
 Sua empresa tem essa flexibilidade? Está ai um bom parâmetro para você decidir onde trabalhar.
 
-### Aprender e absorver o máximo de habilidades que conseguir durante o tempo que estiver na empresa
+### Usar o tempo de deslocamento para estudar
 
-Essa dica é importante para aproveitar melhor o tempo dentro da empresa para ter mais tempo para fazer outras coisas quando estiver fora dela.  
+Se o tempo de deslocamento até o trabalho for muito grande, e você não tiver como evitar isso, existe uma outra opção: Aproveitar esse tempo.
+
+Caso você não dirija, vale usar essas horas de ida e vinda do trabalho para ler livros, escutar podcasts, assistir aulas ou ler artigos. Mesmo que seu trajeto seja feito com você dirigindo, ainda é possível absorver conhecimento através de podcasts ou "escutando" vídeos.
+
+Usando bem esse tempo, é possível diminuir a necessidade de usar seu período de descanso para estudar 😁
+
+### Aprender e absorver o máximo de habilidades durante o tempo que estiver na empresa
+
+Essa dica é importante para aproveitar melhor o tempo dentro da empresa para ter mais tempo para fazer outras coisas quando estiver fora dela.
 
 Surgiu um tempo ocioso no trabalho?
 
