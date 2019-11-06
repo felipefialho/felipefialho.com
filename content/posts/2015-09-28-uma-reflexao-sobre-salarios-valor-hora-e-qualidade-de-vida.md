@@ -8,15 +8,19 @@ tags: ["carreira", "lifestyle", "misc"]
 
 ## A questão
 
-Vamos imaginar uma pessoa que mora em São Paulo, trabalha 8 horas por dia, de segunda a sexta, no regime CLT, em um trabalho razoavelmente estressante, nesse trabalho ela não desenvolve novas habilidades com frequência e gasta 1h no trajeto até a empresa. Essa pessoa recebe R$ 5,000 reais mensais.
+Vamos imaginar uma pessoa que mora em São Paulo, trabalha 8 horas por dia, de segunda a sexta, no regime CLT, em um trabalho razoavelmente estressante. Nesse trabalho ela não desenvolve novas habilidades com frequência e gasta 1h no trajeto até a empresa.
 
-Para facilitar, vou considerar apenas salário liquido, (sem benefícios, FGTS e descontos) ou seja, o que cai na conta todo mês.
+Essa pessoa recebe R$ 5,000 reais mensais.
+
+Para facilitar o desenvolvimento da ideia que vou apresentar nesse texto, vou considerar apenas salário liquido, sem benefícios como VA ou VR, FGTS e descontos, ou seja, o que de fato cai na conta todo mês. 
 
 Seguindo as regras do regime CLT, a renda liquida mensal seria de R$ 4.692,09 (R$ 56.305,09 anuais, já considerando 13º e férias).
 
-Mas o que importa de verdade é o valor hora. Quanto maior seu valor hora, em tese, maior será sua qualidade de vida, já que vai precisar trabalhar menos para ter um salário compatível com seu estilo de vida. Mas por enquanto não vou focar nessa questão.
+### Agora vamos olhar o valor hora
 
-Vamos fazer uma conta e ver qual o valor hora dessa pessoa:
+Quanto maior seu valor hora, em tese, maior será sua qualidade de vida, já que vai precisar trabalhar menos para ter um salário compatível com seu estilo de vida. Mas por enquanto ainda não vou me aprofundar nisso.
+
+Vamos fazer uma conta simples e ver qual o valor hora atual dessa pessoa:
 
 > 8 horas por dia x 22 dias = 176
 >
@@ -107,6 +111,36 @@ Afinal, ele ficaria menos cansado, mais disposto, possivelmente renderia mais e 
 > E o mais incrível:
 >
 > O valor hora dessa pessoa seria maior 💥
+
+## Mas o _total cash_ também importa
+
+Para facilitar as contas e o desenvolvimento do texto, usei exemplos usando salário liquido, mas é importante não olhar só isso.
+
+É importante considerar os benefícios no seu salário, já que eles fazem com que você não precise gastar o dinheiro (ou parte dele) que você recebe com coisas como alimentação no trabalho, idas ao médico ou dentista e etc.
+
+Alguns exemplos de benefícios:
+
+- Plano de saúde
+- Plano odontológico
+- Vale refeição
+- Vale alimentação
+- Entre outros
+
+Algumas empresas fornecem ainda benefícios como GymPass e cursos, por exemplo, que fariam com que você não precisasse gastar com academia nem para estudar.
+
+Minha dica é, some tudo que você recebe:
+
+- Salários
+- Décimo terceiro
+- Benefícios
+- Bônus e PLR (caso tenha)
+- Etc
+
+Depois divida por 12, e vai ter um valor aproximado do seu salário real, a partir disso é possível fazer outras contas e chegar no valor hora como apresentei nesse artigo.
+
+Caso seja autônomo ou PJ, vale a mesma coisa: Some tudo que recebe durante o ano e divide por 12.
+
+Isso é importante para tomar decisões mais assertivas e de repente não fazer escolhas sem entender direito todas as coisas que te cercam 😊
 
 ## Sugestões para "aumentar" seu valor hora
 
