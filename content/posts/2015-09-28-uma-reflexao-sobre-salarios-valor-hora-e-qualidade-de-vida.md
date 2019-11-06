@@ -8,7 +8,7 @@ tags: ["carreira", "lifestyle", "misc"]
 
 **Rolou uns updates em 06/11/2019 😋**
 
-Antes de tudo, vale o aviso:
+Antes de tudo, vale o aviso: Esse é um texto absolutamente pessoal.
 
 As pessoas possuem oportunidades e ritmos diferentes, portanto não se sinta mal caso algumas dessas coisas não faça parte da sua realidade, não consiga colocar em prática, ou mesmo não concorde com algo.
 
