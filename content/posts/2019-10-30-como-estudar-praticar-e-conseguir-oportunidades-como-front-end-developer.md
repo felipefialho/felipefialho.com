@@ -24,7 +24,7 @@ Existem dois caminhos possíveis, que não são mutuamente excludentes: Educaç�
 
 ### Educação formal
 
-Muito se discute sobre a necessidade ou não de ter educação formal nas áreas ligadas a programação. É uma escolha bastante individual, conheço devs sensacionais que fizeram faculdade e outras pessoas fodas não tem curso superior, minha única certeza é que **não** é fator decisivo para o sucesso uma carreira.
+Muito se discute sobre a necessidade ou não de ter educação formal nas áreas ligadas a programação. É uma escolha bastante individual, conheço devs sensacionais que fizeram faculdade e outras pessoas fodas não tem curso superior, minha única certeza é que **não** é fator decisivo para o sucesso de uma carreira.
 
 Felizmente cada vez mais empresas estão removendo a necessidade de possuir uma graduação, isso na minha opinião, deixa o mercado mais interessante e dinâmico. Mesmo assim ter graduação segue sendo importante, para por exemplo, conseguir visto de trabalho em alguns países.
 
@@ -120,7 +120,7 @@ Abrir pull requests em repositórios de outras pessoas é outro jeito muito lega
 
 ![Bootstrap](assets/1_ukSvk4hGI4nw4sEhte7kyQ.png)
 
-A imagem acima é um print de dos [primeiros PRs](https://github.com/twbs/bootstrap/pull/11162) que abri, nada mais nada menos do que no Bootstrap em meados de 2013. Além de ser super legal poder ajudar num projeto que eu de fato utilizava, ganhei alguns feedbacks super legais sobre o código e qualidade na abertura do PR.
+A imagem acima é um print de um dos [primeiros PRs](https://github.com/twbs/bootstrap/pull/11162) que abri, nada mais nada menos do que no Bootstrap em meados de 2013. Além de ser super legal poder ajudar num projeto que eu de fato utilizava, ganhei alguns feedbacks super legais sobre o código e qualidade na abertura do PR.
 
 Interessante notar que abrindo Pull Requests algumas soft skills também podem ser desenvolvidas, como:
 
