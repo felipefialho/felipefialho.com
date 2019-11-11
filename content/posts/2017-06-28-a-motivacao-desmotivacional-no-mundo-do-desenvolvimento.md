@@ -52,7 +52,7 @@ Aprendendo a base do desenvolvimento, a curva de aprendizado vai ser bem pequena
 
 ### Mas como praticar se me falta tempo no trabalho?
 
-Alguns anos atrás escrevi um artigo chamado [Aproximando seus estudos de cenários reais — Sobre aquela velha questão de Teoria x Prática e como solucionar isso](/blog/aproximando-seus-estudos-de-cenarios-reais) que fala **exatamente **sobre isso. **Recomendo fortemente a leitura**.
+Alguns anos atrás escrevi um artigo chamado [Aproximando seus estudos de cenários reais — Sobre aquela velha questão de Teoria x Prática e como solucionar isso](/blog/aproximando-seus-estudos-de-cenarios-reais) que fala exatamente sobre isso, recomendo fortemente a leitura.
 
 A melhor forma de aplicar os conceitos e técnicas que você esta estudando, mas não pode usar no trabalho, é participando de projetos open source e existem milhares deles esperando sua ajuda.
 
