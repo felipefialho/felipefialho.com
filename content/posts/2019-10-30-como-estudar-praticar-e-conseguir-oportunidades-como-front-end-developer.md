@@ -237,7 +237,7 @@ Preparação é essencial em qualquer área de atuação, inclusive em áreas de
 
 ### Pesquise sobre a empresa
 
-Saber mais sobre a empresa é super importante, não só coisas referentes ao negócio dela, mas também entender por exemplo, qual o ambiente de trabalho por lá e ver opniões das pessoas que trabalham (e já trabalharam) nela.
+Saber mais sobre a empresa é super importante, não só coisas referentes ao negócio dela, mas também entender por exemplo, qual o ambiente de trabalho por lá e ver opiniões das pessoas que trabalham (e já trabalharam) nela.
 
 Vale olhar o site da empresa, buscar notícias na internet e também nas redes sociais.
 
