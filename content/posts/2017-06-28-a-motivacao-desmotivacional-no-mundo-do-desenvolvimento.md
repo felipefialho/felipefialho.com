@@ -40,9 +40,9 @@ https://twitter.com/felipefialho_/status/870471694531559424
 
 Isso pode ser surpreendente no mundo com milhares de coisas para estudar, em que developers vivem, mas…
 
-- Jade? Pug? Nunjucks? Halm? **É apenas… **HTML**
-- Stylus? Sass? Less? PostCSS? CSS Modules? **Acredite… é **CSS**
-- React? Angular? Vue.js? AngularJS? Ember? TypeScript? **Inacreditável, mas sim… é **JavaScript**
+- Jade? Pug? Nunjucks? Halm? É apenas... HTML
+- Stylus? Sass? Less? PostCSS? CSS Modules? Acredite... é CSS
+- React? Angular? Vue.js? Ember? TypeScript? Inacreditável, mas sim... é JavaScript
 
 ### O que isso significa?
 
