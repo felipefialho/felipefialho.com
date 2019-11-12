@@ -7,7 +7,6 @@ import BlogItem from 'components/BlogItem'
 import GridTemplate from 'components/GridTemplate'
 import Pagination from 'components/Pagination'
 import Search from 'components/Search'
-import GoogleAds from 'components/Ads'
 
 const BlogList = (props) => {
   const { currentPage, numPages } = props.pageContext
@@ -60,7 +59,6 @@ const BlogList = (props) => {
           props={props}
         />
       </GridTemplate>
-      <GoogleAds slot="948862796" layout="image"></GoogleAds>
     </Layout>
   )
 }

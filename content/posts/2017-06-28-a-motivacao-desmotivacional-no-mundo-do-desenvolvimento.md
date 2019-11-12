@@ -30,7 +30,7 @@ Sendo assim, conhece os frameworks recomendados, as melhores práticas e também
 
 O problema é que se você não consegue desenvolver da forma gostaria e ainda usa frameworks mal vistos no mercado, isso pode gerar uma **ansiedade da porra e até mesmo culminar na tal [Síndrome do Impostor](https://willianjusten.com.br/sou-bom-o-suficiente/).**
 
-## E como resolver esse problema?
+## Como resolver esse problema
 
 Primeiro de tudo... entenda o que sua empresa faz, como ela espera ganhar dinheiro e para que serve seu trabalho dentro desse universo.
 
@@ -40,19 +40,19 @@ https://twitter.com/felipefialho_/status/870471694531559424
 
 Isso pode ser surpreendente no mundo com milhares de coisas para estudar, em que developers vivem, mas...
 
-- Jade? Pug? Nunjucks? Halm? **É apenas... **HTML**
-- Stylus? Sass? Less? PostCSS? CSS Modules? **Acredite... é **CSS**
-- React? Angular? Vue.js? AngularJS? Ember? TypeScript? **Inacreditável, mas sim... é **JavaScript**
+- Jade? Pug? Nunjucks? Halm? É apenas... HTML
+- Stylus? Sass? Less? PostCSS? CSS Modules? Acredite... é CSS
+- React? Angular? Vue.js? Ember? TypeScript? Inacreditável, mas sim... é JavaScript
 
-### O que isso significa?
+### O que isso significa
 
 Simples... estude a base!
 
 Aprendendo a base do desenvolvimento, a curva de aprendizado vai ser bem pequena, e você terá fluência em qualquer hype do mercado em poucas semanas.
 
-### Mas como praticar se me falta tempo no trabalho?
+### Mas como praticar se me falta tempo no trabalho
 
-Alguns anos atrás escrevi um artigo chamado [Aproximando seus estudos de cenários reais — Sobre aquela velha questão de Teoria x Prática e como solucionar isso](/blog/aproximando-seus-estudos-de-cenarios-reais) que fala **exatamente **sobre isso. **Recomendo fortemente a leitura**.
+Alguns anos atrás escrevi um artigo chamado [Aproximando seus estudos de cenários reais — Sobre aquela velha questão de Teoria x Prática e como solucionar isso](/blog/aproximando-seus-estudos-de-cenarios-reais) que fala exatamente sobre isso, recomendo fortemente a leitura.
 
 A melhor forma de aplicar os conceitos e técnicas que você esta estudando, mas não pode usar no trabalho, é participando de projetos open source e existem milhares deles esperando sua ajuda.
 
