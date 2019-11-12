@@ -18,7 +18,7 @@ Máximo dos clichês, presente em 100% das dicas dadas por especialistas e tamb�
 
 O inglês acabou se tornando um denominador comum entre os diversos idiomas, e de verdade, se eu pudesse voltar no tempo, mesmo antes de iniciar minha carreira, esse seria meu foco.
 
-Claro que é possível ter uma carreira sólida sem dominar esse idioma, mas as vantagens são várias: Livros, artigos, podcasts, discussões, oportunidades no exterior…
+Claro que é possível ter uma carreira sólida sem dominar esse idioma, mas as vantagens são várias: Livros, artigos, podcasts, discussões, oportunidades no exterior...
 
 Antes de aprender qualquer linguagem de programação, eu teria focado no inglês e mesmo após iniciar no mercado, continuaria os estudos em paralelo.
 
@@ -44,11 +44,11 @@ Tentaria então entender porque são tidas como referências. O que fizeram? O q
 
 Sempre trabalhei com desenvolvimento web, então, essas linguagens são HTML, CSS e JavaScript, simples assim.
 
-Dentro dessas linguagens temos milhões de libs, frameworks, preprocessadores… alguns exemplos
+Dentro dessas linguagens temos milhões de libs, frameworks, preprocessadores... alguns exemplos
 
-- **HTML**: Jade, Pug, Nunjucks, Handlebars…
-- **CSS**: Stylus, Sass, Less, PostCSS, CSS Modules…
-- **JavaScript:** React, Angular, Vue, Ember, TypeScript…
+- **HTML**: Jade, Pug, Nunjucks, Handlebars...
+- **CSS**: Stylus, Sass, Less, PostCSS, CSS Modules...
+- **JavaScript:** React, Angular, Vue, Ember, TypeScript...
 
 Por debaixo dos panos, estamos usando as mesmas linguagens faz muitos anos, e provavelmente vamos continuar usando por bastante tempo.
 
@@ -80,7 +80,7 @@ Segundo que ao participar de projetos open source de terceiros, você é obrigad
 
 Desenvolvimento vai muito além de código, então para ser um profissional cada vez mais relevante, buscaria aprender e entender desde cedo tudo que engloba minha profissão.
 
-Metodologias, UX, Design, SEO, Acessibilidade, o próprio mercado e funcionamento do dinheiro… e mais várias e várias coisas que impactam diretamente no desenvolvimento.
+Metodologias, UX, Design, SEO, Acessibilidade, o próprio mercado e funcionamento do dinheiro... e mais várias e várias coisas que impactam diretamente no desenvolvimento.
 
 > Cada uma dessas coisas, iria me ajudar a ter uma visão mais ampla e entender além da tela do IDE.
 
@@ -108,7 +108,7 @@ Não exitaria em aprender e absorver o máximo possível de profissionais mais v
 
 Fazendo contra ponto do número oito.
 
-É super importante aprender com os erros e acertos de outras pessoas, isso ajuda a crescer profissionalmente, mas esses erros e acertos continuam sendo… de outras pessoas.
+É super importante aprender com os erros e acertos de outras pessoas, isso ajuda a crescer profissionalmente, mas esses erros e acertos continuam sendo... de outras pessoas.
 
 Escutaria e absorveria tudo que profissionais mais experientes me dissessem, mas jamais tomaria aquilo como verdade absoluta e formaria sempre minhas próprias opiniões.
 
@@ -122,15 +122,19 @@ Então, a não ser que eu precisasse MUITO de uma renda extra no fim do mês, ev
 
 Na maior parte das vezes você vai receber muito menos do que deveria receber e vai trabalhar muito mais do que deveria trabalhar.
 
-## 12. Tomaria cuidado com a síndrome do impostor
+## 12. Tomaria cuidado com a saúde mental
 
-Um [problema grave](https://medium.com/@bernarddeluna/ol%C3%A1-devs-precisamos-falar-sobre-estresse-e-ansiedade-bde1b04f897e), que atinge um número enorme de developers, e pode gerar [muita desmotivação](https://medium.com/@lfeh/a-motiva%C3%A7%C3%A3o-desmotivacional-no-mundo-do-desenvolvimento-d0a9fcd47fd1).
+Um [problema grave](https://medium.com/@bernarddeluna/ol%C3%A1-devs-precisamos-falar-sobre-estresse-e-ansiedade-bde1b04f897e), que atinge um número enorme de developers, e pode gerar [desmotivação](/blog/a-motivacao-desmotivacional-no-mundo-do-desenvolvimento/).
 
-Somos bombardeados por um número enorme de informações todos os dias, novas libs, novos frameworks, novas metodologias… e é quase impossível absorver todo esse conhecimento.
+Somos bombardeados por um número enorme de informações todos os dias, novas libs, novos frameworks, novas metodologias... é quase impossível absorver todo esse conhecimento.
 
 Já fui atingido por esse problema várias vezes, especialmente nos períodos mais intensos de estudo, o que é uma contradição, quanto mais você estuda e aprende, mais descobre que está longe de chegar em um estado que se considere bom profissional.
 
-É muito difícil lidar com isso, mas o que faria para me previnir desse mal é: traçar metas pessoais, não me comparar com outros profissionais e aprender uma coisa por vez.
+É muito difícil lidar com isso, mas o que faria para me previnir é: 
+
+- traçar metas pessoais
+- não me comparar com outras pessoas
+- aprender uma coisa por vez
 
 ## 13. Estipularia metas
 
