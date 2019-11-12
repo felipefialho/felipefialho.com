@@ -2,125 +2,212 @@
 title: "15 coisas que faria se estivesse iniciando minha carreira como desenvolvedor"
 date: 2017-10-01 00:00:01
 description: "Ou se pudesse entrar em uma maquina do tempo e dar conselhos para eu mesmo no passado"
-image: /assets/2017-10-01-15-coisas-que-faria-se-estivesse-iniciando-minha-carreira-como-desenvolvedor.png
+image: /assets/2017-10-01-cover.png
 tags: ["carreira"]
 ---
 
 Esse é um texto absolutamente pessoal e recheado de clichês.
 
-Tudo que vou citar diz respeito tão somente a minha realidade. As pessoas possuem oportunidades e ritmos diferentes, portanto não se sinta mal caso algumas dessas coisas não faça parte da sua realidade, não consiga colocar em prática, ou mesmo não concorde com algo.
+Tudo que vou citar diz respeito tão somente a minha realidade. As pessoas possuem oportunidades e ritmos diferentes, portanto não se sinta mal caso algumas dessas coisas não faça parte da sua realidade, não consiga colocar em prática ou mesmo não concorde com algo.
 
 Algumas dessas coisas eu fiz no passado ou faço atualmente, outras não coloquei em prática e penso que poderiam ter trazido resultados importantes na minha carreira.
 
+Como leitura complementar, também recomendo a leitura de outros dois artigos meus:
+
+- [O que Front-end Developers precisam saber](/blog/o-que-front-end-developers-precisam-saber/)
+- [Como estudar, praticar e conseguir oportunidades como (Front-end) Developer](/blog/como-estudar-praticar-e-conseguir-oportunidades-como-front-end-developer/)
+
+Então vamos nessa!
+
 ## 1. Aprenderia inglês
 
-Máximo dos clichês, presente em 100% das dicas dadas por especialistas e também “especialistas”, de todas as profissões. Porém é impossível não concordar da importância e do impacto que isso traz em qualquer profissão.
+Máximo dos clichês, presente em 100% das dicas dadas por especialistas e também “especialistas”, de todas as profissões. Porém é impossível não concordar com a importância e do impacto que isso traz em qualquer profissão.
 
 O inglês acabou se tornando um denominador comum entre os diversos idiomas, e de verdade, se eu pudesse voltar no tempo, mesmo antes de iniciar minha carreira, esse seria meu foco.
 
-Claro que é possível ter uma carreira sólida sem dominar esse idioma, mas as vantagens são várias: Livros, artigos, podcasts, discussões, oportunidades no exterior...
+As vantagens são várias:
 
-Antes de aprender qualquer linguagem de programação, eu teria focado no inglês e mesmo após iniciar no mercado, continuaria os estudos em paralelo.
+- Livros
+- Artigos
+- Podcasts
+- Discussões
+- Oportunidades no exterior
+
+Mas só tem uma coisa... no passado eu tinha a opinião que aprender inglês primeiro seria mais importante do que aprender linguagens de programação.
+
+Mudei 🙃
+
+É totalmente possível ter uma carreira sólida sem dominar esse idioma, apesar das vantagens listadas acima.
+
+Boa parte das vagas exigem apenas inglês técnico para leitura de artigos e para escrita de códigos, totalmente possível de ser desenvolvido no dia a dia.
+
+Sendo assim, acredito ser extremamente importante aprender inglês. Mas em paralelo com Desenvolvimento, até porque o contato com esse idioma torna-se diário quando trabalhamos com programação.
 
 ## 2. Aprenderia lógica de programação
 
-![[https://www.123rf.com/photo_16084282_abstract-word-cloud-for-logic-programming-with-related-tags-and-terms.html](https://www.123rf.com/photo_16084282_abstract-word-cloud-for-logic-programming-with-related-tags-and-terms.html)](assets/logica.png)*[https://www.123rf.com/photo_16084282_abstract-word-cloud-for-logic-programming-with-related-tags-and-terms.html](https://www.123rf.com/photo_16084282_abstract-word-cloud-for-logic-programming-with-related-tags-and-terms.html)*
+![[https://www.123rf.com/photo_16084282_abstract-word-cloud-for-logic-programming-with-related-tags-and-terms.html](https://www.123rf.com/photo_16084282_abstract-word-cloud-for-logic-programming-with-related-tags-and-terms.html)](assets/logica.png)*[Créditos: 123rf.com](https://www.123rf.com/photo_16084282_abstract-word-cloud-for-logic-programming-with-related-tags-and-terms.html)*
 
-Como não tive background como programador no inicio da carreira, sinto falta de uma base mais sólida em lógica de programação, tenho certeza que meus códigos seriam muito melhores atualmente.
+Como não tive background como programador no inicio da carreira, sinto falta de uma base mais sólida em conceitos de lógica de programação, algoritmos e ciências da computação em geral.
+
+Tenho certeza que meus códigos seriam muito melhores atualmente.
 
 Então é outro ponto, que junto com inglês, considero fundamental para qualquer desenvolvedor e gostaria de ter descoberto isso mais cedo.
 
-## 3. Buscaria seguir as referências da profissão
+## 3. Seguiria as referências da profissão
 
-Seguiria as pessoas que mais trazem impacto na comunidade e são tidas como referências profissionais ou técnicas.
+Seguiria as pessoas que mais trazem impacto na comunidade de desenvolvimento e são tidas como referências profissionais ou técnicas.
 
-Tentaria então entender porque são tidas como referências. O que fizeram? O que criaram? Que tipo de postura profissional elas tem? O que comem? Onde vivem?
+Tentaria então entender porque são tidas como referências.
 
-> E me inspiraria para construir a minha própria história.
+- O que fizeram?
+- O que criaram?
+- Que tipo de postura profissional elas tem?
+- O que comem?
+- Onde vivem?
+
+E então me inspiraria para construir minha própria história.
+
+https://twitter.com/felipefialho_/status/1182639200820219905
+
+Isso porque cada pessoa é totalmente diferente entre si, e apesar achar muito importante ter inspirações, compararia minha evolução somente comigo mesmo ontem.
 
 ## 4. Focaria nas linguagens básicas
 
 ![CSS, HTML e JavaScript](assets/css-html-js.png)
 
-Sempre trabalhei com desenvolvimento web, então, essas linguagens são HTML, CSS e JavaScript, simples assim.
+Sempre trabalhei com desenvolvimento web, então, essas linguagens são:
 
-Dentro dessas linguagens temos milhões de libs, frameworks, preprocessadores... alguns exemplos
+- HTML
+- CSS
+- JavaScript
 
-- **HTML**: Jade, Pug, Nunjucks, Handlebars...
-- **CSS**: Stylus, Sass, Less, PostCSS, CSS Modules...
-- **JavaScript:** React, Angular, Vue, Ember, TypeScript...
+Simples assim.
 
-Por debaixo dos panos, estamos usando as mesmas linguagens faz muitos anos, e provavelmente vamos continuar usando por bastante tempo.
+Claro que dentro dessas linguagens temos milhões de libs, frameworks, pre-processadores, exemplos:
 
-Sendo assim, antes de me aprofundar em qualquer lib, estudaria a fundo esse tripé básico.
+### HTML
+
+- Jade
+- Pug
+- Nunjucks
+- Handlebars
+
+### CSS
+
+- Stylus
+- Sass
+- Less
+- PostCSS
+- CSS Modules
+- Styled Commponents
+
+### JavaScript
+
+- React
+- Angular
+- Vue
+- Svelte
+- TypeScript
+
+Mas por debaixo dos panos, estamos usando as mesmas linguagens faz muitos anos, e provavelmente vamos continuar usando por bastante tempo.
+
+Sendo assim, antes de me aprofundar em qualquer lib, estudaria bastante esse tripé básico (e mágico).
+
+Ainda sobre esse tema, recomendo fortemente a leitura do artigo: [O que Front-end Developers precisam saber](/blog/o-que-front-end-developers-precisam-saber/) 😁
 
 ## 5. Aprenderia uma coisa por vez
 
-Sendo muito prático: Aprenderia HTML, CSS e JavaScript básico (nível interface) e depois JavaScript avançado.
+Sendo muito prático, aprenderia:
 
-Primeiro, porque HTML e CSS se complementam naturalmente, e especialmente CSS é complexo PRA CARALEO (desenvolva um CSS de merda e tente dar suporte daqui 1 ano) e já vai dar conteúdo suficiente para bastante tempo de estudo.
+- HTML, CSS e JavaScript básico (nível interface)
+- Depois JavaScript avançado
 
-Segundo, porque é possível desenvolver projetos usando [APENAS HTML e CSS, sem usar uma fucking linha de JavaScript](https://www.felipefialho.com/css-components/).
+Primeiro, porque HTML e CSS se complementam naturalmente, e especialmente CSS é complexo PRA CECETE (desenvolva um CSS ruim e tente dar suporte daqui 1 ano) e já vai ser conteúdo suficiente para bastante tempo de estudo.
 
-Terceiro, porque as lógicas de CSS e JavaScript são completamente diferentes, e isso é muito confuso para um iniciante. Muita informação, de linguagens tão diferentes, pode ser frustrante para quem está começando.
+Segundo, porque apesar de não fazer muito sentido atualmente, é possível desenvolver projetos usando APENAS HTML e CSS, sem usar uma fucking-linha de JavaScript. Para comprovar isso pode ver esse meu projeto de 2014, o [CSS Components](https://css-components.felipefialho.com/).
 
-E assim que estivesse totalmente confortável, eu cairia de cabeça em JavaScript, essa linguagem é poderosa, incrível e mudou (e continua mudando) o mundo de desenvolvimento.
+Terceiro, porque as lógicas de CSS e JavaScript são completamente diferentes, e isso é muito confuso para iniciantes. Muita informação, de linguagens tão diferentes, pode ser frustrante para quem está começando a vida profissional.
+
+Então assim que estivesse totalmente confortável, cairia de cabeça em JavaScript, essa linguagem é poderosa, incrível e mudou (e continua mudando) o mundo de desenvolvimento.
+
+https://twitter.com/felipefialho_/status/1067383811615440896
 
 ## 6. Contribuiria em projetos open source de terceiros
 
 ![Github](assets/github.png)
 
-Se atentem que além do já clichê: “faça open source”, adicionei “de terceiros”. E isso tem explicação.
+Se atentem que além do já clichê: “faça open source”, adicionei “de terceiros” e isso tem explicação.
 
-Primeiro, que existem milhares e milhares de projetos, de todos os tipos. Então, praticamente qualquer ideia que você tenha, já deve existir uma lib criada e esperando contribuições.
+Primeiro, porque existem milhares e milhares de projetos, de todos os tipos. Então para praticamente qualquer ideia que você tenha, já deve existir uma lib criada e esperando contribuições.
 
-Segundo que ao participar de projetos open source de terceiros, você é obrigado a fazer commits e pull-requests decentes, entender e ter humildade para usar o padrão código usado.
+Segundo que ao participar de projetos open source de terceiros, você é obrigado a fazer commits e pull-requests decentes, entender e ter humildade para usar o padrão código definido.
+
+Isso pode fazer uma diferença enorme no desenvolvimento da carreira.
+
+Ainda sobre open source, recomendo a leitura desse artigo sobre [open source](/blog/como-contribuir-com-open-source/), onde aprofundo bastante no tema.
 
 ## 7. Entenderia tudo que abrange meu ecossistema
 
-Desenvolvimento vai muito além de código, então para ser um profissional cada vez mais relevante, buscaria aprender e entender desde cedo tudo que engloba minha profissão.
+Desenvolvimento vai muito além de código.
 
-Metodologias, UX, Design, SEO, Acessibilidade, o próprio mercado e funcionamento do dinheiro... e mais várias e várias coisas que impactam diretamente no desenvolvimento.
+Então para ser ter uma vida profissional cada vez mais relevante, buscaria aprender e entender desde cedo tudo que engloba minha profissão.
 
-> Cada uma dessas coisas, iria me ajudar a ter uma visão mais ampla e entender além da tela do IDE.
+Pensando em Desenvolvimento Web, por exemplo:
+
+- Metodologias
+- UX
+- Design
+- SEO
+- Acessibilidade
+
+E o próprio mercado de trabalho e como as empresas esperam ganhar dinheiro.
+
+Acredite ou não, todas essas coisas impactam diretamente na qualidade do código que desenvolvemos.
 
 ## 8. Iria em eventos
 
 ![MeetupCSS no Cubo](assets/meetup-css-2017.png)*MeetupCSS no Cubo*
 
-Já escrevi algumas vezes da [importância de eventos para developers](https://codetalks.net/por-qual-motivo-todo-desenvolvedor-deve-ir-em-eventos-d1f276cf16b), portanto não vou me estender nesse assunto.
+Já escrevi algumas vezes da [importância de eventos para developers](/blog/porque-developers-devem-ir-em-eventos/), portanto não vou me estender nesse assunto.
 
 Diria que eventos menores como Meetups, são ainda mais interessantes para quem está começando, normalmente são gratuitos e existe uma proximidade maior entre as pessoas.
 
 Se não tivesse nenhum evento na cidade onde moro ou do assunto que estivesse estudando, criaria meu próprio evento. Duas pessoas já são suficientes para que um Meetup aconteça 😉
 
-Infelizmente descobri tarde o quão impactante os eventos podem ser na carreira e com certeza teria começado a ir assim que comecei como desenvolvedor.
+Infelizmente descobri tarde o quão impactante os eventos podem ser na carreira e com certeza teria começado a ir assim que a carreira como desenvolvedor tivesse início.
 
-## 9. Escutaria os profissionais mais experientes
+## 9. Escutaria profissionais mais experientes
 
 Pessoas com muitos anos de profissão, com certeza passaram por muitas situações que poderiam me ser úteis.
 
-Não exitaria em aprender e absorver o máximo possível de profissionais mais vividos, desde padrões e dicas de códigos, até decisões e opções profissionais.
+Não exitaria em aprender e absorver o máximo possível de profissionais mais vividos, coisas como:
 
-## 10. Teria minha própria opinião
+- Padrões e dicas de códigos
+- Decisões e opções profissionais
 
-![[https://www.pensador.com/frase/MTYzNzA/](assets/raul-2017.png)*[https://www.pensador.com/frase/MTYzNzA/](https://www.pensador.com/frase/MTYzNzA/)*
+## 10. Mas teria minha própria opinião
 
-Fazendo contra ponto do número oito.
+![https://www.pensador.com/frase/MTYzNzA](assets/raul-2017.png)*pensador.com*
+
+Fazendo um contra ponto na dica anterior.
 
 É super importante aprender com os erros e acertos de outras pessoas, isso ajuda a crescer profissionalmente, mas esses erros e acertos continuam sendo... de outras pessoas.
 
-Escutaria e absorveria tudo que profissionais mais experientes me dissessem, mas jamais tomaria aquilo como verdade absoluta e formaria sempre minhas próprias opiniões.
+Tentaria absorver tudo que profissionais mais experientes me dissessem, mas jamais tomaria aquilo como verdade absoluta.
+
+Sempre formaria sempre minhas próprias opiniões baseadas em coisas que vivi, não em coisas que escutei alguém falar.
 
 ## 11. Evitaria fazer freelas
 
-[Bernard De Luna](undefined) e [Zeno Rocha](undefined) [falaram sobre isso](https://www.youtube.com/watch?v=y8UUKv7j0l0) em 2012 e continuo totalmente de acordo.
+Bernard De Luna e Zeno Rocha [falaram sobre isso](https://www.youtube.com/watch?v=y8UUKv7j0l0) em 2012 e continuo concordando.
 
-Que fique claro, como disse no começo do texto, as pessoas vivem em realidades diferentes, então isso pode fazer sentido pra mim, mas talvez não faça pra você, nenhum problema nisso.
+Obviamente essa dica não vale para quem vive de freelas.
 
-Então, a não ser que eu precisasse MUITO de uma renda extra no fim do mês, evitaria fazer freelas e focaria totalmente nos meus estudos, em ir aos eventos e em projetos open source.
+E para ficar claro, como disse no começo do texto as pessoas vivem em realidades diferentes, então isso pode fazer sentido pra mim mas talvez não faça pra você. Não tem nenhum problema nisso.
 
-Na maior parte das vezes você vai receber muito menos do que deveria receber e vai trabalhar muito mais do que deveria trabalhar.
+Fazendo freelas, muitas vezes você vai receber muito menos do que deveria receber e vai trabalhar muito mais do que deveria trabalhar. Enquanto a pessoa que está te pagando vai achar que está te pagando muito mais do que você deveria receber.
+
+Então, a não ser que eu precisasse MUITO de uma renda extra no fim do mês, evitaria fazer freelas para conseguir focar totalmente nos meus estudos, ir em eventos e trabalhar em projetos open source.
 
 ## 12. Tomaria cuidado com a saúde mental
 
@@ -128,39 +215,56 @@ Um [problema grave](https://medium.com/@bernarddeluna/ol%C3%A1-devs-precisamos-f
 
 Somos bombardeados por um número enorme de informações todos os dias, novas libs, novos frameworks, novas metodologias... é quase impossível absorver todo esse conhecimento.
 
-Já fui atingido por esse problema várias vezes, especialmente nos períodos mais intensos de estudo, o que é uma contradição, quanto mais você estuda e aprende, mais descobre que está longe de chegar em um estado que se considere bom profissional.
+Já fui atingido por esse problema várias vezes, especialmente nos períodos mais intensos de estudo, o que é uma contradição: quanto mais você estuda e aprende, mais descobre que está longe de chegar em um estado que se considere bom profissional.
 
-É muito difícil lidar com isso, mas o que faria para me previnir é: 
+https://twitter.com/felipefialho_/status/1045659621820694528
 
-- traçar metas pessoais
-- não me comparar com outras pessoas
-- aprender uma coisa por vez
+É muito difícil lidar com isso, mas o que faria para me previnir desses problemas:
+
+- Traçar metas pessoais de curto prazo
+- Não me comparar com outras pessoas
+- Aprender uma coisa por vez
+- Ter hobbies que não tenham relação com o trabalho
+- Fazer atividades físicas
+- Evitar trabalhar ou estudar nos fins de semana
 
 ## 13. Estipularia metas
 
-Para alcançar os resultados de forma mais eficaz e conseguir entender o quão distante estou dos meus objetivos, estipularia algumas metas.
+Para alcançar os resultados de forma mais eficaz e conseguir entender o quão distante estou dos meus objetivos, estipularia algumas metas de curto prazo.
 
-E seria interessante que esses estudos estivessem atrelados em prazos. Portanto, além de ter um guia das coisas que gostaria de aprender, definiria também um prazo de “entrega” para cada uma dessas metas.
+Seria interessante que esses estudos tivessem algum resultado prático.
 
-Tenho um artigo chamado “[Aproximando seus estudos de cenários reais](/blog/aproximando-seus-estudos-de-cenarios-reais)” em que falo justamente sobre isso, e com certeza teria me ajudado se tivesse descoberto antes sobre a importância de lidar com prazos.
+Portanto, além de criar uma lista guia das coisas que gostaria de aprender, definiria também um prazo (que faça sentido obviamente) para cada um desses itens.
+
+Tenho um artigo chamado [Aproximando seus estudos de cenários reais](/blog/aproximando-seus-estudos-de-cenarios-reais) em que falo justamente sobre isso.
+
+Com certeza essa dica teria me ajudado bastante se tivesse descoberto antes sobre a importância de lidar com prazos.
 
 ## 14. Não deixaria de ter hobbies ou praticar atividades físicas
 
 ![Sagrado futebol de domingo](assets/futebol.png)*Sagrado futebol de domingo*
 
-É natural quando você está focado nos estudos e na profissão, que atividades que você adorava realizar e te deixavam feliz, fiquem para segundo plano.
+É natural (infelizmente) quando você está focado nos estudos e na vida profissional, que atividades que você adorava realizar e te deixavam feliz, fiquem em segundo plano.
 
-Mas isso não deveria acontecer. Deixaria sempre espaços na minha agenda para fazer todas as atividades que mais gosto e me fazem bem, e não abriria mão disso. Faz bem pro corpo e pra mente.
+Mas isso não deveria acontecer.
 
-Isso significa que raramente estudaria ou trabalharia no fim de semana.
+Então sempre reservaria espaços na minha agenda para fazer todas as atividades que gosto e me fazem bem.
+
+Não abriria mão disso. Faz bem pro corpo e pra mente, impactando diretamente na dica de número 12.
+
+Isso significa também que raramente estudaria ou trabalharia no fim de semana, fazendo de tudo para usar bem esse tempo com coisas que deixassem feliz.
 
 ## 15. Compartilharia meus conhecimentos
 
-Jamais deixaria os resultados dos estudos, os aprendizados dos projetos ou os conhecimentos adquiridos, presos no meu cérebro. Isso é inconcebível.
+https://twitter.com/felipefialho_/status/1175126276182396928
+
+Jamais deixaria que os resultados dos estudos, aprendizados que tive nos projetos ou os conhecimentos adquiridos, ficassem apenas dentro no meu cérebro.
+
+Isso é inconcebível.
 
 Sendo assim, desde o inicio buscaria formas de compartilhar tudo que estivesse aprendendo, seja escrevendo artigos, gravando podcasts ou através de vídeos.
 
-> Conhecimento deve ser trocado entre todas as pessoas, sempre.
+> Conhecimento deve ser trocado entre todas as pessoas... sempre!
 
 E vocês? Se tivesse a oportunidade de voltar no tempo ou estivesse iniciando suas carreiras, o que fariam?
 
