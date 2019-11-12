@@ -10,7 +10,7 @@ tags: ["carreira", "comunidade"]
 
 Mantenho meu site [desde 2013](http://www.felipefialho.com/blog/). Queria estudar geradores estáticos (na época o [Docpad](http://docpad.org/)) e comecei a desenvolver um site pessoal, pois dessa forma poderia aprender uma nova skill enquanto criava alguma coisa importante para meu desenvolvimento profissional. Pensei em compartilhar as coisas que estava aprendendo e aproveitei para adicionar um blog.
 
-E uma das coisas que me motivam a escrever novos artigos é receber feedbacks, do tipo…
+E uma das coisas que me motivam a escrever novos artigos é receber feedbacks, do tipo...
 > Cara, li o artigo X, e me deu ideias para fazer tal coisa no trabalho.
 
 **Ou mesmo**
@@ -22,7 +22,7 @@ E uma das coisas que me motivam a escrever novos artigos é receber feedbacks, d
 
 Em meados de 2014, fui em um Meetup de Angular no Google Brasil. Após o evento, fomos em um bar. Cerveja vai, cerveja vem e no meio da conversa percebi que não existia nenhum evento focado em CSS.
 
-Cheguei em casa embriagado, criei o [MeetupCSS](http://www.meetup.com/pt-BR/CSS-SP/), coloquei o [Raphael Fabeni](https://twitter.com/raphaelfabeni) como organizador (avisei ele apenas no outro dia) e comecei a divulgar! Afinal… por que não? E o resto é história…
+Cheguei em casa embriagado, criei o [MeetupCSS](http://www.meetup.com/pt-BR/CSS-SP/), coloquei o [Raphael Fabeni](https://twitter.com/raphaelfabeni) como organizador (avisei ele apenas no outro dia) e comecei a divulgar! Afinal... por que não? E o resto é história...
 
 O [MeetupCSS](http://www.meetup.com/pt-BR/CSS-SP/) cresceu, hoje conta com mais de 1200 membros cadastrados e acredito que a gente encontrou um formato que se encaixou bem no que queríamos quando começamos a organizar o evento.
 
@@ -38,9 +38,9 @@ E o mais importante é que o MeetupCSS serviu de inspiração para a criação d
 
 ## A Front-End Week em São Paulo
 
-No fim de junho/2016 rolou a sensacional [Front-End Week](https://medium.com/@afonsopacifer/um-relato-sobre-como-foi-a-frontweeksp-para-um-comedor-de-biscoito-85e936052bd#.lcaszi7lw), como conta o [Afonso Pacifer](undefined), aqui em São Paulo… e tudo aconteceu por acaso.
+No fim de junho/2016 rolou a sensacional [Front-End Week](https://medium.com/@afonsopacifer/um-relato-sobre-como-foi-a-frontweeksp-para-um-comedor-de-biscoito-85e936052bd#.lcaszi7lw), como conta o [Afonso Pacifer](undefined), aqui em São Paulo... e tudo aconteceu por acaso.
 
-Sabíamos que iria rolar o **Front in Sampa** no sábado e o **Code in the Dark** na sexta. Aí pensei… porque não aproveitar a galera de outros estados que iriam estar em São Paulo e fazer o MeetupCSS na quinta?
+Sabíamos que iria rolar o **Front in Sampa** no sábado e o **Code in the Dark** na sexta. Aí pensei... porque não aproveitar a galera de outros estados que iriam estar em São Paulo e fazer o MeetupCSS na quinta?
 
 Conversei com o [Raphael Fabeni](https://twitter.com/raphaelfabeni), ele curtiu a ideia e começamos a nos organizar. Em paralelo mandei um áudio para o [Matheus Marsiglio](https://twitter.com/matmarsiglio) perguntando se ele toparia fazer o FrontUX na quarta, ele topou na hora!
 
@@ -58,7 +58,7 @@ Desde o ano passado eu reclamava de não ter um espaço consolidado para Front-E
 
 Apesar de ótimos locais para divulgar projetos e artigos, sites como o Facebook ou ferramentas como Slack ou Telegram nunca me deixaram satisfeitos pelo fato de serem FECHADAS e não gerarem escalabilidade pela internet. Todas as discussões e debates que acontecem nessas ferramentas, ficam trancadas dentro delas, sendo impossível fazer uma busca no Google, ou outro mecanismo de busca, e acessar as informações.
 
-Eu tinha um repositório no Github chamado [Poste Mais](https://github.com/frontendbr/poste-mais/c) e tinham acontecido debates interessantes por lá. Então pensei… porque não o Github? [Soltei esse tuite](https://twitter.com/felipefialho_/status/693111161856921600) e percebi que várias pessoas tinham a mesma opinião.
+Eu tinha um repositório no Github chamado [Poste Mais](https://github.com/frontendbr/poste-mais/c) e tinham acontecido debates interessantes por lá. Então pensei... porque não o Github? [Soltei esse tuite](https://twitter.com/felipefialho_/status/693111161856921600) e percebi que várias pessoas tinham a mesma opinião.
 
 Sem pestanejar criei a [organização](https://github.com/frontendbr), o [repositório de Fórum](https://github.com/frontendbr/forum) e coloquei uma galera super ativa nas comunidades para ajudar na organização.
 
@@ -106,12 +106,12 @@ Iniciativas essas que têm ajudado várias pessoas a se desenvolverem como profi
 
 Sou muito fã do Raul Seixas e uma coisa que é padrão nas letras dele é o foco no PENSAR e FAZER. E tento levar isso para minha vida.
 
-Sempre achei que as pessoas têm ideias incríveis, mas acabam se perdendo no campo dos pensamentos e se autossabotando. Em geral, isso acontece porque as pessoas têm medo da sua ideia não ser tão boa, medo de serem criticadas, medo de dar errado, medo do medo… Ou porque falta disposição para fazer acontecer.
+Sempre achei que as pessoas têm ideias incríveis, mas acabam se perdendo no campo dos pensamentos e se autossabotando. Em geral, isso acontece porque as pessoas têm medo da sua ideia não ser tão boa, medo de serem criticadas, medo de dar errado, medo do medo... Ou porque falta disposição para fazer acontecer.
 
-Não seja assim! Se você tiver um ideia, especialmente uma que possa contribuir para ajudar outras pessoas e por que não… mudar o mundo?
+Não seja assim! Se você tiver um ideia, especialmente uma que possa contribuir para ajudar outras pessoas e por que não... mudar o mundo?
 Não pense duas vezes! Coloque em prática e pague pra ver.
 
-Não está tendo muitas ideias ultimamente? Sem problemas! Comece a participar de iniciativas de outras pessoas, como disse lá em cima, ideias geram ideias. Você sem dúvida vai se sentir inspirado e motivado, e quem sabe daqui um tempo não seja você que vai estar inspirando e motivando alguém…
+Não está tendo muitas ideias ultimamente? Sem problemas! Comece a participar de iniciativas de outras pessoas, como disse lá em cima, ideias geram ideias. Você sem dúvida vai se sentir inspirado e motivado, e quem sabe daqui um tempo não seja você que vai estar inspirando e motivando alguém...
 
 > It’s been so long now
 > Since the latest reb has gone

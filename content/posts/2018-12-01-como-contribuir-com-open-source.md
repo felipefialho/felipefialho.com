@@ -70,7 +70,7 @@ Através dessas contribuições, ideias são geradas, projetos são desenvolvido
 
 O reflexo disso é sentido até mesmo no mercado de trabalho, com mais gente capacitada e se conectando, a profissão tende a se tornar mais madura, importante e valorizada. Causando assim, melhorias nas condições, benefícios e salários.
 
-### E não é só isso…
+### E não é só isso...
 
 ![bruxo](assets/1_oPFFezJfh1uwzKO1F6qldQ.gif)*bruxo*
 
@@ -244,6 +244,6 @@ Projetos open source podem ajudar muito a colocar em prática as coisas que voc�
 
 O open source: foi, é, e vai continuar sendo fundamental na evolução da profissão e porque não... do mundo e da sociedade como um todo.
 
-> Participar disso, talvez seja… colocar o seu nome na história.
+> Participar disso, talvez seja... colocar o seu nome na história.
 
 Nóis 🖤💙

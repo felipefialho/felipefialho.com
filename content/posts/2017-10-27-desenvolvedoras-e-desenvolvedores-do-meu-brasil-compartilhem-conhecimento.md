@@ -1,7 +1,7 @@
 ---
 title: "Desenvolvedoras e desenvolvedores do meu Brasil... Compartilhem conhecimento!"
 date: 2017-10-27 00:00:01
-description: "No fim esse texto todo é apenas licença poética de Filtro Solar…"
+description: "No fim esse texto todo é apenas licença poética de Filtro Solar..."
 image: /assets/2017-10-27-desenvolvedoras-e-desenvolvedores-do-meu-brasil-compartilhem-conhecimento.png
 tags: ["comunidade", "misc"]
 ---
@@ -19,10 +19,10 @@ Não tem outra base confiável
 Além de meus próprios erros e acertos.
 
 Aproveite bem o seu inicio de carreira
-Ou, então, esquece…
+Ou, então, esquece...
 Você nunca vai entender mesmo o quão legal é ser um Júnior até que tenha se tornado um Sênior.
 Mas daqui uns 10 anos você vai pensar na sua carreira
-E perceber de um jeito que você não percebe, hoje em dia, quantas oportunidades se escancaravam a sua frente…
+E perceber de um jeito que você não percebe, hoje em dia, quantas oportunidades se escancaravam a sua frente...
 Ao contrário do que você possa pensar, provavelmente você já é muito bom hoje.
 
 Não se preocupe em deixar o código perfeito

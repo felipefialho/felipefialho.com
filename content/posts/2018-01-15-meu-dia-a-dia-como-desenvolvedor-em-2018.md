@@ -198,7 +198,7 @@ Uso o Instagram simplesmente porque o Facebook morreu como rede social 😇
 
 ![](assets/1_z3H6zLnMBw-qWIA-RBhRBQ.png)
 
-O FrontEnd BR surgiu em um lapso e é o projeto open source que mais me orgulho. Discussões fodas, vagas de emprego, eventos… tem tudo lá.
+O FrontEnd BR surgiu em um lapso e é o projeto open source que mais me orgulho. Discussões fodas, vagas de emprego, eventos... tem tudo lá.
 
 ### Música: [Spotify](https://www.spotify.com/br/)
 

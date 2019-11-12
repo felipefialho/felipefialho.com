@@ -18,11 +18,11 @@ Em 2009 ainda desenvolvia para IE6 usando .png transparente para fazer bordas ar
 
 De lá pra cá, os navegadores estão cada vez mais modernos, usamos *progressive enhancement *sem dó nem piedade, criamos aplicações inteiras usando apenas JavaScript e estamos falando de *progressive web apps.*
 
-Que época incrível para ser desenvolvedor…
+Que época incrível para ser desenvolvedor...
 
 ## O Fim
 
-Não, não é “O Fim” de final, é “O Fim” de **finalidade**… afinal de contas, qual é a finalidade de um Desenvolvedor Front-End hoje?
+Não, não é “O Fim” de final, é “O Fim” de **finalidade**... afinal de contas, qual é a finalidade de um Desenvolvedor Front-End hoje?
 
 ### Node.js é um marco na história
 
@@ -36,9 +36,9 @@ Nem sempre Front-Enders tinham background em Ciências da Computação ou fluên
 
 Acabava que muitas vezes a finalidade de um Front-Ender Developer era literalmente “recortar layout” e fazer websites fiéis ao PSD usando HTML e CSS, para em seguida passar o código para ser implementado no Back-End.
 
-Mas o Node.js surgiu e os Back-Enders perceberam que era possível e em muitos casos, interessante, usar JavaScript nas aplicações e… bingo! Era uma linguagem já confortável para qualquer Front-Ender. E de quebra isso ainda ajudou a diminuir a curva de aprendizado para outras linguagens.
+Mas o Node.js surgiu e os Back-Enders perceberam que era possível e em muitos casos, interessante, usar JavaScript nas aplicações e... bingo! Era uma linguagem já confortável para qualquer Front-Ender. E de quebra isso ainda ajudou a diminuir a curva de aprendizado para outras linguagens.
 
-As coisas ficaram velozes desde então, com Back-Enders e Front-Enders trabalhando num ecossistema confortável para ambos, soluções incríveis foram surgindo e chegamos ao…
+As coisas ficaram velozes desde então, com Back-Enders e Front-Enders trabalhando num ecossistema confortável para ambos, soluções incríveis foram surgindo e chegamos ao...
 
 ### Fantástico mundo dos hypes
 
@@ -66,7 +66,7 @@ Impacta porque Front-Enders também vão precisar se adaptar. Developers, que sa
 
 Esse cenário já é padrão para quem trabalha com produto. Sempre vai ter developers mais fluentes na parte visual e outros mais fluentes em programação, mas todos precisam ter skills amplas.
 
-Mas ontem, hoje ou amanhã, a finalidade será sempre a mesma: **desenvolver entregáveis digitais**…
+Mas ontem, hoje ou amanhã, a finalidade será sempre a mesma: **desenvolver entregáveis digitais**...
 
 ## O Meio
 
@@ -78,7 +78,7 @@ Você pode fazer um código extraordinário e ficar horas olhando para a tela im
 
 **Developers cada vez mais precisam entender e gostar de UX** e participar ativamente da concepção de um produto. Sua percepção e olhar são essenciais para o sucesso deste.
 
-Termos como: *Web Developer, Web Designer, Web-qualquer-coisa*, estão deixando de fazer sentido e estamos nos tornando *Software Engineers, Software Developers, Product Engineers, Product Developers*… ou qualquer outra palavra bonita que queira usar.
+Termos como: *Web Developer, Web Designer, Web-qualquer-coisa*, estão deixando de fazer sentido e estamos nos tornando *Software Engineers, Software Developers, Product Engineers, Product Developers*... ou qualquer outra palavra bonita que queira usar.
 
 Isso significa que daqui 20 anos talvez não estaremos usando JavaScript, HTML e CSS, mas tanto faz. Teremos nos adaptado e continuaremos desenvolvendo produtos, nem que sejam robôs que façam o mesmo trabalho que estamos fazendo em 2017.
 

@@ -32,7 +32,7 @@ Vou focar apenas na vida profissional, separada por trimestre. E para a leitura 
 
 ## Abril/Maio/Junho
 
-Aqui as coisas foram bem agitadas…
+Aqui as coisas foram bem agitadas...
 
 ![Foto clássica do Cubo](assets/cubo.png)*Foto clássica do Cubo*
 
@@ -100,6 +100,6 @@ Foi portanto um ano de muita reflexão, e isso resultou em textos (e até tuites
 
 Estou bastante animado com o rumo das coisas em 2018. Vamos todos juntos nessa!
 
-## <2018>…
+## <2018>...
 
 ...

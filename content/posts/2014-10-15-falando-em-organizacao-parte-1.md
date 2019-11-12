@@ -19,7 +19,7 @@ O fluxo de trabalho atual funcionou muito bem nos últimos 3 semestres (1 ano e 
 - Componentização
 - Performance
 
-## Mas… calma!
+## Mas... calma!
 
 É impressionante o número de ferramentas que surgem todo dia nesse louco mundo front-end. Portanto, precisamos ter cautela.
 
@@ -131,7 +131,7 @@ Passei a deixar nos projetos apenas o que utilizo de fato:
 
 - Os mixins
 - Sistema de grid
-- Componentes JavaScript (Carrossel, Collapse, Modal…) conforme necessário.
+- Componentes JavaScript (Carrossel, Collapse, Modal...) conforme necessário.
 
 Os mixins acabo utilizando sempre (com mais alguns que criei baseados nas necessidades dos projetos que desenvolvo).
 

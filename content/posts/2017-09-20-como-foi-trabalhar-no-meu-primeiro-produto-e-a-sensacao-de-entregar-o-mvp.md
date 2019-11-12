@@ -23,7 +23,7 @@ Mas então veio o convite para trabalhar no Cubo, com produtos digitais focados 
 
 ## A concepção do produto
 
-Começava então uma grande mudança. Minhas conversas deixaram de ser sobre alinhamentos, espaçamentos e código. Termos como D*esign Sprint, Lean, Scrum, Kamban, MVP… *começaram a fazer parte da minha rotina e comecei a entender finalmente, o que é trabalhar em um produto.
+Começava então uma grande mudança. Minhas conversas deixaram de ser sobre alinhamentos, espaçamentos e código. Termos como D*esign Sprint, Lean, Scrum, Kamban, MVP... *começaram a fazer parte da minha rotina e comecei a entender finalmente, o que é trabalhar em um produto.
 
 Logo nas primeiras semanas, começamos a pensar no nossos objetivos, enquanto trabalhávamos em produtos que já estavam rodando.
 

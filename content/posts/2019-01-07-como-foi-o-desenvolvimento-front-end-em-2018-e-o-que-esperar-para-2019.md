@@ -154,7 +154,7 @@ Uma extensão da filosofia serverless é a [JAMStack ](https://jamstack.org/)(Ja
 
 Para entender como um site JAMStack pode ser escalado enquanto mantém o desempenho, [Quincy Larson](undefined) explica como o freecodecamp.org é abastecido pela arquitetura JAM.
 [**How freeCodeCamp Serves Millions of Learners Using the JAMstack | freeCodeCamp**
-*In this talk, Quincy Larson shares about the history of freeCodeCamp, and how the JAMstack is used for…*www.freecodecamp.org](https://www.freecodecamp.org/news/beaucarnes/freecodecamp-jamstack--i9ZVp23pm)
+*In this talk, Quincy Larson shares about the history of freeCodeCamp, and how the JAMstack is used for...*www.freecodecamp.org](https://www.freecodecamp.org/news/beaucarnes/freecodecamp-jamstack--i9ZVp23pm)
 
 ## TypeScript pode ser o futuro do JavaScript (mas o mesmo não pode ser dito do Flow) e o TS 3.0 foi lançado
 
@@ -197,19 +197,19 @@ Com a criação do [Electron](https://electronjs.org/), editores open source bas
 Lista completa dos principais artigos de 2018 (todos em inglês):
 
 [**Top Web Development Articles of 2018**
-*A list of the best JavaScript, React, Vue, Angular, and frontend stories of 2018. Required reading for all web…*levelup.gitconnected.com](https://levelup.gitconnected.com/top-web-development-articles-of-2018-bd5c3900110b)
+*A list of the best JavaScript, React, Vue, Angular, and frontend stories of 2018. Required reading for all web...*levelup.gitconnected.com](https://levelup.gitconnected.com/top-web-development-articles-of-2018-bd5c3900110b)
 
 Addy Osmani nos mostrou o custo do JavaScript
 [**The Cost Of JavaScript In 2018**
-*Building interactive sites can involve sending JavaScript to your users. Often, too much of it. Have you been on a…*medium.com](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4)
+*Building interactive sites can involve sending JavaScript to your users. Often, too much of it. Have you been on a...*medium.com](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4)
 
 Vimos o futuro do React na React Conf em Novembro
 [**React Conf recap: Hooks, Suspense, and Concurrent Rendering — React Blog**
-*This year’s React Conf took place on October 25 and 26 in Henderson, Nevada, where more than 600 attendees gathered to…*reactjs.org](https://reactjs.org/blog/2018/11/13/react-conf-recap.html)
+*This year’s React Conf took place on October 25 and 26 in Henderson, Nevada, where more than 600 attendees gathered to...*reactjs.org](https://reactjs.org/blog/2018/11/13/react-conf-recap.html)
 
 Airbnb compartilhou seus 2 anos de experiência com o React Native
 [**React Native at Airbnb**
-*In 2016, we took a big bet on React Native. Two years later, we’re ready to share our experience with the world and…*medium.com](https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c)
+*In 2016, we took a big bet on React Native. Two years later, we’re ready to share our experience with the world and...*medium.com](https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c)
 
 Google nos deixar dar uma espiada no Google Photos Web UI
 [**Building the Google Photos Web UI**
@@ -217,11 +217,11 @@ Google nos deixar dar uma espiada no Google Photos Web UI
 
 Microsoft está adotando o Chromium para o Edge
 [**Microsoft Edge goes Chromium**
-*The rumors were true: Microsoft Edge is moving to the open-source Chromium platform, the same platform that powers…*techcrunch.com](https://techcrunch.com/2018/12/06/microsoft-edge-goes-chromium-and-macos/)
+*The rumors were true: Microsoft Edge is moving to the open-source Chromium platform, the same platform that powers...*techcrunch.com](https://techcrunch.com/2018/12/06/microsoft-edge-goes-chromium-and-macos/)
 
 GitHub é comprado pela Microsoft
 [**Microsoft to acquire GitHub for $7.5 billion — Stories**
-*Acquisition will empower developers, accelerate GitHub’s growth and advance Microsoft services with new audiences From…*news.microsoft.com](https://news.microsoft.com/2018/06/04/microsoft-to-acquire-github-for-7-5-billion/)
+*Acquisition will empower developers, accelerate GitHub’s growth and advance Microsoft services with new audiences From...*news.microsoft.com](https://news.microsoft.com/2018/06/04/microsoft-to-acquire-github-for-7-5-billion/)
 
 Ryan Dhal (o criador do Node) nos conta os erros que cometeu com o Node e nos dá um vislumbre do TypeScript *runtime*, o Deno
 

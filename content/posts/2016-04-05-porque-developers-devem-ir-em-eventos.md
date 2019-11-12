@@ -42,7 +42,7 @@ Então precisamos agradecer e valorizar os organizadores ao redor do mundo e a m
 
 ![Front in Sampa 2015](assets/front-in-sampa-2015.png)
 
-Portanto… você precisa ir em eventos!
+Portanto... você precisa ir em eventos!
 
 Você vai aprender um monte de coisas novas, fazer novos amigos e ter várias ideias.
 Talvez esse seja o empurrão que a sua carreira está precisando para que você possa trilhar novos caminhos.

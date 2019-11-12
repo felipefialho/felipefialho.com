@@ -486,7 +486,7 @@ console.log(f())
 ```js
 const skills1 = [ 'css', 'html' ]
 const skills2 = [ 'js', 'ts' ]
-const newSkills = [ …skills1, …skills2, 'ux' ]
+const newSkills = [ ...skills1, ...skills2, 'ux' ]
 console.log(newSkills) // [ 'css', 'html', 'js', 'ts', 'ux' ]
 ```
 
@@ -495,7 +495,7 @@ console.log(newSkills) // [ 'css', 'html', 'js', 'ts', 'ux' ]
 ```js
 const felipe = { name: 'Felipe', company: 'Cubo' }
 const xhamps = { nickname: 'Xhamps Monstro' }
-const xhampelipe = { …xhamps, …felipe }
+const xhampelipe = { ...xhamps, ...felipe }
 console.log(xhampelipe)
 // { nickname: "Xhamps Monstro", name: "Felipe", company: "Cubo" }
 ```
@@ -504,7 +504,7 @@ console.log(xhampelipe)
 
 ```js
 const s = 'HTML'
-const c = [ …s ]
+const c = [ ...s ]
 console.log(c) // [ 'H', 'T', 'M', 'L' ]
 ```
 
@@ -520,7 +520,7 @@ console.log(name, age) // Felipe 28
 
 ```js
 const person = { name: 'Felipe', lastName: 'Fialho', age: 28 }
-const { name, …restOfPerson } = person
+const { name, ...restOfPerson } = person
 console.log(restOfPerson) // { lastName: "Fialho", age: 28 }
 ```
 

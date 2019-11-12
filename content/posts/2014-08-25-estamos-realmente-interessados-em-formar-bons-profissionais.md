@@ -18,7 +18,7 @@ Dessa forma, o estagiário consegue estar do lado de pessoas mais experientes e 
 
 Esse é o cenário ideal e onde bons profissionais começariam a ser formados.
 
-## Então começa a pesquisa por vagas…
+## Então começa a pesquisa por vagas
 
 E surgem [vagas como essa](http://www.infojobs.com.br/vaga-de-estagiario-web-designer-loja-virtual-em-sao-paulo__4083102.aspx), que são o suficiente para desanimar qualquer aspirante e de atrapalhar possíveis novos talentos.
 
@@ -59,7 +59,7 @@ Se a empresa quiser um profissional em inicio de carreira, mas com um nível de 
 
 Imaginem se essa necessidade de experiência se torne um padrão para cargos de estágio. Como novas pessoas vão ingressar no mercado de trabalho?
 
-## Profissionais mais experientes podem contribuir para melhorar esse cenário…
+## Profissionais mais experientes podem contribuir para melhorar esse cenário
 
 Se você é um profissional mais experiente e trabalha em uma empresa que está buscando um estagiário para sua área, é importante tentar evitar que oportunidades surreais, como aquela citada lá em cima, faça parte do mural da sua empresa.
 
@@ -67,17 +67,17 @@ Caso você não seja o encarregado de gerenciar o processo de seleção, expliqu
 
 Mostre ainda que não faz sentido exigir coisas como “tempo de experiencia” para vagas de estágio.
 
-## Mas se você está começando, não use essas dificuldades como muleta!
+## Mas se você está começando, não use essas dificuldades como muleta
 
 Também está na hora de acabar com aquela imagem do estagiário preguiçoso e desinteressado, isso prejudica todos que estão iniciando. E essa mudança pode e deve começar por você que está começando na profissão. Faça diferente.
 
-Existem milhares de materiais para estudar, muitos grupos para participar, centenas de iniciativas open source para contribuir…
+Existem milhares de materiais para estudar, muitos grupos para participar, centenas de iniciativas open source para contribuir...
 
-Não tem desculpas para ficar parado esperando oportunidades cairem do céu. Obviamente, projetos open source e estudos por si só não te darão vivencia profissional, mas podem ser decisivos para você estar mais preparado quando a chance chegar… e de qualquer forma, caso queira ser um alguém diferenciado no que faz, terá que continuar estudando a vida toda :)
+Não tem desculpas para ficar parado esperando oportunidades cairem do céu. Obviamente, projetos open source e estudos por si só não te darão vivencia profissional, mas podem ser decisivos para você estar mais preparado quando a chance chegar... e de qualquer forma, caso queira ser um alguém diferenciado no que faz, terá que continuar estudando a vida toda :)
 
 Mas como sei que essa questão de **Teoria x Prática** é uma inquietação comum para desenvolvedores em início de carreira, escrevi um artigo chamado [Aproximando seus estudos de cenários reais](/blog/aproximando-seus-estudos-de-cenarios-reais), que tem como objetivo listar alguns tópicos comuns e possíveis soluções. Vale a pena dar uma olhada ;)
 
-## Finalizando…
+## Finalizando
 
 A formação de bons profissionais é decisiva para o futuro de qualquer profissão.
 
