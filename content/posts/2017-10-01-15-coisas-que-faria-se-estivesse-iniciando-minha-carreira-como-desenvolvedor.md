@@ -221,7 +221,7 @@ Somos bombardeados por um número enorme de informações todos os dias, novas l
 
 Já fui atingido por esse problema várias vezes, especialmente nos períodos mais intensos de estudo, o que é uma contradição: quanto mais você estuda e aprende, mais descobre que está longe de chegar em um estado que se considere bom profissional.
 
-https://twitter.com/felipefialho_/status/1045659621820694528
+https://twitter.com/felipefialho_/status/1014130865272705024
 
 É muito difícil lidar com isso, mas o que faria para me previnir desses problemas:
 
