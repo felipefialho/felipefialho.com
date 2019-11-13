@@ -128,19 +128,27 @@ Então assim que estivesse totalmente confortável, cairia de cabeça em JavaScr
 
 https://twitter.com/felipefialho_/status/1067383811615440896
 
-## 6. Contribuiria em projetos open source de terceiros
+## 6. Melhoraria minhas soft skills
 
-![Github](assets/github.png)
+https://twitter.com/felipefialho_/status/1191684813155160064
 
-Se atentem que além do já clichê: “faça open source”, adicionei “de terceiros” e isso tem explicação.
+Entenda como _soft skills_ todas suas habilidades comportamentais, emocionais e sociais.
 
-Primeiro, porque existem milhares e milhares de projetos, de todos os tipos. Então para praticamente qualquer ideia que você tenha, já deve existir uma lib criada e esperando contribuições.
+Coisas como:
 
-Segundo que ao participar de projetos open source de terceiros, você é obrigado a fazer commits e pull-requests decentes, entender e ter humildade para usar o padrão código definido.
+- Comunicação
+- Trabalho em equipe
+- Liderança
+- Profissionalismo
+- Flexibilidade
+- Criatividade
+- Proatividade
+- Empatia
+- Etc
 
-Isso pode fazer uma diferença enorme no desenvolvimento da carreira.
+Essas habilidades são essências para qualquer profissional e são tão fundamentais para o desenvolvimento da carreira quanto aspectos técnicos.
 
-Ainda sobre open source, recomendo a leitura desse artigo sobre [open source](/blog/como-contribuir-com-open-source/), onde aprofundo bastante no tema.
+Elas são habilidades possíveis de serem desenvolvidas, então sem dúvidas focaria desde cedo no desenvolvimento dessas qualidades.
 
 ## 7. Entenderia tudo que abrange meu ecossistema
 
