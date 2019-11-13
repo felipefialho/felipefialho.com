@@ -33,15 +33,15 @@ As vantagens são várias:
 - Discussões
 - Oportunidades no exterior
 
-Mas só tem uma coisa... no passado eu tinha a opinião que aprender inglês primeiro seria mais importante do que aprender linguagens de programação.
+Mas tem uma coisa... no passado eu tinha a opinião que aprender inglês primeiro seria mais importante do que aprender linguagens de programação. E gostaria de ter feito isso.
 
 Mudei 🙃
 
-É totalmente possível ter uma carreira sólida sem dominar esse idioma, apesar das vantagens listadas acima.
+Penso ser totalmente possível ter uma carreira sólida (no Brasil) sem dominar completamente esse idioma, apesar das vantagens listadas acima. A questão é que em algum momento ter um bom nível no inglês começa a fazer toda diferença para alcançar alguns objetivos. 
 
-Boa parte das vagas exigem apenas inglês técnico para leitura de artigos e para escrita de códigos, totalmente possível de ser desenvolvido no dia a dia.
+Sendo assim, acredito que é extremamente importante aprender inglês, mas em paralelo com desenvolvimento, até porque o contato com esse idioma torna-se diário quando trabalhamos com programação. 
 
-Sendo assim, acredito ser extremamente importante aprender inglês. Mas em paralelo com Desenvolvimento, até porque o contato com esse idioma torna-se diário quando trabalhamos com programação.
+Ou seja, se pudesse voltar no tempo, conciliaria meus estudos sobre linguagens de programação com inglês. 
 
 ## 2. Aprenderia lógica de programação
 
@@ -234,7 +234,7 @@ Para alcançar os resultados de forma mais eficaz e conseguir entender o quão d
 
 Seria interessante que esses estudos tivessem algum resultado prático.
 
-Portanto, além de criar uma lista guia das coisas que gostaria de aprender, definiria também um prazo (que faça sentido obviamente) para cada um desses itens.
+Portanto, além de criar uma lista das coisas que gostaria de aprender, definiria também um prazo (que faça sentido obviamente) para cada um desses itens.
 
 Tenho um artigo chamado [Aproximando seus estudos de cenários reais](/blog/aproximando-seus-estudos-de-cenarios-reais) em que falo justamente sobre isso.
 
