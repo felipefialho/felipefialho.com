@@ -232,31 +232,41 @@ https://twitter.com/felipefialho_/status/1045659621820694528
 - Fazer atividades físicas
 - Evitar trabalhar ou estudar nos fins de semana
 
-## 13. Estipularia metas
+## 13. Faria atividades físicas
 
-Para alcançar os resultados de forma mais eficaz e conseguir entender o quão distante estou dos meus objetivos, estipularia algumas metas de curto prazo.
+Considero outro ponto absolutamente crucial, afinal, pessoas que trabalham com programação tendem a passar muitas horas em frente ao computador.
 
-Seria interessante que esses estudos tivessem algum resultado prático.
+Existem várias formas de atividades físicas e você pode escolher sua favorita ou que melhor se adequa ao seu dia a dia, o mais importante é que seja frequente.
 
-Portanto, além de criar uma lista das coisas que gostaria de aprender, definiria também um prazo (que faça sentido obviamente) para cada um desses itens.
+- Academia
+- Corrida
+- Crossfit
+- Etc
 
-Tenho um artigo chamado [Aproximando seus estudos de cenários reais](/blog/aproximando-seus-estudos-de-cenarios-reais) em que falo justamente sobre isso.
+Também é possível começar devagar, adaptando essa atividade com seu dia, coisas como:
 
-Com certeza essa dica teria me ajudado bastante se tivesse descoberto antes sobre a importância de lidar com prazos.
+- Caminhada para o trabalho
+- Descer uns pontos ou estações antes
+- Evitar elevador
+- Etc
 
-## 14. Não deixaria de ter hobbies ou praticar atividades físicas
+Outras coisas como melhoria na alimentação, aumento de foco e principalmente criação de hábitos melhores, tendem a vir como brinde quando você começa a prática atividades físicas.
+
+Além da melhora na sua saúde, o resultado disso com certeza também vai ser visto na qualidade do seu trabalho.
+
+## 14. Não deixaria de ter hobbies
 
 ![Sagrado futebol de domingo](assets/futebol.png)*Sagrado futebol de domingo*
 
-É natural (infelizmente) quando você está focado nos estudos e na vida profissional, que atividades que você adorava realizar e te deixavam feliz, fiquem em segundo plano.
+É natural (infelizmente) quando você está focado nos estudos e na vida profissional, que atividades que você adorava realizar e te deixaram animado durante sua vida inteira, fiquem em segundo plano.
 
 Mas isso não deveria acontecer.
 
 Então sempre reservaria espaços na minha agenda para fazer todas as atividades que gosto e me fazem bem.
 
-Não abriria mão disso. Faz bem pro corpo e pra mente, impactando diretamente na dica de número 12.
+Não abriria mão disso, faz muito bem pra mente, impactando diretamente na dica de número 12.
 
-Isso significa também que raramente estudaria ou trabalharia no fim de semana, fazendo de tudo para usar bem esse tempo com coisas que deixassem feliz.
+Isso significa também que raramente estudaria ou trabalharia no fim de semana, fazendo de tudo para usar bem esse tempo com pessoas e coisas que deixassem feliz.
 
 ## 15. Compartilharia meus conhecimentos
 
