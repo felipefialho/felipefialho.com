@@ -240,7 +240,9 @@ Existem várias formas de atividades físicas e você pode escolher sua favorita
 
 - Academia
 - Corrida
-- Crossfit
+- Dança
+- Natação
+- Futebol
 - Etc
 
 Também é possível começar devagar, adaptando essa atividade com seu dia, coisas como:
@@ -250,7 +252,7 @@ Também é possível começar devagar, adaptando essa atividade com seu dia, coi
 - Evitar elevador
 - Etc
 
-Outras coisas como melhoria na alimentação, aumento de foco e principalmente criação de hábitos melhores, tendem a vir como brinde quando você começa a prática atividades físicas.
+Outras coisas como melhoria na alimentação, aumento de foco e principalmente criação de hábitos melhores, tendem a vir como brinde quando você começa a práticar atividades físicas.
 
 Além da melhora na sua saúde, o resultado disso com certeza também vai ser visto na qualidade do seu trabalho.
 
