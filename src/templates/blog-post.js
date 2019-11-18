@@ -42,7 +42,6 @@ const BlogPost = (props) => {
           <GoogleAds slot="5978347110" layout="image"></GoogleAds>
           <PostNav previous={previous} next={next} />
           <DisqusWrapper title={post.frontmatter.title} slug={post.fields.slug} />
-          <GoogleAds slot="4557292538" layout="image"></GoogleAds>
         </div>
       </GridTemplate>
     </Layout>
