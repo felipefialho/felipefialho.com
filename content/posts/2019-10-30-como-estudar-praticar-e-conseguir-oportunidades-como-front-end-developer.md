@@ -241,7 +241,7 @@ Saber mais sobre a empresa é super importante, não só coisas referentes ao ne
 
 Vale olhar o site da empresa, buscar notícias na internet e também nas redes sociais.
 
-Para ver a opinião das sobre a empresa, você pode falar diretamente com elas em redes sociais como LinkedIn ou ver o que foi publicado em sites como o [Glassdoor](https://www.glassdoor.com.br).
+Para ver a opinião das pessoas sobre a empresa, você pode falar diretamente com elas em redes sociais como LinkedIn ou ver o que foi publicado em sites como o [Glassdoor](https://www.glassdoor.com.br).
 
 ### Entreviste a empresa
 
