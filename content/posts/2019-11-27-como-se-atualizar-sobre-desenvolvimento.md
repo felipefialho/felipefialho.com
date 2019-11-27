@@ -98,7 +98,7 @@ Nos últimos anos surgiram vários podcasts de qualidade, sobre os mais variados
 Rapidamente posso citar três brasileiros (mas existem outros muito bons, por isso não gosto de listas 😅):
 
 - [devnaestrada](https://devnaestrada.com.br/)
-- [hipsterspontetech](https://hipsters.tech/)
+- [hipsterspontotech](https://hipsters.tech/)
 - [quebradev](https://quebradev.com.br/)
 
 Inclusive cheguei a participar de alguns episódios dos dois primeiros. 
