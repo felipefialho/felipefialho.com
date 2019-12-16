@@ -323,6 +323,6 @@ Se você se interessou pelo tema, vale muito a [investir nesse curso](https://cl
 
 O post ficou longo e mesmo assim ficou curto.
 
-Cada tópico que abordei poderia ser um artigo individual. Mas espero que tenham curtindo.
+Cada tópico que abordei poderia ser um artigo individual. Mas espero que tenham curtido.
 
 Até a próxima 🥳
