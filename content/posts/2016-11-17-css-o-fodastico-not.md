@@ -48,65 +48,73 @@ Sabe aquela `li` cheia de bordas e margins que deixa o layout feio no último el
 
 Muita gente faz algo assim.
 
-```stylus
-li
-  border-bottom 1px solid #eee
-  margin-bottom 2rem
-  padding-bottom 2rem
+```scss
+li {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 
-  &:last-child
-    border-bottom 0
-    margin-bottom 0
-    padding-bottom 0
+  &:last-child {
+    border-bottom 0;
+    margin-bottom 0;
+    padding-bottom 0;
+  }
+}
 ```
 
 Olhem essas três propriedades sendo resetadas, muito feio né?
 
 Agora observem a elegância com que o `:not()` resolve isso.
 
-```stylus
-li
-  &:not(:last-child)
-    border-bottom 1px solid #eee
-    margin-bottom 1rem
-    padding-bottom 1rem
+```scss
+li {
+  &:not(:last-child) {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+}
 ```
 
 Quer que determinado estilo seja adicionado em todos os elementos, mas não em uma classe especifica?
 
-```stylus
-p:not(.foo)
-  font-size 2rem
+```scss
+p:not(.foo) {
+  font-size: 2rem;
+}
 ```
 
 Ou o inverso disso... que o estilo seja adicionado em uma classe, mas não em um elemento especifico.
 
-```stylus
-.title:not(h2)
-  color $brand-primary
+```scss
+.title:not(h2) {
+  color: $brand-primary;
+}
 ```
 
-## E tem mais...
+## E tem mais
 
 Também é possível usar o `:not()` combinado com outras pseudo-class.
 
 Quer que o elemento tenha um comportamento caso ele seja o último filho, mas não se ele for ao mesmo tempo o primeiro?
 
-```stylus
-.btn:last-child:not(:first-child)
-  align-self flex-end
+```scss
+.btn:last-child:not(:first-child) {
+  align-self: flex-end;
+}
 ```
 
 Quer negar dois elementos?
 
-```stylus
-.title:not(h2):not(h3)
-  color $brand-primary
+```scss
+.title:not(h2):not(h3) {
+  color: $brand-primary;
+}
 ```
 
 Quer que o `:hover` e o `:focus` só funcionem se o elemento não tiver a classe `.active`?
 
-```stylus
+```scss
 .btn:hover:not(.active),
 .btn:focus:not(.active)
   ...
@@ -114,7 +122,7 @@ Quer que o `:hover` e o `:focus` só funcionem se o elemento não tiver a classe
 
 Quer que o elemento tenha determinadas propriedades apenas Se não estiver vazio?
 
-```stylus
+```scss
 .foo:not(:empty)
   ...
 ```
@@ -123,7 +131,7 @@ Quer que o elemento tenha determinadas propriedades apenas Se não estiver vazio
 
 Bora pegar a classe `.title` apenas se ela não for um `h2` e o `.header` não estiver ativo?
 
-```stylus
+```scss
 .header:not(.active) + .main .title:not(h2)
   ...
 ```
