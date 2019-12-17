@@ -55,9 +55,9 @@ li {
   padding-bottom: 2rem;
 
   &:last-child {
-    border-bottom 0;
-    margin-bottom 0;
-    padding-bottom 0;
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 ```
