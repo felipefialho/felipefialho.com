@@ -44,7 +44,7 @@ E o `:not()` torna-se um aliado sensacional para nos ajudar nessa missão.
 
 ### Exemplos
 
-Sabe aquela `li` cheia de bordas e margins que deixa o layout feio no último elemento?
+Sabe aquela `li` cheia de bordas e margens que deixa o layout feio no último elemento?
 
 Muita gente faz algo assim.
 
