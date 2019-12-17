@@ -2,7 +2,7 @@
 title: "O fodástico :not()"
 date: 2016-11-17 00:00:01
 description: "Quando se trata de evitar resetar propriedades, o :not() é o cara"
-image: /assets/2016-11-17-css-o-fodastico-not.png
+image: /assets/2016-11-17-cover.png
 tags: ["css"]
 ---
 
@@ -32,13 +32,13 @@ tr:nth-child(odd) { background: #eee; }
 
 Sem classe extra, sem porra nenhuma. Limpo e bonito. :)
 
-Mas tenho certeza que vocês já viram um milhão de artigos falando dessas pseudo-class mais conhecidas. E mesmo que muita gente também conheça e use o `:not()`, achei que ele merecia um artigo falando só dele.
+Mas tenho certeza que vocês já viram milhares de artigos falando dessas pseudo-class mais conhecidas. E mesmo que muita gente também conheça e use o `:not()`, achei que ele merecia um artigo falando só dele.
 
 ## O fodástico :not() [2]
 
 Poucas coisas me deixam tão agoniado no CSS do que propriedades sendo resetadas, é tão frustrante que bolei um jeito de usar as [Media Queries evitando que isso acontecesse](/blog/otimizando-e-organizando-as-media-queries), muito antes dessa técnica ficar famosa.
 
-Sério, não faz sentido nenhum resetar propriedades, se você precisou resetar, ela simplesmente não deveria existir dentro daquele escopo (mas claro... sempre tem as exceções).
+Sério, não faz sentido nenhum resetar propriedades, se você precisou resetar, ela simplesmente não deveria existir dentro daquele escopo.
 
 E o `:not()` torna-se um aliado sensacional para nos ajudar nessa missão.
 
