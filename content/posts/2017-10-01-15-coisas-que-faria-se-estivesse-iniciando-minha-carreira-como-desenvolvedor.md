@@ -1,7 +1,7 @@
 ---
 title: "15 coisas que faria se estivesse iniciando minha carreira como desenvolvedor"
 date: 2017-10-01 00:00:01
-description: "Ou se pudesse entrar em uma maquina do tempo e dar conselhos para eu mesmo no passado"
+description: "Ou se pudesse entrar em uma maquina do tempo e dar conselhos para mim mesmo no passado"
 image: /assets/2017-10-01-cover.png
 tags: ["carreira"]
 ---
