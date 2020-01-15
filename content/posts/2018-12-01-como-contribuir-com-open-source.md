@@ -60,8 +60,6 @@ E pra mim, em todas elas, fiz open source.
 
 ### E por que contribuir
 
-https://twitter.com/felipefialho/status/1055430035534942209
-
 Contribuição é o que faz o mundo de desenvolvimento ter evoluído tanto nos últimos anos.
 
 Através dessas contribuições, ideias são geradas, projetos são desenvolvidos, libs são construídas, tecnologias se desenvolvem e o mais importante:
@@ -152,6 +150,8 @@ Basta dar uma rápida passada no Github e vai encontrar diversos projetos em que
 Não é exagero dizer que o Github está para projetos open source como o Google está para a internet.
 
 ### E o Github é uma rede social
+
+https://twitter.com/felipefialho_/status/1073168175515295749
 
 Isso significa que você pode seguir as pessoas e ver suas rotinas como developer:
 

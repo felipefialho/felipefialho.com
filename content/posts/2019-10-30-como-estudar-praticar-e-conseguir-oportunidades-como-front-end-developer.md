@@ -250,7 +250,7 @@ Processos seletivos são uma via de mão dupla, nunca deixe de entrevistar a emp
 Tire todas as suas dúvidas, pergunte coisas como:
 
 - Quais as tecnologias utilizadas?
-- Qual são as tarefas esperadas no dia a dia?
+- Quais são as tarefas esperadas no dia a dia?
 - Qual o plano de carreira?
 - Como ela pretende crescer?
 - Onde ela se vê daqui um tempo?
@@ -359,7 +359,7 @@ Elas não são verdades absolutas e o que funcionou pra mim, pode não funcionar
 
 Como leitura complementar, caso ainda não tenha lido, sugiro dar uma olhada nos dois artigos que citei no começo desse texto:
 
-- [O que Front-end Developers precisam saber](b/log/o-que-front-end-developers-precisam-saber/)
+- [O que Front-end Developers precisam saber](/blog/o-que-front-end-developers-precisam-saber/)
 - [15 coisas que faria se estivesse iniciando minha carreira](/blog/15-coisas-que-faria-se-estivesse-iniciando-minha-carreira-como-desenvolvedor)
 
 Espero que tenham gostado e aguardo comentários.
