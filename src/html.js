@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-export default class HTML extends React.Component {
+export default class HTML extends Component {
   render() {
     return (
       <html {...this.props.htmlAttributes}>
