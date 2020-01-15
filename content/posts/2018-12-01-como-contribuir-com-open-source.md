@@ -151,6 +151,8 @@ Não é exagero dizer que o Github está para projetos open source como o Google
 
 ### E o Github é uma rede social
 
+https://twitter.com/felipefialho_/status/1073168175515295749
+
 Isso significa que você pode seguir as pessoas e ver suas rotinas como developer:
 
 - Codando
