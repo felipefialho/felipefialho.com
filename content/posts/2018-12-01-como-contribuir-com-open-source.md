@@ -60,8 +60,6 @@ E pra mim, em todas elas, fiz open source.
 
 ### E por que contribuir
 
-https://twitter.com/felipefialho/status/1055430035534942209
-
 Contribuição é o que faz o mundo de desenvolvimento ter evoluído tanto nos últimos anos.
 
 Através dessas contribuições, ideias são geradas, projetos são desenvolvidos, libs são construídas, tecnologias se desenvolvem e o mais importante:
