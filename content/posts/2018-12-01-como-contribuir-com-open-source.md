@@ -145,7 +145,7 @@ Basta dar uma rápida passada no Github e vai encontrar diversos projetos em que
 
 ## Como funciona um projeto open source?
 
-Um open source é resumidamente um projeto criado e mantido pelas pessoas que o utilizam. Digamos que você tenha um campo de futebol open source perto de sua casa, uma pessoa vai ajudar a cortar a grama, outra ajuda a pintar as marcações, outro ajuda a regar, mais alguém trás a bola e todos podem jogar! É um sistema colaborativo de crescimento de software.
+Um open source é resumidamente um projeto criado e mantido pelas pessoas que o utilizam. Digamos que você tenha um campo de futebol open source perto de sua casa, uma pessoa vai ajudar a cortar a grama, outra ajuda a pintar as marcações, outro ajuda a regar, mais alguém trás a bola e todos podem jogar! É um sistema colaborativo de crescimento.
 
 Contribuir para o open source pode ser uma maneira gratificante de aprender, ensinar e construir experiência em praticamente qualquer habilidade que você possa imaginar.
 
@@ -257,3 +257,5 @@ O open source: foi, é, e vai continuar sendo fundamental na evolução da profi
 > Participar disso, talvez seja... colocar o seu nome na história.
 
 Nóis 🖤💙
+
+_Como funciona um projeto open source? Contribuição [@iaurg](https://github.com/iaurg)_
