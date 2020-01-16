@@ -143,6 +143,16 @@ Basta dar uma rápida passada no Github e vai encontrar diversos projetos em que
 - Abrindo pull requests
 - Revisando pull requests
 
+## Como funciona um projeto open source?
+
+Um open source é resumidamente um projeto criado e mantido pelas pessoas que o utilizam. Digamos que você tenha um campo de futebol open source perto de sua casa, uma pessoa vai ajudar a cortar a grama, outra ajuda a pintar as marcações, outro ajuda a regar, mais alguém trás a bola e todos podem jogar! É um sistema colaborativo de crescimento de software.
+
+Contribuir para o open source pode ser uma maneira gratificante de aprender, ensinar e construir experiência em praticamente qualquer habilidade que você possa imaginar.
+
+Além de tudo isso você pode interagir com profissionais reais do mercado e consultá-los para tirar suas dúvidas, fazer análise de código e darem dicas para você melhorar.
+
+Recomendo dar uma lida no site [Open Source Guides](https://opensource.guide/pt) para ter um conhecimento mais aprofundado da iniciativa open source.
+
 ## Falando em Github
 
 ![](assets/0_RspmpLKEQLa-Uy9X.png)
