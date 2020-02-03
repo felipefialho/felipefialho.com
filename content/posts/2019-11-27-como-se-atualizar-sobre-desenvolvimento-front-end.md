@@ -1,5 +1,5 @@
 ---
-title: "Como se atualizar sobre Desenvolvimento"
+title: "Como se atualizar sobre Desenvolvimento (Front-end)"
 date: 2019-11-27 00:00:01
 description: "Nesse texto vou listar algumas coisas que podem te ajudar nessa difícil (mas não impossível) missão de se atualizar no mundo de Desenvolvimento 😋"
 image: /assets/2019-11-27-cover.png
