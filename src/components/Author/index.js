@@ -13,7 +13,7 @@ const Author = ({ language, fullText }) => {
 
           <p>My name is <span itemProp="name">Felipe Fialho</span> from Brazil. I've been working as <span itemProp="jobTitle">Front-End Developer</span> since 2009. I'm passionate about open source projects, I believe that the dissemination of knowledge and good ideas inspires and improves the world.</p>
 
-          <p>Currently, I'm a Developer at <a href="https://cubo.network/jobs" target="_blank" rel="noopener noreferrer" title="Ver" itemProp="affiliation">Cubo Itaú</a> and I've created the <a href="https://github.com/frontendbr" target="_blank" rel="noopener noreferrer" title="Ver" itemProp="owns">Front-end BR</a> organization on Github. I'm also a one of the founders of <span itemProp="organizer">Meetup CSS</span> and I helped in organization of <span itemProp="organizer">Conferência CSS Brasil 2015</span>.</p>
+            <p>Currently, I'm a Tech Lead at <a href="https://juntossomosmais.com.br/" target="_blank" rel="noopener noreferrer" title="Ver" itemProp="affiliation">Juntos Somos Mais</a> and I've created the <a href="https://github.com/frontendbr" target="_blank" rel="noopener noreferrer" title="Ver" itemProp="owns">Front-end BR</a> organization on Github. I'm also a one of the founders of <span itemProp="organizer">Meetup CSS</span> and I helped in organization of <span itemProp="organizer">Conferência CSS Brasil 2015</span>.</p>
 
           {fullText && (
             <>
@@ -31,7 +31,7 @@ const Author = ({ language, fullText }) => {
 
           <p>Meu nome é <span itemProp="name">Felipe Fialho</span>. Trabalho como <span itemProp="jobTitle">Desenvolvedor Front-end</span> desde 2009. Sou apaixonado por projetos open source, acredito que a disseminação de conhecimento e boas idéias inspira e melhora o mundo.</p>
 
-          <p>Atualmente estou trabalhando no <a href="https://cubo.network/jobs" target="_blank" rel="noopener noreferrer" title="Ver" itemProp="affiliation">Cubo Itaú</a>. Sou criador da organização <a href="https://github.com/frontendbr" target="_blank" rel="noopener noreferrer" title="Ver" itemProp="owns">Front-end BR</a> no Github. Também sou um dos fundadores do <span itemProp="organizer">Meetup CSS</span> e ajudei a organizar a <span itemProp="organizer">Conferência CSS Brasil 2015</span>.</p>
+              <p>Atualmente estou trabalhando na <a href="https://juntossomosmais.com.br/" target="_blank" rel="noopener noreferrer" title="Ver" itemProp="affiliation">Juntos Somos Mais</a>. Sou criador da organização <a href="https://github.com/frontendbr" target="_blank" rel="noopener noreferrer" title="Ver" itemProp="owns">Front-end BR</a> no Github. Também sou um dos fundadores do <span itemProp="organizer">Meetup CSS</span> e ajudei a organizar a <span itemProp="organizer">Conferência CSS Brasil 2015</span>.</p>
 
           {fullText && (
             <>
