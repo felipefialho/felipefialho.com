@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import qs from 'qs'
 import ReactGA from 'react-ga'
+import algoliasearch from 'algoliasearch/lite'
 
 import { InstantSearch, SearchBox, Stats, Configure, Hits } from 'react-instantsearch-dom'
 
@@ -28,13 +29,17 @@ const Search = ({ algolia, callback, props }) => {
     setSearchState(updatedSearchState)
   }
 
+  const searchClient = algolia && algoliasearch(
+    algolia.appId,
+    algolia.searchOnlyApiKey
+  )
+
   return (
     <S.Search>
       {algolia && algolia.appId ? (
         <div>
           <InstantSearch
-            appId={algolia.appId}
-            apiKey={algolia.searchOnlyApiKey}
+            searchClient={searchClient}
             indexName={algolia.indexName}
             searchState={searchState}
             onSearchStateChange={onSearchStateChange}>
