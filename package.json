@@ -75,7 +75,7 @@
     "react-responsive": "^7.0.0",
     "react-typography": "^0.16.19",
     "styled-components": "^4.3.2",
-    "styled-icons": "^8.3.0",
+    "styled-icons": "^9.4.0",
     "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
