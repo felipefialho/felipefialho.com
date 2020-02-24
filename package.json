@@ -72,7 +72,7 @@
     "react-ga": "^2.7.0",
     "react-helmet": "^5.2.1",
     "react-instantsearch-dom": "^6.3.0",
-    "react-responsive": "^7.0.0",
+    "react-responsive": "^8.0.3",
     "react-typography": "^0.16.19",
     "styled-components": "^4.3.2",
     "styled-icons": "^9.4.0",
