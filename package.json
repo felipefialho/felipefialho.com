@@ -53,7 +53,7 @@
     "gatsby-remark-copy-linked-files": "^2.1.37",
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-remark-images": "^3.1.19",
-    "gatsby-remark-lazy-load": "^1.0.1",
+    "gatsby-remark-lazy-load": "^1.0.2",
     "gatsby-remark-prismjs": "^3.3.31",
     "gatsby-remark-relative-images": "^0.2.3",
     "gatsby-remark-responsive-iframe": "^2.2.10",
