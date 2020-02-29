@@ -199,7 +199,7 @@ Fazendo um contra ponto na dica anterior.
 
 Tentaria absorver tudo que profissionais mais experientes me dissessem, mas jamais tomaria aquilo como verdade absoluta.
 
-Sempre formaria sempre minhas próprias opiniões baseadas em coisas que vivi, não em coisas que escutei alguém falar.
+Sempre formaria minhas próprias opiniões baseadas em coisas que vivi, não em coisas que escutei alguém falar.
 
 ## 11. Evitaria fazer freelas
 
