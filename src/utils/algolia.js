@@ -9,6 +9,7 @@ const postQuery = `{
           slug
         }
         frontmatter {
+          date_timestamp: date
           date(locale: "pt-br", formatString: "DD MMM[,] YYYY")
           description
           title
@@ -24,6 +25,9 @@ const postQuery = `{
 const flatten = arr => {
   return arr.map(({ node: { frontmatter, ...rest } }) => ({
     ...frontmatter,
+    date_timestamp: parseInt(
+      (new Date(frontmatter.date_timestamp).getTime() / 1000).toFixed(0)
+    ),
     ...rest,
   }))
 }
