@@ -20,7 +20,7 @@ Nesse período de quarentena que pode durar pelos próximos dias ou meses (de no
 
 Muito tempo sem sair de casa, sozinho(a) ou convivendo com as mesmas pessoas e lendo as mesmas noticias. Mesmo que a internet ajude na interação com outras pessoas, nada substitui o contato fisico, somos uma espécie que vive coletivamente e só por causa disso chegamos até aqui.
 
-Em algum momento pode não ser suficiente.
+Alguma hora só a internet pode não ser suficiente.
 
 https://twitter.com/felipefialho_/status/1241523876640718848
 
