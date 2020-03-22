@@ -1,3 +1,4 @@
+const path = require(`path`)
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
@@ -8,11 +9,12 @@ const feeds = [
   {
     serialize: ({ query: { site, allMarkdownRemark } }) => {
       return allMarkdownRemark.edges.map(edge => {
+        const postUrl = path.join(site.siteMetadata.siteUrl, edge.node.fields.slug)
         return Object.assign({}, edge.node.frontmatter, {
           description: edge.node.frontmatter.description,
           date: edge.node.frontmatter.date,
-          url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-          guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+          url: postUrl,
+          guid: postUrl,
           custom_elements: [{ 'content:encoded': edge.node.html }]
         })
       })
