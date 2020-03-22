@@ -6,7 +6,7 @@ image: /assets/2020-03-22-cover.png
 tags: ["lifestyle", "misc"]
 ---
 
-A última vez que escrevi por aqui foi em novembro, ou seja, cinco meses atrás. Naquele momento o coronavirus estava silenciosamente fazendo seus primeiros contágios na China.
+A última vez que escrevi por aqui foi em novembro, ou seja, cinco meses atrás. Naquele momento o coronavírus estava silenciosamente fazendo seus primeiros contágios na China.
 
 Até então, ninguém poderia prever o que viria pela frente dali em diante, nem os impactos que isso traria na economia mundial e nas nossas vidas.
 
@@ -131,7 +131,7 @@ Para quem curte jogar online, acaba sendo uma atividade ainda melhor por causa d
 
 ### Fugir das noticias
 
-Nos próximos tempos vamos ser **bombardeados** por noticias sobre a pandemia, o coronavirus, o período de quarentena e o caos pelo mundo.
+Nos próximos tempos vamos ser **bombardeados** por noticias sobre a pandemia, o coronavírus, o período de quarentena e o caos pelo mundo.
 
 É importante se informar, mas existe uma linha muito tênue entre se atualizar e sofrer overdose de informação, isso vale em qualquer época, mas fica ainda pior em cenários como o que estamos vivendo.
 
