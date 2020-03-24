@@ -157,9 +157,15 @@ Sabendo da importância do ócio e do efeito dele na criatividade, quem sabe id�
 
 https://twitter.com/felipefialho_/status/1240407532209913859
 
-Se tem uma coisa que seres humanos são bons é em se adaptar, durante a história da humanidade passamos diversas vezes por períodos complicados, de tempos em tempos somos atingidos por guerras, pandemias, desastres naturais e caos.
+Se tem uma coisa que seres humanos são bons é em se adaptar.
+
+Durante a história da humanidade passamos diversas vezes por períodos complicados e de tempos em tempos somos atingidos por guerras, pandemias, desastres naturais e caos.
+
+Só no século passado, tivemos 2 grandes guerras, várias guerras menores e uma pandemia de gripe que matou milhões de pessoas pelo mundo em 1918.
 
 É raro passar por momentos de aparente tranquilidade como os que estávamos vivendo, chegou a hora de lidar com nossa própria catástrofe mundial.
+
+O mundo vai mudar, mas vamos nos adaptar e seguir o percurso da historia.
 
 > A forma que vamos lidar com isso, vai dizer como vai ser nosso futuro
 
