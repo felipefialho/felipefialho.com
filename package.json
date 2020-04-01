@@ -55,7 +55,7 @@
     "gatsby-remark-images": "^3.1.19",
     "gatsby-remark-lazy-load": "^1.0.2",
     "gatsby-plugin-manifest": "^2.3.3",
-    "gatsby-remark-prismjs": "^3.3.31",
+    "gatsby-remark-prismjs": "^3.4.1",
     "gatsby-remark-relative-images": "^0.3.0",
     "gatsby-remark-responsive-iframe": "^2.3.1",
     "gatsby-remark-smartypants": "^2.1.21",
