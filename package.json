@@ -62,7 +62,7 @@
     "gatsby-source-filesystem": "^2.1.48",
     "gatsby-transformer-json": "^2.2.6",
     "gatsby-transformer-remark": "^2.6.53",
-    "gatsby-transformer-sharp": "^2.3.14",
+    "gatsby-transformer-sharp": "^2.4.3",
     "gsap": "^3.2.3",
     "lazysizes": "^5.2.0",
     "netlify-cms-app": "^2.11.23",
