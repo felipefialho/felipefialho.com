@@ -61,7 +61,7 @@
     "gatsby-remark-smartypants": "^2.1.21",
     "gatsby-source-filesystem": "^2.1.48",
     "gatsby-transformer-json": "^2.2.6",
-    "gatsby-transformer-remark": "^2.6.53",
+    "gatsby-transformer-remark": "^2.7.1",
     "gatsby-transformer-sharp": "^2.3.14",
     "gsap": "^3.2.3",
     "lazysizes": "^5.2.0",
