@@ -26,13 +26,13 @@ https://twitter.com/felipefialho_/status/1241523876640718848
 
 Buscar adaptação para continuar cuidando do nosso corpo e mente, torna-se essencial.
 
-Em janeiro, criei uma thread sobre Estoicismo.
+Em janeiro, criei uma thread sobre Estoicismo:
 
 https://twitter.com/felipefialho_/status/1218152249173708801
 
 A filosofia estóica ensina que a forma que reagimos e agimos diante dos acontecimentos da vida é mais importante do que tentar ter controle sobre tudo.
 
-Isso porque, no fim nós realmente não temos controle de quase nada.
+Isso porque, no fim, **nós realmente não temos controle de quase nada**.
 
 ## Lidando com a quarentena
 
@@ -64,13 +64,13 @@ Nesse caso, além do profissionalismo de sempre para cumprir com as entregas, é
 
 Me pegou em cheio.
 
-Sempre fiz academia, mas nos últimos tempos me acostumei a treinar logo pela manhã, pelo menos 4 vezes na semana. Realmente me ajuda a começar bem o dia por conta da endorfina liberada. Além disso jogo futebol 1 ou 2 vezes por semana.
+Sempre fiz academia, mas nos últimos tempos me acostumei a treinar logo pela manhã, pelo menos 4 vezes na semana. Realmente me ajuda a começar bem o dia por conta da endorfina liberada. Além disso, jogo futebol 1 ou 2 vezes por semana.
 
 Principalmente em períodos como os que estamos vivendo, fazer atividades físicas é essencial.
 
-Primeiro para compensar um pouco a energia acumulada pelo logo tempo sem sair de casa. Segundo porque comprovadamente ajuda a aumentar a imunidade e resistencia do corpo.
+Primeiro, para compensar um pouco a energia acumulada pelo logo tempo sem sair de casa. Segundo, porque comprovadamente ajuda a aumentar a imunidade e resistência do corpo.
 
-Com as academias e parques fechados, usar a criatividade é fundamental.
+Com as academias e parques fechados, usar a criatividade é fundamental:
 
 - Pular corda
 - Polichinelos
@@ -78,11 +78,11 @@ Com as academias e parques fechados, usar a criatividade é fundamental.
 - Abdominais
 - Agachamentos
 
-Além disso, existem vários e vários [vídeos no Youtube](https://www.youtube.com/results?search_query=muscula%C3%A7%C3%A3o+em+casa) que ensinam técnicas de exercícios para treinar de tudo: Peito, ombro, costas, pernas, braços...
+Além disso, existem vários e vários [vídeos no Youtube](https://www.youtube.com/results?search_query=muscula%C3%A7%C3%A3o+em+casa) que ensinam técnicas de exercícios para treinar de tudo: peito, ombro, costas, pernas, braços...
 
 ### Alimentação
 
-Mesmo diante da situação critica que estamos é importante, dentro do possível, cuidar da alimentação, especialmente levando em consideração a diminuição das atividades físicas.
+Dentro do possível, mesmo diante da situação crítica que estamos, é importante cuidar da alimentação, especialmente levando em consideração a diminuição das atividades físicas.
 
 Estou evitando comer doces, comidas muito calóricas e bobagens no geral, dando preferência para alimentos mais funcionais.
 
@@ -106,7 +106,7 @@ Chegou a hora.
 
 Várias plataformas de ensino estão com cursos gratuitos, por exemplo:
 
-- [Udermy](https://www.udemy.com/)
+- [Udemy](https://www.udemy.com/)
 - [Harvard](https://edx.org/school/harvardx)
 - [Insper](https://www.insper.edu.br/cursos-online/)
 - [FGV](https://www5.fgv.br/fgvonline/Cursos/Gratuitos/?goback=%2Egde_1876153_member_208379733)
@@ -125,7 +125,7 @@ Se você é Front-end Developer, vale ler esses dois textos, onde dou mais dicas
 
 Também é uma boa hora pra terminar aquela série que não estava dando tempo ou assistir aquele filme que você sempre teve vontade.
 
-Passei muitos meses sem jogar video game por exemplo. Acabei ligando nos últimos dias para jogar um pouco e realmente ajudou a aliviar o tédio.
+Passei muitos meses sem jogar videogame por exemplo. Acabei ligando nos últimos dias para jogar um pouco e realmente ajudou a aliviar o tédio.
 
 Para quem curte jogar online, acaba sendo uma atividade ainda melhor por causa da interação com outras pessoas, já que alivia um pouco o sentimento de isolamento.
 
@@ -137,11 +137,11 @@ Nos próximos tempos vamos ser **bombardeados** por noticias sobre a pandemia, o
 
 > Consumir tudo o tempo todo só vai gerar ansiedade
 
-Estabeleci alguns momentos no dia para me atualizar, de preferência usando o Twitter, especialmente através de cientistas confiáveis como o [Atila](https://twitter.com/oatila).
+Estabeleci alguns momentos no dia para me atualizar, de preferência usando o Twitter, especialmente através de cientistas confiáveis como o [Atila Iamarino](https://twitter.com/oatila).
 
 Eventualmente leio algumas noticias no [G1](https://www.globo.com/), mas sem me aprofundar muito e obviamente fujo de noticias através de grupos do WhatsApp.
 
-Não se esqueça que aquilo você consome também te consome.
+Não se esqueça que **aquilo você consome também te consome**.
 
 ### Não fazer nada
 
@@ -157,7 +157,7 @@ Sabendo da importância do ócio e do efeito dele na criatividade, quem sabe id�
 
 https://twitter.com/felipefialho_/status/1240407532209913859
 
-Se tem uma coisa que seres humanos são bons é em se adaptar.
+Se tem uma coisa que seres humanos são bons é em **se adaptar**.
 
 Durante a história da humanidade passamos diversas vezes por períodos complicados e de tempos em tempos somos atingidos por guerras, pandemias, desastres naturais e caos.
 
@@ -171,4 +171,4 @@ O mundo vai mudar, mas vamos nos adaptar e seguir o percurso da historia.
 
 E vocês, como estão lidando? Tem mais dicas para compartilhar?
 
-Deixa nos comentários 🙏
+Deixem nos comentários 🙏
