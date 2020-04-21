@@ -4,8 +4,9 @@
   "description": "My personal website and blog",
   "version": "3.0.0",
   "author": "Felipe Fialho <hi@felipefialho.com>",
+  "homepage": "https://github.com/felipefialho/felipefialho.com#readme",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/felipefialho/felipefialho.com/issues"
   },
   "scripts": {
     "build": "gatsby build",
@@ -21,7 +22,6 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
@@ -84,25 +84,17 @@
     "@commitlint/config-conventional": "^8.3.4",
     "babel-eslint": "^10.0.3",
     "babel-plugin-styled-components": "^1.10.7",
+    "commitlint": "^8.3.5",
     "eslint": "^6.2.2",
     "eslint-config-react-app": "^5.2.1",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",
-    "husky": "^4.2.3",
+    "husky": "^4.2.5",
     "stylelint": "^10.1.0",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-order": "^4.0.0",
     "stylelint-processor-styled-components": "^1.10.0"
-  },
-  "homepage": "https://github.com/felipefialho/felipefialho.github.io#readme",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/felipefialho/felipefialho.github.io.git"
   }
 }
