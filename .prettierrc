@@ -1,0 +1,19 @@
+{
+  "arrowParens": "avoid",
+  "editor.formatOnSave": true,
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "printWidth": 80,
+  "proseWrap": "always",
+  "requirePragma": false,
+  "semi": false,
+  "semicolons": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false
+}
