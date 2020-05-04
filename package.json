@@ -66,7 +66,7 @@
     "gsap": "^3.2.3",
     "lazysizes": "^5.2.0",
     "netlify-cms-app": "^2.12.1",
-    "prismjs": "^1.17.1",
+    "prismjs": "^1.20.0",
     "react": "^16.13.1",
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.12.0",
