@@ -30,7 +30,7 @@ disponível no vídeo abaixo.
 
 ### JS+ Tech Talk #1 — Design System — 23/04/2020
 
-<iframe width="650" height="400" src="https://youtu.be/6uWzv_P_Ui0?t=181" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="650" height="400" src="https://www.youtube.com/embed/6uWzv_P_Ui0?t=181" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## O que é e para que serve um Design System
 
