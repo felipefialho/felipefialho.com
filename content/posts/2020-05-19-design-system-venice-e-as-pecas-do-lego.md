@@ -134,7 +134,7 @@ https://twitter.com/felipefialho_/status/1242798337348247553
 Então o jeito foi partir para o plano B, ou seja, diferentes versões para
 diferentes frameworks.
 
-Essa ideia não me agrava, especialmente pela necessidade de duplicar códigos
+Essa ideia não me agradava, especialmente pela necessidade de duplicar códigos
 (tanto lógica quanto CSS) e dificuldade que teríamos para padronizar a parte
 visual e manter a consistência entre as versões.
 
