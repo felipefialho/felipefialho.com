@@ -10,7 +10,6 @@ import DisqusWrapper from 'components/DisqusWrapper'
 import PostHeader from 'components/PostHeader'
 import PostFooter from 'components/PostFooter'
 import PostNav from 'components/PostNav'
-import GoogleAds from 'components/Ads'
 
 const BlogPost = (props) => {
   const post = props.data.markdownRemark
@@ -34,12 +33,10 @@ const BlogPost = (props) => {
             description={post.frontmatter.description}
             timeToRead={post.timeToRead}
           />
-          <GoogleAds slot="7323753803" layout='inArticle'></GoogleAds>
           <Content>
             <div itemProp="articleBody" dangerouslySetInnerHTML={{ __html: post.html }} />
           </Content>
           <PostFooter />
-          <GoogleAds slot="5978347110" layout="image"></GoogleAds>
           <PostNav previous={previous} next={next} />
           <DisqusWrapper title={post.frontmatter.title} slug={post.fields.slug} />
         </div>
