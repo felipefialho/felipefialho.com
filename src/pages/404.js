@@ -14,7 +14,7 @@ const trackLabsClick = () => {
   ReactGA.event({
     category: '404',
     action: 'click',
-    label: `404 - Go to labs`
+    label: `404 - Go to labs`,
   })
 }
 
@@ -22,49 +22,59 @@ const trackBlogClick = () => {
   ReactGA.event({
     category: '404',
     action: 'click',
-    label: `404 - Go to blog`
+    label: `404 - Go to blog`,
   })
 }
 
-const IndexPage = () => {
+const NotFoundPage = () => {
   return (
     <Layout>
-      <SEO title="Página não encontrada" />
+      <SEO title='Página não encontrada' />
       <GridTemplate>
         <Content>
-          <h1>Não tem nada aqui... <span
-            className="small"
-            role="img"
-            aria-label="Emoji assustado">😱</span>
+          <h1>
+            Não tem nada aqui...
+            <span className='small' role='img' aria-label='Emoji assustado'>
+              😱
+            </span>
           </h1>
 
-          <p className="support-title">Mas não se preocupe! <span
-            className="small"
-            role="img"
-            aria-label="Emoji feliz">😄</span>
+          <p className='support-title'>
+            Mas não se preocupe!
+            <span className='small' role='img' aria-label='Emoji feliz'>
+              😄
+            </span>
           </p>
 
           <ul>
-            <li>Que tal dar uma olhadinha nos meus <AniLink
+            <li>
+              Que tal dar uma olhadinha nos meus{' '}
+              <AniLink
                 cover
                 bg={getActiveTheme()}
-                direction="down"
+                direction='down'
                 duration={1}
-                to="/lab/"
-                onClick={() => trackLabsClick()}>
+                to='/lab/'
+                onClick={() => trackLabsClick()}
+              >
                 projetos pessoais
-              </AniLink>?
+              </AniLink>
+              ?
             </li>
 
-            <li>Ou mesmo <AniLink
+            <li>
+              Ou mesmo{' '}
+              <AniLink
                 cover
                 bg={getActiveTheme()}
-                direction="down"
+                direction='down'
                 duration={1}
-                to="/blog/"
-                onClick={() => trackBlogClick()}>
+                to='/blog/'
+                onClick={() => trackBlogClick()}
+              >
                 ler meu blog
-              </AniLink>?
+              </AniLink>
+              ?
             </li>
           </ul>
         </Content>
@@ -75,4 +85,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default NotFoundPage
