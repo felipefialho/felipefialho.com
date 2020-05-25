@@ -13,45 +13,55 @@ const trackLabsClick = () => {
   ReactGA.event({
     category: '404',
     action: 'click',
-    label: `404 - Go to labs`
+    label: `404 - Go to labs`,
   })
 }
 
-const IndexPage = () => {
+const NotFoundPage = () => {
   return (
     <Layout>
-      <SEO title="Page not found" />
+      <SEO title='Page not found' />
       <GridTemplate>
         <Content>
-          <h1>There's nothing here... <span
-            className="small"
-            role="img"
-            aria-label="Scared emoji">😱</span>
+          <h1>
+            There's nothing here...
+            <span className='small' role='img' aria-label='Scared emoji'>
+              😱
+            </span>
           </h1>
 
-          <p className="support-title">But don't worry! <span
-            className="small"
-            role="img"
-            aria-label="Happy emoji">😄</span>
+          <p className='support-title'>
+            But don't worry!
+            <span className='small' role='img' aria-label='Happy emoji'>
+              😄
+            </span>
           </p>
 
-          <p>In the meantime you can take a look at my <AniLink
-            cover
-            bg={getActiveTheme()}
-            direction="down"
-            duration={1}
-            to="/lab/"
-            onClick={() => trackLabsClick()}>
-            personal projects
-          </AniLink>! <span
-            className="small"
-            role="img"
-            aria-label="Passionate eyes emoji">😍
-          </span></p>
+          <p>
+            In the meantime you can take a look at my{' '}
+            <AniLink
+              cover
+              bg={getActiveTheme()}
+              direction='down'
+              duration={1}
+              to='/lab/'
+              onClick={() => trackLabsClick()}
+            >
+              personal projects
+            </AniLink>
+            !{' '}
+            <span
+              className='small'
+              role='img'
+              aria-label='Passionate eyes emoji'
+            >
+              😍
+            </span>
+          </p>
         </Content>
       </GridTemplate>
     </Layout>
   )
 }
 
-export default IndexPage
+export default NotFoundPage
