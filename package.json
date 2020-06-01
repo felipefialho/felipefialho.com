@@ -41,7 +41,7 @@
     "gatsby-plugin-netlify": "^2.3.3",
     "gatsby-plugin-netlify-cache": "^1.2.0",
     "gatsby-plugin-netlify-cms": "^4.3.0",
-    "gatsby-plugin-offline": "^3.1.2",
+    "gatsby-plugin-offline": "^3.2.7",
     "gatsby-plugin-react-helmet": "^3.3.2",
     "gatsby-plugin-resolve-src": "^2.0.0",
     "gatsby-plugin-sharp": "^2.6.9",
