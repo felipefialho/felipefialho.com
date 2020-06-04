@@ -1,17 +1,16 @@
 ---
-title: Porquê usar classes para estilizar elementos
+title: Porquê usar classes para estilizar elementos no CSS
 date: 2016-09-21 00:00:01
 description:
-  Nesse artigo vou defender meu ponto de vista que é totalmente favorável ao uso
-  de classes.
+  E como isso pode evitar muitos dos problemas de escalabilidade no seu código.
 image: /assets/2016-09-21-porque-usar-classes-para-estilizar-elementos.png
-tags: ['css', 'workflow']
+tags: ['css', 'workflow', 'BEM']
 ---
 
 ## Introdução
 
 Quem conversa comigo sobre o assunto, sabe que sou totalmente favorável ao uso
-de classes e quase obcecado em defende-las. Existem algumas razões para isso.
+de classes. Existem algumas razões para isso.
 
 Depois do [último artigo](/blog/sobre-wai-aria-acessibilidade-e-semantica),
 algumas pessoas ficaram com dúvidas ou pediram para explicar essa frase:
@@ -93,14 +92,14 @@ performance.
 
 ## Evitando conflito na estilização de elementos
 
-Essa é uma vantagem sensacional de usar classes.
+Essa é uma vantagem sensacional de usar classes (e que foi parcialmente sanada
+com o uso de CSS-in-JS, como escrevo nesse
+[artigo do futuro](https://www.felipefialho.com/blog/do-sass-e-bem-ao-css-in-js-a-evolucao-do-css-ao-longo-da-historia/))
 
 #### Disclaimer
 
-Quero deixar claro que vou utilizar
-[uma nomenclatura que estou usando nos meus projetos](https://github.com/frontendbr/forum/issues/83).
-Me baseei no BEM e em outros modelos. Adotem a nomenclatura que mais gostarem e
-foquem no contexto dos exemplos.
+[BEM](http://getbem.com/introduction/) foi a nomenclatura usada nos exemplos
+abaixo.
 
 ### Exemplo
 
