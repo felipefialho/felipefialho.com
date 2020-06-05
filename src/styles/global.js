@@ -110,6 +110,15 @@ const GlobalStyles = createGlobalStyle`
     text-rendering: optimizeLegibility;
     transition: background-color ${V.Transition.default};
     will-change: background-color;
+
+    --bg: ${V.Color.white};
+    --bgSolid: ${V.Color.whiteSolid};
+    --bgSecondary: ${V.Color.grayWhite};
+    --borderColor: ${V.Color.grayWhite};
+    --highlightColor: ${V.Color.blue};
+    --primaryColor: ${V.Color.black};
+    --secondaryColor: ${V.Color.gray};
+    --boxShadow: rgba(18, 18, 18, .12);
   }
 
   body.theme-dark {
@@ -121,17 +130,6 @@ const GlobalStyles = createGlobalStyle`
     --primaryColor: ${V.Color.white};
     --secondaryColor: ${V.Color.grayLight};
     --boxShadow: rgba(250, 250, 250, .12);
-  }
-
-  body.theme-light {
-    --bg: ${V.Color.white};
-    --bgSolid: ${V.Color.whiteSolid};
-    --bgSecondary: ${V.Color.grayWhite};
-    --borderColor: ${V.Color.grayWhite};
-    --highlightColor: ${V.Color.blue};
-    --primaryColor: ${V.Color.black};
-    --secondaryColor: ${V.Color.gray};
-    --boxShadow: rgba(18, 18, 18, .12);
   }
 
   p a {
