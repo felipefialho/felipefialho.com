@@ -1,12 +1,14 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { Twitter, Github, LinkedinIn, Codepen, MediumM } from 'styled-icons/fa-brands'
 
 import * as V from 'styles/variables'
 
-const Icon = `
-  display: block;
-  height: 2rem;
-  width: 2rem;
+const Icon = css`
+  & {
+    display: block;
+    height: 2rem;
+    width: 2rem;
+  }
 `
 
 export const Social = styled.div`

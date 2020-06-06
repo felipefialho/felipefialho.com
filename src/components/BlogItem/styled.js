@@ -13,12 +13,8 @@ export const BlogItem = styled(AniLink)`
   }
 `
 
-const TitleSmall = `
-  ${T.Heading4}
-`
-
 export const Title = styled.h1`
-  ${props => (props.isMini ? `${TitleSmall}` : `${T.Heading1}`)}
+  ${props => (props.isMini ? `${T.Heading4}` : `${T.Heading1}`)}
 
   &:not(:first-child) {
     margin-top: ${props => (props.isMini ? `${V.Space.xs}` : `${V.Space.sm}`)};
