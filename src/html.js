@@ -14,7 +14,7 @@ export default class HTML extends Component {
           />
           {this.props.headComponents}
         </head>
-        <body {...this.props.bodyAttributes} className="theme--light">
+        <body {...this.props.bodyAttributes}>
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -36,7 +36,12 @@ export default class HTML extends Component {
                     localStorage.setItem('theme', newTheme);
                   } catch (err) {}
                 }
-                setTheme(usedTheme || 'light');
+                const userHasDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (userHasDarkMode) {
+                  setTheme(usedTheme || 'theme-dark');
+                } else {
+                  setTheme(usedTheme || 'theme-light');
+                }
               })();
             `
             }}
