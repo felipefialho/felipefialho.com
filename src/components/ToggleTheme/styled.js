@@ -7,14 +7,17 @@ export const ToggleTheme = styled.button.attrs(({ active }) => ({
   'role': 'button',
   'aria-pressed': !active
 }))`
-  --toggleBar-size: 5rem;
+  align-items: center;
   background-color: ${V.Color.grayDark};
   border-radius: ${V.Space.default};
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   height: ${V.Space.default};
+  justify-content: space-between;
+  padding-left: 2px;
+  padding-right: 3px;
   position: relative;
-  width: var(--toggleBar-size);
+  width: ${V.Space.lg};
 
   &:focus {
     outline: 0;
@@ -23,19 +26,15 @@ export const ToggleTheme = styled.button.attrs(({ active }) => ({
   &:before,
   &:after {
     font-size: 18px;
-    position: absolute;
-    top: -2px;
-    z-index: ${V.ZIndex.default}
+    margin-top: .5px;
   }
 
   &:before {
     content: '🌜';
-    left: 2px;
   }
 
   &:after {
     content: '🌞';
-    right: 4px;
   }
 `
 
@@ -56,6 +55,6 @@ export const ToggleThemeTrack = styled.div`
   }
 
   .theme-dark & {
-    transform: translateX(calc(var(--toggleBar-size) - 100%));
+    transform: translateX(calc(${V.Space.lg} - 100% - 1px));
   }
 `
