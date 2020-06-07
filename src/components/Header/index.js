@@ -7,12 +7,12 @@ import { getActiveTheme } from 'utils/themes'
 import Avatar from 'components/Avatar'
 import Menu from 'components/Menu'
 import Container from 'components/Container'
-import LightButton from 'components/LightButton'
+import ToggleTheme from 'components/ToggleTheme'
 import * as R from 'components/Responsive'
 
 import * as S from './styled'
 
-const Header = ({ site: { author }}) => {
+const Header = ({ site: { author } }) => {
   return (
     <S.Header>
       <Container>
@@ -36,7 +36,7 @@ const Header = ({ site: { author }}) => {
           </AniLink>
           <S.Menu>
             <Menu />
-            <LightButton />
+            <ToggleTheme />
           </S.Menu>
         </S.Main>
       </Container>
