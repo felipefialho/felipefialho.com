@@ -21,7 +21,7 @@ const trackClickTheme = (theme) => {
   })
 }
 
-const LightButton = () => {
+const ToggleTheme = () => {
   const [theme, setTheme] = useState(null)
 
   const lightTheme = 'theme-light'
@@ -48,13 +48,13 @@ const LightButton = () => {
   }
 
   return (
-    <S.LightButton active={!darkMode} onClick={onChange}>
+    <S.ToggleTheme active={!darkMode} onClick={onChange}>
       <Helmet>
         <body className={`${theme}`} />
       </Helmet>
-      <S.LightButtonIcon />
-    </S.LightButton>
+      <S.ToggleThemeTrack />
+    </S.ToggleTheme>
   )
 }
 
-export default LightButton
+export default ToggleTheme
