@@ -14,13 +14,6 @@
     "imageSrc": "kratos.png"
   },
   {
-    "path": "https://despolitizador.felipefialho.com/",
-    "date": "2018",
-    "title": "Despolitizador!",
-    "description": "To translate political language for people's language",
-    "imageSrc": "despolitizador.png"
-  },
-  {
     "path": "https://github.com/felipefialho/frontend-challenges",
     "date": "2017",
     "title": "Front-end Challenges",
