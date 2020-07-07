@@ -53,7 +53,6 @@ const Author = ({ language, fullText }) => {
               <li><a itemProp="owns" href="https://github.com/felipefialho/frontend-challenges" target="_blank" rel="noopener noreferrer" title="Front-end Challenges">Front-end Challenges</a></li>
               <li><a itemProp="owns" href="https://github.com/felipefialho/kratos-boilerplate" target="_blank" rel="noopener noreferrer" title="Kratos Boilerplate">Kratos Boilerplate</a></li>
               <li><a itemProp="owns" href="https://github.com/felipefialho/piano" target="_blank" rel="noopener noreferrer" title="Piano">Piano</a></li>
-              <li><a itemProp="owns" href="https://github.com/felipefialho/despolitizador" target="_blank" rel="noopener noreferrer" title="Despolitizador">Despolitizador</a></li>
               <li><a itemProp="owns" href="https://survey.frontendbr.com.br" target="_blank" rel="noopener noreferrer" title="Survey">Survey</a></li>
             </ul>
           </>
