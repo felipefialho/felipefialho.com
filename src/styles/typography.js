@@ -109,27 +109,14 @@ export const Text2 = css`
 
 export const LinkTransition = css`
   & {
-    position: relative;
-    will-change: transform;
-  }
-
-  &:after {
-    background-color: var(--highlightColor);
-    content: '';
-    height: 2px;
-    left: 0;
-    margin-top: ${V.Space.xxs};
-    position: absolute;
-    top: 100%;
-    transform: scaleX(0);
-    transition: transform ${V.Transition.default};
-    width: 100%;
+    border-bottom: 2px solid transparent;
+    transition: border-color ${V.Transition.default};
+    padding-bottom: 0.1rem;
+    will-change: border-color;
   }
 
   &:hover {
-    &:after {
-      transform: scaleX(1)
-    }
+    border-color: var(--highlightColor);
   }
 `
 
