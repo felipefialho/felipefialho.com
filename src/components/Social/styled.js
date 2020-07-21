@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { Twitter, Github, LinkedinIn, Codepen, MediumM } from 'styled-icons/fa-brands'
+import { Twitter, Github, LinkedinIn, Youtube } from 'styled-icons/fa-brands'
 
 import * as V from 'styles/variables'
 
@@ -36,6 +36,10 @@ export const SocialItem = styled.a.attrs(props => ({
   }
 `
 
+export const SocialYoutube = styled(Youtube)`
+  ${Icon}
+`
+
 export const SocialTwitter = styled(Twitter)`
   ${Icon}
 `
@@ -45,13 +49,5 @@ export const SocialGithub = styled(Github)`
 `
 
 export const SocialLinkedin = styled(LinkedinIn)`
-  ${Icon}
-`
-
-export const SocialMedium = styled(MediumM)`
-  ${Icon}
-`
-
-export const SocialCodepen = styled(Codepen)`
   ${Icon}
 `

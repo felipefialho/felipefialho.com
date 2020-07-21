@@ -222,8 +222,7 @@ module.exports = {
       twitterLink: `https://twitter.com/felipefialho_`,
       linkedinLink: `https://www.linkedin.com/in/felipefialho/`,
       githubLink: `https://github.com/felipefialho`,
-      codepenLink: `https://codepen.io/felipefialho`,
-      mediumLink: `https://medium.com/@felipefialho`,
+      youtubeLink: `https://www.youtube.com/FelipeFialhoCSS`,
     },
   },
   plugins
