@@ -15,6 +15,8 @@ const Author = ({ language, fullText }) => {
 
             <p>Currently, I'm a Tech Lead at <a href="https://juntossomosmais.com.br/" target="_blank" rel="noopener noreferrer" title="Ver" itemProp="affiliation">Juntos Somos Mais</a> and I've created the <a href="https://github.com/frontendbr" target="_blank" rel="noopener noreferrer" title="Ver" itemProp="owns">Front-end BR</a> organization on Github. I'm also a one of the founders of <span itemProp="organizer">Meetup CSS</span> and I helped in organization of <span itemProp="organizer">Conferência CSS Brasil 2015</span>.</p>
 
+            <p> I also have an <a href="https://www.youtube.com/FelipeFialhoCSS" target="_blank" rel="noopener noreferrer" title="View channel">YouTube channel</a>. </p>
+
             {fullText && (
               <>
                 <p>I'm in love with football (soccer), whether watching or playing. As people say "football is the most important thing among the least important things." I also like beer and music, especially both together.</p>
@@ -32,6 +34,8 @@ const Author = ({ language, fullText }) => {
               <p>Meu nome é <span itemProp="name">Felipe Fialho</span>. Trabalho como <span itemProp="jobTitle">Desenvolvedor Front-end</span> desde 2009. Sou apaixonado por projetos open source, acredito que a disseminação de conhecimento e boas idéias inspira e melhora o mundo.</p>
 
               <p>Atualmente estou trabalhando como Tech Lead na <a href="https://juntossomosmais.com.br/" target="_blank" rel="noopener noreferrer" title="Ver" itemProp="affiliation">Juntos Somos Mais</a>. Sou criador da organização <a href="https://github.com/frontendbr" target="_blank" rel="noopener noreferrer" title="Ver" itemProp="owns">Front-end BR</a> no Github. Também sou um dos fundadores do <span itemProp="organizer">Meetup CSS</span> e ajudei a organizar a <span itemProp="organizer">Conferência CSS Brasil 2015</span>.</p>
+
+              <p>Tenho um <a href="https://www.youtube.com/FelipeFialhoCSS" target="_blank" rel="noopener noreferrer" title="Ver canal">canal no Youtube com conteúdos em vídeo</a>.</p>
 
               {fullText && (
                 <>
@@ -58,7 +62,7 @@ const Author = ({ language, fullText }) => {
           </>
         )}
       </div>
-    </Content>
+    </Content >
   )
 }
 
