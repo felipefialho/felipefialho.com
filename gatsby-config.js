@@ -222,7 +222,7 @@ module.exports = {
       twitterLink: `https://twitter.com/felipefialho_`,
       linkedinLink: `https://www.linkedin.com/in/felipefialho/`,
       githubLink: `https://github.com/felipefialho`,
-      youtubeLink: `https://www.youtube.com/FelipeFialhoCSS`,
+      youtubeLink: `https://www.youtube.com/c/FelipeFialhoDev`,
     },
   },
   plugins
