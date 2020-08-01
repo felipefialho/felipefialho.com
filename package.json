@@ -50,7 +50,7 @@
     "gatsby-plugin-svgr": "^2.0.2",
     "gatsby-plugin-transition-link": "^1.17.7",
     "gatsby-plugin-typography": "^2.5.8",
-    "gatsby-remark-copy-linked-files": "^2.3.3",
+    "gatsby-remark-copy-linked-files": "^2.3.12",
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-remark-images": "^3.3.16",
     "gatsby-remark-lazy-load": "^1.0.2",
