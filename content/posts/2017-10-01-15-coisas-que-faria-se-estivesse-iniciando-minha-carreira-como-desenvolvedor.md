@@ -26,7 +26,7 @@ carreira.
 Essa é uma releitura desse artigo em vídeo (de 2020), com algumas atualizações e
 melhorias do texto original (de 2017). Vale a pena assistir 😁
 
-<iframe width="650" height="400" src="https://youtu.be/7yar-WWOifI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="650" height="400" src="https://www.youtube.com/embed/7yar-WWOifI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Como leitura complementar, também recomendo a leitura de outros dois artigos
 meus:
