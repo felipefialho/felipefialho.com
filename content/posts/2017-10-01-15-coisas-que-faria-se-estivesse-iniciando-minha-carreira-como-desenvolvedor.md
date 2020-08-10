@@ -1,6 +1,7 @@
 ---
 title:
-  '15 coisas que faria se estivesse iniciando minha carreira como desenvolvedor'
+  '15 coisas que faria se estivesse iniciando minha carreira como desenvolvedor
+  (Front-end)'
 date: 2017-10-01 00:00:01
 description:
   'Ou se pudesse entrar em uma maquina do tempo e dar conselhos para mim mesmo
@@ -19,6 +20,13 @@ prática ou mesmo não concorde com algo.
 Algumas dessas coisas eu fiz no passado ou faço atualmente, outras não coloquei
 em prática e penso que poderiam ter trazido resultados importantes na minha
 carreira.
+
+### Versão em vídeo
+
+Essa é uma releitura desse artigo em vídeo (de 2020), com algumas atualizações e
+melhorias do texto original (de 2017). Vale a pena assistir 😁
+
+<iframe width="650" height="400" src="https://youtu.be/7yar-WWOifI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Como leitura complementar, também recomendo a leitura de outros dois artigos
 meus:
@@ -60,7 +68,8 @@ de programação com inglês.
 
 ## 2. Aprenderia lógica de programação
 
-![[https://www.123rf.com/photo_16084282_abstract-word-cloud-for-logic-programming-with-related-tags-and-terms.html](https://www.123rf.com/photo_16084282_abstract-word-cloud-for-logic-programming-with-related-tags-and-terms.html)](assets/logica.png)_[Créditos: 123rf.com](https://www.123rf.com/photo_16084282_abstract-word-cloud-for-logic-programming-with-related-tags-and-terms.html)_
+![[https://www.123rf.com/photo_16084282_abstract-word-cloud-for-logic-programming-with-related-tags-and-terms.html](https://www.123rf.com/photo_16084282_abstract-word-cloud-for-logic-programming-with-related-tags-and-terms.html)](assets/logica.png)_Créditos:
+123rf.com_
 
 Como não tive background como programador no inicio da carreira, sinto falta de
 uma base mais sólida em conceitos de lógica de programação, algoritmos e
@@ -92,7 +101,7 @@ Isso porque cada pessoa é totalmente diferente entre si e apesar de achar muito
 importante ter inspirações, compararia minha evolução somente comigo mesmo
 ontem.
 
-## 4. Focaria nas linguagens básicas
+## 4. Focaria nas linguagens básicas do Front-end
 
 ![CSS, HTML e JavaScript](assets/css-html-js.png)
 
@@ -121,7 +130,7 @@ pre-processadores, exemplos:
 - Less
 - PostCSS
 - CSS Modules
-- Styled Commponents
+- Styled Components
 
 ### JavaScript
 
