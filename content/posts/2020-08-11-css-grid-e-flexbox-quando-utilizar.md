@@ -4,12 +4,13 @@ date: 2020-08-11 00:00:01
 description:
   'Tem dúvidas sobre quando utilizar CSS Grid e quando utilizar Flexbox? Esse
   artigo (e vídeo!) pode te ajudar 😁'
-image: /assets/2020-08-11-cover.png
+image: /assets/2020-08-11-cover.jpg
 tags: ['flexbox', 'css', 'css grid']
 ---
 
 Esse texto é uma versão do vídeo: "CSS GRID e FLEXBOX - Quando utilizar?"
 [que publiquei no meu canal no Youtube](https://youtube.com/FelipeFialhoDev).
+
 Vale a pena assistir! 😊
 
 <iframe width="650" height="400" src="https://www.youtube.com/embed/0mupCznyGqE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
