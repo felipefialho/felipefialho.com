@@ -8,34 +8,34 @@ image: /assets/2020-08-11-cover.png
 tags: ['flexbox', 'css', 'css grid']
 ---
 
-## Antes: Vídeo no Youtube
-
 Esse texto é uma versão do vídeo: "CSS GRID e FLEXBOX - Quando utilizar?"
 [que publiquei no meu canal no Youtube](https://youtube.com/FelipeFialhoDev).
 Vale a pena assistir! 😊
 
 <iframe width="650" height="400" src="https://www.youtube.com/embed/0mupCznyGqE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Continuando...
+## No passado
 
 Quem trabalhou com desenvolvimento Front-end no passado sabe da dificuldade que
-a gente tinha para fazer coisas triviais como um simples alinhamento vertical.
+a gente tinha pra fazer coisas triviais como um simples alinhamento vertical.
 
 O mesmo acontecia no desenvolvimento de Grids, então passamos por fazer como:
 Layouts em tabela, colunas desenvolvidas com `float` (com `clear: both` claro
-😱) até a gente chegar em soluções melhores como Jeet, Lost ou mesmo os Grids do
-Boostrap.
+😱) até a gente chegar em soluções melhores como: Jeet, Lost ou mesmo os Grids
+do Boostrap.
 
 Mas nenhuma delas é uma solução tão simples e completa como CSS Grid.
+
+https://twitter.com/felipefialho_/status/1270449211520270336
 
 ## CSS Grid ou Flexbox?
 
 Essa é uma dúvida muito comum.
 
 Ambos ajudam **demais** no alinhamento (horizontal e vertical) e no
-desenvolvimento de aplicações modernas, mas justamente por ser possível resolver
-problemas parecidos (ou até iguais) com eles, as pessoas acabam tendo dúvidas de
-quando utilizar um ou utilizar outro.
+desenvolvimento de grids dentro de aplicações modernas, mas justamente por ser
+possível resolver problemas parecidos (ou até iguais) com eles, as pessoas
+acabam tendo dúvidas de quando utilizar e quanto utilizar outro.
 
 O fato é que eles podem e devem ser utilizados juntos!
 
@@ -62,8 +62,8 @@ colunas, perfeito pra LAYOUTS.
 
 ## Na prática
 
-_(Todos os exemplos de código estão escritos em Sass e os gatos das imagens são
-meus próprios gatos 😻)_
+_Disclaimer 1: Todos os exemplos de código estão escritos em Sass_ _Disclaimer
+2: Os gatos das imagens são meus próprios gatos 😻_
 
 ### Card em bloco
 
@@ -84,10 +84,11 @@ ou seja, uma coisa em baixo da outra, podemos simplesmente utilizar
 `display: block`.
 
 Lembrando que vários elementos do HTML, como `div`, `section`, `article`, `h1`,
-`p`, entre outros já são block, então nem precisamos explicitamente adicionar
-isso no CSS.
+`p`, entre outros já são block, então muitas vezes nem precisamos explicitamente
+adicionar isso no CSS.
 
-Então o código acima não tem nem `display: flex` nem `display: grid`.
+Sendo assim, para atingir o resultado da imagem acima, o código não precisou nem
+de `display: flex` nem de `display: grid`.
 
 ### Componentes - Flexbox
 
@@ -110,19 +111,20 @@ Então `display: flex` se torna extremamente útil:
 }
 ```
 
-Lembrando que `display: flex` tem `flex-direction: row;` por padrão então não
+Lembrando que `display: flex` tem `flex-direction: row` por padrão então não
 precisamos escrever isso, mas quando queremos tratar isso em coluna precisamos
-explicitamente adicionar `flex-direction: column;`.
+explicitamente adicionar `flex-direction: column`.
 
 O comportamento é parecido com `display: block` mas agora temos a possibilidade
 de alinhar verticalmente, utilizando `justify-content` e horizontalmente
 utilizando `align-items` (os eixos ficam invertidos em comparação ao
-`flex-direction: row;`).
+`flex-direction: row`).
 
 **Comportamento de linha**
 
-Caso a gente queira que o card assuma comportamento de linha, por exemplo, basta
-remover `flex-direction: column;`.
+Caso a gente queira que o card assuma comportamento de linha, basta remover
+`flex-direction: column`, isso porque como disse anteriormente `display: flex`
+tem `flex-direction: row` como padrão.
 
 ![Alinhamento vertical](assets/2020-08-11-flexdirection-row.png)
 
@@ -137,16 +139,24 @@ remover `flex-direction: column;`.
 }
 ```
 
-E nesse caso o `align-items: center;` faz o alinhamento vertical.
+E nesse caso o `align-items: center` faz o alinhamento vertical e
+`justify-content` o alinhamento horizontal.
+
+Nesses exemplos é possível ver como fica simples e rápido manipular componentes
+com **Flexbox**, conseguimos ótimos resultados de uma maneira bem simples e com
+poucas linhas de código.
 
 ### Layouts - CSS Grid
 
-Agora que já entendemos como o Flexbox funciona bem com componentes, vou mostrar
-como o CSS Grid é perfeito pra layouts!
+Agora que já entendemos como o **Flexbox** funciona bem com componentes, vou
+mostrar como o CSS Grid é perfeito pra layouts!
 
-Então pra gente adicionar os cards do lado do outro, em três colunas, a gente só
-precisa adicionar algumas propriedades do CSS Grid no elemento pai desses cards,
-nesse caso `.grid`.
+Se a gente quiser, por exemplo, adicionar os cards do lado do outro, em três
+colunas, precisamos somente adicionar algumas propriedades do CSS Grid no
+elemento pai.
+
+Nesse caso criei um elemento `.grid` que fica responsável por organizar os
+grids, enquanto o componente card fica responsável pela exibição do card.
 
 ![CSS Grid](assets/2020-08-11-cssgrid.png)
 
@@ -159,15 +169,19 @@ nesse caso `.grid`.
 }
 ```
 
-Usando `grid-column-gap` e `grid-row-gap` a gente consegue dar espaçamentos
-entre os elementos filhos, sem encostar no código deles. Pensem o quão incrível
-isso é para separar responsabilidades de componentes de responsabilidades de
-grid 😍
+Usando `grid-column-gap` e `grid-row-gap` a gente consegue adicionar
+espaçamentos entre os elementos filhos (vertical e horizontal!), sem encostar no
+código deles. Sensacional né?
 
-Até esse momento (08/2020), Flexbox não tem a propriedade `gap`,
+Pensem o quão incrível **CSS Grid** é para cuidar dos grids das nossas
+aplicações 😍
+
+Importante falar que até esse momento (08/2020), o **Flexbox** não tem a
+propriedade `gap`,
 [mas isso está prestes a mudar!](https://developer.mozilla.org/en-US/docs/Web/CSS/gap).
 
-**E acredite! CSS Grid pode criar grids responsivos sem media queries**
+**E acredite! Com CSS Grid a gente consegue grids responsivos sem media
+queries**
 
 Preciso mostrar o quão espetacular é isso.
 
@@ -183,14 +197,24 @@ Preciso mostrar o quão espetacular é isso.
 }
 ```
 
-Por exemplo, se a gente quiser que o grid tenha 3 colunas, 2 colunas ou 1 coluna
-de acordo com o número de elementos que cabe na tela é só adicionar `autofit` em
-conjunto com `minmax`. `250px` é o tamanho mínimo das colunas na tela e `1fr`
-representa uma fração do espaço disponível no grid.
+Se a gente quiser, por exemplo, que o grid tenha 3 colunas no Desktop, 2 colunas
+em Tablets e 1 coluna no Mobile, de acordo com o número de elementos que cabe na
+tela, é só adicionar `autofit` junto `minmax`.
 
-Vale ver funcionando na prática 😜
+`250px` é o tamanho mínimo das colunas na tela e `1fr` representa uma fração do
+espaço disponível no grid.
+
+Nesse artigo
+[publicado no CSS Tricks](https://css-tricks.com/introduction-fr-css-unit/) em
+2017, é possível entender melhor como a unidade `fr` funciona e porque ela é tão
+utilizada com **CSS Grid**.
+
+Vale ver todos esses exemplos funcionando na prática 😜
 
 https://codepen.io/felipefialho/pen/abdKyKP?editors=0100
+
+Abrindo esse exemplo e redimensionando a tela, é possível ver que os grids se
+adaptam a resolução, tudo isso sem nenhuma linha de media queries 😁
 
 ## Suporte
 
@@ -204,12 +228,11 @@ todos os navegadores modernos e suporte parcial desde o IE10!
 # Conclusão
 
 Nos últimos anos o CSS ganhou várias features interessantes e que facilitam
-demais nosso dia a dia, sem dúvidas CSS Grid e Flexbox estão entre minhas
-propriedades favoritas.
+demais nosso dia a dia, sem dúvidas **CSS Grid** e **Flexbox** estão entre
+minhas propriedades favoritas.
 
 Como já estão disponíveis faz alguns anos, conseguimos encontrar milhares de
-materiais na internet que facilitam o aprendizado e o uso delas, posso deixar de
-exemplo:
+materiais que facilitam o aprendizado e o uso delas, posso deixar de exemplo:
 
 - [MDN Flexbox](https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox)
 - [MDN CSS Grid](https://developer.mozilla.org/pt-BR/docs/Web/CSS/grid)
