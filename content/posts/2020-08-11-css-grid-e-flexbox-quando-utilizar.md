@@ -36,7 +36,7 @@ Essa é uma dúvida muito comum.
 Ambos ajudam **demais** no alinhamento (horizontal e vertical) e no
 desenvolvimento de grids dentro de aplicações modernas, mas justamente por ser
 possível resolver problemas parecidos (ou até iguais) com eles, as pessoas
-acabam tendo dúvidas de quando utilizar e quanto utilizar outro.
+acabam tendo dúvidas de quando utilizar um e quando utilizar outro.
 
 O fato é que eles podem e devem ser utilizados juntos!
 
