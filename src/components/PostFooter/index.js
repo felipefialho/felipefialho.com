@@ -4,14 +4,14 @@ import * as S from './styled'
 
 const PostFooter = () => {
   return (
-    <S.PostFooter>      
+    <S.PostFooter>
       <S.PostFooterContent>
         <S.Title>
-          Encontrou algum problema no texto? 
+          Encontrou algum problema no texto?
           Me ajude a corrigir! <span
-          className="small"
-          role="img"
-          aria-label="Emoji sorrindo">😁</span>
+            className="small"
+            role="img"
+            aria-label="Emoji sorrindo">😁</span>
         </S.Title>
 
         <p>Esse projeto é open source, então basta alterar o arquivo de texto, <a href="https://github.com/felipefialho/felipefialho.com/tree/master/content/posts" target="_blank" rel="noopener noreferrer" title="Alterar texto">diretamente no Github</a> e abrir um pull-request. É uma maneira simples e eficaz de contribuir com a comunidade de desenvolvimento web.</p>
@@ -25,6 +25,7 @@ const PostFooter = () => {
         </S.Title>
 
         <p>
+          - Youtube: <a href="https://youtube.com/FelipeFialhoDev" target="_blank" rel="noopener noreferrer" title="Ver Youtube">@FelipeFialhoDev</a> <br />
           - Twitter: <a href="https://twitter.com/felipefialho_" target="_blank" rel="noopener noreferrer" title="Ver Twitter">@felipefialho_</a> <br />
           - Github: <a href="https://github.com/felipefialho" target="_blank" rel="noopener noreferrer" title="Ver Github">@felipefialho</a> <br />
           - Linkedin: <a href="https://www.linkedin.com/in/felipefialho/" target="_blank" rel="noopener noreferrer" title="Ver Linkedin">@felipefialho</a>
