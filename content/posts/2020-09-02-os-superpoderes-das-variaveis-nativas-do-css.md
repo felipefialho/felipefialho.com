@@ -2,9 +2,9 @@
 title: 'Os superpoderes das Variáveis CSS (aka Custom Properties) ❤️'
 date: 2020-09-02 00:00:01
 description:
-  'Usa variáveis de pré-processadores? Nesse artigo (e vídeo) vou mostrar as
-  poderosas variáveis nativas do CSS, que talvez sejam uma das coisas
-  (infelizmente) mais sub utilizadas no CSS.'
+  'Nesse artigo (e vídeo) vou mostrar um poudo das poderosas variáveis nativas
+  do CSS, que talvez sejam uma das coisas (infelizmente) mais sub utilizadas no
+  CSS.'
 image: /assets/2020-09-02-cover.jpg
 tags: ['css', 'variaveis', 'javascript']
 ---
