@@ -65,7 +65,7 @@
     "gatsby-transformer-sharp": "^2.5.12",
     "gsap": "^3.3.0",
     "lazysizes": "^5.2.2",
-    "netlify-cms-app": "^2.12.11",
+    "netlify-cms-app": "^2.12.20",
     "prismjs": "^1.20.0",
     "react": "^16.13.1",
     "react-disqus-comments": "^1.4.0",
