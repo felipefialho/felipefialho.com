@@ -15,7 +15,7 @@ export const ToggleTheme = styled.button.attrs(({ active }) => ({
   height: ${V.Space.default};
   justify-content: space-between;
   padding-left: 2px;
-  padding-right: 3px;
+  padding-right: 2px;
   position: relative;
   width: ${V.Space.lg};
 
@@ -55,6 +55,6 @@ export const ToggleThemeTrack = styled.div`
   }
 
   .theme-dark & {
-    transform: translateX(calc(${V.Space.lg} - 100% - 1px));
+    transform: translateX(100%);
   }
 `
