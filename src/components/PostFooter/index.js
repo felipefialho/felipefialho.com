@@ -28,7 +28,7 @@ const PostFooter = () => {
           - Youtube: <a href="https://youtube.com/FelipeFialhoDev" target="_blank" rel="noopener noreferrer" title="Ver Youtube">@FelipeFialhoDev</a> <br />
           - Twitter: <a href="https://twitter.com/felipefialho_" target="_blank" rel="noopener noreferrer" title="Ver Twitter">@felipefialho_</a> <br />
           - Github: <a href="https://github.com/felipefialho" target="_blank" rel="noopener noreferrer" title="Ver Github">@felipefialho</a> <br />
-          - Linkedin: <a href="https://www.linkedin.com/in/felipefialho/" target="_blank" rel="noopener noreferrer" title="Ver Linkedin">@felipefialho</a>
+          - LinkedIn: <a href="https://www.linkedin.com/in/felipefialho/" target="_blank" rel="noopener noreferrer" title="Ver Linkedin">@felipefialho</a>
         </p>
       </S.PostFooterContent>
     </S.PostFooter>
