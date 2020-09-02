@@ -20,8 +20,8 @@ Vale a pena assistir! 😊
 ## Evolução do CSS nos últimos anos
 
 Nos últimos anos tivemos uma série de melhorias importantes no CSS, como
-[CSS Grid e Flexbox](/blog/2020-08-11-css-grid-e-flexbox-quando-utilizar) e as
-Variáveis CSS, que na minha visão estão misteriosamente entre as coisas mais sub
+[CSS Grid e Flexbox](/blog/css-grid-e-flexbox-quando-utilizar) e as Variáveis
+CSS, que na minha visão estão misteriosamente entre as coisas mais sub
 utilizadas do CSS.
 
 O motivo disso talvez seja o fato das variáveis já estarem presentes faz anos e
@@ -328,7 +328,7 @@ Outra vantagem das Variáveis CSS é que elas são agnósticas com relação as
 tecnologias de CSS utilizadas no projeto.
 
 Precisei fazer uso disso no
-[Venice, o Design System da Juntos Somos Mais](/blog/2020-05-19-design-system-venice-e-as-pecas-do-lego).
+[Venice, o Design System da Juntos Somos Mais](/blog/design-system-venice-e-as-pecas-do-lego).
 
 A gente precisava que coisas como cores, espaçamento e tipografia fossem
 compartilhadas entre todos os projetos da empresa. Mas os projetos usam stacks
