@@ -1,11 +1,11 @@
 ---
 title: 'Os superpoderes das Variáveis CSS (aka Custom Properties) ❤️'
-date: 2020-09-02 00:00:01
+date: 2020-09-03 00:00:01
 description:
   'Nesse artigo (e vídeo) vou mostrar um pouco das poderosas variáveis nativas
   do CSS, que talvez sejam uma das coisas (infelizmente) mais sub utilizadas no
   CSS.'
-image: /assets/2020-09-02-cover.jpg
+image: /assets/2020-09-03-cover.jpg
 tags: ['css', 'variaveis', 'javascript']
 ---
 
@@ -301,7 +301,8 @@ posição do cursor, apenas alterando os valores das Variáveis CSS.
 }
 ```
 
-Então basta alterar no JavaScript conforme a posição do cursor:
+Então é só alterar o valor das variáveis no JavaScript conforme a posição do
+cursor:
 
 ```js
 const $body = document.body
@@ -312,7 +313,7 @@ document.addEventListener('mousemove', e => {
 })
 ```
 
-![Gif de exemplo da manipulação com JavaScript](assets/2020-09-02-js.gif)
+![Gif de exemplo da manipulação com JavaScript](assets/2020-09-03-js.gif)
 
 Isso é totalmente demais 🤯
 
@@ -377,7 +378,7 @@ body {
 
 ## Suporte
 
-![CSS Variables - Can I Use](assets/2020-09-02-can-i-use.png)
+![CSS Variables - Can I Use](assets/2020-09-03-can-i-use.png)
 
 Como podem ver, as Variáveis CSS tem suporte total em todos os navegadores
 modernos.
