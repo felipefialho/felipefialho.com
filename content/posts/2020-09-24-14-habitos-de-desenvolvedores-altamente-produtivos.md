@@ -26,7 +26,7 @@ em português.
 
 Ele foca muito mais em hábitos não técnicos do que fatores técnicos e consegue
 ser interessante tanto para pessoas em inicio de carreira como pessoas que já
-tem certa experiência na area.
+tem certa experiência na área.
 
 No final de cada hábito, tem uma seção chamada “Perguntas e Respostas”, onde
 desenvolvedores sênior e pessoas que atuam como líderes de tecnologia em algumas
