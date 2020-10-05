@@ -90,13 +90,13 @@ onde introduziu dois tipos de jogos: Finitos e Infinitos.
 Um jogo finito são jogos com jogadores conhecidos, regras fixas e objetivos
 estabelecidos.
 
-Por exemplo, o **futebol** é um bom exemplo de jogo finito
+Por exemplo, o **futebol** é um bom exemplo de jogo finito.
 
 Já um jogo infinito, é definido como aqueles em que existem jogadores conhecidos
 e desconhecidos, as regras podem mudar a qualquer hora e o objetivo não é
 vencer, mas sim continuar jogando.
 
-Sendo assim a **programação** seria um jogo infinito
+Sendo assim a **programação** seria um jogo infinito.
 
 Isso porque sempre existem novas pessoas entrando no mercado de trabalho, novos
 conceitos surgem todos os dias, novos padrões são inventados e novos problemas
