@@ -186,7 +186,7 @@ Na vida nós temos coisas que podemos controlar e outras que não podemos, uma d
 ideias centrais do Estoicismo é sempre focar nossas ações nas coisas que podemos
 controlar e aprender a reagir diante das coisas que não podemos.
 
-Conversando com o Zeno logo no inicio da pandemia, falamos sobre o cenário que
+Conversando com o Zeno logo no início da pandemia, falamos sobre o cenário que
 estávamos (e ainda estamos) vivendo e como não realmente não temos controle
 sobre nada que é externo a nossa vida.
 
