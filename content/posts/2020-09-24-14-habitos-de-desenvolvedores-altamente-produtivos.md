@@ -26,7 +26,7 @@ em português.
 
 Ele foca muito mais em hábitos não técnicos do que fatores técnicos e consegue
 ser interessante tanto para pessoas em inicio de carreira como pessoas que já
-tem certa experiência na area.
+tem certa experiência na área.
 
 No final de cada hábito, tem uma seção chamada “Perguntas e Respostas”, onde
 desenvolvedores sênior e pessoas que atuam como líderes de tecnologia em algumas
@@ -42,7 +42,7 @@ Uma coisa curiosa que aconteceu é que estava na casa dos meus pais e meu pai
 estava me observando [lendo no Kindle](https://amzn.to/3ifqxXc), então ele ficou
 super curioso sobre o aparelho.
 
-Quando terminei a leitura , deixei em cima da mesa e ele começou a fuçar e
+Quando terminei a leitura, deixei em cima da mesa e ele começou a fuçar e
 depois de algum tempo finalmente conseguiu ligar o Kindle 😂
 
 O livro que estava aberto era justamente
@@ -90,13 +90,13 @@ onde introduziu dois tipos de jogos: Finitos e Infinitos.
 Um jogo finito são jogos com jogadores conhecidos, regras fixas e objetivos
 estabelecidos.
 
-Por exemplo, o **futebol** é um bom exemplo de jogo finito
+Por exemplo, o **futebol** é um bom exemplo de jogo finito.
 
 Já um jogo infinito, é definido como aqueles em que existem jogadores conhecidos
 e desconhecidos, as regras podem mudar a qualquer hora e o objetivo não é
 vencer, mas sim continuar jogando.
 
-Sendo assim a **programação** seria um jogo infinito
+Sendo assim a **programação** seria um jogo infinito.
 
 Isso porque sempre existem novas pessoas entrando no mercado de trabalho, novos
 conceitos surgem todos os dias, novos padrões são inventados e novos problemas
@@ -186,7 +186,7 @@ Na vida nós temos coisas que podemos controlar e outras que não podemos, uma d
 ideias centrais do Estoicismo é sempre focar nossas ações nas coisas que podemos
 controlar e aprender a reagir diante das coisas que não podemos.
 
-Conversando com o Zeno logo no inicio da pandemia, falamos sobre o cenário que
+Conversando com o Zeno logo no início da pandemia, falamos sobre o cenário que
 estávamos (e ainda estamos) vivendo e como não realmente não temos controle
 sobre nada que é externo a nossa vida.
 
