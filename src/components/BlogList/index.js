@@ -2,7 +2,7 @@ import React from 'react'
 import ReactGA from 'react-ga'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import ButtonLink from 'components/ButtonLink'
+import Button from 'components/Button'
 import BlogItem from 'components/BlogItem'
 
 import * as S from './styled'
@@ -59,10 +59,12 @@ const BlogList = () => {
           />
         ))}
       </S.Nav>
-      <ButtonLink to='/blog/' onClick={() => trackClickAllPosts()}>
-        Ver todos os posts
-      </ButtonLink>
-    </S.BlogList>
+      <div style={{ textAlign: 'center' }}>
+        <Button to='/blog/' onClick={() => trackClickAllPosts()}>
+          Ver todos os posts
+        </Button>
+      </div >
+    </S.BlogList >
   )
 }
 
