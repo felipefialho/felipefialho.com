@@ -8,7 +8,7 @@ image: /assets/2020-08-11-cover.jpg
 tags: ['flexbox', 'css', 'css grid']
 ---
 
-Esse texto é uma versão escrita do vídeo: "CSS GRID e Flexbox - Quando
+Esse texto é uma versão em texto do vídeo: "CSS GRID e Flexbox - Quando
 utilizar?"
 [que publiquei no meu canal no Youtube](https://youtube.com/FelipeFialhoDev).
 

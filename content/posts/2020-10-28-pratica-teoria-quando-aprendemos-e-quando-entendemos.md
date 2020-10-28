@@ -8,7 +8,7 @@ image: /assets/2020-10-28-cover.jpg
 tags: ['carreira', 'estudos']
 ---
 
-Esse texto é uma versão escrita do vídeo: "Prática x Teoria - Quando aprendemos
+Esse texto é uma versão em texto do vídeo: "Prática x Teoria - Quando aprendemos
 e quando entendemos?"
 [que publiquei no meu canal no Youtube](https://youtube.com/FelipeFialhoDev).
 

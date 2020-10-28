@@ -8,7 +8,7 @@ image: /assets/2020-09-24-cover.jpg
 tags: ['carreira', 'livros', 'misc']
 ---
 
-Esse texto é uma versão escrita do vídeo: "14 Hábitos de Desenvolvedores
+Esse texto é uma versão em texto do vídeo: "14 Hábitos de Desenvolvedores
 Altamente Produtivos - Resenha do Livro"
 [que publiquei no meu canal no Youtube](https://youtube.com/FelipeFialhoDev).
 
@@ -42,8 +42,8 @@ Uma coisa curiosa que aconteceu é que estava na casa dos meus pais e meu pai
 estava me observando [lendo no Kindle](https://amzn.to/3ifqxXc), então ele ficou
 super curioso sobre o aparelho.
 
-Quando terminei a leitura, deixei em cima da mesa e ele começou a fuçar e
-depois de algum tempo finalmente conseguiu ligar o Kindle 😂
+Quando terminei a leitura, deixei em cima da mesa e ele começou a fuçar e depois
+de algum tempo finalmente conseguiu ligar o Kindle 😂
 
 O livro que estava aberto era justamente
 [14 Hábitos de Desenvolvedores Altamente Produtivos](https://amzn.to/339ejc9),

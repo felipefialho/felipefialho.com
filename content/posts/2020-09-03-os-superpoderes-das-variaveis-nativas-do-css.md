@@ -9,7 +9,7 @@ image: /assets/2020-09-03-cover.jpg
 tags: ['css', 'variaveis', 'javascript']
 ---
 
-Esse texto é uma versão escrita do vídeo: "Variáveis CSS - Os superpoderes das
+Esse texto é uma versão em texto do vídeo: "Variáveis CSS - Os superpoderes das
 variáveis nativas do CSS"
 [que publiquei no meu canal no Youtube](https://youtube.com/FelipeFialhoDev).
 
