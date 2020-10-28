@@ -1,10 +1,10 @@
 ---
 title: 'Prática x Teoria - Quando aprendemos e quando entendemos?'
-date: 2020-10-27 00:00:01
+date: 2020-10-28 00:00:01
 description:
   'Nesse artigo explico um pouco da diferença entre Entender e Aprender e
   algumas estratégias para aumentar nossos repertórios de conhecimento 😁'
-image: /assets/2020-10-27-cover.jpg
+image: /assets/2020-10-28-cover.jpg
 tags: ['carreira', 'estudos']
 ---
 
@@ -32,7 +32,7 @@ conta própria nos temas, para que ai sim elas aprendam.
 
 ### Quanto aprendemos?
 
-![Criança praticando piano](assets/2020-10-27-practice.jpg)<em>Crédito da
+![Criança praticando piano](assets/2020-10-28-practice.jpg)<em>Crédito da
 imagem: <span>Photo by
 <a href="https://unsplash.com/@jon_chng?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jonathan
 Chng</a> on
