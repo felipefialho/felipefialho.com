@@ -180,9 +180,9 @@ Ou seja, ficamos estagnados (e pioramos).
 https://twitter.com/felipefialho_/status/1214515937136779264
 
 Quanto maior a quantidade de assuntos que nos interessam e que buscamos
-entender, melhor vai ser nosso leque de conhecimento e mais possibilidades vamos
-ter de nos aprofundar pra aprender coisas que podem ser importantes na nossa
-evolução pessoal e profissional 🚀
+entender, melhor vai ser nosso leque de conhecimento se mais possibilidades
+vamos ter de nos aprofundar pra aprender coisas que podem ser importantes na
+nossa evolução pessoal e profissional 🚀
 
 <em><span>Créditos da foto de capa: <span>Photo by
 <a href="https://unsplash.com/@dsoodmand?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Darius
