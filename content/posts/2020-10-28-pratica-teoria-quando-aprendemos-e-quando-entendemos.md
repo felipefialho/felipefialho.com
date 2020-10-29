@@ -4,7 +4,7 @@ date: 2020-10-28 00:00:01
 description:
   'Nesse artigo explico um pouco da diferença entre Entender e Aprender e
   algumas estratégias para aumentar nossos repertórios de conhecimento 😁'
-image: /assets/2020-10-28-cover.jpg
+image: /assets/2020-10-28-cover_v2.jpg
 tags: ['carreira', 'estudos']
 ---
 
@@ -184,7 +184,7 @@ entender, melhor vai ser nosso leque de conhecimento e mais possibilidades vamos
 ter de nos aprofundar pra aprender coisas que podem ser importantes na nossa
 evolução pessoal e profissional 🚀
 
-<em><span>Créditos da foto de capa:
-<a href="https://unsplash.com/@brett_jordan?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Brett
-Jordan</a> on
+<em><span>Créditos da foto de capa: <span>Photo by
+<a href="https://unsplash.com/@dsoodmand?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Darius
+Soodmand</a> on
 <a href="https://unsplash.com/s/photos/practice?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></em>
