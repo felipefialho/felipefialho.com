@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import * as V from 'styles/variables'
 
 export const Footer = styled.footer.attrs({
-  'role': 'dialog',
+  'role': 'contentinfo',
 })`
   align-items: center;
   background-color: var(--bgSolid);
