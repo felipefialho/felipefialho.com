@@ -40,7 +40,7 @@
     "gatsby-plugin-i18n": "^1.0.1",
     "gatsby-plugin-netlify": "^2.3.25",
     "gatsby-plugin-netlify-cache": "^1.2.0",
-    "gatsby-plugin-netlify-cms": "^4.3.11",
+    "gatsby-plugin-netlify-cms": "^4.3.17",
     "gatsby-plugin-offline": "^3.2.30",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-resolve-src": "^2.0.0",
