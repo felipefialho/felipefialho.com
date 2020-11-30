@@ -106,6 +106,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 2rem;
     min-height: calc(100vh);
     -webkit-overflow-scrolling: touch;
+    overflow-anchor: none;
     overflow-x: hidden;
     text-rendering: optimizeLegibility;
     transition: background-color ${V.Transition.default};
