@@ -30,7 +30,6 @@ const ToggleTheme = () => {
 
   useEffect(() => {
     setTheme(window.__theme)
-    console.log(window.__theme)
     window.__onThemeChange = () => setTheme(window.__theme)
   }, [])
 
