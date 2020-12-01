@@ -52,7 +52,7 @@
     "gatsby-plugin-typography": "^2.5.8",
     "gatsby-remark-copy-linked-files": "^2.3.19",
     "gatsby-remark-external-links": "0.0.4",
-    "gatsby-remark-images": "^3.3.40",
+    "gatsby-remark-images": "^3.6.0",
     "gatsby-remark-lazy-load": "^1.0.2",
     "gatsby-plugin-manifest": "^2.4.37",
     "gatsby-remark-prismjs": "^3.5.11",
