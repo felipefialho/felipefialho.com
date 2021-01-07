@@ -8,7 +8,7 @@ const FooterData = () => {
   return (
     <S.FooterData>
       <Container>
-        ©2020 felipefialho.com
+        ©{new Date().getFullYear()} felipefialho.com
         <a className="link" href="/policies">Política de Privacidade</a>
         <a className="link" href="https://github.com/felipefialho/felipefialho.com/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">Termos de Uso</a>
       </Container>
