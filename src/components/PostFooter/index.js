@@ -27,8 +27,8 @@ const PostFooter = () => {
               aria-label="Emoji com olhos de coração">😍</span>
           </S.Title>
           <S.PostFooterPay>
-            <a href="https://app.picpay.com/user/felipe.fialho10" target="_blank" rel="noopener noreferrer" title="Transferir no PicPay" onClick={() => trackClickOnPay('PicPay')}>PicPay (qualquer valor)</a>
-            <a href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=93725796-11d360a5-36b9-4f63-bca6-f605e5e3931a" target="_blank" rel="noopener noreferrer" title="Transferir no MercadoPago" onClick={() => trackClickOnPay('MercadoPago')}>MercadoPago (R$ 5)</a>
+            <div class="item">Pix: <strong>hi@felipefialho.com</strong></div>
+            <a class="item" href="https://app.picpay.com/user/felipe.fialho10" target="_blank" rel="noopener noreferrer" title="Transferir no PicPay" onClick={() => trackClickOnPay('PicPay')}>PicPay</a>
           </S.PostFooterPay>
         </S.PostFooterContent>
       </S.PostFooter>

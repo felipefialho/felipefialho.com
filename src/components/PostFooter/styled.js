@@ -39,7 +39,7 @@ export const PostFooterPay = styled.section`
     justify-content: space-between;
   `}
 
-  > a {
+  > .item {
     border: ${V.Border.default};
     color: var(--primaryColor);
     display: block;
@@ -58,10 +58,10 @@ export const PostFooterPay = styled.section`
       flex: 1;
       margin: 0 ${V.Space.sm};
     `}
+  }
 
-    &:hover,
-    &:focus {
-      border-color: var(--highlightColor);
-    }
+  > a:hover,
+  > a:focus {
+    border-color: var(--highlightColor);
   }
 `
