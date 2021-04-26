@@ -15,7 +15,7 @@ const feeds = [
           date: edge.node.frontmatter.date,
           url: postUrl,
           guid: postUrl,
-          custom_elements: [{ 'content:encoded': edge.node.html }]
+          custom_elements: [{ 'content:encoded': edge.node.excerpt }]
         })
       })
     },
