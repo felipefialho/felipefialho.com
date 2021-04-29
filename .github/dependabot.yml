@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: monthly
+    time: "08:00"
+  open-pull-requests-limit: 99
+  ignore:
+  - dependency-name: gatsby-remark-relative-images
+    versions:
+    - ">= 0.3.a, < 0.4"
+  - dependency-name: styled-icons
+    versions:
+    - 10.27.0
