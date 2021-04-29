@@ -27,8 +27,8 @@ const PostFooter = () => {
               aria-label="Emoji com olhos de coração">😍</span>
           </S.Title>
           <S.PostFooterPay>
-            <div class="item">Pix: <strong>hi@felipefialho.com</strong></div>
-            <a class="item" href="https://app.picpay.com/user/felipe.fialho10" target="_blank" rel="noopener noreferrer" title="Transferir no PicPay" onClick={() => trackClickOnPay('PicPay')}>PicPay</a>
+            <div className="item">Pix: <strong>hi@felipefialho.com</strong></div>
+            <a className="item" href="https://app.picpay.com/user/felipe.fialho10" target="_blank" rel="noopener noreferrer" title="Transferir no PicPay" onClick={() => trackClickOnPay('PicPay')}>PicPay</a>
           </S.PostFooterPay>
         </S.PostFooterContent>
       </S.PostFooter>
