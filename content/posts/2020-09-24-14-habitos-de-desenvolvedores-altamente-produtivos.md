@@ -156,7 +156,7 @@ envolver ou iniciar projetos paralelos.
 
 A importância de criar projetos paralelos é enorme para alavancar uma carreira e
 já falei sobre isso em outros artigos como no
-[Como contribuir com Open Source](/como-contribuir-com-open-source).
+[Como contribuir com Open Source](/blog/como-contribuir-com-open-source).
 
 ## Especialista ou generalista?
 
@@ -172,7 +172,7 @@ especialistas em determinados assuntos e em outros momentos vamos ser mais
 generalistas, especialmente quando estamos ocupando cargos de liderança.
 
 Cheguei a comentar disso no artigo
-[O que Front-end Developers precisam saber?](/o-que-front-end-developers-precisam-saber)
+[O que Front-end Developers precisam saber?](/blog/o-que-front-end-developers-precisam-saber)
 
 ## Controlando as variáveis
 
