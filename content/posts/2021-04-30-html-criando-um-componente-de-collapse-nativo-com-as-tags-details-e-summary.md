@@ -2,8 +2,8 @@
 title: 'Collapse em 5 minutos sem JavaScript!'
 date: 2021-04-30 00:00:01
 description:
-  'Criando um componente de Collapse completamente funcional em menos de 5min
-  apenas com HTML e CSS 🥳'
+  'Criando um componente de Collapse completamente funcional em menos de 5
+  minutos usando apenas HTML e CSS 🥳'
 image: /assets/2021-04-30-cover_v2.jpg
 tags: ['css', 'html', 'summary', 'details']
 ---
@@ -51,7 +51,7 @@ explicar aqui.
 
 ## Os fodões `<details>` e `<summary>`
 
-Tudo que precisamos são de duas tags, o `details` e `summary` e já podíamos
+Tudo que precisamos são de duas tags, o `<details>` e `<summary>` e já podíamos
 terminar por aqui já que o efeito de abrir e fechar já está completamente
 funcional.
 
