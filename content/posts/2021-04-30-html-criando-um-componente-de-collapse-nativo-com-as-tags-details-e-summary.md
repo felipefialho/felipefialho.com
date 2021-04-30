@@ -234,6 +234,22 @@ partir disso.
 }
 ```
 
+Dá pra brincar bastante com isso e fazer coisas bem legais usando CSS para
+deixar ainda mais foda essas transições de estado.
+
+### Acessibilidade
+
+E como são tags nativas do HTML `<details>` e `<summary>` são automaticamente
+acessíveis e semânticas, você já ganha isso de graça sem precisar fazer nenhuma
+implementação a mais.
+
+### Markdown
+
+E uma dica extra:
+
+Além de tudo funciona em markdown, ou seja, você pode adicionar tranquilamente
+essa funcionalidade para deixar os READMEs dos projetos ainda mais legais.
+
 ### Resultado
 
 Componente finalizado e como podem ver não precisei adicionar nenhuma linha de
