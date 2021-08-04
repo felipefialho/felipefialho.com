@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { Twitter, Github, LinkedinIn, Youtube } from 'styled-icons/fa-brands'
+import { Twitter, Github, LinkedinIn, Youtube } from '@styled-icons/fa-brands'
 
 import * as V from 'styles/variables'
 

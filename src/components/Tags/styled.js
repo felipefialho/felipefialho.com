@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Tag } from 'styled-icons/boxicons-regular/Tag'
+import { Tag } from '@styled-icons/boxicons-regular/Tag'
 
 import * as V from 'styles/variables'
 

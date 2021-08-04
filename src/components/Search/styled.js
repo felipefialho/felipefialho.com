@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Algolia } from 'styled-icons/fa-brands/Algolia'
+import { Algolia } from '@styled-icons/fa-brands/Algolia'
 
 import * as V from 'styles/variables'
 import * as T from 'styles/typography'
