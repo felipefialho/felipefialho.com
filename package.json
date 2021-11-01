@@ -31,7 +31,7 @@
   "dependencies": {
     "@raae/gatsby-remark-oembed": "^0.1.1",
     "@svgr/webpack": "^5.5.0",
-    "algoliasearch": "^4.10.5",
+    "algoliasearch": "^4.11.0",
     "dotenv": "^10.0.0",
     "gatsby": "^2.32.13",
     "gatsby-cli": "^3.13.0",
