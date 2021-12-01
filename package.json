@@ -88,7 +88,7 @@
     "babel-eslint": "^10.0.3",
     "babel-plugin-styled-components": "^1.13.3",
     "commitlint": "^14.1.0",
-    "eslint": "^7.32.0",
+    "eslint": "^8.3.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-react-app": "^5.2.1",
     "eslint-plugin-import": "^2.25.2",
