@@ -86,7 +86,7 @@
     "@commitlint/cli": "^14.1.0",
     "@commitlint/config-conventional": "^14.1.0",
     "babel-eslint": "^10.0.3",
-    "babel-plugin-styled-components": "^1.13.3",
+    "babel-plugin-styled-components": "^2.0.2",
     "commitlint": "^14.1.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
