@@ -99,7 +99,7 @@
     "prettier": "2.5.0",
     "prettier-eslint": "^13.0.0",
     "prettier-eslint-cli": "^5.0.0",
-    "stylelint": "^14.1.0",
+    "stylelint": "^14.3.0",
     "stylelint-config-recommended": "^6.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-order": "^5.0.0",
