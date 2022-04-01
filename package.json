@@ -78,7 +78,7 @@
     "react-instantsearch-dom": "^6.22.0",
     "react-responsive": "^8.2.0",
     "react-typography": "^0.16.19",
-    "styled-components": "^5.3.3",
+    "styled-components": "^5.3.5",
     "styled-icons": "^10.45.0",
     "styled-media-query": "^2.1.2"
   },
