@@ -11,7 +11,7 @@ Na eterna dúvida entre usar SASS ou LESS, acabei optando por LESS. Não tenho u
 
 O SASS é mais robusto e tem plugins interessantíssimos como o Compass. O gerador de sprites dele é uma mão na roda e sinto falta disso no LESS.
 
-De qualquer forma vou dar mostrar minha organização baseada nos testes que fiz durante o desenvolvimento do Framework usando LESS, o que não significa que não possa ser adaptado para qualquer outro pré-processador.
+De qualquer forma vou mostrar minha organização baseada nos testes que fiz durante o desenvolvimento do Framework usando LESS, o que não significa que não possa ser adaptado para qualquer outro pré-processador.
 
 ## Separação dos arquivos no Framework
 
