@@ -34,7 +34,7 @@
     "algoliasearch": "^4.13.1",
     "dotenv": "^16.0.1",
     "gatsby": "^2.32.13",
-    "gatsby-cli": "^4.17.1",
+    "gatsby-cli": "^4.22.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-algolia-search": "^0.5.6",
     "gatsby-plugin-catch-links": "^2.10.0",
