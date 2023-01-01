@@ -77,7 +77,7 @@
     "react-helmet": "^6.1.0",
     "react-instantsearch-dom": "^6.38.1",
     "react-responsive": "^8.2.0",
-    "react-typography": "^0.16.19",
+    "react-typography": "^0.16.23",
     "styled-components": "^5.3.6",
     "styled-icons": "^10.46.0",
     "styled-media-query": "^2.1.2"
