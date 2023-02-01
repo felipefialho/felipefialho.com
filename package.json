@@ -95,7 +95,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "husky": "^8.0.2",
+    "husky": "^8.0.3",
     "prettier": "2.8.0",
     "prettier-eslint": "^15.0.1",
     "prettier-eslint-cli": "^7.1.0",
