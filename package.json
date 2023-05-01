@@ -33,7 +33,7 @@
     "@svgr/webpack": "^6.5.1",
     "algoliasearch": "^4.16.0",
     "dotenv": "^16.0.3",
-    "gatsby": "^2.32.13",
+    "gatsby": "^5.9.0",
     "gatsby-cli": "^4.24.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-algolia-search": "^0.5.6",
