@@ -100,7 +100,7 @@
     "prettier-eslint": "^15.0.1",
     "prettier-eslint-cli": "^7.1.0",
     "stylelint": "^15.4.0",
-    "stylelint-config-recommended": "^11.0.0",
+    "stylelint-config-recommended": "^12.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-order": "^6.0.3",
     "stylelint-processor-styled-components": "^1.10.0"
