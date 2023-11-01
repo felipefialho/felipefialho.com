@@ -84,7 +84,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.2",
-    "@commitlint/config-conventional": "^17.7.0",
+    "@commitlint/config-conventional": "^18.1.0",
     "babel-eslint": "^10.0.3",
     "babel-plugin-styled-components": "^2.1.4",
     "commitlint": "^17.7.2",
