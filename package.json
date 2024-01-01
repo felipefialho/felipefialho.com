@@ -90,7 +90,7 @@
     "commitlint": "^17.7.2",
     "eslint": "^8.50.0",
     "eslint-config-react-app": "^7.0.1",
-    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.3",
