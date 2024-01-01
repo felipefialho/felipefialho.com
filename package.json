@@ -98,7 +98,7 @@
     "stylelint": "^15.10.3",
     "stylelint-config-recommended": "^12.0.0",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-order": "^6.0.3",
+    "stylelint-order": "^6.0.4",
     "stylelint-processor-styled-components": "^1.10.0"
   }
 }
