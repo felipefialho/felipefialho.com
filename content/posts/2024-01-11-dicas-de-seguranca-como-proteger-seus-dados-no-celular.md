@@ -25,6 +25,12 @@ Faz anos que utilizo o [Bitwarden](https://bitwarden.com/) que além de ser open
 
 Uma dica crucial é guardar a "senha do cofre" em local seguro, talvez em um papel escondido em casa, porque se alguém tiver acesso, vai conseguir ver todas as senhas.
 
+#### Dica Complementar
+
+PUma boa ideia pra aumentar ainda mais a segurança é adicionar um prefixo ou sufixo padrão (que só você sabe) em todas as senhas, assim se tiver vazamento de dados ou alguém conseguir ver a senha, não vai conseguir acessar
+
+Dica dada pelo [Voogel13](https://twitter.com/Voogel13/status/1745629544248193444) e pelo [claitonb_dev](https://twitter.com/claitonb_dev/status/1745761982014181771)
+
 ### 🔐 Desativar funcionalidade de completar dados
 
 Se você costuma salvar dados automaticamente, repense. Desativar essa funcionalidade vai dificultar o acesso a informações sensíveis que podem ficar gravadas em formulários.
