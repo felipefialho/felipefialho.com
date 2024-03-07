@@ -2,7 +2,7 @@
 title: 'Lidando com erros de Dynamic Imports no JavaScript'
 date: 2024-02-26 00:00:01
 description:
-  'Chega de passar raiva com erros de importação dinâmica! Bora aprender a lidar com eles e manter a aplicação funcionando'
+  'Chega de passar raiva com erros de importação dinâmica! Bora aprender a lidar com eles e manter a aplicação funcionando 🙏'
 image: /assets/2024-02-26-cover.jpg
 tags: ['javascript']
 ---
