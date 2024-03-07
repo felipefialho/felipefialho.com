@@ -11,7 +11,9 @@ tags: ['seguranca', 'dados']
 
 Tempos atrás tive um celular furtado e além do prejuízo do aparelho, tive muita dor de cabeça porque ele tava desbloqueado, facilitando o roubo de dados e acesso a contas bancárias. Isso poderia ter me arruinado mas algumas medidas de segurança evitaram prejuízos maiores.
 
-Na época criei uma [thread do Twitter contando sobre o que aconteceu](https://twitter.com/felipefialho_/status/1348715719908298752) e muitas dicas de segurança foram compartilhadas.
+Na época criei uma thread do Twitter contando sobre o que aconteceu e muitas dicas de segurança foram compartilhadas
+
+https://twitter.com/felipefialho_/status/1490428784528474121
 
 Nesse artigo vou compartilhar algumas coisas que podem ajudar a prevenir desastres caso aconteça com você. Bora lá?
 
