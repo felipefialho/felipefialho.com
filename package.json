@@ -83,7 +83,7 @@
     "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.0.3",
+    "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.0.3",
     "babel-eslint": "^10.0.3",
     "babel-plugin-styled-components": "^2.1.4",
