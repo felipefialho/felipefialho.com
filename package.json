@@ -96,7 +96,7 @@
     "husky": "^9.0.11",
     "prettier": "3.2.5",
     "stylelint": "^16.2.1",
-    "stylelint-config-recommended": "^14.0.0",
+    "stylelint-config-recommended": "^14.0.1",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-order": "^6.0.4",
     "stylelint-processor-styled-components": "^1.10.0"
