@@ -30,7 +30,7 @@ Usuários que já tinham a aplicação instalada não recebiam a nova versão. E
 
 Isso porque SPAs (Single Page Applications) carregam o `index.html` uma única vez e, em seguida, usam JavaScript para atualizar o conteúdo da página.
 
-Como o `index.html` estava cacheado, os usuários não recebiam esses novos chunks de JavaScript e CSS, asism a aplicação continuava funcionando com a versão antiga, pra sempre! 😱
+Como o `index.html` estava cacheado, os usuários não recebiam esses novos chunks de JavaScript e CSS, assim a aplicação continuava funcionando com a versão antiga, pra sempre! 😱
 
 
 ### Primeiras tentativas de solução
