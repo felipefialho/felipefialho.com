@@ -112,6 +112,16 @@ E claro que o bom e velho bom senso é parte essencial do processo. Se a imagem 
 
 ![Gato numa caixa](./assets/gato-numa-caixa.webp) *até cabe mas não é o ideal*
 
+#### Preload
+
+Imagens criticas, utilizadas no primeiro carregamento da página como dentro de um `Hero` ou `Banner`, podem ser pre-carregadas utilizando o atributo `preload`:
+
+```html
+<link rel="preload" fetchpriority="high" as="image" href="hero.jpg" type="image/jpeg">
+```
+
+Isso vai fazer com que a imagem seja carregada com prioridade antes de ser exibida na tela, melhorando o tempo de carregamento da página e diminuindo o LCP (Large Contentful Paint).
+
 ### Latência, cache e CDN (Content Delivery Network)
 
 Usar CDN para servir conteúdo estático é uma prática comum para reduzir a latência e melhorar o tempo de carregamento da aplicação. CDNs são redes de servidores distribuídos geograficamente que armazenam cópias de conteúdo estático, como imagens, vídeos e arquivos CSS e JS, e servem esses conteúdos a partir do servidor mais próximo do usuário, reduzindo a latência e melhorando o tempo de carregamento da aplicação.
