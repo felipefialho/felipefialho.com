@@ -18,7 +18,7 @@ A ideia desse post é falar um pouco da minha experiência e explorar algumas po
 
 Antes de tudo, quero separar senioridade de carreira de senioridade contextual
 
-https://x.com/felipefialho_/status/1300223040832319489
+https://twitter.com/felipefialho_/status/1300223040832319489
 
 ### Senioridade Contextual
 
@@ -42,7 +42,7 @@ Agora, senioridade de carreira é algo que você constrói ao longo do tempo, in
 
 Existem muitas e muitas capacidades e habilidades técnicas e não técnicas que devem ser desenvolvidas ao longo da carreira, e quanto mais altas são essas barras de habilidades, mais senior você é e mais apto vai estar a ocupar essa cadeira em diferentes empresas e contextos.
 
-https://x.com/felipefialho_/status/1427609919604330496
+https://twitter.com/felipefialho_/status/1427609919604330496
 
 E como muitas dessas habilidades não são técnicas e sim soft skills, é possível que alguém com menos tempo de carreira tech mas que por exemplo migrou de outras áreas, onde desenvolveu habilidades de liderança, comunicação, resolução de problemas, etc, atinja um nível de maior senioridade mais rápido.
 
@@ -56,7 +56,7 @@ Mas se estamos falando de senioridade de carreira, é bem difícil que alguém c
 
 (e algumas pessoas não conseguem nem com 10 anos)
 
-https://x.com/felipefialho_/status/1707729074032877979
+https://twitter.com/felipefialho_/status/1707729074032877979
 
 ## E o que vem depois de senior?
 
