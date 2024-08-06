@@ -51,7 +51,7 @@ Depois de muita investigação e analise, encontramos uma solução que resolveu
 - Injetamos um script para limpar completamente qualquer Service Worker
 - Adicionamos um novo Service Worker, desta vez configurado corretamente
 
-Essa interpectação foi feita no servidor, onde conseguimos adicionar um script que limpava o cache do Service Worker mas também poderia ser feita através de gerenciadores de scripts como o Google Tag Manager.
+Essa interceptação foi feita no servidor, onde conseguimos adicionar um script que limpava o cache do Service Worker mas também poderia ser feita através de gerenciadores de scripts como o Google Tag Manager.
 
 Já o script que limpava o cache do Service Worker era simples:
 
