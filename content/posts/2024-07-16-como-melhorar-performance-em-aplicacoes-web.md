@@ -54,11 +54,11 @@ Importante observar que parte dessas situações dependem do tempo de resposta d
 
 ### DevTools
 
-Além de métricas geradas Lighthouse, a aba "performance" dentro do DevTools fornece bons insumos, mostrando o impacto de cada script no carregamento e uso da aplicação. Além disso checar o "waterfall" dentro da aba "network" também pode ajudar a entender impactos de requisições e downloads de recursos.
+Além de métricas geradas pelo Lighthouse, a aba "performance" dentro do DevTools fornece bons insumos, mostrando o impacto de cada script no carregamento e uso da aplicação. Além disso checar o "waterfall" dentro da aba "network" também pode ajudar a entender impactos de requisições e downloads de recursos.
 
 ![Aba network de felipefialho.com](./assets/network-devtools.webp)
 
-Isso é especialmente útil para entender a ordem de carregamento das coisas e se há requisições que est bloqueando o carregamento de outros recursos.
+Isso é especialmente útil para entender a ordem de carregamento das coisas e se há requisições que estão bloqueando o carregamento de outros recursos.
 
 ### Monitoria contínua
 
