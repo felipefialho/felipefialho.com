@@ -109,7 +109,7 @@ Algumas das responsabilidades no dia a dia são:
 - Serve de referência técnica para outros engenheiros
 - Evangeliza boas práticas de desenvolvimento
 
-Devem ter notado que diferentemente do Tech Lead, se espera que Staff Engineers não só direcionem a equipe técnica, mas também que sejam capazes de resolver problemas complexos e criar soluções atuando de maneira direta. Ou seja, é espero que coloque a mão na massa sempre que possível.
+Devem ter notado que diferentemente do Tech Lead, se espera que Staff Engineers não só direcionem a equipe técnica, mas também que sejam capazes de resolver problemas complexos e criar soluções atuando de maneira direta. Ou seja, é esperado que coloque a mão na massa sempre que possível.
 
 Pensando em próximos níveis a partir daqui, temos Principal Engineer, Distinguished Engineer, e CTO.
 
