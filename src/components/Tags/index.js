@@ -22,8 +22,8 @@ const Tags = ({ tags, isLink }) => {
       {tags.map((tag, i) => (
         <S.TagHolder key={i}>
           { isLink ? (
-            <AniLink 
-              to={`blog?query=` + tag}
+            <AniLink
+              to={`/blog?query=` + tag}
               cover
               direction="down"
               duration={1}
