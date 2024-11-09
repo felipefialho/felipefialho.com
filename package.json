@@ -94,7 +94,7 @@
     "eslint-plugin-react": "^7.34.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^9.0.11",
-    "prettier": "3.2.5",
+    "prettier": "3.3.3",
     "stylelint": "^16.2.1",
     "stylelint-config-recommended": "^14.0.0",
     "stylelint-config-styled-components": "^0.1.1",
