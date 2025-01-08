@@ -98,7 +98,7 @@ Quando você escreve um código, você está se comunicando com o computador usa
 
 Quanto melhor você souber se comunicar, melhor você vai conseguir traduzir suas ideias em soluções que resolvam problemas reais.
 
-### Conclusão
+## Conclusão
 
 As mudanças tendem a ser mais na forma com que fazemos as coisas que já
 fazemos agora do que nas tecnologias em si. Ou seja, é possível que a gente automatize cada vez a criação de componentes e aplicações mas usando ferramentas que por debaixo dos panos vão gerar código utilizando as mesmas tecnologias que já usamos.
