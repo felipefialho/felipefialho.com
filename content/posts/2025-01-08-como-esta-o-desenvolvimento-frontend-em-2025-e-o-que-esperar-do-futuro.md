@@ -3,12 +3,12 @@ title: 'Como tá o desenvolvimento Front-end em 2025 e o que esperar do futuro'
 date: 2025-01-08 00:00:01
 description: 'O futuro de ontem é agora! O que esperar do desenvolvimento Front-end nos próximos anos? 🔮'
 image: /assets/2025-01-08-cover.jpg
-tags: ['javascript', 'react', 'frontend', 'ai', 'soft-skills', 'carreira']
+tags: ['javascript', 'react', 'frontend', 'ai', 'soft skills', 'carreira']
 ---
 
 ## Introdução
 
-O tempo passa como um trator desgovernado, parece que foi ontem mas anos atrás escrevi alguns artigos sobre o "não-tão-mais-atual" cenário do Front-end e o que estudar para se manter atualizado:
+A vida é um sopro e o tempo passa como um rolo compressor, parece que foi ontem mas anos atrás escrevi alguns artigos sobre o "não-tão-mais-atual" cenário do Front-end e o que estudar pra se manter atualizado:
 
 - [O que Front-end Developers precisam saber](/blog/o-que-front-end-developers-precisam-saber)
 - [Como estudar, praticar e conseguir oportunidades como (Front-end) Developer](/blog/como-estudar-praticar-e-conseguir-oportunidades-como-front-end-developer)
@@ -41,7 +41,7 @@ O melhor de tudo é que muitas dessas novas funcionalidades foram adicionadas se
 
 https://twitter.com/felipefialho_/status/1417867098672488452
 
-O Front-end tá cada vez mais alinhado às boas práticas de arquitetura de software, testes e programação, coisas já consolidadas no Back-end. E isso é ótimo, pois mostra que o Front-end não é mais uma área "secundária" e se consolida como uma área estratégica e fundamental para o sucesso de qualquer projeto.
+O Front-end tá cada vez mais alinhado às boas práticas de arquitetura de software, testes e programação, coisas já consolidadas no Back-end. E isso é ótimo, pois mostra que o Front-end não é mais uma área "secundária" e se consolida como uma área estratégica e fundamental pro sucesso de qualquer projeto.
 
 Também vimos uma necessidade cada vez maior de integração e conhecimentos em DevOps, com a popularização de ferramentas como Docker, Kubernetes e CI/CD, além da popularização de plataformas como Netlify e Vercel, que facilitaram a vida do desenvolvedor e permitem uma entrega mais rápida e eficiente.
 
@@ -57,9 +57,9 @@ Ferramentas de low-code e no-code devem ganhar aderência, com IA cada vez mais 
 
 https://twitter.com/felipefialho_/status/1611363075889700864
 
-O lance é que o trabalho de devs não vão ser substituídos por Inteligência Artificial, mas devs que não se adaptarem a essas ferramentas fatalmente vão ser substituídos por pessoas que fazem bom uso delas.
+O lance é que o trabalho de devs não vai ser substituídos por Inteligência Artificial, mas devs que não se adaptarem a essas ferramentas fatalmente vão ser substituídos por pessoas que fazem bom uso delas.
 
-Lembrando que a maior parte do trabalho não é escrever código, mas sim analisar, planejar, tomar decisões, e claro, resolver bugs!
+Lembrando que a maior parte do trabalho não é exatamente escrever código, mas sim analisar, planejar, tomar decisões, e claro, resolver bugs!
 
 ### Mudanças na Atuação
 
@@ -103,7 +103,7 @@ Quanto melhor você souber se comunicar, melhor você vai conseguir traduzir sua
 As mudanças tendem a ser mais na forma com que fazemos as coisas que já
 fazemos agora do que nas tecnologias em si. Ou seja, é possível que a gente automatize cada vez a criação de componentes e aplicações mas usando ferramentas que por debaixo dos panos vão gerar código utilizando as mesmas tecnologias que já usamos.
 
-Por isso ter ótima comunicação com capacidade de abstração suficiente para tomar boas decisões de arquitetura são extremamente relevantes, assim como conhecimentos em DevOps, que vão ser cada vez mais necessários. Não é tanto mais sobre saber a sintaxe de uma linguagem no micro, mas sim sobre saber como integrar tecnologias e pessoas.
+Por isso ter ótima comunicação com capacidade de abstração suficiente pra tomar boas decisões de arquitetura são extremamente relevantes, assim como conhecimentos em DevOps, que vão ser cada vez mais necessários. Não é tanto mais sobre saber a sintaxe de uma linguagem no micro, mas sim sobre saber como integrar tecnologias e pessoas.
 
 Todas essas mudanças já estão acontecendo de forma gradual e a tendência é que se consolidem nos próximos ano. E lembre-se que no mercado de tecnologia, se você não continuar estudando e se atualizando, você não fica simplesmente estagnado... você piora!
 
