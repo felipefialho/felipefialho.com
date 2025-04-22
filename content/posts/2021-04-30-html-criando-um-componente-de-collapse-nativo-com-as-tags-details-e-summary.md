@@ -10,7 +10,7 @@ tags: ['css', 'html', 'summary', 'details']
 
 Esse texto é uma versão em texto do vídeo: <strong>SEM JAVASCRIPT - Collapse com
 HTML e CSS em 5min!</strong>
-[que publiquei no meu canal no Youtube](https://youtube.com/FelipeFialhoDev).
+[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhovlog).
 
 Vale a pena assistir! 😊
 

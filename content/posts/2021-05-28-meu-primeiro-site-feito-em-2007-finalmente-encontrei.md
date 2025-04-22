@@ -11,7 +11,7 @@ tags: ['carreira', 'misc']
 
 Esse texto é uma versão em texto do vídeo: <strong>Meu PRIMEIRO SITE feito em
 2007 - Finalmente encontrei!</strong>
-[que publiquei no meu canal no Youtube](https://youtube.com/FelipeFialhoDev).
+[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhovlog).
 
 Vale a pena assistir! 😊
 

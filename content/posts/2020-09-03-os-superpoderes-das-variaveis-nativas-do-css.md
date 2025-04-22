@@ -11,7 +11,7 @@ tags: ['css', 'variaveis', 'javascript']
 
 Esse texto é uma versão em texto do vídeo: "Variáveis CSS - Os superpoderes das
 variáveis nativas do CSS"
-[que publiquei no meu canal no Youtube](https://youtube.com/FelipeFialhoDev).
+[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhovlog).
 
 Vale a pena assistir! 😊
 
