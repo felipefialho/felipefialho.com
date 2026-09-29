@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import { getEntry, render } from 'astro:content';
 import photo from '../assets/images/felipe-fialho.jpg';
+import SocialLinks from '../components/SocialLinks.astro';
 import Base from '../layouts/Base.astro';
 import { SITE_NAME, formatDate, isoDate, localePath, t, type Lang } from '../lib/i18n';
 import { getPosts, postPath } from '../lib/posts';
@@ -16,12 +17,6 @@ const ui = t(lang);
 const posts = (await getPosts(lang)).slice(0, 6);
 const home = await getEntry('pages', `${lang}/home`);
 const { Content } = home ? await render(home) : { Content: null };
-const contacts = [
-  { label: ui.linkedin, href: 'https://www.linkedin.com/in/felipefialho/' },
-  { label: ui.github, href: 'https://github.com/felipefialho' },
-  { label: ui.email, href: 'mailto:hi@felipefialho.com' },
-  { label: ui.youtube, href: 'https://www.youtube.com/@felipefialhodev' },
-];
 const jsonLd = homeJsonLd({ lang, path: localePath(lang, '/'), title: SITE_NAME, description: ui.homeDescription });
 ---
 
@@ -44,9 +39,7 @@ const jsonLd = homeJsonLd({ lang, path: localePath(lang, '/'), title: SITE_NAME,
       </div>
     </div>
     {Content && <div class="intro reading"><Content /></div>}
-    <ul class="contact" aria-label={ui.contact}>
-      {contacts.map(({ label, href }) => <li><a href={href}>{label}</a></li>)}
-    </ul>
+    <SocialLinks lang={lang} variant="prominent" />
     <p><a class="text-link" href={localePath(lang, '/hi/')}>{ui.moreAbout}</a></p>
   </section>
 
@@ -120,21 +113,4 @@ const jsonLd = homeJsonLd({ lang, path: localePath(lang, '/'), title: SITE_NAME,
     margin-block: 0 var(--space-3);
   }
 
-  .contact {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0 var(--space-4);
-    margin: 0 0 var(--space-2);
-    padding: 0;
-    list-style: none;
-
-    & a {
-      display: inline-flex;
-      align-items: center;
-      min-block-size: 2.75rem;
-      font-family: var(--font-ui);
-      font-size: var(--step-0);
-      font-weight: 600;
-    }
-  }
 </style>

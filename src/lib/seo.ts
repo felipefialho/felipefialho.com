@@ -2,6 +2,7 @@ import { readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 import type { SitemapItem } from '@astrojs/sitemap';
 import { HTML_LANG, LANGS, SITE_NAME, localePath, type Lang } from './i18n';
+import { SOCIAL_PROFILES } from './social';
 import { utcDate } from './utc-date';
 
 export const SITE_URL = 'https://felipefialho.com/';
@@ -9,12 +10,7 @@ export const PERSON_ID = `${SITE_URL}#person`;
 export const WEBSITE_ID = `${SITE_URL}#website`;
 
 /** Profiles that describe the same person, for `sameAs` and `rel="me"`. */
-export const PROFILES = [
-  'https://github.com/felipefialho',
-  'https://www.linkedin.com/in/felipefialho/',
-  'https://x.com/felipefialho_',
-  'https://www.youtube.com/@felipefialhodev',
-] as const;
+export const PROFILES = SOCIAL_PROFILES.map(({ href }) => href);
 
 /** Robots directives for indexable pages: large image previews unlock Discover and rich snippets. */
 export const ROBOTS_INDEX = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';

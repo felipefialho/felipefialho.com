@@ -1,0 +1,25 @@
+---
+// Tabler outline icons (MIT), inlined at build time: no requests, no JS
+import github from '@tabler/icons/icons/outline/brand-github.svg?raw';
+import linkedin from '@tabler/icons/icons/outline/brand-linkedin.svg?raw';
+import x from '@tabler/icons/icons/outline/brand-x.svg?raw';
+import youtube from '@tabler/icons/icons/outline/brand-youtube.svg?raw';
+import email from '@tabler/icons/icons/outline/mail.svg?raw';
+import rss from '@tabler/icons/icons/outline/rss.svg?raw';
+import type { SocialId } from '../lib/social';
+
+interface Props {
+  name: SocialId;
+  size?: number;
+}
+
+const ICONS: Record<SocialId, string> = { x, linkedin, github, youtube, email, rss };
+const { name, size = 20 } = Astro.props;
+
+// Keep only the drawing: size, class and a11y are set here
+const markup = ICONS[name]
+  .replace(/\s(width|height|class)="[^"]*"/g, '')
+  .replace('<svg', `<svg width="${size}" height="${size}" aria-hidden="true" focusable="false"`);
+---
+
+<Fragment set:html={markup} />

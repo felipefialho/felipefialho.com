@@ -1,0 +1,117 @@
+---
+import { localePath, t, type Lang } from '../lib/i18n';
+import { CONTACT_EMAIL, SOCIAL_PROFILES } from '../lib/social';
+import SocialIcon from './SocialIcon.astro';
+
+interface Props {
+  lang: Lang;
+  /** prominent: icon + label, X highlighted (home). compact: icon only (footer) */
+  variant: 'prominent' | 'compact';
+}
+
+const { lang, variant } = Astro.props;
+const ui = t(lang);
+
+const links = [
+  ...SOCIAL_PROFILES.map(({ id, label, handle, href }) => ({ id, label, handle, href })),
+  { id: 'email' as const, label: ui.email, handle: CONTACT_EMAIL, href: `mailto:${CONTACT_EMAIL}` },
+  ...(variant === 'compact' ? [{ id: 'rss' as const, label: 'RSS', handle: '', href: localePath(lang, '/feed.xml') }] : []),
+];
+---
+
+<ul class:list={['social', `social-${variant}`]} aria-label={ui.contact}>
+  {
+    links.map(({ id, label, handle, href }) => (
+      <li class:list={[{ featured: id === 'x' && variant === 'prominent' }]}>
+        <a href={href} aria-label={variant === 'compact' ? label : undefined} rel={id === 'email' || id === 'rss' ? undefined : 'me'}>
+          <SocialIcon name={id} size={variant === 'compact' ? 20 : 22} />
+          {variant === 'prominent' && (
+            <span class="text">
+              <span class="label">{label}</span>
+              {id === 'x' && <span class="handle">{handle}</span>}
+            </span>
+          )}
+        </a>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-block-size: 2.75rem;
+    color: var(--ink);
+    text-decoration: none;
+
+    &:hover .label {
+      text-decoration: underline;
+      text-decoration-color: var(--link);
+    }
+  }
+
+  .social-prominent {
+    gap: var(--space-2) var(--space-4);
+    font-family: var(--font-ui);
+    font-weight: 600;
+
+    & a {
+      padding-inline: var(--space-3);
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+
+      &:hover {
+        border-color: var(--ink);
+      }
+    }
+  }
+
+  /* X is where the conversation happens, so it leads with its handle */
+  .featured a {
+    border-color: var(--ink);
+    background: var(--ink);
+    color: var(--paper);
+
+    &:hover {
+      background: var(--link);
+      border-color: var(--link);
+    }
+  }
+
+  .text {
+    display: inline-flex;
+    align-items: baseline;
+    gap: var(--space-2);
+  }
+
+  .handle {
+    font-weight: 400;
+    opacity: 0.8;
+  }
+
+  .social-compact {
+    gap: var(--space-1);
+
+    & a {
+      justify-content: center;
+      min-inline-size: 2.75rem;
+      color: var(--muted);
+      border-radius: var(--radius);
+
+      &:hover {
+        color: var(--ink);
+        background: var(--wash);
+      }
+    }
+  }
+</style>
