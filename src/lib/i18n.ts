@@ -10,7 +10,7 @@ const UI = {
   pt: {
     blog: 'Blog',
     lab: 'Lab',
-    about: 'Sobre',
+    about: 'hi',
     moreAbout: 'Mais sobre mim',
     search: 'Buscar',
     searchPosts: 'Buscar nos posts',
@@ -70,7 +70,7 @@ const UI = {
   en: {
     blog: 'Blog',
     lab: 'Lab',
-    about: 'About',
+    about: 'hi',
     moreAbout: 'More about me',
     search: 'Search',
     searchPosts: 'Search posts',
