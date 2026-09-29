@@ -21,11 +21,23 @@ const slugFromPath = ({ entry }: { entry: string }) =>
     .replace(/\.mdx?$/, '')
     .replace(/^\d{4}-\d{2}-\d{2}-/, '');
 
+// Letters and digits first, then only spaces and . + # - (stray quotes or brackets mean broken frontmatter)
+const VALID_TAG = /^[\p{L}\p{N}][\p{L}\p{N} .+#-]*$/u;
+
 const postSchema = z.object({
   title: z.string(),
   date: utcDate,
   description: z.string(),
-  tags: z.array(z.string()).default([]).transform((tags) => [...new Set(tags.filter(Boolean).map(normalizeTag))]),
+  tags: z
+    .array(z.string())
+    .default([])
+    .transform((tags, ctx) => {
+      const normalized = [...new Set(tags.filter(Boolean).map(normalizeTag))];
+      for (const tag of normalized.filter((item) => !VALID_TAG.test(item))) {
+        ctx.addIssue({ code: 'custom', message: `Invalid tag ${JSON.stringify(tag)}: check quotes and brackets in the tags frontmatter` });
+      }
+      return normalized;
+    }),
   draft: z.boolean().default(false),
 });
 
