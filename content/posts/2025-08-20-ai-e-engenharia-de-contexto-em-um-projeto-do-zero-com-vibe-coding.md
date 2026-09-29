@@ -25,7 +25,12 @@ O problema é que como na vida, pra cada vislumbre de felicidade, precisamos lid
 
 E de burro e preguiçoso basta eu.  
 
-https://twitter.com/felipefialho_/status/1947395637579788501
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1947395637579788501">
+    <p>Assinei o Cursor<br><br>Depois das mudanças no GitHub Copilot, limitando LLMs como Sonnet 4, ficou simplesmente intragável usar<br><br>O modelo ilimitado do GPT 4.1 do Copilot, além de preguiçoso, alucina tanto que podia ser chamado de Burrice Artificial<br><br>E de burro e preguiçoso basta eu</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1947395637579788501">July 21, 2025</a></figcaption>
+</figure>
 
 ### Cursor  
 

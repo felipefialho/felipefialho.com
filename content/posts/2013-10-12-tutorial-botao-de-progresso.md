@@ -17,7 +17,10 @@ Nível do tutorial: **Básico**
 
 A demo funcional está no Codepen.
 
-https://codepen.io/felipefialho/pen/KviDw
+<figure class="embed embed-codepen">
+  <iframe src="https://codepen.io/felipefialho/embed/KviDw?default-tab=result" title="Pen de @felipefialho no CodePen" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/KviDw">Ver pen de @felipefialho no CodePen</a></figcaption>
+</figure>
 
 ## Tutorial
 

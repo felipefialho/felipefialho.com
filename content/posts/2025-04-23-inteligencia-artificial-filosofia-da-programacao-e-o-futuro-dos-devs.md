@@ -116,7 +116,12 @@ Um leigo talvez não teria os mesmos resultados.
 
 ## O hype da criação de apps com IA
 
-https://twitter.com/felipefialho_/status/1897998139262414895
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1897998139262414895">
+    <p>Tenho visto muitos &quot;como criei um app em 2h&quot; de não-devs<br><br>Pra MVPs beleza... mas tende a ficar insustentável em escalabilidade e manutenção. Esses projetos vão nascer rápido mas vão afundar no próprio caos<br><br>Prevejo aumento na demanda dev pra consertar ou reescrever tudo do zero</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1897998139262414895">March 7, 2025</a></figcaption>
+</figure>
 
 Hoje é comum ver postagens no LinkedIn ou até no Instagram de pessoas, sem nenhum background técnico, dizendo que criaram um app em 10 minutos com ajuda da IA.
 
@@ -134,7 +139,12 @@ Programar é, essencialmente, **comunicar ideias abstratas** de forma clara o su
 
 Isso exige estrutura, lógica, e clareza mental.
 
-https://twitter.com/felipefialho_/status/1779873487248663026
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1779873487248663026">
+    <p>Programação tem muita ligação com o campo da filosofia<br><br>Quando escrevemos algoritmos estamos fazendo um exercício filosófico de refletir sobre um problema pra chegar numa solução traduzida códigos, é uma abstração lógica do seu próprio raciocínio<br><br>Matemática é filosofia aplicada</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1779873487248663026">April 15, 2024</a></figcaption>
+</figure>
 
 Desenvolver software é pegar um pensamento complexo, com regras, condições, arquitetura, e transformá-lo em algo objetivo: **um software funcionando**.
 
@@ -164,7 +174,12 @@ O *prompt engineering* nada mais é do que aplicar lógica de programação em l
 
 Por isso, *no-code* ou *vibe coding* não são atalhos mágicos. Eles só mudam a forma como escrevemos instruções, mas não mudam a necessidade de ter **clareza de raciocínio, conhecimento técnico e visão de arquitetura**.
 
-https://twitter.com/felipefialho_/status/1885360350532419654
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1885360350532419654">
+    <p>Não vejo diferenças significativas em programar antes e depois de AIs<br><br>Se escreve menos código e usa mais linguagem natural mas todo o resto continua lá<br><br>Quanto mais conhecimento e quanto mais conciso e claro for o raciocínio, melhor a qualidade da solução gerada<br><br>Como sempre foi</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1885360350532419654">January 31, 2025</a></figcaption>
+</figure>
 
 E aí voltamos à raiz da criação de software:
 

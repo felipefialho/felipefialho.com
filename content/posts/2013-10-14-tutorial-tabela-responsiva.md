@@ -19,7 +19,10 @@ Ela consiste em inverter a posição do `thead` e posicionar o `tbody` na sua di
 
 A demo funcional está no Codepen(redimensione o navegador para visualizar o efeito).
 
-https://codepen.io/felipefialho/pen/hsreD
+<figure class="embed embed-codepen">
+  <iframe src="https://codepen.io/felipefialho/embed/hsreD?default-tab=result" title="Pen de @felipefialho no CodePen" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/hsreD">Ver pen de @felipefialho no CodePen</a></figcaption>
+</figure>
 
 ### No HTML
 
@@ -101,7 +104,10 @@ Pode ser útil principalmente em CMS ou Gerenciadores.
 
 A demo funcional está no [CodePen](http://codepen.io/felipefialho/pen/beEoG) (redimensione o navegador para visualizar o efeito).
 
-https://codepen.io/felipefialho/pen/beEoG
+<figure class="embed embed-codepen">
+  <iframe src="https://codepen.io/felipefialho/embed/beEoG?default-tab=result" title="Pen de @felipefialho no CodePen" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/beEoG">Ver pen de @felipefialho no CodePen</a></figcaption>
+</figure>
 
 ### No HTML
  

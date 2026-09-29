@@ -77,7 +77,12 @@ Depois de jogar muitas vezes ou assistir milhares de partidas você vai de fato
 aprender e não só entender, e então todo o mecanismo envolvendo o futebol vai
 ser natural pra você.
 
-https://twitter.com/felipefialho_/status/1283382140651089921
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1283382140651089921">
+    <p>Quer aprender programação em apenas 7 dias, ser disputado pelas melhores empresas e ganhar muito dinheiro rapidamente?<br><br>Então não caia nesses anúncios. Só vai ganhar dinheiro rápido quem tá vendendo isso.<br><br>Programar exige muita prática e estudo, não tem atalhos ou fórmula mágica.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1283382140651089921">July 15, 2020</a></figcaption>
+</figure>
 
 ## Outro exemplo: Meus Vídeos
 
@@ -106,7 +111,12 @@ reflete no dia dia.
 Dessa forma consigo levar esse aprendizado prático pra minha vida pessoal e
 profissional.
 
-https://twitter.com/felipefialho_/status/1285599080983429120
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1285599080983429120">
+    <p>Conteúdo em vídeo é um desafio ENORME, não me sinto confortável falando com uma câmera, nem entendo de gravação e edição.<br><br>Não importa o tempo de xp, sempre vamos ser iniciantes ou estar inseguros com alguma coisa.<br><br>Aceitar isso é o melhor jeito de lidar com essas inseguranças.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1285599080983429120">July 21, 2020</a></figcaption>
+</figure>
 
 ## Mais um exemplo: Novas tecnologias
 
@@ -131,7 +141,12 @@ foi meu objetivo quando compilei desafios abertos das empresas no
 E é também por causa disso que bato tanto na tecla de criar projetos pessoais
 pra praticar as coisas que estão sendo estudadas.
 
-https://twitter.com/felipefialho_/status/1166696675412447233
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1166696675412447233">
+    <p>Tô trabalhando no meu site/blog, e mano, preciso repetir uma coisa que sempre falo:<br><br>- O melhor jeito de estudar é criando projetos pessoais<br><br>Mesmo me desafiando com várias tecnologias novas, tem sido extremamente produtivo e prazeroso.<br><br>Praticar é a melhor forma de aprender 😁</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1166696675412447233">August 28, 2019</a></figcaption>
+</figure>
 
 ## Alternando entre entender x aprender
 
@@ -155,7 +170,12 @@ Conforme vão surgindo novas necessidades no dia a dia, analiso se algumas dessa
 coisas que deixei no radar poderiam me ajudar a resolver esses novos problemas
 que surgiram.
 
-https://twitter.com/felipefialho_/status/1128269083940655106
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1128269083940655106">
+    <p>Não existe fórmula mágica.<br><br>O único jeito de desenvolver novas habilidades, seja programação, seja cozinhar, seja qualquer outra coisa que te interesse, é praticando.<br><br>Apenas praticando muito, aprendendo com erros e acertos, é possível ganhar experiência e melhorar cada vez mais.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1128269083940655106">May 14, 2019</a></figcaption>
+</figure>
 
 Dessa forma eu invisto meu tempo somente no aprendizado das coisas que realmente
 se mostram mais importantes no dia a dia. Por outro lado me mantenho sempre
@@ -177,7 +197,12 @@ pensar pra resolver os desafios que aparecem.
 
 Ou seja, ficamos estagnados (e pioramos).
 
-https://twitter.com/felipefialho_/status/1214515937136779264
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1214515937136779264">
+    <p>Não existe estagnação no mundo de desenvolvimento.<br><br>Isso porque quando a gente para de estudar e melhorar nossas habilidades técnicas e não técnicas, nós não ficamos estagnados.<br><br> - Nós pioramos</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1214515937136779264">January 7, 2020</a></figcaption>
+</figure>
 
 Quanto maior a quantidade de assuntos que nos interessam e que buscamos
 entender, melhor vai ser nosso leque de conhecimento se mais possibilidades

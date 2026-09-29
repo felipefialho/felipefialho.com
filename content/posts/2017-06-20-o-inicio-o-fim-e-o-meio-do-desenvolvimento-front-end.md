@@ -28,7 +28,12 @@ Não, não é “O Fim” de final, é “O Fim” de **finalidade**... afinal d
 
 Foi criado em 2009 e o [mundo nunca mais foi o mesmo](https://twitter.com/felipefialho_/status/872606926915481601).
 
-https://twitter.com/felipefialho_/status/872606926915481601
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/872606926915481601">
+    <p>De tempos em tempos acontecem pontos de ruptura que transformam toda a comunidade ao redor: <br><br>- O fogo é um caso<br>- O Node.js é outro<br><br>🤓</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/872606926915481601">June 8, 2017</a></figcaption>
+</figure>
 
 E não, eu não estava exagerando. O [Node.js](https://nodejs.org/en/) é um marco na história do desenvolvimento e transformou todo o ecossistema ao seu redor.
 
@@ -72,7 +77,12 @@ Mas ontem, hoje ou amanhã, a finalidade será sempre a mesma: **desenvolver ent
 
 E qual o meio para isso? [Sim, código](https://twitter.com/felipefialho_/status/861745079714799617).
 
-https://twitter.com/felipefialho_/status/861745079714799617
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/861745079714799617">
+    <p>A experiência do usuário é a coisa mais importante de um produto.<br><br>Código incrível + UX ruim = apenas masturbação mental do dev. 🙃</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/861745079714799617">May 9, 2017</a></figcaption>
+</figure>
 
 Você pode fazer um código extraordinário e ficar horas olhando para a tela impressionado com a criação, mas se o resultado desse código incrível for um produto sem relevância, ele vai servir só para alimentar seu próprio ego.
 

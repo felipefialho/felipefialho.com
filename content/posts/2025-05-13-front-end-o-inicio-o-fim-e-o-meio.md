@@ -38,7 +38,12 @@ O termo "web design" era o que mais se aproximava do que hoje entendemos como Fr
 
 Para se ter uma ideia, em 2011, meu cargo na carteira ainda era "Programador HTML Júnior" 😅
 
-https://twitter.com/felipefialho_/status/1321791394684510208
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1321791394684510208">
+    <p>Descobri que tenho um registro como &quot;Programador HTML&quot; na carteira de trabalho <a href="https://t.co/nn3SQm8UVT">pic.twitter.com/nn3SQm8UVT</a></p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1321791394684510208">October 29, 2020</a></figcaption>
+</figure>
 
 O termo "desenvolvedor Front-end" começou a se popularizar um pouco depois, talvez por volta de 2012.
 
@@ -70,7 +75,12 @@ Era um caos, mas eu gostava muito. Era um momento de muita inovação e criativi
 
 ### A Persistente Ilusão da Facilidade no Front-end
 
-https://twitter.com/felipefialho_/status/1891844705178058983
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1891844705178058983">
+    <p>Front-end costuma ser acessível pra quem tá estudando programação<br><br>Vc cria um HTML, um CSS e pronto, já dá pra ver resultados na hora<br><br>Isso cria a falsa impressão de que é fácil, mas não é bem assim. Com o tempo, o Front fica tão complexo quanto Back, só que de um jeito diferente</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1891844705178058983">February 18, 2025</a></figcaption>
+</figure>
 
 É curioso como, desde os primórdios da web, no tempo dos caçadores coletores, paira uma percepção de que o desenvolvimento Front-end é uma tarefa simples, quase intuitiva.
 
@@ -140,7 +150,12 @@ Para isso, é crucial dominar:
 
 Tudo isso pra no final ainda garantir que a aplicação funcione em diferentes navegadores, resoluções, conexões ruins e devices com recursos limitados.
 
-https://twitter.com/felipefialho_/status/1638518915092344834
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1638518915092344834">
+    <p>Desenvolvimento Front-end é simples, precisa saber pouca coisa:<br><br>- HTML: Semântica, SEO, Acessibilidade, etc<br>- CSS: Especificidade, Propriedades, Seletores, Grids, Animations, etc<br>- JS: Manipulação de DOM, Fetch API, Hoisting, Prototype, ES6+/ESNext, Async/Await, Promises, etc</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1638518915092344834">March 22, 2023</a></figcaption>
+</figure>
 
 ### O Futuro do Front-end na Era da IA: Uma Perspectiva Realista
 
@@ -154,7 +169,12 @@ Outra coisa que noto é que ser extremamente especialista, as vezes num único f
 
 Nunca vi muito sentido em se definir como "React Developer" ou "Vue Developer". Isso sempre me soou como uma limitação, como se a gente estivesse se colocando numa caixa.
 
-https://twitter.com/felipefialho_/status/1768277697174646943
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1768277697174646943">
+    <p>Evite ser<br><br>❌ React Developer<br>❌ Vue Developer<br><br>Prefira ser<br><br>✅ Front-End Developer<br>✅ Software Engineer<br><br>Não se limite numa tecnologia ou framework especifico, quanto mais flexibilidade melhor. Tecnologias podem morrer enquanto você vai seguir trampando como dev<br><br>Seja agnóstico</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1768277697174646943">March 14, 2024</a></figcaption>
+</figure>
 
 Isso começa a fazer ainda menos sentido agora, porque tá cada vez mais fácil transitar entre as tecnologias. O lance é aprender a base do Front-end conseguir se flexibilizar e se adaptar pra qualquer linguagem ou framework que aparecer.
 
@@ -174,7 +194,12 @@ Sabe aqueles desenvolvedores Flash que falei no começo? O que acha que acontece
 
 Eu diria que não, a maioria deles se adaptou e virou Front-end Developer, inclusive se aproveitando do conhecimento que já tinham de Flash e ActionScript pra criar animações incríveis com CSS e JavaScript.
 
-https://twitter.com/felipefialho_/status/1886809860479598840
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1886809860479598840">
+    <p>Tem uma característica marcante nos melhores devs que conheço<br><br>São total desenrolados<br><br>Não importa a demanda, sempre dão um jeito de resolver, mesmo fora da área de especialidade ou atuação<br><br>Se eu pudesse dar só uma dica pra quem tá começando em tech seria essa:<br><br>Seja desenrolado</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1886809860479598840">February 4, 2025</a></figcaption>
+</figure>
 
 Em resumo: O Front-end não vai sumir, mas segue evoluindo.
 

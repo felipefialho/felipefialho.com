@@ -10,7 +10,12 @@ tags: ['javascript', 'css', 'performance', 'web vitals']
 
 Performance é um dos fatores mais críticos para o sucesso de uma aplicação web. Uma aplicação lenta pode afetar a experiência do usuário e diminuir a taxa de conversão. Por isso, é importante que os desenvolvedores estejam sempre atentos à performance de suas aplicações e adotem boas práticas para garantir que elas sejam carregadas rapidamente e funcionem de forma eficiente.
 
-https://twitter.com/felipefialho_/status/1719320239731577255
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1719320239731577255">
+    <p>Sobre performance no Front-end é importante cuidar de coisas como:<br><br>- minificação/otimização<br>- tamanho de imagens<br>- code splitting<br>- lazy load<br>- cache<br>- etc<br><br>Também observe &quot;third-party scripts&quot;, principalmente injetados com GTM e afins. Podem estar silenciosamente drenando…</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1719320239731577255">October 31, 2023</a></figcaption>
+</figure>
 
 Performance é um assunto bastante abrangente e envolve diversos aspectos, como tempo de carregamento, tempo de resposta, uso de recursos, entre outros. Neste artigo, vamos abordar algumas práticas comuns para melhorar especialmente o tempo de carregamento de uma aplicação web.
 

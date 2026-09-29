@@ -95,7 +95,12 @@ Tentaria então entender porque são tidas como referências.
 
 E então me inspiraria para construir minha própria história.
 
-https://twitter.com/felipefialho_/status/1182639200820219905
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1182639200820219905">
+    <p>Sua evolução só deve ser comparada com a de uma pessoa: <br><br>- Você mesmo ontem<br><br>Ter outras pessoas como referências pode inspirar e abrir caminhos. Mas tente não se comparar com elas, pode fazer mal.<br><br>Somos universos com seus próprios acasos, histórias e contextos. Isso muda tudo.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1182639200820219905">October 11, 2019</a></figcaption>
+</figure>
 
 Isso porque cada pessoa é totalmente diferente entre si e apesar de achar muito
 importante ter inspirações, compararia minha evolução somente comigo mesmo
@@ -174,11 +179,21 @@ Então assim que estivesse totalmente confortável, cairia de cabeça em
 JavaScript, essa linguagem é poderosa, incrível e mudou (e continua mudando) o
 mundo de desenvolvimento.
 
-https://twitter.com/felipefialho_/status/1067383811615440896
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1067383811615440896">
+    <p>⚡ O desenvolvimento web pode ser dividido em dois períodos:<br><br>- A.N: Antes do Node.js<br>- D.N: Depois do Node.js<br><br>O Node.js está para web developers como o fogo está para a humanidade.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1067383811615440896">November 27, 2018</a></figcaption>
+</figure>
 
 ## 6. Melhoraria minhas soft skills
 
-https://twitter.com/felipefialho_/status/1191684813155160064
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1191684813155160064">
+    <p>Melhore as habilidades técnicas, mas não esqueça das soft skills:<br><br>- Trabalho em equipe<br>- Profissionalismo<br>- Comunicação<br>- Criatividade<br>- Etc<br><br>Soft skills são habilidades como quaisquer outras e podem ser aprimoradas. E sim, elas são tão importantes quanto sua capacidade técnica.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1191684813155160064">November 5, 2019</a></figcaption>
+</figure>
 
 Entenda como _soft skills_ todas suas habilidades comportamentais, emocionais e
 sociais.
@@ -305,7 +320,12 @@ intensos de estudo, o que é uma contradição: quanto mais você estuda e apren
 mais descobre que está longe de chegar em um estado que se considere bom
 profissional.
 
-https://twitter.com/felipefialho_/status/1014130865272705024
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1014130865272705024">
+    <p>Quanto mais eu aprender, mais coisas vou ter pra estudar e mais  vou perceber que pouco sei.<br><br>Paradoxo developer.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1014130865272705024">July 3, 2018</a></figcaption>
+</figure>
 
 É muito difícil lidar com isso, mas o que faria para me previnir desses
 problemas:
@@ -369,7 +389,12 @@ feliz.
 
 ## 15. Compartilharia meus conhecimentos
 
-https://twitter.com/felipefialho_/status/1175126276182396928
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1175126276182396928">
+    <p>Conhecimento retido é conhecimento perdido.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1175126276182396928">September 20, 2019</a></figcaption>
+</figure>
 
 Jamais deixaria que os resultados dos estudos, aprendizados que tive nos
 projetos ou os conhecimentos adquiridos, ficassem apenas dentro no meu cérebro.

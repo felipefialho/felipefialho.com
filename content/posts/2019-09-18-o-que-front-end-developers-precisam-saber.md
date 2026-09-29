@@ -113,7 +113,12 @@ versionamento de código e ela é extremamente poderosa.
 Importante também dizer que Git e Github são coisas diferentes, assim como Java
 e JavaScript.
 
-https://twitter.com/felipefialho_/status/1172208296213864448
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1172208296213864448">
+    <p>java !== javascript<br><br>git !== github</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1172208296213864448">September 12, 2019</a></figcaption>
+</figure>
 
 Muitas pessoas ainda fazem essa confusão, mas Git é a tecnologia para controle
 de versões. Github, Bitbucket, Gitlab e etc, são sites com interfaces visuais
@@ -122,7 +127,12 @@ por exemplo, também funciona como uma rede social de desenvolvimento.
 
 ## HTML, CSS e JavaScript
 
-https://twitter.com/felipefialho_/status/1146852062027767808
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1146852062027767808">
+    <p>Desenvolvimento Front-end, por baixo dos panos se resume em: <br><br>- HTML <br>- CSS <br>- JavaScript<br><br>Não ter essa base, seria tipo ser jogador(a) de futebol ⚽️, sem fundamentos básicos ou conhecer as regras do esporte.<br><br>Você pode até fazer uns gols, mas dificilmente vai ganhar os jogos. <a href="https://t.co/VP4URRjuta">https://t.co/VP4URRjuta</a></p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1146852062027767808">July 4, 2019</a></figcaption>
+</figure>
 
 Virou clichê, muitas pessoas falam para estudar a base (eu falo o tempo todo). E
 como estamos falando de desenvolvimento Web, por de trás do fantástico mundo dos
@@ -173,7 +183,12 @@ Isso seria impossível se eu não tivesse um bom conhecimento da base.
 
 ### Perfeito! Então só saber essa base basta? 😁
 
-https://twitter.com/felipefialho_/status/1045659621820694528
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1045659621820694528">
+    <p>“O que sabemos é uma gota, o que ignoramos é um oceano.” <br><br>Isaac Newton, discursando sobre desenvolvimento front-end</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1045659621820694528">September 28, 2018</a></figcaption>
+</figure>
 
 Existem outras coisas essenciais, e vou falar sobre algumas delas agora.
 
@@ -194,7 +209,12 @@ Essas tecnologias são as (re)evoluções de várias técnicas que já usávamos
 
 O mundo do desenvolvimento é cíclico.
 
-https://twitter.com/felipefialho_/status/1164506266712051713
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1164506266712051713">
+    <p>Frameworks estão para programação como a calculadora está para a matemática.<br><br>Facilita a vida, agiliza o trabalho e ajuda a evitar erros, mas não servem pra nada se você não souber que problema está resolvendo com eles.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1164506266712051713">August 22, 2019</a></figcaption>
+</figure>
 
 ### Outro bom exemplo, as libs de CSS-in-JS
 
@@ -271,7 +291,12 @@ aumentou muito com o advento de tecnologias como
 [Node.js](https://nodejs.org/en/) anos atrás e o
 [Serverless](https://serverless.com/) atualmente.
 
-https://twitter.com/felipefialho_/status/1135880180029898754
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1135880180029898754">
+    <p>É Front-end Developer e quer se aventurar com Back-end? <br>Indico a stack:<br><br>- Node.js + Serverless<br><br>Node é o JavaScript de sempre e com Serverless, você não precisa se preocupar com infraestrutura.<br><br>A curva de aprendizado tende a ser menor e pode dar confiança pra seguir em frente.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1135880180029898754">June 4, 2019</a></figcaption>
+</figure>
 
 **Mas então preciso ser Fullstack?** 😱
 
@@ -336,7 +361,12 @@ mental) e também nossa vida pessoal. Saber equilibrar tudo isso também é uma
 _soft skill_, e das mais importantes, se você não estiver bem consigo mesmo, não
 vai conseguir dar o seu melhor.
 
-https://twitter.com/felipefialho_/status/1022092350254968833
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1022092350254968833">
+    <p>A vida é tipo um &quot;The Sims&quot;, temos barras de satisfação em:<br><br>- Saúde<br>- Vida pessoal<br>- Vida profissional<br><br>Se uma delas diminuir, as outras duas serão afetadas e também vão diminuir. <br><br>A diferença é que não dá pra começar de novo se der ruim.<br><br>Bora se cuidar 👊</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1022092350254968833">July 25, 2018</a></figcaption>
+</figure>
 
 ## Roadmap de Desenvolvimento Front-end
 

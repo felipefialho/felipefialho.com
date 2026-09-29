@@ -13,7 +13,12 @@ Tempos atrás tive um celular furtado e além do prejuízo do aparelho, tive mui
 
 Na época criei uma thread do Twitter contando sobre o que aconteceu e muitas dicas de segurança foram compartilhadas
 
-https://twitter.com/felipefialho_/status/1490428784528474121
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1490428784528474121">
+    <p>Alerta: Protejam seus dados<br><br>Ontem tive o celular furtado por um maluco de bicicleta e foi só o começo do transtorno<br><br>Como tomou da minha mão, o aparelho tava desbloqueado, minutos depois já tinham alterado senha do Google e logado de outro celular pra olhar senhas salvas e etc</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1490428784528474121">February 6, 2022</a></figcaption>
+</figure>
 
 Nesse artigo vou compartilhar algumas coisas que podem ajudar a prevenir desastres caso aconteça com você. Bora lá?
 

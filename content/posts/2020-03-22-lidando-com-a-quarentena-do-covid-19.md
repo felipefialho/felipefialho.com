@@ -10,7 +10,12 @@ A última vez que escrevi por aqui foi em novembro, ou seja, cinco meses atrás.
 
 Até então, ninguém poderia prever o que viria pela frente dali em diante, nem os impactos que isso traria na economia mundial e nas nossas vidas.
 
-https://twitter.com/felipefialho_/status/1237358692632322049
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1237358692632322049">
+    <p>Um Peru de Ação de Graças, é alimentado por 1000 dias até ser morto.<br><br>Do ponto de vista do Peru, por base estatística, o dia 1001 seria como os outros 1000.<br><br>- O Peru é você na vida<br><br>Não acredite em gurus, analistas políticos-economicos ou projeções.<br><br>Ninguém prevê merda nenhuma.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1237358692632322049">March 10, 2020</a></figcaption>
+</figure>
 
 ## O Estoicismo e nossas vidas
 
@@ -22,13 +27,23 @@ Muito tempo sem sair de casa, sozinho(a) ou convivendo com as mesmas pessoas e l
 
 Alguma hora só a internet pode não ser suficiente.
 
-https://twitter.com/felipefialho_/status/1241523876640718848
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1241523876640718848">
+    <p>Pode ser que em algum momento da solidão da quarentena, vamos ter que enfrentar um grande inimigo:<br><br>- Nós mesmos<br><br>Mas dessa vez sem álcool, esportes, drogas, viagens, festas ou qualquer coisa que ajude a aliviar a dor.<br><br>Sério, cuide da sua saúde mental nesses tempos sombrios 💕</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1241523876640718848">March 22, 2020</a></figcaption>
+</figure>
 
 Buscar adaptação para continuar cuidando do nosso corpo e mente, torna-se essencial.
 
 Em janeiro, criei uma thread sobre Estoicismo:
 
-https://twitter.com/felipefialho_/status/1218152249173708801
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1218152249173708801">
+    <p>O que é Estoicismo e como pode ajudar na sua vida? <br><br>Faz séculos que a filosofia estoica tem sido utilizada por homens e mulheres na eterna busca de mais controle sobre suas ansiedades, medos e anseios.<br><br>Importante no cada vez mais imprevisível... mundo moderno.<br><br>[segue o fio] <a href="https://t.co/0PM0aH08dQ">pic.twitter.com/0PM0aH08dQ</a></p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1218152249173708801">January 17, 2020</a></figcaption>
+</figure>
 
 A filosofia estóica ensina que a forma que reagimos e agimos diante dos acontecimentos da vida é mais importante do que tentar ter controle sobre tudo.
 
@@ -155,7 +170,12 @@ Sabendo da importância do ócio e do efeito dele na criatividade, quem sabe id�
 
 ## Conclusão
 
-https://twitter.com/felipefialho_/status/1240407532209913859
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1240407532209913859">
+    <p>Vocês tem noção que estamos vivendo um momento histórico na nossa ~não-tão-avançada-assim-mas-fragil~ sociedade moderna?<br><br>Talvez tenha sido o evento com maior magnitude após o advento da internet.<br><br>E uma coisa me parece clara:<br><br>- O mundo não será o mesmo depois disso</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1240407532209913859">March 18, 2020</a></figcaption>
+</figure>
 
 Se tem uma coisa que seres humanos são bons é em **se adaptar**.
 

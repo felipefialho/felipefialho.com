@@ -255,7 +255,10 @@ essa funcionalidade para deixar os READMEs dos projetos ainda mais legais.
 Componente finalizado e como podem ver não precisei adicionar nenhuma linha de
 JavaScript 😜
 
-https://codepen.io/felipefialho/pen/yLgxdzR
+<figure class="embed embed-codepen">
+  <iframe src="https://codepen.io/felipefialho/embed/yLgxdzR?default-tab=result" title="Pen de @felipefialho no CodePen" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/yLgxdzR">Ver pen de @felipefialho no CodePen</a></figcaption>
+</figure>
 
 No
 [Can I Use podemos ver que essa é uma funcionalidade completamente estável](https://caniuse.com/?search=details)

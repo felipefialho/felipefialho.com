@@ -44,9 +44,15 @@ Vá para o Dribbble e procure um design que seja simples o bastante para você c
 
 Depois que você tiver escolhido um design, vá em frente e tente codificar no CodePen. Se você ficar travado, lembre-se que o [StackOverflow](http://stackoverflow.com) é seu amigo. Outra prática útil é ir em sites como [Medium](http://medium.com), [AirBnB](http://www.airbnb.com) e [Dropbox](http://www.dropbox.com), usando a ferramenta de inspeção do seu browser, para ver como eles conseguem alcançar diferentes layouts e estilos. Também dê uma olhada em algumas [pens no CodePen](http://codepen.io/pens). Peguei algumas referencias legais:
 
-https://codepen.io/cameronbaney/pen/gfjLJ
+<figure class="embed embed-codepen">
+  <iframe src="https://codepen.io/cameronbaney/embed/gfjLJ?default-tab=result" title="Pen de @cameronbaney no CodePen" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/cameronbaney/pen/gfjLJ">Ver pen de @cameronbaney no CodePen</a></figcaption>
+</figure>
 
-https://codepen.io/jonathanzwhite/pen/GZVKmE
+<figure class="embed embed-codepen">
+  <iframe src="https://codepen.io/jonathanzwhite/embed/GZVKmE?default-tab=result" title="Pen de @jonathanzwhite no CodePen" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/jonathanzwhite/pen/GZVKmE">Ver pen de @jonathanzwhite no CodePen</a></figcaption>
+</figure>
 
 Se sua versão ficar diferente da original, não se sinta desencorajado. Continue praticando com diferentes layouts e você vai notar melhorias a cada tentativa.
 

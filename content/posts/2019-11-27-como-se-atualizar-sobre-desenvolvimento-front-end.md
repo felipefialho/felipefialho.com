@@ -16,7 +16,12 @@ Apesar das dicas estarem levemente enviesadas para Desenvolvimento Front-end, po
 
 Sim, o mundo Developer é frenético, novas soluções, novos conceitos, novas ferramentas e novas bibliotecas surgem praticamente todos os dias.
 
-https://twitter.com/felipefialho_/status/1196913549005742082
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1196913549005742082">
+    <p>enquanto esse tweet você lia, uma nova lib js surgia</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1196913549005742082">November 19, 2019</a></figcaption>
+</figure>
 
 Apesar de curtir esse ritmo, existem alguns pontos negativos, como a dificuldade para se sentir atualizado e até uma certa [desmotivação](blog/a-motivacao-desmotivacional-no-mundo-do-desenvolvimento/) por conta da ansiedade que essa velocidade toda causa.
 
@@ -35,7 +40,12 @@ Por isso vale ler:
 
 ### Github
 
-https://twitter.com/felipefialho_/status/1073168175515295749
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1073168175515295749">
+    <p>Github é uma rede social como qualquer outra, mas voltada para o mundo developer, você pode:<br><br>- Seguir pessoas<br>- Ver as atividades delas<br>- Descobrir novas libs<br>- Ver tendências<br>- Participar dos fóruns (olá <a href="https://x.com/frontendbr">@frontendbr</a>  💙)<br>- E principalmente aprender muito<br><br>Faça uso, vale a pena.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1073168175515295749">December 13, 2018</a></figcaption>
+</figure>
 
 Como sempre digo: Github é uma rede social.
 
@@ -65,7 +75,12 @@ Outra vantagem é a quantidade de caracteres, já foi 140 e hoje é 280. O que �
 
 Um recurso bastante interessante é a possibilidade de criar _thread_, onde as pessoas aprofundam sobre determinado assunto através de vários tuites sequenciais, como quando dei 100 dicas sobre desenvolvimento Front-end (e depois virou um artigo que pode ser [lido aqui](blog/100-dicas-sobre-desenvolvimento-front-end/)).
 
-https://twitter.com/felipefialho_/status/1083160362642522112
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1083160362642522112">
+    <p>Vou entrar na brincadeira! 😂<br><br>1 RT = 1 dica rápida de front-end</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1083160362642522112">January 10, 2019</a></figcaption>
+</figure>
 
 Developers que geram conteúdo e criadores de projetos importantes, brasileiros e estrangeiros, geralmente estão no Twitter. Não vou passar uma lista porque não gosto muito de listas desse tipo, mas vale procurar profissionais que você gosta e acompanha-los por lá.
 
@@ -176,7 +191,12 @@ Isso porque todas as atividades dessas pessoas vão aparecer na sua timeline.
 
 Colocando como página inicial (do seu ambiente trabalho), você vai receber atualizações sem fazer muito esforço. Como citei anteriormente, sempre vale olhar o [Github Explore](https://github.com/explore).
 
-https://twitter.com/felipefialho_/status/1171397789521252352
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1171397789521252352">
+    <p>Você developer, sabe quando bate o tédio e você passa um tempão rolando a timeline no Facebook e Instagram?<br><br>- Tenta usar parte desse tempo pra navegar no Github 😁<br><br>Além de divertido, você vai conhecer novos projetos, descobrir novas pessoas e ter um panorama do mercado dev.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1171397789521252352">September 10, 2019</a></figcaption>
+</figure>
 
 Também costumo deixar o Github aberto, então quando termino uma task ou preciso relaxar, costumo dar uma navegada por lá.
 
@@ -210,7 +230,12 @@ Como disse, muita coisa nova sai todos os dias, o que significa que de tempos em
 
 É difícil fazer esse filtro inicialmente, muitas vezes boas idéias não se traduzem na adoção delas pelo mercado. O que faço então, é observar quais libs ou conceitos estão sendo mais comentadas, mesmo que ainda sejam _hypes_.
 
-https://twitter.com/felipefialho_/status/1146775281090347008
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1146775281090347008">
+    <p>Muita gente não gosta de hypes de desenvolvimento.<br><br>Sou apaixonado por eles, mesmo que demore para adotar em projetos reais.<br><br>Várias tecnologias consolidadas que usamos hoje, foram hypes no passado.<br><br>Hypes são essenciais nas constantes evoluções que tem rolado no mundo dev.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1146775281090347008">July 4, 2019</a></figcaption>
+</figure>
 
 Um bom exemplo é o Svelte, quando vi algumas pessoas dando _stars_ no Github, li superficialmente e gostei da proposta. Também dei _star_ e passei a acompanhar de longe o repositório.
 

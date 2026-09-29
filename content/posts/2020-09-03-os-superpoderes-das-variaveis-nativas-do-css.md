@@ -321,7 +321,10 @@ Recomendo que assistam no
 [video a parte que demonstro a manipulação com JavaScript](https://youtu.be/A_3Tm8iOxtA?t=527)
 e também podem testar no exemplo que deixei no Codepen:
 
-https://codepen.io/felipefialho/pen/ExKaOQr
+<figure class="embed embed-codepen">
+  <iframe src="https://codepen.io/felipefialho/embed/ExKaOQr?default-tab=result" title="Pen de @felipefialho no CodePen" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/ExKaOQr">Ver pen de @felipefialho no CodePen</a></figcaption>
+</figure>
 
 ### São agnósticas sobre a stack de CSS utilizada
 

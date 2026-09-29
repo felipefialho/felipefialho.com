@@ -180,7 +180,12 @@ O livro ainda entra num tema filosófico que me agrada bastante, que é
 **Estoicismo**. Inclusive tenho uma thread no Twitter falando sobre esse
 assunto:
 
-https://twitter.com/felipefialho_/status/1218152249173708801
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1218152249173708801">
+    <p>O que é Estoicismo e como pode ajudar na sua vida? <br><br>Faz séculos que a filosofia estoica tem sido utilizada por homens e mulheres na eterna busca de mais controle sobre suas ansiedades, medos e anseios.<br><br>Importante no cada vez mais imprevisível... mundo moderno.<br><br>[segue o fio] <a href="https://t.co/0PM0aH08dQ">pic.twitter.com/0PM0aH08dQ</a></p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1218152249173708801">January 17, 2020</a></figcaption>
+</figure>
 
 Na vida nós temos coisas que podemos controlar e outras que não podemos, uma das
 ideias centrais do Estoicismo é sempre focar nossas ações nas coisas que podemos

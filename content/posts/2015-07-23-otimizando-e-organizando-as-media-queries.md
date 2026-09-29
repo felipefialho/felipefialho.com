@@ -73,19 +73,28 @@ Vamos pensar na seguinte situação, que alias é muito comum: Você tem um menu
 
 Seria exatamente assim:
 
-https://codepen.io/felipefialho/pen/jPvdgp
+<figure class="embed embed-codepen">
+  <iframe src="https://codepen.io/felipefialho/embed/jPvdgp?default-tab=result" title="Pen de @felipefialho no CodePen" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/jPvdgp">Ver pen de @felipefialho no CodePen</a></figcaption>
+</figure>
 
 - Já na versão desktop, ele deve estar sempre visível, não deve estar fixo e os itens devem ser posicionados um ao lado do outro
 
 Então ele ficaria dessa forma:
 
-https://codepen.io/felipefialho/pen/LVJaEG/
+<figure class="embed embed-codepen">
+  <iframe src="https://codepen.io/felipefialho/embed/LVJaEG?default-tab=result" title="Pen de @felipefialho no CodePen" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/LVJaEG">Ver pen de @felipefialho no CodePen</a></figcaption>
+</figure>
 
 Observem que utilizo o mesmo HTML (Jade) em ambos os exemplos.
 
 ### Agora vamos juntar os dois códigos seguindo a minha metodologia
 
-https://codepen.io/felipefialho/pen/GJXeJv
+<figure class="embed embed-codepen">
+  <iframe src="https://codepen.io/felipefialho/embed/GJXeJv?default-tab=result" title="Pen de @felipefialho no CodePen" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/GJXeJv">Ver pen de @felipefialho no CodePen</a></figcaption>
+</figure>
 
 Observem bem o código.
 
