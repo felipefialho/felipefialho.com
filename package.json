@@ -22,6 +22,8 @@
     "build": "astro check && astro build && pagefind --site dist",
     "preview": "astro preview",
     "check": "astro check",
+    "test": "vitest run && TZ=Asia/Tokyo vitest run src/lib",
+    "test:e2e": "playwright test",
     "lint": "eslint . && stylelint \"src/**/*.{css,astro}\"",
     "lint:fix": "eslint . --fix && stylelint \"src/**/*.{css,astro}\" --fix"
   },
@@ -43,12 +45,14 @@
     "@fontsource-variable/newsreader": "^5.3.0",
     "@fontsource/mona-sans": "^5.3.0",
     "@fontsource/newsreader": "^5.3.0",
+    "@playwright/test": "^1.63.0",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@types/hast": "^3.0.5",
     "@types/node": "^26.6.3",
     "eslint": "^10.11.0",
     "eslint-plugin-astro": "^3.2.1",
     "globals": "^17.12.0",
+    "happy-dom": "^20.14.5",
     "pagefind": "^1.5.2",
     "postcss-html": "^2.0.0",
     "satteri": "^0.10.5",
@@ -56,6 +60,7 @@
     "stylelint-config-html": "^2.0.0",
     "stylelint-config-standard": "^40.0.0",
     "typescript": "~6.0.3",
-    "typescript-eslint": "^8.70.1"
+    "typescript-eslint": "^8.70.1",
+    "vitest": "^5.0.2"
   }
 }

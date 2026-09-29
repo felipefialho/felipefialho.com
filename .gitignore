@@ -1,6 +1,8 @@
 dist
 node_modules
 .astro
+test-results
+playwright-report
 .DS_Store
 .env
 .env.*
