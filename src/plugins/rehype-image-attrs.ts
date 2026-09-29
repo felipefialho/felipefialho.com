@@ -3,6 +3,26 @@ import { type Attrs, parseAttrs, serializeAttrs, stringAttr } from './utils/html
 import { publicImageSize, type Size } from './utils/image-size.ts';
 
 const IMG_TAG = /<img\b([^>]*?)\/?>/gi;
+
+// Netlify Image CDN serves AVIF/WebP at the requested width; legacy files stay untouched in the repo
+const USE_IMAGE_CDN = process.env.NETLIFY === 'true';
+const CDN_FORMATS = /\.(png|jpe?g|webp)$/i;
+const CDN_WIDTHS = [400, 700, 1000, 1400];
+const SIZES = '(min-width: 48rem) 44rem, 100vw';
+
+const cdnUrl = (src: string, width: number) => `/.netlify/images?url=${encodeURIComponent(src)}&w=${width}`;
+
+/** src/srcset/sizes pointing at the image CDN, never upscaling past the intrinsic width. */
+function responsiveSources(src: string, size: Size) {
+  if (!USE_IMAGE_CDN || !CDN_FORMATS.test(src)) return null;
+  const widths = CDN_WIDTHS.filter((width) => width < size.width);
+  const candidates = [...widths, Math.min(size.width, 1600)];
+  return {
+    src: cdnUrl(src, Math.min(size.width, 1000)),
+    srcset: candidates.map((width) => `${cdnUrl(src, width)} ${width}w`).join(', '),
+    sizes: SIZES,
+  };
+}
 const isNumeric = (value: unknown) => /^\d+$/.test(String(value));
 
 /** Fills the missing dimension(s) from the intrinsic size, keeping the ratio when one is authored. */
@@ -23,6 +43,8 @@ function enhanceAttrs(attrs: Attrs): void {
       const missing = completeSize(size, attrs.get('width'), attrs.get('height'));
       if (missing.width) attrs.set('width', String(missing.width));
       if (missing.height) attrs.set('height', String(missing.height));
+      const sources = responsiveSources(src, size);
+      if (sources) for (const [key, value] of Object.entries(sources)) attrs.set(key, value);
     }
   }
   attrs.set('loading', 'lazy');
@@ -42,6 +64,8 @@ export default function rehypeImageAttrs(): HastPluginDefinition {
             const missing = completeSize(size, width, height);
             if (missing.width) ctx.setProperty(node, 'width', missing.width);
             if (missing.height) ctx.setProperty(node, 'height', missing.height);
+            const sources = responsiveSources(src, size);
+            if (sources) for (const [key, value] of Object.entries(sources)) ctx.setProperty(node, key, value);
           }
         }
         ctx.setProperty(node, 'loading', 'lazy');
