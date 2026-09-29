@@ -46,7 +46,7 @@ const insideFigure = (html: string, offset: number) => {
 };
 
 function transformEmbeds(html: string, lang: Lang): string {
-  return html.replace(EMBED, (match: string, ...args: unknown[]) => {
+  return html.replace(EMBED, (_match: string, ...args: unknown[]) => {
     // Groups: 1 is the wrapped iframe attributes, 2 the bare iframe attributes
     const [wrappedAttrs, bareAttrs, offset] = args as [string | undefined, string | undefined, number];
     const wrapped = wrappedAttrs !== undefined;

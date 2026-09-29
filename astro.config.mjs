@@ -3,11 +3,14 @@ import { defineConfig, fontProviders } from 'astro/config';
 import { satteri } from '@astrojs/markdown-satteri';
 import { hastPlugins, mdastPlugins } from './src/plugins/index.ts';
 
-const fontsource = (pkg, file) => `@fontsource-variable/${pkg}/files/${file}`;
+// Subset and axis-pinned by scripts/subset-fonts.sh
+const font = (file) => `./src/assets/fonts/${file}`;
 
 export default defineConfig({
   site: 'https://felipefialho.com',
   trailingSlash: 'ignore',
+  // A few KB of CSS per page: inlining beats a render-blocking request
+  build: { inlineStylesheets: 'always' },
   i18n: {
     defaultLocale: 'pt',
     locales: ['pt', 'en'],
@@ -22,9 +25,9 @@ export default defineConfig({
       options: {
         variants: [
           {
-            src: [fontsource('mona-sans', 'mona-sans-latin-wdth-normal.woff2')],
-            weight: '200 900',
-            stretch: '75% 125%',
+            src: [font('mona-sans.woff2')],
+            weight: '400 800',
+            stretch: '100% 125%',
             style: 'normal',
           },
         ],
@@ -38,13 +41,13 @@ export default defineConfig({
       options: {
         variants: [
           {
-            src: [fontsource('newsreader', 'newsreader-latin-opsz-normal.woff2')],
-            weight: '200 800',
+            src: [font('newsreader.woff2')],
+            weight: '400 700',
             style: 'normal',
           },
           {
-            src: [fontsource('newsreader', 'newsreader-latin-opsz-italic.woff2')],
-            weight: '200 800',
+            src: [font('newsreader-italic.woff2')],
+            weight: '400 700',
             style: 'italic',
           },
         ],
@@ -54,7 +57,7 @@ export default defineConfig({
   markdown: {
     processor: satteri({ mdastPlugins, hastPlugins }),
     shikiConfig: {
-      themes: { light: 'github-light', dark: 'github-dark' },
+      themes: { light: 'github-light-high-contrast', dark: 'github-dark-high-contrast' },
       defaultColor: false,
       wrap: false,
     },
