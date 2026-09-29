@@ -26,6 +26,7 @@ const { Content } = home ? await render(home) : { Content: null };
       <span>{ui.roleFocus}</span>
     </p>
     {Content && <div class="intro reading"><Content /></div>}
+    <p><a class="text-link" href={localePath(lang, '/hi/')}>{ui.moreAbout}</a></p>
   </section>
 
   <section aria-labelledby="latest">

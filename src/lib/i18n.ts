@@ -10,6 +10,8 @@ const UI = {
   pt: {
     blog: 'Blog',
     lab: 'Lab',
+    about: 'Sobre',
+    moreAbout: 'Mais sobre mim',
     search: 'Buscar',
     searchPlaceholder: 'Buscar nos posts',
     theme: 'Alternar tema',
@@ -56,6 +58,8 @@ const UI = {
   en: {
     blog: 'Blog',
     lab: 'Lab',
+    about: 'About',
+    moreAbout: 'More about me',
     search: 'Search',
     searchPlaceholder: 'Search posts',
     theme: 'Toggle theme',
