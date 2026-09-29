@@ -8,9 +8,10 @@ export const getStaticPaths = (() => tagStaticPaths('en')) satisfies GetStaticPa
 interface Props {
   tag: string;
   posts: Post[];
+  alternate: string;
 }
 
-const { tag, posts } = Astro.props;
+const { tag, posts, alternate } = Astro.props;
 ---
 
-<ArchiveView lang="en" posts={posts} tag={tag} />
+<ArchiveView lang="en" posts={posts} tag={tag} alternate={alternate} />

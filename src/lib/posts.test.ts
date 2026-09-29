@@ -4,7 +4,7 @@ const getCollection = vi.hoisted(() => vi.fn());
 
 vi.mock('astro:content', () => ({ getCollection }));
 
-const { getAdjacent, getPosts, getRelated, getTagCounts, getTranslationMap, groupByYear, postPath, tagPath, tagSlug } =
+const { getAdjacent, getPosts, getRelated, getTagCounts, getTranslationMap, groupByYear, postPath, tagLabel, tagPath, tagSlug, tagStaticPaths } =
   await import('./posts.ts');
 
 type Post = Parameters<typeof getAdjacent>[0][number];
@@ -100,5 +100,28 @@ describe('getPosts and getTranslationMap', () => {
     const { ptToEn, enToPt } = await getTranslationMap();
     expect(ptToEn.get('pt-x')).toBe('en-x');
     expect(enToPt.get('en-x')).toBe('pt-x');
+  });
+});
+
+describe('tagLabel', () => {
+  it('uses the known display form and capitalizes the rest', () => {
+    expect(tagLabel('css')).toBe('CSS');
+    expect(tagLabel('javascript')).toBe('JavaScript');
+    expect(tagLabel('soft skills')).toBe('Soft skills');
+    expect(tagLabel('carreira')).toBe('Carreira');
+  });
+});
+
+describe('tagStaticPaths', () => {
+  it('links to the same tag in the other language, or to its blog index', async () => {
+    const withTags = (tags: string[]) => [1, 2, 3].map((n) => post(`p${n}-${tags[0]}`, `2020-0${n}-01T00:00:00Z`, tags));
+    getCollection.mockResolvedValue(withTags(['css']));
+    const same = await tagStaticPaths('pt');
+    expect(same[0].props.alternate).toBe('/en/blog/tags/css/');
+
+    getCollection.mockImplementation(async (name: string) => withTags(name === 'posts' ? ['carreira'] : ['career']));
+    const different = await tagStaticPaths('pt');
+    expect(different[0].props.alternate).toBe('/en/blog/');
+    expect(different[0].params.tag).toBe('carreira');
   });
 });

@@ -67,6 +67,23 @@ export const tagSlug = (tag: string) => {
   return slug || `tag-${[...tag].map((char) => char.codePointAt(0)?.toString(16)).join('-')}`;
 };
 
+// Tags whose display form is not a plain capitalized word
+const TAG_LABELS: Record<string, string> = {
+  ai: 'AI',
+  css: 'CSS',
+  'css-in-js': 'CSS-in-JS',
+  'css grid': 'CSS Grid',
+  github: 'GitHub',
+  html: 'HTML',
+  javascript: 'JavaScript',
+  spa: 'SPA',
+  typescript: 'TypeScript',
+  'web vitals': 'Web Vitals',
+};
+
+/** Display form of a normalized (lowercase) tag: "css" becomes "CSS", "soft skills" becomes "Soft skills". */
+export const tagLabel = (tag: string) => TAG_LABELS[tag] ?? `${tag.charAt(0).toUpperCase()}${tag.slice(1)}`;
+
 export const tagPath = (lang: Lang, tag: string) => localePath(lang, `/blog/tags/${tagSlug(tag)}/`);
 
 /** Groups posts by publication year, newest year first. */
@@ -99,11 +116,19 @@ export async function postStaticPaths(lang: Lang) {
 
 /** Static paths for the tag archives of a language. */
 export async function tagStaticPaths(lang: Lang) {
-  const posts = await getPosts(lang);
-  return [...getTagCounts(posts)]
-    .filter(([, count]) => count >= MIN_TAG_POSTS)
-    .map(([tag]) => ({
-      params: { tag: tagSlug(tag) },
-      props: { tag, posts: posts.filter((post) => post.data.tags.includes(tag)) },
-    }));
+  const otherLang: Lang = lang === 'pt' ? 'en' : 'pt';
+  const [posts, otherPosts] = await Promise.all([getPosts(lang), getPosts(otherLang)]);
+  const otherSlugs = new Set(tagsWithPage(otherPosts).map(tagSlug));
+  return tagsWithPage(posts).map((tag) => ({
+    params: { tag: tagSlug(tag) },
+    props: {
+      tag,
+      posts: posts.filter((post) => post.data.tags.includes(tag)),
+      // The same slug in the other language is the same topic; otherwise fall back to its blog index
+      alternate: otherSlugs.has(tagSlug(tag)) ? tagPath(otherLang, tag) : localePath(otherLang, '/blog/'),
+    },
+  }));
 }
+
+const tagsWithPage = (posts: Post[]) =>
+  [...getTagCounts(posts)].filter(([, count]) => count >= MIN_TAG_POSTS).map(([tag]) => tag);
