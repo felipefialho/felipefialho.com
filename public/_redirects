@@ -42,3 +42,6 @@ http://frontendbr-survey-2016.netlify.com/* http://survey.felipefialho.com/:spla
 /blog/2017/usando-o-terminal-do-linux-no-windows/* https://felipefialho.com/blog/usando-o-terminal-do-linux-no-windows/:splat 301!
 /blog/page/*  /blog/  301!
 /admin/*  /  301!
+/blog/2015-09-28-uma-reflexao-sobre-salarios-valor-hora-e-qualidade-de-vida/*  /blog/uma-reflexao-sobre-salarios-valor-hora-e-qualidade-de-vida/  301!
+/blog/que-front-end-developers-precisam-saber/*  /blog/o-que-front-end-developers-precisam-saber/  301!
+/blog/2024-03-07-evitando-as-armadilhas-do-cache/*  /blog/evitando-as-armadilhas-do-cache/  301!
