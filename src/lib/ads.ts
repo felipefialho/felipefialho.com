@@ -1,10 +1,7 @@
+import { AD_CLIENT } from './ad-config';
 import { CONSENT_ID, readConsent, watchGoogleCmp } from './consent';
 
-export const AD_CLIENT = 'ca-pub-8323225338546238';
-export const IN_ARTICLE_SLOT = '7323753803';
-export const END_SLOT = '5978347110';
-// No sidebar unit yet: AdSlot renders nothing while this is empty
-export const SIDEBAR_SLOT = '';
+export { AD_CLIENT, END_SLOT, IN_ARTICLE_SLOT, SIDEBAR_SLOT } from './ad-config';
 
 const TAG_SRC = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${AD_CLIENT}`;
 const INTERACTIONS = ['scroll', 'pointerdown', 'keydown', 'touchstart'] as const;
