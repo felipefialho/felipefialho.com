@@ -63,8 +63,7 @@ const speculationRules = { prefetch: [{ where: { href_matches: '/*' }, eagerness
     </script>
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonical} />
-    {noindex && <meta name="robots" content="noindex" />}
+    {noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonical} />}
     {alternate && <link rel="alternate" hreflang={HTML_LANG[lang]} href={canonical} />}
     {alternate && <link rel="alternate" hreflang={HTML_LANG[otherLang]} href={new URL(alternate, site).href} />}
     <link rel="alternate" type="application/rss+xml" title="Felipe Fialho" href={feed} />
