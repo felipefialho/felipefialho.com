@@ -30,11 +30,11 @@ const fontFile = (pkg: string, file: string) => readFile(nodeRequire.resolve(`@f
 const fonts = Promise.all([
   fontFile('mona-sans', 'mona-sans-latin-800-normal.woff'),
   fontFile('mona-sans', 'mona-sans-latin-500-normal.woff'),
-  fontFile('newsreader', 'newsreader-latin-400-normal.woff'),
-]).then(([bold, medium, serif]) => [
+  fontFile('mona-sans', 'mona-sans-latin-400-normal.woff'),
+]).then(([bold, medium, regular]) => [
   { name: 'Mona Sans', data: bold, weight: 800 as const, style: 'normal' as const },
   { name: 'Mona Sans', data: medium, weight: 500 as const, style: 'normal' as const },
-  { name: 'Newsreader', data: serif, weight: 400 as const, style: 'normal' as const },
+  { name: 'Mona Sans', data: regular, weight: 400 as const, style: 'normal' as const },
 ]);
 
 const escapeHtml = (text: string) =>
@@ -87,7 +87,7 @@ export async function renderOgImage({ title, meta }: OgInput): Promise<Buffer> {
         <div style="display:flex;width:160px;height:6px;margin-top:28px;background:${LINK}"></div>
       </div>
       <div style="display:flex;justify-content:space-between;align-items:flex-end;color:${MUTED}">
-        <div style="display:flex;font-family:'Newsreader';font-size:34px;font-weight:400">${escapeHtml(stripEmoji(meta))}</div>
+        <div style="display:flex;font-family:'Mona Sans';font-size:32px;font-weight:400">${escapeHtml(stripEmoji(meta))}</div>
         <div style="display:flex;font-size:28px;font-weight:500">felipefialho.com</div>
       </div>
     </div>

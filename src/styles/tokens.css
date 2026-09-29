@@ -10,7 +10,7 @@
   --wash: light-dark(#eeeef8, #1b1b2c);
   --rule: light-dark(#d9d9e6, #2a2a40);
 
-  --font-text: var(--font-newsreader), georgia, serif;
+  --font-text: var(--font-mona-sans), system-ui, sans-serif;
   --font-ui: var(--font-mona-sans), system-ui, sans-serif;
   --font-code: ui-monospace, 'SF Mono', 'Cascadia Code', menlo, consolas, monospace;
 
@@ -32,8 +32,8 @@
   --space-6: 4rem;
   --space-7: 6rem;
 
-  /* Reading column: 85 to 90 characters of Newsreader at 18px */
-  --measure: 44rem;
+  /* Reading column: about 72 characters of Mona Sans at 18px */
+  --measure: 40rem;
 
   /* Sticky ToC column; the post footer aligns to it */
   --toc-width: 14rem;

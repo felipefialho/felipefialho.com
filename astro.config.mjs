@@ -35,26 +35,6 @@ export default defineConfig({
         ],
       },
     },
-    {
-      provider: fontProviders.local(),
-      name: 'Newsreader',
-      cssVariable: '--font-newsreader',
-      fallbacks: ['serif'],
-      options: {
-        variants: [
-          {
-            src: [font('newsreader.woff2')],
-            weight: '400 700',
-            style: 'normal',
-          },
-          {
-            src: [font('newsreader-italic.woff2')],
-            weight: '400 700',
-            style: 'italic',
-          },
-        ],
-      },
-    },
   ],
   markdown: {
     processor: satteri({ mdastPlugins, hastPlugins }),

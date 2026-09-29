@@ -203,13 +203,7 @@ importers:
       '@fontsource-variable/mona-sans':
         specifier: ^5.3.0
         version: 5.3.0
-      '@fontsource-variable/newsreader':
-        specifier: ^5.3.0
-        version: 5.3.0
       '@fontsource/mona-sans':
-        specifier: ^5.3.0
-        version: 5.3.0
-      '@fontsource/newsreader':
         specifier: ^5.3.0
         version: 5.3.0
       '@playwright/test':
@@ -751,14 +745,8 @@ packages:
   '@fontsource-variable/mona-sans@5.3.0':
     resolution: {integrity: sha512-PkxRB3KI4z9Gjpk7vVqgO3GMSyQuOIIj4TaRDbvbcDj8SzWwI38jvLTQxJM/cTRorhcT7h8qjcllR+qjRtM/Fg==}
 
-  '@fontsource-variable/newsreader@5.3.0':
-    resolution: {integrity: sha512-rrzYi43qMpbzwuFtf9OkWH8sxAPVPcQQQEwXpPtwaKYeJ8yVg5aLs5kawmo1f2Q1t1M38TLmEKCkGVDsYwgdFw==}
-
   '@fontsource/mona-sans@5.3.0':
     resolution: {integrity: sha512-+K4yLnbbtNfYuR1Znpq9kWEJUYD1W0yQ5DhWde93lC3O8VHXtydoM0bHZBvO6DofIYEXgZlZU14A9yFClisL+g==}
-
-  '@fontsource/newsreader@5.3.0':
-    resolution: {integrity: sha512-AFR6ZKY89GNL+9qBI2P2+66NhD5bhOj/v6fsLnFYLM4E0JnMB1yKb+Ro8cA64i1hwAWoBfTq5CHJGWH1toLDkw==}
 
   '@humanfs/core@0.19.2':
     resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
@@ -3498,11 +3486,7 @@ snapshots:
 
   '@fontsource-variable/mona-sans@5.3.0': {}
 
-  '@fontsource-variable/newsreader@5.3.0': {}
-
   '@fontsource/mona-sans@5.3.0': {}
-
-  '@fontsource/newsreader@5.3.0': {}
 
   '@humanfs/core@0.19.2':
     dependencies:

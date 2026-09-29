@@ -111,7 +111,6 @@ const speculationRules = { prefetch: [{ where: { href_matches: '/*' }, eagerness
     {jsonLd && <script type="application/ld+json" set:html={serializeJsonLd(jsonLd)} />}
 
     <Font cssVariable="--font-mona-sans" preload />
-    <Font cssVariable="--font-newsreader" preload={[{ style: 'normal' }]} />
     <script type="speculationrules" is:inline set:html={JSON.stringify(speculationRules)} />
     <slot name="head" />
   </head>

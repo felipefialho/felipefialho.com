@@ -21,7 +21,7 @@ body {
   color: var(--ink);
   font-family: var(--font-text);
   font-size: var(--step-0);
-  font-optical-sizing: auto;
+  font-stretch: 100%;
   line-height: 1.65;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;

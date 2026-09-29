@@ -58,7 +58,7 @@ draft: false
 
 ## Fonts
 
-Mona Sans and Newsreader are subset to Latin with their variable axes pinned. To regenerate `src/assets/fonts`, run `scripts/subset-fonts.sh`. It needs `fonttools` and `brotli` (`pip install fonttools brotli`).
+Mona Sans is the only typeface, subset to Latin with its variable axes pinned. To regenerate `src/assets/fonts`, run `scripts/subset-fonts.sh`. It needs `fonttools` and `brotli` (`pip install fonttools brotli`).
 
 ## License
 
