@@ -10,7 +10,10 @@ const WRAPPED_DEPTHS = new Set(['h2', 'h3']);
 const hasLink = (nodes: ElementContent[]): boolean =>
   nodes.some((node) => node.type === 'element' && (node.tagName === 'a' || hasLink(node.children)));
 
-/** Gives every heading a unique id and wraps the content of h2/h3 in a link to it. */
+/**
+ * Gives every heading a unique id and wraps the content of h2/h3 in a link to it.
+ * A `# heading` in the body becomes h2: the page title is the only h1.
+ */
 export default function rehypeHeadings(): HastPluginDefinition {
   const used = new Map<string, number>();
 
@@ -27,12 +30,15 @@ export default function rehypeHeadings(): HastPluginDefinition {
       filter: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
       visit(node, ctx) {
         const id = uniqueSlug(ctx.textContent(node));
-        if (!WRAPPED_DEPTHS.has(node.tagName) || hasLink(node.children)) {
-          ctx.setProperty(node, 'id', id);
+        const tagName = node.tagName === 'h1' ? 'h2' : node.tagName;
+        if (!WRAPPED_DEPTHS.has(tagName) || hasLink(node.children)) {
+          if (tagName === node.tagName) ctx.setProperty(node, 'id', id);
+          else ctx.replaceNode(node, { ...node, tagName, properties: { ...node.properties, id } });
           return;
         }
         ctx.replaceNode(node, {
           ...node,
+          tagName,
           properties: { ...node.properties, id },
           children: [{ type: 'element', tagName: 'a', properties: { href: `#${id}` }, children: node.children }],
         });
