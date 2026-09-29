@@ -1,0 +1,97 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { localePath, type Lang } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const projects = await getCollection('lab');
+const copy = {
+  pt: {
+    title: 'Lab',
+    description: 'Projetos open source e experimentos de Felipe Fialho.',
+    lede: 'Projetos open source e experimentos que fiz ao longo dos anos. Alguns foram reconstruídos em 2026.',
+    code: 'Código',
+  },
+  en: {
+    title: 'Lab',
+    description: 'Open source projects and experiments by Felipe Fialho.',
+    lede: 'Open source projects and experiments I built over the years. Some were rebuilt in 2026.',
+    code: 'Code',
+  },
+}[lang];
+---
+
+<Base lang={lang} title={copy.title} description={copy.description} alternate={localePath(lang === 'pt' ? 'en' : 'pt', '/lab/')}>
+  <h1 class="page-title">{copy.title}</h1>
+  <p class="lede reading">{copy.lede}</p>
+  <ol class="projects">
+    {
+      projects.map(({ data }, index) => (
+        <li class="project">
+          <Image
+            src={data.image}
+            alt=""
+            width={480}
+            loading={index < 2 ? 'eager' : 'lazy'}
+            class="shot"
+          />
+          <div>
+            <h2>
+              <a href={data.url}>{data.title}</a>
+            </h2>
+            <p class="meta">{data.year}</p>
+            <p>{data.description[lang]}</p>
+            {data.repo && (
+              <p>
+                <a class="text-link" href={data.repo}>
+                  {copy.code}
+                </a>
+              </p>
+            )}
+          </div>
+        </li>
+      ))
+    }
+  </ol>
+</Base>
+
+<style>
+  .projects {
+    display: grid;
+    gap: var(--space-6);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .project {
+    display: grid;
+    gap: var(--space-4);
+    align-items: start;
+
+    @media (width >= 48rem) {
+      grid-template-columns: minmax(0, 20rem) minmax(0, var(--measure));
+    }
+
+    & h2 {
+      margin: 0 0 var(--space-1);
+      font-size: var(--step-2);
+    }
+
+    & p {
+      margin-block: 0 var(--space-2);
+    }
+  }
+
+  .shot {
+    inline-size: 100%;
+    block-size: auto;
+    border-radius: var(--radius);
+    background: var(--wash);
+  }
+</style>

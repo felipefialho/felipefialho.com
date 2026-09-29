@@ -1,0 +1,126 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { formatDate, isoDate, localePath, t, type Lang } from '../lib/i18n';
+import { getPosts, postPath } from '../lib/posts';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const ui = t(lang);
+const posts = (await getPosts(lang)).slice(0, 6);
+const lab = (await getCollection('lab')).slice(0, 3);
+const home = await getEntry('pages', `${lang}/home`);
+const { Content } = home ? await render(home) : { Content: null };
+
+const copy = {
+  pt: {
+    title: 'Felipe Fialho',
+    description: 'Blog de Felipe Fialho sobre front-end, CSS, carreira e AI, escrito desde 2013.',
+    hero: 'Escrevo sobre front-end, CSS, carreira e AI desde 2013.',
+    lab: 'No Lab',
+    allLab: 'Ver todos os projetos',
+  },
+  en: {
+    title: 'Felipe Fialho',
+    description: 'Felipe Fialho writes about front-end, CSS, career and AI, since 2013.',
+    hero: 'I write about front-end, CSS, career and AI. Since 2013.',
+    lab: 'From the Lab',
+    allLab: 'See every project',
+  },
+}[lang];
+---
+
+<Base lang={lang} title={copy.title} description={copy.description} alternate={localePath(lang === 'pt' ? 'en' : 'pt', '/')}>
+  <section class="hero">
+    <h1>{copy.hero}</h1>
+    {Content && <div class="intro reading"><Content /></div>}
+  </section>
+
+  <section aria-labelledby="latest">
+    <h2 id="latest" class="section-title">{ui.latest}</h2>
+    <ol class="post-list">
+      {
+        posts.map((post) => (
+          <li class="post-item">
+            <h3>
+              <a href={postPath(lang, post.id)} style={`view-transition-name: post-${post.id}`}>
+                {post.data.title}
+              </a>
+            </h3>
+            <p class="description">{post.data.description}</p>
+            <p class="meta">
+              <time datetime={isoDate(post.data.date)}>{formatDate(post.data.date, lang)}</time>
+            </p>
+          </li>
+        ))
+      }
+    </ol>
+    <p><a class="text-link" href={localePath(lang, '/blog/')}>{ui.allPosts}</a></p>
+  </section>
+
+  <section aria-labelledby="lab">
+    <h2 id="lab" class="section-title">{copy.lab}</h2>
+    <ul class="lab-list">
+      {
+        lab.map(({ data }) => (
+          <li>
+            <a href={data.url}>{data.title}</a>
+            <span>{data.description[lang]}</span>
+          </li>
+        ))
+      }
+    </ul>
+    <p><a class="text-link" href={localePath(lang, '/lab/')}>{copy.allLab}</a></p>
+  </section>
+</Base>
+
+<style>
+  .hero {
+    padding-block: var(--space-5) var(--space-4);
+
+    & h1 {
+      max-inline-size: 18ch;
+      margin: 0 0 var(--space-4);
+      font-size: var(--step-5);
+      font-stretch: 118%;
+      font-weight: 800;
+      line-height: 0.98;
+      letter-spacing: -0.035em;
+    }
+  }
+
+  .intro {
+    color: var(--muted);
+
+    & :global(p) {
+      margin-block: 0 var(--space-3);
+    }
+  }
+
+  .lab-list {
+    display: grid;
+    gap: var(--space-3);
+    margin: 0 0 var(--space-4);
+    padding: 0;
+    list-style: none;
+    max-inline-size: var(--measure);
+
+    & li {
+      display: grid;
+      gap: var(--space-1);
+    }
+
+    & a {
+      font-family: var(--font-ui);
+      font-size: var(--step-1);
+      font-weight: 600;
+    }
+
+    & span {
+      color: var(--muted);
+    }
+  }
+</style>

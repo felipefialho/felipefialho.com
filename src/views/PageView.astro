@@ -1,0 +1,46 @@
+---
+import { getEntry, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { formatDate, localePath, type Lang } from '../lib/i18n';
+import '../styles/prose.css';
+
+interface Props {
+  lang: Lang;
+  /** Entry name inside content/pages/<lang>/ */
+  page: 'hi' | 'policies';
+  noindex?: boolean;
+}
+
+const { lang, page, noindex } = Astro.props;
+const entry = await getEntry('pages', `${lang}/${page}`);
+if (!entry) throw new Error(`Missing content/pages/${lang}/${page}.md`);
+const { Content } = await render(entry);
+const updated = entry.data.updated;
+const otherLang: Lang = lang === 'pt' ? 'en' : 'pt';
+---
+
+<Base
+  lang={lang}
+  title={entry.data.title}
+  description={entry.data.description ?? entry.data.title}
+  alternate={localePath(otherLang, `/${page}/`)}
+  noindex={noindex}
+>
+  <h1 class="page-title">{entry.data.title}</h1>
+  {
+    updated && (
+      <p class="meta">
+        {lang === 'pt' ? 'Atualizada em' : 'Last updated'} {formatDate(updated, lang)}
+      </p>
+    )
+  }
+  <div class="prose">
+    <Content />
+  </div>
+</Base>
+
+<style>
+  .meta {
+    margin-block: calc(-1 * var(--space-3)) var(--space-5);
+  }
+</style>
