@@ -1,23 +1,65 @@
-# Felipe Fialho - Personal website
+# felipefialho.com
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5fdb28bb-8fc2-4fe5-93fd-aaaedec9afba/deploy-status)](https://app.netlify.com/sites/sad-curie-231a50/deploys)
+[![license](https://img.shields.io/github/license/felipefialho/felipefialho.com.svg)](./LICENSE)
 
-[Access it](http://www.felipefialho.com/)
+> My personal website and blog, writing about front-end since 2013.
 
-This project uses Gatsby (React), GraphQL, Styled Components, Algolia Instant Search and Netlify CMS.
+**[felipefialho.com](https://felipefialho.com)**
 
-> [I wrote a blog post talking about this project](https://www.felipefialho.com/blog/como-foi-desenvolver-meu-novo-blog-usando-o-gatsbyjs/) (In portuguese 🇧🇷)
+Posts are written in Portuguese, with some translated to English under `/en/`. The site is static, fast and mostly plain HTML and CSS.
 
-Maybe you want to read about them:
+## Stack
 
-- [Gatsby](https://www.gatsbyjs.org/)
-- [GraphQL](https://graphql.org/)
-- [Styled Components](https://www.styled-components.com/)
-- [Algolia Instant Search](https://www.algolia.com/products/instantsearch/)
-- [Netlify CMS](https://www.netlifycms.org/)
+- [Astro](https://astro.build/) 7 with TypeScript and plain CSS
+- Markdown processed by Sätteri, with local plugins in `src/plugins` (embeds, image attributes, external links, heading anchors, reading time, in-article ads)
+- [Pagefind](https://pagefind.app/) for search
+- Build-time Open Graph cards with satori and sharp
+- LGPD consent banner with Consent Mode v2: Google Analytics 4 loads only after consent, AdSense is lazy-loaded and personalized only with consent
+- [Netlify](https://www.netlify.com/) for hosting, with the Image CDN serving legacy post images
 
-For build media queries uses [styled-media-query](https://github.com/morajabi/styled-media-query) with some help from [gatsby-plugin-transition-link](https://www.gatsbyjs.org/packages/gatsby-plugin-transition-link/) for animations and [gatsby-image](https://www.gatsbyjs.org/packages/gatsby-image/) for responsive images.
+## Getting Started
 
-### Code Standarts
+Requires the Node.js version in `.nvmrc` and [pnpm](https://pnpm.io/).
 
-This project also uses [Husky](https://github.com/typicode/husky) to prevent commit and push messy and wrong code.
+```sh
+# install dependencies
+$ pnpm install
+
+# Run the project
+$ pnpm dev
+```
+
+### Tasks
+
+- `pnpm dev`: start the dev server
+- `pnpm build`: type-check, build to `dist` and index the site for search
+- `pnpm preview`: serve the production build locally
+- `pnpm lint`: lint scripts and styles
+- `pnpm lint:fix`: fix lint errors automatically
+
+Search only works after a build, because Pagefind indexes the generated `dist`. Run `pnpm build && pnpm preview` to try it.
+
+## Writing a post
+
+Create a file at `content/posts/YYYY-MM-DD-slug.md`, or a folder at `content/posts/YYYY-MM-DD-slug/index.md` to keep images next to the post. The URL drops the date prefix, so both become `/blog/slug/`.
+
+```md
+---
+title: Post title
+date: 2026-10-01
+description: One sentence used in listings and meta tags.
+tags: [css, front-end]
+draft: false
+---
+```
+
+- `tags` and `draft` are optional, `draft` defaults to `false`
+- English translations go in `content/posts-en/` with the same frontmatter plus `translationOf: <pt-slug>`
+
+## Fonts
+
+Mona Sans and Newsreader are subset to Latin with their variable axes pinned. To regenerate `src/assets/fonts`, run `scripts/subset-fonts.sh`. It needs `fonttools` and `brotli` (`pip install fonttools brotli`).
+
+## License
+
+GNU General Public License v3.0 © [Felipe Fialho](https://www.linkedin.com/in/felipefialho/)
