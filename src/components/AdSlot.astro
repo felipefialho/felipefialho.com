@@ -1,5 +1,5 @@
 ---
-import { END_SLOT, SIDEBAR_SLOT } from '../lib/ads';
+import { END_SLOT, SIDEBAR_SIZE, SIDEBAR_SLOT } from '../lib/ads';
 import { t, type Lang } from '../lib/i18n';
 
 interface Props {
@@ -9,6 +9,7 @@ interface Props {
 
 const { kind, lang } = Astro.props;
 const slot = kind === 'end' ? END_SLOT : SIDEBAR_SLOT;
+const isSidebar = kind === 'sidebar';
 ---
 
 {
@@ -16,9 +17,11 @@ const slot = kind === 'end' ? END_SLOT : SIDEBAR_SLOT;
     <aside
       class:list={['ad', `ad-${kind}`]}
       data-ad-slot={slot}
-      data-ad-format="auto"
+      data-ad-format={isSidebar ? undefined : 'auto'}
+      data-ad-width={isSidebar ? SIDEBAR_SIZE.width : undefined}
+      data-ad-height={isSidebar ? SIDEBAR_SIZE.height : undefined}
       data-pagefind-ignore
-      data-full-width-responsive={kind === 'end' ? 'true' : undefined}
+      data-full-width-responsive={isSidebar ? undefined : 'true'}
       aria-label={t(lang).ad}
     ></aside>
   )

@@ -1,7 +1,7 @@
 import { AD_CLIENT } from './ad-config';
 import { CONSENT_ID, readConsent, watchGoogleCmp } from './consent';
 
-export { AD_CLIENT, END_SLOT, IN_ARTICLE_SLOT, SIDEBAR_SLOT } from './ad-config';
+export { AD_CLIENT, END_SLOT, IN_ARTICLE_SLOT, SIDEBAR_SIZE, SIDEBAR_SLOT } from './ad-config';
 
 const TAG_SRC = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${AD_CLIENT}`;
 const INTERACTIONS = ['scroll', 'pointerdown', 'keydown', 'touchstart'] as const;
@@ -29,7 +29,7 @@ function injectTag(queue: AdsQueue): void {
 }
 
 function fill(slot: HTMLElement): void {
-  const { adSlot, adFormat, adLayout, fullWidthResponsive } = slot.dataset;
+  const { adSlot, adFormat, adLayout, fullWidthResponsive, adWidth, adHeight } = slot.dataset;
   if (!adSlot || slot.querySelector('ins.adsbygoogle')) return;
 
   const queue = (window.adsbygoogle ??= []);
@@ -44,6 +44,8 @@ function fill(slot: HTMLElement): void {
   if (adLayout) ins.dataset.adLayout = adLayout;
   if (fullWidthResponsive) ins.dataset.fullWidthResponsive = fullWidthResponsive;
   if (adLayout === 'in-article') ins.style.textAlign = 'center';
+  // Fixed-size units take explicit dimensions instead of a responsive format
+  if (adWidth && adHeight) Object.assign(ins.style, { display: 'inline-block', width: `${adWidth}px`, height: `${adHeight}px` });
   if (!import.meta.env.PROD) ins.dataset.adtest = 'on';
 
   slot.append(ins);
