@@ -14,48 +14,30 @@ const { older, newer } = getAdjacent(posts, post.id);
 const related = getRelated(posts, post);
 const pix = 'hi@felipefialho.com';
 
-const copy = {
-  pt: {
-    support: 'Curtiu o post? Me paga um café',
-    pixLabel: 'Chave Pix',
-    copy: 'Copiar',
-    copied: 'Copiado',
-    sponsors: 'Apoiar no GitHub Sponsors',
-    fix: 'Achou um erro? O blog é open source,',
-    fixLink: 'edite o post no GitHub',
-  },
-  en: {
-    support: 'Enjoyed the post? Buy me a coffee',
-    pixLabel: 'Pix key (Brazil)',
-    copy: 'Copy',
-    copied: 'Copied',
-    sponsors: 'Sponsor on GitHub',
-    fix: 'Found a mistake? The blog is open source,',
-    fixLink: 'edit the post on GitHub',
-  },
-}[lang];
-
+// filePath is relative to the repo root; fall back to the folder if the loader omits it
+const repoUrl = 'https://github.com/felipefialho/felipefialho.com';
 const sourceDir = lang === 'pt' ? 'posts' : 'posts-en';
-const editUrl = `https://github.com/felipefialho/felipefialho.com/tree/main/content/${sourceDir}`;
+const editUrl = post.filePath ? `${repoUrl}/blob/main/${post.filePath}` : `${repoUrl}/tree/main/content/${sourceDir}`;
 ---
 
 <footer class="post-footer">
   <section class="support" aria-labelledby="support-title">
-    <h2 id="support-title">{copy.support}</h2>
+    <h2 id="support-title">{ui.supportPost}</h2>
     <div class="support-actions">
       <p class="pix">
-        <span>{copy.pixLabel}</span>
+        <span>{ui.pixLabel}</span>
         <code>{pix}</code>
-        <button type="button" data-copy={pix} data-copied={copy.copied}>{copy.copy}</button>
+        <button type="button" data-copy={pix} data-copied={ui.copied} data-failed={ui.copyFailed}>{ui.copy}</button>
+        <span class="visually-hidden" role="status" data-copy-status></span>
       </p>
-      <a class="sponsor" href="https://github.com/sponsors/felipefialho" data-track="sponsor_click">{copy.sponsors}</a>
+      <a class="sponsor" href="https://github.com/sponsors/felipefialho" data-track="sponsor_click">{ui.sponsors}</a>
     </div>
-    <p class="fix">{copy.fix} <a href={editUrl}>{copy.fixLink}</a>.</p>
+    <p class="fix">{ui.fix} <a href={editUrl}>{ui.fixLink}</a>.</p>
   </section>
 
   {
     (older || newer) && (
-      <nav class="adjacent" aria-label={lang === 'pt' ? 'Posts vizinhos' : 'Adjacent posts'}>
+      <nav class="adjacent" aria-label={ui.adjacentPosts}>
         {older && (
           <a href={postPath(lang, older.id)} rel="prev">
             <span>{ui.previous}</span>
@@ -96,17 +78,28 @@ const editUrl = `https://github.com/felipefialho/felipefialho.com/tree/main/cont
 </footer>
 
 <script>
+  const RESET_MS = 2000;
+
   document.querySelectorAll<HTMLButtonElement>('button[data-copy]').forEach((button) => {
     button.addEventListener('click', async () => {
-      const { copy = '', copied = '' } = button.dataset;
+      const { copy = '', copied = '', failed = '' } = button.dataset;
+      const status = button.parentElement?.querySelector<HTMLElement>('[data-copy-status]');
       const label = button.textContent;
+      const announce = (message: string) => {
+        if (status) status.textContent = message;
+        setTimeout(() => {
+          if (status) status.textContent = '';
+        }, RESET_MS);
+      };
       try {
         await navigator.clipboard.writeText(copy);
         button.textContent = copied;
-        setTimeout(() => (button.textContent = label), 2000);
+        setTimeout(() => (button.textContent = label), RESET_MS);
+        announce(copied);
         window.track?.('pix_copy');
       } catch {
         // Clipboard denied: the key stays visible to copy by hand
+        announce(failed);
       }
     });
   });
@@ -122,7 +115,7 @@ const editUrl = `https://github.com/felipefialho/felipefialho.com/tree/main/cont
     margin-block-start: var(--space-6);
 
     @media (width >= 80rem) {
-      margin-inline-start: calc(14rem + var(--space-5));
+      margin-inline-start: calc(var(--toc-width) + var(--space-5));
     }
   }
 

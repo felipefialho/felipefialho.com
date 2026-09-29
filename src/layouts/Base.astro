@@ -5,7 +5,7 @@ import ConsentHead from '../components/ConsentHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import SearchDialog from '../components/SearchDialog.astro';
-import { HTML_LANG, OG_LOCALE, localePath, t, type Lang } from '../lib/i18n';
+import { HTML_LANG, OG_LOCALE, SITE_NAME, localePath, t, type Lang } from '../lib/i18n';
 import '../styles/tokens.css';
 import '../styles/base.css';
 import '../styles/layout.css';
@@ -17,7 +17,7 @@ interface Props {
   /** Site path of the social card, e.g. /og/slug.jpg */
   image?: string;
   type?: 'website' | 'article';
-  /** Same page in the other language, when it exists */
+  /** Site path of the same page in the other language; omit when there is none */
   alternate?: string;
   publishedTime?: Date;
   tags?: string[];
@@ -42,7 +42,10 @@ const site = Astro.site!;
 const canonical = new URL(Astro.url.pathname, site).href;
 const imageUrl = new URL(image, site).href;
 const otherLang: Lang = lang === 'pt' ? 'en' : 'pt';
-const fullTitle = title === 'Felipe Fialho' ? title : `${title} | Felipe Fialho`;
+const fullTitle = title === SITE_NAME ? title : `${title} | ${SITE_NAME}`;
+const alternateUrl = alternate ? new URL(alternate, site).href : undefined;
+// x-default points at the PT page, whichever language this one is
+const defaultUrl = lang === 'pt' ? canonical : alternateUrl;
 const feed = localePath(lang, '/feed.xml');
 const speculationRules = { prefetch: [{ where: { href_matches: '/*' }, eagerness: 'moderate' }] };
 ---
@@ -64,9 +67,16 @@ const speculationRules = { prefetch: [{ where: { href_matches: '/*' }, eagerness
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     {noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonical} />}
-    {alternate && <link rel="alternate" hreflang={HTML_LANG[lang]} href={canonical} />}
-    {alternate && <link rel="alternate" hreflang={HTML_LANG[otherLang]} href={new URL(alternate, site).href} />}
-    <link rel="alternate" type="application/rss+xml" title="Felipe Fialho" href={feed} />
+    {
+      alternateUrl && (
+        <>
+          <link rel="alternate" hreflang={HTML_LANG[lang]} href={canonical} />
+          <link rel="alternate" hreflang={HTML_LANG[otherLang]} href={alternateUrl} />
+          <link rel="alternate" hreflang="x-default" href={defaultUrl} />
+        </>
+      )
+    }
+    <link rel="alternate" type="application/rss+xml" title={t(lang).feedTitle} href={feed} />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -74,7 +84,7 @@ const speculationRules = { prefetch: [{ where: { href_matches: '/*' }, eagerness
     <meta name="theme-color" content="#0f0f1a" media="(prefers-color-scheme: dark)" />
 
     <meta property="og:type" content={type} />
-    <meta property="og:site_name" content="Felipe Fialho" />
+    <meta property="og:site_name" content={SITE_NAME} />
     <meta property="og:locale" content={OG_LOCALE[lang]} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />

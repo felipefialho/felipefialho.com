@@ -1,5 +1,5 @@
 ---
-import { localePath, t, type Lang } from '../lib/i18n';
+import { HTML_LANG, localePath, t, type Lang } from '../lib/i18n';
 
 interface Props {
   lang: Lang;
@@ -10,7 +10,14 @@ const { lang, alternate } = Astro.props;
 const ui = t(lang);
 const otherLang: Lang = lang === 'pt' ? 'en' : 'pt';
 const langHref = alternate ?? localePath(otherLang, '/');
-const path = Astro.url.pathname;
+const withSlash = (value: string) => (value.endsWith('/') ? value : `${value}/`);
+const path = withSlash(Astro.url.pathname);
+
+// "page" on the exact route, "true" for pages inside the section (e.g. a post under /blog/)
+const currentState = (href: string) => {
+  if (path === href) return 'page';
+  return path.startsWith(href) ? 'true' : undefined;
+};
 
 const nav = [
   { href: localePath(lang, '/blog/'), label: ui.blog },
@@ -21,12 +28,12 @@ const nav = [
 
 <header class="site-header page">
   <a class="wordmark" href={localePath(lang, '/')}>felipe fialho</a>
-  <nav class="site-nav" aria-label={lang === 'pt' ? 'Principal' : 'Main'}>
+  <nav class="site-nav" aria-label={ui.mainNav}>
     <ul>
       {
         nav.map(({ href, label }) => (
           <li>
-            <a href={href} aria-current={path.startsWith(href) ? 'page' : undefined}>
+            <a href={href} aria-current={currentState(href)}>
               {label}
             </a>
           </li>
@@ -47,8 +54,8 @@ const nav = [
         <path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"></path>
       </svg>
     </button>
-    <a class="lang-link" href={langHref} hreflang={otherLang === 'pt' ? 'pt-BR' : 'en'} lang={otherLang === 'pt' ? 'pt-BR' : 'en'}>
-      {otherLang === 'pt' ? 'PT' : 'EN'}
+    <a class="lang-link" href={langHref} hreflang={HTML_LANG[otherLang]} lang={HTML_LANG[otherLang]} aria-label={ui.switchLang}>
+      {otherLang.toUpperCase()}
     </a>
   </div>
 </header>
@@ -70,10 +77,13 @@ const nav = [
 
   // Invoker commands fallback for browsers without `command` support
   if (!('command' in HTMLButtonElement.prototype)) {
-    document.querySelectorAll<HTMLButtonElement>('button[commandfor][command="show-modal"]').forEach((button) => {
+    document.querySelectorAll<HTMLButtonElement>('button[commandfor][command]').forEach((button) => {
       button.addEventListener('click', () => {
         const target = document.getElementById(button.getAttribute('commandfor') ?? '');
-        if (target instanceof HTMLDialogElement) target.showModal();
+        if (!(target instanceof HTMLDialogElement)) return;
+        const command = button.getAttribute('command');
+        if (command === 'show-modal') target.showModal();
+        if (command === 'close') target.close();
       });
     });
   }
@@ -129,7 +139,7 @@ const nav = [
       text-decoration: none;
 
       &:hover,
-      &[aria-current='page'] {
+      &[aria-current] {
         text-decoration: underline;
         text-decoration-color: var(--link);
       }

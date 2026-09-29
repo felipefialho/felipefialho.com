@@ -10,7 +10,6 @@ const ui = t(lang);
 
 const copy = {
   pt: {
-    label: 'Buscar nos posts',
     unavailable: 'A busca só existe no site publicado. Rode "pnpm build" para gerar o índice.',
     strings: {
       placeholder: ui.searchPlaceholder,
@@ -24,7 +23,6 @@ const copy = {
     },
   },
   en: {
-    label: 'Search posts',
     unavailable: 'Search only works on the built site. Run "pnpm build" to generate the index.',
     strings: {
       placeholder: ui.searchPlaceholder,
@@ -44,7 +42,7 @@ const copy = {
   id="search"
   class="search-dialog"
   closedby="any"
-  aria-label={copy.label}
+  aria-label={ui.searchPlaceholder}
   data-translations={JSON.stringify(copy.strings)}
   data-unavailable={copy.unavailable}
 >
@@ -92,26 +90,17 @@ const copy = {
   const TRACK_DELAY_MS = 1000;
   const MIN_TERM_LENGTH = 2;
 
-  // The Pagefind bundle only exists after `pagefind --site dist`, never in dev
-  const hasIndex = async () => {
-    try {
-      const response = await fetch('/pagefind/pagefind.js', { method: 'HEAD' });
-      return response.ok;
-    } catch {
-      return false;
-    }
-  };
-
   const mountUi = async (host: HTMLDialogElement) => {
-    if (!(await hasIndex())) {
+    // The bundle only exists after `pagefind --site dist`, never in dev: a load error means no index
+    try {
+      await Promise.all([loadAsset('link', '/pagefind/pagefind-ui.css'), loadAsset('script', '/pagefind/pagefind-ui.js')]);
+    } catch {
       if (status) {
         status.textContent = host.dataset.unavailable ?? '';
         status.hidden = false;
       }
       return;
     }
-
-    await Promise.all([loadAsset('link', '/pagefind/pagefind-ui.css'), loadAsset('script', '/pagefind/pagefind-ui.js')]);
     if (!window.PagefindUI) return;
 
     new window.PagefindUI({
