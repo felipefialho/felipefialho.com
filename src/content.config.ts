@@ -1,6 +1,7 @@
 import { defineCollection } from 'astro:content';
 import { file, glob } from 'astro/loaders';
 import { z } from 'astro/zod';
+import { utcDate } from './lib/utc-date';
 
 // Tags written inconsistently over 13 years collapse into one spelling
 const TAG_ALIASES: Record<string, string> = {
@@ -19,14 +20,6 @@ const slugFromPath = ({ entry }: { entry: string }) =>
     .replace(/\/index\.mdx?$/, '')
     .replace(/\.mdx?$/, '')
     .replace(/^\d{4}-\d{2}-\d{2}-/, '');
-
-// Quoted dates without an offset ('2019-09-05 06:46:38') are read as UTC, like unquoted YAML timestamps,
-// so the rendered day never depends on the build machine's timezone
-const utcDate = z.preprocess((value) => {
-  if (typeof value !== 'string' || /(Z|[+-]\d{2}:?\d{2})$/.test(value.trim())) return value;
-  const [day, time = '00:00:00'] = value.trim().split(/[ T]/);
-  return `${day}T${time}Z`;
-}, z.coerce.date());
 
 const postSchema = z.object({
   title: z.string(),
