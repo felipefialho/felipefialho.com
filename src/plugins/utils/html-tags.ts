@@ -1,3 +1,6 @@
+/** Capturing pattern for the attribute source of a start tag: a `>` inside a quoted value does not end it. */
+export const TAG_ATTRS = '((?:[^>"\']|"[^"]*"|\'[^\']*\')*?)';
+
 export type Attrs = Map<string, string | true>;
 
 const ATTR = /([^\s"'<>/=]+)(?:\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'=<>`]+)))?/g;
@@ -17,13 +20,15 @@ export const escapeAttr = (value: string) => value.replaceAll('&', '&amp;').repl
 export const escapeHtml = (value: string) =>
   value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 
+const NAMED_ENTITIES: Record<string, string> = { quot: '"', apos: '\'', lt: '<', gt: '>', amp: '&' };
+
+/** Decodes named (quot, apos, lt, gt, amp) and numeric entities in a single pass, so `&amp;lt;` becomes `&lt;`. */
 export const decodeEntities = (value: string) =>
-  value
-    .replaceAll('&quot;', '"')
-    .replaceAll('&#39;', '\'')
-    .replaceAll('&lt;', '<')
-    .replaceAll('&gt;', '>')
-    .replaceAll('&amp;', '&');
+  value.replace(/&(?:#(\d+)|#x([\da-f]+)|(quot|apos|lt|gt|amp));/gi, (match, decimal?: string, hex?: string, name?: string) => {
+    if (name) return NAMED_ENTITIES[name.toLowerCase()];
+    const codePoint = decimal ? Number(decimal) : Number.parseInt(hex ?? '', 16);
+    return codePoint <= 0x10ffff ? String.fromCodePoint(codePoint) : match;
+  });
 
 /** Serializes attributes; string values are taken as already escaped unless `escape` is set. */
 export function serializeAttrs(attrs: Attrs, escape = false): string {

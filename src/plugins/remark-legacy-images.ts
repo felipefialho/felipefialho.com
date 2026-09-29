@@ -1,10 +1,11 @@
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import type { MdastPluginDefinition, PluginFactoryContext } from 'satteri';
+import { TAG_ATTRS } from './utils/html-tags.ts';
 import { POST_ASSETS_DIR, PUBLIC_DIR, toFilePath } from './utils/paths.ts';
 
 const NOT_LOCAL = /^(?:[a-z][a-z\d+.-]*:|\/\/|#)/i;
-const IMG_TAG = /<img\b[^>]*>/gi;
+const IMG_TAG = new RegExp(`<img\\b${TAG_ATTRS}>`, 'gi');
 const SRC_ATTR = /(\ssrc\s*=\s*)(?:"([^"]*)"|'([^']*)')/i;
 
 const decode = (value: string) => {
@@ -16,7 +17,7 @@ const decode = (value: string) => {
 };
 
 /** Maps a legacy image reference to `/assets/posts/<name>`, or undefined when it should stay untouched. */
-function rewriteSrc(src: string, markdownFile: string | undefined): string | undefined {
+export function rewriteSrc(src: string, markdownFile: string | undefined): string | undefined {
   if (!src || NOT_LOCAL.test(src)) return undefined;
 
   const cleanPath = decode(src.split(/[?#]/)[0]);

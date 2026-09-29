@@ -1,10 +1,9 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import type { Lang } from '../../lib/i18n.ts';
 
 export const PUBLIC_DIR = path.resolve(process.cwd(), 'public');
 export const POST_ASSETS_DIR = path.join(PUBLIC_DIR, 'assets', 'posts');
-
-export type Lang = 'pt' | 'en';
 
 export const toFilePath = (fileURL: URL | undefined): string | undefined =>
   fileURL ? fileURLToPath(fileURL) : undefined;
