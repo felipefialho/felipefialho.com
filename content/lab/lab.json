@@ -1,27 +1,15 @@
 [
   {
-    "id": "css-components",
-    "url": "https://css-components.felipefialho.com",
-    "repo": "https://github.com/felipefialho/css-components",
-    "year": "2014",
-    "title": "CSS Components",
+    "id": "frontend-brasil",
+    "url": "https://github.com/frontendbr",
+    "repo": "https://github.com/frontendbr",
+    "year": "2016",
+    "title": "Front-End Brasil",
     "description": {
-      "pt": "Criei em 2014 uma coleção de componentes feitos só com CSS, usando checkboxes escondidos. Em 2026 refiz tudo mostrando cada gambiarra de 2014 ao lado da versão nativa em HTML/CSS, sem nenhum JavaScript.",
-      "en": "I created this in 2014 as a set of pure CSS components built with hidden checkboxes. In 2026 I rebuilt it to show each 2014 hack side by side with its native HTML/CSS version, with zero JavaScript."
+      "pt": "A organização no GitHub da comunidade de front-end brasileira que ajudei a criar, com vagas e fórum para discutir o mercado e a tecnologia.",
+      "en": "The GitHub organization of the Brazilian front-end community I helped create, with job listings and a forum to talk about the craft and the market."
     },
-    "image": "css-components.png"
-  },
-  {
-    "id": "piano",
-    "url": "https://piano.felipefialho.com",
-    "repo": "https://github.com/felipefialho/piano",
-    "year": "2013",
-    "title": "Piano",
-    "description": {
-      "pt": "Um teclado de piano que dá pra tocar direto no navegador. Nasceu em 2013 e foi reconstruído em 2026 com Vite e TypeScript.",
-      "en": "A piano keyboard you can play right in the browser. It started in 2013 and I rebuilt it in 2026 with Vite and TypeScript."
-    },
-    "image": "piano-keyboard.png"
+    "image": "frontend-br.png"
   },
   {
     "id": "frontend-challenges",
@@ -36,16 +24,28 @@
     "image": "frontend-challenges.png"
   },
   {
-    "id": "frontend-brasil",
-    "url": "https://github.com/frontendbr",
-    "repo": "https://github.com/frontendbr",
-    "year": "2016",
-    "title": "Front-End Brasil",
+    "id": "css-components",
+    "url": "https://css-components.felipefialho.com",
+    "repo": "https://github.com/felipefialho/css-components",
+    "year": "2014",
+    "title": "CSS Components",
     "description": {
-      "pt": "A organização no GitHub da comunidade de front-end brasileira que ajudei a criar, com vagas e fórum para discutir o mercado e a tecnologia.",
-      "en": "The GitHub organization of the Brazilian front-end community I helped create, with job listings and a forum to talk about the craft and the market."
+      "pt": "Criei em 2014 uma coleção de componentes feitos só com CSS, usando checkboxes escondidos. Em 2026 refiz tudo mostrando cada gambiarra de 2014 ao lado da versão nativa em HTML/CSS, sem nenhum JavaScript.",
+      "en": "I created this in 2014 as a set of pure CSS components built with hidden checkboxes. In 2026 I rebuilt it to show each 2014 hack side by side with its native HTML/CSS version, with zero JavaScript."
     },
-    "image": "frontend-br.png"
+    "image": "css-components-social-card.png"
+  },
+  {
+    "id": "piano",
+    "url": "https://piano.felipefialho.com",
+    "repo": "https://github.com/felipefialho/piano",
+    "year": "2013",
+    "title": "Piano",
+    "description": {
+      "pt": "Um teclado de piano que dá pra tocar direto no navegador. Nasceu em 2013 e foi reconstruído em 2026 com Vite e TypeScript.",
+      "en": "A piano keyboard you can play right in the browser. It started in 2013 and I rebuilt it in 2026 with Vite and TypeScript."
+    },
+    "image": "piano-keyboard.png"
   },
   {
     "id": "cartman-css",

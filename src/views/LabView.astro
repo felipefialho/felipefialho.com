@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
-import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import { getLabProjects } from '../lib/lab';
 import { localePath, t, type Lang } from '../lib/i18n';
 
 interface Props {
@@ -9,7 +9,7 @@ interface Props {
 }
 
 const { lang } = Astro.props;
-const projects = await getCollection('lab');
+const projects = await getLabProjects();
 const ui = t(lang);
 ---
 
