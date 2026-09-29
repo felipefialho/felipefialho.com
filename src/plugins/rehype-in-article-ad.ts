@@ -27,7 +27,7 @@ const isBoundaryOk = (blocks: Block[], index: number) => {
   return !!prev && !!next && !isDemo(prev) && !isDemo(next) && !isHeading(prev);
 };
 
-function pickIndex(blocks: Block[]): number | undefined {
+export function pickIndex(blocks: Block[]): number | undefined {
   const h2s = blocks.flatMap((block, index) => (tagOf(block) === 'h2' ? [index] : []));
   if (h2s.length >= MIN_H2_FOR_HEADING_SLOT) {
     for (let index = h2s[1]; index < blocks.length; index++) {
@@ -72,6 +72,7 @@ export default function rehypeInArticleAd({ slot, labels }: InArticleAdOptions) 
             dataAdFormat: 'fluid',
             dataAdLayout: 'in-article',
             ariaLabel: label,
+            dataPagefindIgnore: true,
           },
           children: [],
         });

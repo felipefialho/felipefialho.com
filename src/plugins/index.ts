@@ -1,4 +1,6 @@
 import type { HastPluginList, MdastPluginList } from 'satteri';
+import { IN_ARTICLE_SLOT } from '../lib/ad-config.ts';
+import { t } from '../lib/i18n.ts';
 import rehypeEmbeds from './rehype-embeds.ts';
 import rehypeExternalLinks from './rehype-external-links.ts';
 import rehypeHeadings from './rehype-headings.ts';
@@ -15,5 +17,5 @@ export const hastPlugins: HastPluginList = [
   rehypeImageAttrs,
   rehypeHeadings,
   rehypeExternalLinks,
-  rehypeInArticleAd({ slot: '7323753803', labels: { pt: 'Publicidade', en: 'Advertisement' } }),
+  rehypeInArticleAd({ slot: IN_ARTICLE_SLOT, labels: { pt: t('pt').ad, en: t('en').ad } }),
 ];
