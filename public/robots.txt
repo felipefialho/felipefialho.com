@@ -1,0 +1,10 @@
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: *
+Disallow: /*?
+
+Sitemap: https://felipefialho.com/sitemap-index.xml
