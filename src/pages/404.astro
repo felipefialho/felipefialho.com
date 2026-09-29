@@ -8,8 +8,11 @@ const latest = (await getPosts('pt')).slice(0, 5);
 <Base lang="pt" title="Página não encontrada" description="Essa página não existe ou mudou de endereço." noindex>
   <h1 class="page-title">Essa página não existe</h1>
   <p class="lede reading">
-    O endereço pode ter mudado. Veja <a href="/blog/">todos os posts</a> ou use a busca no topo.
+    O endereço pode ter mudado. Veja <a href="/blog/">todos os posts</a> ou use a busca.{' '}
     <span lang="en">Looking for English content? Head to <a href="/en/">the English home</a>.</span>
+  </p>
+  <p>
+    <button class="search-button" type="button" commandfor="search" command="show-modal">Buscar nos posts</button>
   </p>
   <h2 class="section-title">Posts recentes</h2>
   <ul class="post-list">
@@ -24,3 +27,22 @@ const latest = (await getPosts('pt')).slice(0, 5);
     }
   </ul>
 </Base>
+
+<style>
+  .search-button {
+    min-block-size: 2.75rem;
+    padding-inline: var(--space-4);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    background: var(--wash);
+    color: var(--ink);
+    font-family: var(--font-ui);
+    font-size: var(--step-0);
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      border-color: var(--ink);
+    }
+  }
+</style>

@@ -2,8 +2,8 @@
 import { getEntry, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import { SITE_NAME, formatDate, isoDate, localePath, t, type Lang } from '../lib/i18n';
-import { getLabProjects } from '../lib/lab';
 import { getPosts, postPath } from '../lib/posts';
+import { homeJsonLd } from '../lib/seo';
 
 interface Props {
   lang: Lang;
@@ -12,13 +12,24 @@ interface Props {
 const { lang } = Astro.props;
 const ui = t(lang);
 const posts = (await getPosts(lang)).slice(0, 6);
-const lab = (await getLabProjects()).slice(0, 3);
 const home = await getEntry('pages', `${lang}/home`);
 const { Content } = home ? await render(home) : { Content: null };
-
+const contacts = [
+  { label: ui.linkedin, href: 'https://www.linkedin.com/in/felipefialho/' },
+  { label: ui.github, href: 'https://github.com/felipefialho' },
+  { label: ui.email, href: 'mailto:hi@felipefialho.com' },
+  { label: ui.youtube, href: 'https://www.youtube.com/@felipefialhodev' },
+];
+const jsonLd = homeJsonLd({ lang, path: localePath(lang, '/'), title: SITE_NAME, description: ui.homeDescription });
 ---
 
-<Base lang={lang} title={SITE_NAME} description={ui.homeDescription} alternate={localePath(lang === 'pt' ? 'en' : 'pt', '/')}>
+<Base
+  lang={lang}
+  title={ui.homeTitle}
+  description={ui.homeDescription}
+  alternate={localePath(lang === 'pt' ? 'en' : 'pt', '/')}
+  jsonLd={jsonLd}
+>
   <section class="hero">
     <h1>{SITE_NAME}</h1>
     <p class="role">
@@ -26,6 +37,9 @@ const { Content } = home ? await render(home) : { Content: null };
       <span>{ui.roleFocus}</span>
     </p>
     {Content && <div class="intro reading"><Content /></div>}
+    <ul class="contact" aria-label={ui.contact}>
+      {contacts.map(({ label, href }) => <li><a href={href}>{label}</a></li>)}
+    </ul>
     <p><a class="text-link" href={localePath(lang, '/hi/')}>{ui.moreAbout}</a></p>
   </section>
 
@@ -49,21 +63,6 @@ const { Content } = home ? await render(home) : { Content: null };
       }
     </ol>
     <p><a class="text-link" href={localePath(lang, '/blog/')}>{ui.allPosts}</a></p>
-  </section>
-
-  <section aria-labelledby="lab">
-    <h2 id="lab" class="section-title">{ui.fromLab}</h2>
-    <ul class="lab-list">
-      {
-        lab.map(({ data }) => (
-          <li>
-            <a href={data.url}>{data.title}</a>
-            <span>{data.description[lang]}</span>
-          </li>
-        ))
-      }
-    </ul>
-    <p><a class="text-link" href={localePath(lang, '/lab/')}>{ui.allLab}</a></p>
   </section>
 </Base>
 
@@ -98,27 +97,21 @@ const { Content } = home ? await render(home) : { Content: null };
     margin-block: 0 var(--space-3);
   }
 
-  .lab-list {
-    display: grid;
-    gap: var(--space-3);
-    margin: 0 0 var(--space-4);
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 var(--space-4);
+    margin: 0 0 var(--space-2);
     padding: 0;
     list-style: none;
-    max-inline-size: var(--measure);
-
-    & li {
-      display: grid;
-      gap: var(--space-1);
-    }
 
     & a {
+      display: inline-flex;
+      align-items: center;
+      min-block-size: 2.75rem;
       font-family: var(--font-ui);
-      font-size: var(--step-1);
+      font-size: var(--step-0);
       font-weight: 600;
-    }
-
-    & span {
-      color: var(--muted);
     }
   }
 </style>

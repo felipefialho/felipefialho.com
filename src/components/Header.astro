@@ -48,7 +48,7 @@ const nav = [
         <path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
       </svg>
     </button>
-    <button class="icon-button" type="button" data-theme-toggle aria-label={ui.theme}>
+    <button class="icon-button" type="button" data-theme-toggle aria-pressed="false" aria-label={ui.theme}>
       <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
         <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"></circle>
         <path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"></path>
@@ -62,11 +62,16 @@ const nav = [
 
 <script>
   const root = document.documentElement;
+  const toggle = document.querySelector<HTMLButtonElement>('[data-theme-toggle]');
+  const currentTheme = () => root.dataset.theme ?? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  const syncPressed = () => toggle?.setAttribute('aria-pressed', String(currentTheme() === 'dark'));
 
-  document.querySelector('[data-theme-toggle]')?.addEventListener('click', () => {
-    const current = root.dataset.theme ?? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    const next = current === 'dark' ? 'light' : 'dark';
+  syncPressed();
+
+  toggle?.addEventListener('click', () => {
+    const next = currentTheme() === 'dark' ? 'light' : 'dark';
     root.dataset.theme = next;
+    syncPressed();
     try {
       localStorage.setItem('theme', next);
     } catch {
@@ -126,13 +131,16 @@ const nav = [
 
     & ul {
       display: flex;
-      gap: var(--space-4);
+      gap: var(--space-2) var(--space-4);
       margin: 0;
       padding: 0;
       list-style: none;
     }
 
     & a {
+      display: inline-flex;
+      align-items: center;
+      min-block-size: 2.75rem;
       color: var(--ink);
       font-size: var(--step--1);
       font-weight: 500;
