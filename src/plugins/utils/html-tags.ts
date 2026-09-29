@@ -6,7 +6,8 @@ const ATTR = /([^\s"'<>/=]+)(?:\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'=<>`]+)))?/g
 export function parseAttrs(source: string): Attrs {
   const attrs: Attrs = new Map();
   for (const [, name, double, single, bare] of source.matchAll(ATTR)) {
-    attrs.set(name.toLowerCase(), double ?? single ?? bare ?? true);
+    // Values are re-serialized inside double quotes, so a raw quote from a single-quoted value is escaped
+    attrs.set(name.toLowerCase(), double ?? single?.replaceAll('"', '&quot;') ?? bare ?? true);
   }
   return attrs;
 }
