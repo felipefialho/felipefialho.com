@@ -1,5 +1,7 @@
 ---
 import { Font } from 'astro:assets';
+import ConsentBanner from '../components/ConsentBanner.astro';
+import ConsentHead from '../components/ConsentHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import SearchDialog from '../components/SearchDialog.astro';
@@ -50,6 +52,7 @@ const speculationRules = { prefetch: [{ where: { href_matches: '/*' }, eagerness
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <ConsentHead />
     <script is:inline>
       try {
         const theme = localStorage.getItem('theme');
@@ -101,6 +104,7 @@ const speculationRules = { prefetch: [{ where: { href_matches: '/*' }, eagerness
     </main>
     <Footer lang={lang} />
     <SearchDialog lang={lang} />
+    <ConsentBanner lang={lang} />
     <slot name="end" />
   </body>
 </html>

@@ -1,0 +1,43 @@
+---
+// First script in <head>: Consent Mode defaults must precede every Google tag.
+// Mirrors src/lib/consent.ts (storage key, record shape) and GA_ID in src/lib/analytics.ts.
+// Hooking gtag lets bundles react to any consent update, ours or Google's CMP.
+---
+
+<script is:inline>
+  (function (w) {
+    const l = (w.dataLayer = w.dataLayer || []), D = 'denied', G = 'granted';
+    let g = 0, k = 0;
+    // gtag.js only accepts Arguments objects, not arrays
+    /* eslint-disable prefer-rest-params */
+    function gtag() {
+      l.push(arguments);
+      const v = arguments[2];
+      if (arguments[0] != 'consent' || arguments[1] != 'update' || !v) return;
+      /* eslint-enable prefer-rest-params */
+      if (v.analytics_storage) {
+        g = v.analytics_storage == G;
+        if (g && !k) {
+          k = 1;
+          gtag('js', new Date());
+          gtag('config', 'G-TM1XEXQZ6B');
+        }
+      }
+      w.dispatchEvent(new CustomEvent('gtagconsent', { detail: v }));
+    }
+    w.gtag = gtag;
+    gtag('consent', 'default', { ad_storage: D, ad_user_data: D, ad_personalization: D, analytics_storage: D, wait_for_update: 500 });
+    try {
+      const c = JSON.parse(localStorage.getItem('consent'));
+      if (c && c.v == 1) {
+        const a = c.ads ? G : D;
+        gtag('consent', 'update', { ad_storage: a, ad_user_data: a, ad_personalization: a, analytics_storage: c.analytics ? G : D });
+      }
+    } catch {
+      // Storage blocked or corrupted: keep the denied defaults
+    }
+    w.track = function (n, p) {
+      if (g) gtag('event', n, p);
+    };
+  })(window);
+</script>

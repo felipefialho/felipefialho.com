@@ -1,0 +1,238 @@
+---
+import { localePath, t, type Lang } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const ui = t(lang);
+
+const COPY = {
+  pt: {
+    intro: 'Usamos cookies para medir a audiência e exibir anúncios, que mantêm o blog no ar.',
+    choose: 'Você escolhe o que permitir. Saiba mais na',
+    policy: 'política de privacidade',
+    accept: 'Aceitar',
+    reject: 'Recusar',
+    customize: 'Personalizar',
+    save: 'Salvar',
+    analytics: 'Análise',
+    analyticsHint: 'Google Analytics: posts mais lidos e origem das visitas.',
+    ads: 'Anúncios personalizados',
+    adsHint: 'Google AdSense: sem isso, os anúncios continuam, só que genéricos.',
+  },
+  en: {
+    intro: 'We use cookies to measure readership and to show ads, which keep the blog running.',
+    choose: 'You choose what to allow. Read more in the',
+    policy: 'privacy policy',
+    accept: 'Accept',
+    reject: 'Reject',
+    customize: 'Customize',
+    save: 'Save',
+    analytics: 'Analytics',
+    analyticsHint: 'Google Analytics: most read posts and where visits come from.',
+    ads: 'Personalized ads',
+    adsHint: 'Google AdSense: without it, ads still show, just generic ones.',
+  },
+}[lang];
+---
+
+<div id="consent" class="consent" popover="manual" role="region" aria-label={ui.cookies}>
+  <form class="consent-form">
+    <p>{COPY.intro}</p>
+    <p>{COPY.choose} <a href={localePath(lang, '/policies/')}>{COPY.policy}</a>.</p>
+    <div class="consent-options" id="consent-options" role="group" aria-label={COPY.customize} hidden>
+      <label class="consent-option">
+        <input type="checkbox" name="analytics" />
+        <span><strong>{COPY.analytics}</strong> {COPY.analyticsHint}</span>
+      </label>
+      <label class="consent-option">
+        <input type="checkbox" name="ads" />
+        <span><strong>{COPY.ads}</strong> {COPY.adsHint}</span>
+      </label>
+    </div>
+    <div class="consent-actions">
+      <button type="submit" value="accept">{COPY.accept}</button>
+      <button type="submit" value="reject">{COPY.reject}</button>
+      <button type="button" class="consent-secondary" data-customize aria-expanded="false" aria-controls="consent-options">
+        {COPY.customize}
+      </button>
+      <button type="submit" class="consent-secondary" value="save" hidden>{COPY.save}</button>
+    </div>
+  </form>
+  <button type="button" class="consent-close" popovertarget="consent" popovertargetaction="hide" aria-label={ui.close}>
+    ×
+  </button>
+</div>
+
+<script>
+  import { initAnalytics } from '../lib/analytics';
+  import { CONSENT_ID, cmpConfirmed, inCmpRegion, readConsent, saveConsent } from '../lib/consent';
+
+  initAnalytics();
+
+  const root = document.getElementById(CONSENT_ID);
+  const form = root?.querySelector('form');
+
+  if (root && form && typeof root.showPopover === 'function') {
+    const options = form.querySelector<HTMLElement>('.consent-options')!;
+    const customize = form.querySelector<HTMLButtonElement>('[data-customize]')!;
+    const save = form.querySelector<HTMLButtonElement>('[value="save"]')!;
+    const analytics = form.elements.namedItem('analytics') as HTMLInputElement;
+    const ads = form.elements.namedItem('ads') as HTMLInputElement;
+
+    const setExpanded = (expanded: boolean) => {
+      options.hidden = !expanded;
+      save.hidden = !expanded;
+      customize.hidden = expanded;
+      customize.setAttribute('aria-expanded', String(expanded));
+    };
+
+    customize.addEventListener('click', () => {
+      setExpanded(true);
+      analytics.focus();
+    });
+
+    // Where Google's CMP runs, the footer link reopens its message instead of ours
+    root.addEventListener('beforetoggle', (event) => {
+      const fc = window.googlefc;
+      if (event.newState !== 'open' || !cmpConfirmed() || typeof fc?.showRevocationMessage !== 'function') return;
+      event.preventDefault();
+      fc.showRevocationMessage();
+    });
+
+    // Reopened from the footer: show the stored choice, never pre-ticked boxes
+    root.addEventListener('toggle', (event) => {
+      if (event.newState !== 'open') return;
+      const stored = readConsent();
+      analytics.checked = stored?.analytics ?? false;
+      ads.checked = stored?.ads ?? false;
+      setExpanded(Boolean(stored));
+    });
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const action = event.submitter instanceof HTMLButtonElement ? event.submitter.value : 'save';
+      if (action === 'accept') saveConsent(true, true);
+      else if (action === 'reject') saveConsent(false, false);
+      else saveConsent(analytics.checked, ads.checked);
+      root.hidePopover();
+    });
+
+    if (!readConsent() && !inCmpRegion()) root.showPopover();
+  }
+</script>
+
+<style>
+  .consent {
+    inset: auto auto var(--gutter) var(--gutter);
+    box-sizing: border-box;
+    max-inline-size: min(26rem, 100% - 2 * var(--gutter));
+    margin: 0;
+    padding: var(--space-3);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    background: var(--paper);
+    color: var(--ink);
+    box-shadow: 0 0.5rem 2rem color-mix(in srgb, var(--ink) 18%, transparent);
+    font: var(--step--1) / 1.5 var(--font-text);
+  }
+
+  .consent p {
+    margin: 0 var(--space-4) var(--space-2) 0;
+  }
+
+  .consent a {
+    color: var(--link);
+  }
+
+  .consent-options:not([hidden]) {
+    display: grid;
+    gap: var(--space-2);
+    margin-block: var(--space-3);
+  }
+
+  .consent-option {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--space-2);
+    align-items: start;
+    cursor: pointer;
+  }
+
+  .consent-option input {
+    margin: 0.3em 0 0;
+    accent-color: var(--link);
+  }
+
+  .consent-option strong {
+    display: block;
+    font-family: var(--font-ui);
+    font-weight: 600;
+  }
+
+  .consent-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-block-start: var(--space-3);
+  }
+
+  .consent button {
+    padding: var(--space-1) var(--space-3);
+    border: 1px solid var(--ink);
+    border-radius: var(--radius);
+    background: var(--ink);
+    color: var(--paper);
+    font: 600 var(--step--1) / 1.5 var(--font-ui);
+    cursor: pointer;
+  }
+
+  .consent .consent-secondary {
+    background: transparent;
+    color: var(--ink);
+  }
+
+  .consent .consent-close {
+    position: absolute;
+    inset: var(--space-2) var(--space-2) auto auto;
+    padding: 0 var(--space-2);
+    border-color: transparent;
+    background: transparent;
+    color: var(--muted);
+    font-size: var(--step-1);
+    line-height: 1.2;
+  }
+
+  .consent button:hover {
+    opacity: 0.85;
+  }
+
+  .consent :focus-visible {
+    outline: 2px solid var(--link);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .consent {
+      transition:
+        opacity 0.2s var(--ease),
+        translate 0.2s var(--ease),
+        display 0.2s allow-discrete,
+        overlay 0.2s allow-discrete;
+    }
+
+    .consent:not(:popover-open) {
+      opacity: 0;
+      translate: 0 var(--space-2);
+    }
+
+    @starting-style {
+      .consent:popover-open {
+        opacity: 0;
+        translate: 0 var(--space-2);
+      }
+    }
+  }
+</style>
