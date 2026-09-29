@@ -1,5 +1,7 @@
 ---
+import { Image } from 'astro:assets';
 import { getEntry, render } from 'astro:content';
+import photo from '../assets/images/felipe-fialho.jpg';
 import Base from '../layouts/Base.astro';
 import { formatDate, localePath, t, type Lang } from '../lib/i18n';
 import { profilePageJsonLd } from '../lib/seo';
@@ -33,6 +35,18 @@ const jsonLd =
 >
   <h1 class="page-title">{entry.data.title}</h1>
   {
+    page === 'hi' && (
+      <Image
+        src={photo}
+        alt={t(lang).photoAlt}
+        widths={[320, 480, 640, 800]}
+        sizes="(min-width: 48rem) 22rem, 100vw"
+        loading="eager"
+        class="portrait"
+      />
+    )
+  }
+  {
     updated && (
       <p class="meta">
         {t(lang).lastUpdated} {formatDate(updated, lang)}
@@ -45,6 +59,14 @@ const jsonLd =
 </Base>
 
 <style>
+  .portrait {
+    inline-size: min(100%, 22rem);
+    block-size: auto;
+    margin-block-end: var(--space-5);
+    border-radius: var(--radius);
+    background: var(--wash);
+  }
+
   .meta {
     margin-block: calc(-1 * var(--space-3)) var(--space-5);
   }

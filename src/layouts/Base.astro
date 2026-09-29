@@ -45,7 +45,8 @@ const site = Astro.site!;
 const canonical = new URL(Astro.url.pathname, site).href;
 const imageUrl = new URL(image, site).href;
 const otherLang: Lang = lang === 'pt' ? 'en' : 'pt';
-const fullTitle = title === SITE_NAME ? title : `${title} | ${SITE_NAME}`;
+// Titles that already lead with the name (the home) skip the suffix
+const fullTitle = title.startsWith(SITE_NAME) ? title : `${title} | ${SITE_NAME}`;
 const alternateUrl = alternate ? new URL(alternate, site).href : undefined;
 // x-default points at the PT page, whichever language this one is
 const defaultUrl = lang === 'pt' ? canonical : alternateUrl;

@@ -71,10 +71,10 @@ describe('profilePageJsonLd', () => {
     });
   });
 
-  it('omits optional fields it was not given', () => {
+  it('omits dateModified and falls back to the profile photo', () => {
     const bare = profilePageJsonLd({ lang: 'en', path: '/en/hi/', title: 'About', description: 'Bio' });
     expect(nodeOf(bare, 'ProfilePage')).not.toHaveProperty('dateModified');
-    expect(nodeOf(bare, 'Person')).not.toHaveProperty('image');
+    expect(nodeOf(bare, 'Person')?.image).toBe('https://felipefialho.com/assets/felipe-fialho.jpg');
   });
 });
 

@@ -1,5 +1,7 @@
 ---
+import { Image } from 'astro:assets';
 import { getEntry, render } from 'astro:content';
+import photo from '../assets/images/felipe-fialho.jpg';
 import Base from '../layouts/Base.astro';
 import { SITE_NAME, formatDate, isoDate, localePath, t, type Lang } from '../lib/i18n';
 import { getPosts, postPath } from '../lib/posts';
@@ -31,11 +33,16 @@ const jsonLd = homeJsonLd({ lang, path: localePath(lang, '/'), title: SITE_NAME,
   jsonLd={jsonLd}
 >
   <section class="hero">
-    <h1>{SITE_NAME}</h1>
-    <p class="role">
-      <strong>{ui.role}</strong>
-      <span>{ui.roleFocus}</span>
-    </p>
+    <div class="identity">
+      <Image src={photo} alt={ui.photoAlt} width={112} height={112} densities={[1, 2, 3]} loading="eager" class="avatar" />
+      <div>
+        <h1>{SITE_NAME}</h1>
+        <p class="role">
+          <strong>{ui.role}</strong>
+          <span>{ui.roleFocus}</span>
+        </p>
+      </div>
+    </div>
     {Content && <div class="intro reading"><Content /></div>}
     <ul class="contact" aria-label={ui.contact}>
       {contacts.map(({ label, href }) => <li><a href={href}>{label}</a></li>)}
@@ -80,10 +87,26 @@ const jsonLd = homeJsonLd({ lang, path: localePath(lang, '/'), title: SITE_NAME,
     }
   }
 
+  .identity {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3) var(--space-4);
+    margin-block-end: var(--space-4);
+  }
+
+  .avatar {
+    inline-size: 7rem;
+    block-size: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+    background: var(--wash);
+  }
+
   .role {
     display: grid;
     gap: var(--space-1);
-    margin: 0 0 var(--space-4);
+    margin: 0;
     font-family: var(--font-ui);
     font-size: var(--step-1);
 

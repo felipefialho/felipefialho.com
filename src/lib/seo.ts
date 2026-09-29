@@ -41,7 +41,10 @@ const graph = (...nodes: Node[]): JsonLd => ({ '@context': 'https://schema.org',
 export const serializeJsonLd = (data: unknown) => JSON.stringify(data).replaceAll('<', '\\u003c');
 
 /** `image` is a portrait: a site path or absolute URL. */
-export function personNode(image?: string): Node {
+/** Public, stable URL so the photo can be referenced from structured data */
+export const PROFILE_PHOTO = '/assets/felipe-fialho.jpg';
+
+export function personNode(image: string = PROFILE_PHOTO): Node {
   return {
     '@type': 'Person',
     '@id': PERSON_ID,
