@@ -6,6 +6,7 @@ import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import SearchDialog from '../components/SearchDialog.astro';
 import { HTML_LANG, OG_LOCALE, SITE_NAME, localePath, t, type Lang } from '../lib/i18n';
+import { PROFILES, ROBOTS_INDEX, ROBOTS_NOINDEX, SITE_URL, serializeJsonLd, type JsonLd } from '../lib/seo';
 import '../styles/tokens.css';
 import '../styles/base.css';
 import '../styles/layout.css';
@@ -20,9 +21,10 @@ interface Props {
   /** Site path of the same page in the other language; omit when there is none */
   alternate?: string;
   publishedTime?: Date;
+  modifiedTime?: Date;
   tags?: string[];
   noindex?: boolean;
-  jsonLd?: Record<string, unknown>;
+  jsonLd?: JsonLd | Record<string, unknown>;
 }
 
 const {
@@ -33,6 +35,7 @@ const {
   type = 'website',
   alternate,
   publishedTime,
+  modifiedTime,
   tags = [],
   noindex = false,
   jsonLd,
@@ -66,7 +69,9 @@ const speculationRules = { prefetch: [{ where: { href_matches: '/*' }, eagerness
     </script>
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    {noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonical} />}
+    <meta name="robots" content={noindex ? ROBOTS_NOINDEX : ROBOTS_INDEX} />
+    {!noindex && <link rel="canonical" href={canonical} />}
+    <meta name="author" content={SITE_NAME} />
     {
       alternateUrl && (
         <>
@@ -82,10 +87,12 @@ const speculationRules = { prefetch: [{ where: { href_matches: '/*' }, eagerness
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="theme-color" content="#fdfdfc" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0f0f1a" media="(prefers-color-scheme: dark)" />
+    {PROFILES.map((profile) => <link rel="me" href={profile} />)}
 
     <meta property="og:type" content={type} />
     <meta property="og:site_name" content={SITE_NAME} />
     <meta property="og:locale" content={OG_LOCALE[lang]} />
+    {alternateUrl && <meta property="og:locale:alternate" content={OG_LOCALE[otherLang]} />}
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
@@ -94,11 +101,13 @@ const speculationRules = { prefetch: [{ where: { href_matches: '/*' }, eagerness
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content={title} />
     {publishedTime && <meta property="article:published_time" content={publishedTime.toISOString()} />}
+    {modifiedTime && <meta property="article:modified_time" content={modifiedTime.toISOString()} />}
+    {type === 'article' && <meta property="article:author" content={SITE_URL} />}
     {tags.map((tag) => <meta property="article:tag" content={tag} />)}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@felipefialho_" />
     <meta name="twitter:creator" content="@felipefialho_" />
-    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd).replaceAll('<', '\\u003c')} />}
+    {jsonLd && <script type="application/ld+json" set:html={serializeJsonLd(jsonLd)} />}
 
     <Font cssVariable="--font-mona-sans" preload />
     <Font cssVariable="--font-newsreader" preload={[{ style: 'normal' }]} />

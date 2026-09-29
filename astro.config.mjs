@@ -1,7 +1,9 @@
+import { fileURLToPath } from 'node:url';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig, fontProviders } from 'astro/config';
 import { satteri } from '@astrojs/markdown-satteri';
 import { hastPlugins, mdastPlugins } from './src/plugins/index.ts';
+import { createSitemapSerializer, loadSitemapPosts } from './src/lib/seo.ts';
 
 // Subset and axis-pinned by scripts/subset-fonts.sh
 const font = (file) => `./src/assets/fonts/${file}`;
@@ -65,6 +67,7 @@ export default defineConfig({
   integrations: [
     sitemap({
       i18n: { defaultLocale: 'pt', locales: { pt: 'pt-BR', en: 'en' } },
+      serialize: createSitemapSerializer(loadSitemapPosts(fileURLToPath(new URL('.', import.meta.url)))),
     }),
   ],
 });
