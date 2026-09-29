@@ -88,7 +88,7 @@ const speculationRules = { prefetch: [{ where: { href_matches: '/*' }, eagerness
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@felipefialho_" />
     <meta name="twitter:creator" content="@felipefialho_" />
-    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd).replaceAll('<', '\\u003c')} />}
 
     <Font cssVariable="--font-mona-sans" preload />
     <Font cssVariable="--font-newsreader" preload={[{ style: 'normal' }]} />

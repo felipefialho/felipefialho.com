@@ -30,8 +30,8 @@
     try {
       const c = JSON.parse(localStorage.getItem('consent'));
       if (c && c.v == 1) {
-        const a = c.ads ? G : D;
-        gtag('consent', 'update', { ad_storage: a, ad_user_data: a, ad_personalization: a, analytics_storage: c.analytics ? G : D });
+        const a = c.ads === true ? G : D;
+        gtag('consent', 'update', { ad_storage: a, ad_user_data: a, ad_personalization: a, analytics_storage: c.analytics === true ? G : D });
       }
     } catch {
       // Storage blocked or corrupted: keep the denied defaults
