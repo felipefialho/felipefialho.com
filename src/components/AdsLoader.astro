@@ -1,0 +1,50 @@
+---
+import type { Lang } from '../lib/i18n';
+
+// Once per post page. Styles every `.ad` slot: AdSlot and the in-article asides from the rehype plugin.
+interface Props {
+  lang?: Lang;
+}
+---
+
+<script>
+  import { initAds } from '../lib/ads';
+
+  initAds();
+</script>
+
+<style is:global>
+  /* The empty second row reserves the ad's space up front, so filling it never shifts the page */
+  .ad {
+    --ad-min: 280px;
+
+    display: grid;
+    grid-template-rows: auto minmax(var(--ad-min), auto);
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-2);
+    margin-block: var(--space-5);
+    padding: var(--space-2) var(--space-3) var(--space-3);
+    border-radius: var(--radius);
+    background: var(--wash);
+  }
+
+  .ad::before {
+    content: attr(aria-label);
+    color: var(--muted);
+    font: var(--step--1) / 1.4 var(--font-ui);
+  }
+
+  .ad-sidebar {
+    --ad-min: 600px;
+
+    position: sticky;
+    inset-block-start: var(--space-4);
+    align-self: start;
+    margin-block: 0;
+  }
+
+  /* Google allows hiding unfilled units; "unfill-optimized" ones stay */
+  .ad:has(> ins.adsbygoogle[data-ad-status='unfilled']) {
+    display: none;
+  }
+</style>

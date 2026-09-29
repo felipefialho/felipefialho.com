@@ -1,5 +1,7 @@
 ---
 import { render } from 'astro:content';
+import AdSlot from '../components/AdSlot.astro';
+import AdsLoader from '../components/AdsLoader.astro';
 import Base from '../layouts/Base.astro';
 import PostFooter from '../components/PostFooter.astro';
 import Toc from '../components/Toc.astro';
@@ -83,17 +85,17 @@ const jsonLd = {
         <Content />
       </div>
 
-      <slot name="after-content" />
+      <AdSlot kind="end" lang={lang} />
     </article>
 
     {toc.length >= 3 && <Toc headings={toc} lang={lang} variant="sidebar" />}
-    <aside class="rail">
-      <slot name="rail" />
-    </aside>
+    <div class="rail">
+      <AdSlot kind="sidebar" lang={lang} />
+    </div>
   </div>
 
   <PostFooter lang={lang} post={post} posts={posts} />
-  <slot name="end" slot="end" />
+  <AdsLoader lang={lang} />
 </Base>
 
 <style>
