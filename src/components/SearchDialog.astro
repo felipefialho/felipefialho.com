@@ -60,11 +60,32 @@ const copy = {
 </dialog>
 
 <script>
+  interface PagefindUIOptions {
+    element: string;
+    bundlePath: string;
+    showSubResults: boolean;
+    showImages: boolean;
+    resetStyles: boolean;
+    autofocus: boolean;
+    translations: Record<string, string>;
+  }
+
   declare global {
     interface Window {
-      track?: (event: string, params?: Record<string, unknown>) => void;
+      PagefindUI?: new (options: PagefindUIOptions) => unknown;
     }
   }
+
+  // The UI bundle is emitted by the pagefind CLI next to the index
+  const loadAsset = (tag: 'script' | 'link', url: string) =>
+    new Promise<void>((resolve, reject) => {
+      const element = document.createElement(tag);
+      if (element instanceof HTMLScriptElement) element.src = url;
+      if (element instanceof HTMLLinkElement) Object.assign(element, { rel: 'stylesheet', href: url });
+      element.addEventListener('load', () => resolve(), { once: true });
+      element.addEventListener('error', () => reject(new Error(`Failed to load ${url}`)), { once: true });
+      document.head.append(element);
+    });
 
   const dialog = document.querySelector<HTMLDialogElement>('#search');
   const status = document.querySelector<HTMLElement>('#search-status');
@@ -90,13 +111,10 @@ const copy = {
       return;
     }
 
-    const [{ PagefindUI }] = await Promise.all([
-      // @ts-expect-error the package ships no type declarations
-      import('@pagefind/default-ui'),
-      import('@pagefind/default-ui/css/ui.css'),
-    ]);
+    await Promise.all([loadAsset('link', '/pagefind/pagefind-ui.css'), loadAsset('script', '/pagefind/pagefind-ui.js')]);
+    if (!window.PagefindUI) return;
 
-    new PagefindUI({
+    new window.PagefindUI({
       element: '#search-ui',
       bundlePath: '/pagefind/',
       showSubResults: true,
@@ -214,6 +232,11 @@ const copy = {
 
   .search-dialog :global(.pagefind-ui__result-link:visited) {
     color: var(--visited);
+  }
+
+  /* The date is indexed for sorting, not for display */
+  .search-dialog :global(.pagefind-ui__result-tags) {
+    display: none;
   }
 
   .search-dialog :global(.pagefind-ui__result-excerpt) {

@@ -28,9 +28,6 @@
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
-    "@fontsource-variable/mona-sans": "^5.3.0",
-    "@fontsource-variable/newsreader": "^5.3.0",
-    "@pagefind/default-ui": "^1.5.2",
     "astro": "^7.3.5",
     "image-size": "^2.0.4",
     "reading-time": "^1.5.0",
@@ -42,6 +39,8 @@
     "@astrojs/check": "^0.9.10",
     "@astrojs/markdown-satteri": "^0.4.2",
     "@eslint/js": "^10.0.1",
+    "@fontsource-variable/mona-sans": "^5.3.0",
+    "@fontsource-variable/newsreader": "^5.3.0",
     "@fontsource/mona-sans": "^5.3.0",
     "@fontsource/newsreader": "^5.3.0",
     "@stylistic/eslint-plugin": "^5.10.0",
