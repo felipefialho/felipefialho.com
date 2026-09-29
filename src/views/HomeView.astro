@@ -1,7 +1,8 @@
 ---
-import { getCollection, getEntry, render } from 'astro:content';
+import { getEntry, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import { SITE_NAME, formatDate, isoDate, localePath, t, type Lang } from '../lib/i18n';
+import { getLabProjects } from '../lib/lab';
 import { getPosts, postPath } from '../lib/posts';
 
 interface Props {
@@ -11,7 +12,7 @@ interface Props {
 const { lang } = Astro.props;
 const ui = t(lang);
 const posts = (await getPosts(lang)).slice(0, 6);
-const lab = (await getCollection('lab')).slice(0, 3);
+const lab = (await getLabProjects()).slice(0, 3);
 const home = await getEntry('pages', `${lang}/home`);
 const { Content } = home ? await render(home) : { Content: null };
 
@@ -19,7 +20,11 @@ const { Content } = home ? await render(home) : { Content: null };
 
 <Base lang={lang} title={SITE_NAME} description={ui.homeDescription} alternate={localePath(lang === 'pt' ? 'en' : 'pt', '/')}>
   <section class="hero">
-    <h1>{ui.hero}</h1>
+    <h1>{SITE_NAME}</h1>
+    <p class="role">
+      <strong>{ui.role}</strong>
+      <span>{ui.roleFocus}</span>
+    </p>
     {Content && <div class="intro reading"><Content /></div>}
   </section>
 
@@ -63,25 +68,33 @@ const { Content } = home ? await render(home) : { Content: null };
 
 <style>
   .hero {
-    padding-block: var(--space-5) var(--space-4);
+    padding-block: var(--space-4) var(--space-3);
 
     & h1 {
-      max-inline-size: 18ch;
-      margin: 0 0 var(--space-4);
-      font-size: var(--step-5);
+      margin: 0 0 var(--space-2);
+      font-size: var(--step-4);
       font-stretch: 118%;
       font-weight: 800;
-      line-height: 0.98;
-      letter-spacing: -0.035em;
+      line-height: 1;
+      letter-spacing: -0.03em;
     }
   }
 
-  .intro {
-    color: var(--muted);
+  .role {
+    display: grid;
+    gap: var(--space-1);
+    margin: 0 0 var(--space-4);
+    font-family: var(--font-ui);
+    font-size: var(--step-1);
 
-    & :global(p) {
-      margin-block: 0 var(--space-3);
+    & span {
+      color: var(--muted);
+      font-size: var(--step-0);
     }
+  }
+
+  .intro :global(p) {
+    margin-block: 0 var(--space-3);
   }
 
   .lab-list {

@@ -10,7 +10,6 @@ const UI = {
   pt: {
     blog: 'Blog',
     lab: 'Lab',
-    about: 'Sobre',
     search: 'Buscar',
     searchPlaceholder: 'Buscar nos posts',
     theme: 'Alternar tema',
@@ -35,12 +34,13 @@ const UI = {
     code: 'Código',
     feedTitle: 'Felipe Fialho',
     feedDescription: 'Front-end, CSS, carreira e AI, desde 2013.',
-    homeDescription: 'Blog de Felipe Fialho sobre front-end, CSS, carreira e AI, escrito desde 2013.',
-    hero: 'Escrevo sobre front-end, CSS, carreira e AI desde 2013.',
+    homeDescription: 'Felipe Fialho, Staff Engineer. Arquitetura de sistemas Front-end, desenvolvimento com AI, blog e projetos open source.',
+    role: 'Staff Engineer',
+    roleFocus: 'Arquitetura de sistemas Front-end e desenvolvimento com AI',
     fromLab: 'No Lab',
     allLab: 'Ver todos os projetos',
     archiveDescription: 'Todos os posts desde 2013, sobre front-end, CSS, carreira e AI.',
-    archiveLede: (count: number) => `${count} posts escritos desde 2013. Os links em roxo são os que você já leu.`,
+    archiveLede: (count: number) => `${count} posts escritos desde 2013.`,
     tagLede: (count: number, tag: string) => `${count} posts com a tag #${tag}.`,
     labDescription: 'Projetos open source e experimentos de Felipe Fialho.',
     labLede: 'Projetos open source e experimentos que fiz ao longo dos anos. Alguns foram reconstruídos em 2026.',
@@ -56,7 +56,6 @@ const UI = {
   en: {
     blog: 'Blog',
     lab: 'Lab',
-    about: 'About',
     search: 'Search',
     searchPlaceholder: 'Search posts',
     theme: 'Toggle theme',
@@ -81,12 +80,13 @@ const UI = {
     code: 'Code',
     feedTitle: 'Felipe Fialho (English)',
     feedDescription: 'Front-end, CSS, career and AI.',
-    homeDescription: 'Felipe Fialho writes about front-end, CSS, career and AI, since 2013.',
-    hero: 'I write about front-end, CSS, career and AI. Since 2013.',
+    homeDescription: 'Felipe Fialho, Staff Engineer. Front-end system architecture, AI-augmented development, blog and open source projects.',
+    role: 'Staff Engineer',
+    roleFocus: 'Front-end system architecture and AI-augmented development',
     fromLab: 'From the Lab',
     allLab: 'See every project',
     archiveDescription: 'Every post in English, about front-end, CSS, career and AI.',
-    archiveLede: (count: number) => `${count} posts translated to English. Links in purple are the ones you've already read.`,
+    archiveLede: (count: number) => `${count} posts translated to English.`,
     tagLede: (count: number, tag: string) => `${count} posts tagged #${tag}.`,
     labDescription: 'Open source projects and experiments by Felipe Fialho.',
     labLede: 'Open source projects and experiments I built over the years. Some were rebuilt in 2026.',
@@ -106,20 +106,12 @@ export const t = (lang: Lang) => UI[lang];
 /** Prefixes a site path with the language segment (PT lives at the root). */
 export const localePath = (lang: Lang, path: string) => (lang === 'pt' ? path : `/en${path}`);
 
-export const formatDate = (date: Date, lang: Lang, style: 'long' | 'short' = 'long') =>
-  new Intl.DateTimeFormat(HTML_LANG[lang], {
-    day: 'numeric',
-    month: style === 'long' ? 'long' : 'short',
-    ...(style === 'long' ? { year: 'numeric' } : {}),
-    timeZone: 'UTC',
-  }).format(date);
+/** Month and year only, never the day: "setembro de 2026" or "September 2026". */
+export const formatDate = (date: Date, lang: Lang) =>
+  new Intl.DateTimeFormat(HTML_LANG[lang], { month: 'long', year: 'numeric', timeZone: 'UTC' }).format(date);
 
-/** Compact archive date: "28 set" (PT) or "Sep 28" (EN). */
-export const formatDayMonth = (date: Date, lang: Lang) => {
-  const parts = new Intl.DateTimeFormat(HTML_LANG[lang], { day: 'numeric', month: 'short', timeZone: 'UTC' }).formatToParts(date);
-  const day = parts.find((part) => part.type === 'day')?.value ?? '';
-  const month = (parts.find((part) => part.type === 'month')?.value ?? '').replace('.', '');
-  return lang === 'pt' ? `${day} ${month}` : `${month} ${day}`;
-};
+/** Abbreviated month for archive rows (the year is the section heading): "set" or "Sep". */
+export const formatMonth = (date: Date, lang: Lang) =>
+  new Intl.DateTimeFormat(HTML_LANG[lang], { month: 'short', timeZone: 'UTC' }).format(date).replace('.', '');
 
 export const isoDate = (date: Date) => date.toISOString().slice(0, 10);

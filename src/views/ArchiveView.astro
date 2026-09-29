@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { formatDayMonth, isoDate, t, type Lang } from '../lib/i18n';
+import { formatMonth, isoDate, t, type Lang } from '../lib/i18n';
 import { getPosts, groupByYear, postPath, type Post } from '../lib/posts';
 
 interface Props {
@@ -33,7 +33,7 @@ const description = tag ? lede : ui.archiveDescription;
         <ol class="rows">
           {items.map((post) => (
             <li class="row">
-              <time datetime={isoDate(post.data.date)}>{formatDayMonth(post.data.date, lang)}</time>
+              <time datetime={isoDate(post.data.date)}>{formatMonth(post.data.date, lang)}</time>
               <a href={postPath(lang, post.id)} style={`view-transition-name: post-${post.id}`}>
                 {post.data.title}
               </a>
