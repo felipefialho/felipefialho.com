@@ -1,8 +1,8 @@
 ---
 title: Home
-description: Felipe Fialho, Staff Engineer focado em arquitetura de sistemas Front-end e desenvolvimento potencializado por AI. Blog, projetos open source e Lab.
+description: Felipe Fialho, Staff Engineer e desenvolvedor Front-end desde 2009, apaixonado por open source e por compartilhar boas ideias.
 ---
 
-Sou o Felipe Fialho, com mais de 17 anos na área de tecnologia. Comecei como especialista em Front-end e evoluí para Staff Engineer, com foco em arquitetura de sistemas Front-end e desenvolvimento potencializado por AI.
+Meu nome é Felipe Fialho. Trabalho com desenvolvimento Front-end desde 2009. Sou apaixonado por projetos open source e acredito que a disseminação de conhecimento e boas ideias inspira e melhora o mundo.
 
-Atualmente estou na [Juntos Somos Mais](https://juntossomosmais.com.br/), guiando decisões técnicas e desafios de arquitetura. Criei a [Front-end BR](https://github.com/frontendbr) e escrevo nesse blog desde 2013.
+Atualmente sou Staff Engineer na [Juntos Somos Mais](https://juntossomosmais.com.br/), focado em arquitetura Front-end e desenvolvimento com AI. Sou criador da organização [Front-end BR](https://github.com/frontendbr) no GitHub, um dos fundadores do Meetup CSS e ajudei a organizar a Conferência CSS Brasil 2015.

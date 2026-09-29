@@ -1,19 +1,19 @@
 ---
 title: Um pouco de mim
-description: Felipe Fialho, Staff Engineer focado em arquitetura de sistemas Front-end e desenvolvimento potencializado por AI.
+description: Felipe Fialho, Staff Engineer e desenvolvedor Front-end desde 2009, apaixonado por open source e por compartilhar boas ideias.
 ---
 
-Olá! Sou o Felipe Fialho (🇧🇷), com mais de 17 anos de experiência na área de tecnologia. Comecei como especialista em Front-end e evoluí para Staff Engineer, com foco em arquitetura de sistemas Front-end e desenvolvimento potencializado por AI.
+Meu nome é Felipe Fialho. Trabalho com desenvolvimento Front-end desde 2009. Sou apaixonado por projetos open source e acredito que a disseminação de conhecimento e boas ideias inspira e melhora o mundo.
 
-Atualmente estou na [Juntos Somos Mais](https://juntossomosmais.com.br/), onde guio decisões técnicas, encaro desafios complexos de arquitetura e ajudo a aumentar a produtividade dos times. Nos últimos anos integrei AI de verdade no ciclo de desenvolvimento de software, indo além de escrever código pra focar em orquestrar sistemas e explorar todo o potencial da engenharia assistida por AI.
+Atualmente sou Staff Engineer na [Juntos Somos Mais](https://juntossomosmais.com.br/), focado em arquitetura Front-end e desenvolvimento com AI. Sou criador da organização [Front-end BR](https://github.com/frontendbr) no GitHub, um dos fundadores do Meetup CSS e ajudei a organizar a Conferência CSS Brasil 2015. Em 2019 fui reconhecido como LinkedIn Top Voice.
 
-Minha base vem de um longo histórico com open source e comunidades de tecnologia. Tive o privilégio de criar iniciativas como a [Front-end BR](https://github.com/frontendbr), ser um dos fundadores do Meetup CSS, organizar conferências como a Conferência CSS Brasil 2015 e ser reconhecido como LinkedIn Top Voice em 2019. Hoje levo esse mesmo espírito colaborativo pra resolver problemas de produto de alta complexidade.
+Escrevo nesse blog desde 2013 e tenho um [canal no YouTube com conteúdos em vídeo](https://www.youtube.com/@felipefialhodev).
 
-Também tenho um [canal no YouTube](https://www.youtube.com/@felipefialhodev) e escrevo nesse blog desde 2013.
+Sou fanático por futebol, seja assistindo, seja jogando. Como dizem "futebol é a coisa mais importante entre as menos importantes". Também gosto de cerveja e música, especialmente os dois juntos.
 
-Fora do trabalho, curto as coisas simples: torcer pro meu time, jogar bola, ir pra academia, ler livros e ouvir música. E de vez em quando você vai me encontrar filosofando sobre as grandes questões da vida com uma cerveja gelada na mão 🍺 Ah, e tenho dois gatos que são a paixão da casa 😽
+No tempo livre curto academia, filmes e séries, ler livros e filosofar sobre a vida. E não posso deixar de comentar: tenho dois gatos e sou apaixonado por eles 😽
 
-Alguns dos projetos open source que criei:
+Nos últimos anos desenvolvi um monte de projetos open source, como:
 
 - [Front-end BR](https://github.com/frontendbr)
 - [CSS Components](https://github.com/felipefialho/css-components)

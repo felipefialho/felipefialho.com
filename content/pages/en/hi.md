@@ -1,19 +1,19 @@
 ---
 title: About me
-description: Felipe Fialho, a Staff Engineer focused on Front-end system architecture and AI-augmented development.
+description: Felipe Fialho, a Staff Engineer and Front-end developer since 2009, passionate about open source and sharing good ideas.
 ---
 
-Hello! I'm Felipe Fialho (🇧🇷), with over 17 years of experience in the tech industry. I evolved from a Front-end specialist into a Staff Engineer focused on Front-end system architecture and AI-augmented development.
+My name is Felipe Fialho (🇧🇷). I've been working with Front-end development since 2009. I'm passionate about open source projects and I believe that sharing knowledge and good ideas inspires and improves the world.
 
-I'm currently at [Juntos Somos Mais](https://juntossomosmais.com.br/), where I guide technical decisions, tackle complex architectural challenges and drive team productivity. Over the past few years I have deeply integrated AI into the software development lifecycle, moving beyond traditional coding to focus on orchestrating high-level systems and exploring the full potential of AI-assisted engineering.
+I'm currently a Staff Engineer at [Juntos Somos Mais](https://juntossomosmais.com.br/), focused on Front-end architecture and AI-augmented development. I created the [Front-end BR](https://github.com/frontendbr) organization on GitHub, co-founded Meetup CSS and helped organize Conferência CSS Brasil 2015. In 2019 I was recognized as a LinkedIn Top Voice.
 
-My foundation is built on a strong legacy in the open source and tech communities. I had the privilege of creating initiatives like [Front-end BR](https://github.com/frontendbr), co-founding Meetup CSS, organizing conferences like Conferência CSS Brasil 2015 and being recognized as a LinkedIn Top Voice in 2019. Today I bring that same collaborative spirit to solving high-complexity product problems.
+I've been writing on this blog since 2013 and I have a [YouTube channel with video content](https://www.youtube.com/@felipefialhodev) (in Portuguese).
 
-I also have a [YouTube channel](https://www.youtube.com/@felipefialhodev) (in Portuguese) and I've been writing on this blog since 2013.
+I'm crazy about football (soccer), whether watching or playing. As people say, "football is the most important of the least important things". I also like beer and music, especially both together.
 
-Beyond work, I find joy in the simple things: cheering on my team, playing football, hitting the gym, reading books and unwinding with music. And on occasion you might find me philosophizing about life's big questions over a cold beer 🍺 Oh, and I have two cats who run the house 😽
+In my free time I enjoy the gym, movies and series, reading books and philosophizing about life. And I have to mention it: I have two cats and I'm in love with them 😽
 
-Some of the open source projects I created:
+Over the last few years I've built a lot of open source projects, like:
 
 - [Front-end BR](https://github.com/frontendbr)
 - [CSS Components](https://github.com/felipefialho/css-components)
