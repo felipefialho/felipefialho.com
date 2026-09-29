@@ -20,13 +20,13 @@ Nos últimos anos, vimos a consolidação dos principais frameworks e, em 2025, 
 
 ### React e o ecossistema Next.js
 
-React continuou dominante, com o ecossistema em torno do Next.js evoluindo rapidamente. Server Components e Server Actions, que em 2024 ainda eram novidade e geravam discussões, em 2025 se consolidaram como padrão de mercado em cada vez mais projetos modernos [page:1]
+React continuou dominante, com o ecossistema em torno do Next.js evoluindo rapidamente. Server Components e Server Actions, que em 2024 ainda eram novidade e geravam discussões, em 2025 se consolidaram como padrão de mercado em cada vez mais projetos modernos
 
 O Next.js 15 (e agora o 16 já chegando) trouxe melhorias significativas de performance, DX e padrões de arquitetura que facilitam desde projetos pequenos até aplicações complexas em produção
 
 ### A convergência dos frameworks
 
-React, Vue e Angular seguiram num movimento de convergência interessante: cada um mantém sua identidade e filosofia, mas todos abraçam ideias e padrões cada vez mais parecidos [page:1]
+React, Vue e Angular seguiram num movimento de convergência interessante: cada um mantém sua identidade e filosofia, mas todos abraçam ideias e padrões cada vez mais parecidos
 
 Componentização forte, tipagem robusta, boas práticas de arquitetura, foco em DX e integração cada vez mais fluida com back-end e edge. Na prática, a discussão deixa de ser "qual é o melhor framework" e passa a ser "qual faz mais sentido pro contexto do time, do produto e do momento da empresa"
 
@@ -42,7 +42,7 @@ Só ferramentas muito boas sobrevivem
 
 ### DevOps e Front-end: casamento consolidado
 
-DevOps se atrelou de vez ao Front-end. CI/CD, containers, observabilidade e edge computing deixaram definitivamente de ser "nice to have" e viraram parte esperada do skillset de quem trabalha com produto real em produção [page:1]
+DevOps se atrelou de vez ao Front-end. CI/CD, containers, observabilidade e edge computing deixaram definitivamente de ser "nice to have" e viraram parte esperada do skillset de quem trabalha com produto real em produção
 
 Você que trampa com Front-end/Back-end também curte desenrolar umas tarefas mais DevOps como configuração de containers, CI/CD, otimização de pipelines e etc?
 
@@ -52,7 +52,7 @@ A fronteira entre "só Front-end" e "infra" ficou mais difusa, e isso é positiv
 
 ### TypeScript como padrão
 
-TypeScript deixou definitivamente de ser diferencial ou "aquela coisa polêmica" e virou requisito básico em qualquer projeto minimamente sério, principalmente em times grandes, produtos de longa duração e contextos em que refatorar com segurança e manter consistência de tipos faz diferença real no dia a dia [page:1]
+TypeScript deixou definitivamente de ser diferencial ou "aquela coisa polêmica" e virou requisito básico em qualquer projeto minimamente sério, principalmente em times grandes, produtos de longa duração e contextos em que refatorar com segurança e manter consistência de tipos faz diferença real no dia a dia
 
 ### AI saiu da promessa pra realidade
 
@@ -62,7 +62,7 @@ Pra quem abraçou bem essas ferramentas, o "baseline" de produtividade mudou com
 
 ### E o mais importante
 
-2025 mostrou de vez que o trampo dev não é sobre digitar código, e sim sobre tomar decisões com responsabilidade, entender contexto de negócio e ter uma visão ampla do problema e da solução [page:1]
+2025 mostrou de vez que o trampo dev não é sobre digitar código, e sim sobre tomar decisões com responsabilidade, entender contexto de negócio e ter uma visão ampla do problema e da solução
 
 Escrever código é só uma etapa, a maior parte do trampo dev é intelectual
 
@@ -74,7 +74,7 @@ Quem ainda não entendeu isso e acha que é só codar, de fato precisa se preocu
 
 ## O que esperar de 2026?
 
-Penso que o futuro, assim como falei em 2025, não promete grandes revoluções tecnológicas, mas sim mudanças na forma como trabalhamos, decidimos e entregamos valor [page:1]
+Penso que o futuro, assim como falei em 2025, não promete grandes revoluções tecnológicas, mas sim mudanças na forma como trabalhamos, decidimos e entregamos valor
 
 ### Front-end é o que "dá liga"
 
@@ -94,11 +94,11 @@ Programação não se limita na quantidade de código escrito
 
 — felipe.tsx ⚡ (@felipefialho_) [October 20, 2023](https://twitter.com/felipefialho_/status/1715370786830131708?ref_src=twsrc%5Etfw)
 
-O escopo de atuação do Front-end continua se expandindo, com devs atuando cada vez mais como "pontes" entre diferentes áreas, como design, produto, marketing, vendas e não só como "quem escreve o código" [page:1]
+O escopo de atuação do Front-end continua se expandindo, com devs atuando cada vez mais como "pontes" entre diferentes áreas, como design, produto, marketing, vendas e não só como "quem escreve o código"
 
 ### Arquitetura > Sintaxe
 
-Conhecimentos mais generalistas como arquitetura de software e integração de tecnologias tendem a ser mais valorizados do que especializações em bibliotecas específicas, que podem ser substituídas com mais facilidade [page:1]
+Conhecimentos mais generalistas como arquitetura de software e integração de tecnologias tendem a ser mais valorizados do que especializações em bibliotecas específicas, que podem ser substituídas com mais facilidade
 
 Saber sintaxes em detalhes continua importando, mas importa menos do que pensar em escalabilidade, performance, manutenibilidade e como integrar tudo isso num sistema que não quebra no primeiro requisito novo que aparece
 
@@ -131,9 +131,9 @@ Matemática é filosofia aplicada
 
 — felipe.tsx ⚡ (@felipefialho_) [April 15, 2024](https://twitter.com/felipefialho_/status/1779873487248663026?ref_src=twsrc%5Etfw)
 
-Num cenário em que AI depende fundamentalmente de boas instruções, comunicar bem virou hard skill, não só "soft skill" opcional ou "coisa de RH" [page:1]
+Num cenário em que AI depende fundamentalmente de boas instruções, comunicar bem virou hard skill, não só "soft skill" opcional ou "coisa de RH"
 
-Quando a gente fala de comunicação, não é só saber falar bem, mas sim saber ouvir, entender e traduzir as necessidades do cliente e do usuário em código, e também saber explicar suas decisões e defender suas ideias [page:1]
+Quando a gente fala de comunicação, não é só saber falar bem, mas sim saber ouvir, entender e traduzir as necessidades do cliente e do usuário em código, e também saber explicar suas decisões e defender suas ideias
 
 Pra devs, isso significa concretamente:
 
@@ -143,7 +143,7 @@ Pra devs, isso significa concretamente:
 - Escrever specs, requisitos e documentação que humanos e AIs consigam entender
 - Dar e receber feedback construtivo
 
-Comunicação é uma abstração do seu próprio pensamento [page:1]
+Comunicação é uma abstração do seu próprio pensamento
 
 Quanto melhor você souber se comunicar, melhor você vai conseguir traduzir suas ideias em soluções que resolvam problemas reais
 
@@ -178,15 +178,15 @@ Menos foco em escrever cada caractere manualmente, mais foco em:
 - Como manter código e processos saudáveis a longo prazo
 - Como garantir que aquilo que a AI gera faz sentido técnico, de negócio e de custos
 
-O trabalho de devs não vai ser substituído por Inteligência Artificial, mas devs que não se adaptarem a essas ferramentas fatalmente vão ser substituídos por pessoas que fazem bom uso delas [page:1]
+O trabalho de devs não vai ser substituído por Inteligência Artificial, mas devs que não se adaptarem a essas ferramentas fatalmente vão ser substituídos por pessoas que fazem bom uso delas
 
 ## Conclusão
 
-As mudanças tendem a ser mais na forma com que fazemos as coisas que já fazemos agora do que nas tecnologias em si [page:1]
+As mudanças tendem a ser mais na forma com que fazemos as coisas que já fazemos agora do que nas tecnologias em si
 
 É possível (e provável) que a gente automatize cada vez mais a criação de componentes e aplicações, mas usando ferramentas que por debaixo dos panos vão gerar código utilizando as mesmas tecnologias que já usamos: HTML, CSS, JavaScript, React, TypeScript, Next.js e afins
 
-Por isso ter ótima comunicação, capacidade de abstração suficiente pra tomar boas decisões de arquitetura e conhecimentos em DevOps são extremamente relevantes. Não é tanto mais sobre saber a sintaxe de uma linguagem no micro, mas sim sobre saber como integrar tecnologias e pessoas [page:1]
+Por isso ter ótima comunicação, capacidade de abstração suficiente pra tomar boas decisões de arquitetura e conhecimentos em DevOps são extremamente relevantes. Não é tanto mais sobre saber a sintaxe de uma linguagem no micro, mas sim sobre saber como integrar tecnologias e pessoas
 
 Todas essas mudanças já estão acontecendo de forma gradual e a tendência é que se consolidem ao longo de 2026
 
