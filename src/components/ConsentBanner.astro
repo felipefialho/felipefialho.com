@@ -104,11 +104,24 @@ const COPY = {
 
     // Reopened from the footer: show the stored choice, never pre-ticked boxes
     root.addEventListener('toggle', (event) => {
-      if (event.newState !== 'open') return;
+      if (event.newState !== 'open') {
+        delete root.dataset.auto;
+        return;
+      }
       const stored = readConsent();
       analytics.checked = stored?.analytics ?? false;
       ads.checked = stored?.ads ?? false;
       setExpanded(Boolean(stored));
+      // A manual (re)open moves focus in; the automatic first show never steals it
+      if ('auto' in root.dataset) return;
+      const controls = root.querySelectorAll<HTMLElement>('input, button');
+      Array.from(controls).find((control) => !control.closest('[hidden]'))?.focus();
+    });
+
+    // Escape dismisses a manual reopen only. The first automatic show expects a choice
+    // (the close button stays available for anyone who wants to skip it).
+    addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !('auto' in root.dataset) && root.matches(':popover-open')) root.hidePopover();
     });
 
     form.addEventListener('submit', (event) => {
@@ -120,7 +133,11 @@ const COPY = {
       root.hidePopover();
     });
 
-    if (!readConsent() && !inCmpRegion()) root.showPopover();
+    if (!readConsent() && !inCmpRegion()) {
+      // Marks the first automatic show: no entrance fade, so it never delays LCP
+      root.dataset.auto = '';
+      root.showPopover();
+    }
   }
 </script>
 
@@ -229,7 +246,7 @@ const COPY = {
     }
 
     @starting-style {
-      .consent:popover-open {
+      .consent:popover-open:not([data-auto]) {
         opacity: 0;
         translate: 0 var(--space-2);
       }

@@ -8,8 +8,24 @@ export const CONSENT_ID = 'consent';
 // Set once Google's CMP (TCF) reports that GDPR applies to this visitor.
 const CMP_KEY = 'consent-cmp';
 
-// EEA, UK and Switzerland, where Google's certified CMP shows its own message.
-const CMP_TIME_ZONES = /^(Europe\/|Atlantic\/(Azores|Canary|Faroe|Madeira|Reykjavik)|Asia\/(Nicosia|Famagusta)|Arctic\/Longyearbyen)/;
+// IANA zones of the EEA, UK and Switzerland, where Google's certified CMP shows its own message.
+// Explicit on purpose: a `Europe/` prefix would also match Moscow, Istanbul, Kyiv and other non-CMP zones.
+const CMP_TIME_ZONES: ReadonlySet<string> = new Set([
+  // EU member states (capitals plus overseas-of-mainland zones)
+  'Europe/Vienna', 'Europe/Brussels', 'Europe/Sofia', 'Europe/Zagreb', 'Asia/Nicosia', 'Asia/Famagusta',
+  'Europe/Prague', 'Europe/Copenhagen', 'Europe/Tallinn', 'Europe/Helsinki', 'Europe/Mariehamn',
+  'Europe/Paris', 'Europe/Berlin', 'Europe/Busingen', 'Europe/Athens', 'Europe/Budapest', 'Europe/Dublin',
+  'Europe/Rome', 'Europe/Riga', 'Europe/Vilnius', 'Europe/Luxembourg', 'Europe/Malta', 'Europe/Amsterdam',
+  'Europe/Warsaw', 'Europe/Lisbon', 'Atlantic/Azores', 'Atlantic/Madeira', 'Europe/Bucharest',
+  'Europe/Bratislava', 'Europe/Ljubljana', 'Europe/Madrid', 'Africa/Ceuta', 'Atlantic/Canary',
+  'Europe/Stockholm',
+  // Iceland, Norway, Liechtenstein
+  'Atlantic/Reykjavik', 'Europe/Oslo', 'Arctic/Longyearbyen', 'Europe/Vaduz',
+  // United Kingdom, Crown dependencies, Gibraltar
+  'Europe/London', 'Europe/Belfast', 'Europe/Guernsey', 'Europe/Jersey', 'Europe/Isle_of_Man', 'Europe/Gibraltar',
+  // Switzerland
+  'Europe/Zurich',
+]);
 
 export interface ConsentChoice {
   analytics: boolean;
@@ -35,8 +51,6 @@ declare global {
   interface Window {
     dataLayer: unknown[];
     gtag: (...args: unknown[]) => void;
-    // Same signature as src/env.d.ts so the declarations merge
-    track?: (event: string, params?: Record<string, unknown>) => void;
     googlefc?: {
       callbackQueue?: Array<Record<string, () => void>>;
       showRevocationMessage?: () => void;
@@ -66,10 +80,12 @@ const storage = {
   },
 };
 
-const isChoice = (data: unknown): data is ConsentChoice => {
-  const choice = data as ConsentChoice | null;
-  return choice?.v === 1 && typeof choice.analytics === 'boolean' && typeof choice.ads === 'boolean';
-};
+const isChoice = (data: unknown): data is ConsentChoice =>
+  typeof data === 'object'
+  && data !== null
+  && 'v' in data && data.v === 1
+  && 'analytics' in data && typeof data.analytics === 'boolean'
+  && 'ads' in data && typeof data.ads === 'boolean';
 
 export function readConsent(): ConsentChoice | null {
   try {
@@ -111,7 +127,7 @@ export function saveConsent(analytics: boolean, ads: boolean): ConsentChoice {
 export function inCmpRegion(): boolean {
   if (storage.get(CMP_KEY) === '1') return true;
   try {
-    return CMP_TIME_ZONES.test(Intl.DateTimeFormat().resolvedOptions().timeZone);
+    return CMP_TIME_ZONES.has(Intl.DateTimeFormat().resolvedOptions().timeZone);
   } catch {
     return false;
   }

@@ -17,6 +17,7 @@ const slot = kind === 'end' ? END_SLOT : SIDEBAR_SLOT;
       class:list={['ad', `ad-${kind}`]}
       data-ad-slot={slot}
       data-ad-format="auto"
+      data-pagefind-ignore
       data-full-width-responsive={kind === 'end' ? 'true' : undefined}
       aria-label={t(lang).ad}
     ></aside>
