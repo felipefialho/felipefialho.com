@@ -274,7 +274,7 @@ Abandoned software doesn't sit still, it rots. I went almost 10 years without an
 
 It wasn't just updating dependencies, it was redoing the whole project, and in my head that was weeks of work that never fit into my life these days. Next week lasted a good few years 😅
 
-In 2026, building this kind of project is practically trivial with LLMs. So I finally redid **the whole project, design included, in a few hours** using my faithful sidekick Claudinho Code, with that planning, skills, roles and subagents setup I've covered in n posts [here](/en/blog/ai-stack-that-will-level-up-your-work-as-a-dev/) and on social media.
+In 2026, building this kind of project is practically trivial with LLMs. So I finally redid **the whole project, design included, in a few hours** using my faithful sidekick Claudinho Code, with that planning, skills, roles and subagents setup I've covered in n posts, like [my AI stack for devs](/en/blog/ai-stack-that-will-level-up-your-work-as-a-dev/), and on social media.
 
 And I want to be 100% transparent here: **I didn't write a single line of code of this project by hand**. Not HTML, not CSS, not config. Everything came out of a conversation with [Claude Code](https://claude.ai/code), in a long session of a few hours. My job was to steer, review and decide.
 
