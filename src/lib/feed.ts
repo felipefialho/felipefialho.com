@@ -1,18 +1,13 @@
 import rss from '@astrojs/rss';
 import type { APIContext } from 'astro';
-import { HTML_LANG, localePath, type Lang } from './i18n';
+import { HTML_LANG, localePath, t, type Lang } from './i18n';
 import { getPosts, postPath } from './posts';
 
-const COPY = {
-  pt: { title: 'Felipe Fialho', description: 'Front-end, CSS, carreira e AI, desde 2013.' },
-  en: { title: 'Felipe Fialho (English)', description: 'Front-end, CSS, career and AI.' },
-};
-
-export async function feedResponse(lang: Lang, context: APIContext) {
+export async function feedResponse(lang: Lang, context: APIContext): Promise<Response> {
   const posts = await getPosts(lang);
   return rss({
-    title: COPY[lang].title,
-    description: COPY[lang].description,
+    title: t(lang).feedTitle,
+    description: t(lang).feedDescription,
     site: new URL(localePath(lang, '/'), context.site).href,
     items: posts.map((post) => ({
       title: post.data.title,

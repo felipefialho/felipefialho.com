@@ -5,9 +5,12 @@ import AdsLoader from '../components/AdsLoader.astro';
 import Base from '../layouts/Base.astro';
 import PostFooter from '../components/PostFooter.astro';
 import Toc from '../components/Toc.astro';
-import { formatDate, isoDate, t, type Lang } from '../lib/i18n';
+import { HTML_LANG, formatDate, isoDate, t, type Lang } from '../lib/i18n';
 import { MIN_TAG_POSTS, getTagCounts, ogImagePath, postPath, tagPath, type Post } from '../lib/posts';
 import '../styles/prose.css';
+
+// A table of contents only pays off with enough sections
+const MIN_TOC_HEADINGS = 3;
 
 interface Props {
   lang: Lang;
@@ -24,6 +27,8 @@ const minutes = Number(remarkPluginFrontmatter.minutesRead ?? 1);
 const tagCounts = getTagCounts(posts);
 const toc = headings.filter(({ depth }) => depth === 2);
 const url = new URL(postPath(lang, post.id), Astro.site).href;
+const otherLang: Lang = lang === 'pt' ? 'en' : 'pt';
+const showToc = toc.length >= MIN_TOC_HEADINGS;
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -31,8 +36,10 @@ const jsonLd = {
   headline: post.data.title,
   description: post.data.description,
   datePublished: post.data.date.toISOString(),
-  inLanguage: lang === 'pt' ? 'pt-BR' : 'en',
+  dateModified: post.data.date.toISOString(),
+  inLanguage: HTML_LANG[lang],
   url,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': url },
   image: new URL(ogImagePath(lang, post.id), Astro.site).href,
   keywords: post.data.tags.join(', '),
   author: { '@type': 'Person', name: 'Felipe Fialho', url: new URL('/', Astro.site).href },
@@ -71,7 +78,7 @@ const jsonLd = {
         {
           alternate && (
             <p class="translation">
-              <a href={alternate} hreflang={lang === 'pt' ? 'en' : 'pt-BR'}>
+              <a href={alternate} hreflang={HTML_LANG[otherLang]}>
                 {ui.otherLang}
               </a>
             </p>
@@ -79,7 +86,7 @@ const jsonLd = {
         }
       </header>
 
-      {toc.length >= 3 && <Toc headings={toc} lang={lang} variant="inline" />}
+      {showToc && <Toc headings={toc} lang={lang} variant="inline" />}
 
       <div class="prose">
         <Content />
@@ -88,14 +95,14 @@ const jsonLd = {
       <AdSlot kind="end" lang={lang} />
     </article>
 
-    {toc.length >= 3 && <Toc headings={toc} lang={lang} variant="sidebar" />}
+    {showToc && <Toc headings={toc} lang={lang} variant="sidebar" />}
     <div class="rail">
       <AdSlot kind="sidebar" lang={lang} />
     </div>
   </div>
 
   <PostFooter lang={lang} post={post} posts={posts} />
-  <AdsLoader lang={lang} />
+  <AdsLoader />
 </Base>
 
 <style>
@@ -104,7 +111,7 @@ const jsonLd = {
     gap: var(--space-5);
 
     @media (width >= 80rem) {
-      grid-template-columns: 14rem minmax(0, var(--measure)) 300px;
+      grid-template-columns: var(--toc-width) minmax(0, var(--measure)) 300px;
       grid-template-areas: 'toc post rail';
       justify-content: space-between;
       align-items: start;

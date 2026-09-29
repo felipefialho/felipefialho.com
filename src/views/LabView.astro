@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import { localePath, type Lang } from '../lib/i18n';
+import { localePath, t, type Lang } from '../lib/i18n';
 
 interface Props {
   lang: Lang;
@@ -10,25 +10,12 @@ interface Props {
 
 const { lang } = Astro.props;
 const projects = await getCollection('lab');
-const copy = {
-  pt: {
-    title: 'Lab',
-    description: 'Projetos open source e experimentos de Felipe Fialho.',
-    lede: 'Projetos open source e experimentos que fiz ao longo dos anos. Alguns foram reconstruídos em 2026.',
-    code: 'Código',
-  },
-  en: {
-    title: 'Lab',
-    description: 'Open source projects and experiments by Felipe Fialho.',
-    lede: 'Open source projects and experiments I built over the years. Some were rebuilt in 2026.',
-    code: 'Code',
-  },
-}[lang];
+const ui = t(lang);
 ---
 
-<Base lang={lang} title={copy.title} description={copy.description} alternate={localePath(lang === 'pt' ? 'en' : 'pt', '/lab/')}>
-  <h1 class="page-title">{copy.title}</h1>
-  <p class="lede reading">{copy.lede}</p>
+<Base lang={lang} title={ui.lab} description={ui.labDescription} alternate={localePath(lang === 'pt' ? 'en' : 'pt', '/lab/')}>
+  <h1 class="page-title">{ui.lab}</h1>
+  <p class="lede reading">{ui.labLede}</p>
   <ol class="projects">
     {
       projects.map(({ data }, index) => (
@@ -37,7 +24,9 @@ const copy = {
             src={data.image}
             alt=""
             width={480}
-            loading={index < 2 ? 'eager' : 'lazy'}
+            widths={[320, 480, 640, 960]}
+            sizes="(min-width: 48rem) 20rem, 100vw"
+            loading={index === 0 ? 'eager' : 'lazy'}
             class="shot"
           />
           <div>
@@ -48,8 +37,8 @@ const copy = {
             <p>{data.description[lang]}</p>
             {data.repo && (
               <p>
-                <a class="text-link" href={data.repo}>
-                  {copy.code}
+                <a class="text-link" href={data.repo} aria-label={ui.codeOf(data.title)}>
+                  {ui.code}
                 </a>
               </p>
             )}

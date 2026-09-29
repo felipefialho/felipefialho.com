@@ -1,7 +1,7 @@
 ---
 import { getCollection, getEntry, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import { formatDate, isoDate, localePath, t, type Lang } from '../lib/i18n';
+import { SITE_NAME, formatDate, isoDate, localePath, t, type Lang } from '../lib/i18n';
 import { getPosts, postPath } from '../lib/posts';
 
 interface Props {
@@ -15,27 +15,11 @@ const lab = (await getCollection('lab')).slice(0, 3);
 const home = await getEntry('pages', `${lang}/home`);
 const { Content } = home ? await render(home) : { Content: null };
 
-const copy = {
-  pt: {
-    title: 'Felipe Fialho',
-    description: 'Blog de Felipe Fialho sobre front-end, CSS, carreira e AI, escrito desde 2013.',
-    hero: 'Escrevo sobre front-end, CSS, carreira e AI desde 2013.',
-    lab: 'No Lab',
-    allLab: 'Ver todos os projetos',
-  },
-  en: {
-    title: 'Felipe Fialho',
-    description: 'Felipe Fialho writes about front-end, CSS, career and AI, since 2013.',
-    hero: 'I write about front-end, CSS, career and AI. Since 2013.',
-    lab: 'From the Lab',
-    allLab: 'See every project',
-  },
-}[lang];
 ---
 
-<Base lang={lang} title={copy.title} description={copy.description} alternate={localePath(lang === 'pt' ? 'en' : 'pt', '/')}>
+<Base lang={lang} title={SITE_NAME} description={ui.homeDescription} alternate={localePath(lang === 'pt' ? 'en' : 'pt', '/')}>
   <section class="hero">
-    <h1>{copy.hero}</h1>
+    <h1>{ui.hero}</h1>
     {Content && <div class="intro reading"><Content /></div>}
   </section>
 
@@ -62,7 +46,7 @@ const copy = {
   </section>
 
   <section aria-labelledby="lab">
-    <h2 id="lab" class="section-title">{copy.lab}</h2>
+    <h2 id="lab" class="section-title">{ui.fromLab}</h2>
     <ul class="lab-list">
       {
         lab.map(({ data }) => (
@@ -73,7 +57,7 @@ const copy = {
         ))
       }
     </ul>
-    <p><a class="text-link" href={localePath(lang, '/lab/')}>{copy.allLab}</a></p>
+    <p><a class="text-link" href={localePath(lang, '/lab/')}>{ui.allLab}</a></p>
   </section>
 </Base>
 

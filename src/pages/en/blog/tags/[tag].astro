@@ -1,17 +1,9 @@
 ---
 import type { GetStaticPaths } from 'astro';
-import { MIN_TAG_POSTS, getPosts, getTagCounts, tagSlug, type Post } from '../../../../lib/posts';
+import { tagStaticPaths, type Post } from '../../../../lib/posts';
 import ArchiveView from '../../../../views/ArchiveView.astro';
 
-export const getStaticPaths = (async () => {
-  const posts = await getPosts('en');
-  return [...getTagCounts(posts)]
-    .filter(([, count]) => count >= MIN_TAG_POSTS)
-    .map(([tag]) => ({
-      params: { tag: tagSlug(tag) },
-      props: { tag, posts: posts.filter((post) => post.data.tags.includes(tag)) },
-    }));
-}) satisfies GetStaticPaths;
+export const getStaticPaths = (() => tagStaticPaths('en')) satisfies GetStaticPaths;
 
 interface Props {
   tag: string;
@@ -19,7 +11,6 @@ interface Props {
 }
 
 const { tag, posts } = Astro.props;
-const lede = `${posts.length} posts tagged #${tag}.`;
 ---
 
-<ArchiveView lang="en" posts={posts} title={`#${tag}`} description={lede} lede={lede} />
+<ArchiveView lang="en" posts={posts} tag={tag} />

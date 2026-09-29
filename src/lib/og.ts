@@ -1,5 +1,5 @@
 import { readFile } from 'node:fs/promises';
-import path from 'node:path';
+import { createRequire } from 'node:module';
 import satori from 'satori';
 import { html } from 'satori-html';
 import sharp from 'sharp';
@@ -16,15 +16,15 @@ const MUTED = '#5B5B6B';
 const LINK = '#0000EE';
 const PAPER = '#FDFDFC';
 
-type OgInput = { title: string; meta: string; lang: Lang };
+type OgInput = { title: string; meta: string };
 
 const DEFAULT_CARD: Record<Lang, { title: string; meta: string }> = {
   pt: { title: 'Escrevendo sobre front-end desde 2013', meta: 'Blog, Lab e anotações' },
   en: { title: 'Writing about front-end since 2013', meta: 'Blog, Lab and notes' },
 };
 
-const fontFile = (pkg: string, file: string) =>
-  readFile(path.join(process.cwd(), 'node_modules', '@fontsource', pkg, 'files', file));
+const nodeRequire = createRequire(import.meta.url);
+const fontFile = (pkg: string, file: string) => readFile(nodeRequire.resolve(`@fontsource/${pkg}/files/${file}`));
 
 // Loaded once per build; satori needs static (non-variable) woff files
 const fonts = Promise.all([

@@ -1,6 +1,8 @@
 export const LANGS = ['pt', 'en'] as const;
 export type Lang = (typeof LANGS)[number];
 
+export const SITE_NAME = 'Felipe Fialho';
+
 export const HTML_LANG: Record<Lang, string> = { pt: 'pt-BR', en: 'en' };
 export const OG_LOCALE: Record<Lang, string> = { pt: 'pt_BR', en: 'en_US' };
 
@@ -21,11 +23,35 @@ const UI = {
     allPosts: 'Todos os posts',
     latest: 'Posts recentes',
     ad: 'Publicidade',
-    support: 'Curtiu? Apoie o blog',
     cookies: 'Preferências de cookies',
     privacy: 'Política de privacidade',
     otherLang: 'Read in English',
+    switchLang: 'English version',
     close: 'Fechar',
+    mainNav: 'Principal',
+    adjacentPosts: 'Posts vizinhos',
+    lastUpdated: 'Atualizada em',
+    codeOf: (title: string) => `Código do ${title}`,
+    code: 'Código',
+    feedTitle: 'Felipe Fialho',
+    feedDescription: 'Front-end, CSS, carreira e AI, desde 2013.',
+    homeDescription: 'Blog de Felipe Fialho sobre front-end, CSS, carreira e AI, escrito desde 2013.',
+    hero: 'Escrevo sobre front-end, CSS, carreira e AI desde 2013.',
+    fromLab: 'No Lab',
+    allLab: 'Ver todos os projetos',
+    archiveDescription: 'Todos os posts desde 2013, sobre front-end, CSS, carreira e AI.',
+    archiveLede: (count: number) => `${count} posts escritos desde 2013. Os links em roxo são os que você já leu.`,
+    tagLede: (count: number, tag: string) => `${count} posts com a tag #${tag}.`,
+    labDescription: 'Projetos open source e experimentos de Felipe Fialho.',
+    labLede: 'Projetos open source e experimentos que fiz ao longo dos anos. Alguns foram reconstruídos em 2026.',
+    supportPost: 'Curtiu o post? Me paga um café',
+    pixLabel: 'Chave Pix',
+    copy: 'Copiar',
+    copied: 'Copiado',
+    copyFailed: 'Não foi possível copiar. Copie a chave manualmente.',
+    sponsors: 'Apoiar no GitHub Sponsors',
+    fix: 'Achou um erro? O blog é open source,',
+    fixLink: 'edite o post no GitHub',
   },
   en: {
     blog: 'Blog',
@@ -43,17 +69,39 @@ const UI = {
     allPosts: 'All posts',
     latest: 'Latest posts',
     ad: 'Advertisement',
-    support: 'Enjoyed it? Support the blog',
     cookies: 'Cookie preferences',
     privacy: 'Privacy policy',
     otherLang: 'Ler em português',
+    switchLang: 'Versão em português',
     close: 'Close',
+    mainNav: 'Main',
+    adjacentPosts: 'Adjacent posts',
+    lastUpdated: 'Last updated',
+    codeOf: (title: string) => `${title} source code`,
+    code: 'Code',
+    feedTitle: 'Felipe Fialho (English)',
+    feedDescription: 'Front-end, CSS, career and AI.',
+    homeDescription: 'Felipe Fialho writes about front-end, CSS, career and AI, since 2013.',
+    hero: 'I write about front-end, CSS, career and AI. Since 2013.',
+    fromLab: 'From the Lab',
+    allLab: 'See every project',
+    archiveDescription: 'Every post in English, about front-end, CSS, career and AI.',
+    archiveLede: (count: number) => `${count} posts translated to English. Links in purple are the ones you've already read.`,
+    tagLede: (count: number, tag: string) => `${count} posts tagged #${tag}.`,
+    labDescription: 'Open source projects and experiments by Felipe Fialho.',
+    labLede: 'Open source projects and experiments I built over the years. Some were rebuilt in 2026.',
+    supportPost: 'Enjoyed the post? Buy me a coffee',
+    pixLabel: 'Pix key (Brazil)',
+    copy: 'Copy',
+    copied: 'Copied',
+    copyFailed: 'Could not copy. Copy the key by hand.',
+    sponsors: 'Sponsor on GitHub',
+    fix: 'Found a mistake? The blog is open source,',
+    fixLink: 'edit the post on GitHub',
   },
 } as const;
 
 export const t = (lang: Lang) => UI[lang];
-
-export const langFromUrl = (url: URL): Lang => (url.pathname.startsWith('/en/') || url.pathname === '/en' ? 'en' : 'pt');
 
 /** Prefixes a site path with the language segment (PT lives at the root). */
 export const localePath = (lang: Lang, path: string) => (lang === 'pt' ? path : `/en${path}`);

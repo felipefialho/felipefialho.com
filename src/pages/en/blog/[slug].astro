@@ -1,19 +1,9 @@
 ---
 import type { GetStaticPaths } from 'astro';
-import { getPosts, getTranslationMap, postPath, type Post } from '../../../lib/posts';
+import { postStaticPaths, type Post } from '../../../lib/posts';
 import PostView from '../../../views/PostView.astro';
 
-export const getStaticPaths = (async () => {
-  const posts = await getPosts('en');
-  const { enToPt } = await getTranslationMap();
-  return posts.map((post) => {
-    const original = enToPt.get(post.id);
-    return {
-      params: { slug: post.id },
-      props: { post, posts, alternate: original ? postPath('pt', original) : undefined },
-    };
-  });
-}) satisfies GetStaticPaths;
+export const getStaticPaths = (() => postStaticPaths('en')) satisfies GetStaticPaths;
 
 interface Props {
   post: Post;

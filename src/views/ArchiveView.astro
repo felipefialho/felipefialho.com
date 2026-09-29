@@ -1,35 +1,24 @@
 ---
 import Base from '../layouts/Base.astro';
-import { formatDayMonth, isoDate, localePath, type Lang } from '../lib/i18n';
+import { formatDayMonth, isoDate, t, type Lang } from '../lib/i18n';
 import { getPosts, groupByYear, postPath, type Post } from '../lib/posts';
 
 interface Props {
   lang: Lang;
   /** Defaults to every post in the language */
   posts?: Post[];
-  title?: string;
-  description?: string;
-  lede?: string;
+  /** Renders a tag archive instead of the full one */
+  tag?: string;
+  /** Same page in the other language, when it exists */
+  alternate?: string;
 }
 
-const { lang } = Astro.props;
-const posts = Astro.props.posts ?? (await getPosts(lang));
-const copy = {
-  pt: {
-    title: 'Blog',
-    description: 'Todos os posts desde 2013, sobre front-end, CSS, carreira e AI.',
-    lede: `${posts.length} posts escritos desde 2013. Os links em roxo são os que você já leu.`,
-  },
-  en: {
-    title: 'Blog',
-    description: 'Every post in English, about front-end, CSS, career and AI.',
-    lede: `${posts.length} posts translated to English. Links in purple are the ones you've already read.`,
-  },
-}[lang];
-const title = Astro.props.title ?? copy.title;
-const description = Astro.props.description ?? copy.description;
-const lede = Astro.props.lede ?? copy.lede;
-const alternate = Astro.url.pathname === localePath(lang, '/blog/') ? localePath(lang === 'pt' ? 'en' : 'pt', '/blog/') : undefined;
+const { lang, tag, alternate } = Astro.props;
+const ui = t(lang);
+const { posts = await getPosts(lang) } = Astro.props;
+const title = tag ? `#${tag}` : ui.blog;
+const lede = tag ? ui.tagLede(posts.length, tag) : ui.archiveLede(posts.length);
+const description = tag ? lede : ui.archiveDescription;
 ---
 
 <Base lang={lang} title={title} description={description} alternate={alternate}>

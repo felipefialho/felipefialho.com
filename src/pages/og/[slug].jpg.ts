@@ -3,5 +3,4 @@ import { getOgPaths, ogResponse } from '../../lib/og';
 
 export const getStaticPaths = (() => getOgPaths('pt')) satisfies GetStaticPaths;
 
-export const GET: APIRoute = ({ props }) =>
-  ogResponse({ title: props.title, meta: props.meta, lang: 'pt' });
+export const GET: APIRoute = ({ props }) => ogResponse({ title: props.title, meta: props.meta });

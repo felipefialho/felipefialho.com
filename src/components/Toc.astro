@@ -15,7 +15,7 @@ const label = t(lang).toc;
 
 {
   variant === 'inline' ? (
-    <details class="toc toc-inline">
+    <details class="toc toc-inline" data-pagefind-ignore>
       <summary>{label}</summary>
       <ol>
         {headings.map(({ slug, text }) => (
