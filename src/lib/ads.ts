@@ -14,7 +14,16 @@ declare global {
   }
 }
 
+const FILL_TIMEOUT_MS = 4000;
+
 let tagInjected = false;
+let tagFailed = false;
+
+// `.ad` sets its own display, which beats the `hidden` attribute, so hide inline as well
+function hide(slot: HTMLElement): void {
+  slot.hidden = true;
+  slot.style.display = 'none';
+}
 
 // Consent is read once per page view: a later change applies from the next page.
 function injectTag(queue: AdsQueue): void {
@@ -24,13 +33,18 @@ function injectTag(queue: AdsQueue): void {
   script.async = true;
   script.crossOrigin = 'anonymous';
   script.src = TAG_SRC;
+  // Blocked or failed tag: no ad will ever come, so drop the reserved boxes
+  script.addEventListener('error', () => {
+    tagFailed = true;
+    document.querySelectorAll<HTMLElement>('.ad[data-ad-slot]').forEach(hide);
+  });
   document.head.append(script);
   watchGoogleCmp();
 }
 
 function fill(slot: HTMLElement): void {
   const { adSlot, adFormat, adLayout, fullWidthResponsive, adWidth, adHeight } = slot.dataset;
-  if (!adSlot || slot.querySelector('ins.adsbygoogle')) return;
+  if (!adSlot || tagFailed || slot.querySelector('ins.adsbygoogle')) return;
 
   const queue = (window.adsbygoogle ??= []);
   if (!tagInjected) injectTag(queue);
@@ -50,6 +64,10 @@ function fill(slot: HTMLElement): void {
 
   slot.append(ins);
   queue.push({});
+  // AdSense sets data-ad-status once it answers; silence means the box would stay empty
+  setTimeout(() => {
+    if (!ins.dataset.adStatus) hide(slot);
+  }, FILL_TIMEOUT_MS);
 }
 
 /**
