@@ -322,8 +322,8 @@ Recomendo que assistam no
 e também podem testar no exemplo que deixei no Codepen:
 
 <figure class="embed embed-codepen">
-  <iframe src="https://codepen.io/felipefialho/embed/ExKaOQr?default-tab=result" title="Pen de @felipefialho no CodePen" loading="lazy" height="400"></iframe>
-  <figcaption><a href="https://codepen.io/felipefialho/pen/ExKaOQr">Ver pen de @felipefialho no CodePen</a></figcaption>
+  <iframe src="https://codepen.io/felipefialho/embed/ExKaOQr?default-tab=result" title="CSS Variables" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/ExKaOQr">CSS Variables</a> por Felipe Fialho no CodePen</figcaption>
 </figure>
 
 ### São agnósticas sobre a stack de CSS utilizada

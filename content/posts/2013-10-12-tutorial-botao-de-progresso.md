@@ -18,8 +18,8 @@ Nível do tutorial: **Básico**
 A demo funcional está no Codepen.
 
 <figure class="embed embed-codepen">
-  <iframe src="https://codepen.io/felipefialho/embed/KviDw?default-tab=result" title="Pen de @felipefialho no CodePen" loading="lazy" height="400"></iframe>
-  <figcaption><a href="https://codepen.io/felipefialho/pen/KviDw">Ver pen de @felipefialho no CodePen</a></figcaption>
+  <iframe src="https://codepen.io/felipefialho/embed/KviDw?default-tab=result" title="Button Progress" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/KviDw">Button Progress</a> por Felipe Fialho no CodePen</figcaption>
 </figure>
 
 ## Tutorial

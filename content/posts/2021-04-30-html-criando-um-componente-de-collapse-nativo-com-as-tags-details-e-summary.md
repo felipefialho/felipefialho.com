@@ -256,8 +256,8 @@ Componente finalizado e como podem ver não precisei adicionar nenhuma linha de
 JavaScript 😜
 
 <figure class="embed embed-codepen">
-  <iframe src="https://codepen.io/felipefialho/embed/yLgxdzR?default-tab=result" title="Pen de @felipefialho no CodePen" loading="lazy" height="400"></iframe>
-  <figcaption><a href="https://codepen.io/felipefialho/pen/yLgxdzR">Ver pen de @felipefialho no CodePen</a></figcaption>
+  <iframe src="https://codepen.io/felipefialho/embed/yLgxdzR?default-tab=result" title="Native collapse using &lt;details&gt; and &lt;summary&gt;" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/yLgxdzR">Native collapse using &lt;details&gt; and &lt;summary&gt;</a> por Felipe Fialho no CodePen</figcaption>
 </figure>
 
 No

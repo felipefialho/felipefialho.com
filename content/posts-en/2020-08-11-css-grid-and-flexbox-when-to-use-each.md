@@ -178,8 +178,8 @@ In this article
 It's worth seeing all these examples working in practice 😜
 
 <figure class="embed embed-codepen">
-  <iframe src="https://codepen.io/felipefialho/embed/abdKyKP?default-tab=result" title="Pen by @felipefialho on CodePen" loading="lazy" height="400"></iframe>
-  <figcaption><a href="https://codepen.io/felipefialho/pen/abdKyKP">See @felipefialho's pen on CodePen</a></figcaption>
+  <iframe src="https://codepen.io/felipefialho/embed/abdKyKP?default-tab=result" title="CSS Grid and Flexbox" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/abdKyKP">CSS Grid and Flexbox</a> by Felipe Fialho on CodePen</figcaption>
 </figure>
 
 If you open this example and resize the screen, you can see the grids adapt to the resolution, all of it without a single line of media queries 😁

@@ -12,8 +12,8 @@ Esse post é bem antigo, escrevi em meados de 2013. Ano passado desenvolvi uma s
 O resultado pode ser visto no Codepen.
 
 <figure class="embed embed-codepen">
-  <iframe src="https://codepen.io/felipefialho/embed/LkOXBA?default-tab=result" title="Pen de @felipefialho no CodePen" loading="lazy" height="400"></iframe>
-  <figcaption><a href="https://codepen.io/felipefialho/pen/LkOXBA">Ver pen de @felipefialho no CodePen</a></figcaption>
+  <iframe src="https://codepen.io/felipefialho/embed/LkOXBA?default-tab=result" title="Animate height with CSS transitions using scale()" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/LkOXBA">Animate height with CSS transitions using scale()</a> por Felipe Fialho no CodePen</figcaption>
 </figure>
 
 ## O problema
@@ -69,6 +69,6 @@ O maior problema é caso o conteúdo seja dinâmico e ultrapasse o tamanho máxi
 Deixei um exemplo funcional no <a href="http://codepen.io/felipefialho/pen/ICkwe">CodePen</a> para demonstrar melhor o funcionamento.
 
 <figure class="embed embed-codepen">
-  <iframe src="https://codepen.io/felipefialho/embed/ICkwe?default-tab=result" title="Pen de @felipefialho no CodePen" loading="lazy" height="400"></iframe>
-  <figcaption><a href="https://codepen.io/felipefialho/pen/ICkwe">Ver pen de @felipefialho no CodePen</a></figcaption>
+  <iframe src="https://codepen.io/felipefialho/embed/ICkwe?default-tab=result" title="Animate &quot;height&quot; with CSS Transitions" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/ICkwe">Animate &quot;height&quot; with CSS Transitions</a> por Felipe Fialho no CodePen</figcaption>
 </figure>

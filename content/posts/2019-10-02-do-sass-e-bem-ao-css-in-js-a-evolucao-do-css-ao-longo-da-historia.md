@@ -67,8 +67,8 @@ Era uma fase de aprender e entender como trabalhar com as atualizações que est
 - Em 2012 criei esse Cartman:
 
 <figure class="embed embed-codepen">
-  <iframe src="https://codepen.io/felipefialho/embed/qzDCJ?default-tab=result" title="Pen de @felipefialho no CodePen" loading="lazy" height="400"></iframe>
-  <figcaption><a href="https://codepen.io/felipefialho/pen/qzDCJ">Ver pen de @felipefialho no CodePen</a></figcaption>
+  <iframe src="https://codepen.io/felipefialho/embed/qzDCJ?default-tab=result" title="Eric Cartman in Pure CSS (2012)" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/qzDCJ">Eric Cartman in Pure CSS (2012)</a> por Felipe Fialho no CodePen</figcaption>
 </figure>
 
 - Um tempinho depois, em meados de 2013, desenhei esse [piano com gradientes](http://piano.felipefialho.com).

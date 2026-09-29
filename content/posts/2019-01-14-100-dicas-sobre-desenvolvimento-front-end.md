@@ -412,8 +412,8 @@ html {
 Confuso? Olha esse exemplo que deixei pra vocês no Codepen:
 
 <figure class="embed embed-codepen">
-  <iframe src="https://codepen.io/felipefialho/embed/wRYoPN?default-tab=result" title="Pen de @felipefialho no CodePen" loading="lazy" height="400"></iframe>
-  <figcaption><a href="https://codepen.io/felipefialho/pen/wRYoPN">Ver pen de @felipefialho no CodePen</a></figcaption>
+  <iframe src="https://codepen.io/felipefialho/embed/wRYoPN?default-tab=result" title="Fluid Typography" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/wRYoPN">Fluid Typography</a> por Felipe Fialho no CodePen</figcaption>
 </figure>
 
 <b>84.</b> Evite usar números mágicos, seja no CSS, seja no JavaScript. Uma dica é escalar suas variáveis CSS:
@@ -551,8 +551,8 @@ img { object-fit: cover; }
 Fiz esse exemplo no Codepen para darem uma olhada:
 
 <figure class="embed embed-codepen">
-  <iframe src="https://codepen.io/felipefialho/embed/MBdrer?default-tab=result" title="Pen de @felipefialho no CodePen" loading="lazy" height="400"></iframe>
-  <figcaption><a href="https://codepen.io/felipefialho/pen/MBdrer">Ver pen de @felipefialho no CodePen</a></figcaption>
+  <iframe src="https://codepen.io/felipefialho/embed/MBdrer?default-tab=result" title="Flexible aspect ratio" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/MBdrer">Flexible aspect ratio</a> por Felipe Fialho no CodePen</figcaption>
 </figure>
 
 Gostaram? 😄

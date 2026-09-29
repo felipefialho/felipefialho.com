@@ -319,8 +319,8 @@ I recommend watching
 and you can also try it out in the example I left on Codepen:
 
 <figure class="embed embed-codepen">
-  <iframe src="https://codepen.io/felipefialho/embed/ExKaOQr?default-tab=result" title="Pen by @felipefialho on CodePen" loading="lazy" height="400"></iframe>
-  <figcaption><a href="https://codepen.io/felipefialho/pen/ExKaOQr">See @felipefialho's pen on CodePen</a></figcaption>
+  <iframe src="https://codepen.io/felipefialho/embed/ExKaOQr?default-tab=result" title="CSS Variables" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/ExKaOQr">CSS Variables</a> by Felipe Fialho on CodePen</figcaption>
 </figure>
 
 ### They're agnostic about the CSS stack you use

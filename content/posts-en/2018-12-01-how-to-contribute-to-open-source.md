@@ -61,8 +61,8 @@ thousands of development initiatives.
 In 2012 I built this Eric Cartman to study CSS and never stopped.
 
 <figure class="embed embed-codepen">
-  <iframe src="https://codepen.io/felipefialho/embed/qzDCJ?default-tab=result" title="Pen by @felipefialho on CodePen" loading="lazy" height="400"></iframe>
-  <figcaption><a href="https://codepen.io/felipefialho/pen/qzDCJ">See @felipefialho's pen on CodePen</a></figcaption>
+  <iframe src="https://codepen.io/felipefialho/embed/qzDCJ?default-tab=result" title="Eric Cartman in Pure CSS (2012)" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/qzDCJ">Eric Cartman in Pure CSS (2012)</a> by Felipe Fialho on CodePen</figcaption>
 </figure>
 
 Just to name a few things:

@@ -29,8 +29,8 @@ Existes milhares de tipos de carousel, e várias técnicas para desenvolve-los. 
 A funcionalidade do botão não foi feita, mas... tente fazer um scroll no carousel :)
 
 <figure class="embed embed-codepen">
-  <iframe src="https://codepen.io/felipefialho/embed/rjXbra?default-tab=result" title="Pen de @felipefialho no CodePen" loading="lazy" height="400"></iframe>
-  <figcaption><a href="https://codepen.io/felipefialho/pen/rjXbra">Ver pen de @felipefialho no CodePen</a></figcaption>
+  <iframe src="https://codepen.io/felipefialho/embed/rjXbra?default-tab=result" title="Carousel - Example" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/rjXbra">Carousel - Example</a> por Felipe Fialho no CodePen</figcaption>
 </figure>
 
 Esse exemplo é a base de um Carousel simples, com o item ocupando 100% do espaço visível. Mas observem que o scroll termina no lugar correto, respeitando o número de elementos. Tudo isso sem usar uma linha de JavaScript.
@@ -48,8 +48,8 @@ E o mais legal, é que essa técnica fornece um puta fallback caso o JavaScript 
 Outro uso legal dessa técnica consiste em deixar automaticamente responsiva para qualquer tipo de navegação.
 
 <figure class="embed embed-codepen">
-  <iframe src="https://codepen.io/felipefialho/embed/LxwoQd?default-tab=result" title="Pen de @felipefialho no CodePen" loading="lazy" height="400"></iframe>
-  <figcaption><a href="https://codepen.io/felipefialho/pen/LxwoQd">Ver pen de @felipefialho no CodePen</a></figcaption>
+  <iframe src="https://codepen.io/felipefialho/embed/LxwoQd?default-tab=result" title="Navigation - Example" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/LxwoQd">Navigation - Example</a> por Felipe Fialho no CodePen</figcaption>
 </figure>
 
 Observem agora que a navegação adiciona um scroll caso os elementos ultrapassem o tamanho do pai. Para testar melhor, recomendo que editem esse pen, e removam alguns items, deixando apenas dois. O scroll simplesmente não vai estar disponível.

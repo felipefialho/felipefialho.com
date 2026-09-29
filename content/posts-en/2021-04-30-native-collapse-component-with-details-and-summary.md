@@ -248,8 +248,8 @@ Component finished, and as you can see I didn't have to add a single line of
 JavaScript 😜
 
 <figure class="embed embed-codepen">
-  <iframe src="https://codepen.io/felipefialho/embed/yLgxdzR?default-tab=result" title="Pen by @felipefialho on CodePen" loading="lazy" height="400"></iframe>
-  <figcaption><a href="https://codepen.io/felipefialho/pen/yLgxdzR">See @felipefialho's pen on CodePen</a></figcaption>
+  <iframe src="https://codepen.io/felipefialho/embed/yLgxdzR?default-tab=result" title="Native collapse using &lt;details&gt; and &lt;summary&gt;" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/yLgxdzR">Native collapse using &lt;details&gt; and &lt;summary&gt;</a> by Felipe Fialho on CodePen</figcaption>
 </figure>
 
 On

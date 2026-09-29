@@ -20,8 +20,8 @@ Uma boa forma de contornar esse problema, é adicionar uma `<label>`, fora do ca
 ## A Solução
 
 <figure class="embed embed-codepen">
-  <iframe src="https://codepen.io/felipefialho/embed/ijBDF?default-tab=result" title="Pen de @felipefialho no CodePen" loading="lazy" height="400"></iframe>
-  <figcaption><a href="https://codepen.io/felipefialho/pen/ijBDF">Ver pen de @felipefialho no CodePen</a></figcaption>
+  <iframe src="https://codepen.io/felipefialho/embed/ijBDF?default-tab=result" title="Label - Good use" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/ijBDF">Label - Good use</a> por Felipe Fialho no CodePen</figcaption>
 </figure>
 
 Observem, que ao clicar sobre o campo, a `<label>` muda de posição e permanece sempre visível. Essa solução usa apenas CSS e é muito simples de ser implementada:

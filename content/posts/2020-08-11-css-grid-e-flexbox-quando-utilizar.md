@@ -224,8 +224,8 @@ utilizada com **CSS Grid**.
 Vale ver todos esses exemplos funcionando na prática 😜
 
 <figure class="embed embed-codepen">
-  <iframe src="https://codepen.io/felipefialho/embed/abdKyKP?default-tab=result" title="Pen de @felipefialho no CodePen" loading="lazy" height="400"></iframe>
-  <figcaption><a href="https://codepen.io/felipefialho/pen/abdKyKP">Ver pen de @felipefialho no CodePen</a></figcaption>
+  <iframe src="https://codepen.io/felipefialho/embed/abdKyKP?default-tab=result" title="CSS Grid and Flexbox" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/abdKyKP">CSS Grid and Flexbox</a> por Felipe Fialho no CodePen</figcaption>
 </figure>
 
 Abrindo esse exemplo e redimensionando a tela, é possível ver que os grids se
