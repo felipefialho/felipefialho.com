@@ -1,10 +1,8 @@
 ---
 title: Home
-description: Personal website of a Front End developer passionate about create things and sharing good ideas.
+description: Felipe Fialho's blog, a Staff Engineer writing about front-end, architecture and AI-augmented development.
 ---
 
-My name is Felipe Fialho from Brazil. I've been working as Front-End Developer since 2009. I'm passionate about open source projects, I believe that the dissemination of knowledge and good ideas inspires and improves the world.
+I'm Felipe Fialho (🇧🇷), a Staff Engineer with over 17 years in the tech industry. I started as a Front-end specialist and today I focus on Front-end system architecture and AI-augmented development.
 
-Currently, I'm a Tech Lead at [Juntos Somos Mais](https://juntossomosmais.com.br/) and I've created the [Front-end BR](https://github.com/frontendbr) organization on Github. I'm also a one of the founders of Meetup CSS and I helped in organization of Conferência CSS Brasil 2015.
-
-I also have an [YouTube channel](https://www.youtube.com/@felipefialhodev).
+I'm currently at [Juntos Somos Mais](https://juntossomosmais.com.br/), guiding technical decisions and architectural challenges. I created [Front-end BR](https://github.com/frontendbr), helped organize community events and have a [YouTube channel](https://www.youtube.com/@felipefialhodev) (in Portuguese).
