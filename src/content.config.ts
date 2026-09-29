@@ -59,8 +59,8 @@ const lab = defineCollection({
   loader: file('./content/lab/lab.json'),
   schema: ({ image }) =>
     z.object({
-      url: z.url(),
-      repo: z.url().nullable(),
+      url: z.url({ protocol: /^https?$/ }),
+      repo: z.url({ protocol: /^https?$/ }).nullable(),
       year: z.string(),
       title: z.string(),
       description: z.object({ pt: z.string(), en: z.string() }),
