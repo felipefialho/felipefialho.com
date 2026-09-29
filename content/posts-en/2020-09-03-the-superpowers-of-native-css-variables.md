@@ -329,7 +329,7 @@ Another advantage of CSS Variables is that they're agnostic regarding the CSS
 technologies used in the project.
 
 I had to make use of this in
-[Venice, the Design System at Juntos Somos Mais](/blog/design-system-venice-e-as-pecas-do-lego/)
+[Venice, the Design System at Juntos Somos Mais](/en/blog/design-system-venice-and-the-lego-pieces/)
 (in Portuguese).
 
 We needed things like colors, spacing and typography to be shared across all the

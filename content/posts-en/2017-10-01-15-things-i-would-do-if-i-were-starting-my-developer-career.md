@@ -20,8 +20,8 @@ This is a video rework of this article (from 2020), with some updates and improv
 
 As complementary reading, I also recommend two other articles of mine:
 
-- [What Front-end Developers need to know](/blog/o-que-front-end-developers-precisam-saber/) (in Portuguese)
-- [How to study, practice and land opportunities as a (Front-end) Developer](/blog/como-estudar-praticar-e-conseguir-oportunidades-como-front-end-developer/) (in Portuguese)
+- [What Front-end Developers need to know](/en/blog/what-front-end-developers-need-to-know/)
+- [How to study, practice and land opportunities as a (Front-end) Developer](/en/blog/how-to-study-practice-and-land-opportunities-as-a-front-end-developer/)
 
 So let's go!
 
@@ -122,7 +122,7 @@ But under the hood, we've been using the same languages for many years, and we'l
 So, before going deep on any lib, I would study this basic (and magical) trio a lot.
 
 Still on this topic, I strongly recommend reading the article:
-[What Front-end Developers need to know](/blog/o-que-front-end-developers-precisam-saber/) (in Portuguese)
+[What Front-end Developers need to know](/en/blog/what-front-end-developers-need-to-know/)
 😁
 
 ## 5. I would learn one thing at a time
@@ -197,7 +197,7 @@ Believe it or not, all these things directly impact the quality of the code we w
 ![MeetupCSS at Cubo](assets/meetup-css-2017.png)_MeetupCSS at Cubo_
 
 I've written a few times about the
-[importance of events for developers](/blog/porque-developers-devem-ir-em-eventos/) (in Portuguese),
+[importance of events for developers](/en/blog/why-every-developer-should-go-to-events/),
 so I won't dwell on this subject.
 
 I'd say smaller events like Meetups are even more interesting for people who are just starting out, they're usually free and there's more closeness between people.

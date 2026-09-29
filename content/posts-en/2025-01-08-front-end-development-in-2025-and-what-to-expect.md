@@ -10,8 +10,8 @@ translationOf: como-esta-o-desenvolvimento-frontend-em-2025-e-o-que-esperar-do-f
 
 Life is a breath and time rolls by like a steamroller. It feels like yesterday, but years ago I wrote a few articles about the "not-so-current" Front-end landscape and what to study to stay up to date:
 
-- [What Front-end Developers need to know](/blog/o-que-front-end-developers-precisam-saber/) (in Portuguese)
-- [How to study, practice and land opportunities as a (Front-end) Developer](/blog/como-estudar-praticar-e-conseguir-oportunidades-como-front-end-developer/) (in Portuguese)
+- [What Front-end Developers need to know](/en/blog/what-front-end-developers-need-to-know/)
+- [How to study, practice and land opportunities as a (Front-end) Developer](/en/blog/how-to-study-practice-and-land-opportunities-as-a-front-end-developer/)
 
 I blinked and suddenly it's 2025!
 
@@ -30,7 +30,7 @@ We went from a scenario (especially between 2014 and 2020) where a new lib poppe
 
 In recent years, we've seen the main frameworks consolidate, like React (with Next.js, of course!), Angular and Vue, each with its own audience, but all aligned on the goal of making development more scalable and sustainable.
 
-Back then there were still pretty heated discussions about [which was the best framework](/blog/react-angular-vue-qual-framework-javascript-escolheria-hoje/) (in Portuguese). Today we can see that each one has its place and its advantages, and choosing between them is more a matter of preference and context than of "better" or "worse", since they're all quite mature and very similar in features.
+Back then there were still pretty heated discussions about [which was the best framework](/en/blog/react-angular-or-vue-which-javascript-framework-would-i-choose-today/). Today we can see that each one has its place and its advantages, and choosing between them is more a matter of preference and context than of "better" or "worse", since they're all quite mature and very similar in features.
 
 At that point React was already the most popular framework, but there was no consolidation of patterns yet. Next.js, which was just starting to gain traction in 2020, is now practically omnipresent in React projects, bringing a series of features that make a developer's life easier, like SSR, SSG, API Routes and Image Optimization.
 

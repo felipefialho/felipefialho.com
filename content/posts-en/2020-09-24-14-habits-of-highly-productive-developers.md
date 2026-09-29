@@ -166,7 +166,7 @@ subjects, and at other points we'll be more generalist, especially when we're in
 leadership roles.
 
 I mentioned this in the article
-[What do Front-end Developers need to know?](/blog/o-que-front-end-developers-precisam-saber/)
+[What do Front-end Developers need to know?](/en/blog/what-front-end-developers-need-to-know/)
 (in Portuguese)
 
 ## Controlling the variables
