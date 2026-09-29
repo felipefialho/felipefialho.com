@@ -8,7 +8,7 @@ translationOf: 14-habitos-de-desenvolvedores-altamente-produtivos
 
 This post is a text version of the video "14 Habits of Highly Productive
 Developers: Book Review"
-[that I published on my YouTube channel](https://www.youtube.com/@felipefialhovlog)
+[that I published on my YouTube channel](https://www.youtube.com/@felipefialhodev)
 (in Portuguese).
 
 It's worth watching! 😊

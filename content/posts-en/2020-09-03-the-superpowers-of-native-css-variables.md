@@ -8,7 +8,7 @@ translationOf: os-superpoderes-das-variaveis-nativas-do-css
 
 This post is a text version of the video "CSS Variables: The Superpowers of
 Native CSS Variables"
-[that I published on my YouTube channel](https://www.youtube.com/@felipefialhovlog)
+[that I published on my YouTube channel](https://www.youtube.com/@felipefialhodev)
 (in Portuguese).
 
 It's worth watching! 😊

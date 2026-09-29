@@ -10,7 +10,7 @@ tags: ['carreira', 'livros', 'misc']
 
 Esse texto é uma versão em texto do vídeo: "14 Hábitos de Desenvolvedores
 Altamente Produtivos - Resenha do Livro"
-[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhovlog).
+[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhodev).
 
 Vale a pena assistir! 😊
 

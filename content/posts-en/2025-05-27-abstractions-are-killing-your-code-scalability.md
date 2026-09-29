@@ -7,7 +7,7 @@ translationOf: abstracoes-tao-matando-a-escalabilidade-do-seu-codigo
 ---
 
 This is a video version of the content presented in this article,
-[which I published on my YouTube channel](https://www.youtube.com/@felipefialhovlog) (in Portuguese).
+[which I published on my YouTube channel](https://www.youtube.com/@felipefialhodev) (in Portuguese).
 
 Worth watching! 😁
 

@@ -7,7 +7,7 @@ translationOf: front-end-o-inicio-o-fim-e-o-meio
 ---
 
 This is a video version of the content in this article
-[that I published on my YouTube channel](https://www.youtube.com/@felipefialhovlog).
+[that I published on my YouTube channel](https://www.youtube.com/@felipefialhodev).
 
 Worth watching! 😁
 

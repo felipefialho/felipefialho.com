@@ -8,7 +8,7 @@ translationOf: html-criando-um-componente-de-collapse-nativo-com-as-tags-details
 
 This is the text version of the video: <strong>NO JAVASCRIPT - Collapse with
 HTML and CSS in 5min!</strong>
-[that I published on my YouTube channel](https://www.youtube.com/@felipefialhovlog) (in Portuguese).
+[that I published on my YouTube channel](https://www.youtube.com/@felipefialhodev) (in Portuguese).
 
 It's worth watching! 😊
 

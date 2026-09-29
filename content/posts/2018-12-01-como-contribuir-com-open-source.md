@@ -9,7 +9,7 @@ tags: ['open source', 'github', 'comunidade']
 ### Versão em vídeo
 
 Essa é uma versão em vídeo do conteúdo apresentado nesse artigo
-[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhovlog).
+[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhodev).
 
 Vale a pena assistir! 😁
 

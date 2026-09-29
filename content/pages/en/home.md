@@ -7,4 +7,4 @@ My name is Felipe Fialho from Brazil. I've been working as Front-End Developer s
 
 Currently, I'm a Tech Lead at [Juntos Somos Mais](https://juntossomosmais.com.br/) and I've created the [Front-end BR](https://github.com/frontendbr) organization on Github. I'm also a one of the founders of Meetup CSS and I helped in organization of Conferência CSS Brasil 2015.
 
-I also have an [YouTube channel](https://www.youtube.com/@felipefialhovlog).
+I also have an [YouTube channel](https://www.youtube.com/@felipefialhodev).

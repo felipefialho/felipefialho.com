@@ -11,7 +11,7 @@ tags: ['stack', 'framework', 'javascript']
 
 Esse texto é uma versão em texto do vídeo: <strong>REACT, VUE ou ANGULAR - Qual
 framework JavaScript escolheria hoje</strong>
-[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhovlog).
+[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhodev).
 
 Vale a pena assistir! 😊
 

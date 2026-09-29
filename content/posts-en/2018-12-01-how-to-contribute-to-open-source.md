@@ -9,7 +9,7 @@ translationOf: como-contribuir-com-open-source
 ### Video version
 
 This is a video version of the content in this article
-[that I published on my YouTube channel](https://www.youtube.com/@felipefialhovlog).
+[that I published on my YouTube channel](https://www.youtube.com/@felipefialhodev).
 
 Worth watching! 😁
 

@@ -7,7 +7,7 @@ translationOf: css-grid-e-flexbox-quando-utilizar
 ---
 
 This is a text version of the video "CSS GRID and Flexbox: When to Use Each?"
-[that I published on my YouTube channel](https://www.youtube.com/@felipefialhovlog).
+[that I published on my YouTube channel](https://www.youtube.com/@felipefialhodev).
 
 Worth watching! 😊
 

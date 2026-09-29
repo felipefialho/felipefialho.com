@@ -10,7 +10,7 @@ tags: ['carreira', 'estudos']
 
 Esse texto é uma versão em texto do vídeo: "Prática x Teoria - Quando aprendemos
 e quando entendemos?"
-[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhovlog).
+[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhodev).
 
 Vale a pena assistir! 😊
 
@@ -100,7 +100,7 @@ e procurar informações na Internet sobre como se comunicar melhor, isso faria 
 entender teorias de comunicação mas na prática não me ajudaria muito.
 
 O que fiz então foi
-[criar um canal no Youtube](https://www.youtube.com/@felipefialhovlog), onde preciso
+[criar um canal no Youtube](https://www.youtube.com/@felipefialhodev), onde preciso
 ser o mais claro possível na comunicação ou as pessoas que estão assistindo os
 vídeos simplesmente não vão entender.
 

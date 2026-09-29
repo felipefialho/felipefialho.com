@@ -7,7 +7,7 @@ translationOf: inteligencia-artificial-filosofia-da-programacao-e-o-futuro-dos-d
 ---
 
 This is a video version of the content presented in this article
-[that I published on my YouTube channel](https://www.youtube.com/@felipefialhovlog)
+[that I published on my YouTube channel](https://www.youtube.com/@felipefialhodev)
 (in Portuguese).
 
 It's worth watching! 😁

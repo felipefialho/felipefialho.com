@@ -10,7 +10,7 @@ tags: ['flexbox', 'css', 'css grid']
 
 Esse texto é uma versão em texto do vídeo: "CSS GRID e Flexbox - Quando
 utilizar?"
-[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhovlog).
+[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhodev).
 
 Vale a pena assistir! 😊
 
