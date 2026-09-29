@@ -1,0 +1,177 @@
+---
+import { localePath, t, type Lang } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+  alternate?: string;
+}
+
+const { lang, alternate } = Astro.props;
+const ui = t(lang);
+const otherLang: Lang = lang === 'pt' ? 'en' : 'pt';
+const langHref = alternate ?? localePath(otherLang, '/');
+const path = Astro.url.pathname;
+
+const nav = [
+  { href: localePath(lang, '/blog/'), label: ui.blog },
+  { href: localePath(lang, '/lab/'), label: ui.lab },
+  { href: localePath(lang, '/hi/'), label: ui.about },
+];
+---
+
+<header class="site-header page">
+  <a class="wordmark" href={localePath(lang, '/')}>felipe fialho</a>
+  <nav class="site-nav" aria-label={lang === 'pt' ? 'Principal' : 'Main'}>
+    <ul>
+      {
+        nav.map(({ href, label }) => (
+          <li>
+            <a href={href} aria-current={path.startsWith(href) ? 'page' : undefined}>
+              {label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+  <div class="tools">
+    <button class="icon-button" type="button" commandfor="search" command="show-modal" aria-label={ui.search}>
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+        <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"></circle>
+        <path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+      </svg>
+    </button>
+    <button class="icon-button" type="button" data-theme-toggle aria-label={ui.theme}>
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+        <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"></circle>
+        <path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"></path>
+      </svg>
+    </button>
+    <a class="lang-link" href={langHref} hreflang={otherLang === 'pt' ? 'pt-BR' : 'en'} lang={otherLang === 'pt' ? 'pt-BR' : 'en'}>
+      {otherLang === 'pt' ? 'PT' : 'EN'}
+    </a>
+  </div>
+</header>
+
+<script>
+  const root = document.documentElement;
+
+  document.querySelector('[data-theme-toggle]')?.addEventListener('click', () => {
+    const current = root.dataset.theme ?? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    const next = current === 'dark' ? 'light' : 'dark';
+    root.dataset.theme = next;
+    try {
+      localStorage.setItem('theme', next);
+    } catch {
+      // Private mode: the choice lasts for this page only
+    }
+    window.track?.('theme_change', { theme: next });
+  });
+
+  // Invoker commands fallback for browsers without `command` support
+  if (!('command' in HTMLButtonElement.prototype)) {
+    document.querySelectorAll<HTMLButtonElement>('button[commandfor][command="show-modal"]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const target = document.getElementById(button.getAttribute('commandfor') ?? '');
+        if (target instanceof HTMLDialogElement) target.showModal();
+      });
+    });
+  }
+</script>
+
+<style>
+  .site-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      'wordmark tools'
+      'nav nav';
+    align-items: center;
+    gap: var(--space-2) var(--space-4);
+    padding-block: var(--space-4) var(--space-3);
+    font-family: var(--font-ui);
+
+    @media (width >= 48rem) {
+      grid-template-columns: auto 1fr auto;
+      grid-template-areas: 'wordmark nav tools';
+    }
+  }
+
+  .wordmark {
+    grid-area: wordmark;
+    color: var(--ink);
+    font-size: var(--step-1);
+    font-stretch: 125%;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+
+    &:visited {
+      color: var(--ink);
+    }
+  }
+
+  .site-nav {
+    grid-area: nav;
+
+    & ul {
+      display: flex;
+      gap: var(--space-4);
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    & a {
+      color: var(--ink);
+      font-size: var(--step--1);
+      font-weight: 500;
+      text-decoration: none;
+
+      &:hover,
+      &[aria-current='page'] {
+        text-decoration: underline;
+        text-decoration-color: var(--link);
+      }
+    }
+
+    @media (width >= 48rem) {
+      justify-self: end;
+    }
+  }
+
+  .tools {
+    grid-area: tools;
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+  }
+
+  .icon-button,
+  .lang-link {
+    display: inline-grid;
+    place-items: center;
+    min-inline-size: 2.75rem;
+    block-size: 2.75rem;
+    padding: 0;
+    border: 0;
+    border-radius: var(--radius);
+    background: none;
+    color: var(--ink);
+    cursor: pointer;
+
+    &:hover {
+      background: var(--wash);
+    }
+  }
+
+  .lang-link {
+    font-size: var(--step--1);
+    font-weight: 600;
+    text-decoration: none;
+
+    &:visited {
+      color: var(--ink);
+    }
+  }
+</style>

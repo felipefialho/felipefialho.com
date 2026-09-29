@@ -1,0 +1,141 @@
+@view-transition {
+  navigation: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  text-size-adjust: none;
+  scrollbar-gutter: stable;
+  scroll-padding-block-start: var(--space-5);
+}
+
+body {
+  margin: 0;
+  min-block-size: 100dvh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-text);
+  font-size: var(--step-0);
+  font-optical-sizing: auto;
+  line-height: 1.65;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-ui);
+  font-stretch: 112%;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+p,
+li,
+dd,
+blockquote {
+  text-wrap: pretty;
+}
+
+img,
+svg,
+video,
+iframe {
+  display: block;
+  max-inline-size: 100%;
+}
+
+img {
+  block-size: auto;
+}
+
+a {
+  color: var(--link);
+  text-decoration-thickness: 0.07em;
+  text-underline-offset: 0.18em;
+
+  &:visited {
+    color: var(--visited);
+  }
+
+  &:hover {
+    text-decoration-thickness: 0.14em;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: var(--wash);
+  color: var(--ink);
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: var(--font-code);
+  font-size: 0.86em;
+}
+
+hr {
+  border: 0;
+  border-block-start: 1px solid var(--rule);
+  margin-block: var(--space-6);
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.skip-link {
+  position: absolute;
+  inset-inline-start: var(--gutter);
+  inset-block-start: var(--space-2);
+  z-index: 10;
+  padding: var(--space-2) var(--space-3);
+  background: var(--paper);
+  font-family: var(--font-ui);
+  font-size: var(--step--1);
+  transform: translateY(-200%);
+
+  &:focus {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

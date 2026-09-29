@@ -1,0 +1,80 @@
+---
+import { localePath, t, type Lang } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const ui = t(lang);
+
+const social = [
+  { href: 'https://github.com/felipefialho', label: 'GitHub' },
+  { href: 'https://www.linkedin.com/in/felipefialho/', label: 'LinkedIn' },
+  { href: 'https://x.com/felipefialho_', label: 'X' },
+  { href: localePath(lang, '/feed.xml'), label: 'RSS' },
+];
+---
+
+<footer class="site-footer page">
+  <p class="copy">© 2013–{new Date().getFullYear()} Felipe Fialho</p>
+  <ul class="links">
+    {
+      social.map(({ href, label }) => (
+        <li>
+          <a href={href}>{label}</a>
+        </li>
+      ))
+    }
+    <li><a href={localePath(lang, '/policies/')}>{ui.privacy}</a></li>
+    <li><button type="button" popovertarget="consent">{ui.cookies}</button></li>
+  </ul>
+</footer>
+
+<style>
+  .site-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--space-3) var(--space-5);
+    padding-block: var(--space-5) var(--space-6);
+    border-block-start: 1px solid var(--rule);
+    color: var(--muted);
+    font-family: var(--font-ui);
+    font-size: var(--step--1);
+  }
+
+  .copy {
+    margin: 0;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-4);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a,
+  button {
+    color: var(--muted);
+    text-decoration: underline;
+    text-decoration-color: var(--rule);
+    text-underline-offset: 0.2em;
+
+    &:hover {
+      color: var(--ink);
+      text-decoration-color: var(--link);
+    }
+  }
+
+  button {
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font-size: inherit;
+  }
+</style>

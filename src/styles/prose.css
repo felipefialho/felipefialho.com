@@ -1,0 +1,169 @@
+/* Rendered markdown: 73 posts written between 2013 and 2026 */
+.prose {
+  max-inline-size: var(--measure);
+
+  & > * {
+    margin-block: 0;
+  }
+
+  & > * + * {
+    margin-block-start: 1.25em;
+  }
+
+  & h2 {
+    margin-block-start: 2.2em;
+    font-size: var(--step-2);
+  }
+
+  & h3 {
+    margin-block-start: 1.8em;
+    font-size: var(--step-1);
+  }
+
+  & h4 {
+    margin-block-start: 1.6em;
+    font-size: var(--step-0);
+  }
+
+  & :is(h2, h3) > a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: var(--link);
+    }
+  }
+
+  & ul,
+  & ol {
+    padding-inline-start: 1.25em;
+  }
+
+  & li + li {
+    margin-block-start: 0.4em;
+  }
+
+  & li::marker {
+    color: var(--muted);
+  }
+
+  & strong {
+    font-weight: 650;
+  }
+
+  & img {
+    border-radius: var(--radius);
+    margin-inline: auto;
+  }
+
+  & blockquote {
+    margin-inline: 0;
+    padding-inline-start: var(--space-4);
+    border-inline-start: 3px solid var(--link);
+    font-style: italic;
+    font-size: var(--step-1);
+    line-height: 1.5;
+
+    & p {
+      margin: 0;
+    }
+  }
+
+  & :not(pre) > code {
+    padding: 0.1em 0.3em;
+    border-radius: 0.25em;
+    background: var(--wash);
+    overflow-wrap: anywhere;
+  }
+
+  & pre {
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius);
+    background: var(--wash);
+    line-height: 1.55;
+    overflow-x: auto;
+    tab-size: 2;
+  }
+
+  & table {
+    inline-size: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-ui);
+    font-size: var(--step--1);
+    display: block;
+    overflow-x: auto;
+  }
+
+  & th,
+  & td {
+    padding: var(--space-2) var(--space-3);
+    border-block-end: 1px solid var(--rule);
+    text-align: start;
+  }
+
+  & input[type='checkbox'] {
+    accent-color: var(--link);
+  }
+}
+
+/* Shiki dual themes: tokens carry both colors as custom properties */
+.astro-code,
+.astro-code span {
+  color: light-dark(var(--shiki-light), var(--shiki-dark));
+}
+
+.astro-code {
+  background: var(--wash) !important;
+}
+
+/* Embeds migrated from build-time oEmbed to static markup */
+.embed {
+  margin-inline: 0;
+
+  & iframe {
+    inline-size: 100%;
+    border: 0;
+    border-radius: var(--radius);
+    background: var(--wash);
+  }
+
+  & figcaption {
+    margin-block-start: var(--space-2);
+    color: var(--muted);
+    font-family: var(--font-ui);
+    font-size: var(--step--1);
+  }
+}
+
+.embed-video iframe {
+  aspect-ratio: 16 / 9;
+  block-size: auto;
+}
+
+.embed-codepen iframe {
+  block-size: 25rem;
+}
+
+.embed-tweet {
+  padding: var(--space-4);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+
+  & blockquote {
+    border: 0;
+    padding: 0;
+    font-style: normal;
+    font-size: var(--step-0);
+  }
+
+  & .embed-author {
+    color: var(--ink);
+    font-weight: 600;
+  }
+}
+
+.embed-link {
+  font-family: var(--font-ui);
+  font-size: var(--step--1);
+}
