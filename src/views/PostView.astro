@@ -96,9 +96,6 @@ const jsonLd = {
     </article>
 
     {showToc && <Toc headings={toc} lang={lang} variant="sidebar" />}
-    <div class="rail">
-      <AdSlot kind="sidebar" lang={lang} />
-    </div>
   </div>
 
   <PostFooter lang={lang} post={post} posts={posts} />
@@ -106,14 +103,16 @@ const jsonLd = {
 </Base>
 
 <style>
+  /* Named areas up front: an undeclared area would add an empty implicit column */
   .post-grid {
     display: grid;
-    gap: var(--space-5);
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: 'post';
+    gap: var(--space-5) var(--toc-gap);
 
     @media (width >= 80rem) {
-      grid-template-columns: var(--toc-width) minmax(0, var(--measure)) 300px;
-      grid-template-areas: 'toc post rail';
-      justify-content: space-between;
+      grid-template-columns: var(--toc-width) minmax(0, var(--measure));
+      grid-template-areas: 'toc post';
       align-items: start;
     }
   }
@@ -123,27 +122,15 @@ const jsonLd = {
     min-inline-size: 0;
   }
 
-  .rail {
-    grid-area: rail;
-    display: none;
-    position: sticky;
-    inset-block-start: var(--space-4);
-
-    @media (width >= 80rem) {
-      display: block;
-    }
-  }
-
   .post-header {
     margin-block-end: var(--space-5);
 
     & h1 {
       margin: 0 0 var(--space-3);
       font-size: var(--step-4);
-      font-stretch: 112%;
-      font-weight: 800;
-      line-height: 1.02;
-      letter-spacing: -0.03em;
+      font-weight: 750;
+      line-height: 1.15;
+      letter-spacing: -0.015em;
     }
   }
 
@@ -157,17 +144,41 @@ const jsonLd = {
   .tags {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-1) var(--space-3);
+    gap: var(--space-2);
     margin: var(--space-3) 0 0;
     padding: 0;
     list-style: none;
-    color: var(--muted);
     font-family: var(--font-ui);
-    font-size: var(--step--1);
+    font-size: var(--step--2);
+    line-height: 1.6;
 
-    & li::before {
-      content: '#';
-      opacity: 0.6;
+    & li,
+    & a {
+      padding: 0.15em 0.6em;
+    }
+
+    & li {
+      border: 1px solid var(--rule);
+      border-radius: 0.25em;
+      color: var(--muted);
+    }
+
+    & li:has(a) {
+      padding: 0;
+    }
+
+    & a {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        color: var(--ink);
+      }
+    }
+
+    & li:has(a:hover) {
+      border-color: var(--ink);
     }
   }
 
@@ -178,29 +189,36 @@ const jsonLd = {
     font-weight: 600;
   }
 
-  /* Reading progress, driven by the root scroller */
+  /*
+   * Reading progress: a scroll-driven div, no JS. A <progress> cannot take its value
+   * from CSS, so it would expose a stale value to assistive tech.
+   * Kept under reduced motion: it tracks the reader's own scroll 1:1, like a scrollbar.
+   */
   .progress {
-    position: fixed;
-    inset: 0 0 auto;
-    z-index: 5;
-    block-size: 3px;
-    background: var(--link);
-    transform-origin: 0 50%;
-    transform: scaleX(0);
     display: none;
   }
 
   @supports (animation-timeline: scroll()) {
-    @media (prefers-reduced-motion: no-preference) {
-      .progress {
-        display: block;
-        animation: progress linear both;
-        animation-timeline: scroll(root);
-      }
+    .progress {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 5;
+      display: block;
+      block-size: 3px;
+      background: var(--link);
+      transform-origin: 0 50%;
+      animation-name: progress;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-timeline: scroll(root);
     }
   }
 
   @keyframes progress {
+    from {
+      transform: scaleX(0);
+    }
+
     to {
       transform: scaleX(1);
     }

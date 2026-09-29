@@ -51,7 +51,7 @@ const showOtherLang = lang === 'en' && !tag;
           {items.map((post) => (
             <li class="row">
               <time datetime={isoDate(post.data.date)}>{formatMonth(post.data.date, lang)}</time>
-              <a href={postPath(lang, post.id)} style={`view-transition-name: post-${post.id}`}>
+              <a class="title-link" href={postPath(lang, post.id)} style={`view-transition-name: post-${post.id}`}>
                 {post.data.title}
               </a>
             </li>
@@ -118,15 +118,6 @@ const showOtherLang = lang === 'en' && !tag;
       color: var(--muted);
       font-family: var(--font-ui);
       font-size: var(--step--1);
-    }
-
-    & a {
-      font-family: var(--font-ui);
-      font-size: var(--step-1);
-      font-stretch: 105%;
-      font-weight: 600;
-      line-height: 1.25;
-      text-decoration-color: color-mix(in srgb, currentcolor 35%, transparent);
     }
   }
 </style>

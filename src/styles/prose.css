@@ -10,6 +10,11 @@
     margin-block-start: 1.25em;
   }
 
+  /* A heading sits closer to its own text than to the section above */
+  & > :is(h2, h3, h4) + * {
+    margin-block-start: 0.75em;
+  }
+
   & h2 {
     margin-block-start: 2.2em;
     font-size: var(--step-2);
@@ -62,8 +67,6 @@
     padding-inline-start: var(--space-4);
     border-inline-start: 3px solid var(--link);
     font-style: italic;
-    font-size: var(--step-1);
-    line-height: 1.5;
 
     & p {
       margin: 0;
@@ -154,7 +157,6 @@
     border: 0;
     padding: 0;
     font-style: normal;
-    font-size: var(--step-0);
   }
 
   & .embed-author {

@@ -27,6 +27,12 @@ const label = t(lang).toc;
     </details>
   ) : (
     <nav class="toc toc-sidebar" aria-label={label}>
+      {/* Scroll-spy (Chromium for now). Inline: lightningcss cannot parse :target-current yet */}
+      <style is:inline>
+        .toc-sidebar a:target-current {
+          --toc-current: var(--ink);
+        }
+      </style>
       <p>{label}</p>
       <ol>
         {headings.map(({ slug, text }) => (
@@ -43,6 +49,7 @@ const label = t(lang).toc;
   .toc {
     font-family: var(--font-ui);
     font-size: var(--step--1);
+    line-height: 1.4;
 
     & ol {
       display: grid;
@@ -89,17 +96,22 @@ const label = t(lang).toc;
 
     & p {
       margin: 0;
+      color: var(--ink);
       font-weight: 600;
     }
 
     & ol {
+      gap: 0;
+      border-inline-start: 1px solid var(--rule);
       scroll-target-group: auto;
     }
 
-    /* Scroll-spy where :target-current is supported */
-    & a:target-current {
-      color: var(--ink);
-      font-weight: 600;
+    & a {
+      display: block;
+      margin-inline-start: -1px;
+      padding: var(--space-1) 0 var(--space-1) var(--space-3);
+      border-inline-start: 2px solid var(--toc-current, transparent);
+      color: var(--toc-current, var(--muted));
     }
 
     @media (width >= 80rem) {

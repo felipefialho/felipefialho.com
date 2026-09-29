@@ -14,14 +14,15 @@
   --font-ui: var(--font-mona-sans), system-ui, sans-serif;
   --font-code: ui-monospace, 'SF Mono', 'Cascadia Code', menlo, consolas, monospace;
 
-  /* 1.25 modular scale, fluid between 360px and 1280px */
-  --step--1: clamp(0.84rem, 0.82rem + 0.1vw, 0.9rem);
-  --step-0: clamp(1.06rem, 1.02rem + 0.18vw, 1.19rem);
-  --step-1: clamp(1.3rem, 1.24rem + 0.3vw, 1.48rem);
-  --step-2: clamp(1.6rem, 1.48rem + 0.55vw, 1.85rem);
-  --step-3: clamp(1.95rem, 1.74rem + 0.95vw, 2.6rem);
-  --step-4: clamp(2.4rem, 2rem + 1.8vw, 3.6rem);
-  --step-5: clamp(3.2rem, 2.3rem + 4vw, 6.4rem);
+  /* Fluid between 360px and 1280px: body 17px to 18px */
+  --step--2: 0.8125rem;
+  --step--1: clamp(0.906rem, 0.894rem + 0.054vw, 0.938rem);
+  --step-0: clamp(1.063rem, 1.038rem + 0.109vw, 1.125rem);
+  --step-1: clamp(1.188rem, 1.139rem + 0.217vw, 1.313rem);
+  --step-2: clamp(1.344rem, 1.258rem + 0.38vw, 1.563rem);
+  --step-3: clamp(1.563rem, 1.416rem + 0.652vw, 1.938rem);
+  --step-4: clamp(1.813rem, 1.543rem + 1.196vw, 2.5rem);
+  --step-5: clamp(2.25rem, 1.663rem + 2.609vw, 3.75rem);
 
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -31,12 +32,14 @@
   --space-6: 4rem;
   --space-7: 6rem;
 
-  --measure: 68ch;
+  /* Reading column: 85 to 90 characters of Newsreader at 18px */
+  --measure: 44rem;
 
   /* Sticky ToC column; the post footer aligns to it */
   --toc-width: 14rem;
+  --toc-gap: var(--space-6);
 
-  --page: 78rem;
+  --page: 72rem;
   --gutter: clamp(1rem, 4vw, 2.5rem);
   --radius: 0.375rem;
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);

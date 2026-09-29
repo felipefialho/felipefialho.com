@@ -32,10 +32,10 @@ h2,
 h3,
 h4 {
   font-family: var(--font-ui);
-  font-stretch: 112%;
+  font-stretch: 110%;
   font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.015em;
+  line-height: 1.25;
+  letter-spacing: -0.005em;
   text-wrap: balance;
 }
 
@@ -60,15 +60,16 @@ img {
 
 a {
   color: var(--link);
-  text-decoration-thickness: 0.07em;
-  text-underline-offset: 0.18em;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.22em;
+  text-decoration-skip-ink: auto;
 
   &:visited {
     color: var(--visited);
   }
 
   &:hover {
-    text-decoration-thickness: 0.14em;
+    text-decoration-thickness: 0.1em;
   }
 }
 
