@@ -20,9 +20,17 @@ const slugFromPath = ({ entry }: { entry: string }) =>
     .replace(/\.mdx?$/, '')
     .replace(/^\d{4}-\d{2}-\d{2}-/, '');
 
+// Quoted dates without an offset ('2019-09-05 06:46:38') are read as UTC, like unquoted YAML timestamps,
+// so the rendered day never depends on the build machine's timezone
+const utcDate = z.preprocess((value) => {
+  if (typeof value !== 'string' || /(Z|[+-]\d{2}:?\d{2})$/.test(value.trim())) return value;
+  const [day, time = '00:00:00'] = value.trim().split(/[ T]/);
+  return `${day}T${time}Z`;
+}, z.coerce.date());
+
 const postSchema = z.object({
   title: z.string(),
-  date: z.coerce.date(),
+  date: utcDate,
   description: z.string(),
   tags: z.array(z.string()).default([]).transform((tags) => [...new Set(tags.filter(Boolean).map(normalizeTag))]),
   draft: z.boolean().default(false),
@@ -43,7 +51,7 @@ const pages = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string().optional(),
-    updated: z.coerce.date().optional(),
+    updated: utcDate.optional(),
   }),
 });
 
