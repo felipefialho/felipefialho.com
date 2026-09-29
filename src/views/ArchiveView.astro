@@ -1,0 +1,126 @@
+---
+import Base from '../layouts/Base.astro';
+import { formatDayMonth, isoDate, localePath, type Lang } from '../lib/i18n';
+import { getPosts, groupByYear, postPath, type Post } from '../lib/posts';
+
+interface Props {
+  lang: Lang;
+  /** Defaults to every post in the language */
+  posts?: Post[];
+  title?: string;
+  description?: string;
+  lede?: string;
+}
+
+const { lang } = Astro.props;
+const posts = Astro.props.posts ?? (await getPosts(lang));
+const copy = {
+  pt: {
+    title: 'Blog',
+    description: 'Todos os posts desde 2013, sobre front-end, CSS, carreira e AI.',
+    lede: `${posts.length} posts escritos desde 2013. Os links em roxo são os que você já leu.`,
+  },
+  en: {
+    title: 'Blog',
+    description: 'Every post in English, about front-end, CSS, career and AI.',
+    lede: `${posts.length} posts translated to English. Links in purple are the ones you've already read.`,
+  },
+}[lang];
+const title = Astro.props.title ?? copy.title;
+const description = Astro.props.description ?? copy.description;
+const lede = Astro.props.lede ?? copy.lede;
+const alternate = Astro.url.pathname === localePath(lang, '/blog/') ? localePath(lang === 'pt' ? 'en' : 'pt', '/blog/') : undefined;
+---
+
+<Base lang={lang} title={title} description={description} alternate={alternate}>
+  <h1 class="page-title">{title}</h1>
+  <p class="lede reading">{lede}</p>
+  {
+    groupByYear(posts).map(([year, items]) => (
+      <section class="year" aria-labelledby={`year-${year}`}>
+        <h2 id={`year-${year}`} class="year-title">
+          {year}
+        </h2>
+        <ol class="rows">
+          {items.map((post) => (
+            <li class="row">
+              <time datetime={isoDate(post.data.date)}>{formatDayMonth(post.data.date, lang)}</time>
+              <a href={postPath(lang, post.id)} style={`view-transition-name: post-${post.id}`}>
+                {post.data.title}
+              </a>
+            </li>
+          ))}
+        </ol>
+      </section>
+    ))
+  }
+</Base>
+
+<style>
+  .year {
+    display: grid;
+    gap: var(--space-3);
+    margin-block-start: var(--space-5);
+
+    @media (width >= 64rem) {
+      grid-template-columns: minmax(12rem, 1fr) 3fr;
+      align-items: start;
+    }
+  }
+
+  /* The one bold moment: 13 years, set wide */
+  .year-title {
+    position: sticky;
+    inset-block-start: 0;
+    z-index: 1;
+    margin: 0;
+    padding-block: var(--space-2);
+    background: var(--paper);
+    color: var(--ink);
+    font-size: var(--step-5);
+    font-stretch: 125%;
+    font-weight: 800;
+    line-height: 0.9;
+    letter-spacing: -0.03em;
+
+    @media (width >= 64rem) {
+      inset-block-start: var(--space-4);
+      background: none;
+    }
+  }
+
+  .rows {
+    display: grid;
+    gap: var(--space-3);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-inline-size: var(--measure);
+
+    @media (width >= 64rem) {
+      padding-block-start: var(--space-3);
+    }
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 4.5rem 1fr;
+    gap: var(--space-3);
+    align-items: baseline;
+
+    & time {
+      color: var(--muted);
+      font-family: var(--font-ui);
+      font-size: var(--step--1);
+    }
+
+    & a {
+      font-family: var(--font-ui);
+      font-size: var(--step-1);
+      font-stretch: 105%;
+      font-weight: 600;
+      line-height: 1.25;
+      text-decoration-color: color-mix(in srgb, currentcolor 35%, transparent);
+    }
+  }
+</style>

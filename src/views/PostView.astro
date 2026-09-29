@@ -1,0 +1,199 @@
+---
+import { render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PostFooter from '../components/PostFooter.astro';
+import Toc from '../components/Toc.astro';
+import { formatDate, isoDate, t, type Lang } from '../lib/i18n';
+import { MIN_TAG_POSTS, getTagCounts, ogImagePath, postPath, tagPath, type Post } from '../lib/posts';
+import '../styles/prose.css';
+
+interface Props {
+  lang: Lang;
+  post: Post;
+  posts: Post[];
+  /** Path of the same post in the other language */
+  alternate?: string;
+}
+
+const { lang, post, posts, alternate } = Astro.props;
+const ui = t(lang);
+const { Content, headings, remarkPluginFrontmatter } = await render(post);
+const minutes = Number(remarkPluginFrontmatter.minutesRead ?? 1);
+const tagCounts = getTagCounts(posts);
+const toc = headings.filter(({ depth }) => depth === 2);
+const url = new URL(postPath(lang, post.id), Astro.site).href;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.data.title,
+  description: post.data.description,
+  datePublished: post.data.date.toISOString(),
+  inLanguage: lang === 'pt' ? 'pt-BR' : 'en',
+  url,
+  image: new URL(ogImagePath(lang, post.id), Astro.site).href,
+  keywords: post.data.tags.join(', '),
+  author: { '@type': 'Person', name: 'Felipe Fialho', url: new URL('/', Astro.site).href },
+};
+---
+
+<Base
+  lang={lang}
+  title={post.data.title}
+  description={post.data.description}
+  image={ogImagePath(lang, post.id)}
+  type="article"
+  alternate={alternate}
+  publishedTime={post.data.date}
+  tags={post.data.tags}
+  jsonLd={jsonLd}
+>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="post-grid">
+    <article class="post" data-pagefind-body data-pagefind-meta={`date:${isoDate(post.data.date)}`}>
+      <header class="post-header">
+        <h1 style={`view-transition-name: post-${post.id}`}>{post.data.title}</h1>
+        <p class="post-description">{post.data.description}</p>
+        <p class="meta">
+          <time datetime={isoDate(post.data.date)}>{formatDate(post.data.date, lang)}</time>, {ui.readingTime(minutes)}
+        </p>
+        {
+          post.data.tags.length > 0 && (
+            <ul class="tags" aria-label="Tags">
+              {post.data.tags.map((tag) => (
+                <li>{(tagCounts.get(tag) ?? 0) >= MIN_TAG_POSTS ? <a href={tagPath(lang, tag)}>{tag}</a> : tag}</li>
+              ))}
+            </ul>
+          )
+        }
+        {
+          alternate && (
+            <p class="translation">
+              <a href={alternate} hreflang={lang === 'pt' ? 'en' : 'pt-BR'}>
+                {ui.otherLang}
+              </a>
+            </p>
+          )
+        }
+      </header>
+
+      {toc.length >= 3 && <Toc headings={toc} lang={lang} variant="inline" />}
+
+      <div class="prose">
+        <Content />
+      </div>
+
+      <slot name="after-content" />
+    </article>
+
+    {toc.length >= 3 && <Toc headings={toc} lang={lang} variant="sidebar" />}
+    <aside class="rail">
+      <slot name="rail" />
+    </aside>
+  </div>
+
+  <PostFooter lang={lang} post={post} posts={posts} />
+  <slot name="end" slot="end" />
+</Base>
+
+<style>
+  .post-grid {
+    display: grid;
+    gap: var(--space-5);
+
+    @media (width >= 80rem) {
+      grid-template-columns: 14rem minmax(0, var(--measure)) 300px;
+      grid-template-areas: 'toc post rail';
+      justify-content: space-between;
+      align-items: start;
+    }
+  }
+
+  .post {
+    grid-area: post;
+    min-inline-size: 0;
+  }
+
+  .rail {
+    grid-area: rail;
+    display: none;
+    position: sticky;
+    inset-block-start: var(--space-4);
+
+    @media (width >= 80rem) {
+      display: block;
+    }
+  }
+
+  .post-header {
+    margin-block-end: var(--space-5);
+
+    & h1 {
+      margin: 0 0 var(--space-3);
+      font-size: var(--step-4);
+      font-stretch: 112%;
+      font-weight: 800;
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+    }
+  }
+
+  .post-description {
+    margin: 0 0 var(--space-3);
+    color: var(--muted);
+    font-size: var(--step-1);
+    line-height: 1.45;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-3);
+    margin: var(--space-3) 0 0;
+    padding: 0;
+    list-style: none;
+    color: var(--muted);
+    font-family: var(--font-ui);
+    font-size: var(--step--1);
+
+    & li::before {
+      content: '#';
+      opacity: 0.6;
+    }
+  }
+
+  .translation {
+    margin: var(--space-3) 0 0;
+    font-family: var(--font-ui);
+    font-size: var(--step--1);
+    font-weight: 600;
+  }
+
+  /* Reading progress, driven by the root scroller */
+  .progress {
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: 5;
+    block-size: 3px;
+    background: var(--link);
+    transform-origin: 0 50%;
+    transform: scaleX(0);
+    display: none;
+  }
+
+  @supports (animation-timeline: scroll()) {
+    @media (prefers-reduced-motion: no-preference) {
+      .progress {
+        display: block;
+        animation: progress linear both;
+        animation-timeline: scroll(root);
+      }
+    }
+  }
+
+  @keyframes progress {
+    to {
+      transform: scaleX(1);
+    }
+  }
+</style>

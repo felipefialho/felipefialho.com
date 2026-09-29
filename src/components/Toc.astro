@@ -1,0 +1,109 @@
+---
+import type { MarkdownHeading } from 'astro';
+import { t, type Lang } from '../lib/i18n';
+
+interface Props {
+  headings: MarkdownHeading[];
+  lang: Lang;
+  /** inline: collapsible, below 80rem. sidebar: sticky, from 80rem */
+  variant: 'inline' | 'sidebar';
+}
+
+const { headings, lang, variant } = Astro.props;
+const label = t(lang).toc;
+---
+
+{
+  variant === 'inline' ? (
+    <details class="toc toc-inline">
+      <summary>{label}</summary>
+      <ol>
+        {headings.map(({ slug, text }) => (
+          <li>
+            <a href={`#${slug}`}>{text}</a>
+          </li>
+        ))}
+      </ol>
+    </details>
+  ) : (
+    <nav class="toc toc-sidebar" aria-label={label}>
+      <p>{label}</p>
+      <ol>
+        {headings.map(({ slug, text }) => (
+          <li>
+            <a href={`#${slug}`}>{text}</a>
+          </li>
+        ))}
+      </ol>
+    </nav>
+  )
+}
+
+<style>
+  .toc {
+    font-family: var(--font-ui);
+    font-size: var(--step--1);
+
+    & ol {
+      display: grid;
+      gap: var(--space-2);
+      margin: var(--space-3) 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    & a {
+      color: var(--muted);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--ink);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .toc-inline {
+    margin-block-end: var(--space-5);
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius);
+    background: var(--wash);
+
+    & summary {
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    @media (width >= 80rem) {
+      display: none;
+    }
+  }
+
+  .toc-sidebar {
+    grid-area: toc;
+    display: none;
+    position: sticky;
+    inset-block-start: var(--space-4);
+    max-block-size: calc(100dvh - 2 * var(--space-4));
+    overflow-y: auto;
+
+    & p {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    & ol {
+      scroll-target-group: auto;
+    }
+
+    /* Scroll-spy where :target-current is supported */
+    & a:target-current {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    @media (width >= 80rem) {
+      display: block;
+    }
+  }
+</style>

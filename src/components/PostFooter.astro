@@ -1,0 +1,213 @@
+---
+import { formatDate, isoDate, t, type Lang } from '../lib/i18n';
+import { getAdjacent, getRelated, postPath, type Post } from '../lib/posts';
+
+interface Props {
+  lang: Lang;
+  post: Post;
+  posts: Post[];
+}
+
+const { lang, post, posts } = Astro.props;
+const ui = t(lang);
+const { older, newer } = getAdjacent(posts, post.id);
+const related = getRelated(posts, post);
+const pix = 'hi@felipefialho.com';
+
+const copy = {
+  pt: {
+    support: 'Curtiu o post? Me paga um café',
+    pixLabel: 'Chave Pix',
+    copy: 'Copiar',
+    copied: 'Copiado',
+    sponsors: 'Apoiar no GitHub Sponsors',
+    fix: 'Achou um erro? O blog é open source,',
+    fixLink: 'edite o post no GitHub',
+  },
+  en: {
+    support: 'Enjoyed the post? Buy me a coffee',
+    pixLabel: 'Pix key (Brazil)',
+    copy: 'Copy',
+    copied: 'Copied',
+    sponsors: 'Sponsor on GitHub',
+    fix: 'Found a mistake? The blog is open source,',
+    fixLink: 'edit the post on GitHub',
+  },
+}[lang];
+
+const sourceDir = lang === 'pt' ? 'posts' : 'posts-en';
+const editUrl = `https://github.com/felipefialho/felipefialho.com/tree/main/content/${sourceDir}`;
+---
+
+<footer class="post-footer">
+  <section class="support" aria-labelledby="support-title">
+    <h2 id="support-title">{copy.support}</h2>
+    <div class="support-actions">
+      <p class="pix">
+        <span>{copy.pixLabel}</span>
+        <code>{pix}</code>
+        <button type="button" data-copy={pix} data-copied={copy.copied}>{copy.copy}</button>
+      </p>
+      <a class="sponsor" href="https://github.com/sponsors/felipefialho" data-track="sponsor_click">{copy.sponsors}</a>
+    </div>
+    <p class="fix">{copy.fix} <a href={editUrl}>{copy.fixLink}</a>.</p>
+  </section>
+
+  {
+    (older || newer) && (
+      <nav class="adjacent" aria-label={lang === 'pt' ? 'Posts vizinhos' : 'Adjacent posts'}>
+        {older && (
+          <a href={postPath(lang, older.id)} rel="prev">
+            <span>{ui.previous}</span>
+            {older.data.title}
+          </a>
+        )}
+        {newer && (
+          <a href={postPath(lang, newer.id)} rel="next" class="newer">
+            <span>{ui.next}</span>
+            {newer.data.title}
+          </a>
+        )}
+      </nav>
+    )
+  }
+
+  {
+    related.length > 0 && (
+      <section aria-labelledby="related-title">
+        <h2 id="related-title" class="section-title">
+          {ui.related}
+        </h2>
+        <ol class="post-list">
+          {related.map((item) => (
+            <li class="post-item">
+              <h3>
+                <a href={postPath(lang, item.id)}>{item.data.title}</a>
+              </h3>
+              <p class="meta">
+                <time datetime={isoDate(item.data.date)}>{formatDate(item.data.date, lang)}</time>
+              </p>
+            </li>
+          ))}
+        </ol>
+      </section>
+    )
+  }
+</footer>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('button[data-copy]').forEach((button) => {
+    button.addEventListener('click', async () => {
+      const { copy = '', copied = '' } = button.dataset;
+      const label = button.textContent;
+      try {
+        await navigator.clipboard.writeText(copy);
+        button.textContent = copied;
+        setTimeout(() => (button.textContent = label), 2000);
+        window.track?.('pix_copy');
+      } catch {
+        // Clipboard denied: the key stays visible to copy by hand
+      }
+    });
+  });
+
+  document.querySelectorAll<HTMLAnchorElement>('a[data-track]').forEach((link) => {
+    link.addEventListener('click', () => window.track?.(link.dataset.track ?? ''));
+  });
+</script>
+
+<style>
+  .post-footer {
+    max-inline-size: var(--measure);
+    margin-block-start: var(--space-6);
+
+    @media (width >= 80rem) {
+      margin-inline-start: calc(14rem + var(--space-5));
+    }
+  }
+
+  .support {
+    padding: var(--space-4);
+    border-radius: var(--radius);
+    background: var(--wash);
+
+    & h2 {
+      margin: 0 0 var(--space-3);
+      font-size: var(--step-1);
+    }
+  }
+
+  .support-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3) var(--space-5);
+    font-family: var(--font-ui);
+    font-size: var(--step--1);
+  }
+
+  .pix {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+    margin: 0;
+
+    & code {
+      padding: 0.2em 0.4em;
+      border-radius: 0.25em;
+      background: var(--paper);
+    }
+
+    & button {
+      padding: 0.35em 0.8em;
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      background: var(--paper);
+      cursor: pointer;
+
+      &:hover {
+        border-color: var(--link);
+      }
+    }
+  }
+
+  .sponsor {
+    font-weight: 600;
+  }
+
+  .fix {
+    margin: var(--space-3) 0 0;
+    color: var(--muted);
+    font-size: var(--step--1);
+  }
+
+  .adjacent {
+    display: grid;
+    gap: var(--space-4);
+    margin-block-start: var(--space-5);
+    font-family: var(--font-ui);
+
+    @media (width >= 40rem) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    & a {
+      display: grid;
+      gap: var(--space-1);
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    & span {
+      color: var(--muted);
+      font-size: var(--step--1);
+      font-weight: 400;
+    }
+
+    & .newer {
+      text-align: end;
+      grid-column: -2;
+    }
+  }
+</style>
