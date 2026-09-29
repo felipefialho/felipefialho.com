@@ -1,0 +1,292 @@
+---
+import { t, type Lang } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const ui = t(lang);
+
+const copy = {
+  pt: {
+    label: 'Buscar nos posts',
+    unavailable: 'A busca só existe no site publicado. Rode "pnpm build" para gerar o índice.',
+    strings: {
+      placeholder: ui.searchPlaceholder,
+      search_label: ui.searchPlaceholder,
+      clear_search: 'Limpar',
+      load_more: 'Ver mais resultados',
+      zero_results: 'Nenhum post encontrado para [SEARCH_TERM]',
+      one_result: '[COUNT] post encontrado para [SEARCH_TERM]',
+      many_results: '[COUNT] posts encontrados para [SEARCH_TERM]',
+      searching: 'Buscando por [SEARCH_TERM]...',
+    },
+  },
+  en: {
+    label: 'Search posts',
+    unavailable: 'Search only works on the built site. Run "pnpm build" to generate the index.',
+    strings: {
+      placeholder: ui.searchPlaceholder,
+      search_label: ui.searchPlaceholder,
+      clear_search: 'Clear',
+      load_more: 'Load more results',
+      zero_results: 'No posts found for [SEARCH_TERM]',
+      one_result: '[COUNT] post found for [SEARCH_TERM]',
+      many_results: '[COUNT] posts found for [SEARCH_TERM]',
+      searching: 'Searching for [SEARCH_TERM]...',
+    },
+  },
+}[lang];
+---
+
+<dialog
+  id="search"
+  class="search-dialog"
+  closedby="any"
+  aria-label={copy.label}
+  data-translations={JSON.stringify(copy.strings)}
+  data-unavailable={copy.unavailable}
+>
+  <div class="bar">
+    <div id="search-ui"></div>
+    <button type="button" class="close" commandfor="search" command="close" aria-label={ui.close}>
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+        <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </button>
+  </div>
+  <p id="search-status" class="status" role="status" hidden></p>
+</dialog>
+
+<script>
+  declare global {
+    interface Window {
+      track?: (event: string, params?: Record<string, unknown>) => void;
+    }
+  }
+
+  const dialog = document.querySelector<HTMLDialogElement>('#search');
+  const status = document.querySelector<HTMLElement>('#search-status');
+  const TRACK_DELAY_MS = 1000;
+  const MIN_TERM_LENGTH = 2;
+
+  // The Pagefind bundle only exists after `pagefind --site dist`, never in dev
+  const hasIndex = async () => {
+    try {
+      const response = await fetch('/pagefind/pagefind.js', { method: 'HEAD' });
+      return response.ok;
+    } catch {
+      return false;
+    }
+  };
+
+  const mountUi = async (host: HTMLDialogElement) => {
+    if (!(await hasIndex())) {
+      if (status) {
+        status.textContent = host.dataset.unavailable ?? '';
+        status.hidden = false;
+      }
+      return;
+    }
+
+    const [{ PagefindUI }] = await Promise.all([
+      // @ts-expect-error the package ships no type declarations
+      import('@pagefind/default-ui'),
+      import('@pagefind/default-ui/css/ui.css'),
+    ]);
+
+    new PagefindUI({
+      element: '#search-ui',
+      bundlePath: '/pagefind/',
+      showSubResults: true,
+      showImages: false,
+      resetStyles: false,
+      autofocus: true,
+      translations: JSON.parse(host.dataset.translations ?? '{}'),
+    });
+
+    // Report the term once the reader stops typing
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    host.querySelector('#search-ui')?.addEventListener('input', (event) => {
+      if (!(event.target instanceof HTMLInputElement)) return;
+      const term = event.target.value.trim();
+      clearTimeout(timer);
+      if (term.length < MIN_TERM_LENGTH) return;
+      timer = setTimeout(() => window.track?.('search', { search_term: term }), TRACK_DELAY_MS);
+    });
+  };
+
+  if (dialog) {
+    dialog.addEventListener(
+      'toggle',
+      (event) => {
+        if ((event as ToggleEvent).newState === 'open') void mountUi(dialog);
+      },
+      { once: true },
+    );
+  }
+</script>
+
+<style>
+  .search-dialog {
+    /* Map Pagefind's variables to the site tokens */
+    --pagefind-ui-scale: 1;
+    --pagefind-ui-primary: var(--ink);
+    --pagefind-ui-text: var(--ink);
+    --pagefind-ui-background: var(--paper);
+    --pagefind-ui-border: var(--rule);
+    --pagefind-ui-tag: var(--wash);
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: var(--radius);
+    --pagefind-ui-font: var(--font-ui);
+
+    box-sizing: border-box;
+    inline-size: min(40rem, 100% - 2 * var(--gutter));
+    max-block-size: 80dvh;
+    margin-block: 10vh auto;
+    margin-inline: auto;
+    padding: var(--space-3);
+    overflow: auto;
+    color: var(--ink);
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    overscroll-behavior: contain;
+  }
+
+  .search-dialog::backdrop {
+    background: color-mix(in srgb, var(--ink) 45%, transparent);
+  }
+
+  .bar {
+    display: flex;
+    gap: var(--space-2);
+    align-items: flex-start;
+  }
+
+  #search-ui {
+    flex: 1;
+    min-inline-size: 0;
+  }
+
+  .close {
+    display: grid;
+    flex: none;
+    place-items: center;
+    inline-size: 2.75rem;
+    block-size: 2.75rem;
+    padding: 0;
+    color: var(--ink);
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+  }
+
+  .close:hover {
+    background: var(--wash);
+  }
+
+  .status {
+    margin: 0;
+    font-family: var(--font-ui);
+    font-size: var(--step--1);
+    color: var(--muted);
+  }
+
+  .search-dialog :global(.pagefind-ui__search-input) {
+    font-family: var(--font-ui);
+    font-size: var(--step-0);
+    font-weight: 400;
+  }
+
+  .search-dialog :global(.pagefind-ui__result-title),
+  .search-dialog :global(.pagefind-ui__result-link) {
+    font-family: var(--font-ui);
+    font-size: var(--step-0);
+    font-weight: 600;
+  }
+
+  .search-dialog :global(.pagefind-ui__result-link) {
+    color: var(--link);
+  }
+
+  .search-dialog :global(.pagefind-ui__result-link:visited) {
+    color: var(--visited);
+  }
+
+  .search-dialog :global(.pagefind-ui__result-excerpt) {
+    font-family: var(--font-text);
+    font-size: var(--step-0);
+    color: var(--ink);
+  }
+
+  .search-dialog :global(.pagefind-ui__message) {
+    font-family: var(--font-ui);
+    font-size: var(--step--1);
+    color: var(--muted);
+  }
+
+  .search-dialog :global(.pagefind-ui__result) {
+    border-block-start-color: var(--rule);
+  }
+
+  .search-dialog :global(.pagefind-ui__button) {
+    font-family: var(--font-ui);
+    color: var(--ink);
+    background: var(--paper);
+    border-color: var(--rule);
+  }
+
+  .search-dialog :global(mark) {
+    color: inherit;
+    background: var(--wash);
+    border-block-end: 2px solid var(--link);
+  }
+
+  .search-dialog :focus-visible {
+    outline: 2px solid var(--link);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .search-dialog {
+      opacity: 0;
+      translate: 0 -0.75rem;
+      transition:
+        opacity 0.2s var(--ease),
+        translate 0.2s var(--ease),
+        overlay 0.2s allow-discrete,
+        display 0.2s allow-discrete;
+    }
+
+    .search-dialog[open] {
+      opacity: 1;
+      translate: 0 0;
+    }
+
+    .search-dialog::backdrop {
+      opacity: 0;
+      transition:
+        opacity 0.2s var(--ease),
+        overlay 0.2s allow-discrete,
+        display 0.2s allow-discrete;
+    }
+
+    .search-dialog[open]::backdrop {
+      opacity: 1;
+    }
+
+    @starting-style {
+      .search-dialog[open] {
+        opacity: 0;
+        translate: 0 -0.75rem;
+      }
+
+      .search-dialog[open]::backdrop {
+        opacity: 0;
+      }
+    }
+  }
+</style>
