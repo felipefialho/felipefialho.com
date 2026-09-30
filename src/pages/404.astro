@@ -1,48 +1,338 @@
 ---
 import Base from '../layouts/Base.astro';
+import { formatShortDate, isoDate } from '../lib/i18n';
 import { getPosts, postPath } from '../lib/posts';
 
 const latest = (await getPosts('pt')).slice(0, 5);
+
+// Rendered up front and stacked in one grid cell: rotating them never shifts the page
+const JOKES = [
+  { lang: 'pt-BR', html: 'Tentei centralizar essa página com CSS. Ela sumiu.' },
+  { lang: 'pt-BR', html: 'Pedi pra AI gerar essa página. Ela alucinou o link, com muita confiança.' },
+  { lang: 'pt-BR', html: 'Coloquei <code>z-index: 9999</code> e mesmo assim essa página não apareceu.' },
+  { lang: 'pt-BR', html: 'Funcionava na minha máquina. Em 2013.' },
+  { lang: 'pt-BR', html: 'Essa página estava com <code>float: left</code>. Nunca mais foi vista.' },
+  { lang: 'pt-BR', html: 'Nem o <code>!important</code> salvou essa rota.' },
+  { lang: 'en', html: 'This page had <code>position: absolute</code> and no positioned parent. Nobody knows where it went.' },
+  { lang: 'en', html: 'There are two hard things in computer science: cache invalidation, naming things, and this URL.' },
+  { lang: 'en', html: 'It passed code review. The reviewer was an LLM.' },
+];
 ---
 
 <Base lang="pt" title="Página não encontrada" description="Essa página não existe ou mudou de endereço." noindex>
-  <h1 class="page-title">Essa página não existe</h1>
-  <p class="lede reading">
-    O endereço pode ter mudado. Veja <a href="/blog/">todos os posts</a> ou use a busca.{' '}
-    <span lang="en">Looking for English content? Head to <a href="/en/">the English home</a>.</span>
-  </p>
-  <p>
-    <button class="search-button" type="button" commandfor="search" command="show-modal">Buscar nos posts</button>
-  </p>
-  <h2 class="section-title">Posts recentes</h2>
-  <ul class="post-list">
-    {
-      latest.map((post) => (
-        <li class="post-item">
-          <h3>
-            <a href={postPath('pt', post.id)}>{post.data.title}</a>
-          </h3>
-        </li>
-      ))
-    }
-  </ul>
+  <div class="y2013" role="note">
+    Bem-vindo a 2013: Bootstrap 3, DocPad e jQuery. Digite o código de novo pra voltar pra 2026.
+  </div>
+  <header class="page-head split">
+    <div class="head">
+      <!-- A hyperlink that snapped: the last 4 hangs from its broken underline -->
+      <p class="snap" aria-hidden="true"><span>40</span><span class="loose">4</span></p>
+      <h1 class="page-title">Esse link quebrou</h1>
+      <p class="lede">
+        A página não existe ou mudou de endereço. Veja <a href="/blog/">todos os posts</a>, volte pra <a href="/">home</a> ou
+        busque pelo assunto.{' '}
+        <span lang="en">Looking for English content? Head to <a href="/en/">the English home</a>.</span>
+      </p>
+      <p class="actions">
+        <button class="search-button" type="button" commandfor="search" command="show-modal">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"></circle>
+            <path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+          Buscar nos posts
+        </button>
+      </p>
+    </div>
+  </header>
+
+  <section class="section split" aria-label="Piada">
+    <div class="joke">
+      <div class="jokes" aria-live="polite">
+        {JOKES.map(({ lang, html }, index) => <p lang={lang} class:list={{ current: index === 0 }} set:html={html} />)}
+      </div>
+      <button class="next-joke" type="button" data-next-joke hidden>Outra piada</button>
+    </div>
+  </section>
+
+  <section class="section split" aria-labelledby="latest">
+    <h2 id="latest" class="section-title aside">Posts recentes</h2>
+    <div>
+      <ol class="rows">
+        {
+          latest.map((post) => (
+            <li>
+              <a class="title-link" href={postPath('pt', post.id)}>
+                {post.data.title}
+              </a>
+              <time datetime={isoDate(post.data.date)}>{formatShortDate(post.data.date, 'pt')}</time>
+            </li>
+          ))
+        }
+      </ol>
+      <p class="hint" aria-hidden="true"><kbd>↑ ↑ ↓ ↓ ← → ← → B A</kbd></p>
+    </div>
+  </section>
+  <p class="visually-hidden" role="status" data-y2013-status></p>
+
+  <script is:inline>
+    (() => {
+      const jokes = [...document.querySelectorAll('.jokes > p')];
+      let current = Math.floor(Math.random() * jokes.length);
+      const show = (index) => jokes.forEach((joke, i) => joke.classList.toggle('current', i === index));
+      show(current);
+      const next = document.querySelector('[data-next-joke]');
+      next.hidden = false;
+      next.addEventListener('click', () => show((current = (current + 1) % jokes.length)));
+
+      // Konami code: a trip back to the 2013 site (DocPad + Bootstrap)
+      const code = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+      const status = document.querySelector('[data-y2013-status]');
+      let step = 0;
+      addEventListener('keydown', ({ key }) => {
+        const pressed = key.length === 1 ? key.toLowerCase() : key;
+        if (pressed === code[step]) step += 1;
+        else if (pressed === 'ArrowUp') step = step === 2 ? 2 : 1;
+        else step = 0;
+        if (step < code.length) return;
+        step = 0;
+        const on = document.documentElement.toggleAttribute('data-y2013');
+        status.textContent = on ? 'Modo 2013 ativado.' : 'De volta a 2026.';
+      });
+    })();
+  </script>
 </Base>
 
 <style>
-  .search-button {
+  .head {
+    container-type: inline-size;
+  }
+
+  .snap {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 var(--space-4);
+    color: var(--link);
+    font-family: var(--font-ui);
+    font-size: clamp(6rem, 36cqi, 15rem);
+    font-stretch: 125%;
+    font-weight: 800;
+    line-height: 0.8;
+    letter-spacing: -0.04em;
+    user-select: none;
+
+    & span {
+      position: relative;
+      padding-block-end: 0.16em;
+    }
+
+    /* The underline, drawn per piece so it can snap */
+    & span::after {
+      content: '';
+      position: absolute;
+      inset: auto 0 0;
+      block-size: 0.055em;
+      background: currentcolor;
+    }
+
+    & span:first-child::after {
+      inset-inline-end: 0.06em;
+    }
+  }
+
+  /* Hinged at the break, the last piece hangs */
+  .loose {
+    transform-origin: 0 100%;
+    rotate: 14deg;
+    translate: 0.02em 0.03em;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .loose {
+      animation: snap 1.4s 0.3s cubic-bezier(0.3, 1.6, 0.5, 1) backwards;
+    }
+  }
+
+  @keyframes snap {
+    from {
+      rotate: 0deg;
+      translate: 0 0;
+    }
+  }
+
+  .actions {
+    margin: var(--space-4) 0 0;
+  }
+
+  .search-button,
+  .next-joke {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
     min-block-size: 2.75rem;
-    padding-inline: var(--space-4);
-    border: 1px solid var(--rule);
+    padding: 0 var(--space-4);
+    border: 1px solid var(--link);
     border-radius: var(--radius);
-    background: var(--wash);
-    color: var(--ink);
+    background: var(--link);
+    color: var(--on-link);
     font-family: var(--font-ui);
     font-size: var(--step-0);
-    font-weight: 600;
+    font-stretch: 110%;
+    font-weight: 650;
     cursor: pointer;
 
     &:hover {
-      border-color: var(--ink);
+      background: var(--paper);
+      color: var(--link);
+    }
+  }
+
+  .next-joke {
+    background: var(--paper);
+    color: var(--link);
+
+    &:hover {
+      background: var(--link);
+      color: var(--on-link);
+    }
+  }
+
+  .joke {
+    display: grid;
+    justify-items: start;
+    gap: var(--space-3);
+    max-inline-size: var(--measure);
+    padding: var(--space-4);
+    border-inline-start: 4px solid var(--link);
+    background: var(--wash);
+  }
+
+  .jokes {
+    display: grid;
+    font-family: var(--font-ui);
+    font-size: var(--step-2);
+    font-weight: 550;
+    line-height: 1.35;
+
+    & p {
+      grid-area: 1 / 1;
+      margin: 0;
+      visibility: hidden;
+    }
+
+    & .current {
+      visibility: visible;
+    }
+  }
+
+  .hint {
+    margin: var(--space-5) 0 0;
+    color: var(--muted);
+    font-size: var(--step--1);
+
+    & kbd {
+      letter-spacing: 0.1em;
+    }
+  }
+
+  .y2013 {
+    display: none;
+  }
+</style>
+
+<!-- Konami mode: the 2013 site, DocPad + Bootstrap 3, straight from the archive -->
+<style is:global>
+  :root[data-y2013] {
+    --paper: #fff;
+    --ink: #333;
+    --muted: #777;
+    --link: #428bca;
+    --visited: #428bca;
+    --wash: #f5f5f5;
+    --rule: #ddd;
+    --on-link: #fff;
+    --band: #222;
+    --band-ink: #9d9d9d;
+    --band-link: #9d9d9d;
+    --font-ui: 'Helvetica Neue', helvetica, arial, sans-serif;
+    --font-text: 'Helvetica Neue', helvetica, arial, sans-serif;
+    --page: 73.125rem;
+    --radius: 4px;
+
+    color-scheme: light;
+
+    & body {
+      font-size: 14px;
+      line-height: 1.4286;
+    }
+
+    & * {
+      font-stretch: 100% !important;
+      letter-spacing: normal !important;
+    }
+
+    & a {
+      text-decoration: none;
+
+      &:hover {
+        color: #2a6496;
+        text-decoration: underline;
+      }
+    }
+
+    & .site-header {
+      background-image: linear-gradient(#3c3c3c, #222);
+      border-block-end: 1px solid #080808;
+    }
+
+    & :is(h1, h2, .page-title, .snap, .mail) {
+      font-weight: 500;
+    }
+
+    & .page-head {
+      padding: 48px 60px;
+      border-radius: 6px;
+      background: #eee;
+    }
+
+    & .snap span::after {
+      display: none;
+    }
+
+    & .loose {
+      rotate: none;
+      translate: none;
+      animation: none;
+    }
+
+    & .mail {
+      font-size: 36px;
+    }
+
+    & :is(.search-button, .next-joke) {
+      border-color: #2b669a;
+      background-image: linear-gradient(#428bca, #2d6ca2);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%), 0 1px 1px rgb(0 0 0 / 7.5%);
+      text-shadow: 0 -1px 0 rgb(0 0 0 / 20%);
+    }
+
+    & .joke {
+      border: 1px solid #bce8f1;
+      border-radius: 4px;
+      background: #d9edf7;
+      color: #31708f;
+    }
+
+    & .y2013 {
+      display: block;
+      margin-block-end: 20px;
+      padding: 15px;
+      border: 1px solid #faebcc;
+      border-radius: 4px;
+      background: #fcf8e3;
+      color: #8a6d3b;
     }
   }
 </style>
