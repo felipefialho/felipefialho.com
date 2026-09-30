@@ -10,7 +10,7 @@ const ui = t(lang);
 
 const copy = {
   pt: {
-    unavailable: 'A busca só existe no site publicado. Rode "pnpm build" para gerar o índice.',
+    unavailable: 'A busca só existe no site publicado. Rode "pnpm build" para gerar o índice',
     strings: {
       placeholder: ui.searchPlaceholder,
       search_label: ui.searchPlaceholder,
@@ -23,7 +23,7 @@ const copy = {
     },
   },
   en: {
-    unavailable: 'Search only works on the built site. Run "pnpm build" to generate the index.',
+    unavailable: 'Search only works on the built site. Run "pnpm build" to generate the index',
     strings: {
       placeholder: ui.searchPlaceholder,
       search_label: ui.searchPlaceholder,
@@ -47,14 +47,18 @@ const copy = {
   data-unavailable={copy.unavailable}
 >
   <div class="bar">
-    <div id="search-ui"></div>
+    <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="ps">$ grep -r</span>
     <button type="button" class="close" commandfor="search" command="close" aria-label={ui.close}>
-      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
         <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
       </svg>
     </button>
   </div>
-  <p id="search-status" class="status" role="status" hidden></p>
+  <div class="body">
+    <div id="search-ui"></div>
+    <p id="search-status" class="status" role="status" hidden></p>
+  </div>
 </dialog>
 
 <script>
@@ -139,88 +143,113 @@ const copy = {
   .search-dialog {
     /* Map Pagefind's variables to the site tokens */
     --pagefind-ui-scale: 1;
-    --pagefind-ui-primary: var(--ink);
+    --pagefind-ui-primary: var(--accent);
     --pagefind-ui-text: var(--ink);
-    --pagefind-ui-background: var(--paper);
-    --pagefind-ui-border: var(--rule);
-    --pagefind-ui-tag: var(--wash);
+    --pagefind-ui-background: var(--sunken);
+    --pagefind-ui-border: var(--line);
+    --pagefind-ui-tag: var(--surface);
     --pagefind-ui-border-width: 1px;
     --pagefind-ui-border-radius: var(--radius);
-    --pagefind-ui-font: var(--font-ui);
+    --pagefind-ui-font: var(--font-body);
 
     box-sizing: border-box;
-    inline-size: min(40rem, 100% - 2 * var(--gutter));
+    inline-size: min(42rem, 100% - 2 * var(--gutter));
     max-block-size: 80dvh;
     margin-block: 10vh auto;
     margin-inline: auto;
-    padding: var(--space-3);
+    padding: 0;
     overflow: auto;
     color: var(--ink);
-    background: var(--paper);
-    border: 1px solid var(--rule);
-    border-radius: var(--radius);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 1.5rem 3.75rem light-dark(rgb(0 0 0 / 15%), rgb(0 0 0 / 50%));
     overscroll-behavior: contain;
   }
 
   .search-dialog::backdrop {
-    background: color-mix(in srgb, var(--ink) 45%, transparent);
+    background: color-mix(in srgb, var(--bg) 70%, transparent);
   }
 
   .bar {
+    position: sticky;
+    inset-block-start: 0;
+    z-index: 1;
     display: flex;
-    gap: var(--space-2);
-    align-items: flex-start;
+    gap: var(--space-3);
+    align-items: center;
+    padding: var(--space-2) 0.75rem var(--space-2) var(--space-3);
+    background: var(--sunken);
+    border-block-end: 1px solid var(--line);
   }
 
-  #search-ui {
+  .dots {
+    display: flex;
+    gap: 0.4375rem;
+
+    & i {
+      inline-size: 0.6875rem;
+      block-size: 0.6875rem;
+      background: var(--line);
+      border-radius: 50%;
+    }
+  }
+
+  .ps {
     flex: 1;
-    min-inline-size: 0;
+    color: var(--muted);
+    font: 0.8125rem / 1.4 var(--font-code);
   }
 
   .close {
     display: grid;
-    flex: none;
     place-items: center;
-    inline-size: 2.75rem;
-    block-size: 2.75rem;
+    inline-size: 2.25rem;
+    block-size: 2.25rem;
     padding: 0;
-    color: var(--ink);
+    color: var(--muted);
     cursor: pointer;
     background: transparent;
-    border: 1px solid var(--rule);
+    border: 1px solid transparent;
     border-radius: var(--radius);
+
+    &:hover {
+      color: var(--ink);
+    }
   }
 
-  .close:hover {
-    background: var(--wash);
+  .body {
+    padding: var(--space-3) var(--space-4) var(--space-4);
+  }
+
+  #search-ui {
+    min-inline-size: 0;
   }
 
   .status {
     margin: 0;
-    font-family: var(--font-ui);
+    font-family: var(--font-code);
     font-size: var(--step--1);
     color: var(--muted);
   }
 
   .search-dialog :global(.pagefind-ui__search-input) {
-    font-family: var(--font-ui);
+    font-family: var(--font-code);
     font-size: var(--step-0);
     font-weight: 400;
+    color: var(--ink);
   }
 
   .search-dialog :global(.pagefind-ui__result-title),
   .search-dialog :global(.pagefind-ui__result-link) {
-    font-family: var(--font-ui);
+    font-family: var(--font-body);
     font-size: var(--step-0);
     font-weight: 600;
   }
 
-  .search-dialog :global(.pagefind-ui__result-link) {
-    color: var(--link);
-  }
-
+  .search-dialog :global(.pagefind-ui__result-link),
   .search-dialog :global(.pagefind-ui__result-link:visited) {
-    color: var(--visited);
+    color: var(--accent);
   }
 
   /* The date is indexed for sorting, not for display */
@@ -229,75 +258,82 @@ const copy = {
   }
 
   .search-dialog :global(.pagefind-ui__result-excerpt) {
-    font-family: var(--font-text);
-    font-size: var(--step-0);
-    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: var(--step--1);
+    color: var(--soft);
   }
 
   .search-dialog :global(.pagefind-ui__message) {
-    font-family: var(--font-ui);
-    font-size: var(--step--1);
+    font-family: var(--font-code);
+    font-size: var(--step--2);
     color: var(--muted);
   }
 
   .search-dialog :global(.pagefind-ui__result) {
-    border-block-start-color: var(--rule);
+    border-block-start-color: var(--line);
   }
 
   .search-dialog :global(.pagefind-ui__button) {
-    font-family: var(--font-ui);
+    font-family: var(--font-code);
     color: var(--ink);
-    background: var(--paper);
-    border-color: var(--rule);
+    background: var(--bg);
+    border-color: var(--line);
   }
 
   .search-dialog :global(mark) {
     color: inherit;
-    background: var(--wash);
-    border-block-end: 2px solid var(--link);
+    background: var(--bg);
+    border-block-end: 2px solid var(--accent);
   }
 
   .search-dialog :focus-visible {
-    outline: 2px solid var(--link);
+    outline: 2px solid var(--accent);
     outline-offset: 2px;
+  }
+
+  @media (width < 48rem) {
+    .search-dialog {
+      inline-size: calc(100% - 2rem);
+      margin-block-start: 1rem;
+    }
   }
 
   @media (prefers-reduced-motion: no-preference) {
     .search-dialog {
       opacity: 0;
-      translate: 0 -0.75rem;
+      translate: 0 1rem;
       transition:
-        opacity 0.2s var(--ease),
-        translate 0.2s var(--ease),
-        overlay 0.2s allow-discrete,
-        display 0.2s allow-discrete;
-    }
+        opacity 0.25s var(--ease),
+        translate 0.25s var(--ease),
+        overlay 0.25s allow-discrete,
+        display 0.25s allow-discrete;
 
-    .search-dialog[open] {
-      opacity: 1;
-      translate: 0 0;
-    }
-
-    .search-dialog::backdrop {
-      opacity: 0;
-      transition:
-        opacity 0.2s var(--ease),
-        overlay 0.2s allow-discrete,
-        display 0.2s allow-discrete;
-    }
-
-    .search-dialog[open]::backdrop {
-      opacity: 1;
-    }
-
-    @starting-style {
-      .search-dialog[open] {
-        opacity: 0;
-        translate: 0 -0.75rem;
+      &[open] {
+        opacity: 1;
+        translate: 0 0;
       }
 
-      .search-dialog[open]::backdrop {
+      &::backdrop {
         opacity: 0;
+        transition:
+          opacity 0.25s var(--ease),
+          overlay 0.25s allow-discrete,
+          display 0.25s allow-discrete;
+      }
+
+      &[open]::backdrop {
+        opacity: 1;
+      }
+
+      @starting-style {
+        &[open] {
+          opacity: 0;
+          translate: 0 1rem;
+        }
+
+        &[open]::backdrop {
+          opacity: 0;
+        }
       }
     }
   }
