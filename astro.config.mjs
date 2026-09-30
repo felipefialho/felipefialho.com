@@ -5,7 +5,7 @@ import { satteri } from '@astrojs/markdown-satteri';
 import { hastPlugins, mdastPlugins } from './src/plugins/index.ts';
 import { createSitemapSerializer, loadSitemapPosts } from './src/lib/seo.ts';
 
-// Subset and axis-pinned by scripts/subset-fonts.sh
+// Latin variable files copied by scripts/subset-fonts.sh
 const font = (file) => `./src/assets/fonts/${file}`;
 
 export default defineConfig({
@@ -21,18 +21,20 @@ export default defineConfig({
   fonts: [
     {
       provider: fontProviders.local(),
-      name: 'Mona Sans',
-      cssVariable: '--font-mona-sans',
-      fallbacks: ['sans-serif'],
+      name: 'Geist',
+      cssVariable: '--font-sans',
+      fallbacks: ['system-ui', 'sans-serif'],
       options: {
-        variants: [
-          {
-            src: [font('mona-sans.woff2')],
-            weight: '400 800',
-            stretch: '100% 125%',
-            style: 'normal',
-          },
-        ],
+        variants: [{ src: [font('geist.woff2')], weight: '300 800', style: 'normal' }],
+      },
+    },
+    {
+      provider: fontProviders.local(),
+      name: 'Geist Mono',
+      cssVariable: '--font-mono',
+      fallbacks: ['ui-monospace', 'monospace'],
+      options: {
+        variants: [{ src: [font('geist-mono.woff2')], weight: '400 600', style: 'normal' }],
       },
     },
   ],
