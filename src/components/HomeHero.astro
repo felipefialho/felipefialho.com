@@ -1,0 +1,220 @@
+---
+import { Picture } from 'astro:assets';
+import { getEntry, render } from 'astro:content';
+import photo from '../assets/images/felipe-fialho.jpg';
+import { localePath, t, type Lang } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const ui = t(lang);
+const home = await getEntry('pages', `${lang}/home`);
+const { Content } = home ? await render(home) : { Content: null };
+---
+
+<section class="hero page">
+  <div class="text">
+    <p class="whoami mono">
+      <span><span class="accent">$</span> whoami</span>
+      {ui.whoami.map((item) => <span>{item}</span>)}
+    </p>
+    <h1>{ui.homeHeading}<span class="caret" aria-hidden="true">_</span></h1>
+    <div class="bio">
+      {Content && <Content />}
+      <a href={localePath(lang, '/hi/')}>{ui.moreAboutLink}</a>
+    </div>
+    <p class="off mono"><span class="warm">{ui.offKeyboard}</span> {ui.offKeyboardList}</p>
+  </div>
+
+  <figure class="photo">
+    <div class="frame">
+      <Picture
+        src={photo}
+        alt={ui.photoAlt}
+        width={440}
+        height={520}
+        fit="cover"
+        densities={[1, 2]}
+        formats={['avif', 'webp']}
+        loading="eager"
+        fetchpriority="high"
+      />
+      <span class="tint"></span>
+      <span class="fade"></span>
+      <span class="scanlines"></span>
+      <figcaption class="mono"><span>{ui.photoCaption}</span><span>● rec</span></figcaption>
+    </div>
+  </figure>
+</section>
+
+<style>
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-5);
+    align-items: center;
+
+    /* The gap to the next section is 6rem in total: the rest comes from the main padding */
+    padding-block: clamp(2rem, 7vw, 6rem) max(0px, calc(clamp(2.5rem, 7vw, 6rem) - clamp(2.5rem, 6vw, 5rem)));
+
+    @media (width >= 64rem) {
+      grid-template-columns: minmax(0, 1fr) 27.5rem;
+      gap: 5rem;
+    }
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 2.5vw, 2.25rem);
+  }
+
+  .whoami {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.5rem;
+    margin: 0;
+    color: var(--muted);
+    font-size: var(--step--1);
+  }
+
+  .accent {
+    color: var(--accent);
+  }
+
+  .warm {
+    color: var(--warm);
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(2.5rem, 1.1rem + 6.2vw, 5.5rem);
+    font-weight: 600;
+    line-height: 0.98;
+    letter-spacing: -0.045em;
+    text-wrap: balance;
+  }
+
+  .caret {
+    color: var(--accent);
+    animation: blink 1.1s steps(1) infinite;
+
+    @media (prefers-reduced-motion: reduce) {
+      display: none;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .bio {
+    max-inline-size: 40rem;
+    color: var(--soft);
+    font-size: clamp(1.125rem, 1rem + 0.5vw, 1.3125rem);
+    line-height: 1.55;
+
+    & :global(p) {
+      display: inline;
+      margin: 0;
+    }
+
+    & a {
+      white-space: nowrap;
+    }
+  }
+
+  .off {
+    margin: 0;
+    color: var(--muted);
+    font-size: var(--step--1);
+    line-height: 1.7;
+  }
+
+  .photo {
+    display: block;
+    inline-size: min(100%, 27.5rem);
+    margin: 0;
+
+    @media (width >= 64rem) {
+      inline-size: 100%;
+    }
+  }
+
+  .frame {
+    position: relative;
+    aspect-ratio: 440 / 520;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-xl);
+    background: var(--surface);
+
+    & :global(img) {
+      display: block;
+      inline-size: 100%;
+      block-size: 100%;
+      object-fit: cover;
+      object-position: 38% 30%;
+      filter: grayscale(1) contrast(1.15);
+      transition: filter 0.5s var(--ease);
+    }
+
+    & > span {
+      position: absolute;
+      inset: 0;
+    }
+  }
+
+  .tint {
+    background: var(--tint);
+    mix-blend-mode: multiply;
+    transition: opacity 0.5s var(--ease);
+  }
+
+  .fade {
+    background: linear-gradient(to top, var(--bg) 0%, transparent 42%);
+  }
+
+  .scanlines {
+    background: repeating-linear-gradient(
+      0deg,
+      color-mix(in srgb, var(--bg) 22%, transparent) 0 1px,
+      transparent 1px 3px
+    );
+    pointer-events: none;
+  }
+
+  figcaption {
+    position: absolute;
+    inset-inline: 1.25rem;
+    inset-block-end: 1.125rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--accent);
+    font-size: var(--step--2);
+  }
+
+  /* Color comes back on hover only where there is a real pointer */
+  @media (hover: hover) and (pointer: fine) {
+    .frame:hover {
+      & :global(img) {
+        filter: grayscale(0) contrast(1);
+      }
+
+      & .tint {
+        opacity: 0;
+      }
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .frame :global(img),
+    .tint {
+      transition: none;
+    }
+  }
+</style>

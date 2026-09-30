@@ -1,0 +1,243 @@
+---
+import { formatDay, isoDate, localePath, t, type Lang } from '../lib/i18n';
+import { postPath, tagPath, type Post } from '../lib/posts';
+import SocialIcon from './SocialIcon.astro';
+import { SOCIAL_PROFILES } from '../lib/social';
+
+interface Props {
+  lang: Lang;
+  posts: Post[];
+  /** Normalized tags, most used first */
+  topics: string[];
+}
+
+const { lang, posts, topics } = Astro.props;
+const ui = t(lang);
+const social = SOCIAL_PROFILES.filter(({ id }) => id === 'linkedin' || id === 'x');
+---
+
+<section class="latest" aria-labelledby="latest">
+  <div class="list">
+    <div class="head">
+      <h2 id="latest">{ui.latestPosts}</h2>
+      <a href={localePath(lang, '/blog/')}>{ui.allPostsLink}</a>
+    </div>
+    <ol>
+      {
+        posts.map((post) => (
+          <li>
+            <a class="row" href={postPath(lang, post.id)}>
+              <time class="mono" datetime={isoDate(post.data.date)}>
+                {formatDay(post.data.date, lang)}
+              </time>
+              <span class="title" style={`view-transition-name: post-${post.id}`}>
+                {post.data.title}
+              </span>
+              <span class="tag mono">#{post.data.tags[0]}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+
+  <aside class="side">
+    <div class="topics">
+      <h2 class="side-title mono">{ui.topics}</h2>
+      <ul>
+        {
+          topics.map((tag, index) => (
+            <li>
+              <a class:list={['pill', { 'is-accent': index === 0 }]} href={tagPath(lang, tag)}>
+                {tag}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="follow">
+      <h2 class="side-title mono">{ui.follow}</h2>
+      <p>{ui.followText}</p>
+      <ul>
+        <li>
+          <a class="pill" href={localePath(lang, '/feed.xml')}><SocialIcon name="rss" size={14} />rss</a>
+        </li>
+        {
+          social.map(({ id, href, label }) => (
+            <li>
+              <a class="pill" href={href} rel="me" aria-label={label}>
+                {id}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </aside>
+</section>
+
+<style>
+  .latest {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-6);
+    padding-block-end: clamp(2.5rem, 6vw, 6rem);
+
+    @media (width >= 60rem) {
+      grid-template-columns: minmax(0, 1fr) 20rem;
+      gap: 5rem;
+    }
+  }
+
+  .head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-block-end: var(--space-3);
+    border-block-end: 1px solid var(--line);
+    color: var(--muted);
+    font-family: var(--font-code);
+    text-transform: uppercase;
+    letter-spacing: 0;
+    margin: 0;
+    font-size: 0.8125rem;
+
+    & h2 {
+      margin: 0;
+      color: inherit;
+      font: inherit;
+      letter-spacing: inherit;
+    }
+
+    & a {
+      letter-spacing: 0;
+      text-transform: none;
+
+      @media (pointer: coarse) {
+        display: inline-flex;
+        align-items: center;
+        min-block-size: 2.75rem;
+      }
+    }
+  }
+
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.25rem 1.5rem;
+    align-items: baseline;
+    padding-block: 1.375rem;
+    border-block-end: 1px solid var(--line);
+    color: var(--ink);
+    transition:
+      background-color 0.2s var(--ease),
+      box-shadow 0.2s var(--ease);
+
+    /* The highlight bleeds past the column with shadows, so hovering never moves or rewraps the text */
+    &:hover {
+      background: var(--surface);
+      box-shadow:
+        -1rem 0 0 var(--surface),
+        1rem 0 0 var(--surface);
+      color: var(--ink);
+    }
+
+    @media (width >= 48rem) {
+      grid-template-columns: 6.875rem minmax(0, 1fr) 6.25rem;
+    }
+
+    & time {
+      grid-column: 1 / -1;
+      color: var(--muted);
+      font-size: 0.8125rem;
+
+      @media (width >= 48rem) {
+        grid-column: auto;
+      }
+    }
+  }
+
+  .title {
+    font-size: clamp(1.125rem, 1rem + 0.5vw, 1.375rem);
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+  }
+
+  .tag {
+    color: var(--muted);
+    font-size: var(--step--2);
+    text-align: end;
+  }
+
+  .side {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .topics,
+  .follow {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+  }
+
+  .side-title {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.8125rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+
+  .side ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .side .pill {
+    padding: 0.375rem 0.75rem;
+    gap: 0.375rem;
+    font-size: 0.8125rem;
+
+    @media (pointer: coarse) {
+      min-block-size: 2.75rem;
+    }
+  }
+
+  .topics .pill:not(.is-accent) {
+    color: var(--ink);
+  }
+
+  .follow {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+
+    & p {
+      margin: 0;
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    & .pill {
+      color: var(--ink);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .row {
+      transition: none;
+    }
+  }
+</style>

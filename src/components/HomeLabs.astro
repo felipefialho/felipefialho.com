@@ -1,0 +1,132 @@
+---
+import { localePath, t, type Lang } from '../lib/i18n';
+
+interface Project {
+  id: string;
+  title: string;
+  stars?: string;
+  short?: { pt: string; en: string };
+  description: { pt: string; en: string };
+}
+
+interface Props {
+  lang: Lang;
+  projects: Project[];
+}
+
+const { lang, projects } = Astro.props;
+const ui = t(lang);
+const labPath = localePath(lang, '/lab/');
+---
+
+<section class="labs" aria-labelledby="labs">
+  <div class="head">
+    <h2 id="labs">{ui.labsOpenSource}</h2>
+    <a href={labPath}>{ui.seeLabs}</a>
+  </div>
+  <ul>
+    {
+      projects.map((project) => (
+        <li>
+          <a href={labPath}>
+            <span class="meta mono">{project.stars ? `★ ${project.stars}` : ''}</span>
+            <span class="name">{project.title}</span>
+            <span class="what">{(project.short ?? project.description)[lang]}</span>
+          </a>
+        </li>
+      ))
+    }
+    <li>
+      <a href={labPath}>
+        <span class="meta mono">{ui.cartmanMeta}</span>
+        <span class="name">{ui.cartmanTitle}</span>
+        <span class="what warm">{ui.cartmanLine}</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<style>
+  .head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-block-end: var(--space-3);
+    border-block-end: 1px solid var(--line);
+    color: var(--muted);
+    font-family: var(--font-code);
+    text-transform: uppercase;
+    letter-spacing: 0;
+    margin-block-end: var(--space-4);
+    font-size: 0.8125rem;
+
+    & h2 {
+      margin: 0;
+      color: inherit;
+      font: inherit;
+      letter-spacing: inherit;
+    }
+
+    & a {
+      letter-spacing: 0;
+      text-transform: none;
+    }
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+    gap: var(--space-3);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  li a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    block-size: 100%;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    color: var(--ink);
+    transition: border-color 0.2s var(--ease);
+
+    &:hover {
+      border-color: var(--accent);
+      color: var(--ink);
+    }
+  }
+
+  .meta {
+    color: var(--accent);
+    font-size: 0.8125rem;
+  }
+
+  .name {
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  .what {
+    color: var(--soft);
+    font-size: 0.9375rem;
+    line-height: 1.45;
+  }
+
+  .warm {
+    color: var(--warm);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    li a {
+      transition: none;
+    }
+  }
+</style>

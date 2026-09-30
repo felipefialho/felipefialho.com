@@ -1,12 +1,12 @@
 ---
-import { Image } from 'astro:assets';
-import { getEntry, render } from 'astro:content';
-import photo from '../assets/images/felipe-fialho.jpg';
-import SocialLinks from '../components/SocialLinks.astro';
+import HomeFeatured from '../components/HomeFeatured.astro';
+import HomeHero from '../components/HomeHero.astro';
+import HomeLabs from '../components/HomeLabs.astro';
+import HomeLatest from '../components/HomeLatest.astro';
 import Base from '../layouts/Base.astro';
-import { SITE_NAME, formatShortDate, isoDate, localePath, t, type Lang } from '../lib/i18n';
+import { SITE_NAME, localePath, t, type Lang } from '../lib/i18n';
 import { getFeaturedProjects } from '../lib/lab';
-import { getPosts, postPath } from '../lib/posts';
+import { HOME_TOPICS, getFeatured, getPosts, getTopTags } from '../lib/posts';
 import { homeJsonLd } from '../lib/seo';
 
 interface Props {
@@ -16,11 +16,9 @@ interface Props {
 const { lang } = Astro.props;
 const ui = t(lang);
 const allPosts = await getPosts(lang);
-const posts = allPosts.slice(0, 6);
+const { featured, latest } = getFeatured(allPosts);
+const topics = getTopTags(allPosts, HOME_TOPICS.length, HOME_TOPICS);
 const projects = await getFeaturedProjects();
-const home = await getEntry('pages', `${lang}/home`);
-const { Content } = home ? await render(home) : { Content: null };
-const aboutPath = localePath(lang, '/hi/');
 const jsonLd = homeJsonLd({ lang, path: localePath(lang, '/'), title: SITE_NAME, description: ui.homeDescription });
 ---
 
@@ -31,215 +29,8 @@ const jsonLd = homeJsonLd({ lang, path: localePath(lang, '/'), title: SITE_NAME,
   alternate={localePath(lang === 'pt' ? 'en' : 'pt', '/')}
   jsonLd={jsonLd}
 >
-  <section slot="hero" class="hero band">
-    <div class="page">
-      <!-- The name is the biggest link on the page -->
-      <h1 class="name">
-        <a href={aboutPath}><span>Felipe</span> <span>Fialho</span></a>
-      </h1>
-      <div class="intro">
-        <div class="portrait duotone">
-          <Image
-            src={photo}
-            alt={ui.photoAlt}
-            width={240}
-            height={300}
-            fit="cover"
-            densities={[1, 2]}
-            loading="eager"
-          />
-        </div>
-        <div class="bio">
-          {
-            Content && (
-              <div class="bio-text">
-                <Content /> <a href={aboutPath}>{ui.moreAbout}</a>
-              </div>
-            )
-          }
-          <SocialLinks lang={lang} variant="labelled" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section split" aria-labelledby="open-source">
-    <h2 id="open-source" class="section-title aside">{ui.openSource}</h2>
-    <ul class="projects">
-      {
-        projects.map((project) => (
-          <li>
-            <h3>
-              <a href={project.url}>{project.title}</a>
-            </h3>
-            <p class="proof">{project.proof[lang]}</p>
-            <p class="what">{project.description[lang]}</p>
-          </li>
-        ))
-      }
-    </ul>
-  </section>
-
-  <section class="section split" aria-labelledby="latest">
-    <h2 id="latest" class="section-title aside">{ui.latest}</h2>
-    <div>
-      <ol class="rows">
-        {
-          posts.map((post) => (
-            <li>
-              <a class="title-link" href={postPath(lang, post.id)} style={`view-transition-name: post-${post.id}`}>
-                {post.data.title}
-              </a>
-              <time datetime={isoDate(post.data.date)}>{formatShortDate(post.data.date, lang)}</time>
-            </li>
-          ))
-        }
-      </ol>
-      <p class="more"><a class="text-link" href={localePath(lang, '/blog/')}>{ui.allPosts(allPosts.length)}</a></p>
-    </div>
-  </section>
+  <HomeHero slot="hero" lang={lang} />
+  {featured && <HomeFeatured lang={lang} post={featured} />}
+  <HomeLatest lang={lang} posts={latest} topics={topics} />
+  <HomeLabs lang={lang} projects={projects} />
 </Base>
-
-<style>
-  .hero .page {
-    container-type: inline-size;
-    padding-block: clamp(1.5rem, 5vw, 4rem) clamp(2.5rem, 5vw, 4rem);
-  }
-
-  /* Sized to the column: one line on a wide screen, two stacked words on a phone */
-  .name {
-    margin: 0;
-    font-size: 31.5cqi;
-    font-stretch: 125%;
-    font-weight: 800;
-    line-height: 0.92;
-    letter-spacing: -0.035em;
-
-    & a {
-      text-decoration-thickness: 0.055em;
-      text-underline-offset: 0.12em;
-    }
-
-    & span {
-      display: block;
-    }
-
-    @media (width >= 48rem) {
-      font-size: 15.3cqi;
-
-      & span {
-        display: inline;
-      }
-    }
-  }
-
-  .intro {
-    display: grid;
-    gap: var(--space-4) var(--aside-gap);
-    align-items: start;
-    margin-block-start: clamp(2rem, 5vw, 4rem);
-
-    @media (width >= 48rem) {
-      grid-template-columns: var(--aside) minmax(0, 1fr);
-    }
-  }
-
-  .portrait {
-    inline-size: min(100%, 11rem);
-    aspect-ratio: 4 / 5;
-
-    @media (width >= 48rem) {
-      inline-size: 100%;
-    }
-  }
-
-  .bio {
-    max-inline-size: 46rem;
-  }
-
-  .bio-text {
-    margin-block-end: var(--space-3);
-    font-size: var(--step-1);
-    line-height: 1.5;
-
-    & :global(p) {
-      margin: 0 0 var(--space-3);
-    }
-
-    /* The opening paragraph reads as the lede */
-    & :global(p:first-child) {
-      font-size: clamp(1.25rem, 1rem + 0.9vw, 1.625rem);
-      font-stretch: 104%;
-      font-weight: 500;
-      line-height: 1.35;
-      letter-spacing: -0.01em;
-    }
-
-    /* "More about me" closes the last paragraph instead of floating on its own */
-    & :global(p:last-of-type) {
-      display: inline;
-    }
-
-    & > a {
-      font-weight: 650;
-    }
-  }
-
-  /* Each project is one big link sentence with its proof */
-  .projects {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    border-block-start: 1px solid var(--rule);
-
-    & li {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr);
-      gap: var(--space-1) var(--space-5);
-      align-items: baseline;
-      padding-block: var(--space-3) var(--space-4);
-      border-block-end: 1px solid var(--rule);
-
-      @media (width >= 40rem) {
-        grid-template-columns: minmax(0, 1fr) auto;
-      }
-    }
-
-    & h3 {
-      margin: 0;
-      font-size: clamp(1.625rem, 1.2rem + 1.6vw, 2.75rem);
-      font-stretch: 118%;
-      font-weight: 750;
-      line-height: 1.05;
-      letter-spacing: -0.02em;
-    }
-
-    & h3 a {
-      text-decoration-thickness: 0.06em;
-      text-underline-offset: 0.12em;
-    }
-  }
-
-  .proof {
-    margin: 0;
-    font-family: var(--font-ui);
-    font-size: var(--step-1);
-    font-stretch: 110%;
-    font-weight: 650;
-    font-variant-numeric: tabular-nums;
-
-    @media (width >= 40rem) {
-      text-align: end;
-      white-space: nowrap;
-    }
-  }
-
-  .what {
-    grid-column: 1 / -1;
-    max-inline-size: 44rem;
-    margin: var(--space-1) 0 0;
-    color: var(--muted);
-    font-size: var(--step--1);
-    line-height: 1.55;
-  }
-</style>

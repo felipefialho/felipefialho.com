@@ -13,6 +13,12 @@ export async function getPosts(lang: Lang): Promise<Post[]> {
   return entries.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 }
 
+/** The newest published post and the `limit` posts right after it. Drafts never lead the home, even in dev. */
+export function getFeatured<T extends Post>(posts: T[], limit = 6) {
+  const published = posts.filter((post) => !post.data.draft);
+  return { featured: published[0], latest: published.slice(1, 1 + limit) };
+}
+
 export const postPath = (lang: Lang, id: string) => localePath(lang, `/blog/${id}/`);
 
 export const ogImagePath = (lang: Lang, id: string) => localePath(lang, `/og/${id}.jpg`);
@@ -54,6 +60,23 @@ export function getTagCounts(posts: Post[]) {
     for (const tag of post.data.tags) counts.set(tag, (counts.get(tag) ?? 0) + 1);
   }
   return counts;
+}
+
+/** Topics the home leads with, in this order, when they have a tag page. */
+export const HOME_TOPICS = ['ai', 'carreira', 'front-end', 'javascript', 'css', 'performance', 'html'] as const;
+
+/**
+ * Tags that have their own page: the pinned ones first (in their order), then the most used
+ * (alphabetical on ties), up to the limit.
+ */
+export function getTopTags(posts: Post[], limit = 7, pinned: readonly string[] = []) {
+  const ranked = [...getTagCounts(posts)]
+    .filter(([, count]) => count >= MIN_TAG_POSTS)
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .map(([tag]) => tag);
+  const withPage = new Set(ranked);
+  const first = pinned.filter((tag) => withPage.has(tag));
+  return [...new Set([...first, ...ranked])].slice(0, limit);
 }
 
 export const tagSlug = (tag: string) => {
