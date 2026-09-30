@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { utcDate } from './utc-date.ts';
+import { utcDate } from '../utc-date.ts';
 
 describe('utcDate', () => {
   it('reads a quoted date-time without offset as UTC', () => {

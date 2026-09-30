@@ -1,6 +1,6 @@
 // @vitest-environment happy-dom
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { CONSENT_KEY, cmpConfirmed, inCmpRegion, readConsent, saveConsent } from './consent.ts';
+import { CONSENT_KEY, cmpConfirmed, inCmpRegion, readConsent, saveConsent } from '../consent.ts';
 
 const stubTimeZone = (timeZone: string) => {
   vi.spyOn(Intl, 'DateTimeFormat').mockImplementation(

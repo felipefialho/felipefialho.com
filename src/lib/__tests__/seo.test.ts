@@ -13,7 +13,7 @@ import {
   serializeJsonLd,
   type JsonLd,
   type SitemapPost,
-} from './seo.ts';
+} from '../seo.ts';
 
 const nodeOf = (data: JsonLd, type: string) => data['@graph'].find((node) => node['@type'] === type);
 

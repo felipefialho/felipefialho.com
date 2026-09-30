@@ -8,7 +8,7 @@ vi.mock('node:fs', async (importOriginal) => ({
   existsSync: (file: string) => existing.has(file),
 }));
 
-const { rewriteSrc } = await import('./remark-legacy-images.ts');
+const { rewriteSrc } = await import('../remark-legacy-images.ts');
 
 const PUBLIC = path.resolve(process.cwd(), 'public');
 const MARKDOWN = path.resolve(process.cwd(), 'content/posts/2020-01-01-post.md');

@@ -2,12 +2,12 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 
 const publicImageSize = vi.hoisted(() => vi.fn());
 
-vi.mock('./utils/image-size.ts', () => ({ publicImageSize }));
+vi.mock('../utils/image-size.ts', () => ({ publicImageSize }));
 
 const load = async (netlify: boolean) => {
   vi.resetModules();
   vi.stubEnv('NETLIFY', netlify ? 'true' : '');
-  return (await import('./rehype-image-attrs.ts')).imagePatch;
+  return (await import('../rehype-image-attrs.ts')).imagePatch;
 };
 
 const SRC = '/assets/posts/photo.png';

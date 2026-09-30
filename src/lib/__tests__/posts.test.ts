@@ -5,7 +5,7 @@ const getCollection = vi.hoisted(() => vi.fn());
 vi.mock('astro:content', () => ({ getCollection }));
 
 const { getAdjacent, getPosts, getRelated, getTagCounts, getTranslationMap, groupByYear, postPath, tagLabel, tagPath, tagSlug, tagStaticPaths } =
-  await import('./posts.ts');
+  await import('../posts.ts');
 
 type Post = Parameters<typeof getAdjacent>[0][number];
 

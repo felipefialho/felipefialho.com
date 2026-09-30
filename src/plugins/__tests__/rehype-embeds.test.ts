@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { transformEmbeds } from './rehype-embeds.ts';
-import { decodeEntities } from './utils/html-tags.ts';
+import { transformEmbeds } from '../rehype-embeds.ts';
+import { decodeEntities } from '../utils/html-tags.ts';
 
 const iframes = (html: string) => html.match(/<iframe\b/g)?.length ?? 0;
 const withoutSrcdoc = (html: string) => html.replace(/\ssrcdoc="[^"]*"/, '');

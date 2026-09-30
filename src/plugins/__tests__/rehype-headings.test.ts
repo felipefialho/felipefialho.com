@@ -1,6 +1,6 @@
 import { markdownToHtml } from 'satteri';
 import { describe, expect, it } from 'vitest';
-import rehypeHeadings, { slugify } from './rehype-headings.ts';
+import rehypeHeadings, { slugify } from '../rehype-headings.ts';
 
 const render = async (markdown: string) => (await markdownToHtml(markdown, { hastPlugins: [rehypeHeadings] })).html;
 
