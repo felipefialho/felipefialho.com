@@ -1,152 +1,310 @@
 ---
-import { Image } from 'astro:assets';
+import Cartman from '../components/Cartman.astro';
 import Base from '../layouts/Base.astro';
 import { getLabProjects } from '../lib/lab';
 import { localePath, t, type Lang } from '../lib/i18n';
+import { SOCIAL_PROFILES } from '../lib/social';
 
 interface Props {
   lang: Lang;
 }
 
 const { lang } = Astro.props;
-const projects = await getLabProjects();
 const ui = t(lang);
+const all = await getLabProjects();
+const cartman = all.find(({ id }) => id === 'cartman-css');
+const projects = all.filter(({ id }) => id !== 'cartman-css');
+const github = SOCIAL_PROFILES.find(({ id }) => id === 'github')!.href;
 ---
 
 <Base lang={lang} title={ui.lab} description={ui.labDescription} alternate={localePath(lang === 'pt' ? 'en' : 'pt', '/lab/')}>
-  <header class="page-head split">
-    <div>
-      <h1 class="page-title">{ui.lab}</h1>
-      <p class="lede">{ui.labLede}</p>
-    </div>
+  <header class="head">
+    <p class="prompt path">ls ~/labs</p>
+    <h1>{ui.labTitle}</h1>
   </header>
-  <ol class="projects">
-    {
-      projects.map(({ data }, index) => (
-        <li class="project split">
-          <p class="year aside">{data.year}</p>
-          <div class="body">
-            <div class="text">
-              <h2>
-                <a href={data.url}>{data.title}</a>
-              </h2>
-              <p>{data.description[lang]}</p>
-              <p class="links">
-                {data.repo === data.url ? (
-                  <a class="text-link" href={data.url}>
-                    {ui.codeOnGithub}
-                  </a>
-                ) : (
+
+  <section class="table" aria-label={ui.lab}>
+    <div class="thead" aria-hidden="true"><span>{ui.labStars}</span><span>{ui.labProject}</span></div>
+    <ul class="list">
+      {
+        projects.map(({ data }) => (
+          <li>
+            <a class="row" href={data.url}>
+              <span class="stars">
+                {data.stars && (
                   <>
-                    <a class="text-link" href={data.url}>
-                      {ui.viewProject}
-                    </a>
-                    {data.repo && (
-                      <a class="text-link" href={data.repo}>
-                        {ui.code}
-                      </a>
-                    )}
+                    <span aria-hidden="true">★ </span>
+                    {data.stars}
+                    <span class="visually-hidden"> {ui.labStarsUnit}</span>
                   </>
                 )}
-              </p>
-            </div>
-            <Image
-              src={data.image}
-              alt={ui.labShot(data.title)}
-              width={480}
-              widths={[320, 480, 640, 960]}
-              sizes="(min-width: 60rem) 24rem, 100vw"
-              loading={index === 0 ? 'eager' : 'lazy'}
-              class="shot"
-            />
-          </div>
-        </li>
-      ))
-    }
-  </ol>
+              </span>
+              <span class="info">
+                <span class="name">
+                  {data.title}
+                  {data.rebuilt && <span class="rebuilt">{ui.labRebuilt}</span>}
+                </span>
+                <span class="desc">{data.description[lang]}</span>
+              </span>
+              <span class="go" aria-hidden="true">↗</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  {
+    cartman && (
+      <section class="feature" aria-labelledby="cartman-title">
+        <div class="art">
+          <Cartman />
+        </div>
+        <div class="copy">
+          <p class="kind">{ui.labCartmanKind}</p>
+          <h2 id="cartman-title">Eric Cartman</h2>
+          <p class="text">{ui.labCartmanText}</p>
+          <a class="open" href={cartman.data.url}>
+            {ui.labCartmanLink}
+          </a>
+        </div>
+      </section>
+    )
+  }
+
+  <p class="more"><a href={github}>{ui.labMore}</a></p>
 </Base>
 
 <style>
-  .projects {
+  .head {
+    display: grid;
+    gap: 1.75rem;
+    padding-block: 0 clamp(2.5rem, 5vw, 4.5rem);
+
+    @media (width >= 60rem) {
+      padding-block-start: clamp(0rem, 4.444vw - 3rem, 2rem);
+    }
+  }
+
+  .path {
+    margin: 0;
+    color: var(--muted);
+    font-family: var(--font-code);
+    font-size: var(--step--1);
+  }
+
+  h1 {
+    margin: 0;
+    color: var(--ink);
+    font-size: var(--step-7);
+    font-weight: 600;
+    line-height: 0.98;
+    letter-spacing: -0.045em;
+    text-wrap: balance;
+
+    /* Two thirds of the page: wide enough for two lines, never the full measure */
+    @media (width >= 60rem) {
+      max-inline-size: 50rem;
+    }
+  }
+
+  .table {
+    margin-block-end: clamp(2.5rem, 5.5vw, 5rem);
+  }
+
+  .thead,
+  .row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: var(--space-2) var(--space-4);
+    padding-inline: var(--space-3);
+    border-block-end: 1px solid var(--line);
+
+    @media (width >= 48rem) {
+      grid-template-columns: 11.25rem minmax(0, 1fr) 3.75rem;
+    }
+  }
+
+  .thead {
+    padding-block: 0.875rem;
+    color: var(--muted);
+    font-family: var(--font-code);
+    font-size: var(--step--2);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @media (width < 48rem) {
+      display: none;
+    }
+  }
+
+  .list {
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
-  .project {
-    row-gap: var(--space-2);
-  }
-
-  .year {
-    margin: 0;
-    color: var(--muted);
-    font-family: var(--font-ui);
-    font-size: var(--step-1);
-    font-stretch: 112%;
-    font-weight: 650;
-    font-variant-numeric: tabular-nums;
-
-    @media (width >= 60rem) {
-      padding-block-start: calc(var(--space-5) + 0.6rem);
-    }
-  }
-
-  /* The rules belong to the content column, like the lists on the home */
-  .body {
-    display: grid;
-    gap: var(--space-4) var(--space-5);
+  .row {
     align-items: start;
-    padding-block: var(--space-4) var(--space-5);
-    border-block-start: 1px solid var(--rule);
+    padding-block: clamp(1.5rem, 3vw, 2rem);
+    color: var(--ink);
+    transition: background 0.25s ease;
 
-    @media (width >= 60rem) {
-      grid-template-columns: minmax(0, 1fr) 24rem;
-      padding-block-start: var(--space-5);
+    &:hover {
+      background: var(--surface);
+      color: var(--ink);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      transition: none;
     }
   }
 
-  .project:last-child .body {
-    border-block-end: 1px solid var(--rule);
+  .stars {
+    padding-block-start: 0.375rem;
+    color: var(--accent);
+    font-family: var(--font-code);
+    font-size: clamp(1.5rem, 1.375rem + 0.556vw, 1.875rem);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+
+    @media (width < 48rem) {
+      grid-row: 2;
+      grid-column: 1 / -1;
+    }
+  }
+
+  .name {
+    font-size: clamp(1.75rem, 1.5rem + 1.111vw, 2.5rem);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+  }
+
+  .rebuilt {
+    display: inline-block;
+    margin-inline-start: 0.5rem;
+    padding: 0.1875rem 0.5rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-family: var(--font-code);
+    font-size: 0.8125rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.4;
+    vertical-align: middle;
+  }
+
+  .desc {
+    max-inline-size: 42.5rem;
+    color: var(--soft);
+    font-size: var(--step-0);
+    line-height: 1.5;
+  }
+
+  .go {
+    color: var(--accent);
+    font-size: var(--step-2);
+    text-align: end;
+
+    @media (width >= 48rem) {
+      padding-block-start: 0.5rem;
+    }
+  }
+
+  .feature {
+    display: grid;
+    overflow: hidden;
+    margin-block-end: var(--space-6);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-xl);
+
+    @media (width >= 60rem) {
+      grid-template-columns: minmax(0, 26.25rem) minmax(0, 1fr);
+    }
+  }
+
+  .art {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    background: var(--surface);
+    border-block-end: 1px solid var(--line);
+
+    @media (width >= 60rem) {
+      border-block-end: 0;
+      border-inline-end: 1px solid var(--line);
+    }
+  }
+
+  .copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: clamp(1.5rem, 3.889vw, 3.5rem);
+
+    & p,
+    & h2 {
+      margin: 0;
+    }
+  }
+
+  .kind {
+    color: var(--warm);
+    font-family: var(--font-code);
+    font-size: 0.8125rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    color: var(--ink);
+    font-size: clamp(2.25rem, 1.833rem + 1.852vw, 3.5rem);
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.04em;
   }
 
   .text {
-    max-inline-size: var(--measure);
-
-    & h2 {
-      margin: 0 0 var(--space-2);
-      font-size: clamp(1.625rem, 1.2rem + 1.6vw, 2.75rem);
-      font-stretch: 118%;
-      font-weight: 750;
-      line-height: 1.05;
-      letter-spacing: -0.02em;
-    }
-
-    & h2 a {
-      text-decoration-thickness: 0.06em;
-      text-underline-offset: 0.12em;
-    }
-
-    & p {
-      margin: 0 0 var(--space-2);
-    }
+    max-inline-size: 35rem;
+    color: var(--soft);
+    font-size: var(--step-1);
+    line-height: 1.6;
   }
 
-  .links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0 var(--space-4);
+  .open {
+    display: inline-flex;
+    align-items: center;
+    min-block-size: 2.75rem;
+    font-family: var(--font-code);
+    font-size: var(--step--1);
+  }
+
+  .more {
+    margin: 0;
+    text-align: end;
 
     & a {
       display: inline-flex;
       align-items: center;
       min-block-size: 2.75rem;
-    }
-  }
+      color: var(--muted);
+      font-family: var(--font-code);
+      font-size: 0.8125rem;
 
-  .shot {
-    inline-size: 100%;
-    block-size: auto;
-    border: 1px solid var(--rule);
-    background: var(--wash);
+      &:hover {
+        color: var(--accent);
+      }
+    }
   }
 </style>
