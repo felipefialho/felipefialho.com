@@ -18,7 +18,9 @@ type Block = Extract<HastNode, { type: 'element' | 'raw' | 'comment' }>;
 
 const tagOf = (block: Block) => (block.type === 'element' ? block.tagName : undefined);
 const isHeading = (block: Block) => HEADINGS.has(tagOf(block) ?? '');
-const isDemo = (block: Block) => block.type === 'raw' || NO_NEIGHBOR.has(tagOf(block) ?? '');
+const isCodeCard = (block: Block) =>
+  block.type === 'element' && block.tagName === 'div' && [block.properties.className].flat().includes('code-card');
+const isDemo = (block: Block) => block.type === 'raw' || NO_NEIGHBOR.has(tagOf(block) ?? '') || isCodeCard(block);
 
 /** An ad fits between two blocks that are not demos, and never right after a heading. */
 const isBoundaryOk = (blocks: Block[], index: number) => {

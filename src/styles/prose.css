@@ -1,46 +1,71 @@
 /* Rendered markdown: 73 posts written between 2013 and 2026 */
 .prose {
-  max-inline-size: var(--measure);
+  /* 28px between blocks at 1440px */
+  --flow: calc(var(--step-1) * 1.4);
+
+  max-inline-size: 45rem;
+  color: var(--text);
+  font-size: var(--step-1);
+  line-height: 1.7;
 
   & > * {
     margin-block: 0;
   }
 
   & > * + * {
-    margin-block-start: 1.25em;
+    margin-block-start: var(--flow);
   }
 
-  /* A heading sits closer to its own text than to the section above */
-  & > :is(h2, h3, h4) + * {
-    margin-block-start: 0.75em;
-  }
-
-  & h2 {
-    margin-block-start: 2.2em;
-    font-size: var(--step-3);
-    font-weight: 750;
+  & :is(h2, h3, h4) {
+    color: var(--ink);
     line-height: 1.15;
-    letter-spacing: -0.015em;
+    scroll-margin-block-start: 7rem;
+  }
+
+  /* Mono "##" prefix, drawn by CSS so it never reaches the text, the TOC or search */
+  & h2 {
+    margin-block-start: calc(var(--flow) + 1.5rem);
+    font-size: var(--step-3);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+
+    &::before {
+      content: '##';
+      margin-inline-end: 0.55rem;
+      color: var(--muted);
+      font-family: var(--font-code);
+      font-size: var(--step-1);
+      font-weight: 400;
+      letter-spacing: 0;
+    }
   }
 
   & h3 {
-    margin-block-start: 1.8em;
-    font-size: var(--step-1);
+    margin-block-start: calc(var(--flow) + 0.75rem);
+    font-size: var(--step-2);
+    font-weight: 600;
+    letter-spacing: -0.025em;
+
+    &::before {
+      content: '###';
+      margin-inline-end: 0.5rem;
+      color: var(--muted);
+      font-family: var(--font-code);
+      font-size: var(--step-0);
+      font-weight: 400;
+      letter-spacing: 0;
+    }
   }
 
   & h4 {
-    margin-block-start: 1.6em;
-    font-size: var(--step-0);
+    margin-block-start: var(--flow);
+    font-size: var(--step-1);
+    font-weight: 600;
   }
 
   & :is(h2, h3) > a {
     color: inherit;
     text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-      text-decoration-color: var(--link);
-    }
   }
 
   & ul,
@@ -53,11 +78,12 @@
   }
 
   & li::marker {
-    color: var(--link);
+    color: var(--accent);
   }
 
   & strong {
-    font-weight: 700;
+    color: var(--ink);
+    font-weight: 600;
   }
 
   & img {
@@ -65,51 +91,134 @@
     margin-inline: auto;
   }
 
+  & hr {
+    border: 0;
+    border-block-start: 1px solid var(--line);
+  }
+
   & blockquote {
     margin-inline: 0;
-    padding-inline-start: var(--space-4);
-    border-inline-start: 4px solid var(--link);
-    font-family: var(--font-ui);
-    font-size: var(--step-1);
-    font-weight: 550;
-    line-height: 1.45;
+    padding: var(--space-2) 0 var(--space-2) var(--space-4);
+    border-inline-start: 3px solid var(--warm);
+    color: var(--ink);
+    font-size: clamp(1.375rem, 1.1rem + 0.861vw, 1.875rem);
+    line-height: 1.3;
+    letter-spacing: -0.02em;
 
     & p {
       margin: 0;
     }
+
+    & p + p {
+      margin-block-start: 0.6em;
+    }
+
+    /* Closing attribution line, marked by the rehype-blockquote-cite plugin */
+    & .cite {
+      margin-block-start: 0.75rem;
+      color: var(--warm);
+      font-family: var(--font-code);
+      font-size: 0.8125rem;
+      letter-spacing: 0;
+      line-height: 1.5;
+
+      & em {
+        font-style: normal;
+      }
+    }
   }
 
   & :not(pre) > code {
-    padding: 0.1em 0.3em;
-    border-radius: 0.25em;
-    background: var(--wash);
+    padding: 0.125rem 0.375rem;
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    background: var(--surface);
+    color: var(--accent);
+    font-family: var(--font-code);
+    font-size: calc(var(--step-1) * 0.85);
     overflow-wrap: anywhere;
   }
 
-  /* Same wash + link rule as every aside block; hangs into the gutter on wide screens */
+  /* Code block: on its own it is a plain card; the rehype-code-blocks plugin adds the header bar */
   & pre {
-    padding: var(--space-3) var(--space-4);
-    border-inline-start: 4px solid var(--link);
-    background: var(--wash);
-    font-size: 0.85em;
-    line-height: 1.6;
+    padding: 1.375rem;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--sunken);
+    color: var(--text);
+    font-family: var(--font-code);
+    font-size: calc(var(--step-1) * 0.75);
+    line-height: 1.75;
     overflow-x: auto;
     tab-size: 2;
 
-    @media (width >= 60rem) {
-      margin-inline-start: calc(-1 * var(--space-4) - 4px);
+    &:focus-visible {
+      outline-offset: -2px;
     }
   }
 
   & pre code {
+    font-family: inherit;
     font-size: inherit;
+  }
+
+  & .code-card {
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--sunken);
+    overflow: hidden;
+
+    & pre {
+      margin: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent !important;
+    }
+  }
+
+  & .code-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    padding: 0.75rem 1.125rem;
+    border-block-end: 1px solid var(--line);
+    color: var(--muted);
+    font-family: var(--font-code);
+    font-size: var(--step--2);
+    line-height: 1.4;
+
+    @media (pointer: coarse) {
+      padding-block: var(--space-2);
+    }
+  }
+
+  & .code-copy {
+    padding: 0.125rem 0.625rem;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    transition:
+      border-color 0.15s var(--ease),
+      color 0.15s var(--ease);
+
+    &:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    @media (pointer: coarse) {
+      min-block-size: 2.75rem;
+      padding-inline: var(--space-3);
+    }
   }
 
   & table {
     inline-size: 100%;
     border-collapse: collapse;
-    font-family: var(--font-ui);
-    font-size: var(--step--1);
+    font-size: var(--step-0);
     display: block;
     overflow-x: auto;
   }
@@ -117,12 +226,17 @@
   & th,
   & td {
     padding: var(--space-2) var(--space-3);
-    border-block-end: 1px solid var(--rule);
+    border-block-end: 1px solid var(--line);
     text-align: start;
   }
 
+  & th {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
   & input[type='checkbox'] {
-    accent-color: var(--link);
+    accent-color: var(--accent);
   }
 }
 
@@ -130,10 +244,6 @@
 .astro-code,
 .astro-code span {
   color: light-dark(var(--shiki-light), var(--shiki-dark));
-}
-
-.astro-code {
-  background: var(--wash) !important;
 }
 
 /* Embeds migrated from build-time oEmbed to static markup */
@@ -144,13 +254,13 @@
     inline-size: 100%;
     border: 0;
     border-radius: var(--radius);
-    background: var(--wash);
+    background: var(--surface);
   }
 
   & figcaption {
     margin-block-start: var(--space-2);
     color: var(--muted);
-    font-family: var(--font-ui);
+    font-family: var(--font-body);
     font-size: var(--step--1);
   }
 }
@@ -166,7 +276,7 @@
 
 .embed-tweet {
   padding: var(--space-4);
-  border: 1px solid var(--rule);
+  border: 1px solid var(--line);
   border-radius: var(--radius);
 
   & blockquote {
@@ -182,6 +292,6 @@
 }
 
 .embed-link {
-  font-family: var(--font-ui);
+  font-family: var(--font-body);
   font-size: var(--step--1);
 }

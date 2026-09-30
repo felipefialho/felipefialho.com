@@ -19,15 +19,18 @@
     gap: var(--space-2);
     margin-block: var(--space-5);
     padding: var(--space-2) var(--space-3) var(--space-3);
-    border-radius: var(--radius);
-    background: var(--wash);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--sunken);
   }
 
   .ad::before {
     /* The aside already carries the aria-label: empty alt text keeps it from being announced twice */
     content: attr(aria-label) / '';
     color: var(--muted);
-    font: var(--step--2) / 1.4 var(--font-ui);
+    font: var(--step--2) / 1.4 var(--font-code);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
 
   /* Google allows hiding unfilled units; "unfill-optimized" ones stay */

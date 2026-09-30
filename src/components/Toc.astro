@@ -5,7 +5,7 @@ import { t, type Lang } from '../lib/i18n';
 interface Props {
   headings: MarkdownHeading[];
   lang: Lang;
-  /** inline: collapsible, below 60rem. sidebar: sticky in the margin column, from 60rem */
+  /** inline: collapsible, below 60rem. sidebar: sticky in the left column, from 60rem */
   variant: 'inline' | 'sidebar';
 }
 
@@ -15,29 +15,22 @@ const label = t(lang).toc;
 
 {
   variant === 'inline' ? (
-    <details class="toc toc-inline" data-pagefind-ignore>
+    <details class="toc-inline" data-pagefind-ignore>
       <summary>{label}</summary>
       <ol>
-        {headings.map(({ slug, text }) => (
-          <li>
+        {headings.map(({ slug, text, depth }) => (
+          <li data-depth={depth}>
             <a href={`#${slug}`}>{text}</a>
           </li>
         ))}
       </ol>
     </details>
   ) : (
-    <nav class="toc toc-sidebar aside" aria-label={label} data-pagefind-ignore>
-      {/* Scroll-spy (Chromium for now). Inline: lightningcss cannot parse :target-current yet */}
-      <style is:inline>
-        .toc-sidebar a:target-current {
-          --toc-current: var(--ink);
-          --toc-mark: underline 0.12em var(--link);
-        }
-      </style>
-      <p>{label}</p>
+    <nav class="toc-sidebar" aria-label={label} data-pagefind-ignore data-toc>
+      <p class="toc-label">{label}</p>
       <ol>
-        {headings.map(({ slug, text }) => (
-          <li>
+        {headings.map(({ slug, text, depth }) => (
+          <li data-depth={depth}>
             <a href={`#${slug}`}>{text}</a>
           </li>
         ))}
@@ -46,47 +39,90 @@ const label = t(lang).toc;
   )
 }
 
+<script>
+  // Section highlight: the current section is the last heading above 40% of the viewport
+  const nav = document.querySelector<HTMLElement>('[data-toc]');
+  const CURRENT = 'location';
+
+  if (nav) {
+    const entries = [...nav.querySelectorAll<HTMLAnchorElement>('a[href^="#"]')].flatMap((link) => {
+      const heading = document.getElementById(decodeURIComponent(link.hash.slice(1)));
+      return heading ? [{ link, heading }] : [];
+    });
+    let active: HTMLAnchorElement | undefined;
+
+    const update = () => {
+      const line = window.innerHeight * 0.4;
+      const next = entries.findLast(({ heading }) => heading.getBoundingClientRect().top <= line)?.link;
+      if (next === active) return;
+      active?.removeAttribute('aria-current');
+      next?.setAttribute('aria-current', CURRENT);
+      active = next;
+    };
+
+    // A jump (anchor, End key) can skip a heading entirely, which an IntersectionObserver never reports
+    let frame = 0;
+    addEventListener(
+      'scroll',
+      () => {
+        cancelAnimationFrame(frame);
+        frame = requestAnimationFrame(update);
+      },
+      { passive: true },
+    );
+    update();
+  }
+</script>
+
 <style>
-  .toc {
-    font-family: var(--font-ui);
-    font-size: var(--step--1);
-    line-height: 1.35;
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
-    & ol {
-      display: grid;
-      margin: var(--space-3) 0 0;
-      padding: 0;
-      list-style: none;
-    }
+  a {
+    display: block;
+    color: var(--muted);
+    text-decoration: none;
 
-    & a {
-      display: block;
-      padding-block: 0.35rem;
+    &:hover {
+      color: var(--ink);
       text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
     }
   }
 
   .toc-inline {
-    margin-block-end: var(--space-5);
-    padding: var(--space-2) var(--space-4) var(--space-3);
-    border-inline-start: 4px solid var(--link);
-    background: var(--wash);
+    padding-inline: var(--space-3);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    font-family: var(--font-code);
+    font-size: var(--step--1);
 
     & summary {
       display: flex;
       align-items: center;
       min-block-size: 2.75rem;
-      font-stretch: 112%;
-      font-weight: 700;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
       cursor: pointer;
     }
 
+    &[open] summary {
+      color: var(--ink);
+    }
+
     & ol {
-      margin-block-start: 0;
+      padding-block-end: var(--space-2);
+    }
+
+    & a {
+      padding-block: 0.6rem;
+    }
+
+    & li[data-depth='3'] a {
+      padding-inline-start: var(--space-3);
     }
 
     @media (width >= 60rem) {
@@ -96,32 +132,45 @@ const label = t(lang).toc;
 
   .toc-sidebar {
     display: none;
-    position: sticky;
-    inset-block-start: var(--space-5);
-    align-self: start;
-    max-block-size: calc(100dvh - 2 * var(--space-5));
-    overflow-y: auto;
+    font-family: var(--font-code);
+    font-size: 0.8125rem;
+    line-height: 1.5;
 
-    & p {
-      margin: 0;
-      color: var(--ink);
-      font-stretch: 112%;
-      font-weight: 700;
+    @media (width >= 60rem) {
+      display: flex;
+      flex-direction: column;
+      gap: 0.875rem;
+      position: sticky;
+      inset-block-start: 7rem;
+      align-self: start;
+      max-block-size: calc(100dvh - 9rem);
+
+      /* Sits beside the lede at the top of the article, then follows the reader */
+      margin-block-start: 21.25rem;
+      overflow-y: auto;
     }
 
     & ol {
-      scroll-target-group: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.875rem;
     }
 
-    /* The current section turns to ink with a marked underline: you are here */
-    & a {
-      color: var(--toc-current, var(--link));
-      text-decoration: var(--toc-mark, none);
-      text-underline-offset: 0.25em;
+    & li[data-depth='3'] a {
+      padding-inline-start: 0.875rem;
     }
 
-    @media (width >= 60rem) {
-      display: block;
+    & a[aria-current] {
+      padding-inline-start: 0.75rem;
+      border-inline-start: 2px solid var(--accent);
+      color: var(--accent);
     }
+  }
+
+  .toc-label {
+    margin: 0;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
 </style>

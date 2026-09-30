@@ -1,0 +1,24 @@
+---
+// Wires every copy button that the rehype-code-blocks plugin puts in a code card
+---
+
+<script>
+  const RESET_MS = 2000;
+
+  document.addEventListener('click', async (event) => {
+    const button = (event.target as Element).closest<HTMLButtonElement>('[data-copy-code]');
+    if (!button) return;
+    const code = button.closest('.code-card')?.querySelector('pre');
+    if (!code) return;
+
+    const { copy: label = '', copied = '', failed = '' } = button.dataset;
+    try {
+      await navigator.clipboard.writeText(code.textContent ?? '');
+      button.textContent = copied;
+    } catch {
+      // Clipboard denied: the code stays selectable
+      button.textContent = failed;
+    }
+    setTimeout(() => (button.textContent = label), RESET_MS);
+  });
+</script>
