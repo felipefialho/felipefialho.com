@@ -4,6 +4,21 @@ date: 2026-09-28 00:00:01
 description: 'Modal, dropdown, tooltip, carousel and much more without a single line of JavaScript, side by side with the 2014 hacks 😁'
 tags: ['css', 'html', 'components', 'front-end', 'performance']
 translationOf: componentes-nativos-em-2026-o-que-o-html-e-o-css-ja-fazem-sozinhos
+teaser:
+  before:
+    label: 2014.html
+    code: |
+      <input type="radio"
+        name="tab" hidden>
+      <label for="t1">
+      .tab:checked ~ .panel
+  after:
+    label: 2026.html
+    code: |
+      <details
+        name="tab">
+      <summary>
+      ::details-content
 ---
 
 In 2014 I wrote a post here on the blog asking whether

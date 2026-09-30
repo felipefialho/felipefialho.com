@@ -4,6 +4,21 @@ date: 2026-09-28 00:00:01
 description: 'Modal, dropdown, tooltip, carrossel e muito mais sem nenhuma linha de JavaScript, lado a lado com as gambiarras de 2014 😁'
 image: /assets/2026-09-28-cover.jpg
 tags: ['css', 'html', 'componentes', 'front-end', 'performance']
+teaser:
+  before:
+    label: 2014.html
+    code: |
+      <input type="radio"
+        name="tab" hidden>
+      <label for="t1">
+      .tab:checked ~ .panel
+  after:
+    label: 2026.html
+    code: |
+      <details
+        name="tab">
+      <summary>
+      ::details-content
 ---
 
 Em 2014 escrevi um post aqui no blog perguntando se

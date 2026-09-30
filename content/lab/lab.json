@@ -4,12 +4,17 @@
     "url": "https://github.com/frontendbr",
     "repo": "https://github.com/frontendbr",
     "year": "2016",
-    "title": "Front-End Brasil",
+    "title": "Front-End BR",
     "description": {
-      "pt": "A organização no GitHub da comunidade de front-end brasileira que ajudei a criar, com vagas e fórum para discutir o mercado e a tecnologia.",
-      "en": "The GitHub organization of the Brazilian front-end community I helped create, with job listings and a forum to talk about the craft and the market."
+      "pt": "Organização no GitHub que virou ponto de encontro do front-end brasileiro: vagas, fórum e gente procurando o primeiro emprego",
+      "en": "The GitHub organization that became the meeting point of Brazilian front-end: jobs, a forum and people looking for their first job"
     },
-    "image": "frontend-br.png"
+    "image": "frontend-br.png",
+    "stars": "+20K",
+    "short": {
+      "pt": "Vagas, fórum e a comunidade do front-end brasileiro",
+      "en": "Jobs, a forum and the Brazilian front-end community"
+    }
   },
   {
     "id": "frontend-challenges",
@@ -18,10 +23,31 @@
     "year": "2017",
     "title": "Front-end Challenges",
     "description": {
-      "pt": "Uma lista aberta com desafios reais de processos seletivos de empresas, pra você treinar e testar seus conhecimentos em front-end.",
-      "en": "An open list of real hiring challenges from companies, so you can practice and test your front-end skills."
+      "pt": "Desafios reais de processos seletivos de empresas do Brasil e de fora, abertos pra quem quer praticar com cenário de verdade",
+      "en": "Real hiring challenges from companies in Brazil and abroad, open to anyone who wants to practice with real scenarios"
     },
-    "image": "frontend-challenges.png"
+    "image": "frontend-challenges.png",
+    "stars": "+15K",
+    "short": {
+      "pt": "Desafios reais de processos seletivos pra praticar",
+      "en": "Real hiring challenges to practice with"
+    }
+  },
+  {
+    "id": "awesome-made-by-brazilians",
+    "url": "https://github.com/felipefialho/awesome-made-by-brazilians",
+    "repo": "https://github.com/felipefialho/awesome-made-by-brazilians",
+    "year": "2020",
+    "title": "Awesome Made by Brazilians",
+    "stars": "+1.9K",
+    "description": {
+      "pt": "Uma coleção de projetos open source incríveis feitos por devs brasileiros, do Dracula Theme ao LangFlow",
+      "en": "A collection of amazing open source projects made by Brazilian developers, from Dracula Theme to LangFlow"
+    },
+    "short": {
+      "pt": "Open source incrível feito por devs brasileiros",
+      "en": "Amazing open source made by Brazilian devs"
+    }
   },
   {
     "id": "css-components",
@@ -30,10 +56,12 @@
     "year": "2014",
     "title": "CSS Components",
     "description": {
-      "pt": "Criei em 2014 uma coleção de componentes feitos só com CSS, usando checkboxes escondidos. Em 2026 refiz tudo mostrando cada gambiarra de 2014 ao lado da versão nativa em HTML/CSS, sem nenhum JavaScript.",
-      "en": "I created this in 2014 as a set of pure CSS components built with hidden checkboxes. In 2026 I rebuilt it to show each 2014 hack side by side with its native HTML/CSS version, with zero JavaScript."
+      "pt": "Componentes de interface sem JavaScript, usados em produção por muita gente. Agora com a versão nativa lado a lado",
+      "en": "Interface components without JavaScript, used in production by a lot of people. Now with the native version side by side"
     },
-    "image": "css-components-social-card.png"
+    "image": "css-components-social-card.png",
+    "stars": "+690",
+    "rebuilt": true
   },
   {
     "id": "piano",
@@ -42,10 +70,12 @@
     "year": "2013",
     "title": "Piano",
     "description": {
-      "pt": "Um teclado de piano que dá pra tocar direto no navegador. Nasceu em 2013 e foi reconstruído em 2026 com Vite e TypeScript.",
-      "en": "A piano keyboard you can play right in the browser. It started in 2013 and I rebuilt it in 2026 with Vite and TypeScript."
+      "pt": "Um piano pra tocar no navegador, com teclas feitas em CSS. Continua no ar em felipefialho.com/piano",
+      "en": "A piano to play in the browser, with keys made in CSS. Still live at felipefialho.com/piano"
     },
-    "image": "piano-keyboard.png"
+    "image": "piano-keyboard.png",
+    "stars": "+340",
+    "rebuilt": true
   },
   {
     "id": "cartman-css",
@@ -54,8 +84,8 @@
     "year": "2012",
     "title": "Cartman CSS",
     "description": {
-      "pt": "O Eric Cartman desenhado só com CSS, em 2012. Foi o experimento em que tudo começou pra mim.",
-      "en": "Eric Cartman drawn with pure CSS back in 2012. This is the experiment where it all started for me."
+      "pt": "O Eric Cartman desenhado só com CSS, em 2012. Foi o experimento em que tudo começou pra mim",
+      "en": "Eric Cartman drawn with pure CSS back in 2012. This is the experiment where it all started for me"
     },
     "image": "cartman-css.jpg"
   }

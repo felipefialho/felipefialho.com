@@ -39,6 +39,13 @@ const postSchema = z.object({
       return normalized;
     }),
   draft: z.boolean().default(false),
+  /** Before/after code shown on the home's featured card */
+  teaser: z
+    .object({
+      before: z.object({ label: z.string(), code: z.string() }),
+      after: z.object({ label: z.string(), code: z.string() }),
+    })
+    .optional(),
 });
 
 const posts = defineCollection({
@@ -69,7 +76,12 @@ const lab = defineCollection({
       year: z.string(),
       title: z.string(),
       description: z.object({ pt: z.string(), en: z.string() }),
-      image: image(),
+      /** Short line for the home cards; falls back to description */
+      short: z.object({ pt: z.string(), en: z.string() }).optional(),
+      /** Display string, e.g. "+20K" */
+      stars: z.string().optional(),
+      rebuilt: z.boolean().default(false),
+      image: image().optional(),
     }),
 });
 
