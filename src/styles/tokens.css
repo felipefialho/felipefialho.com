@@ -1,36 +1,38 @@
-/* Design tokens: the browser's default stylesheet, refined */
+/* Design tokens: a terminal-flavoured palette, dark by default */
 :root {
-  color-scheme: light dark;
+  color-scheme: dark;
 
-  --paper: light-dark(#fdfdfc, #0f0f1a);
-  --ink: light-dark(#1a1a2e, #e6e6f0);
-  --muted: light-dark(#5b5b6b, #9a9aae);
-  --link: light-dark(#00e, #a3a8ff);
-  --visited: light-dark(#551a8b, #c9a2ff);
-  --wash: light-dark(#eeeef8, #1b1b2c);
-  --rule: light-dark(#d9d9e6, #2a2a40);
+  --bg: light-dark(#fafafa, #0f0f0f);
+  --surface: light-dark(#efefef, #1d1d1d);
+  --sunken: light-dark(#f4f4f4, #151515);
+  --line: light-dark(#dcdcdc, #2d2d2d);
+  --ink: light-dark(#0f0f0f, #f1f1f1);
+  --text: light-dark(#2b2b2b, #d5d5d5);
+  --soft: light-dark(#454545, #b5b5b5);
+  --muted: light-dark(#5e5e5e, #9a9a9a);
+  --faint: light-dark(#767676, #757575);
+  --accent: light-dark(#0b6877, #a1ecf7);
+  --accent-deep: light-dark(#0b6877, #187888);
+  --on-accent: light-dark(#fff, #0f0f0f);
+  --warm: light-dark(#8a5d00, #e6af05);
 
-  /* Text set on a link-blue field */
-  --on-link: light-dark(#fdfdfc, #0f0f1a);
+  /* Photo multiply tint: the same cyan in both themes */
+  --tint: #a1ecf7;
 
-  /* The band: link blue in light; in dark a lavender field would glare, so it recedes to wash */
-  --band: light-dark(#00e, #1b1b2c);
-  --band-ink: light-dark(#fdfdfc, #e6e6f0);
-  --band-link: light-dark(#fdfdfc, #a3a8ff);
+  --font-body: var(--font-sans), system-ui, sans-serif;
+  --font-code: var(--font-mono), ui-monospace, 'SF Mono', menlo, consolas, monospace;
 
-  --font-text: var(--font-mona-sans), system-ui, sans-serif;
-  --font-ui: var(--font-mona-sans), system-ui, sans-serif;
-  --font-code: ui-monospace, 'SF Mono', 'Cascadia Code', menlo, consolas, monospace;
-
-  /* Fluid between 360px and 1280px: body 17px to 18px */
-  --step--2: 0.8125rem;
-  --step--1: clamp(0.906rem, 0.894rem + 0.054vw, 0.938rem);
-  --step-0: clamp(1.063rem, 1.038rem + 0.109vw, 1.125rem);
-  --step-1: clamp(1.188rem, 1.139rem + 0.217vw, 1.313rem);
-  --step-2: clamp(1.344rem, 1.258rem + 0.38vw, 1.563rem);
-  --step-3: clamp(1.563rem, 1.416rem + 0.652vw, 1.938rem);
-  --step-4: clamp(1.813rem, 1.543rem + 1.196vw, 2.5rem);
-  --step-5: clamp(2.25rem, 1.663rem + 2.609vw, 3.75rem);
+  /* Fluid between 360px and 1440px: each step lands on its board size at 1440px */
+  --step--2: 0.75rem;
+  --step--1: 0.875rem;
+  --step-0: clamp(1rem, 0.958rem + 0.185vw, 1.125rem);
+  --step-1: clamp(1.125rem, 1.083rem + 0.185vw, 1.25rem);
+  --step-2: clamp(1.375rem, 1.25rem + 0.556vw, 1.75rem);
+  --step-3: clamp(1.625rem, 1.417rem + 0.926vw, 2.25rem);
+  --step-4: clamp(2rem, 1.667rem + 1.481vw, 3rem);
+  --step-5: clamp(2.5rem, 2rem + 2.222vw, 4rem);
+  --step-6: clamp(3rem, 2.167rem + 3.704vw, 5.5rem);
+  --step-7: clamp(3.5rem, 2.667rem + 3.704vw, 6rem);
 
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -40,24 +42,24 @@
   --space-6: 4rem;
   --space-7: 6rem;
 
-  /* Reading column: about 72 characters of Mona Sans at 18px */
-  --measure: 40rem;
+  /* Reading column of the post and the long pages */
+  --measure: 45rem;
 
-  /* Margin column (labels, years, meta, ToC) beside the content column */
+  /* Margin column (labels, years, meta) beside the content column */
   --aside: clamp(11rem, 16vw, 15rem);
   --aside-gap: clamp(1.5rem, 4vw, 4rem);
 
-  --page: 88rem;
-  --gutter: clamp(1rem, 4vw, 3rem);
-  --radius: 0.25rem;
+  /* Container: 1200px, with a gutter that grows from 20px at 360px to 120px at 1440px */
+  --page: 75rem;
+  --gutter: clamp(1.25rem, 9.259vw - 0.833rem, 7.5rem);
+
+  --radius-sm: 0.25rem;
+  --radius: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
-/* An explicit choice from the theme toggle wins over the OS preference */
 :root[data-theme='light'] {
   color-scheme: light;
-}
-
-:root[data-theme='dark'] {
-  color-scheme: dark;
 }
