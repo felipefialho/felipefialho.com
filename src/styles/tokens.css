@@ -10,6 +10,14 @@
   --wash: light-dark(#eeeef8, #1b1b2c);
   --rule: light-dark(#d9d9e6, #2a2a40);
 
+  /* Text set on a link-blue field */
+  --on-link: light-dark(#fdfdfc, #0f0f1a);
+
+  /* The band: link blue in light; in dark a lavender field would glare, so it recedes to wash */
+  --band: light-dark(#00e, #1b1b2c);
+  --band-ink: light-dark(#fdfdfc, #e6e6f0);
+  --band-link: light-dark(#fdfdfc, #a3a8ff);
+
   --font-text: var(--font-mona-sans), system-ui, sans-serif;
   --font-ui: var(--font-mona-sans), system-ui, sans-serif;
   --font-code: ui-monospace, 'SF Mono', 'Cascadia Code', menlo, consolas, monospace;
@@ -35,13 +43,13 @@
   /* Reading column: about 72 characters of Mona Sans at 18px */
   --measure: 40rem;
 
-  /* Sticky ToC column; the post footer aligns to it */
-  --toc-width: 14rem;
-  --toc-gap: var(--space-6);
+  /* Margin column (labels, years, meta, ToC) beside the content column */
+  --aside: clamp(11rem, 16vw, 15rem);
+  --aside-gap: clamp(1.5rem, 4vw, 4rem);
 
-  --page: 72rem;
-  --gutter: clamp(1rem, 4vw, 2.5rem);
-  --radius: 0.375rem;
+  --page: 88rem;
+  --gutter: clamp(1rem, 4vw, 3rem);
+  --radius: 0.25rem;
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 

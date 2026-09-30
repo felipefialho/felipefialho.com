@@ -1,5 +1,6 @@
 ---
 import { localePath, t, type Lang } from '../lib/i18n';
+import { CONTACT_EMAIL } from '../lib/social';
 import SocialLinks from './SocialLinks.astro';
 
 interface Props {
@@ -8,62 +9,108 @@ interface Props {
 
 const { lang } = Astro.props;
 const ui = t(lang);
-
 ---
 
-<footer class="site-footer page">
-  <SocialLinks lang={lang} variant="compact" />
-  <p class="copy">© 2013–{new Date().getFullYear()} Felipe Fialho</p>
-  <ul class="links">
-    <li><a href={localePath(lang, '/policies/')}>{ui.privacy}</a></li>
-    <li><button type="button" popovertarget="consent">{ui.cookies}</button></li>
-  </ul>
+<footer class="site-footer">
+  <div class="page">
+    <p class="invite">{ui.footerInvite}</p>
+    <!-- The closing statement echoes the name in the band -->
+    <a class="mail" href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+    <div class="foot">
+      <SocialLinks lang={lang} variant="compact" />
+      <ul class="links">
+        <li><a href={localePath(lang, '/policies/')}>{ui.privacy}</a></li>
+        <li><button type="button" popovertarget="consent">{ui.cookies}</button></li>
+      </ul>
+      <p class="copy">© 2013–{new Date().getFullYear()} Felipe Fialho</p>
+    </div>
+  </div>
 </footer>
 
 <style>
   .site-footer {
+    padding-block: clamp(2.5rem, 5vw, 4rem) var(--space-4);
+    border-block-start: 1px solid var(--rule);
+    font-family: var(--font-ui);
+
+    & .page {
+      container-type: inline-size;
+    }
+  }
+
+  .invite {
+    margin: 0;
+    color: var(--muted);
+    font-size: var(--step-0);
+  }
+
+  /* Fills the column on a phone, settles at about three quarters of it on a wide screen */
+  .mail {
+    display: inline-block;
+    margin-block: var(--space-2) clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(1.5rem, 9.4cqi, 6rem);
+    font-stretch: 125%;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+    text-decoration-thickness: 0.06em;
+    text-underline-offset: 0.14em;
+
+    &:visited {
+      color: var(--link);
+    }
+
+    &:hover {
+      text-decoration-thickness: 0.1em;
+    }
+  }
+
+  .foot {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
-    gap: var(--space-3) var(--space-5);
-    padding-block: var(--space-5) var(--space-6);
-    border-block-start: 1px solid var(--rule);
+    gap: var(--space-2) var(--space-5);
     color: var(--muted);
-    font-family: var(--font-ui);
     font-size: var(--step--1);
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 var(--space-4);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media (width >= 48rem) {
+      margin-inline-start: auto;
+    }
   }
 
   .copy {
     margin: 0;
   }
 
-  .links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-2) var(--space-4);
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  a,
-  button {
-    color: var(--muted);
-    text-decoration: underline;
-    text-decoration-color: var(--rule);
-    text-underline-offset: 0.2em;
-
-    &:hover {
-      color: var(--ink);
-      text-decoration-color: var(--link);
-    }
-  }
-
-  button {
+  .links a,
+  .links button {
+    display: inline-flex;
+    align-items: center;
+    min-block-size: 2.75rem;
     padding: 0;
     border: 0;
     background: none;
+    color: var(--muted);
+    font: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--rule);
+    text-decoration-thickness: 0.07em;
+    text-underline-offset: 0.2em;
     cursor: pointer;
-    font-size: inherit;
+
+    &:hover {
+      color: var(--ink);
+      text-decoration-color: currentcolor;
+    }
   }
 </style>

@@ -30,30 +30,34 @@ const showOtherLang = lang === 'en' && !tag;
 ---
 
 <Base lang={lang} title={title} description={description} alternate={alternate} jsonLd={jsonLd}>
-  <h1 class="page-title">{title}</h1>
-  <p class="lede reading">{lede}</p>
-  {
-    showOtherLang && (
-      <p>
-        <a class="text-link" href="/blog/" hreflang="pt-BR" lang="pt-BR">
-          {ui.morePostsOtherLang}
-        </a>
-      </p>
-    )
-  }
+  <header class="page-head split">
+    <div>
+      <h1 class="page-title">{title}</h1>
+      <p class="lede">{lede}</p>
+      {
+        showOtherLang && (
+          <p class="more">
+            <a class="text-link" href="/blog/" hreflang="pt-BR" lang="pt-BR">
+              {ui.morePostsOtherLang}
+            </a>
+          </p>
+        )
+      }
+    </div>
+  </header>
   {
     groupByYear(posts).map(([year, items]) => (
-      <section class="year" aria-labelledby={`year-${year}`}>
-        <h2 id={`year-${year}`} class="year-title">
+      <section class="year split" aria-labelledby={`year-${year}`}>
+        <h2 id={`year-${year}`} class="year-title aside">
           {year}
         </h2>
-        <ol class="rows">
+        <ol class="rows rows-tight">
           {items.map((post) => (
-            <li class="row">
-              <time datetime={isoDate(post.data.date)}>{formatMonth(post.data.date, lang)}</time>
+            <li>
               <a class="title-link" href={postPath(lang, post.id)} style={`view-transition-name: post-${post.id}`}>
                 {post.data.title}
               </a>
+              <time datetime={isoDate(post.data.date)}>{formatMonth(post.data.date, lang)}</time>
             </li>
           ))}
         </ol>
@@ -63,61 +67,38 @@ const showOtherLang = lang === 'en' && !tag;
 </Base>
 
 <style>
-  .year {
-    display: grid;
-    gap: var(--space-3);
-    margin-block-start: var(--space-5);
-
-    @media (width >= 64rem) {
-      grid-template-columns: minmax(12rem, 1fr) 3fr;
-      align-items: start;
-    }
+  .year + .year {
+    margin-block-start: clamp(2.5rem, 5vw, 4rem);
   }
 
-  /* The one bold moment: 13 years, set wide */
+  /* Thirteen years, set wide: the year stays pinned while its posts scroll by */
   .year-title {
     position: sticky;
     inset-block-start: 0;
     z-index: 1;
+    align-self: start;
     margin: 0;
     padding-block: var(--space-2);
     background: var(--paper);
-    color: var(--ink);
-    font-size: var(--step-5);
+    font-size: clamp(2.5rem, 1.8rem + 3vw, 4.5rem);
     font-stretch: 125%;
     font-weight: 800;
     line-height: 0.9;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.035em;
+    font-variant-numeric: tabular-nums;
 
-    @media (width >= 64rem) {
+    @media (width >= 60rem) {
       inset-block-start: var(--space-4);
+      padding-block: 0;
       background: none;
     }
   }
 
   .rows {
-    display: grid;
-    gap: var(--space-3);
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    max-inline-size: var(--measure);
+    max-inline-size: 52rem;
 
-    @media (width >= 64rem) {
-      padding-block-start: var(--space-3);
-    }
-  }
-
-  .row {
-    display: grid;
-    grid-template-columns: 4.5rem 1fr;
-    gap: var(--space-3);
-    align-items: baseline;
-
-    & time {
-      color: var(--muted);
-      font-family: var(--font-ui);
-      font-size: var(--step--1);
+    @media (width >= 60rem) {
+      padding-block-start: 0.35rem;
     }
   }
 </style>

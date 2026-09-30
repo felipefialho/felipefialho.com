@@ -22,13 +22,15 @@ const UI = {
     previous: 'Anterior',
     next: 'Próximo',
     related: 'Leia também',
-    allPosts: 'Todos os posts',
+    allPosts: (count: number) => `Todos os ${count} posts`,
     latest: 'Posts recentes',
+    openSource: 'Open source',
+    footerInvite: 'Pra conversar sobre front-end, AI, carreira ou chamar pra uma palestra:',
     ad: 'Publicidade',
     cookies: 'Preferências de cookies',
     privacy: 'Política de privacidade',
     otherLang: 'Read in English',
-    switchLang: 'English version',
+    switchLang: 'English',
     close: 'Fechar',
     mainNav: 'Principal',
     adjacentPosts: 'Posts vizinhos',
@@ -82,13 +84,15 @@ const UI = {
     previous: 'Previous',
     next: 'Next',
     related: 'Read next',
-    allPosts: 'All posts',
+    allPosts: (count: number) => `All ${count} posts in English`,
     latest: 'Latest posts',
+    openSource: 'Open source',
+    footerInvite: 'To talk front-end, AI and career, or to invite me to speak:',
     ad: 'Advertisement',
     cookies: 'Cookie preferences',
     privacy: 'Privacy policy',
     otherLang: 'Ler em português',
-    switchLang: 'Versão em português',
+    switchLang: 'Português',
     close: 'Close',
     mainNav: 'Main',
     adjacentPosts: 'Adjacent posts',
@@ -141,5 +145,8 @@ export const formatDate = (date: Date, lang: Lang) =>
 /** Abbreviated month for archive rows (the year is the section heading): "set" or "Sep". */
 export const formatMonth = (date: Date, lang: Lang) =>
   new Intl.DateTimeFormat(HTML_LANG[lang], { month: 'short', timeZone: 'UTC' }).format(date).replace('.', '');
+
+/** Short month and year for post lists: "set 2026" or "Sep 2026". */
+export const formatShortDate = (date: Date, lang: Lang) => `${formatMonth(date, lang)} ${date.getUTCFullYear()}`;
 
 export const isoDate = (date: Date) => date.toISOString().slice(0, 10);

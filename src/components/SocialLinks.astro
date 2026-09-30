@@ -1,36 +1,39 @@
 ---
 import { localePath, t, type Lang } from '../lib/i18n';
-import { CONTACT_EMAIL, SOCIAL_PROFILES } from '../lib/social';
+import { SOCIAL_PROFILES } from '../lib/social';
 import SocialIcon from './SocialIcon.astro';
 
 interface Props {
   lang: Lang;
-  /** prominent: icon + label, X highlighted (home). compact: icon only (footer) */
-  variant: 'prominent' | 'compact';
+  /** labelled: icon + text at text size, X leads with its handle. compact: icons only (footer) */
+  variant: 'labelled' | 'compact';
 }
 
 const { lang, variant } = Astro.props;
 const ui = t(lang);
+const labelled = variant === 'labelled';
 
 const links = [
-  ...SOCIAL_PROFILES.map(({ id, label, handle, href }) => ({ id, label, handle, href })),
-  { id: 'email' as const, label: ui.email, handle: CONTACT_EMAIL, href: `mailto:${CONTACT_EMAIL}` },
-  ...(variant === 'compact' ? [{ id: 'rss' as const, label: 'RSS', handle: '', href: localePath(lang, '/feed.xml') }] : []),
+  ...SOCIAL_PROFILES.map(({ id, label, handle, href }) => ({ id, label, handle, href, me: true })),
+  ...(labelled ? [] : [{ id: 'rss' as const, label: 'RSS', handle: '', href: localePath(lang, '/feed.xml'), me: false }]),
 ];
 ---
 
 <ul class:list={['social', `social-${variant}`]} aria-label={ui.contact}>
   {
-    links.map(({ id, label, handle, href }) => (
-      <li class:list={[{ featured: id === 'x' && variant === 'prominent' }]}>
-        <a href={href} aria-label={variant === 'compact' ? label : undefined} rel={id === 'email' || id === 'rss' ? undefined : 'me'}>
-          <SocialIcon name={id} size={variant === 'compact' ? 20 : 22} />
-          {variant === 'prominent' && (
-            <span class="text">
+    links.map(({ id, label, handle, href, me }) => (
+      <li>
+        <a href={href} aria-label={labelled ? undefined : label} rel={me ? 'me' : undefined}>
+          <SocialIcon name={id} size={20} />
+          {labelled &&
+            (id === 'x' ? (
+              <span class="label">
+                <span class="visually-hidden">{label} </span>
+                {handle}
+              </span>
+            ) : (
               <span class="label">{label}</span>
-              {id === 'x' && <span class="handle">{handle}</span>}
-            </span>
-          )}
+            ))}
         </a>
       </li>
     ))
@@ -44,73 +47,59 @@ const links = [
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family: var(--font-ui);
   }
 
   a {
     display: inline-flex;
     align-items: center;
-    gap: var(--space-2);
     min-block-size: 2.75rem;
-    color: var(--ink);
     text-decoration: none;
-
-    &:hover .label {
-      text-decoration: underline;
-      text-decoration-color: var(--link);
-    }
   }
 
-  .social-prominent {
-    gap: var(--space-2) var(--space-4);
-    font-family: var(--font-ui);
-    font-weight: 600;
+  /* Icons sit at text size: the tap target comes from the padding, not from visual bulk */
+  .social-labelled {
+    gap: 0 var(--space-4);
+    font-size: var(--step-0);
+    font-stretch: 110%;
+    font-weight: 650;
 
     & a {
-      padding-inline: var(--space-3);
-      border: 1px solid var(--rule);
-      border-radius: 999px;
-
-      &:hover {
-        border-color: var(--ink);
-      }
+      gap: 0.4em;
     }
-  }
 
-  /* X is where the conversation happens, so it leads with its handle */
-  .featured a {
-    border-color: var(--ink);
-    background: var(--ink);
-    color: var(--paper);
-
-    &:hover {
-      background: var(--link);
-      border-color: var(--link);
+    & a :global(svg) {
+      flex: none;
+      inline-size: 1.1em;
+      block-size: 1.1em;
     }
-  }
 
-  .text {
-    display: inline-flex;
-    align-items: baseline;
-    gap: var(--space-2);
-  }
+    & .label {
+      text-decoration: underline;
+      text-decoration-thickness: 0.07em;
+      text-underline-offset: 0.2em;
+    }
 
-  .handle {
-    font-weight: 400;
-    opacity: 0.8;
+    & a:hover .label {
+      text-decoration-thickness: 0.14em;
+    }
   }
 
   .social-compact {
     gap: var(--space-1);
 
+    /* Optical alignment: the first glyph, not its tap target, lines up with the text above */
+    margin-inline-start: -0.75rem;
+
     & a {
       justify-content: center;
       min-inline-size: 2.75rem;
-      color: var(--muted);
       border-radius: var(--radius);
+      color: var(--muted);
 
       &:hover {
-        color: var(--ink);
         background: var(--wash);
+        color: var(--ink);
       }
     }
   }

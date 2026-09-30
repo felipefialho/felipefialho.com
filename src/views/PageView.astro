@@ -33,41 +33,61 @@ const jsonLd =
   alternate={localePath(otherLang, `/${page}/`)}
   jsonLd={jsonLd}
 >
-  <h1 class="page-title">{entry.data.title}</h1>
-  {
-    page === 'hi' && (
-      <Image
-        src={photo}
-        alt={t(lang).photoAlt}
-        widths={[320, 480, 640, 800]}
-        sizes="(min-width: 48rem) 22rem, 100vw"
-        loading="eager"
-        class="portrait"
-      />
-    )
-  }
-  {
-    updated && (
-      <p class="meta">
-        {t(lang).lastUpdated} {formatDate(updated, lang)}
-      </p>
-    )
-  }
-  <div class="prose">
-    <Content />
+  <header class="page-head split">
+    <div>
+      <h1 class="page-title">{entry.data.title}</h1>
+    </div>
+    {
+      updated && (
+        <p class="meta aside">
+          {t(lang).lastUpdated} {formatDate(updated, lang)}
+        </p>
+      )
+    }
+  </header>
+  <div class="split">
+    <div class="prose">
+      <Content />
+    </div>
+    {
+      page === 'hi' && (
+        <div class="aside">
+          <div class="portrait duotone">
+            <Image
+              src={photo}
+              alt={t(lang).photoAlt}
+              width={240}
+              height={300}
+              fit="cover"
+              densities={[1, 2]}
+              loading="eager"
+            />
+          </div>
+        </div>
+      )
+    }
   </div>
 </Base>
 
 <style>
   .portrait {
-    inline-size: min(100%, 22rem);
-    block-size: auto;
-    margin-block-end: var(--space-5);
-    border-radius: var(--radius);
-    background: var(--wash);
+    inline-size: min(100%, 15rem);
+    aspect-ratio: 4 / 5;
+
+    @media (width >= 60rem) {
+      position: sticky;
+      inset-block-start: var(--space-5);
+    }
   }
 
-  .meta {
-    margin-block: calc(-1 * var(--space-3)) var(--space-5);
+  /* On a phone the portrait comes before the text it illustrates */
+  .aside:has(.portrait) {
+    order: -1;
+  }
+
+  .page-head .meta {
+    @media (width >= 60rem) {
+      padding-block-start: 1rem;
+    }
   }
 </style>

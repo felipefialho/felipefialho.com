@@ -17,7 +17,10 @@
 
   & h2 {
     margin-block-start: 2.2em;
-    font-size: var(--step-2);
+    font-size: var(--step-3);
+    font-weight: 750;
+    line-height: 1.15;
+    letter-spacing: -0.015em;
   }
 
   & h3 {
@@ -50,11 +53,11 @@
   }
 
   & li::marker {
-    color: var(--muted);
+    color: var(--link);
   }
 
   & strong {
-    font-weight: 650;
+    font-weight: 700;
   }
 
   & img {
@@ -65,8 +68,11 @@
   & blockquote {
     margin-inline: 0;
     padding-inline-start: var(--space-4);
-    border-inline-start: 3px solid var(--link);
-    font-style: italic;
+    border-inline-start: 4px solid var(--link);
+    font-family: var(--font-ui);
+    font-size: var(--step-1);
+    font-weight: 550;
+    line-height: 1.45;
 
     & p {
       margin: 0;
@@ -80,13 +86,23 @@
     overflow-wrap: anywhere;
   }
 
+  /* Same wash + link rule as every aside block; hangs into the gutter on wide screens */
   & pre {
     padding: var(--space-3) var(--space-4);
-    border-radius: var(--radius);
+    border-inline-start: 4px solid var(--link);
     background: var(--wash);
-    line-height: 1.55;
+    font-size: 0.85em;
+    line-height: 1.6;
     overflow-x: auto;
     tab-size: 2;
+
+    @media (width >= 60rem) {
+      margin-inline-start: calc(-1 * var(--space-4) - 4px);
+    }
+  }
+
+  & pre code {
+    font-size: inherit;
   }
 
   & table {

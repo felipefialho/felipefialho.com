@@ -1,5 +1,5 @@
 ---
-import { formatDate, isoDate, t, type Lang } from '../lib/i18n';
+import { formatShortDate, isoDate, t, type Lang } from '../lib/i18n';
 import { getAdjacent, getRelated, postPath, type Post } from '../lib/posts';
 
 interface Props {
@@ -41,13 +41,13 @@ const editUrl = post.filePath ? `${repoUrl}/blob/main/${post.filePath}` : `${rep
         {older && (
           <a href={postPath(lang, older.id)} rel="prev">
             <span>{ui.previous}</span>
-            {older.data.title}
+            <strong>{older.data.title}</strong>
           </a>
         )}
         {newer && (
           <a href={postPath(lang, newer.id)} rel="next" class="newer">
             <span>{ui.next}</span>
-            {newer.data.title}
+            <strong>{newer.data.title}</strong>
           </a>
         )}
       </nav>
@@ -56,19 +56,17 @@ const editUrl = post.filePath ? `${repoUrl}/blob/main/${post.filePath}` : `${rep
 
   {
     related.length > 0 && (
-      <section aria-labelledby="related-title">
+      <section class="related" aria-labelledby="related-title">
         <h2 id="related-title" class="section-title">
           {ui.related}
         </h2>
-        <ol class="post-list">
+        <ol class="rows">
           {related.map((item) => (
-            <li class="post-item">
-              <h3>
-                <a href={postPath(lang, item.id)}>{item.data.title}</a>
-              </h3>
-              <p class="meta">
-                <time datetime={isoDate(item.data.date)}>{formatDate(item.data.date, lang)}</time>
-              </p>
+            <li>
+              <a class="title-link" href={postPath(lang, item.id)}>
+                {item.data.title}
+              </a>
+              <time datetime={isoDate(item.data.date)}>{formatShortDate(item.data.date, lang)}</time>
             </li>
           ))}
         </ol>
@@ -111,17 +109,19 @@ const editUrl = post.filePath ? `${repoUrl}/blob/main/${post.filePath}` : `${rep
 
 <style>
   .post-footer {
+    display: grid;
+    gap: clamp(2.5rem, 5vw, 4rem);
     max-inline-size: var(--measure);
     margin-block-start: var(--space-6);
 
-    @media (width >= 80rem) {
-      margin-inline-start: calc(var(--toc-width) + var(--toc-gap));
+    @media (width >= 60rem) {
+      margin-inline-start: calc(var(--aside) + var(--aside-gap));
     }
   }
 
   .support {
     padding: var(--space-4);
-    border-radius: var(--radius);
+    border-inline-start: 4px solid var(--link);
     background: var(--wash);
 
     & h2 {
@@ -148,25 +148,29 @@ const editUrl = post.filePath ? `${repoUrl}/blob/main/${post.filePath}` : `${rep
 
     & code {
       padding: 0.2em 0.4em;
-      border-radius: 0.25em;
+      border-radius: var(--radius);
       background: var(--paper);
     }
 
     & button {
-      padding: 0.35em 0.8em;
-      border: 1px solid var(--rule);
+      min-block-size: 2.75rem;
+      padding: 0 var(--space-3);
+      border: 1px solid var(--link);
       border-radius: var(--radius);
       background: var(--paper);
+      color: var(--link);
+      font-weight: 650;
       cursor: pointer;
 
       &:hover {
-        border-color: var(--link);
+        background: var(--link);
+        color: var(--on-link);
       }
     }
   }
 
   .sponsor {
-    font-weight: 600;
+    font-weight: 650;
   }
 
   .fix {
@@ -177,8 +181,7 @@ const editUrl = post.filePath ? `${repoUrl}/blob/main/${post.filePath}` : `${rep
 
   .adjacent {
     display: grid;
-    gap: var(--space-4);
-    margin-block-start: var(--space-5);
+    gap: var(--space-4) var(--space-5);
     font-family: var(--font-ui);
 
     @media (width >= 40rem) {
@@ -188,19 +191,34 @@ const editUrl = post.filePath ? `${repoUrl}/blob/main/${post.filePath}` : `${rep
     & a {
       display: grid;
       gap: var(--space-1);
-      font-weight: 600;
-      line-height: 1.35;
+      text-decoration: none;
+
+      &:hover strong {
+        text-decoration-thickness: 0.12em;
+      }
+    }
+
+    & strong {
+      font-stretch: 106%;
+      font-weight: 650;
+      line-height: 1.3;
+      text-decoration: underline;
+      text-decoration-thickness: 0.05em;
+      text-underline-offset: 0.18em;
     }
 
     & span {
       color: var(--muted);
       font-size: var(--step--1);
-      font-weight: 400;
     }
 
     & .newer {
-      text-align: end;
       grid-column: -2;
+      text-align: end;
     }
+  }
+
+  .related .section-title {
+    margin-block-end: var(--space-3);
   }
 </style>

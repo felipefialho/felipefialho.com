@@ -4,7 +4,8 @@ import { getEntry, render } from 'astro:content';
 import photo from '../assets/images/felipe-fialho.jpg';
 import SocialLinks from '../components/SocialLinks.astro';
 import Base from '../layouts/Base.astro';
-import { SITE_NAME, formatDate, isoDate, localePath, t, type Lang } from '../lib/i18n';
+import { SITE_NAME, formatShortDate, isoDate, localePath, t, type Lang } from '../lib/i18n';
+import { getFeaturedProjects } from '../lib/lab';
 import { getPosts, postPath } from '../lib/posts';
 import { homeJsonLd } from '../lib/seo';
 
@@ -14,9 +15,12 @@ interface Props {
 
 const { lang } = Astro.props;
 const ui = t(lang);
-const posts = (await getPosts(lang)).slice(0, 6);
+const allPosts = await getPosts(lang);
+const posts = allPosts.slice(0, 6);
+const projects = await getFeaturedProjects();
 const home = await getEntry('pages', `${lang}/home`);
 const { Content } = home ? await render(home) : { Content: null };
+const aboutPath = localePath(lang, '/hi/');
 const jsonLd = homeJsonLd({ lang, path: localePath(lang, '/'), title: SITE_NAME, description: ui.homeDescription });
 ---
 
@@ -27,90 +31,215 @@ const jsonLd = homeJsonLd({ lang, path: localePath(lang, '/'), title: SITE_NAME,
   alternate={localePath(lang === 'pt' ? 'en' : 'pt', '/')}
   jsonLd={jsonLd}
 >
-  <section class="hero">
-    <div class="identity">
-      <Image src={photo} alt={ui.photoAlt} width={112} height={112} densities={[1, 2, 3]} loading="eager" class="avatar" />
-      <div>
-        <h1>{SITE_NAME}</h1>
-        <p class="role">
-          <strong>{ui.role}</strong>
-          <span>{ui.roleFocus}</span>
-        </p>
+  <section slot="hero" class="hero band">
+    <div class="page">
+      <!-- The name is the biggest link on the page -->
+      <h1 class="name">
+        <a href={aboutPath}><span>Felipe</span> <span>Fialho</span></a>
+      </h1>
+      <div class="intro">
+        <div class="portrait duotone">
+          <Image
+            src={photo}
+            alt={ui.photoAlt}
+            width={240}
+            height={300}
+            fit="cover"
+            densities={[1, 2]}
+            loading="eager"
+          />
+        </div>
+        <div class="bio">
+          {
+            Content && (
+              <div class="bio-text">
+                <Content /> <a href={aboutPath}>{ui.moreAbout}</a>
+              </div>
+            )
+          }
+          <SocialLinks lang={lang} variant="labelled" />
+        </div>
       </div>
     </div>
-    {Content && <div class="intro reading"><Content /></div>}
-    <SocialLinks lang={lang} variant="prominent" />
-    <p><a class="text-link" href={localePath(lang, '/hi/')}>{ui.moreAbout}</a></p>
   </section>
 
-  <section aria-labelledby="latest">
-    <h2 id="latest" class="section-title">{ui.latest}</h2>
-    <ol class="post-list">
+  <section class="section split" aria-labelledby="open-source">
+    <h2 id="open-source" class="section-title aside">{ui.openSource}</h2>
+    <ul class="projects">
       {
-        posts.map((post) => (
-          <li class="post-item">
+        projects.map((project) => (
+          <li>
             <h3>
-              <a href={postPath(lang, post.id)} style={`view-transition-name: post-${post.id}`}>
-                {post.data.title}
-              </a>
+              <a href={project.url}>{project.title}</a>
             </h3>
-            <p class="description">{post.data.description}</p>
-            <p class="meta">
-              <time datetime={isoDate(post.data.date)}>{formatDate(post.data.date, lang)}</time>
-            </p>
+            <p class="proof">{project.proof[lang]}</p>
+            <p class="what">{project.description[lang]}</p>
           </li>
         ))
       }
-    </ol>
-    <p><a class="text-link" href={localePath(lang, '/blog/')}>{ui.allPosts}</a></p>
+    </ul>
+  </section>
+
+  <section class="section split" aria-labelledby="latest">
+    <h2 id="latest" class="section-title aside">{ui.latest}</h2>
+    <div>
+      <ol class="rows">
+        {
+          posts.map((post) => (
+            <li>
+              <a class="title-link" href={postPath(lang, post.id)} style={`view-transition-name: post-${post.id}`}>
+                {post.data.title}
+              </a>
+              <time datetime={isoDate(post.data.date)}>{formatShortDate(post.data.date, lang)}</time>
+            </li>
+          ))
+        }
+      </ol>
+      <p class="more"><a class="text-link" href={localePath(lang, '/blog/')}>{ui.allPosts(allPosts.length)}</a></p>
+    </div>
   </section>
 </Base>
 
 <style>
-  .hero {
-    padding-block: var(--space-4) var(--space-3);
+  .hero .page {
+    container-type: inline-size;
+    padding-block: clamp(1.5rem, 5vw, 4rem) clamp(2.5rem, 5vw, 4rem);
+  }
 
-    & h1 {
-      margin: 0 0 var(--space-2);
-      font-size: var(--step-4);
-      font-stretch: 118%;
-      font-weight: 800;
-      line-height: 1;
-      letter-spacing: -0.03em;
+  /* Sized to the column: one line on a wide screen, two stacked words on a phone */
+  .name {
+    margin: 0;
+    font-size: 31.5cqi;
+    font-stretch: 125%;
+    font-weight: 800;
+    line-height: 0.92;
+    letter-spacing: -0.035em;
+
+    & a {
+      text-decoration-thickness: 0.055em;
+      text-underline-offset: 0.12em;
+    }
+
+    & span {
+      display: block;
+    }
+
+    @media (width >= 48rem) {
+      font-size: 15.3cqi;
+
+      & span {
+        display: inline;
+      }
     }
   }
 
-  .identity {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: var(--space-3) var(--space-4);
-    margin-block-end: var(--space-4);
-  }
-
-  .avatar {
-    inline-size: 7rem;
-    block-size: 7rem;
-    border-radius: 50%;
-    object-fit: cover;
-    background: var(--wash);
-  }
-
-  .role {
+  .intro {
     display: grid;
-    gap: var(--space-1);
+    gap: var(--space-4) var(--aside-gap);
+    align-items: start;
+    margin-block-start: clamp(2rem, 5vw, 4rem);
+
+    @media (width >= 48rem) {
+      grid-template-columns: var(--aside) minmax(0, 1fr);
+    }
+  }
+
+  .portrait {
+    inline-size: min(100%, 11rem);
+    aspect-ratio: 4 / 5;
+
+    @media (width >= 48rem) {
+      inline-size: 100%;
+    }
+  }
+
+  .bio {
+    max-inline-size: 46rem;
+  }
+
+  .bio-text {
+    margin-block-end: var(--space-3);
+    font-size: var(--step-1);
+    line-height: 1.5;
+
+    & :global(p) {
+      margin: 0 0 var(--space-3);
+    }
+
+    /* The opening paragraph reads as the lede */
+    & :global(p:first-child) {
+      font-size: clamp(1.25rem, 1rem + 0.9vw, 1.625rem);
+      font-stretch: 104%;
+      font-weight: 500;
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+    }
+
+    /* "More about me" closes the last paragraph instead of floating on its own */
+    & :global(p:last-of-type) {
+      display: inline;
+    }
+
+    & > a {
+      font-weight: 650;
+    }
+  }
+
+  /* Each project is one big link sentence with its proof */
+  .projects {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-block-start: 1px solid var(--rule);
+
+    & li {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: var(--space-1) var(--space-5);
+      align-items: baseline;
+      padding-block: var(--space-3) var(--space-4);
+      border-block-end: 1px solid var(--rule);
+
+      @media (width >= 40rem) {
+        grid-template-columns: minmax(0, 1fr) auto;
+      }
+    }
+
+    & h3 {
+      margin: 0;
+      font-size: clamp(1.625rem, 1.2rem + 1.6vw, 2.75rem);
+      font-stretch: 118%;
+      font-weight: 750;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+    }
+
+    & h3 a {
+      text-decoration-thickness: 0.06em;
+      text-underline-offset: 0.12em;
+    }
+  }
+
+  .proof {
     margin: 0;
     font-family: var(--font-ui);
     font-size: var(--step-1);
+    font-stretch: 110%;
+    font-weight: 650;
+    font-variant-numeric: tabular-nums;
 
-    & span {
-      color: var(--muted);
-      font-size: var(--step-0);
+    @media (width >= 40rem) {
+      text-align: end;
+      white-space: nowrap;
     }
   }
 
-  .intro :global(p) {
-    margin-block: 0 var(--space-3);
+  .what {
+    grid-column: 1 / -1;
+    max-inline-size: 44rem;
+    margin: var(--space-1) 0 0;
+    color: var(--muted);
+    font-size: var(--step--1);
+    line-height: 1.55;
   }
-
 </style>

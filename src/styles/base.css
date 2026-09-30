@@ -32,10 +32,10 @@ h2,
 h3,
 h4 {
   font-family: var(--font-ui);
-  font-stretch: 110%;
+  font-stretch: 112%;
   font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: -0.005em;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
   text-wrap: balance;
 }
 
@@ -58,10 +58,11 @@ img {
   block-size: auto;
 }
 
+/* The hyperlink is the identity: blue, underlined, purple once visited */
 a {
   color: var(--link);
-  text-decoration-thickness: 0.06em;
-  text-underline-offset: 0.22em;
+  text-decoration-thickness: 0.07em;
+  text-underline-offset: 0.18em;
   text-decoration-skip-ink: auto;
 
   &:visited {
@@ -69,12 +70,12 @@ a {
   }
 
   &:hover {
-    text-decoration-thickness: 0.1em;
+    text-decoration-thickness: 0.14em;
   }
 }
 
 :focus-visible {
-  outline: 2px solid var(--link);
+  outline: 3px solid var(--link);
   outline-offset: 3px;
 }
 

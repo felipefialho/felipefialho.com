@@ -4,11 +4,63 @@
 }
 
 .main {
-  padding-block: var(--space-5) var(--space-7);
+  padding-block: clamp(2.5rem, 6vw, 5rem) var(--space-7);
 }
 
 .reading {
   max-inline-size: var(--measure);
+}
+
+/* The link-blue field: the header on every page, the whole hero on the home */
+.band {
+  background: var(--band);
+  color: var(--band-ink);
+
+  & a,
+  & a:visited {
+    color: var(--band-link);
+  }
+
+  & :focus-visible {
+    outline-color: var(--band-link);
+  }
+}
+
+/* Grey photo multiplied over the link colour */
+.duotone {
+  isolation: isolate;
+  background: var(--link);
+
+  & img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    filter: grayscale(1) contrast(0.95) brightness(1.7);
+    mix-blend-mode: multiply;
+  }
+}
+
+/*
+ * Margin column + content column: every page hangs on the same two lines.
+ * The aside may come after the content in the source (reading order) and still sit on the left.
+ */
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-3) var(--aside-gap);
+
+  @media (width >= 60rem) {
+    grid-template-columns: var(--aside) minmax(0, 1fr);
+
+    & > * {
+      grid-column: 2;
+    }
+
+    & > .aside {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
 }
 
 .meta {
@@ -18,74 +70,100 @@
   font-size: var(--step--1);
 }
 
+.page-head {
+  margin-block-end: clamp(2.5rem, 6vw, 4.5rem);
+}
+
 .page-title {
-  margin-block: 0 var(--space-4);
-  font-size: var(--step-4);
-  line-height: 1.15;
-  letter-spacing: -0.01em;
+  margin: 0;
+  max-inline-size: 22ch;
+  font-size: clamp(2.5rem, 1.5rem + 4vw, 5rem);
+  font-stretch: 120%;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.035em;
 }
 
 .lede {
-  margin-block: 0 var(--space-5);
+  max-inline-size: var(--measure);
+  margin: var(--space-4) 0 0;
   color: var(--muted);
-  font-size: var(--step-1);
-  line-height: 1.45;
-}
-
-.section-title {
-  margin-block: var(--space-6) var(--space-4);
   font-size: var(--step-2);
+  line-height: 1.4;
 }
 
-/* Plain post list: title, description, meta */
-.post-list {
+/* Section names sit in the margin column */
+.section-title {
+  margin: 0;
+  font-size: var(--step-0);
+  font-stretch: 112%;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.section + .section {
+  margin-block-start: clamp(3.5rem, 7vw, 6rem);
+}
+
+/* Post titles as a list of links with the date at the end; :visited turns it into a reading log */
+.rows {
+  display: grid;
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
-  gap: var(--space-5);
+
+  & > li {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-1) var(--space-5);
+    align-items: baseline;
+    padding-block: var(--space-3);
+    border-block-end: 1px solid var(--rule);
+
+    &:first-child {
+      padding-block-start: 0;
+    }
+
+    @media (width >= 40rem) {
+      grid-template-columns: minmax(0, 1fr) auto;
+    }
+  }
+
+  & time {
+    color: var(--muted);
+    font-family: var(--font-ui);
+    font-size: var(--step--1);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
 }
 
-.post-item {
-  display: grid;
-  gap: var(--space-2);
-  max-inline-size: var(--measure);
-
-  & h3 {
-    margin: 0;
-  }
-
-  & p {
-    margin: 0;
-  }
-
-  & .description {
-    font-size: var(--step-0);
-  }
+/* Short dates ("set") stay beside the title even on a phone */
+.rows-tight > li {
+  grid-template-columns: minmax(0, 1fr) auto;
 }
 
-/* Post titles as links in lists: they often wrap, so they get room between lines */
-.title-link,
-.post-item h3 {
+.title-link {
   font-family: var(--font-ui);
   font-size: var(--step-1);
-  font-stretch: 105%;
-  font-weight: 600;
-  line-height: 1.35;
-  letter-spacing: 0;
-}
-
-.title-link,
-.post-item h3 a {
-  text-decoration-color: color-mix(in srgb, currentcolor 40%, transparent);
+  font-stretch: 106%;
+  font-weight: 650;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  text-decoration-thickness: 0.05em;
 
   &:hover {
-    text-decoration-color: currentcolor;
+    text-decoration-thickness: 0.12em;
   }
 }
 
 .text-link {
   font-family: var(--font-ui);
-  font-size: var(--step--1);
-  font-weight: 600;
+  font-size: var(--step-0);
+  font-stretch: 110%;
+  font-weight: 650;
+}
+
+.more {
+  margin: var(--space-4) 0 0;
 }

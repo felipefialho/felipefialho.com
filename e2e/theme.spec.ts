@@ -7,7 +7,7 @@ test.describe('Theme', () => {
     await page.goto('/');
     const root = page.locator('html');
 
-    await page.getByRole('button', { name: 'Alternar tema' }).click();
+    await page.getByRole('button', { name: 'Ativar modo escuro' }).click();
     await expect(root).toHaveAttribute('data-theme', 'dark');
 
     await page.reload();

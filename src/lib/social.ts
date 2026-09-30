@@ -6,6 +6,6 @@ export const SOCIAL_PROFILES = [
   { id: 'youtube', label: 'YouTube', handle: '@felipefialhodev', href: 'https://www.youtube.com/@felipefialhodev' },
 ] as const;
 
-export type SocialId = (typeof SOCIAL_PROFILES)[number]['id'] | 'email' | 'rss';
+export type SocialId = (typeof SOCIAL_PROFILES)[number]['id'] | 'rss';
 
 export const CONTACT_EMAIL = 'hi@felipefialho.com';

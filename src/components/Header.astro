@@ -26,37 +26,39 @@ const nav = [
 ];
 ---
 
-<header class="site-header page">
-  <a class="wordmark" href={localePath(lang, '/')}>felipe fialho</a>
-  <nav class="site-nav" aria-label={ui.mainNav}>
-    <ul>
-      {
-        nav.map(({ href, label }) => (
-          <li>
-            <a href={href} aria-current={currentState(href)}>
-              {label}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </nav>
-  <div class="tools">
-    <button class="icon-button" type="button" commandfor="search" command="show-modal" aria-label={ui.search}>
-      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-        <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"></circle>
-        <path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
-      </svg>
-    </button>
-    <button class="icon-button" type="button" data-theme-toggle aria-pressed="false" aria-label={ui.theme}>
-      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-        <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"></circle>
-        <path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"></path>
-      </svg>
-    </button>
-    <a class="lang-link" href={langHref} hreflang={HTML_LANG[otherLang]} lang={HTML_LANG[otherLang]} aria-label={ui.switchLang}>
-      {otherLang.toUpperCase()}
-    </a>
+<header class="site-header band">
+  <div class="bar page">
+    <a class="wordmark" href={localePath(lang, '/')}>felipefialho.com</a>
+    <nav class="site-nav" aria-label={ui.mainNav}>
+      <ul>
+        {
+          nav.map(({ href, label }) => (
+            <li>
+              <a href={href} aria-current={currentState(href)}>
+                {label}
+              </a>
+            </li>
+          ))
+        }
+        <li>
+          <a href={langHref} hreflang={HTML_LANG[otherLang]} lang={HTML_LANG[otherLang]}>{ui.switchLang}</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="tools">
+      <button class="icon-button" type="button" commandfor="search" command="show-modal" aria-label={ui.search}>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"></circle>
+          <path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+      </button>
+      <button class="icon-button" type="button" data-theme-toggle aria-pressed="false" aria-label={ui.theme}>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"></circle>
+          <path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"></path>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -80,6 +82,17 @@ const nav = [
     window.track?.('theme_change', { theme: next });
   });
 
+  // A hello for whoever opens DevTools
+  const hello = document.documentElement.lang === 'en'
+    ? 'Hi, dev! Curious about the code? It is open source:'
+    : 'Opa, dev! Curioso com o código? É open source:';
+  const hint = document.documentElement.lang === 'en' ? 'Psst: try ↑↑↓↓←→←→BA on a 404.' : 'Psst: tenta ↑↑↓↓←→←→BA numa página 404.';
+  console.log(
+    `%cfelipefialho.com%c\n${hello} https://github.com/felipefialho/felipefialho.com\n${hint}`,
+    `color:${matchMedia('(prefers-color-scheme: dark)').matches ? '#a3a8ff' : '#00e'};font:800 1.5em system-ui,sans-serif;text-decoration:underline`,
+    'font:1em system-ui,sans-serif',
+  );
+
   // Invoker commands fallback for browsers without `command` support
   if (!('command' in HTMLButtonElement.prototype)) {
     document.querySelectorAll<HTMLButtonElement>('button[commandfor][command]').forEach((button) => {
@@ -95,34 +108,41 @@ const nav = [
 </script>
 
 <style>
-  .site-header {
+  .bar {
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-areas:
       'wordmark tools'
       'nav nav';
     align-items: center;
-    gap: var(--space-2) var(--space-4);
-    padding-block: var(--space-4) var(--space-3);
+    gap: 0 var(--space-4);
+    padding-block: var(--space-2);
     font-family: var(--font-ui);
+    font-size: var(--step--1);
+    font-stretch: 112%;
+    font-weight: 600;
 
     @media (width >= 48rem) {
       grid-template-columns: auto 1fr auto;
       grid-template-areas: 'wordmark nav tools';
+      padding-block: var(--space-3);
     }
   }
 
   .wordmark {
     grid-area: wordmark;
-    color: var(--ink);
-    font-size: var(--step-1);
+    justify-self: start;
+    display: inline-flex;
+    align-items: center;
+    min-block-size: 2.75rem;
+    font-size: var(--step-0);
     font-stretch: 125%;
     font-weight: 800;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
     text-decoration: none;
 
-    &:visited {
-      color: var(--ink);
+    &:hover {
+      text-decoration: underline;
     }
   }
 
@@ -131,7 +151,8 @@ const nav = [
 
     & ul {
       display: flex;
-      gap: var(--space-2) var(--space-4);
+      flex-wrap: wrap;
+      gap: 0 var(--space-4);
       margin: 0;
       padding: 0;
       list-style: none;
@@ -141,15 +162,11 @@ const nav = [
       display: inline-flex;
       align-items: center;
       min-block-size: 2.75rem;
-      color: var(--ink);
-      font-size: var(--step--1);
-      font-weight: 500;
       text-decoration: none;
 
       &:hover,
       &[aria-current] {
         text-decoration: underline;
-        text-decoration-color: var(--link);
       }
     }
 
@@ -162,34 +179,23 @@ const nav = [
     grid-area: tools;
     display: flex;
     align-items: center;
-    gap: var(--space-1);
+    margin-inline-end: calc(-1 * var(--space-2));
   }
 
-  .icon-button,
-  .lang-link {
+  .icon-button {
     display: inline-grid;
     place-items: center;
-    min-inline-size: 2.75rem;
+    inline-size: 2.75rem;
     block-size: 2.75rem;
     padding: 0;
     border: 0;
     border-radius: var(--radius);
     background: none;
-    color: var(--ink);
+    color: var(--band-link);
     cursor: pointer;
 
     &:hover {
-      background: var(--wash);
-    }
-  }
-
-  .lang-link {
-    font-size: var(--step--1);
-    font-weight: 600;
-    text-decoration: none;
-
-    &:visited {
-      color: var(--ink);
+      background: color-mix(in srgb, currentcolor 16%, transparent);
     }
   }
 </style>

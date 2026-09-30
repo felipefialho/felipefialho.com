@@ -58,14 +58,11 @@ const jsonLd = {
   jsonLd={jsonLd}
 >
   <div class="progress" aria-hidden="true"></div>
-  <div class="post-grid">
-    <article class="post" data-pagefind-body data-pagefind-meta={`date:${isoDate(post.data.date)}`}>
-      <header class="post-header">
-        <h1 style={`view-transition-name: post-${post.id}`}>{post.data.title}</h1>
-        <p class="post-description">{post.data.description}</p>
-        <p class="meta">
-          <time datetime={isoDate(post.data.date)}>{formatDate(post.data.date, lang)}</time>, {ui.readingTime(minutes)}
-        </p>
+  <article class="post" data-pagefind-body data-pagefind-meta={`date:${isoDate(post.data.date)}`}>
+    <header class="post-header page-head split">
+      <div>
+        <h1 class="post-title" style={`view-transition-name: post-${post.id}`}>{post.data.title}</h1>
+        <p class="lede">{post.data.description}</p>
         {
           post.data.tags.length > 0 && (
             <ul class="tags" aria-label="Tags">
@@ -75,118 +72,107 @@ const jsonLd = {
             </ul>
           )
         }
+      </div>
+      <div class="aside post-meta">
+        <p>
+          <time datetime={isoDate(post.data.date)}>{formatDate(post.data.date, lang)}</time>
+          <span>{ui.readingTime(minutes)}</span>
+        </p>
         {
           alternate && (
-            <p class="translation">
-              <a href={alternate} hreflang={HTML_LANG[otherLang]}>
+            <p>
+              <a href={alternate} hreflang={HTML_LANG[otherLang]} lang={HTML_LANG[otherLang]}>
                 {ui.otherLang}
               </a>
             </p>
           )
         }
-      </header>
+      </div>
+    </header>
 
-      {showToc && <Toc headings={toc} lang={lang} variant="inline" />}
+    <div class="post-body split">
+      <div class="post-main">
+        {showToc && <Toc headings={toc} lang={lang} variant="inline" />}
 
-      <div class="prose">
-        <Content />
+        <div class="prose">
+          <Content />
+        </div>
+
+        <AdSlot kind="end" lang={lang} />
       </div>
 
-      <AdSlot kind="end" lang={lang} />
-    </article>
-
-    {showToc && <Toc headings={toc} lang={lang} variant="sidebar" />}
-  </div>
+      {showToc && <Toc headings={toc} lang={lang} variant="sidebar" />}
+    </div>
+  </article>
 
   <PostFooter lang={lang} post={post} posts={posts} />
   <AdsLoader />
 </Base>
 
 <style>
-  /* Named areas up front: an undeclared area would add an empty implicit column */
-  .post-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: 'post';
-    gap: var(--space-5) var(--toc-gap);
-
-    @media (width >= 80rem) {
-      grid-template-columns: var(--toc-width) minmax(0, var(--measure));
-      grid-template-areas: 'toc post';
-      align-items: start;
-    }
-  }
-
-  .post {
-    grid-area: post;
-    min-inline-size: 0;
-  }
-
-  .post-header {
-    margin-block-end: var(--space-5);
-
-    & h1 {
-      margin: 0 0 var(--space-3);
-      font-size: var(--step-4);
-      font-weight: 750;
-      line-height: 1.15;
-      letter-spacing: -0.015em;
-    }
-  }
-
-  .post-description {
-    margin: 0 0 var(--space-3);
-    color: var(--muted);
-    font-size: var(--step-1);
-    line-height: 1.45;
+  .post-title {
+    max-inline-size: 22ch;
+    margin: 0;
+    font-size: clamp(2.25rem, 1.4rem + 3.4vw, 4.5rem);
+    font-stretch: 116%;
+    font-weight: 800;
+    line-height: 1.02;
+    letter-spacing: -0.03em;
   }
 
   .tags {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-2);
+    gap: 0 var(--space-4);
     margin: var(--space-3) 0 0;
     padding: 0;
     list-style: none;
+    color: var(--muted);
     font-family: var(--font-ui);
-    font-size: var(--step--2);
-    line-height: 1.6;
-
-    & li,
-    & a {
-      padding: 0.15em 0.6em;
-    }
+    font-size: var(--step--1);
+    font-stretch: 110%;
+    font-weight: 600;
 
     & li {
-      border: 1px solid var(--rule);
-      border-radius: 0.25em;
-      color: var(--muted);
-    }
-
-    & li:has(a) {
-      padding: 0;
-    }
-
-    & a {
-      display: block;
-      color: inherit;
-      text-decoration: none;
-
-      &:hover {
-        color: var(--ink);
-      }
-    }
-
-    & li:has(a:hover) {
-      border-color: var(--ink);
+      display: inline-flex;
+      align-items: center;
+      min-block-size: 2.75rem;
     }
   }
 
-  .translation {
-    margin: var(--space-3) 0 0;
+  .post-meta {
     font-family: var(--font-ui);
     font-size: var(--step--1);
-    font-weight: 600;
+    line-height: 1.5;
+
+    & p {
+      margin: 0;
+    }
+
+    & time {
+      display: block;
+      color: var(--ink);
+      font-weight: 650;
+    }
+
+    & span {
+      color: var(--muted);
+    }
+
+    & a {
+      display: inline-block;
+      margin-block-start: var(--space-2);
+      font-weight: 600;
+    }
+
+    @media (width >= 60rem) {
+      padding-block-start: 0.9rem;
+    }
+  }
+
+  .post-main {
+    min-inline-size: 0;
+    max-inline-size: var(--measure);
   }
 
   /*
@@ -204,7 +190,7 @@ const jsonLd = {
       inset: 0 0 auto;
       z-index: 5;
       display: block;
-      block-size: 3px;
+      block-size: 4px;
       background: var(--link);
       transform-origin: 0 50%;
       animation-name: progress;

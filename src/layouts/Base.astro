@@ -86,8 +86,9 @@ const speculationRules = { prefetch: [{ where: { href_matches: '/*' }, eagerness
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <meta name="theme-color" content="#fdfdfc" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#0f0f1a" media="(prefers-color-scheme: dark)" />
+    <!-- The browser chrome continues the band -->
+    <meta name="theme-color" content="#0000ee" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1b1b2c" media="(prefers-color-scheme: dark)" />
     {PROFILES.map((profile) => <link rel="me" href={profile} />)}
 
     <meta property="og:type" content={type} />
@@ -117,8 +118,11 @@ const speculationRules = { prefetch: [{ where: { href_matches: '/*' }, eagerness
   <body>
     <a class="skip-link" href="#content">{t(lang).skip}</a>
     <Header lang={lang} alternate={alternate} />
-    <main id="content" class="page main">
-      <slot />
+    <main id="content">
+      <slot name="hero" />
+      <div class="page main">
+        <slot />
+      </div>
     </main>
     <Footer lang={lang} />
     <SearchDialog lang={lang} />

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { formatDate, formatMonth, isoDate, localePath, t } from './i18n.ts';
+import { formatDate, formatMonth, formatShortDate, isoDate, localePath, t } from './i18n.ts';
 
 const sep28 = new Date('2020-09-28T12:00:00Z');
 // Late on New Year's Eve in UTC, already 2018 in Asia/Tokyo: formatting must not follow the local zone
@@ -32,6 +32,18 @@ describe('formatMonth', () => {
     expect(formatMonth(yearEnd, 'en')).toBe('Dec');
     expect(formatMonth(yearEnd, 'pt')).toBe('dez');
     expect(formatMonth(yearStart, 'en')).toBe('Jan');
+  });
+});
+
+describe('formatShortDate', () => {
+  it('pairs the short month with the year', () => {
+    expect(formatShortDate(sep28, 'pt')).toBe('set 2020');
+    expect(formatShortDate(sep28, 'en')).toBe('Sep 2020');
+  });
+
+  it('keeps the UTC year across the year boundary', () => {
+    expect(formatShortDate(yearEnd, 'en')).toBe('Dec 2017');
+    expect(formatShortDate(yearStart, 'pt')).toBe('jan 2018');
   });
 });
 

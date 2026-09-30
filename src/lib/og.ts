@@ -11,10 +11,10 @@ const HEIGHT = 630;
 const PADDING = 72;
 const MAX_LINES = 4;
 
-const INK = '#1A1A2E';
-const MUTED = '#5B5B6B';
+// The band: link blue field, the title as its biggest link. 4:4:4 keeps white text crisp on saturated blue
 const LINK = '#0000EE';
-const PAPER = '#FDFDFC';
+const ON_LINK = '#FDFDFC';
+const ON_LINK_SOFT = '#C9C9FB';
 
 type OgInput = { title: string; meta: string };
 
@@ -80,15 +80,14 @@ export async function renderOgImage({ title, meta }: OgInput): Promise<Buffer> {
   const size = fitTitleSize(cleanTitle);
 
   const markup = html(`
-    <div style="display:flex;flex-direction:column;justify-content:space-between;width:${WIDTH}px;height:${HEIGHT}px;padding:${PADDING}px;background:${PAPER};color:${INK};font-family:'Mona Sans'">
-      <div style="display:flex;font-size:30px;font-weight:800;letter-spacing:-0.02em">felipe fialho</div>
+    <div style="display:flex;flex-direction:column;justify-content:space-between;width:${WIDTH}px;height:${HEIGHT}px;padding:${PADDING}px;background:${LINK};color:${ON_LINK};font-family:'Mona Sans'">
+      <div style="display:flex;font-size:30px;font-weight:800;letter-spacing:-0.02em">felipefialho.com</div>
       <div style="display:flex;flex-direction:column;flex:1;justify-content:center;min-height:0">
-        <div style="display:flex;font-size:${size}px;font-weight:800;line-height:1.05;letter-spacing:-0.02em;line-clamp:${MAX_LINES}">${escapeHtml(cleanTitle)}</div>
-        <div style="display:flex;width:160px;height:6px;margin-top:28px;background:${LINK}"></div>
+        <div style="display:block;font-size:${size}px;font-weight:800;line-height:1.12;letter-spacing:-0.02em;text-decoration:underline;text-decoration-color:${ON_LINK};line-clamp:${MAX_LINES}">${escapeHtml(cleanTitle)}</div>
       </div>
-      <div style="display:flex;justify-content:space-between;align-items:flex-end;color:${MUTED}">
-        <div style="display:flex;font-family:'Mona Sans';font-size:32px;font-weight:400">${escapeHtml(stripEmoji(meta))}</div>
-        <div style="display:flex;font-size:28px;font-weight:500">felipefialho.com</div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;color:${ON_LINK_SOFT}">
+        <div style="display:flex;font-size:32px;font-weight:400">${escapeHtml(stripEmoji(meta))}</div>
+        <div style="display:flex;font-size:28px;font-weight:500">Felipe Fialho</div>
       </div>
     </div>
   `);
@@ -99,7 +98,7 @@ export async function renderOgImage({ title, meta }: OgInput): Promise<Buffer> {
     fonts: await fonts,
   });
 
-  return sharp(Buffer.from(svg)).flatten({ background: PAPER }).jpeg({ quality: 82, mozjpeg: true }).toBuffer();
+  return sharp(Buffer.from(svg)).flatten({ background: LINK }).jpeg({ quality: 76, mozjpeg: true, chromaSubsampling: '4:4:4' }).toBuffer();
 }
 
 /** Static paths for every post card of a language plus the site card. */

@@ -14,45 +14,51 @@ const ui = t(lang);
 ---
 
 <Base lang={lang} title={ui.lab} description={ui.labDescription} alternate={localePath(lang === 'pt' ? 'en' : 'pt', '/lab/')}>
-  <h1 class="page-title">{ui.lab}</h1>
-  <p class="lede reading">{ui.labLede}</p>
+  <header class="page-head split">
+    <div>
+      <h1 class="page-title">{ui.lab}</h1>
+      <p class="lede">{ui.labLede}</p>
+    </div>
+  </header>
   <ol class="projects">
     {
       projects.map(({ data }, index) => (
-        <li class="project">
-          <Image
-            src={data.image}
-            alt={ui.labShot(data.title)}
-            width={480}
-            widths={[320, 480, 640, 960]}
-            sizes="(min-width: 48rem) 20rem, 100vw"
-            loading={index === 0 ? 'eager' : 'lazy'}
-            class="shot"
-          />
-          <div>
-            <h2>
-              <a href={data.url}>{data.title}</a>
-            </h2>
-            <p class="meta">{data.year}</p>
-            <p>{data.description[lang]}</p>
-            <p class="links">
-              {data.repo === data.url ? (
-                <a class="text-link" href={data.url}>
-                  {ui.codeOnGithub}
-                </a>
-              ) : (
-                <>
+        <li class="project split">
+          <p class="year aside">{data.year}</p>
+          <div class="body">
+            <div class="text">
+              <h2>
+                <a href={data.url}>{data.title}</a>
+              </h2>
+              <p>{data.description[lang]}</p>
+              <p class="links">
+                {data.repo === data.url ? (
                   <a class="text-link" href={data.url}>
-                    {ui.viewProject}
+                    {ui.codeOnGithub}
                   </a>
-                  {data.repo && (
-                    <a class="text-link" href={data.repo}>
-                      {ui.code}
+                ) : (
+                  <>
+                    <a class="text-link" href={data.url}>
+                      {ui.viewProject}
                     </a>
-                  )}
-                </>
-              )}
-            </p>
+                    {data.repo && (
+                      <a class="text-link" href={data.repo}>
+                        {ui.code}
+                      </a>
+                    )}
+                  </>
+                )}
+              </p>
+            </div>
+            <Image
+              src={data.image}
+              alt={ui.labShot(data.title)}
+              width={480}
+              widths={[320, 480, 640, 960]}
+              sizes="(min-width: 60rem) 24rem, 100vw"
+              loading={index === 0 ? 'eager' : 'lazy'}
+              class="shot"
+            />
           </div>
         </li>
       ))
@@ -62,42 +68,85 @@ const ui = t(lang);
 
 <style>
   .projects {
-    display: grid;
-    gap: var(--space-6);
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
   .project {
-    display: grid;
-    gap: var(--space-4);
-    align-items: start;
+    row-gap: var(--space-2);
+  }
 
-    @media (width >= 48rem) {
-      grid-template-columns: minmax(0, 20rem) minmax(0, var(--measure));
+  .year {
+    margin: 0;
+    color: var(--muted);
+    font-family: var(--font-ui);
+    font-size: var(--step-1);
+    font-stretch: 112%;
+    font-weight: 650;
+    font-variant-numeric: tabular-nums;
+
+    @media (width >= 60rem) {
+      padding-block-start: calc(var(--space-5) + 0.6rem);
     }
+  }
+
+  /* The rules belong to the content column, like the lists on the home */
+  .body {
+    display: grid;
+    gap: var(--space-4) var(--space-5);
+    align-items: start;
+    padding-block: var(--space-4) var(--space-5);
+    border-block-start: 1px solid var(--rule);
+
+    @media (width >= 60rem) {
+      grid-template-columns: minmax(0, 1fr) 24rem;
+      padding-block-start: var(--space-5);
+    }
+  }
+
+  .project:last-child .body {
+    border-block-end: 1px solid var(--rule);
+  }
+
+  .text {
+    max-inline-size: var(--measure);
 
     & h2 {
-      margin: 0 0 var(--space-1);
-      font-size: var(--step-2);
+      margin: 0 0 var(--space-2);
+      font-size: clamp(1.625rem, 1.2rem + 1.6vw, 2.75rem);
+      font-stretch: 118%;
+      font-weight: 750;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+    }
+
+    & h2 a {
+      text-decoration-thickness: 0.06em;
+      text-underline-offset: 0.12em;
     }
 
     & p {
-      margin-block: 0 var(--space-2);
+      margin: 0 0 var(--space-2);
     }
   }
 
   .links {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-2) var(--space-4);
+    gap: 0 var(--space-4);
+
+    & a {
+      display: inline-flex;
+      align-items: center;
+      min-block-size: 2.75rem;
+    }
   }
 
   .shot {
     inline-size: 100%;
     block-size: auto;
-    border-radius: var(--radius);
+    border: 1px solid var(--rule);
     background: var(--wash);
   }
 </style>

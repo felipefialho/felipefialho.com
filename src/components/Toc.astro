@@ -5,7 +5,7 @@ import { t, type Lang } from '../lib/i18n';
 interface Props {
   headings: MarkdownHeading[];
   lang: Lang;
-  /** inline: collapsible, below 80rem. sidebar: sticky, from 80rem */
+  /** inline: collapsible, below 60rem. sidebar: sticky in the margin column, from 60rem */
   variant: 'inline' | 'sidebar';
 }
 
@@ -26,11 +26,12 @@ const label = t(lang).toc;
       </ol>
     </details>
   ) : (
-    <nav class="toc toc-sidebar" aria-label={label}>
+    <nav class="toc toc-sidebar aside" aria-label={label} data-pagefind-ignore>
       {/* Scroll-spy (Chromium for now). Inline: lightningcss cannot parse :target-current yet */}
       <style is:inline>
         .toc-sidebar a:target-current {
           --toc-current: var(--ink);
+          --toc-mark: underline 0.12em var(--link);
         }
       </style>
       <p>{label}</p>
@@ -49,22 +50,21 @@ const label = t(lang).toc;
   .toc {
     font-family: var(--font-ui);
     font-size: var(--step--1);
-    line-height: 1.4;
+    line-height: 1.35;
 
     & ol {
       display: grid;
-      gap: var(--space-2);
       margin: var(--space-3) 0 0;
       padding: 0;
       list-style: none;
     }
 
     & a {
-      color: var(--muted);
+      display: block;
+      padding-block: 0.35rem;
       text-decoration: none;
 
       &:hover {
-        color: var(--ink);
         text-decoration: underline;
       }
     }
@@ -72,49 +72,55 @@ const label = t(lang).toc;
 
   .toc-inline {
     margin-block-end: var(--space-5);
-    padding: var(--space-3) var(--space-4);
-    border-radius: var(--radius);
+    padding: var(--space-2) var(--space-4) var(--space-3);
+    border-inline-start: 4px solid var(--link);
     background: var(--wash);
 
     & summary {
-      font-weight: 600;
+      display: flex;
+      align-items: center;
+      min-block-size: 2.75rem;
+      font-stretch: 112%;
+      font-weight: 700;
       cursor: pointer;
     }
 
-    @media (width >= 80rem) {
+    & ol {
+      margin-block-start: 0;
+    }
+
+    @media (width >= 60rem) {
       display: none;
     }
   }
 
   .toc-sidebar {
-    grid-area: toc;
     display: none;
     position: sticky;
-    inset-block-start: var(--space-4);
-    max-block-size: calc(100dvh - 2 * var(--space-4));
+    inset-block-start: var(--space-5);
+    align-self: start;
+    max-block-size: calc(100dvh - 2 * var(--space-5));
     overflow-y: auto;
 
     & p {
       margin: 0;
       color: var(--ink);
-      font-weight: 600;
+      font-stretch: 112%;
+      font-weight: 700;
     }
 
     & ol {
-      gap: 0;
-      border-inline-start: 1px solid var(--rule);
       scroll-target-group: auto;
     }
 
+    /* The current section turns to ink with a marked underline: you are here */
     & a {
-      display: block;
-      margin-inline-start: -1px;
-      padding: var(--space-1) 0 var(--space-1) var(--space-3);
-      border-inline-start: 2px solid var(--toc-current, transparent);
-      color: var(--toc-current, var(--muted));
+      color: var(--toc-current, var(--link));
+      text-decoration: var(--toc-mark, none);
+      text-underline-offset: 0.25em;
     }
 
-    @media (width >= 80rem) {
+    @media (width >= 60rem) {
       display: block;
     }
   }

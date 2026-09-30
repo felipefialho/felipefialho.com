@@ -4,7 +4,6 @@ import github from '@tabler/icons/outline/brand-github.svg?raw';
 import linkedin from '@tabler/icons/outline/brand-linkedin.svg?raw';
 import x from '@tabler/icons/outline/brand-x.svg?raw';
 import youtube from '@tabler/icons/outline/brand-youtube.svg?raw';
-import email from '@tabler/icons/outline/mail.svg?raw';
 import rss from '@tabler/icons/outline/rss.svg?raw';
 import type { SocialId } from '../lib/social';
 
@@ -13,7 +12,7 @@ interface Props {
   size?: number;
 }
 
-const ICONS: Record<SocialId, string> = { x, linkedin, github, youtube, email, rss };
+const ICONS: Record<SocialId, string> = { x, linkedin, github, youtube, rss };
 const { name, size = 20 } = Astro.props;
 
 // Keep only the drawing: size, class and a11y are set here
