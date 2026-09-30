@@ -16,30 +16,85 @@ test.describe('Consent banner', () => {
     expect(external).toEqual([]);
   });
 
-  test('stores a rejection', async ({ consentBanner }) => {
+  test('stores "necessary only" and confirms with a toast', async ({ consentBanner }) => {
     await consentBanner.goto();
-    await consentBanner.reject.click();
+    await consentBanner.necessaryOnly.click();
 
     await expect(consentBanner.root).toBeHidden();
+    await expect(consentBanner.toast).toHaveText(/só os necessários\. de boa/);
     await consentBanner.expectStored({ analytics: false, ads: false });
   });
 
-  test('reopens from the footer with the stored state and focus inside', async ({ consentBanner }) => {
+  test('customizes in the preferences dialog and saves', async ({ consentBanner }) => {
     await consentBanner.goto();
-    await consentBanner.reject.click();
+    await consentBanner.customize.click();
+
+    await expect(consentBanner.prefs).toBeVisible();
+    await expect(consentBanner.analytics).toBeFocused();
+
+    await consentBanner.analytics.check();
+    await consentBanner.save.click();
+
+    await expect(consentBanner.prefs).toBeHidden();
+    await expect(consentBanner.root).toBeHidden();
+    await expect(consentBanner.toast).toHaveText(/escolhas salvas/);
+    await consentBanner.expectStored({ analytics: true, ads: false });
+  });
+
+  test('closes the preferences dialog with Escape without a choice', async ({ page, consentBanner }) => {
+    await consentBanner.goto();
+    await consentBanner.customize.click();
+    await expect(consentBanner.prefs).toBeVisible();
+
+    await page.keyboard.press('Escape');
+
+    await expect(consentBanner.prefs).toBeHidden();
+    await expect(consentBanner.root).toBeVisible();
+    await expect.poll(() => page.evaluate(() => localStorage.getItem('consent'))).toBeNull();
+  });
+
+  test('reopens the preferences from the toast', async ({ consentBanner }) => {
+    await consentBanner.goto();
+    await consentBanner.accept.click();
+    await expect(consentBanner.toast).toHaveText(/tudo aceito\. valeu!/);
+
+    await consentBanner.toast.getByRole('button', { name: 'mudar' }).click();
+
+    await expect(consentBanner.prefs).toBeVisible();
+    await expect(consentBanner.analytics).toBeChecked();
+    await expect(consentBanner.ads).toBeChecked();
+  });
+
+  test('reopens from the footer with the stored state and focus on the first switch', async ({ consentBanner }) => {
+    await consentBanner.goto();
+    await consentBanner.necessaryOnly.click();
     await expect(consentBanner.root).toBeHidden();
 
     await consentBanner.footerLink.click();
 
-    await expect(consentBanner.root).toBeVisible();
+    await expect(consentBanner.prefs).toBeVisible();
     await expect(consentBanner.analytics).not.toBeChecked();
     await expect(consentBanner.ads).not.toBeChecked();
     await expect(consentBanner.analytics).toBeFocused();
+
+    await consentBanner.ads.check();
+    await consentBanner.save.click();
+    await consentBanner.expectStored({ analytics: false, ads: true });
+  });
+
+  test('rejects everything from the preferences dialog', async ({ consentBanner }) => {
+    await consentBanner.goto();
+    await consentBanner.customize.click();
+    await consentBanner.rejectAll.click();
+
+    await expect(consentBanner.prefs).toBeHidden();
+    await consentBanner.expectStored({ analytics: false, ads: false });
   });
 
   test('stores an acceptance and stays closed after a reload', async ({ page, consentBanner }) => {
     await consentBanner.goto();
     await consentBanner.accept.click();
+    await expect(consentBanner.toast).toHaveText(/tudo aceito\. valeu!/);
     await consentBanner.expectStored({ analytics: true, ads: true });
 
     await page.reload();

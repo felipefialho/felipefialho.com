@@ -3,17 +3,27 @@ import { expect, type Locator, type Page } from '@playwright/test';
 export class ConsentBanner {
   readonly root: Locator;
   readonly accept: Locator;
-  readonly reject: Locator;
+  readonly necessaryOnly: Locator;
+  readonly customize: Locator;
+  readonly prefs: Locator;
   readonly analytics: Locator;
   readonly ads: Locator;
+  readonly rejectAll: Locator;
+  readonly save: Locator;
+  readonly toast: Locator;
   readonly footerLink: Locator;
 
   constructor(private readonly page: Page) {
-    this.root = page.getByRole('region', { name: 'Preferências de cookies' });
-    this.accept = this.root.getByRole('button', { name: 'Aceitar' });
-    this.reject = this.root.getByRole('button', { name: 'Recusar' });
-    this.analytics = this.root.getByRole('checkbox', { name: /^Análise/ });
-    this.ads = this.root.getByRole('checkbox', { name: /^Anúncios personalizados/ });
+    this.root = page.getByRole('region', { name: 'Aviso de cookies' });
+    this.accept = this.root.getByRole('button', { name: 'aceitar tudo' });
+    this.necessaryOnly = this.root.getByRole('button', { name: 'só os necessários' });
+    this.customize = this.root.getByRole('button', { name: 'personalizar' });
+    this.prefs = page.getByRole('dialog', { name: 'Preferências de cookies' });
+    this.analytics = this.prefs.getByRole('checkbox', { name: /^Análise/ });
+    this.ads = this.prefs.getByRole('checkbox', { name: /^Anúncios/ });
+    this.rejectAll = this.prefs.getByRole('button', { name: 'recusar tudo' });
+    this.save = this.prefs.getByRole('button', { name: 'salvar escolhas' });
+    this.toast = page.getByRole('status').filter({ hasText: '✓' });
     this.footerLink = page.getByRole('contentinfo').getByRole('button', { name: 'Preferências de cookies' });
   }
 

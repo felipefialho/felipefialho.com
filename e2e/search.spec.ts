@@ -8,6 +8,7 @@ test.describe('Search', () => {
     await test.step('open the dialog from the header', async () => {
       await page.getByRole('button', { name: 'Buscar' }).click();
       await expect(dialog).toBeVisible();
+      await expect(dialog.getByText('$ grep -r')).toBeVisible();
     });
 
     await test.step('type a term and see the matching post', async () => {
@@ -21,5 +22,16 @@ test.describe('Search', () => {
       await page.keyboard.press('Escape');
       await expect(dialog).toBeHidden();
     });
+  });
+
+  test('opens with the keyboard shortcut', async ({ page }) => {
+    await page.goto('/');
+    const dialog = page.getByRole('dialog', { name: 'Buscar nos posts' });
+    await expect(dialog).toBeHidden();
+
+    await page.keyboard.press('ControlOrMeta+k');
+
+    await expect(dialog).toBeVisible();
+    await expect(dialog.getByRole('textbox', { name: 'Buscar nos posts' })).toBeFocused();
   });
 });
