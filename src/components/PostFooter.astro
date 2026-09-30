@@ -41,7 +41,7 @@ const editUrl = post.filePath ? `${repoUrl}/blob/main/${post.filePath}` : `${rep
           </a>
         </div>
         <p class="fix">
-          {ui.fix} <a href={editUrl}>{ui.fixLink}</a>.
+          {ui.fix} <a href={editUrl}>{ui.fixLink}</a>
         </p>
       </section>
 
@@ -189,6 +189,12 @@ const editUrl = post.filePath ? `${repoUrl}/blob/main/${post.filePath}` : `${rep
     color: var(--muted);
     font-family: var(--font-code);
     font-size: 0.8125rem;
+
+    /* Inside a sentence, color alone is not enough to tell the link apart */
+    & a {
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+    }
   }
 
   .related {
