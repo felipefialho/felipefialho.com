@@ -24,6 +24,10 @@ interface Props {
   modifiedTime?: Date;
   tags?: string[];
   noindex?: boolean;
+  /** Continues the header wordmark path, e.g. "blog/my-post" gives ~/felipefialho/blog/my-post */
+  pathSuffix?: string;
+  /** Reading time in minutes of a post: turns on the reading progress bar and header text */
+  readingMinutes?: number;
   jsonLd?: JsonLd | Record<string, unknown>;
 }
 
@@ -38,6 +42,8 @@ const {
   modifiedTime,
   tags = [],
   noindex = false,
+  pathSuffix,
+  readingMinutes,
   jsonLd,
 } = Astro.props;
 
@@ -60,12 +66,16 @@ const speculationRules = { prefetch: [{ where: { href_matches: '/*' }, eagerness
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <ConsentHead />
+    <meta name="theme-color" content="#0f0f0f" />
     <script is:inline>
       try {
         const theme = localStorage.getItem('theme');
-        if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+        if (theme === 'light') {
+          document.documentElement.dataset.theme = theme;
+          document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#fafafa');
+        }
       } catch {
-        // Storage blocked: fall back to the OS preference
+        // Storage blocked: stay on the dark default
       }
     </script>
     <title>{fullTitle}</title>
@@ -84,11 +94,10 @@ const speculationRules = { prefetch: [{ where: { href_matches: '/*' }, eagerness
     }
     <link rel="alternate" type="application/rss+xml" title={t(lang).feedTitle} href={feed} />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <!-- The browser chrome continues the band -->
-    <meta name="theme-color" content="#0000ee" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#1b1b2c" media="(prefers-color-scheme: dark)" />
+    <link rel="manifest" href="/site.webmanifest" />
     {PROFILES.map((profile) => <link rel="me" href={profile} />)}
 
     <meta property="og:type" content={type} />
@@ -111,13 +120,14 @@ const speculationRules = { prefetch: [{ where: { href_matches: '/*' }, eagerness
     <meta name="twitter:creator" content="@felipefialho_" />
     {jsonLd && <script type="application/ld+json" set:html={serializeJsonLd(jsonLd)} />}
 
-    <Font cssVariable="--font-mona-sans" preload />
+    <Font cssVariable="--font-sans" preload />
+    <Font cssVariable="--font-mono" preload />
     <script type="speculationrules" is:inline set:html={JSON.stringify(speculationRules)} />
     <slot name="head" />
   </head>
   <body>
     <a class="skip-link" href="#content">{t(lang).skip}</a>
-    <Header lang={lang} alternate={alternate} />
+    <Header lang={lang} alternate={alternate} pathSuffix={pathSuffix} readingMinutes={readingMinutes} />
     <main id="content">
       <slot name="hero" />
       <div class="page main">

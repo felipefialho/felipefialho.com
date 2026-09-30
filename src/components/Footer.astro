@@ -1,7 +1,7 @@
 ---
 import { localePath, t, type Lang } from '../lib/i18n';
-import { CONTACT_EMAIL } from '../lib/social';
-import SocialLinks from './SocialLinks.astro';
+import { SOCIAL_PROFILES, type SocialId } from '../lib/social';
+import SocialIcon from './SocialIcon.astro';
 
 interface Props {
   lang: Lang;
@@ -9,60 +9,43 @@ interface Props {
 
 const { lang } = Astro.props;
 const ui = t(lang);
+
+const ORDER: SocialId[] = ['github', 'linkedin', 'x', 'youtube', 'rss'];
+const profiles = [
+  ...SOCIAL_PROFILES.map(({ id, label, href }) => ({ id: id as SocialId, label, href, me: true })),
+  { id: 'rss' as const, label: 'RSS', href: localePath(lang, '/feed.xml'), me: false },
+].sort((a, b) => ORDER.indexOf(a.id) - ORDER.indexOf(b.id));
 ---
 
 <footer class="site-footer">
-  <div class="page">
-    <p class="invite">{ui.footerInvite}</p>
-    <!-- The closing statement echoes the name in the band -->
-    <a class="mail" href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
-    <div class="foot">
-      <SocialLinks lang={lang} variant="compact" />
-      <ul class="links">
-        <li><a href={localePath(lang, '/policies/')}>{ui.privacy}</a></li>
-        <li><button type="button" popovertarget="consent">{ui.cookies}</button></li>
-      </ul>
-      <p class="copy">© 2013–{new Date().getFullYear()} Felipe Fialho</p>
+  <div class="foot page">
+    <div class="legal">
+      <span>© Felipe Fialho · {ui.footerMade}</span>
+      <button type="button" commandfor="consent-prefs" command="show-modal">{ui.cookies}</button>
+      <a href={localePath(lang, '/policies/')}>{ui.privacy}</a>
     </div>
+    <ul class="socials">
+      {
+        profiles.map(({ id, label, href, me }) => (
+          <li>
+            <a href={href} aria-label={label} rel={me ? 'me' : undefined}>
+              <SocialIcon name={id} size={id === 'x' || id === 'rss' ? 16 : 18} />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
   </div>
 </footer>
 
 <style>
   .site-footer {
-    padding-block: clamp(2.5rem, 5vw, 4rem) var(--space-4);
-    border-block-start: 1px solid var(--rule);
-    font-family: var(--font-ui);
-
-    & .page {
-      container-type: inline-size;
-    }
-  }
-
-  .invite {
-    margin: 0;
+    margin-block-start: auto;
+    padding-block: 2.25rem;
+    border-block-start: 1px solid var(--line);
     color: var(--muted);
-    font-size: var(--step-0);
-  }
-
-  /* Fills the column on a phone, settles at about three quarters of it on a wide screen */
-  .mail {
-    display: inline-block;
-    margin-block: var(--space-2) clamp(2rem, 5vw, 3.5rem);
-    font-size: clamp(1.5rem, 9.4cqi, 6rem);
-    font-stretch: 125%;
-    font-weight: 800;
-    line-height: 1.1;
-    letter-spacing: -0.035em;
-    text-decoration-thickness: 0.06em;
-    text-underline-offset: 0.14em;
-
-    &:visited {
-      color: var(--link);
-    }
-
-    &:hover {
-      text-decoration-thickness: 0.1em;
-    }
+    font-family: var(--font-code);
+    font-size: 0.8125rem;
   }
 
   .foot {
@@ -70,47 +53,59 @@ const ui = t(lang);
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: var(--space-2) var(--space-5);
-    color: var(--muted);
-    font-size: var(--step--1);
+    gap: var(--space-3) var(--space-4);
   }
 
-  .links {
+  .legal {
     display: flex;
     flex-wrap: wrap;
-    gap: 0 var(--space-4);
+    align-items: center;
+    gap: 0 1.25rem;
+
+    & > * {
+      display: inline-flex;
+      align-items: center;
+      min-block-size: 2.75rem;
+    }
+
+    & button,
+    & a {
+      padding: 0;
+      border: 0;
+      background: none;
+      color: var(--muted);
+      font: inherit;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-transform: lowercase;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--ink);
+      }
+    }
+  }
+
+  .socials {
+    display: flex;
+    gap: var(--space-2);
     margin: 0;
     padding: 0;
     list-style: none;
 
-    @media (width >= 48rem) {
-      margin-inline-start: auto;
-    }
-  }
+    & a {
+      display: grid;
+      place-items: center;
+      inline-size: 2.5rem;
+      block-size: 2.5rem;
+      border: 1px solid var(--line);
+      border-radius: 0.625rem;
+      color: var(--muted);
 
-  .copy {
-    margin: 0;
-  }
-
-  .links a,
-  .links button {
-    display: inline-flex;
-    align-items: center;
-    min-block-size: 2.75rem;
-    padding: 0;
-    border: 0;
-    background: none;
-    color: var(--muted);
-    font: inherit;
-    text-decoration: underline;
-    text-decoration-color: var(--rule);
-    text-decoration-thickness: 0.07em;
-    text-underline-offset: 0.2em;
-    cursor: pointer;
-
-    &:hover {
-      color: var(--ink);
-      text-decoration-color: currentcolor;
+      &:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
     }
   }
 </style>
