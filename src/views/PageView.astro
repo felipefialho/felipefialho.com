@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import { getEntry, render } from 'astro:content';
 import photo from '../assets/images/felipe-fialho.jpg';
+import CodeCopy from '../components/CodeCopy.astro';
 import Base from '../layouts/Base.astro';
 import { formatDate, localePath, t, type Lang } from '../lib/i18n';
 import { profilePageJsonLd } from '../lib/seo';
@@ -20,6 +21,7 @@ const { Content } = await render(entry);
 const updated = entry.data.updated;
 const otherLang: Lang = lang === 'pt' ? 'en' : 'pt';
 const description = entry.data.description ?? entry.data.title;
+const prompt = page === 'hi' ? `cat ~/${t(lang).navAbout}.md` : 'cat ~/policies.md';
 const jsonLd =
   page === 'hi'
     ? profilePageJsonLd({ lang, path: localePath(lang, '/hi/'), title: entry.data.title, description, updated })
@@ -33,61 +35,130 @@ const jsonLd =
   alternate={localePath(otherLang, `/${page}/`)}
   jsonLd={jsonLd}
 >
-  <header class="page-head split">
-    <div>
-      <h1 class="page-title">{entry.data.title}</h1>
-    </div>
+  <header class="head">
+    <p class="prompt-line prompt mono">{prompt}</p>
+    <h1>{entry.data.title}</h1>
     {
       updated && (
-        <p class="meta aside">
+        <p class="updated mono">
           {t(lang).lastUpdated} {formatDate(updated, lang)}
         </p>
       )
     }
   </header>
-  <div class="split">
+  <div class:list={['body', { 'has-portrait': page === 'hi' }]}>
     <div class="prose">
       <Content />
     </div>
     {
       page === 'hi' && (
-        <div class="aside">
-          <div class="portrait duotone">
-            <Image
-              src={photo}
-              alt={t(lang).photoAlt}
-              width={240}
-              height={300}
-              fit="cover"
-              densities={[1, 2]}
-              loading="eager"
-            />
-          </div>
-        </div>
+        <figure class="portrait">
+          <Image
+            src={photo}
+            alt={t(lang).photoAlt}
+            width={320}
+            height={400}
+            fit="cover"
+            densities={[1, 2]}
+            loading="eager"
+          />
+        </figure>
       )
     }
   </div>
+  <CodeCopy />
 </Base>
 
 <style>
-  .portrait {
-    inline-size: min(100%, 15rem);
-    aspect-ratio: 4 / 5;
+  .head {
+    margin-block-end: clamp(2.5rem, 6vw, 4.5rem);
+
+    & > * {
+      margin: 0;
+    }
+  }
+
+  .prompt-line {
+    margin-block-end: var(--space-3);
+    color: var(--muted);
+    font-size: var(--step--1);
+  }
+
+  h1 {
+    max-inline-size: 18ch;
+    color: var(--ink);
+    font-size: var(--step-5);
+    font-weight: 600;
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+    overflow-wrap: break-word;
+  }
+
+  .updated {
+    margin-block-start: var(--space-3);
+    color: var(--muted);
+    font-size: 0.8125rem;
+  }
+
+  .body {
+    display: grid;
+    gap: var(--space-5) 5rem;
 
     @media (width >= 60rem) {
-      position: sticky;
-      inset-block-start: var(--space-5);
+      &.has-portrait {
+        grid-template-columns: minmax(0, 45rem) 20rem;
+        align-items: start;
+      }
     }
   }
 
   /* On a phone the portrait comes before the text it illustrates */
-  .aside:has(.portrait) {
+  .portrait {
     order: -1;
-  }
+    position: relative;
+    isolation: isolate;
+    inline-size: min(100%, 11rem);
+    aspect-ratio: 4 / 5;
+    margin: 0;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
 
-  .page-head .meta {
+    & :global(img) {
+      inline-size: 100%;
+      block-size: 100%;
+      object-fit: cover;
+      object-position: 40% 25%;
+      filter: grayscale(1) contrast(1.1);
+      transition: filter 0.5s var(--ease);
+    }
+
+    /* Cyan multiply wash, the same photo treatment as the home */
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--tint);
+      mix-blend-mode: multiply;
+      transition: opacity 0.5s var(--ease);
+      pointer-events: none;
+    }
+
     @media (width >= 60rem) {
-      padding-block-start: 1rem;
+      order: 0;
+      position: sticky;
+      inset-block-start: var(--space-5);
+      inline-size: 100%;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover::after {
+        opacity: 0;
+      }
+
+      &:hover :global(img) {
+        filter: none;
+      }
     }
   }
 </style>

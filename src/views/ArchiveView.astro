@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
-import { formatMonth, isoDate, localePath, t, type Lang } from '../lib/i18n';
-import { getPosts, groupByYear, postPath, tagLabel, tagPath, type Post } from '../lib/posts';
+import { formatDay, isoDate, localePath, t, type Lang } from '../lib/i18n';
+import { getPosts, groupByYear, postPath, tagLabel, tagPath, tagSlug, type Post } from '../lib/posts';
 import { collectionPageJsonLd } from '../lib/seo';
 
 interface Props {
@@ -27,37 +27,40 @@ const pagePath = tag ? tagPath(lang, tag) : localePath(lang, '/blog/');
 const jsonLd = collectionPageJsonLd({ lang, path: pagePath, title, description, crumb: tag ? title : undefined });
 // The English archive is a subset: point readers to the full Portuguese one
 const showOtherLang = lang === 'en' && !tag;
+const prompt = tag ? `ls ~/blog --tag ${tagSlug(tag)}` : 'ls ~/blog';
 ---
 
 <Base lang={lang} title={title} description={description} alternate={alternate} jsonLd={jsonLd}>
-  <header class="page-head split">
-    <div>
-      <h1 class="page-title">{title}</h1>
-      <p class="lede">{lede}</p>
-      {
-        showOtherLang && (
-          <p class="more">
-            <a class="text-link" href="/blog/" hreflang="pt-BR" lang="pt-BR">
-              {ui.morePostsOtherLang}
-            </a>
-          </p>
-        )
-      }
-    </div>
+  <header class="head">
+    <p class="prompt-line prompt mono">{prompt}</p>
+    <h1>{title}</h1>
+    <p class="lede">{lede}</p>
+    {
+      showOtherLang && (
+        <p class="more">
+          <a href="/blog/" hreflang="pt-BR" lang="pt-BR">
+            {ui.morePostsOtherLang}
+          </a>
+        </p>
+      )
+    }
   </header>
   {
     groupByYear(posts).map(([year, items]) => (
-      <section class="year split" aria-labelledby={`year-${year}`}>
-        <h2 id={`year-${year}`} class="year-title aside">
+      <section class="year" aria-labelledby={`year-${year}`}>
+        <h2 id={`year-${year}`} class="label">
           {year}
         </h2>
-        <ol class="rows rows-tight">
+        <ol>
           {items.map((post) => (
             <li>
-              <a class="title-link" href={postPath(lang, post.id)} style={`view-transition-name: post-${post.id}`}>
-                {post.data.title}
+              <a href={postPath(lang, post.id)}>
+                <time datetime={isoDate(post.data.date)}>{formatDay(post.data.date, lang)}</time>
+                <span class="title" style={`view-transition-name: post-${post.id}`}>
+                  {post.data.title}
+                </span>
+                {post.data.tags[0] && <span class="tag">#{post.data.tags[0]}</span>}
               </a>
-              <time datetime={isoDate(post.data.date)}>{formatMonth(post.data.date, lang)}</time>
             </li>
           ))}
         </ol>
@@ -67,38 +70,97 @@ const showOtherLang = lang === 'en' && !tag;
 </Base>
 
 <style>
+  .head {
+    margin-block-end: clamp(2.5rem, 6vw, 4.5rem);
+
+    & > * {
+      margin: 0;
+    }
+  }
+
+  .prompt-line {
+    margin-block-end: var(--space-3);
+    color: var(--muted);
+    font-size: var(--step--1);
+  }
+
+  h1 {
+    max-inline-size: 18ch;
+    color: var(--ink);
+    font-size: var(--step-6);
+    font-weight: 600;
+    line-height: 0.98;
+    letter-spacing: -0.045em;
+    overflow-wrap: break-word;
+  }
+
+  .lede {
+    max-inline-size: 40rem;
+    margin-block-start: var(--space-4);
+    color: var(--soft);
+    font-size: var(--step-2);
+    line-height: 1.4;
+  }
+
+  .more {
+    margin-block-start: var(--space-3);
+    font-family: var(--font-code);
+    font-size: var(--step--1);
+  }
+
   .year + .year {
     margin-block-start: clamp(2.5rem, 5vw, 4rem);
   }
 
-  /* Thirteen years, set wide: the year stays pinned while its posts scroll by */
-  .year-title {
-    position: sticky;
-    inset-block-start: 0;
-    z-index: 1;
-    align-self: start;
+  ol {
     margin: 0;
-    padding-block: var(--space-2);
-    background: var(--paper);
-    font-size: clamp(2.5rem, 1.8rem + 3vw, 4.5rem);
-    font-stretch: 125%;
-    font-weight: 800;
-    line-height: 0.9;
-    letter-spacing: -0.035em;
-    font-variant-numeric: tabular-nums;
+    padding: 0;
+    list-style: none;
+  }
 
-    @media (width >= 60rem) {
-      inset-block-start: var(--space-4);
-      padding-block: 0;
-      background: none;
+  li a {
+    display: grid;
+    grid-template-areas:
+      'date tag'
+      'title title';
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: var(--space-1) var(--space-4);
+    padding: var(--space-3) var(--space-2);
+    border-block-end: 1px solid var(--line);
+    color: var(--ink);
+    text-decoration: none;
+    transition: background-color 0.15s var(--ease);
+
+    @media (width >= 48rem) {
+      grid-template-areas: 'date title tag';
+      grid-template-columns: 8.5rem minmax(0, 1fr) auto;
+      align-items: baseline;
+    }
+
+    &:hover {
+      background: var(--surface);
     }
   }
 
-  .rows {
-    max-inline-size: 52rem;
+  time,
+  .tag {
+    color: var(--muted);
+    font-family: var(--font-code);
+    font-size: 0.8125rem;
+    white-space: nowrap;
+  }
 
-    @media (width >= 60rem) {
-      padding-block-start: 0.35rem;
-    }
+  time {
+    grid-area: date;
+  }
+
+  .title {
+    grid-area: title;
+    font-size: var(--step-1);
+    line-height: 1.35;
+  }
+
+  .tag {
+    grid-area: tag;
   }
 </style>
