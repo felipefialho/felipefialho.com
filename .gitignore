@@ -3,6 +3,7 @@ node_modules
 .astro
 test-results
 playwright-report
+e2e-reports
 .DS_Store
 .env
 .env.*
