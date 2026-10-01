@@ -79,7 +79,6 @@ const plugins = [
   `gatsby-transformer-json`,
   'gatsby-plugin-resolve-src',
   `gatsby-plugin-styled-components`,
-  `gatsby-plugin-svgr`,
   `gatsby-plugin-transition-link`,
   `gatsby-plugin-offline`,
   `gatsby-plugin-react-helmet`,
