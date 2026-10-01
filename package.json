@@ -9,7 +9,7 @@
     "url": "https://github.com/felipefialho/felipefialho.com/issues"
   },
   "engines": {
-    "node": ">=12.13.0"
+    "node": ">=18.0.0"
   },
   "scripts": {
     "build": "gatsby build",
