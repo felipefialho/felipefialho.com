@@ -1,6 +1,7 @@
 const path = require(`path`)
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
+  quiet: true,
 })
 
 const queries = require('./src/utils/algolia')
@@ -78,7 +79,6 @@ const plugins = [
   `gatsby-transformer-json`,
   'gatsby-plugin-resolve-src',
   `gatsby-plugin-styled-components`,
-  `gatsby-plugin-svgr`,
   `gatsby-plugin-transition-link`,
   `gatsby-plugin-offline`,
   `gatsby-plugin-react-helmet`,

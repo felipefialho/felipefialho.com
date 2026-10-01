@@ -97,3 +97,30 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     })
   }
 }
+
+// Replaces gatsby-plugin-svgr, which is incompatible with webpack 5
+exports.onCreateWebpackConfig = ({ actions, getConfig }) => {
+  const config = getConfig()
+  const imagesRule = config.module.rules.find(
+    rule => rule.test && rule.test.test && rule.test.test('.svg') && rule.type === 'asset/resource'
+  )
+
+  if (imagesRule) {
+    imagesRule.test = /\.(ico|jpg|jpeg|png|gif|webp|avif)(\?.*)?$/
+  }
+
+  config.module.rules.push(
+    {
+      test: /\.svg$/,
+      issuer: /\.(js|jsx|ts|tsx)$/,
+      use: ['@svgr/webpack'],
+    },
+    {
+      test: /\.svg$/,
+      issuer: { not: [/\.(js|jsx|ts|tsx)$/] },
+      type: 'asset/resource',
+    }
+  )
+
+  actions.replaceWebpackConfig(config)
+}
