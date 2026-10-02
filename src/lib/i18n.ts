@@ -112,7 +112,7 @@ const UI = {
     sponsors: 'Apoiar no GitHub Sponsors',
     fix: 'Achou um erro? O blog é open source,',
     fixLink: 'edite o post no GitHub',
-    homeHeading: 'Oi, sou o Felipe. Escrevo sobre front-end, AI e carreira em tech',
+    homeHeading: 'Oi, sou o Felipe. Falo sobre front-end, AI e carreira em tech',
     whoami: ['staff engineer', 'em tech desde 2007', 'brasil'],
     offKeyboard: 'fora do teclado:',
     offKeyboardList: 'musculação · livros · futebol · filosofar com uma cerveja gelada',

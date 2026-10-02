@@ -4,7 +4,7 @@ test.describe('Home', () => {
   test('leads with the heading, without a name link', async ({ homePage }) => {
     await homePage.goto();
 
-    await expect(homePage.heading).toContainText('Oi, sou o Felipe. Escrevo sobre front-end, AI e carreira em tech');
+    await expect(homePage.heading).toContainText('Oi, sou o Felipe. Falo sobre front-end, AI e carreira em tech');
     await expect(homePage.heading.getByRole('link')).toHaveCount(0);
   });
 
