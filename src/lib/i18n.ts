@@ -236,7 +236,7 @@ const UI = {
     sponsors: 'Sponsor on GitHub',
     fix: 'Found a mistake? The blog is open source,',
     fixLink: 'edit the post on GitHub',
-    homeHeading: 'Hi, I’m Felipe. I write about front-end, AI and career in tech',
+    homeHeading: 'Hi, I’m Felipe. I talk about front-end, AI and career in tech',
     whoami: ['staff engineer', 'in tech since 2007', 'brazil'],
     offKeyboard: 'off the keyboard:',
     offKeyboardList: 'lifting · books · football · philosophizing over a cold beer',
