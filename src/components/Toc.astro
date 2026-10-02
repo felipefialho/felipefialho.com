@@ -67,7 +67,13 @@ const label = t(lang).toc;
       });
     };
 
+    // Before it pins, the nav sits lower than its sticky offset: its height follows its real top
+    const fit = () => {
+      nav.style.setProperty('--toc-top', `${Math.round(nav.getBoundingClientRect().top)}px`);
+    };
+
     const update = () => {
+      fit();
       const line = window.innerHeight * 0.4;
       const next = entries.findLast(({ heading }) => heading.getBoundingClientRect().top <= line)?.link;
       if (next === active) return;
@@ -79,14 +85,12 @@ const label = t(lang).toc;
 
     // A jump (anchor, End key) can skip a heading entirely, which an IntersectionObserver never reports
     let frame = 0;
-    addEventListener(
-      'scroll',
-      () => {
-        cancelAnimationFrame(frame);
-        frame = requestAnimationFrame(update);
-      },
-      { passive: true },
-    );
+    const schedule = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(update);
+    };
+    addEventListener('scroll', schedule, { passive: true });
+    addEventListener('resize', schedule, { passive: true });
     update();
   }
 </script>
@@ -160,7 +164,7 @@ const label = t(lang).toc;
       position: sticky;
       inset-block-start: 7rem;
       align-self: start;
-      max-block-size: calc(100dvh - 9rem);
+      max-block-size: calc(100dvh - max(var(--toc-top, 7rem), 7rem) - 2rem);
 
       /* Sits beside the lede at the top of the article, then follows the reader */
       margin-block-start: 21.25rem;
