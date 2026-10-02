@@ -7,14 +7,14 @@
   --sunken: light-dark(#f4f4f4, #151515);
   --line: light-dark(#dcdcdc, #2d2d2d);
   --ink: light-dark(#0f0f0f, #f1f1f1);
-  --text: light-dark(#2b2b2b, #d5d5d5);
-  --soft: light-dark(#454545, #b5b5b5);
-  --muted: light-dark(#5e5e5e, #9a9a9a);
-  --faint: light-dark(#767676, #757575);
+  --text: light-dark(#1f1f1f, #d5d5d5);
+  --soft: light-dark(#333, #b5b5b5);
+  --muted: light-dark(#474747, #9a9a9a);
+  --faint: light-dark(#5c5c5c, #757575);
   --accent: light-dark(#00778a, #a1ecf7);
   --accent-deep: light-dark(#0b6877, #187888);
   --on-accent: light-dark(#fff, #0f0f0f);
-  --warm: light-dark(#8a5d00, #e6af05);
+  --warm: light-dark(#6f4a00, #e6af05);
 
   /* Photo multiply tint: the same cyan in both themes */
   --tint: #a1ecf7;
