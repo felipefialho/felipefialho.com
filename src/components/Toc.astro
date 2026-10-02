@@ -156,12 +156,24 @@ const label = t(lang).toc;
       flex-direction: column;
       gap: 0.875rem;
 
-      /* Pinned from the first frame at the height it starts (header + page padding): it never
-         moves, so the height below always fits the viewport, without JS */
+      /* Fallback: pinned from the first frame at the height it starts (header + page padding),
+         so it never moves and the height below always fits the viewport */
       position: sticky;
       inset-block-start: 11.5rem;
       align-self: start;
       max-block-size: calc(100dvh - 13.5rem);
+
+      /* Pinned just under the header instead. It starts lower (85px header + .main padding +
+         1rem grid margin) and rises by --toc-rise as the page scrolls: the height grows in step */
+      @supports (animation-timeline: scroll()) {
+        --toc-rise: calc(clamp(2.5rem, 6vw, 5rem) - 0.6875rem);
+
+        inset-block-start: 7rem;
+        max-block-size: calc(100dvh - 9rem - var(--toc-lift));
+        animation: toc-rise linear both;
+        animation-timeline: scroll(root);
+        animation-range: 0 var(--toc-rise);
+      }
     }
 
     /* Only the list scrolls: the label stays put */
@@ -223,6 +235,22 @@ const label = t(lang).toc;
     color: var(--muted);
     letter-spacing: 0.06em;
     text-transform: uppercase;
+  }
+
+  @property --toc-lift {
+    syntax: '<length>';
+    inherits: false;
+    initial-value: 0;
+  }
+
+  @keyframes toc-rise {
+    0% {
+      --toc-lift: var(--toc-rise);
+    }
+
+    100% {
+      --toc-lift: 0px;
+    }
   }
 
   @property --fade-start {
