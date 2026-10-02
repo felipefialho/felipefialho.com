@@ -49,7 +49,23 @@ const label = t(lang).toc;
       const heading = document.getElementById(decodeURIComponent(link.hash.slice(1)));
       return heading ? [{ link, heading }] : [];
     });
+    const list = nav.querySelector('ol');
+    const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+    // Keeps the active item clear of the faded edges
+    const EDGE = 48;
     let active: HTMLAnchorElement | undefined;
+
+    // Scrolls the list only: scrollIntoView would also move the page
+    const follow = (link: HTMLAnchorElement) => {
+      if (!list || list.scrollHeight <= list.clientHeight) return;
+      const box = list.getBoundingClientRect();
+      const item = link.getBoundingClientRect();
+      if (item.top >= box.top + EDGE && item.bottom <= box.bottom - EDGE) return;
+      list.scrollTo({
+        top: list.scrollTop + item.top - box.top - (box.height - item.height) / 2,
+        behavior: reduceMotion.matches ? 'auto' : 'smooth',
+      });
+    };
 
     const update = () => {
       const line = window.innerHeight * 0.4;
@@ -58,6 +74,7 @@ const label = t(lang).toc;
       active?.removeAttribute('aria-current');
       next?.setAttribute('aria-current', CURRENT);
       active = next;
+      if (next) follow(next);
     };
 
     // A jump (anchor, End key) can skip a heading entirely, which an IntersectionObserver never reports
@@ -147,13 +164,39 @@ const label = t(lang).toc;
 
       /* Sits beside the lede at the top of the article, then follows the reader */
       margin-block-start: 21.25rem;
-      overflow-y: auto;
     }
 
+    /* Only the list scrolls: the label stays put */
     & ol {
       display: flex;
       flex-direction: column;
       gap: 0.875rem;
+      min-block-size: 0;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      padding-inline-end: var(--space-2);
+      scrollbar-gutter: stable;
+      scrollbar-width: thin;
+      scrollbar-color: transparent transparent;
+      transition: scrollbar-color 0.2s var(--ease);
+
+      &:hover,
+      &:focus-within {
+        scrollbar-color: var(--line) transparent;
+      }
+
+      /* Edges fade only where more items hide; a list that fits has no timeline, so no fade */
+      @supports (animation-timeline: scroll()) {
+        mask-image: linear-gradient(
+          to bottom,
+          transparent,
+          #000 var(--fade-start),
+          #000 calc(100% - var(--fade-end)),
+          transparent
+        );
+        animation: toc-fade linear both;
+        animation-timeline: scroll(self);
+      }
     }
 
     & li[data-depth='3'] a {
@@ -177,9 +220,40 @@ const label = t(lang).toc;
   }
 
   .toc-label {
+    flex: none;
     margin: 0;
     color: var(--muted);
     letter-spacing: 0.06em;
     text-transform: uppercase;
+  }
+
+  @property --fade-start {
+    syntax: '<length>';
+    inherits: false;
+    initial-value: 0;
+  }
+
+  @property --fade-end {
+    syntax: '<length>';
+    inherits: false;
+    initial-value: 0;
+  }
+
+  @keyframes toc-fade {
+    0% {
+      --fade-start: 0px;
+      --fade-end: 3rem;
+    }
+
+    8%,
+    92% {
+      --fade-start: 3rem;
+      --fade-end: 3rem;
+    }
+
+    100% {
+      --fade-start: 3rem;
+      --fade-end: 0px;
+    }
   }
 </style>
