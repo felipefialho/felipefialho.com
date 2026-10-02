@@ -274,20 +274,35 @@
   block-size: 25rem;
 }
 
+/* Quoted post card: body-sized text so it reads apart from the pull-quote blockquote */
 .embed-tweet {
+  max-inline-size: 36rem;
   padding: var(--space-4);
   border: 1px solid var(--line);
   border-radius: var(--radius);
+  background: var(--sunken);
 
   & blockquote {
+    margin: 0;
     border: 0;
     padding: 0;
+    color: var(--text);
+    font-size: var(--step-0);
     font-style: normal;
+    line-height: 1.6;
+    letter-spacing: 0;
+  }
+
+  & figcaption {
+    margin-block-start: var(--space-3);
+    padding-block-start: var(--space-3);
+    border-block-start: 1px solid var(--line);
+    font-family: var(--font-code);
+    font-size: 0.8125rem;
   }
 
   & .embed-author {
     color: var(--ink);
-    font-weight: 600;
   }
 }
 
