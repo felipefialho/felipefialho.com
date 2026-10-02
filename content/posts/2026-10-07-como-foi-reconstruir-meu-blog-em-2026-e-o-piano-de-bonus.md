@@ -1,6 +1,6 @@
 ---
 title: 'Como foi reconstruir meu blog em 2026 (e o piano de bônus)'
-date: 2026-09-30 00:00:01
+date: 2026-10-07 00:00:01
 description: 'Componentes nativos, performance no talo e zero framework no navegador. O blog saiu do Gatsby 2 e o Piano voltou de brinde 🎹'
 tags: ['performance', 'html', 'css', 'front-end', 'ai']
 ---

@@ -1,6 +1,6 @@
 ---
 title: 'How I rebuilt my blog in 2026 (plus the piano as a bonus)'
-date: 2026-09-30 00:00:01
+date: 2026-10-07 00:00:01
 description: 'Native components, maxed-out performance and zero framework in the browser. The blog left Gatsby 2 behind and the Piano came back as a bonus 🎹'
 tags: ['performance', 'html', 'css', 'front-end', 'ai']
 translationOf: como-foi-reconstruir-meu-blog-em-2026-e-o-piano-de-bonus
