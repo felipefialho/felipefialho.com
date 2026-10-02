@@ -165,6 +165,16 @@ const label = t(lang).toc;
       border-inline-start: 2px solid var(--accent);
       color: var(--accent);
     }
+
+    /* Thin mono strokes fade on the light background: darker and a touch heavier there */
+    :global(:root[data-theme='light']) & {
+      font-weight: 500;
+
+      & a:not([aria-current]),
+      & .toc-label {
+        color: var(--soft);
+      }
+    }
   }
 
   .toc-label {
