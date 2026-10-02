@@ -67,13 +67,7 @@ const label = t(lang).toc;
       });
     };
 
-    // Before it pins, the nav sits lower than its sticky offset: its height follows its real top
-    const fit = () => {
-      nav.style.setProperty('--toc-top', `${Math.round(nav.getBoundingClientRect().top)}px`);
-    };
-
     const update = () => {
-      fit();
       const line = window.innerHeight * 0.4;
       const next = entries.findLast(({ heading }) => heading.getBoundingClientRect().top <= line)?.link;
       if (next === active) return;
@@ -161,13 +155,13 @@ const label = t(lang).toc;
       display: flex;
       flex-direction: column;
       gap: 0.875rem;
-      position: sticky;
-      inset-block-start: 7rem;
-      align-self: start;
-      max-block-size: calc(100dvh - max(var(--toc-top, 7rem), 7rem) - 2rem);
 
-      /* Sits beside the lede at the top of the article, then follows the reader */
-      margin-block-start: 21.25rem;
+      /* Pinned from the first frame at the height it starts (header + page padding): it never
+         moves, so the height below always fits the viewport, without JS */
+      position: sticky;
+      inset-block-start: 11.5rem;
+      align-self: start;
+      max-block-size: calc(100dvh - 13.5rem);
     }
 
     /* Only the list scrolls: the label stays put */
