@@ -166,14 +166,9 @@ const label = t(lang).toc;
       color: var(--accent);
     }
 
-    /* Thin mono strokes fade on the light background: darker and a touch heavier there */
+    /* Thin mono strokes fade on the light background: a touch heavier there */
     :global(:root[data-theme='light']) & {
       font-weight: 500;
-
-      & a:not([aria-current]),
-      & .toc-label {
-        color: var(--soft);
-      }
 
       & a[aria-current] {
         font-weight: 600;
