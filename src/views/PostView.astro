@@ -134,17 +134,21 @@ const jsonLd = {
     grid-template-columns: minmax(0, 1fr);
 
     @media (width >= 60rem) {
-      grid-template-columns: 13.5rem minmax(0, 45rem);
+      grid-template-columns: 13.5rem minmax(0, 48rem);
       column-gap: 3rem;
       justify-content: center;
       margin-block-start: var(--space-3);
     }
 
-    /* Toc, article and an empty rail: the article stays centered on the page */
+    /* Toc and article centered as a pair; 48rem keeps lines around 70 characters */
     @media (width >= 90rem) {
-      grid-template-columns: 15rem minmax(0, 45rem) 15rem;
-      column-gap: 5rem;
+      grid-template-columns: 15rem minmax(0, 48rem);
+      column-gap: 4rem;
     }
+  }
+
+  .prose {
+    max-inline-size: none;
   }
 
   .post-main {
