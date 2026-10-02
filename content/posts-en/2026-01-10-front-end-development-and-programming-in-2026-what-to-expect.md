@@ -30,23 +30,23 @@ React, Vue and Angular followed an interesting convergence movement: each keeps 
 
 Strong componentization, robust typing, good architecture practices, a focus on DX and increasingly smooth integration with the back end and the edge. In practice, the discussion stops being "which is the best framework" and becomes "which one makes the most sense for the context of the team, the product and the company's current moment"
 
-Front-end is in a badass moment 😛
-
-The main solutions passed the test of time, and it's cool to see some features becoming native in JS and even CSS
-
-Frameworks are more and more optimized and focused on things like DX, architecture and so on
-
-Only really good tools survive
-
-felipe.tsx ⚡ (@felipefialho_) [January 27, 2022](https://twitter.com/felipefialho_/status/1486707566738649094?ref_src=twsrc%5Etfw)
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1486707566738649094">
+    <p>Front-end is in a badass moment 😛<br><br>The main solutions passed the test of time, and it's cool to see some features becoming native in JS and even CSS<br><br>Frameworks are more and more optimized and focused on things like DX, architecture and so on<br><br>Only really good tools survive</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.tsx ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1486707566738649094">January 27, 2022</a></figcaption>
+</figure>
 
 ### DevOps and Front-end: a consolidated marriage
 
 DevOps became fully tied to front-end. CI/CD, containers, observability and edge computing definitively stopped being "nice to have" and became an expected part of the skillset for anyone working on a real product in production
 
-If you work with front-end/back-end, do you also enjoy handling some more DevOps-y tasks like container setup, CI/CD, pipeline optimization and so on?
-
-felipe.tsx ⚡ (@felipefialho_) [May 3, 2022](https://twitter.com/felipfialho_/status/1521519097426628608?ref_src=twsrc%5Etfw)
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1521519097426628608">
+    <p>If you work with front-end/back-end, do you also enjoy handling some more DevOps-y tasks like container setup, CI/CD, pipeline optimization and so on?</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.tsx ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1521519097426628608">May 3, 2022</a></figcaption>
+</figure>
 
 The line between "just front-end" and "infra" got blurrier, and that's a good thing: it increases your system vision and your awareness of performance, cost and the end user's experience
 
@@ -64,13 +64,12 @@ For those who embraced these tools well, the productivity "baseline" changed to 
 
 2025 made it clear once and for all that the dev job isn't about typing code, it's about making decisions responsibly, understanding business context and having a broad view of the problem and the solution
 
-Writing code is just one step, most of the dev job is intellectual
-
-Analyzing contexts, scenarios, business rules, making things scalable across several layers with processes and algorithms
-
-Anyone who still hasn't understood this and thinks it's all about coding really does need to worry about ChatGPT
-
-felipe.tsx ⚡ (@felipefialho_) [January 6, 2023](https://twitter.com/felipefialho_/status/1611363075889700864?ref_src=twsrc%5Etfw)
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1611363075889700864">
+    <p>Writing code is just one step, most of the dev job is intellectual<br><br>Analyzing contexts, scenarios, business rules, making things scalable across several layers with processes and algorithms<br><br>Anyone who still hasn't understood this and thinks it's all about coding really does need to worry about ChatGPT</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.tsx ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1611363075889700864">January 6, 2023</a></figcaption>
+</figure>
 
 ## What to expect from 2026?
 
@@ -82,17 +81,12 @@ The role of being the interface between design, product, business and technology
 
 Less and less about "painting buttons" or "implementing that layout", more and more about helping decide what makes sense for the user, what fits the scope and schedule, what has real impact on the business and how to translate all of that into viable, sustainable technical solutions
 
-When you're not coding, but you are
-
-- Reviewing code
-- Improving processes
-- Helping someone on the team
-
-Or even organizing ideas and thinking about the best way to solve problems, you're working on essential things
-
-Programming isn't limited to the amount of code written
-
-felipe.tsx ⚡ (@felipefialho_) [October 20, 2023](https://twitter.com/felipefialho_/status/1715370786830131708?ref_src=twsrc%5Etfw)
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1715370786830131708">
+    <p>When you're not coding, but you are<br><br>- Reviewing code<br>- Improving processes<br>- Helping someone on the team<br><br>Or even organizing ideas and thinking about the best way to solve problems, you're working on essential things<br><br>Programming isn't limited to the amount of code written</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.tsx ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1715370786830131708">October 20, 2023</a></figcaption>
+</figure>
 
 The scope of front-end keeps expanding, with devs increasingly acting as "bridges" between different areas, like design, product, marketing, sales, and not just as "the ones who write the code"
 
@@ -123,13 +117,12 @@ The effort moves from "how do I write this in CSS/JSX from scratch" to "which co
 
 The ability to abstract problems, explain technical decisions with context, negotiate scope realistically and communicate solutions (to humans and to AIs) weighs more and more in a career
 
-Programming has a lot of connection with the field of philosophy
-
-When we write algorithms we're doing a philosophical exercise of reflecting on a problem to arrive at a solution translated into code, it's a logical abstraction of your own reasoning
-
-Math is applied philosophy
-
-felipe.tsx ⚡ (@felipefialho_) [April 15, 2024](https://twitter.com/felipefialho_/status/1779873487248663026?ref_src=twsrc%5Etfw)
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1779873487248663026">
+    <p>Programming has a lot of connection with the field of philosophy<br><br>When we write algorithms we're doing a philosophical exercise of reflecting on a problem to arrive at a solution translated into code, it's a logical abstraction of your own reasoning<br><br>Math is applied philosophy</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.tsx ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1779873487248663026">April 15, 2024</a></figcaption>
+</figure>
 
 In a scenario where AI fundamentally depends on good instructions, communicating well became a hard skill, not just an optional "soft skill" or "HR stuff"
 
@@ -192,12 +185,11 @@ All of these changes are already happening gradually and the trend is for them t
 
 And remember that in the tech market, if you don't keep studying, updating yourself and adapting to this new reality, you don't just stagnate
 
-The thing is, there's no stagnation in a tech career
-
-If you don't keep studying, updating yourself and improving in several aspects, you don't just stagnate
-
-You get worse
-
-felipe.tsx ⚡ (@felipefialho_) [February 17, 2022](https://twitter.com/felipefialho_/status/1494293157785346054?ref_src=twsrc%5Etfw)
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1494293157785346054">
+    <p>The thing is, there's no stagnation in a tech career<br><br>If you don't keep studying, updating yourself and improving in several aspects, you don't just stagnate<br><br>You get worse</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.tsx ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1494293157785346054">February 17, 2022</a></figcaption>
+</figure>
 
 Let's go, 2026! 🚀
