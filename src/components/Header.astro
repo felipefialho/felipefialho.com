@@ -219,7 +219,7 @@ const readStrings = `--mins: ${readingMinutes}; --s-done: '${ui.readDone}'; --s-
     font-size: var(--step--1);
   }
 
-  /* Posts get the reading header from the board: just the path and the progress, pinned in view */
+  /* Posts get the reading header from the board: the path, the progress and the theme toggle, pinned in view */
   .is-reading {
     /* Phones keep the two-row header in the flow: pinned it would cover a third of the screen */
     @media (width >= 48rem) {
@@ -230,7 +230,7 @@ const readStrings = `--mins: ${readingMinutes}; --s-done: '${ui.readDone}'; --s-
 
       & .avatar,
       & .site-nav,
-      & .tools {
+      & .tools > :not(.theme) {
         display: none;
       }
     }

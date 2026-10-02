@@ -11,7 +11,12 @@ test.describe('Post', () => {
 
       await expect(postPage.header.getByRole('link', { name: `~/felipefialho/blog/${slug}` })).toHaveAttribute('href', '/');
       await expect(postPage.header.getByRole('navigation', { name: 'Principal' })).toBeHidden();
-      await expect(postPage.header.getByRole('button', { name: 'Ativar modo claro' })).toBeHidden();
+      await expect(postPage.header.getByRole('button', { name: 'Buscar' })).toBeHidden();
+    });
+
+    test('keeps the theme toggle', async ({ page, postPage }) => {
+      await postPage.header.getByRole('button', { name: 'Ativar modo claro' }).click();
+      await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
     });
 
     test('updates the reading progress while scrolling', async ({ postPage }) => {
