@@ -153,11 +153,11 @@ O `srcdoc` tem prioridade sobre o `src`, então nada é baixado até o clique na
 
 ## Os números
 
-Medindo no preview local, ainda sem a compressão que o Netlify aplica:
+Medindo com o Lighthouse, no preview local e no site em produção. A nota oscila um ou dois pontos de uma execução pra outra:
 
 - **Home, Labs e posts:** 100 em performance, acessibilidade, boas práticas e SEO, no mobile e no desktop
-- **Em todas as páginas:** CLS 0 e Total Blocking Time 0 ms
-- **LCP:** entre 1,4 s e 1,7 s no mobile e menos de meio segundo no desktop
+- **Em todas as páginas:** CLS 0 e Total Blocking Time de 0 a poucas dezenas de milissegundos
+- **LCP:** entre 1,2 s e 1,8 s no mobile e menos de meio segundo no desktop
 
 E o que fez diferença pra chegar lá:
 

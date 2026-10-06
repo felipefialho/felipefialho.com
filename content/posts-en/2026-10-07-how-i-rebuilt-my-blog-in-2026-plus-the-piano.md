@@ -150,11 +150,11 @@ Now they all become an `<iframe>` with `srcdoc`: a minimal HTML with a play butt
 
 ## The numbers
 
-Measured on the local preview, still without the compression Netlify applies:
+Measured with Lighthouse, on the local preview and on the live site. The score moves a point or two between runs:
 
 - **Home, Labs and posts:** 100 in performance, accessibility, best practices and SEO, on mobile and desktop
-- **On every page:** CLS 0 and Total Blocking Time 0 ms
-- **LCP:** between 1.4 s and 1.7 s on mobile and under half a second on desktop
+- **On every page:** CLS 0 and Total Blocking Time from 0 to a few tens of milliseconds
+- **LCP:** between 1.2 s and 1.8 s on mobile and under half a second on desktop
 
 And what made the difference to get there:
 
