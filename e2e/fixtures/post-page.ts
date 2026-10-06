@@ -42,7 +42,19 @@ export class PostPage {
     await this.page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight));
   }
 
+  /** Records what the page writes to the clipboard: the real clipboard hangs in headless Linux runs. */
+  recordClipboard() {
+    return this.page.evaluate(() => {
+      const copied: string[] = [];
+      Object.assign(window, { copiedTexts: copied });
+      Object.defineProperty(navigator, 'clipboard', {
+        configurable: true,
+        value: { writeText: async (text: string) => void copied.push(text) },
+      });
+    });
+  }
+
   clipboardText() {
-    return this.page.evaluate(() => navigator.clipboard.readText());
+    return this.page.evaluate(() => (window as unknown as { copiedTexts: string[] }).copiedTexts.at(-1) ?? '');
   }
 }

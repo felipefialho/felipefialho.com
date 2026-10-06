@@ -65,8 +65,8 @@ test.describe('Post', () => {
     });
   });
 
-  test('copies a code block and shows the copied state', async ({ context, postPage }) => {
-    await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+  test('copies a code block and shows the copied state', async ({ postPage }) => {
+    await postPage.recordClipboard();
     const copy = postPage.copyButton('copiar').first();
     await copy.scrollIntoViewIfNeeded();
 
