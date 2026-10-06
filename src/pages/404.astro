@@ -3,6 +3,7 @@ import Cartman from '../components/Cartman.astro';
 import Base from '../layouts/Base.astro';
 import { t } from '../lib/i18n';
 import { getPosts, postPath } from '../lib/posts';
+import { serializeJsonLd } from '../lib/seo';
 
 const ui = t('pt').notFound;
 const en = t('en').notFound;
@@ -15,7 +16,8 @@ const catalog = (
     ),
   )
 ).flat();
-const json = (value: unknown) => JSON.stringify(value).replaceAll('<', '\\u003c');
+// The year the site was built: the caption's upper bound
+const builtYear = new Date().getFullYear();
 ---
 
 <Base lang="pt" title={ui.title} description={ui.description} noindex>
@@ -45,7 +47,7 @@ const json = (value: unknown) => JSON.stringify(value).replaceAll('<', '\\u003c'
     <div class="right">
       <div class="bubble-slot"><p class="bubble" data-bubble data-testid="cartman-bubble" hidden aria-hidden="true"></p></div>
       <Cartman data-cartman data-testid="cartman" />
-      <span class="caption">eric.css · 2012 {">"} 2026</span>
+      <span class="caption">eric.css · 2012 &gt; {builtYear}</span>
     </div>
   </div>
   <p class="foot">
@@ -53,7 +55,7 @@ const json = (value: unknown) => JSON.stringify(value).replaceAll('<', '\\u003c'
     <a href="/" data-i18n="back" data-home>{ui.back}</a>
   </p>
 
-  <script type="application/json" id="not-found-data" set:html={json({ pt: ui, en, posts: catalog })} />
+  <script type="application/json" id="not-found-data" set:html={serializeJsonLd({ pt: ui, en, posts: catalog })} />
   <script>
     import { suggestPost, type PostSuggestion } from '../lib/suggest-post';
 
