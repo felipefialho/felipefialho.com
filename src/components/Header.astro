@@ -108,7 +108,7 @@ const readStrings = `--mins: ${readingMinutes}; --s-done: '${ui.readDone}'; --s-
           ))
         }
       </ul>
-      <a class="lang" href={langHref} hreflang={HTML_LANG[otherLang]} lang={HTML_LANG[otherLang]} aria-label={ui.switchLang}>
+      <a class="lang" href={langHref} hreflang={HTML_LANG[otherLang]} lang={HTML_LANG[otherLang]} aria-label={`${otherLang}: ${ui.switchLang}`}>
         {otherLang}
       </a>
       <button class="theme" type="button" data-theme-toggle data-label-light={ui.themeToLight} data-label-dark={ui.themeToDark} aria-label={ui.themeToLight}>

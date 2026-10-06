@@ -123,8 +123,12 @@ const { Content } = home ? await render(home) : { Content: null };
       margin: 0;
     }
 
-    & a {
+    & a,
+    & :global(a) {
       white-space: nowrap;
+      text-decoration: underline;
+      text-decoration-thickness: 0.07em;
+      text-underline-offset: 0.2em;
     }
   }
 
