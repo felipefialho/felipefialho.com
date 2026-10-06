@@ -62,6 +62,6 @@ Mona Sans is the only typeface, subset to Latin with its variable axes pinned. T
 
 ## License
 
-Source code: GNU General Public License v3.0, see [LICENSE](./LICENSE).
+Source code: MIT, see [LICENSE](./LICENSE).
 
 Posts, pages and their images in [`content/`](./content): © [Felipe Fialho](https://www.linkedin.com/in/felipefialho/), all rights reserved, see [content/LICENSE.md](./content/LICENSE.md).
