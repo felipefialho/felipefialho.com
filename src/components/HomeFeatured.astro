@@ -1,0 +1,204 @@
+---
+import { render } from 'astro:content';
+import { formatDay, isoDate, t, type Lang } from '../lib/i18n';
+import { postPath, type Post } from '../lib/posts';
+
+interface Props {
+  lang: Lang;
+  post: Post;
+}
+
+const { lang, post } = Astro.props;
+const ui = t(lang);
+const { data } = post;
+const { headings, remarkPluginFrontmatter } = await render(post);
+const minutes = Number(remarkPluginFrontmatter.minutesRead ?? 1);
+const outline = headings.filter(({ depth }) => depth === 2).slice(0, 7);
+
+// Attribute names read as accent and pseudo-elements as warm, like the board's syntax colors
+const TOKEN = /(\s[\w-]+(?==")|::?[a-z][\w-]*)/g;
+const highlight = (code: string) =>
+  code.split(TOKEN).map((text, index) => ({ text, kind: index % 2 === 0 ? undefined : text.startsWith(':') ? 'warm' : 'accent' }));
+---
+
+<section class="featured" aria-label={ui.newPost}>
+  <a class="card" href={postPath(lang, post.id)}>
+    <div class="info">
+      <p class="eyebrow mono">
+        {ui.newPost} · <time datetime={isoDate(data.date)}>{formatDay(data.date, lang)}</time> · {minutes} {ui.minShort}
+      </p>
+      <h2 style={`view-transition-name: post-${post.id}`}>{data.title}</h2>
+      <p class="description">{data.description}</p>
+      <ul class="tags mono">
+        {data.tags.slice(0, 3).map((tag) => <li>#{tag}</li>)}
+      </ul>
+    </div>
+    <div class="code mono">
+      {
+        data.teaser ? (
+          <>
+            <p class="labels">
+              <span>{data.teaser.before.label}</span>
+              <span>{data.teaser.after.label}</span>
+            </p>
+            <div class="compare" aria-hidden="true">
+              <pre class="before">{data.teaser.before.code.trimEnd()}</pre>
+              <pre class="after">{highlight(data.teaser.after.code.trimEnd()).map(({ text, kind }) => (kind ? <span class={kind}>{text}</span> : text))}</pre>
+            </div>
+          </>
+        ) : (
+          <ul class="outline">
+            {outline.map(({ text }) => <li>## {text}</li>)}
+          </ul>
+        )
+      }
+      <span class="cta">{ui.readPost}</span>
+    </div>
+  </a>
+</section>
+
+<style>
+  .featured {
+    padding-block-end: clamp(2.5rem, 6vw, 6rem);
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    color: var(--ink);
+
+    &:hover {
+      color: var(--ink);
+    }
+
+    @media (width >= 56rem) {
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: clamp(1.5rem, 3.5vw, 3rem);
+    background: var(--surface);
+  }
+
+  .eyebrow {
+    margin: 0;
+    color: var(--accent);
+    font-size: 0.8125rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: clamp(1.75rem, 1.1rem + 2.3vw, 3rem);
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+  }
+
+  .description {
+    margin: 0;
+    color: var(--soft);
+    font-size: clamp(1.0625rem, 1rem + 0.2vw, 1.1875rem);
+    line-height: 1.55;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin: 0;
+    padding: 0;
+    color: var(--muted);
+    font-size: 0.8125rem;
+    list-style: none;
+
+    & li {
+      padding: 0.25rem 0.625rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+    }
+  }
+
+  .code {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+    border-block-start: 1px solid var(--line);
+    background: var(--bg);
+    font-size: var(--step--1);
+    line-height: 1.7;
+
+    @media (width >= 56rem) {
+      border-block-start: 0;
+      border-inline-start: 1px solid var(--line);
+    }
+  }
+
+  .labels {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    color: var(--muted);
+    font-size: var(--step--2);
+  }
+
+  .compare {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+
+    & pre {
+      margin: 0;
+      overflow: hidden;
+      font: inherit;
+      white-space: pre;
+    }
+  }
+
+  .before {
+    color: var(--faint);
+    text-decoration: line-through;
+  }
+
+  .after {
+    color: var(--ink);
+
+    & .accent {
+      color: var(--accent);
+    }
+
+    & .warm {
+      color: var(--warm);
+    }
+  }
+
+  .outline {
+    display: grid;
+    gap: 0.25rem;
+    margin: 0;
+    padding: 0;
+    color: var(--soft);
+    list-style: none;
+
+    & li {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .cta {
+    margin-block-start: auto;
+    color: var(--accent);
+  }
+</style>

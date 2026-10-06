@@ -1,0 +1,144 @@
+---
+import { Font } from 'astro:assets';
+import AnalyticsInit from '../components/AnalyticsInit.astro';
+import ConsentBanner from '../components/ConsentBanner.astro';
+import ConsentHead from '../components/ConsentHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import SearchDialog from '../components/SearchDialog.astro';
+import { HTML_LANG, OG_LOCALE, SITE_NAME, localePath, t, type Lang } from '../lib/i18n';
+import { PROFILES, ROBOTS_INDEX, ROBOTS_NOINDEX, SITE_URL, serializeJsonLd, type JsonLd } from '../lib/seo';
+import '../styles/tokens.css';
+import '../styles/base.css';
+import '../styles/layout.css';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+  /** Site path of the social card, e.g. /og/slug.jpg */
+  image?: string;
+  type?: 'website' | 'article';
+  /** Site path of the same page in the other language; omit when there is none */
+  alternate?: string;
+  publishedTime?: Date;
+  modifiedTime?: Date;
+  tags?: string[];
+  noindex?: boolean;
+  /** Continues the header wordmark path, e.g. "blog/my-post" gives ~/felipefialho/blog/my-post */
+  pathSuffix?: string;
+  /** Reading time in minutes of a post: turns on the reading progress bar and header text */
+  readingMinutes?: number;
+  jsonLd?: JsonLd | Record<string, unknown>;
+}
+
+const {
+  lang,
+  title,
+  description,
+  image = localePath(lang, '/og/default.jpg'),
+  type = 'website',
+  alternate,
+  publishedTime,
+  modifiedTime,
+  tags = [],
+  noindex = false,
+  pathSuffix,
+  readingMinutes,
+  jsonLd,
+} = Astro.props;
+
+const site = Astro.site!;
+const canonical = new URL(Astro.url.pathname, site).href;
+const imageUrl = new URL(image, site).href;
+const otherLang: Lang = lang === 'pt' ? 'en' : 'pt';
+// Titles that already lead with the name (the home) skip the suffix
+const fullTitle = title.startsWith(SITE_NAME) ? title : `${title} | ${SITE_NAME}`;
+const alternateUrl = alternate ? new URL(alternate, site).href : undefined;
+// x-default points at the PT page, whichever language this one is
+const defaultUrl = lang === 'pt' ? canonical : alternateUrl;
+const feed = localePath(lang, '/feed.xml');
+const speculationRules = { prefetch: [{ where: { href_matches: '/*' }, eagerness: 'moderate' }] };
+---
+
+<!doctype html>
+<html lang={HTML_LANG[lang]}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <ConsentHead />
+    <meta name="theme-color" content="#0f0f0f" />
+    <script is:inline>
+      try {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'light') {
+          document.documentElement.dataset.theme = theme;
+          document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#fafafa');
+        }
+      } catch {
+        // Storage blocked: stay on the dark default
+      }
+    </script>
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content={noindex ? ROBOTS_NOINDEX : ROBOTS_INDEX} />
+    {!noindex && <link rel="canonical" href={canonical} />}
+    <meta name="author" content={SITE_NAME} />
+    {
+      alternateUrl && (
+        <>
+          <link rel="alternate" hreflang={HTML_LANG[lang]} href={canonical} />
+          <link rel="alternate" hreflang={HTML_LANG[otherLang]} href={alternateUrl} />
+          <link rel="alternate" hreflang="x-default" href={defaultUrl} />
+        </>
+      )
+    }
+    <link rel="alternate" type="application/rss+xml" title={t(lang).feedTitle} href={feed} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    {PROFILES.map((profile) => <link rel="me" href={profile} />)}
+
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:locale" content={OG_LOCALE[lang]} />
+    {alternateUrl && <meta property="og:locale:alternate" content={OG_LOCALE[otherLang]} />}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={title} />
+    {publishedTime && <meta property="article:published_time" content={publishedTime.toISOString()} />}
+    {modifiedTime && <meta property="article:modified_time" content={modifiedTime.toISOString()} />}
+    {type === 'article' && <meta property="article:author" content={SITE_URL} />}
+    {tags.map((tag) => <meta property="article:tag" content={tag} />)}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@felipefialho_" />
+    <meta name="twitter:creator" content="@felipefialho_" />
+    {jsonLd && <script type="application/ld+json" set:html={serializeJsonLd(jsonLd)} />}
+
+    <Font cssVariable="--font-sans" preload />
+    <Font cssVariable="--font-mono" preload />
+    <script type="speculationrules" is:inline set:html={JSON.stringify(speculationRules)} />
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">{t(lang).skip}</a>
+    <Header lang={lang} alternate={alternate} pathSuffix={pathSuffix} readingMinutes={readingMinutes} />
+    <main id="content">
+      <slot name="hero" />
+      <div class="page main">
+        <slot />
+      </div>
+    </main>
+    <Footer lang={lang} />
+    <SearchDialog lang={lang} />
+    <ConsentBanner lang={lang} />
+    <AnalyticsInit />
+    <slot name="end" />
+  </body>
+</html>

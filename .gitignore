@@ -1,10 +1,9 @@
-.DS_Store
-_site
+dist
 node_modules
-_drafts
-.cache
-.vscode
-public
+.astro
+test-results
+playwright-report
+e2e-reports
+.DS_Store
 .env
-.env.development
-.env.production
+.env.*

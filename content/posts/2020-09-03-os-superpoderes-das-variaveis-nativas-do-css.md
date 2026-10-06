@@ -11,7 +11,7 @@ tags: ['css', 'variaveis', 'javascript']
 
 Esse texto é uma versão em texto do vídeo: "Variáveis CSS - Os superpoderes das
 variáveis nativas do CSS"
-[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhovlog).
+[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhodev).
 
 Vale a pena assistir! 😊
 
@@ -321,7 +321,10 @@ Recomendo que assistam no
 [video a parte que demonstro a manipulação com JavaScript](https://youtu.be/A_3Tm8iOxtA?t=527)
 e também podem testar no exemplo que deixei no Codepen:
 
-https://codepen.io/felipefialho/pen/ExKaOQr
+<figure class="embed embed-codepen">
+  <iframe src="https://codepen.io/felipefialho/embed/ExKaOQr?default-tab=result" title="CSS Variables" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/ExKaOQr">CSS Variables</a> por Felipe Fialho no CodePen</figcaption>
+</figure>
 
 ### São agnósticas sobre a stack de CSS utilizada
 

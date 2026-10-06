@@ -108,13 +108,22 @@ O principal objetivo deste experimento é fazer algumas das coisas que você apr
 
 Usando CodePen, escreva um JavaScript básico que usa manipulação do DOM e requer alguma lógica de programação para funcionar. O foco deste experimento é pegar algumas das coisas que você aprendeu no [Do Zero a Herói Front-End](/blog/do-zero-a-heroi-do-front-end-parte-1) e combinar com JavaScript. Aqui estão alguns exemplos para referência que podem servir de inspiração.
 
-http://codepen.io/mecarter/pen/RNomVo
+<figure class="embed embed-codepen">
+  <iframe src="https://codepen.io/mecarter/embed/RNomVo?default-tab=result" title="Mood Color Generator" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/mecarter/pen/RNomVo">Mood Color Generator</a> por Mark E. Carter no CodePen</figcaption>
+</figure>
 
-http://codepen.io/nodws/pen/heILd
+<figure class="embed embed-codepen">
+  <iframe src="https://codepen.io/nodws/embed/heILd?default-tab=result" title="Apple Liquid Glass Calculator" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/nodws/pen/heILd">Apple Liquid Glass Calculator</a> por Nodws no CodePen</figcaption>
+</figure>
 
-http://codepen.io/jasonchan/pen/wMaEwN
+<figure class="embed embed-codepen">
+  <iframe src="https://codepen.io/jasonchan/embed/wMaEwN?default-tab=result" title="Javascript Quiz Engine" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/jasonchan/pen/wMaEwN">Javascript Quiz Engine</a> por jason no CodePen</figcaption>
+</figure>
 
-http://codepen.io/jeffibacache/pen/bzBsp
+<p class="embed embed-link">O pen original não está mais disponível no CodePen.</p>
 
 ### Mais JavaScript
 

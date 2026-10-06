@@ -17,7 +17,12 @@ anos quando tive o primeiro contato com esses blocos, o que mais me impressionou
 foi a possibilidade de fazer várias combinações com resultados completamente
 diferentes, mas sem modificar as peças originais.
 
-https://twitter.com/felipefialho_/status/1260986959171854337
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1260986959171854337">
+    <p>A primeira experiência que tive com Design System e Componentes foi brincando com LEGO</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1260986959171854337">May 14, 2020</a></figcaption>
+</figure>
 
 ## Antes: JS+ Tech Talks
 
@@ -129,7 +134,12 @@ crescer e seria complicado voltar atrás de novo.
 
 ## O Plano B: Múltiplos Design Systems
 
-https://twitter.com/felipefialho_/status/1242798337348247553
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1242798337348247553">
+    <p>Tenho trabalhado no Design System da Juntos, usando de stack:<br><br>- Monorepo<br>- Storybook<br>- React/Vue<br>- TypeScript<br>- CSS Modules<br><br>A ideia é compartilhar estilos e deixar configurável com Variáveis CSS, facilitando customização, criação de temas, etc.<br><br>Tá sendo uma experiência foda 😍</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1242798337348247553">March 25, 2020</a></figcaption>
+</figure>
 
 Então o jeito foi partir para o plano B, ou seja, diferentes versões para
 diferentes frameworks.

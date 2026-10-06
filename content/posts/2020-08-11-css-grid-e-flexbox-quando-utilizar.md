@@ -10,7 +10,7 @@ tags: ['flexbox', 'css', 'css grid']
 
 Esse texto é uma versão em texto do vídeo: "CSS GRID e Flexbox - Quando
 utilizar?"
-[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhovlog).
+[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhodev).
 
 Vale a pena assistir! 😊
 
@@ -28,7 +28,12 @@ do Boostrap.
 
 Mas nenhuma delas é uma solução tão simples e completa como CSS Grid.
 
-https://twitter.com/felipefialho_/status/1270449211520270336
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1270449211520270336">
+    <p>Sobre grids:<br><br>CSS Grid + Flexbox resolvem basicamente todas as dores que tínhamos com relação a grids na Web.<br><br>Faz bastante tempo que não uso outras soluções.<br><br>O melhor de tudo? <br>Tem bom suporte até mesmo no IE11. <a href="https://t.co/AVZ59QWQCJ">https://t.co/AVZ59QWQCJ</a></p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1270449211520270336">June 9, 2020</a></figcaption>
+</figure>
 
 ## CSS Grid ou Flexbox?
 
@@ -54,7 +59,12 @@ Se a gente imaginar uma casa:
 - **Flexbox**: Seria responsável pela disposição dos móveis dentro desses
   cômodos
 
-https://twitter.com/felipefialho_/status/1281207633140224002
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1281207633140224002">
+    <p>Dica sobre Flexbox e CSS Grid:<br><br>◻️ Flexbox é unidimensional, ou seja, linha OU coluna. Perfeito pra COMPONENTES.<br><br>🔳 CSS Grid é multidimensional, ou seja, linhas E colunas. Perfeito pra LAYOUTS.<br><br>Então podemos criar componentes com Flexbox e usar dentro de layouts em CSS Grid 😁 <a href="https://t.co/0WKHchJZUX">pic.twitter.com/0WKHchJZUX</a></p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1281207633140224002">July 9, 2020</a></figcaption>
+</figure>
 
 Isso porque, **Flexbox** é unidimensional, ou seja, linha OU coluna, então é
 perfeito para o desenvolvimento interno de COMPONENTES.
@@ -213,7 +223,10 @@ utilizada com **CSS Grid**.
 
 Vale ver todos esses exemplos funcionando na prática 😜
 
-https://codepen.io/felipefialho/pen/abdKyKP?editors=0100
+<figure class="embed embed-codepen">
+  <iframe src="https://codepen.io/felipefialho/embed/abdKyKP?default-tab=result" title="CSS Grid and Flexbox" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/abdKyKP">CSS Grid and Flexbox</a> por Felipe Fialho no CodePen</figcaption>
+</figure>
 
 Abrindo esse exemplo e redimensionando a tela, é possível ver que os grids se
 adaptam a resolução, tudo isso sem nenhuma linha de media queries 😁

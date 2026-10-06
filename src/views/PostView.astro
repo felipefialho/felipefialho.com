@@ -1,0 +1,286 @@
+---
+import { Image } from 'astro:assets';
+import { render } from 'astro:content';
+import avatar from '../assets/images/felipe-fialho.jpg';
+import AdSlot from '../components/AdSlot.astro';
+import AdsLoader from '../components/AdsLoader.astro';
+import CodeCopy from '../components/CodeCopy.astro';
+import Base from '../layouts/Base.astro';
+import PostFooter from '../components/PostFooter.astro';
+import Toc from '../components/Toc.astro';
+import { HTML_LANG, SITE_NAME, formatDay, isoDate, t, type Lang } from '../lib/i18n';
+import { MIN_TAG_POSTS, getTagCounts, ogImagePath, postPath, tagPath, type Post } from '../lib/posts';
+import '../styles/prose.css';
+
+// A table of contents only pays off with enough sections
+const MIN_TOC_SECTIONS = 3;
+
+interface Props {
+  lang: Lang;
+  post: Post;
+  posts: Post[];
+  /** Path of the same post in the other language */
+  alternate?: string;
+}
+
+const { lang, post, posts, alternate } = Astro.props;
+const ui = t(lang);
+const { Content, headings, remarkPluginFrontmatter } = await render(post);
+const minutes = Number(remarkPluginFrontmatter.minutesRead ?? 1);
+const tagCounts = getTagCounts(posts);
+const toc = headings.filter(({ depth }) => depth === 2 || depth === 3);
+const url = new URL(postPath(lang, post.id), Astro.site).href;
+const otherLang: Lang = lang === 'pt' ? 'en' : 'pt';
+const showToc = toc.filter(({ depth }) => depth === 2).length >= MIN_TOC_SECTIONS;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.data.title,
+  description: post.data.description,
+  datePublished: post.data.date.toISOString(),
+  dateModified: post.data.date.toISOString(),
+  inLanguage: HTML_LANG[lang],
+  url,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+  image: new URL(ogImagePath(lang, post.id), Astro.site).href,
+  keywords: post.data.tags.join(', '),
+  author: { '@type': 'Person', name: 'Felipe Fialho', url: new URL('/', Astro.site).href },
+};
+---
+
+<Base
+  lang={lang}
+  title={post.data.title}
+  description={post.data.description}
+  image={ogImagePath(lang, post.id)}
+  type="article"
+  alternate={alternate}
+  publishedTime={post.data.date}
+  tags={post.data.tags}
+  jsonLd={jsonLd}
+  pathSuffix={`blog/${post.id}`}
+  readingMinutes={minutes}
+>
+  <article class="post" data-pagefind-body data-pagefind-meta={`date:${isoDate(post.data.date)}`}>
+    <div class="post-grid">
+      <div class="post-main">
+        <header class="post-header">
+          <div class="meta">
+            {
+              post.data.tags.length > 0 && (
+                <ul class="tags" aria-label="Tags">
+                  {post.data.tags.map((tag) => (
+                    <li>
+                      {(tagCounts.get(tag) ?? 0) >= MIN_TAG_POSTS ? (
+                        <a href={tagPath(lang, tag)}>#{tag}</a>
+                      ) : (
+                        <span class="plain">#{tag}</span>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              )
+            }
+            <time datetime={isoDate(post.data.date)}>{formatDay(post.data.date, lang)}</time>
+            <span>{minutes} {ui.minShort}</span>
+          </div>
+          <h1 class="post-title" style={`view-transition-name: post-${post.id}`}>{post.data.title}</h1>
+          <p class="lede">{post.data.description}</p>
+          <div class="author">
+            <Image class="avatar" src={avatar} alt="" width={48} height={48} densities={[1, 2]} fit="cover" />
+            <p>
+              <span class="name">{SITE_NAME}</span>
+              <span class="role">{ui.authorRole}</span>
+            </p>
+            {
+              alternate && (
+                <a class="switch" href={alternate} hreflang={HTML_LANG[otherLang]} lang={HTML_LANG[otherLang]}>
+                  {ui.otherLang}
+                </a>
+              )
+            }
+          </div>
+        </header>
+
+        {showToc && <Toc headings={toc} lang={lang} variant="inline" />}
+
+        <div class="prose">
+          <Content />
+        </div>
+
+        <AdSlot kind="end" lang={lang} />
+        <PostFooter lang={lang} post={post} posts={posts} part="extras" />
+      </div>
+
+      {
+        showToc && (
+          <div class="rail">
+            <Toc headings={toc} lang={lang} variant="sidebar" />
+          </div>
+        )
+      }
+    </div>
+  </article>
+
+  <PostFooter lang={lang} post={post} posts={posts} part="adjacent" />
+  <AdsLoader />
+  <CodeCopy />
+</Base>
+
+<style>
+  .post-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+
+    @media (width >= 60rem) {
+      grid-template-columns: 13.5rem minmax(0, 42rem);
+      column-gap: 3rem;
+      justify-content: center;
+      margin-block-start: var(--space-3);
+    }
+
+    /* Toc and article centered as a pair; 42rem keeps lines around 70 characters */
+    @media (width >= 90rem) {
+      grid-template-columns: 15rem minmax(0, 42rem);
+      column-gap: 4rem;
+    }
+  }
+
+  .prose {
+    max-inline-size: none;
+  }
+
+  .post-main {
+    grid-column: 1;
+    min-inline-size: 0;
+
+    @media (width >= 60rem) {
+      grid-column: 2;
+      grid-row: 1;
+    }
+  }
+
+  .rail {
+    display: none;
+
+    @media (width >= 60rem) {
+      display: block;
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+
+  .post-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    margin-block-end: 1.75rem;
+
+    & > * {
+      margin: 0;
+    }
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0 1rem;
+    color: var(--muted);
+    font-family: var(--font-code);
+    font-size: 0.8125rem;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 0.75ch;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    & a,
+    & .plain {
+      display: inline-flex;
+      align-items: center;
+
+      @media (pointer: coarse) {
+        min-block-size: 2.75rem;
+      }
+    }
+
+    & a {
+      font-weight: 500;
+    }
+  }
+
+  .post-title {
+    color: var(--ink);
+    font-size: var(--step-5);
+    font-weight: 600;
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+    overflow-wrap: break-word;
+  }
+
+  .lede {
+    color: var(--soft);
+    font-size: clamp(1.125rem, 1rem + 0.417vw, 1.375rem);
+    line-height: 1.5;
+  }
+
+  .author {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    padding-block: 1.25rem;
+    border-block: 1px solid var(--line);
+
+    & p {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      min-inline-size: 0;
+    }
+
+    & .name {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    & .role {
+      color: var(--muted);
+      font-family: var(--font-code);
+      font-size: var(--step--2);
+    }
+
+    & .switch {
+      margin-inline-start: auto;
+      font-family: var(--font-code);
+      font-size: 0.8125rem;
+      text-align: end;
+
+      @media (pointer: coarse) {
+        display: inline-flex;
+        align-items: center;
+        min-block-size: 2.75rem;
+      }
+    }
+  }
+
+  .avatar {
+    flex: none;
+    inline-size: 3rem;
+    block-size: 3rem;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    filter: grayscale(1) contrast(1.1);
+    object-fit: cover;
+    object-position: 40% 25%;
+  }
+
+  .post-main > :global(.toc-inline) {
+    margin-block-end: 1.75rem;
+  }
+</style>

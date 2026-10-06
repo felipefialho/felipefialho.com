@@ -36,7 +36,12 @@ Ou seja, era tenso!
 
 Para adicionar uma simples borda arredondada ou sombra nos elementos, precisávamos adicionar imagens com transparência, e em `.gif`, já que o IE6 não aceitava `.png`.
 
-https://twitter.com/felipefialho_/status/1176453466904023041
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1176453466904023041">
+    <p>Já temos uma geração inteira de devs que nunca precisaram usar coisas como:<br><br>- imagens pra borda arredondada<br>- DXImageTransformMicrosoft<br>- filter: alpha(opacity=50)<br>- clear: both<br>- getElementById<br><br>Tempo ta voando 😱</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1176453466904023041">September 24, 2019</a></figcaption>
+</figure>
 
 ### Mas as coisas melhoraram
 
@@ -61,7 +66,10 @@ Era uma fase de aprender e entender como trabalhar com as atualizações que est
 
 - Em 2012 criei esse Cartman:
 
-https://codepen.io/felipefialho/pen/qzDCJ
+<figure class="embed embed-codepen">
+  <iframe src="https://codepen.io/felipefialho/embed/qzDCJ?default-tab=result" title="Eric Cartman in Pure CSS (2012)" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/qzDCJ">Eric Cartman in Pure CSS (2012)</a> por Felipe Fialho no CodePen</figcaption>
+</figure>
 
 - Um tempinho depois, em meados de 2013, desenhei esse [piano com gradientes](http://piano.felipefialho.com).
 
@@ -89,7 +97,12 @@ Desde então até variáveis nativas foram adicionadas, no chamado CSS Módulo 4
 
 E olhando para o futuro, coisas como nesting nativo podem surgir em breve,  removendo assim parte da necessidade do uso de pré-processadores:
 
-https://twitter.com/felipefialho_/status/1104854866395099136
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1104854866395099136">
+    <p>A era dos pré-processadores CSS está oficialmente chegando ao fim. <a href="https://t.co/4k1E40x824">https://t.co/4k1E40x824</a></p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1104854866395099136">March 10, 2019</a></figcaption>
+</figure>
 
 ## Especificidade e colisão de estilos
 
@@ -113,7 +126,12 @@ Essa bagunça toda, também tende a aumentar o uso de `!important`. E quando usa
 
 Essa bagunça toda, gera códigos como esse:
 
-https://twitter.com/felipefialho_/status/1103700905575309313
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1103700905575309313">
+    <p>Que tal analisar esse código CSS, digamos... complicado, e apontar possíveis pontos de melhoria?<br><br>Vem comigo nessa thread 😊<a href="https://t.co/kwsXqXVPhZ">https://t.co/kwsXqXVPhZ</a> <a href="https://t.co/gsdM3GRG7c">pic.twitter.com/gsdM3GRG7c</a></p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1103700905575309313">March 7, 2019</a></figcaption>
+</figure>
 
 E o CSS sozinho, não possui mecanismos para evitar que isso aconteça.
 

@@ -1,0 +1,139 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+type Props = Omit<HTMLAttributes<'div'>, 'aria-hidden'>;
+
+const { class: className, ...rest } = Astro.props;
+---
+
+<!-- Eric Cartman in pure CSS (2012). Add the `is-walking` class to send him home. -->
+<div class:list={['cartman', className]} aria-hidden="true" {...rest}>
+  <i class="body"></i>
+  <i class="head"></i>
+  <i class="hat"></i>
+  <i class="band"></i>
+  <i class="pom"></i>
+  <i class="eye left"><i></i></i>
+  <i class="eye right"><i></i></i>
+  <i class="mouth"></i>
+</div>
+
+<style>
+  .cartman {
+    position: relative;
+    inline-size: 180px;
+    block-size: 200px;
+    transform-origin: 50% 100%;
+
+    & i {
+      position: absolute;
+      display: block;
+    }
+  }
+
+  .body {
+    inset: 128px auto auto 20px;
+    inline-size: 140px;
+    block-size: 72px;
+    border-radius: 70px 70px 16px 16px;
+    background: #d8322b;
+  }
+
+  .head {
+    inset: 34px auto auto 15px;
+    inline-size: 150px;
+    block-size: 118px;
+    border-radius: 50%;
+    background: #f5d3b0;
+  }
+
+  .hat {
+    inset: 20px auto auto 22px;
+    inline-size: 136px;
+    block-size: 66px;
+    border-radius: 68px 68px 8px 8px;
+    background: #20a6c4;
+  }
+
+  .band {
+    inset: 72px auto auto 18px;
+    inline-size: 144px;
+    block-size: 16px;
+    border-radius: 8px;
+    background: #e6af05;
+  }
+
+  .pom {
+    inset: 4px auto auto 77px;
+    inline-size: 26px;
+    block-size: 24px;
+    border-radius: 50%;
+    background: #e6af05;
+  }
+
+  .eye {
+    inset-block-start: 92px;
+    inline-size: 30px;
+    block-size: 32px;
+    box-sizing: border-box;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    background: #fff;
+
+    & i {
+      inset-block-start: 13px;
+      inline-size: 5px;
+      block-size: 5px;
+      border-radius: 50%;
+      background: #0f0f0f;
+    }
+  }
+
+  .left {
+    inset-inline-start: 58px;
+
+    & i {
+      inset-inline-start: 18px;
+    }
+  }
+
+  .right {
+    inset-inline-start: 92px;
+
+    & i {
+      inset-inline-start: 6px;
+    }
+  }
+
+  .mouth {
+    inset: 136px auto auto 76px;
+    inline-size: 28px;
+    block-size: 4px;
+    border-radius: 2px;
+    background: #0f0f0f;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .is-walking {
+      animation: walk 2.4s ease-in 1 forwards;
+    }
+  }
+
+  @keyframes walk {
+    0% {
+      transform: translateX(0);
+    }
+
+    20% {
+      transform: rotate(-3deg);
+    }
+
+    40% {
+      transform: rotate(3deg);
+    }
+
+    100% {
+      transform: translateX(420px);
+    }
+  }
+</style>

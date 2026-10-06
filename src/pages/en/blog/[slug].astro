@@ -1,0 +1,17 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { postStaticPaths, type Post } from '../../../lib/posts';
+import PostView from '../../../views/PostView.astro';
+
+export const getStaticPaths = (() => postStaticPaths('en')) satisfies GetStaticPaths;
+
+interface Props {
+  post: Post;
+  posts: Post[];
+  alternate?: string;
+}
+
+const { post, posts, alternate } = Astro.props;
+---
+
+<PostView lang="en" post={post} posts={posts} alternate={alternate} />

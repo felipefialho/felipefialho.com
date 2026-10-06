@@ -11,7 +11,7 @@ tags: ['carreira', 'misc']
 
 Esse texto é uma versão em texto do vídeo: <strong>Meu PRIMEIRO SITE feito em
 2007 - Finalmente encontrei!</strong>
-[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhovlog).
+[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhodev).
 
 Vale a pena assistir! 😊
 
@@ -26,7 +26,12 @@ código escrito hoje eventualmente vai acabar sendo o código legado de amanhã,
 mesmo que tenham sido escritos seguindo os melhores padrões e abordagens sempre
 vão ter coisas que podem ser melhoradas.
 
-https://twitter.com/felipefialho_/status/1365376268687077379
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1365376268687077379">
+    <p>A sina do desenvolvimento é abrir uns códigos que escrevemos um tempo atrás e pensar: <br><br>- Que merda eu fiz aqui</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1365376268687077379">February 26, 2021</a></figcaption>
+</figure>
 
 Isso porque além da velocidade que as coisas mudam e novidades aparecem, a
 tendência é que a gente também fique cada vez melhor dia após dia fazendo com
@@ -93,7 +98,12 @@ versionava arquivos no passado 😅) acabei encontrando.
 O nome do anexado era de credibilidade duvidosa, bem em linha com o que a gente
 fazia na época:
 
-https://twitter.com/felipefialho_/status/1382710304694411267
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1382710304694411267">
+    <p>Já temos uma geração inteira que não passou pela loucura do versionamento artesanal de arquivos através de intermináveis anexos no email e nomes com credibilidade duvidosa:<br><br>*_final.zip<br>*_final_final.zip<br>*_final_finalizada.zip<br><br>Sem saber ao certo qual era de fato a versão final.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1382710304694411267">April 15, 2021</a></figcaption>
+</figure>
 
 Foi muito legal e engraçado me imaginar como um adolescente de 16 anos
 trabalhando neste protótipo sem saber nada do futuro que me esperava e de como
@@ -113,7 +123,12 @@ profissão no no futuro.
 
 ### Meu primeiro emprego
 
-https://twitter.com/felipefialho_/status/1340670809283682305
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1340670809283682305">
+    <p>Refletindo sobre o que o &quot;JavaScript me deu&quot;, além de conquistas materiais tem uma coisa intangível:<br><br>- Perspectiva<br><br>Programação me possibilitou sair da periferia de SP (que nunca saiu de mim) pra ter experiências e conhecer lugares que nem ousaria sonhar.<br><br>JS mudou minha vida ❤️</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1340670809283682305">December 20, 2020</a></figcaption>
+</figure>
 
 Naquela altura seria completamente impossível imaginar como minha vida ou mesmo
 como o mundo estariam 15 anos depois.
@@ -128,7 +143,12 @@ em meados de 2009
 
 Começo de carreira nunca é fácil.
 
-https://twitter.com/felipefialho_/status/1029340640931467264
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1029340640931467264">
+    <p>Início de carreira nunca é fácil.<br><br>Entre 2007-2009, enviei milhares de emails desses e fui ignorado 99% das vezes.<br><br>É assim com quase todo mundo, se essa é sua situação atual, continue firme, com trabalho e um tiquinho de sorte sua carreira vai ser foda 👊 <a href="https://t.co/VqrQOlSqbu">pic.twitter.com/VqrQOlSqbu</a></p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1029340640931467264">August 14, 2018</a></figcaption>
+</figure>
 
 ## Tecnologia e suas evoluções
 
@@ -199,7 +219,12 @@ futuro.
 
 ## Evolução do Front-end
 
-https://twitter.com/felipefialho_/status/1318898570292989953
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1318898570292989953">
+    <p>Sempre que sugerem que Front-end é simples, lembro que precisamos dominar:<br><br>- HTML: Semântica, Tags, SEO, Acessibilidade <br><br>- CSS: Propriedades, Seletores, Layouts, Grids, etc<br><br>- JS: Manipulação de DOM, Fetch API, ES6+, Modularização, Hoisting, Scope, Prototype, etc<br><br>[...] thread</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1318898570292989953">October 21, 2020</a></figcaption>
+</figure>
 
 O desenvolvimento Front-end que na época ainda nem tinha nome mudou demais ao
 longo desses anos

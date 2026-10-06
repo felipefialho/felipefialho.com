@@ -1,0 +1,111 @@
+---
+import { localePath, t, type Lang } from '../lib/i18n';
+import { SOCIAL_PROFILES, type SocialId } from '../lib/social';
+import SocialIcon from './SocialIcon.astro';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const ui = t(lang);
+
+const ORDER: SocialId[] = ['github', 'linkedin', 'x', 'youtube', 'rss'];
+const profiles = [
+  ...SOCIAL_PROFILES.map(({ id, label, href }) => ({ id: id as SocialId, label, href, me: true })),
+  { id: 'rss' as const, label: 'RSS', href: localePath(lang, '/feed.xml'), me: false },
+].sort((a, b) => ORDER.indexOf(a.id) - ORDER.indexOf(b.id));
+---
+
+<footer class="site-footer">
+  <div class="foot page">
+    <div class="legal">
+      <span>© Felipe Fialho · {ui.footerMade}</span>
+      <button type="button" commandfor="consent-prefs" command="show-modal">{ui.cookies}</button>
+      <a href={localePath(lang, '/policies/')}>{ui.privacy}</a>
+    </div>
+    <ul class="socials">
+      {
+        profiles.map(({ id, label, href, me }) => (
+          <li>
+            <a href={href} aria-label={label} rel={me ? 'me' : undefined}>
+              <SocialIcon name={id} size={id === 'x' || id === 'rss' ? 16 : 18} />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-block-start: auto;
+    padding-block: 2.25rem;
+    border-block-start: 1px solid var(--line);
+    color: var(--muted);
+    font-family: var(--font-code);
+    font-size: 0.8125rem;
+  }
+
+  .foot {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3) var(--space-4);
+  }
+
+  .legal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0 1.25rem;
+
+    & > * {
+      display: inline-flex;
+      align-items: center;
+      min-block-size: 2.75rem;
+    }
+
+    & button,
+    & a {
+      padding: 0;
+      border: 0;
+      background: none;
+      color: var(--muted);
+      font: inherit;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-transform: lowercase;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--ink);
+      }
+    }
+  }
+
+  .socials {
+    display: flex;
+    gap: var(--space-2);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    & a {
+      display: grid;
+      place-items: center;
+      inline-size: 2.5rem;
+      block-size: 2.5rem;
+      border: 1px solid var(--line);
+      border-radius: 0.625rem;
+      color: var(--muted);
+
+      &:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+    }
+  }
+</style>

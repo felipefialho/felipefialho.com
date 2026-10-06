@@ -184,7 +184,12 @@ Surgiu um tempo ocioso no trabalho?
 
 Pode estudar inglês, fazer cursos online, estudar programação ou melhorar habilidades que você tem dificuldades ao invés de passar 1h rolando a página nas redes sociais ou vendo memes 🙃
 
-https://twitter.com/felipefialho_/status/1171397789521252352
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1171397789521252352">
+    <p>Você developer, sabe quando bate o tédio e você passa um tempão rolando a timeline no Facebook e Instagram?<br><br>- Tenta usar parte desse tempo pra navegar no Github 😁<br><br>Além de divertido, você vai conhecer novos projetos, descobrir novas pessoas e ter um panorama do mercado dev.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1171397789521252352">September 10, 2019</a></figcaption>
+</figure>
 
 ### Trabalhar com o que te da prazer
 

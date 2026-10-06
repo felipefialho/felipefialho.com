@@ -1,0 +1,288 @@
+---
+import type { MarkdownHeading } from 'astro';
+import { t, type Lang } from '../lib/i18n';
+
+interface Props {
+  headings: MarkdownHeading[];
+  lang: Lang;
+  /** inline: collapsible, below 60rem. sidebar: sticky in the left column, from 60rem */
+  variant: 'inline' | 'sidebar';
+}
+
+const { headings, lang, variant } = Astro.props;
+const label = t(lang).toc;
+
+// One list, two shells: a collapsible <details> below 60rem, a labelled <nav> from 60rem
+const Wrapper = variant === 'inline' ? 'details' : 'nav';
+const wrapperProps =
+  variant === 'inline'
+    ? { class: 'toc-inline', 'data-pagefind-ignore': true }
+    : { class: 'toc-sidebar', 'aria-label': label, 'data-pagefind-ignore': true, 'data-toc': true };
+---
+
+<Wrapper {...wrapperProps}>
+  {variant === 'inline' ? <summary>{label}</summary> : <p class="toc-label">{label}</p>}
+  <ol>
+    {headings.map(({ slug, text, depth }) => (
+      <li data-depth={depth}>
+        <a href={`#${slug}`}>{text}</a>
+      </li>
+    ))}
+  </ol>
+</Wrapper>
+
+<script>
+  // Section highlight: the current section is the last heading above LINE_RATIO of the viewport
+  // (sidebar only: the inline variant is a collapsed list with no active style)
+  const nav = document.querySelector<HTMLElement>('[data-toc]');
+  const CURRENT = 'location';
+  const LINE_RATIO = 0.4;
+  // Keeps the active item clear of the faded edges
+  const EDGE_PX = 48;
+
+  // A malformed percent escape in a hash would make decodeURIComponent throw
+  const headingFor = (hash: string) => {
+    try {
+      return document.getElementById(decodeURIComponent(hash.slice(1)));
+    } catch {
+      return document.getElementById(hash.slice(1));
+    }
+  };
+
+  if (nav) {
+    const entries = [...nav.querySelectorAll<HTMLAnchorElement>('a[href^="#"]')].flatMap((link) => {
+      const heading = headingFor(link.hash);
+      return heading ? [{ link, heading }] : [];
+    });
+    const list = nav.querySelector('ol');
+    const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+    let active: HTMLAnchorElement | undefined;
+
+    // Scrolls the list only: scrollIntoView would also move the page
+    const follow = (link: HTMLAnchorElement) => {
+      if (!list || list.scrollHeight <= list.clientHeight) return;
+      const box = list.getBoundingClientRect();
+      const item = link.getBoundingClientRect();
+      if (item.top >= box.top + EDGE_PX && item.bottom <= box.bottom - EDGE_PX) return;
+      list.scrollTo({
+        top: list.scrollTop + item.top - box.top - (box.height - item.height) / 2,
+        behavior: reduceMotion.matches ? 'auto' : 'smooth',
+      });
+    };
+
+    const update = () => {
+      const line = window.innerHeight * LINE_RATIO;
+      const next = entries.findLast(({ heading }) => heading.getBoundingClientRect().top <= line)?.link;
+      if (next === active) return;
+      active?.removeAttribute('aria-current');
+      next?.setAttribute('aria-current', CURRENT);
+      active = next;
+      if (next) follow(next);
+    };
+
+    // A jump (anchor, End key) can skip a heading entirely, which an IntersectionObserver never reports
+    let frame = 0;
+    const schedule = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(update);
+    };
+    addEventListener('scroll', schedule, { passive: true });
+    addEventListener('resize', schedule, { passive: true });
+    update();
+  }
+</script>
+
+<style>
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    display: block;
+    color: var(--muted);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--ink);
+      text-decoration: none;
+    }
+  }
+
+  .toc-inline {
+    padding-inline: var(--space-3);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    font-family: var(--font-code);
+    font-size: var(--step--1);
+
+    & summary {
+      display: flex;
+      align-items: center;
+      min-block-size: 2.75rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    &[open] summary {
+      color: var(--ink);
+    }
+
+    & ol {
+      padding-block-end: var(--space-2);
+    }
+
+    & a {
+      padding-block: 0.6rem;
+    }
+
+    & li[data-depth='3'] a {
+      padding-inline-start: var(--space-3);
+    }
+
+    @media (width >= 60rem) {
+      display: none;
+    }
+  }
+
+  .toc-sidebar {
+    display: none;
+    font-family: var(--font-code);
+    font-size: 0.8125rem;
+    line-height: 1.5;
+
+    @media (width >= 60rem) {
+      display: flex;
+      flex-direction: column;
+      gap: 0.875rem;
+
+      /* Fallback: pinned from the first frame at the height it starts (header + page padding),
+         so it never moves and the height below always fits the viewport */
+      position: sticky;
+      inset-block-start: 11.5rem;
+      align-self: start;
+      max-block-size: calc(100dvh - 13.5rem);
+
+      /* Pinned just under the header instead. It starts lower (85px header + .main padding +
+         1rem grid margin) and rises by --toc-rise as the page scrolls: the height grows in step */
+      @supports (animation-timeline: scroll()) {
+        --toc-rise: calc(clamp(2.5rem, 6vw, 5rem) - 0.6875rem);
+
+        inset-block-start: 7rem;
+        max-block-size: calc(100dvh - 9rem - var(--toc-lift));
+        animation: toc-rise linear both;
+        animation-timeline: scroll(root);
+        animation-range: 0 var(--toc-rise);
+      }
+    }
+
+    /* Only the list scrolls: the label stays put */
+    & ol {
+      display: flex;
+      flex-direction: column;
+      gap: 0.875rem;
+      min-block-size: 0;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      padding-inline-end: var(--space-2);
+      scrollbar-gutter: stable;
+      scrollbar-width: thin;
+      scrollbar-color: transparent transparent;
+      transition: scrollbar-color 0.2s var(--ease);
+
+      &:hover,
+      &:focus-within {
+        scrollbar-color: var(--line) transparent;
+      }
+
+      /* Edges fade only where more items hide; a list that fits has no timeline, so no fade */
+      @supports (animation-timeline: scroll()) {
+        mask-image: linear-gradient(
+          to bottom,
+          transparent,
+          #000 var(--fade-start),
+          #000 calc(100% - var(--fade-end)),
+          transparent
+        );
+        animation: toc-fade linear both;
+        animation-timeline: scroll(self);
+      }
+    }
+
+    & li[data-depth='3'] a {
+      padding-inline-start: 0.875rem;
+    }
+
+    & a[aria-current] {
+      padding-inline-start: 0.75rem;
+      border-inline-start: 2px solid var(--accent);
+      color: var(--accent);
+    }
+
+    /* Thin mono strokes fade on the light background: a touch heavier there */
+    :global(:root[data-theme='light']) & {
+      font-weight: 500;
+
+      & a[aria-current] {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .toc-label {
+    flex: none;
+    margin: 0;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  @property --toc-lift {
+    syntax: '<length>';
+    inherits: false;
+    initial-value: 0;
+  }
+
+  @keyframes toc-rise {
+    0% {
+      --toc-lift: var(--toc-rise);
+    }
+
+    100% {
+      --toc-lift: 0px;
+    }
+  }
+
+  @property --fade-start {
+    syntax: '<length>';
+    inherits: false;
+    initial-value: 0;
+  }
+
+  @property --fade-end {
+    syntax: '<length>';
+    inherits: false;
+    initial-value: 0;
+  }
+
+  @keyframes toc-fade {
+    0% {
+      --fade-start: 0px;
+      --fade-end: 3rem;
+    }
+
+    8%,
+    92% {
+      --fade-start: 3rem;
+      --fade-end: 3rem;
+    }
+
+    100% {
+      --fade-start: 3rem;
+      --fade-end: 0px;
+    }
+  }
+</style>

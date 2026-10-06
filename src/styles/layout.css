@@ -1,0 +1,165 @@
+.page {
+  inline-size: min(100% - 2 * var(--gutter), var(--page));
+  margin-inline: auto;
+}
+
+.main {
+  padding-block: clamp(2.5rem, 6vw, 5rem) var(--space-7);
+}
+
+.reading {
+  max-inline-size: var(--measure);
+}
+
+/* Section label: mono, muted, with a rule underneath ("ÚLTIMOS POSTS") */
+.label {
+  margin: 0 0 var(--space-3);
+  padding-block-end: var(--space-3);
+  border-block-end: 1px solid var(--line);
+  color: var(--muted);
+  font-family: var(--font-code);
+  font-size: var(--step--1);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Tag chip */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--soft);
+  font-family: var(--font-code);
+  font-size: var(--step--1);
+  line-height: 1.4;
+  text-decoration: none;
+  transition:
+    border-color 0.15s var(--ease),
+    color 0.15s var(--ease);
+
+  &:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  &[aria-current],
+  &.is-accent {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+}
+
+/* Shell prompt prefix */
+.prompt::before {
+  content: '$ ';
+  color: var(--accent);
+}
+
+/*
+ * Margin column + content column: every page hangs on the same two lines.
+ * The aside may come after the content in the source (reading order) and still sit on the left.
+ */
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-3) var(--aside-gap);
+
+  @media (width >= 60rem) {
+    grid-template-columns: var(--aside) minmax(0, 1fr);
+
+    & > * {
+      grid-column: 2;
+    }
+
+    & > .aside {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+}
+
+.meta {
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: var(--step--1);
+}
+
+.page-head {
+  margin-block-end: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.page-title {
+  margin: 0;
+  max-inline-size: 22ch;
+  font-size: clamp(2.5rem, 1.5rem + 4vw, 5rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.lede {
+  max-inline-size: var(--measure);
+  margin: var(--space-4) 0 0;
+  color: var(--muted);
+  font-size: var(--step-2);
+  line-height: 1.4;
+}
+
+/* Section names sit in the margin column */
+.section-title {
+  margin: 0;
+  font-size: var(--step-0);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.section + .section {
+  margin-block-start: clamp(3.5rem, 7vw, 6rem);
+}
+
+/* Post titles as a list of links with the date at the end; :visited turns it into a reading log */
+.rows {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  & > li {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-1) var(--space-5);
+    align-items: baseline;
+    padding-block: var(--space-3);
+    border-block-end: 1px solid var(--line);
+
+    &:first-child {
+      padding-block-start: 0;
+    }
+
+    @media (width >= 40rem) {
+      grid-template-columns: minmax(0, 1fr) auto;
+    }
+  }
+
+  & time {
+    color: var(--muted);
+    font-family: var(--font-body);
+    font-size: var(--step--1);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+}
+
+/* Short dates ("set") stay beside the title even on a phone */
+.rows-tight > li {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.more {
+  margin: var(--space-4) 0 0;
+}

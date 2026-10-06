@@ -10,7 +10,7 @@ tags: ['css', 'html', 'summary', 'details']
 
 Esse texto é uma versão em texto do vídeo: <strong>SEM JAVASCRIPT - Collapse com
 HTML e CSS em 5min!</strong>
-[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhovlog).
+[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhodev).
 
 Vale a pena assistir! 😊
 
@@ -255,7 +255,10 @@ essa funcionalidade para deixar os READMEs dos projetos ainda mais legais.
 Componente finalizado e como podem ver não precisei adicionar nenhuma linha de
 JavaScript 😜
 
-https://codepen.io/felipefialho/pen/yLgxdzR
+<figure class="embed embed-codepen">
+  <iframe src="https://codepen.io/felipefialho/embed/yLgxdzR?default-tab=result" title="Native collapse using &lt;details&gt; and &lt;summary&gt;" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/yLgxdzR">Native collapse using &lt;details&gt; and &lt;summary&gt;</a> por Felipe Fialho no CodePen</figcaption>
+</figure>
 
 No
 [Can I Use podemos ver que essa é uma funcionalidade completamente estável](https://caniuse.com/?search=details)

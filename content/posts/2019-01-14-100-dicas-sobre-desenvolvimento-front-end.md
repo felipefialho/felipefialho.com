@@ -10,7 +10,12 @@ Nos últimos dias o Twitter recebeu várias threads super úteis partindo do pri
 
 Achei a brincadeira legal e adaptei para o cenário developer com essa thread:
 
-https://twitter.com/felipefialho_/status/1083160362642522112
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1083160362642522112">
+    <p>Vou entrar na brincadeira! 😂<br><br>1 RT = 1 dica rápida de front-end</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1083160362642522112">January 10, 2019</a></figcaption>
+</figure>
 
 A verdade é que achei que teria poucos RTs na minha thread, não imaginava que a brincadeira pegasse tanto entre devs, mas a parada pegou!
 
@@ -347,7 +352,7 @@ De novo um exemplo com ícone:
 
 <b>74.</b> Rola ainda de acessar todos os valores das propriedades WAI-ARIA com :before e :after no CSS e fazer umas coisas muito loucas como essa:
 
-<blockquote class="twitter-tweet"><p lang="pt" dir="ltr">👉 Criei um exemplo de código usando React, daquela solução em Pure CSS p/ adicionar label no Slider do Material.<br><br>Observe que uso apenas:<br><br>- [aria-valuenow]<br>- :after<br><br>Sem modificar nada no JavaScript do componente.<br><br>CSS é incrível, confia 💙<a href="https://t.co/7TsG1kkZgH">https://t.co/7TsG1kkZgH</a></p>&mdash; felipe.js (@felipefialho_) <a href="https://twitter.com/felipefialho_/status/1067093417451290624?ref_src=twsrc%5Etfw">November 26, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="pt" dir="ltr">👉 Criei um exemplo de código usando React, daquela solução em Pure CSS p/ adicionar label no Slider do Material.<br><br>Observe que uso apenas:<br><br>- [aria-valuenow]<br>- :after<br><br>Sem modificar nada no JavaScript do componente.<br><br>CSS é incrível, confia 💙<a href="https://t.co/7TsG1kkZgH">https://t.co/7TsG1kkZgH</a></p>&mdash; felipe.js (@felipefialho_) <a href="https://twitter.com/felipefialho_/status/1067093417451290624?ref_src=twsrc%5Etfw">November 26, 2018</a></blockquote>
 
 <b>75.</b> Já escrevi um [artigo sobre WAI-ARIA com alguns exemplos legais](/blog/sobre-wai-aria-acessibilidade-e-semantica).
 
@@ -406,7 +411,10 @@ html {
 
 Confuso? Olha esse exemplo que deixei pra vocês no Codepen:
 
-https://codepen.io/felipefialho/pen/wRYoPN
+<figure class="embed embed-codepen">
+  <iframe src="https://codepen.io/felipefialho/embed/wRYoPN?default-tab=result" title="Fluid Typography" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/wRYoPN">Fluid Typography</a> por Felipe Fialho no CodePen</figcaption>
+</figure>
 
 <b>84.</b> Evite usar números mágicos, seja no CSS, seja no JavaScript. Uma dica é escalar suas variáveis CSS:
 
@@ -542,6 +550,9 @@ img { object-fit: cover; }
 
 Fiz esse exemplo no Codepen para darem uma olhada:
 
-https://codepen.io/felipefialho/pen/MBdrer/
+<figure class="embed embed-codepen">
+  <iframe src="https://codepen.io/felipefialho/embed/MBdrer?default-tab=result" title="Flexible aspect ratio" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/MBdrer">Flexible aspect ratio</a> por Felipe Fialho no CodePen</figcaption>
+</figure>
 
 Gostaram? 😄

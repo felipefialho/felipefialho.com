@@ -128,7 +128,12 @@ E falando em praticar...
 Apesar de conhecimento teórico ser importante, a prática é o que realmente vai
 fazer você ficar bom em alguma coisa.
 
-https://twitter.com/felipefialho_/status/1128269083940655106
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1128269083940655106">
+    <p>Não existe fórmula mágica.<br><br>O único jeito de desenvolver novas habilidades, seja programação, seja cozinhar, seja qualquer outra coisa que te interesse, é praticando.<br><br>Apenas praticando muito, aprendendo com erros e acertos, é possível ganhar experiência e melhorar cada vez mais.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1128269083940655106">May 14, 2019</a></figcaption>
+</figure>
 
 Uns anos atrás escrevi um
 [artigo que vale ler depois](/blog/aproximando-seus-estudos-de-cenarios-reais/)
@@ -280,7 +285,12 @@ tem nenhuma confiança para apostar em você naquela vaga que você curtiu tanto
 
 E é assim com (quase) todo mundo:
 
-https://twitter.com/felipefialho_/status/1029340640931467264
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1029340640931467264">
+    <p>Início de carreira nunca é fácil.<br><br>Entre 2007-2009, enviei milhares de emails desses e fui ignorado 99% das vezes.<br><br>É assim com quase todo mundo, se essa é sua situação atual, continue firme, com trabalho e um tiquinho de sorte sua carreira vai ser foda 👊 <a href="https://t.co/VqrQOlSqbu">pic.twitter.com/VqrQOlSqbu</a></p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1029340640931467264">August 14, 2018</a></figcaption>
+</figure>
 
 Vale ressaltar, que evito falar sobre assuntos que não tenho vivência prática e
 quase não tenho experiências com freelas. Sendo assim todas as próximas dicas
@@ -329,7 +339,12 @@ até mesmo avaliar algumas soft skills por conta do engajamento em projetos.
 
 Além disso, o Github é uma rede social como qualquer outra.
 
-https://twitter.com/felipefialho_/status/1073168175515295749
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1073168175515295749">
+    <p>Github é uma rede social como qualquer outra, mas voltada para o mundo developer, você pode:<br><br>- Seguir pessoas<br>- Ver as atividades delas<br>- Descobrir novas libs<br>- Ver tendências<br>- Participar dos fóruns (olá <a href="https://x.com/frontendbr">@frontendbr</a>  💙)<br>- E principalmente aprender muito<br><br>Faça uso, vale a pena.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1073168175515295749">December 13, 2018</a></figcaption>
+</figure>
 
 Já escrevi um [artigo completíssimo](/blog/como-contribuir-com-open-source/)
 contando como contribuir com open source (que vai muito além do código) e o
@@ -483,7 +498,12 @@ E se você chegou até aqui, ainda vale falar algumas coisas:
 
 ### Não se compare
 
-https://twitter.com/felipefialho_/status/1182639200820219905
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1182639200820219905">
+    <p>Sua evolução só deve ser comparada com a de uma pessoa: <br><br>- Você mesmo ontem<br><br>Ter outras pessoas como referências pode inspirar e abrir caminhos. Mas tente não se comparar com elas, pode fazer mal.<br><br>Somos universos com seus próprios acasos, histórias e contextos. Isso muda tudo.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1182639200820219905">October 11, 2019</a></figcaption>
+</figure>
 
 Cada etapa, por menor que seja, é importante na sua evolução. Mas são suas
 etapas e sua evolução.
@@ -500,7 +520,12 @@ construir seus próprios caminhos, mas sempre se compare apenas com você mesmo.
 
 ### Cuide de você
 
-https://twitter.com/felipefialho_/status/1156171344201101312
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1156171344201101312">
+    <p>Contribuir com comunidade dev é fodástico, mas nunca se esqueça de cuidar de você.<br><br>- Sua carreira<br>- Seus estudos<br>- Seu desenvolvimento pessoal<br>- Sua saúde<br><br>... Sua vida!<br><br>E quando cuidamos da gente, ficamos muito melhores pra ajudar e contribuir com outras pessoas e comunidades.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1156171344201101312">July 30, 2019</a></figcaption>
+</figure>
 
 Eu falo muito sobre open source. Mas vá com calma.
 

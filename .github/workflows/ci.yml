@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@0977fd99725f1db4007ccb2928dbb4e90d06cc86 # v6
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      # Rendered social cards are keyed by their content, so restoring a stale folder is safe; the
+      # run-specific suffix makes every run save the cards it added
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
+        with:
+          path: node_modules/.cache/og
+          key: og-${{ hashFiles('src/lib/og.ts', 'pnpm-lock.yaml', 'src/assets/images/felipe-fialho.jpg') }}-${{ github.sha }}
+          restore-keys: og-${{ hashFiles('src/lib/og.ts', 'pnpm-lock.yaml', 'src/assets/images/felipe-fialho.jpg') }}-
+      - run: pnpm lint
+      - run: pnpm test
+      - run: pnpm build
+      - run: pnpm exec playwright install --with-deps chromium
+      - name: Start the preview server
+        run: |
+          pnpm astro preview --background --port 4321
+          for _ in $(seq 1 30); do curl -sf http://localhost:4321/ >/dev/null && exit 0; sleep 1; done
+          pnpm astro preview logs
+          exit 1
+      - run: pnpm test:e2e

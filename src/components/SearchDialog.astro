@@ -1,0 +1,349 @@
+---
+import { t, type Lang } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const ui = t(lang);
+
+const copy = {
+  pt: {
+    unavailable: 'A busca só existe no site publicado. Rode "pnpm build" para gerar o índice',
+    strings: {
+      placeholder: ui.searchPlaceholder,
+      search_label: ui.searchPlaceholder,
+      clear_search: 'Limpar',
+      load_more: 'Ver mais resultados',
+      zero_results: 'Nenhum post encontrado para [SEARCH_TERM]',
+      one_result: '[COUNT] post encontrado para [SEARCH_TERM]',
+      many_results: '[COUNT] posts encontrados para [SEARCH_TERM]',
+      searching: 'Buscando por [SEARCH_TERM]...',
+    },
+  },
+  en: {
+    unavailable: 'Search only works on the built site. Run "pnpm build" to generate the index',
+    strings: {
+      placeholder: ui.searchPlaceholder,
+      search_label: ui.searchPlaceholder,
+      clear_search: 'Clear',
+      load_more: 'Load more results',
+      zero_results: 'No posts found for [SEARCH_TERM]',
+      one_result: '[COUNT] post found for [SEARCH_TERM]',
+      many_results: '[COUNT] posts found for [SEARCH_TERM]',
+      searching: 'Searching for [SEARCH_TERM]...',
+    },
+  },
+}[lang];
+---
+
+<dialog
+  id="search"
+  class="search-dialog"
+  closedby="any"
+  aria-label={ui.searchPlaceholder}
+  data-translations={JSON.stringify(copy.strings)}
+  data-unavailable={copy.unavailable}
+>
+  <div class="bar">
+    <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="ps">$ grep -r</span>
+    <button type="button" class="close" commandfor="search" command="close" aria-label={ui.close}>
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+        <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </button>
+  </div>
+  <div class="body">
+    <div id="search-ui"></div>
+    <p id="search-status" class="status" role="status" hidden></p>
+  </div>
+</dialog>
+
+<script>
+  interface PagefindUIOptions {
+    element: string;
+    bundlePath: string;
+    showSubResults: boolean;
+    showImages: boolean;
+    resetStyles: boolean;
+    autofocus: boolean;
+    translations: Record<string, string>;
+  }
+
+  declare global {
+    interface Window {
+      PagefindUI?: new (options: PagefindUIOptions) => unknown;
+    }
+  }
+
+  // The UI bundle is emitted by the pagefind CLI next to the index
+  const loadAsset = (tag: 'script' | 'link', url: string) =>
+    new Promise<void>((resolve, reject) => {
+      const element = document.createElement(tag);
+      if (element instanceof HTMLScriptElement) element.src = url;
+      if (element instanceof HTMLLinkElement) Object.assign(element, { rel: 'stylesheet', href: url });
+      element.addEventListener('load', () => resolve(), { once: true });
+      element.addEventListener('error', () => reject(new Error(`Failed to load ${url}`)), { once: true });
+      document.head.append(element);
+    });
+
+  const dialog = document.querySelector<HTMLDialogElement>('#search');
+  const status = document.querySelector<HTMLElement>('#search-status');
+  const TRACK_DELAY_MS = 1000;
+  const MIN_TERM_LENGTH = 2;
+
+  const isStringRecord = (value: unknown): value is Record<string, string> =>
+    typeof value === 'object' && value !== null && Object.values(value).every((item) => typeof item === 'string');
+
+  // The strings are server-rendered JSON: anything unexpected falls back to Pagefind's defaults
+  const readTranslations = (raw: string | undefined): Record<string, string> => {
+    const data: unknown = JSON.parse(raw ?? '{}');
+    return isStringRecord(data) ? data : {};
+  };
+
+  const mountUi = async (host: HTMLDialogElement) => {
+    // The bundle only exists after `pagefind --site dist`, never in dev: a load error means no index
+    try {
+      await Promise.all([loadAsset('link', '/pagefind/pagefind-ui.css'), loadAsset('script', '/pagefind/pagefind-ui.js')]);
+    } catch {
+      if (status) {
+        status.textContent = host.dataset.unavailable ?? '';
+        status.hidden = false;
+      }
+      return;
+    }
+    if (!window.PagefindUI) return;
+
+    new window.PagefindUI({
+      element: '#search-ui',
+      bundlePath: '/pagefind/',
+      showSubResults: true,
+      showImages: false,
+      resetStyles: false,
+      autofocus: true,
+      translations: readTranslations(host.dataset.translations),
+    });
+
+    // Report the term once the reader stops typing
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    host.querySelector('#search-ui')?.addEventListener('input', (event) => {
+      if (!(event.target instanceof HTMLInputElement)) return;
+      const term = event.target.value.trim();
+      clearTimeout(timer);
+      if (term.length < MIN_TERM_LENGTH) return;
+      timer = setTimeout(() => window.track?.('search', { search_term: term }), TRACK_DELAY_MS);
+    });
+  };
+
+  if (dialog) {
+    dialog.addEventListener(
+      'toggle',
+      (event) => {
+        if (event.newState === 'open') void mountUi(dialog);
+      },
+      { once: true },
+    );
+  }
+</script>
+
+<style>
+  .search-dialog {
+    /* Map Pagefind's variables to the site tokens */
+    --pagefind-ui-scale: 1;
+    --pagefind-ui-primary: var(--accent);
+    --pagefind-ui-text: var(--ink);
+    --pagefind-ui-background: var(--sunken);
+    --pagefind-ui-border: var(--line);
+    --pagefind-ui-tag: var(--surface);
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: var(--radius);
+    --pagefind-ui-font: var(--font-body);
+
+    box-sizing: border-box;
+    inline-size: min(42rem, 100% - 2 * var(--gutter));
+    max-block-size: 80dvh;
+    margin-block: 10vh auto;
+    margin-inline: auto;
+    padding: 0;
+    overflow: auto;
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 1.5rem 3.75rem light-dark(rgb(0 0 0 / 15%), rgb(0 0 0 / 50%));
+    overscroll-behavior: contain;
+  }
+
+  .search-dialog::backdrop {
+    background: color-mix(in srgb, var(--bg) 70%, transparent);
+  }
+
+  .bar {
+    position: sticky;
+    inset-block-start: 0;
+    z-index: 1;
+    display: flex;
+    gap: var(--space-3);
+    align-items: center;
+    padding: var(--space-2) 0.75rem var(--space-2) var(--space-3);
+    background: var(--sunken);
+    border-block-end: 1px solid var(--line);
+  }
+
+  .dots {
+    display: flex;
+    gap: 0.4375rem;
+
+    & i {
+      inline-size: 0.6875rem;
+      block-size: 0.6875rem;
+      background: var(--line);
+      border-radius: 50%;
+    }
+  }
+
+  .ps {
+    flex: 1;
+    color: var(--muted);
+    font: 0.8125rem / 1.4 var(--font-code);
+  }
+
+  .close {
+    display: grid;
+    place-items: center;
+    inline-size: 2.25rem;
+    block-size: 2.25rem;
+    padding: 0;
+    color: var(--muted);
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+
+    &:hover {
+      color: var(--ink);
+    }
+  }
+
+  .body {
+    padding: var(--space-3) var(--space-4) var(--space-4);
+  }
+
+  #search-ui {
+    min-inline-size: 0;
+  }
+
+  .status {
+    margin: 0;
+    font-family: var(--font-code);
+    font-size: var(--step--1);
+    color: var(--muted);
+  }
+
+  .search-dialog :global(.pagefind-ui__search-input) {
+    font-family: var(--font-code);
+    font-size: var(--step-0);
+    font-weight: 400;
+    color: var(--ink);
+  }
+
+  .search-dialog :global(.pagefind-ui__result-title),
+  .search-dialog :global(.pagefind-ui__result-link) {
+    font-family: var(--font-body);
+    font-size: var(--step-0);
+    font-weight: 600;
+  }
+
+  .search-dialog :global(.pagefind-ui__result-link),
+  .search-dialog :global(.pagefind-ui__result-link:visited) {
+    color: var(--accent);
+  }
+
+  /* The date is indexed for sorting, not for display */
+  .search-dialog :global(.pagefind-ui__result-tags) {
+    display: none;
+  }
+
+  .search-dialog :global(.pagefind-ui__result-excerpt) {
+    font-family: var(--font-body);
+    font-size: var(--step--1);
+    color: var(--soft);
+  }
+
+  .search-dialog :global(.pagefind-ui__message) {
+    font-family: var(--font-code);
+    font-size: var(--step--2);
+    color: var(--muted);
+  }
+
+  .search-dialog :global(.pagefind-ui__result) {
+    border-block-start-color: var(--line);
+  }
+
+  .search-dialog :global(.pagefind-ui__button) {
+    font-family: var(--font-code);
+    color: var(--ink);
+    background: var(--bg);
+    border-color: var(--line);
+  }
+
+  .search-dialog :global(mark) {
+    color: inherit;
+    background: var(--bg);
+    border-block-end: 2px solid var(--accent);
+  }
+
+  .search-dialog :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  @media (width < 48rem) {
+    .search-dialog {
+      inline-size: calc(100% - 2rem);
+      margin-block-start: 1rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .search-dialog {
+      opacity: 0;
+      translate: 0 1rem;
+      transition:
+        opacity 0.25s var(--ease),
+        translate 0.25s var(--ease),
+        overlay 0.25s allow-discrete,
+        display 0.25s allow-discrete;
+
+      &[open] {
+        opacity: 1;
+        translate: 0 0;
+      }
+
+      &::backdrop {
+        opacity: 0;
+        transition:
+          opacity 0.25s var(--ease),
+          overlay 0.25s allow-discrete,
+          display 0.25s allow-discrete;
+      }
+
+      &[open]::backdrop {
+        opacity: 1;
+      }
+
+      @starting-style {
+        &[open] {
+          opacity: 0;
+          translate: 0 1rem;
+        }
+
+        &[open]::backdrop {
+          opacity: 0;
+        }
+      }
+    }
+  }
+</style>

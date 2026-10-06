@@ -1,0 +1,24 @@
+---
+import { END_SLOT } from '../lib/ads';
+import { t, type Lang } from '../lib/i18n';
+
+interface Props {
+  kind: 'end';
+  lang: Lang;
+}
+
+const { kind, lang } = Astro.props;
+---
+
+{
+  END_SLOT && (
+    <aside
+      class:list={['ad', `ad-${kind}`]}
+      data-ad-slot={END_SLOT}
+      data-ad-format="auto"
+      data-pagefind-ignore
+      data-full-width-responsive="true"
+      aria-label={t(lang).ad}
+    ></aside>
+  )
+}

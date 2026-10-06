@@ -9,7 +9,7 @@ tags: ['open source', 'github', 'comunidade']
 ### Versão em vídeo
 
 Essa é uma versão em vídeo do conteúdo apresentado nesse artigo
-[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhovlog).
+[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhodev).
 
 Vale a pena assistir! 😁
 
@@ -26,7 +26,12 @@ pudessem usar.
 
 Mas esse é só um ponto. E é só código.
 
-https://twitter.com/felipefialho_/status/1105801949377716225
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1105801949377716225">
+    <p>Você developer, já fez alguma dessas coisas?<br><br>- Gerou conteúdo<br>- Compartilhou o que sabe<br>- Palestrou<br>- Respondeu dúvidas<br>- Ajudou em projetos<br>- Organizou eventos<br><br>É tudo open-source.<br><br>Open-source é uma filosofia, vai muito além de código. É também: ajudar, compartilhar e ensinar.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1105801949377716225">March 13, 2019</a></figcaption>
+</figure>
 
 ## Tem todos os outros pontos
 
@@ -55,7 +60,10 @@ iniciativas de desenvolvimento.
 
 Em 2012 criei esse Eric Cartman para estudar CSS e não parei mais.
 
-https://codepen.io/felipefialho/pen/qzDCJ
+<figure class="embed embed-codepen">
+  <iframe src="https://codepen.io/felipefialho/embed/qzDCJ?default-tab=result" title="Eric Cartman in Pure CSS (2012)" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/qzDCJ">Eric Cartman in Pure CSS (2012)</a> por Felipe Fialho no CodePen</figcaption>
+</figure>
 
 Só para citar algumas coisas:
 
@@ -217,7 +225,12 @@ está para a internet.
 
 ### E o Github é uma rede social
 
-https://twitter.com/felipefialho_/status/1073168175515295749
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1073168175515295749">
+    <p>Github é uma rede social como qualquer outra, mas voltada para o mundo developer, você pode:<br><br>- Seguir pessoas<br>- Ver as atividades delas<br>- Descobrir novas libs<br>- Ver tendências<br>- Participar dos fóruns (olá <a href="https://x.com/frontendbr">@frontendbr</a>  💙)<br>- E principalmente aprender muito<br><br>Faça uso, vale a pena.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1073168175515295749">December 13, 2018</a></figcaption>
+</figure>
 
 Isso significa que você pode seguir as pessoas e ver suas rotinas como
 developer:
@@ -329,7 +342,12 @@ está estudando no dia a dia.
 
 ## Mas primeiro cuide de você!
 
-https://twitter.com/felipefialho_/status/1156171344201101312
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1156171344201101312">
+    <p>Contribuir com comunidade dev é fodástico, mas nunca se esqueça de cuidar de você.<br><br>- Sua carreira<br>- Seus estudos<br>- Seu desenvolvimento pessoal<br>- Sua saúde<br><br>... Sua vida!<br><br>E quando cuidamos da gente, ficamos muito melhores pra ajudar e contribuir com outras pessoas e comunidades.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1156171344201101312">July 30, 2019</a></figcaption>
+</figure>
 
 Apesar de tudo que falei aqui e de todos os impactos positivos que contribuir
 com open source pode ter na evolução de uma carreira e no mercado como um todo,

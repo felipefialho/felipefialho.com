@@ -1,0 +1,40 @@
+---
+// Once per post page. Styles every `.ad` slot: AdSlot and the in-article asides from the rehype plugin.
+---
+
+<script>
+  import { initAds } from '../lib/ads';
+
+  initAds();
+</script>
+
+<style is:global>
+  /* The empty second row reserves the ad's space up front, so filling it never shifts the page */
+  .ad {
+    --ad-min: 280px;
+
+    display: grid;
+    grid-template-rows: auto minmax(var(--ad-min), auto);
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-2);
+    margin-block: var(--space-5);
+    padding: var(--space-2) var(--space-3) var(--space-3);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--sunken);
+  }
+
+  .ad::before {
+    /* The aside already carries the aria-label: empty alt text keeps it from being announced twice */
+    content: attr(aria-label) / '';
+    color: var(--muted);
+    font: var(--step--2) / 1.4 var(--font-code);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* Google allows hiding unfilled units; "unfill-optimized" ones stay */
+  .ad:has(> ins.adsbygoogle[data-ad-status='unfilled']) {
+    display: none;
+  }
+</style>

@@ -1,0 +1,6 @@
+# Every crawler, search and AI alike, may read the whole site.
+# Duplicate URLs (e.g. ?utm_ tracking) are consolidated by rel=canonical, which needs them crawlable.
+User-agent: *
+Allow: /
+
+Sitemap: https://felipefialho.com/sitemap-index.xml

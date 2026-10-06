@@ -1,0 +1,53 @@
+---
+// First script in <head>: Consent Mode defaults must precede every Google tag.
+// Mirrors src/lib/consent.ts (record shape); the GA ID and storage key are passed in from src/lib.
+// Hooking gtag lets bundles react to any consent update, ours or Google's CMP.
+import { GA_ID } from '../lib/analytics';
+import { CONSENT_KEY } from '../lib/consent';
+---
+
+<script is:inline define:vars={{ GA_ID, CONSENT_KEY }}>
+  (function (win) {
+    const dataLayer = (win.dataLayer = win.dataLayer || []);
+    const DENIED = 'denied';
+    const GRANTED = 'granted';
+    let analyticsGranted = false;
+    let configured = false;
+    // gtag.js only accepts Arguments objects, not arrays
+    /* eslint-disable prefer-rest-params */
+    function gtag() {
+      dataLayer.push(arguments);
+      const params = arguments[2];
+      if (arguments[0] !== 'consent' || arguments[1] !== 'update' || !params) return;
+      /* eslint-enable prefer-rest-params */
+      if (params.analytics_storage) {
+        analyticsGranted = params.analytics_storage === GRANTED;
+        if (analyticsGranted && !configured) {
+          configured = true;
+          gtag('js', new Date());
+          gtag('config', GA_ID);
+        }
+      }
+      win.dispatchEvent(new CustomEvent('gtagconsent', { detail: params }));
+    }
+    win.gtag = gtag;
+    gtag('consent', 'default', { ad_storage: DENIED, ad_user_data: DENIED, ad_personalization: DENIED, analytics_storage: DENIED });
+    try {
+      const stored = JSON.parse(localStorage.getItem(CONSENT_KEY));
+      if (stored && stored.v === 1) {
+        const ads = stored.ads === true ? GRANTED : DENIED;
+        gtag('consent', 'update', {
+          ad_storage: ads,
+          ad_user_data: ads,
+          ad_personalization: ads,
+          analytics_storage: stored.analytics === true ? GRANTED : DENIED,
+        });
+      }
+    } catch {
+      // Storage blocked or corrupted: keep the denied defaults
+    }
+    win.track = function (name, params) {
+      if (analyticsGranted) gtag('event', name, params);
+    };
+  })(window);
+</script>

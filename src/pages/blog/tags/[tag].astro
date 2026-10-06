@@ -1,0 +1,17 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { tagStaticPaths, type Post } from '../../../lib/posts';
+import ArchiveView from '../../../views/ArchiveView.astro';
+
+export const getStaticPaths = (() => tagStaticPaths('pt')) satisfies GetStaticPaths;
+
+interface Props {
+  tag: string;
+  posts: Post[];
+  alternate: string;
+}
+
+const { tag, posts, alternate } = Astro.props;
+---
+
+<ArchiveView lang="pt" posts={posts} tag={tag} alternate={alternate} />

@@ -18,7 +18,12 @@ A ideia desse post é falar um pouco da minha experiência e explorar algumas po
 
 Antes de tudo, quero separar senioridade de carreira de senioridade contextual
 
-https://twitter.com/felipefialho_/status/1300223040832319489
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1300223040832319489">
+    <p>Senioridade não é const, é var.<br><br>Uma pessoa que é Sênior no contexto X pode ser Júnior no contexto Y.<br><br>E tá tudo bem.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1300223040832319489">August 31, 2020</a></figcaption>
+</figure>
 
 ### Senioridade Contextual
 
@@ -42,7 +47,12 @@ Agora, senioridade de carreira é algo que você constrói ao longo do tempo, in
 
 Existem muitas e muitas capacidades e habilidades técnicas e não técnicas que devem ser desenvolvidas ao longo da carreira, e quanto mais altas são essas barras de habilidades, mais senior você é e mais apto vai estar a ocupar essa cadeira em diferentes empresas e contextos.
 
-https://twitter.com/felipefialho_/status/1427609919604330496
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1427609919604330496">
+    <p>Alguém que teve experiências em outras áreas e tá migrando pra programação não tá começando do zero<br><br>Com certeza vai aproveitar de toda a bagagem que ganhou fazendo outras coisas, isso porque uma carreira em tecnologia não se limita apenas na parte técnica<br><br>Muito pelo contrário</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1427609919604330496">August 17, 2021</a></figcaption>
+</figure>
 
 E como muitas dessas habilidades não são técnicas e sim soft skills, é possível que alguém com menos tempo de carreira tech mas que por exemplo migrou de outras áreas, onde desenvolveu habilidades de liderança, comunicação, resolução de problemas, etc, atinja um nível de maior senioridade mais rápido.
 
@@ -56,7 +66,12 @@ Mas se estamos falando de senioridade de carreira, é bem difícil que alguém c
 
 (e algumas pessoas não conseguem nem com 10 anos)
 
-https://twitter.com/felipefialho_/status/1707729074032877979
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1707729074032877979">
+    <p>Discutimos muito sobre &quot;Senior de 2 anos&quot; mas tem outro personagem pouco falado no folclore dev<br><br>O &quot;Júnior de 10 anos&quot;<br><br>Anos atuando na área e não desenvolveu habilidades técnicas nem soft skills, não se atualiza e foi criando vícios em padrões ruins de código e comportamento…</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1707729074032877979">September 29, 2023</a></figcaption>
+</figure>
 
 ## E o que vem depois de senior?
 

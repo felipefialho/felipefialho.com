@@ -7,7 +7,7 @@ tags: ["css"]
 
 Continuo trabalhando em diversos projetos paralelos, em razão disso estou um pouco desaparecido das comunidades que participo.
 
-Mas durante esses projetos, estou pensando e aplicando algumas soluções interessantes, uma delas foi a [caixa de compartilhar](/blog/tutorial-caixa-de-compartilhar-em-puro-css), agora vou mostrar um "botão de progresso".
+Mas durante esses projetos, estou pensando e aplicando algumas soluções interessantes, uma delas foi a caixa de compartilhar, agora vou mostrar um "botão de progresso".
 
 ## Sobre
 
@@ -17,7 +17,10 @@ Nível do tutorial: **Básico**
 
 A demo funcional está no Codepen.
 
-https://codepen.io/felipefialho/pen/KviDw
+<figure class="embed embed-codepen">
+  <iframe src="https://codepen.io/felipefialho/embed/KviDw?default-tab=result" title="Button Progress" loading="lazy" height="400"></iframe>
+  <figcaption><a href="https://codepen.io/felipefialho/pen/KviDw">Button Progress</a> por Felipe Fialho no CodePen</figcaption>
+</figure>
 
 ## Tutorial
 

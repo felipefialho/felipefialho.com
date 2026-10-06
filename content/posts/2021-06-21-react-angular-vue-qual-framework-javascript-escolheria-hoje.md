@@ -11,7 +11,7 @@ tags: ['stack', 'framework', 'javascript']
 
 Esse texto é uma versão em texto do vídeo: <strong>REACT, VUE ou ANGULAR - Qual
 framework JavaScript escolheria hoje</strong>
-[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhovlog).
+[que publiquei no meu canal no Youtube](https://www.youtube.com/@felipefialhodev).
 
 Vale a pena assistir! 😊
 
@@ -46,7 +46,12 @@ Acredito que as maiores diferenças hoje em dia estão na forma de escrever o
 código, que muda principalmente do React com relação ao Angular e Vue, e pelo
 fato do React **não ser um Framework** e sim uma lib.
 
-https://twitter.com/felipefialho_/status/1313922039204306944
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1313922039204306944">
+    <p>Nos últimos tempos trabalhei com Angular, React e Vue.<br><br>Além de terem maturidade parecida, atualmente muitos conceitos são compartilhados entre eles, isso ajuda muito na curva de aprendizado.<br><br>Com prós e contras, temos três opções sensacionais.<br><br>Quem ganha com isso é a gente 😁</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1313922039204306944">October 7, 2020</a></figcaption>
+</figure>
 
 Dessas 3 opções prefiro a forma de escrever código e resolução de paradigmas do
 React porque é a mais próxima do JavaScript e considero mais legível além de não
@@ -75,7 +80,12 @@ Principalmente levando em consideração o fato dele ter uma comunidade muito
 menor, menos opções de libs complementares e com certeza também daria muito mais
 trabalho para achar profissionais no mercado interessados em trabalhar com ele.
 
-https://twitter.com/felipefialho_/status/1301943110256164867
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1301943110256164867">
+    <p>➡️ Sobre Svelte<br><br>Faz anos que acompanho, mas tô brincando bastante ultimamente.<br><br>O diferencial é ser um framework durante o desenvolvimento mas compilar pra pequenos módulos em Vanilla JS no build, sem Virtual DOM e sem código extra.<br><br>É super performático e tem uma DevXP foda 😜</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1301943110256164867">September 4, 2020</a></figcaption>
+</figure>
 
 ### React
 
@@ -111,7 +121,12 @@ projetos com escopos muito parecidos.
 
 ### Angular e Vue
 
-https://twitter.com/felipefialho_/status/1172513256986087424
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1172513256986087424">
+    <p>A data de modificação de alguns arquivos do core do <a href="https://x.com/angular">@angular</a> é a data da Viagem no Tempo feita em um DeLorean  no &quot;De Volta para o Futuro (Back to the Future)&quot; 🚀  <br><br>- 26 de outubro de 1985<br><br>Sensacional 😁 <a href="https://t.co/scTaLluQiL">pic.twitter.com/scTaLluQiL</a></p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1172513256986087424">September 13, 2019</a></figcaption>
+</figure>
 
 Já Angular possui um escopo muito mais fechado, com boa parte das definições
 sendo mais limitadas e não sendo muito recomendadas de se alterar.
@@ -135,7 +150,12 @@ caso faça sentido dentro de determinado projeto.
 
 ### Os Frameworks de React - Next.js e Gatsby
 
-https://twitter.com/felipefialho_/status/1322170844790087682
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1322170844790087682">
+    <p>O ecossistema de React amadureceu demais com a consolidação de frameworks como Gatsby e Next.js.<br><br>Ajudaram a definir bons padrões de configurações, arquitetura e desenvolvimento, melhorando muito a DX (Dev Experience) e escalabilidade dos projetos.<br><br>O Next.js 10 tá espetacular ❤️</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1322170844790087682">October 30, 2020</a></figcaption>
+</figure>
 
 Mas até aqui estou falando de React, Angular e Vue em suas versões "puras", tudo
 isso mudou quando Frameworks baseados em React surgiram e então dois deles se
@@ -158,7 +178,12 @@ cada vez mais maior e confiável que é a Vercel.
 Tudo isso se aproveitando de toda a confiabilidade, estabilidade e a forma de
 desenvolver componentes do React que já elogiei anteriormente.
 
-https://twitter.com/felipefialho_/status/1359128693898153988
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1359128693898153988">
+    <p>Um conceito que ganhou força nos últimos anos e deve impactar cada vez mais o mercado tech:<br><br>- Dev Experience (DevX)<br><br>Ou seja, melhorar a experiência de desenvolvimento, inclusive automatizando tarefas chatas e repetitivas pra aumentar produtividade nas coisas mais importantes.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1359128693898153988">February 9, 2021</a></figcaption>
+</figure>
 
 Além disso tanto o Gatsby quanto o Next.js apresentam uma dev experience
 sensacional e quem trabalha com produtos sabe a diferente que isso faz no nosso

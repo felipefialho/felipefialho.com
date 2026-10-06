@@ -36,7 +36,12 @@ Primeiro de tudo... entenda o que sua empresa faz, como ela espera ganhar dinhei
 
 Saiba que boa parte dos frameworks do mercado foram feitos para desenvolver produtos e aplicações, e se você desenvolve sites institucionais e precisa entregar em três dias, dificilmente fará sentido usar essas soluções.
 
-https://twitter.com/felipefialho_/status/870471694531559424
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/870471694531559424">
+    <p>Se você desenvolve sites institucionais ou trabalha com agências que fazem pasteis, não se sinta mal por não usar workflows da &quot;moda&quot;. 😉</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/870471694531559424">June 2, 2017</a></figcaption>
+</figure>
 
 Isso pode ser surpreendente no mundo com milhares de coisas para estudar, em que developers vivem, mas...
 

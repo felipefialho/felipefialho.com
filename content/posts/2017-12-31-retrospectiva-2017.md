@@ -6,7 +6,7 @@ image: /assets/2017-12-31-retrospectiva-2017.png
 tags: ["comunidade", "carreira"]
 ---
 
-Se quiserem podem acompanhar minhas retrospectivas de [2013](/blog/retrospectiva-2013) e [2016](/blog/retrospectiva-2016).
+Se quiserem podem acompanhar minhas retrospectivas de 2013 e [2016](/blog/retrospectiva-2016).
 
 Esse foi definitivamente um ano cheio de conquistas profissionais e pessoais, teve várias viagens, um monte de shows, mudança de apartamento, mudança de emprego, um puta crescimento da Front-end [BR](https://github.com/frontendbr), entre outras coisas.
 

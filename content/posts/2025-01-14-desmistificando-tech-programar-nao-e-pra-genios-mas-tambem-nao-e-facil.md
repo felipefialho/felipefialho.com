@@ -14,7 +14,12 @@ Por anos, essa ideia afastou muita gente da área, criando uma aura de exclusivi
 
 Mas na prática só serviu pra alimentar egos, gerar pressão desnecessária e incentivar códigos complexos cheios de overengineering. Os melhores devs que conheço não são "geniais", simplesmente dominam as tecnologias que utilizam e possuem ótima capacidade de abstração pra chegar em soluções simples e eficientes.
 
-https://twitter.com/felipefialho_/status/1744331397009994182
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1744331397009994182">
+    <p>O mito do &quot;programador gênio&quot; tem que acabar<br><br>Só alimenta egos, cria pressão e incentiva códigos complexos cheios de overengineering<br><br>Os melhores devs que conheço não são &quot;geniais&quot;, simplesmente dominam as techs que utilizam e possuem ótima capacidade de abstração pra chegar em…</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1744331397009994182">January 8, 2024</a></figcaption>
+</figure>
 
 Programação por muito tempo foi uma área nichada e estereotipada.
 
@@ -24,7 +29,12 @@ Esse mito sempre foi prejudicial, já que cria barreiras para a entrada de pesso
 
 Isso foi deixando o mercado cada vez mais fechado e desequilibrado, com pouca oferta de profissionais especialmente de iniciantes. Além disso também ajudou a criar ambientes pouco diversificados e inclusivos, e os efeitos disso a gente sente até hoje.
 
-https://twitter.com/felipefialho_/status/1526528025189306369
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1526528025189306369">
+    <p>Pra conseguir a carteirinha do &quot;programador de verdade&quot; segundo alguns:<br><br>- Programar em todo tempo livre<br>- Pensar em código o dia inteiro<br>- Proibido piadinha na internet<br>- Não utilizar frameworks<br>- Usar Linux artesanal<br>- Sem StackOverflow<br>- Usar apenas Vim</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1526528025189306369">May 17, 2022</a></figcaption>
+</figure>
 
 Literalmente 10 anos atrás escrevi um artigo chamado [Estamos realmente interessados em formar bons profissionais?](/blog/estamos-realmente-interessados-em-formar-bons-profissionais) que já falava um pouco dos sentimentos e dos problemas que esse mito causava.
 
@@ -34,7 +44,12 @@ De lá pra cá programação se popularizou muito mas daí criou-se outro mito, 
 
 Essa ideia vende o sonho de que qualquer um pode aprender a programar sem muito esforço e enriquecer rapidamente. Apesar de ser útil para atrair pessoas e movimentar a indústria de cursos, cria expectativas distorcidas e frustrações quando a realidade bate, e pode crer que quase sempre ela bate e bate com tudo.
 
-https://twitter.com/felipefialho_/status/1283382140651089921
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1283382140651089921">
+    <p>Quer aprender programação em apenas 7 dias, ser disputado pelas melhores empresas e ganhar muito dinheiro rapidamente?<br><br>Então não caia nesses anúncios. Só vai ganhar dinheiro rápido quem tá vendendo isso.<br><br>Programar exige muita prática e estudo, não tem atalhos ou fórmula mágica.</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1283382140651089921">July 15, 2020</a></figcaption>
+</figure>
 
 Especialmente durante a pandemia surgiu uma demanda exponencial por profissionais de tecnologia, o que automaticamente gerou uma corrida por cursos e bootcamps de programação.
 
@@ -42,7 +57,12 @@ Ou seja, dois tipos de demandas ficaram extremamente aquecidas: A de profissiona
 
 Absolutamente não vejo nenhum problema nisso, pelo contrário, acho ótimo que mais pessoas estejam buscando se qualificar e entrar na área, além disso acho fantástico que existam milhares de cursos acessíveis e de qualidade pra quem quer aprender a programar.
 
-https://twitter.com/felipefialho_/status/1427609919604330496
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1427609919604330496">
+    <p>Alguém que teve experiências em outras áreas e tá migrando pra programação não tá começando do zero<br><br>Com certeza vai aproveitar de toda a bagagem que ganhou fazendo outras coisas, isso porque uma carreira em tecnologia não se limita apenas na parte técnica<br><br>Muito pelo contrário</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1427609919604330496">August 17, 2021</a></figcaption>
+</figure>
 
 Com mais gente entrando em tech, temos a oportunidade de ver novas ideias, diferentes formas de resolver problemas e uma maior diversidade de pessoas e pensamentos. Isso é excelente para a evolução da área como um todo.
 

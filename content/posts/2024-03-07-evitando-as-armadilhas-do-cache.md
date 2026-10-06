@@ -77,4 +77,9 @@ Indico fortemente a leitura do [Guia de Service Worker](https://developers.googl
 
 Essa história foi contada em primeira mão no Xwitter
 
-https://twitter.com/felipefialho_/status/1765755625063997813
+<figure class="embed embed-tweet">
+  <blockquote cite="https://x.com/felipefialho_/status/1765755625063997813">
+    <p>Sabia que configurações mal feitas de cache tem potencial pra destruir sua aplicação?<br><br>Se liga nessa história<br><br>Uns anos atrás tava trabalhando num SPA e configuramos o Service Worker pra transformar num PWA, até ai tudo tranquilo se não fosse por dois problemas:<br><br>Esquecemos de…</p>
+  </blockquote>
+  <figcaption><span class="embed-author">felipe.md ⚡ (@felipefialho_)</span>, <a href="https://x.com/felipefialho_/status/1765755625063997813">March 7, 2024</a></figcaption>
+</figure>

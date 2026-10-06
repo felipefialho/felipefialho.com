@@ -1,0 +1,289 @@
+---
+import { formatDay, isoDate, t, type Lang } from '../lib/i18n';
+import { getAdjacent, getRelated, postPath, type Post } from '../lib/posts';
+
+interface Props {
+  lang: Lang;
+  post: Post;
+  posts: Post[];
+  /** extras: support, edit link and related posts, in the article column. adjacent: previous and next, full width. */
+  part: 'extras' | 'adjacent';
+}
+
+const { lang, post, posts, part } = Astro.props;
+const ui = t(lang);
+const { older, newer } = getAdjacent(posts, post.id);
+const related = getRelated(posts, post);
+const pix = 'hi@felipefialho.com';
+
+// filePath is relative to the repo root; fall back to the folder if the loader omits it
+const repoUrl = 'https://github.com/felipefialho/felipefialho.com';
+const sourceDir = lang === 'pt' ? 'posts' : 'posts-en';
+const editUrl = post.filePath ? `${repoUrl}/blob/main/${post.filePath}` : `${repoUrl}/tree/main/content/${sourceDir}`;
+---
+
+{
+  part === 'extras' && (
+    <footer class="extras" data-pagefind-ignore>
+      <section class="support" aria-labelledby="support-title">
+        <h2 id="support-title">{ui.supportPost}</h2>
+        <div class="support-actions">
+          <p class="pix">
+            <span>{ui.pixLabel}</span>
+            <code>{pix}</code>
+            <button type="button" data-copy={pix} data-copied={ui.copied} data-failed={ui.copyFailed}>
+              {ui.copy}
+            </button>
+            <span class="visually-hidden" role="status" data-copy-status />
+          </p>
+          <a class="sponsor" href="https://github.com/sponsors/felipefialho" data-track="sponsor_click">
+            {ui.sponsors}
+          </a>
+        </div>
+        <p class="fix">
+          {ui.fix} <a href={editUrl}>{ui.fixLink}</a>
+        </p>
+      </section>
+
+      {related.length > 0 && (
+        <section class="related" aria-labelledby="related-title">
+          <h2 id="related-title" class="label">
+            {ui.related}
+          </h2>
+          <ol>
+            {related.map((item) => (
+              <li>
+                <a href={postPath(lang, item.id)}>
+                  <span class="related-title">{item.data.title}</span>
+                  <time datetime={isoDate(item.data.date)}>{formatDay(item.data.date, lang)}</time>
+                </a>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
+    </footer>
+  )
+}
+
+{
+  part === 'adjacent' && (older || newer) && (
+    <nav class="adjacent" aria-label={ui.adjacentPosts}>
+      {older && (
+        <a href={postPath(lang, older.id)} rel="prev">
+          <span>&larr; {ui.previous}</span>
+          <strong>{older.data.title}</strong>
+        </a>
+      )}
+      {newer && (
+        <a href={postPath(lang, newer.id)} rel="next" class="newer">
+          <span>{ui.next} &rarr;</span>
+          <strong>{newer.data.title}</strong>
+        </a>
+      )}
+    </nav>
+  )
+}
+
+<script>
+  const RESET_MS = 2000;
+
+  document.querySelectorAll<HTMLButtonElement>('button[data-copy]').forEach((button) => {
+    button.addEventListener('click', async () => {
+      const { copy = '', copied = '', failed = '' } = button.dataset;
+      const status = button.parentElement?.querySelector<HTMLElement>('[data-copy-status]');
+      const label = button.textContent;
+      const announce = (message: string) => {
+        if (status) status.textContent = message;
+        setTimeout(() => {
+          if (status) status.textContent = '';
+        }, RESET_MS);
+      };
+      try {
+        await navigator.clipboard.writeText(copy);
+        button.textContent = copied;
+        setTimeout(() => (button.textContent = label), RESET_MS);
+        announce(copied);
+        window.track?.('pix_copy');
+      } catch {
+        // Clipboard denied: the key stays visible to copy by hand
+        announce(failed);
+      }
+    });
+  });
+
+  document.querySelectorAll<HTMLAnchorElement>('a[data-track]').forEach((link) => {
+    link.addEventListener('click', () => window.track?.(link.dataset.track ?? ''));
+  });
+</script>
+
+<style>
+  .extras {
+    display: grid;
+    gap: clamp(2.5rem, 5vw, 3.5rem);
+    margin-block-start: clamp(3rem, 6vw, 4.5rem);
+  }
+
+  .support {
+    padding: var(--space-4);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+
+    & h2 {
+      margin: 0 0 var(--space-3);
+      color: var(--ink);
+      font-size: var(--step-1);
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  .support-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3) var(--space-5);
+    font-size: var(--step--1);
+  }
+
+  .pix {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+    margin: 0;
+    color: var(--soft);
+
+    & code {
+      padding: 0.125rem 0.375rem;
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      background: var(--surface);
+      color: var(--accent);
+      font-family: var(--font-code);
+    }
+
+    & button {
+      min-block-size: 2.75rem;
+      padding: 0 var(--space-3);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: transparent;
+      color: var(--accent);
+      font-family: var(--font-code);
+      cursor: pointer;
+      transition: border-color 0.15s var(--ease);
+
+      &:hover {
+        border-color: var(--accent);
+      }
+    }
+  }
+
+  .sponsor {
+    font-weight: 500;
+  }
+
+  .fix {
+    margin: var(--space-3) 0 0;
+    color: var(--muted);
+    font-family: var(--font-code);
+    font-size: 0.8125rem;
+
+    /* Inside a sentence, color alone is not enough to tell the link apart */
+    & a {
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+    }
+  }
+
+  .related {
+    & ol {
+      display: grid;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    & a {
+      display: grid;
+      gap: var(--space-1) var(--space-4);
+      padding: var(--space-3) var(--space-2);
+      border-block-end: 1px solid var(--line);
+      color: var(--ink);
+      transition: background-color 0.15s var(--ease);
+
+      @media (width >= 40rem) {
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: baseline;
+      }
+
+      &:hover {
+        background: var(--surface);
+        text-decoration: none;
+      }
+    }
+
+    & time {
+      color: var(--muted);
+      font-family: var(--font-code);
+      font-size: 0.8125rem;
+      white-space: nowrap;
+    }
+  }
+
+  .related-title {
+    font-size: var(--step-0);
+    line-height: 1.35;
+  }
+
+  .adjacent {
+    display: grid;
+    gap: var(--space-3) var(--space-4);
+    margin-block-start: clamp(2.5rem, 5vw, 3rem);
+    padding-block-start: clamp(2rem, 4vw, 3rem);
+    border-block-start: 1px solid var(--line);
+
+    @media (width >= 40rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    & a {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+      padding: var(--space-4);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      color: var(--ink);
+      text-decoration: none;
+      transition: border-color 0.15s var(--ease);
+
+      &:hover {
+        border-color: var(--accent);
+        text-decoration: none;
+      }
+    }
+
+    & span {
+      color: var(--muted);
+      font-family: var(--font-code);
+      font-size: var(--step--2);
+      text-transform: lowercase;
+    }
+
+    & strong {
+      font-size: var(--step-1);
+      font-weight: 400;
+      line-height: 1.35;
+    }
+
+    & .newer {
+      text-align: end;
+
+      @media (width >= 40rem) {
+        grid-column: 2;
+      }
+    }
+  }
+</style>

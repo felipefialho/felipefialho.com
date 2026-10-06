@@ -1,0 +1,65 @@
+/* Design tokens: a terminal-flavoured palette, dark by default */
+:root {
+  color-scheme: dark;
+
+  --bg: light-dark(#fafafa, #0f0f0f);
+  --surface: light-dark(#efefef, #1d1d1d);
+  --sunken: light-dark(#f4f4f4, #151515);
+  --line: light-dark(#dcdcdc, #2d2d2d);
+  --ink: light-dark(#0f0f0f, #f1f1f1);
+  --text: light-dark(#1f1f1f, #d5d5d5);
+  --soft: light-dark(#333, #b5b5b5);
+  --muted: light-dark(#474747, #9a9a9a);
+  --faint: light-dark(#5c5c5c, #757575);
+  --accent: light-dark(#00778a, #a1ecf7);
+  --accent-deep: light-dark(#0b6877, #187888);
+  --on-accent: light-dark(#fff, #0f0f0f);
+  --warm: light-dark(#6f4a00, #e6af05);
+
+  /* Photo multiply tint: the same cyan in both themes */
+  --tint: #a1ecf7;
+
+  --font-body: var(--font-sans), system-ui, sans-serif;
+  --font-code: var(--font-mono), ui-monospace, 'SF Mono', menlo, consolas, monospace;
+
+  /* Fluid between 360px and 1440px: each step lands on its board size at 1440px */
+  --step--2: 0.75rem;
+  --step--1: 0.875rem;
+  --step-0: clamp(1rem, 0.958rem + 0.185vw, 1.125rem);
+  --step-1: clamp(1.125rem, 1.083rem + 0.185vw, 1.25rem);
+  --step-2: clamp(1.375rem, 1.25rem + 0.556vw, 1.75rem);
+  --step-3: clamp(1.625rem, 1.417rem + 0.926vw, 2.25rem);
+  --step-4: clamp(2rem, 1.667rem + 1.481vw, 3rem);
+  --step-5: clamp(2.5rem, 2rem + 2.222vw, 4rem);
+  --step-6: clamp(3rem, 2.167rem + 3.704vw, 5.5rem);
+  --step-7: clamp(3.5rem, 2.667rem + 3.704vw, 6rem);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+  --space-7: 6rem;
+
+  /* Reading column of the post and the long pages */
+  --measure: 45rem;
+
+  /* Margin column (labels, years, meta) beside the content column */
+  --aside: clamp(11rem, 16vw, 15rem);
+  --aside-gap: clamp(1.5rem, 4vw, 4rem);
+
+  /* Container: 1200px, with a gutter that grows from 20px at 360px to 120px at 1440px */
+  --page: 75rem;
+  --gutter: clamp(1.25rem, 9.259vw - 0.833rem, 7.5rem);
+
+  --radius-sm: 0.25rem;
+  --radius: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+}

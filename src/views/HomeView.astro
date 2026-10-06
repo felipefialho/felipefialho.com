@@ -1,0 +1,36 @@
+---
+import HomeFeatured from '../components/HomeFeatured.astro';
+import HomeHero from '../components/HomeHero.astro';
+import HomeLabs from '../components/HomeLabs.astro';
+import HomeLatest from '../components/HomeLatest.astro';
+import Base from '../layouts/Base.astro';
+import { SITE_NAME, localePath, t, type Lang } from '../lib/i18n';
+import { getFeaturedProjects } from '../lib/lab';
+import { HOME_TOPICS, getFeatured, getPosts, getTopTags } from '../lib/posts';
+import { homeJsonLd } from '../lib/seo';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const ui = t(lang);
+const allPosts = await getPosts(lang);
+const { featured, latest } = getFeatured(allPosts);
+const topics = getTopTags(allPosts, HOME_TOPICS.length, HOME_TOPICS);
+const projects = await getFeaturedProjects();
+const jsonLd = homeJsonLd({ lang, path: localePath(lang, '/'), title: SITE_NAME, description: ui.homeDescription });
+---
+
+<Base
+  lang={lang}
+  title={ui.homeTitle}
+  description={ui.homeDescription}
+  alternate={localePath(lang === 'pt' ? 'en' : 'pt', '/')}
+  jsonLd={jsonLd}
+>
+  <HomeHero slot="hero" lang={lang} />
+  {featured && <HomeFeatured lang={lang} post={featured} />}
+  <HomeLatest lang={lang} posts={latest} topics={topics} />
+  <HomeLabs lang={lang} projects={projects} />
+</Base>
