@@ -94,6 +94,15 @@ const copy = {
   const TRACK_DELAY_MS = 1000;
   const MIN_TERM_LENGTH = 2;
 
+  const isStringRecord = (value: unknown): value is Record<string, string> =>
+    typeof value === 'object' && value !== null && Object.values(value).every((item) => typeof item === 'string');
+
+  // The strings are server-rendered JSON: anything unexpected falls back to Pagefind's defaults
+  const readTranslations = (raw: string | undefined): Record<string, string> => {
+    const data: unknown = JSON.parse(raw ?? '{}');
+    return isStringRecord(data) ? data : {};
+  };
+
   const mountUi = async (host: HTMLDialogElement) => {
     // The bundle only exists after `pagefind --site dist`, never in dev: a load error means no index
     try {
@@ -114,7 +123,7 @@ const copy = {
       showImages: false,
       resetStyles: false,
       autofocus: true,
-      translations: JSON.parse(host.dataset.translations ?? '{}'),
+      translations: readTranslations(host.dataset.translations),
     });
 
     // Report the term once the reader stops typing
@@ -132,7 +141,7 @@ const copy = {
     dialog.addEventListener(
       'toggle',
       (event) => {
-        if ((event as ToggleEvent).newState === 'open') void mountUi(dialog);
+        if (event.newState === 'open') void mountUi(dialog);
       },
       { once: true },
     );
