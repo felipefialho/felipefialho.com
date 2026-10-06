@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { TAG_ATTRS, decodeEntities, escapeAttr, escapeHtml, parseAttrs, serializeAttrs, stringAttr } from './html-tags.ts';
+import { TAG_ATTRS, decodeEntities, escapeAttr, escapeHtml, parseAttrs, serializeAttrs, stringAttr } from '../html-tags.ts';
 
 describe('parseAttrs', () => {
   it('reads double-quoted, single-quoted, bare and boolean attributes', () => {
