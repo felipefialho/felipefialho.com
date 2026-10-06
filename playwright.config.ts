@@ -11,7 +11,10 @@ export default defineConfig({
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
-  reporter: process.env.CI ? [['github'], ['html', { open: 'never' }]] : 'list',
+  // Bounded on CI so a broken environment fails fast and visibly instead of retrying every test
+  maxFailures: process.env.CI ? 5 : 0,
+  globalTimeout: process.env.CI ? 10 * 60 * 1000 : 0,
+  reporter: process.env.CI ? [['list'], ['github'], ['html', { open: 'never' }]] : 'list',
   use: {
     baseURL: BASE_URL,
     channel: process.env.CI ? undefined : 'chrome',
