@@ -15,6 +15,7 @@ declare global {
 }
 
 const FILL_TIMEOUT_MS = 4000;
+const PRELOAD_MARGIN = '600px 0px';
 
 let tagInjected = false;
 let tagFailed = false;
@@ -42,6 +43,29 @@ function injectTag(queue: AdsQueue): void {
   watchGoogleCmp();
 }
 
+function show(slot: HTMLElement): void {
+  slot.hidden = false;
+  slot.style.display = '';
+}
+
+// AdSense sets data-ad-status once it answers; silence means the box would stay empty.
+// A fill that lands after the timeout still wins and brings the slot back.
+function watchFill(slot: HTMLElement, ins: HTMLElement): void {
+  const timer = setTimeout(() => {
+    if (!ins.dataset.adStatus) hide(slot);
+  }, FILL_TIMEOUT_MS);
+
+  const observer = new MutationObserver(() => {
+    const status = ins.dataset.adStatus;
+    if (!status) return;
+    clearTimeout(timer);
+    observer.disconnect();
+    if (status === 'filled') show(slot);
+    else hide(slot);
+  });
+  observer.observe(ins, { attributes: true, attributeFilter: ['data-ad-status'] });
+}
+
 function fill(slot: HTMLElement): void {
   const { adSlot, adFormat, adLayout, fullWidthResponsive, adWidth, adHeight } = slot.dataset;
   if (!adSlot || tagFailed || slot.querySelector('ins.adsbygoogle')) return;
@@ -64,10 +88,7 @@ function fill(slot: HTMLElement): void {
 
   slot.append(ins);
   queue.push({});
-  // AdSense sets data-ad-status once it answers; silence means the box would stay empty
-  setTimeout(() => {
-    if (!ins.dataset.adStatus) hide(slot);
-  }, FILL_TIMEOUT_MS);
+  watchFill(slot, ins);
 }
 
 /**
@@ -90,7 +111,7 @@ export function initAds(): void {
         observer.unobserve(entry.target);
         fill(entry.target as HTMLElement);
       }
-    }, { rootMargin: '600px 0px' });
+    }, { rootMargin: PRELOAD_MARGIN });
     slots.forEach((slot) => observer.observe(slot));
   };
 
