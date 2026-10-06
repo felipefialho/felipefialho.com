@@ -10,13 +10,9 @@ const WIDTH = 1200;
 const HEIGHT = 630;
 const PADDING = 64;
 
-// Terminal palette, kept in sync with tokens.css
-const BG = '#0f0f0f';
-const INK = '#f1f1f1';
-const MUTED = '#9a9a9a';
-const FAINT = '#757575';
-const LINE = '#2d2d2d';
-const ACCENT = '#a1ecf7';
+// Terminal palette (the dark values of tokens.css, checked by og-palette.test.ts)
+export const PALETTE = { bg: '#0f0f0f', ink: '#f1f1f1', muted: '#9a9a9a', faint: '#757575', line: '#2d2d2d', accent: '#a1ecf7' } as const;
+const { bg: BG, ink: INK, muted: MUTED, faint: FAINT, line: LINE, accent: ACCENT } = PALETTE;
 
 type PostCard = { kind: 'post'; title: string; meta: string; tags: string[] };
 type DefaultCard = { kind: 'default'; title: string };
@@ -42,11 +38,11 @@ const fonts = Promise.all([
   { name: 'Geist Mono', data: mono, weight: 400 as const, style: 'normal' as const },
 ]);
 
-const escapeHtml = (text: string) =>
+const escapeHtml = (text: string): string =>
   text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 // Satori cannot draw emoji without an emoji font
-const stripEmoji = (text: string) =>
+const stripEmoji = (text: string): string =>
   text
     .replace(/\p{Extended_Pictographic}/gu, '')
     .replace(/‍|️|⃣/g, '')
@@ -58,7 +54,7 @@ const CHAR_WIDTH = 0.5; // average glyph width in em for Geist 600 with -0.052em
 const TITLE_WIDTH = WIDTH - PADDING * 2;
 
 /** Estimated wrapped line count of a title at a font size, breaking on spaces like the renderer. */
-export function countLines(title: string, size: number) {
+export function countLines(title: string, size: number): number {
   const perLine = Math.floor(TITLE_WIDTH / (size * CHAR_WIDTH));
   let lines = 1;
   let used = 0;
@@ -75,13 +71,13 @@ export function countLines(title: string, size: number) {
 }
 
 // The two largest sizes stay at 3 lines so the block never crowds the header and the author row
-const maxLinesFor = (size: number) => (size >= 64 ? 3 : 4);
+const maxLinesFor = (size: number): number => (size >= 64 ? 3 : 4);
 
 /** Largest size whose estimated wrap fits; the smallest size otherwise. */
-export const fitTitleSize = (title: string) =>
+export const fitTitleSize = (title: string): number =>
   TITLE_SIZES.find((size) => countLines(title, size) <= maxLinesFor(size)) ?? TITLE_SIZES[TITLE_SIZES.length - 1];
 
-const toDataUri = (buffer: Buffer, type: string) => `data:${type};base64,${buffer.toString('base64')}`;
+const toDataUri = (buffer: Buffer, type: string): string => `data:${type};base64,${buffer.toString('base64')}`;
 
 // Outline of `ff` in Geist Mono 700 (240px, letter-spacing -0.1em): the mark needs no font
 const FF_PATH =
@@ -95,11 +91,11 @@ const MARK = toDataUri(
   'image/svg+xml',
 );
 
-const grayscale = (input: Sharp, contrast: number) =>
+const grayscale = (input: Sharp, contrast: number): Sharp =>
   input.grayscale().linear(contrast, 255 * (0.5 - 0.5 * contrast));
 
 // Satori has no blend modes or filters: tint the photo here (grayscale, cyan multiply, left fade, scanlines)
-async function photoSide() {
+async function photoSide(): Promise<string> {
   const { width, height } = PHOTO_SIDE;
   const cover = Math.round(HEIGHT); // the 800px square scaled to the column height, cropped at object-position 40%
   const left = Math.round((cover - width) * 0.4);
@@ -117,7 +113,7 @@ async function photoSide() {
   return toDataUri(tinted, 'image/png');
 }
 
-async function avatar() {
+async function avatar(): Promise<string> {
   const buffer = await grayscale(sharp(PHOTO).resize(136, 136), 1.1).png().toBuffer();
   return toDataUri(buffer, 'image/png');
 }
@@ -126,24 +122,24 @@ async function avatar() {
 const photoPromise = photoSide();
 const avatarPromise = avatar();
 
-const header = (path: string, aside: string) => `
+const header = (path: string, aside: string): string => `
   <div style="display:flex;justify-content:space-between;align-items:center;font-family:'Geist Mono';font-size:22px;color:${MUTED}">
     <div style="display:flex;align-items:center;gap:12px"><img src="${MARK}" style="width:44px;height:44px" /><div style="display:flex;color:${INK}"><span style="color:${ACCENT}">~/</span>felipefialho${path ? `<span style="color:${FAINT}">${path}</span>` : ''}</div></div>
     ${aside}
   </div>`;
 
-const title = (text: string, size: number) =>
+const title = (text: string, size: number): string =>
   `<div style="display:block;font-size:${size}px;line-height:${size <= 56 ? 1.08 : 1.02};font-weight:600;letter-spacing:-0.052em">${escapeHtml(text)}</div>`;
 
 // Satori cannot mix text and inline spans in one block, so the headline is a wrapping row of words with the accent cursor on the last one
-const cursorTitle = (text: string, size: number) => {
+const cursorTitle = (text: string, size: number): string => {
   const words = text.split(' ').map((word) => escapeHtml(word));
   const last = words.pop();
   const items = [...words.map((word) => `<div style="display:flex">${word}</div>`), `<div style="display:flex">${last}<span style="color:${ACCENT}">_</span></div>`];
   return `<div style="display:flex;flex-wrap:wrap;column-gap:${size * 0.21}px;font-size:${size}px;line-height:1;font-weight:600;letter-spacing:-0.052em">${items.join('')}</div>`;
 };
 
-async function defaultMarkup(text: string) {
+async function defaultMarkup(text: string): Promise<string> {
   return `
     <div style="display:flex;width:${WIDTH}px;height:${HEIGHT}px;background:${BG};color:${INK};font-family:'Geist'">
       <div style="display:flex;flex-direction:column;flex:1;padding:${PADDING}px;gap:28px">
@@ -155,7 +151,7 @@ async function defaultMarkup(text: string) {
     </div>`;
 }
 
-async function postMarkup({ title: text, meta, tags }: PostCard) {
+async function postMarkup({ title: text, meta, tags }: PostCard): Promise<string> {
   const size = fitTitleSize(text);
   const tagLine = tags.map((tag) => `#${escapeHtml(tag)}`).join(' ');
   return `
@@ -180,6 +176,7 @@ export async function renderOgImage(input: OgInput): Promise<Buffer> {
       : await defaultMarkup(stripEmoji(input.title)),
   );
 
+  // satori-html returns a hast-like VNode that satori accepts at runtime but types as its own element shape
   const svg = await satori(markup as Parameters<typeof satori>[0], {
     width: WIDTH,
     height: HEIGHT,
@@ -190,7 +187,9 @@ export async function renderOgImage(input: OgInput): Promise<Buffer> {
 }
 
 /** Static paths for every post card of a language plus the site card. */
-export async function getOgPaths(lang: Lang) {
+export type OgPath = { params: { slug: string }; props: { input: OgInput } };
+
+export async function getOgPaths(lang: Lang): Promise<OgPath[]> {
   // Loaded lazily: `astro:content` only exists inside Astro, which keeps the pure helpers above unit-testable
   const [{ render }, { getPosts }] = await Promise.all([import('astro:content'), import('./posts')]);
   const posts = await getPosts(lang);
@@ -215,5 +214,5 @@ export async function getOgPaths(lang: Lang) {
   return [...cards, { params: { slug: 'default' }, props: { input: { kind: 'default' as const, title: DEFAULT_TITLE[lang] } satisfies OgInput } }];
 }
 
-export const ogResponse = async (input: OgInput) =>
+export const ogResponse = async (input: OgInput): Promise<Response> =>
   new Response(new Uint8Array(await renderOgImage(input)), { headers: { 'Content-Type': 'image/jpeg' } });
