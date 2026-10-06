@@ -41,4 +41,10 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm exec playwright install --with-deps chromium
       - run: pnpm build
+      - name: Start the preview server
+        run: |
+          pnpm astro preview --background --port 4321
+          for _ in $(seq 1 30); do curl -sf http://localhost:4321/ >/dev/null && exit 0; sleep 1; done
+          pnpm astro preview logs
+          exit 1
       - run: pnpm test:e2e

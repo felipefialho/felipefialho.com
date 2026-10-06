@@ -21,9 +21,13 @@ export default defineConfig({
     locale: 'pt-BR',
     trace: 'on-first-retry',
   },
-  webServer: {
-    command: `pnpm astro preview --port ${PORT}`,
-    url: BASE_URL,
-    reuseExistingServer: true,
-  },
+  // CI starts the preview itself (see ci.yml): Playwright could not stop the pnpm-wrapped server
+  // on Linux, so the run hung after the last test and never printed its summary
+  webServer: process.env.CI
+    ? undefined
+    : {
+      command: `pnpm astro preview --port ${PORT}`,
+      url: BASE_URL,
+      reuseExistingServer: true,
+    },
 });
