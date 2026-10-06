@@ -1,5 +1,6 @@
 ---
 import { Font } from 'astro:assets';
+import AnalyticsInit from '../components/AnalyticsInit.astro';
 import ConsentBanner from '../components/ConsentBanner.astro';
 import ConsentHead from '../components/ConsentHead.astro';
 import Footer from '../components/Footer.astro';
@@ -137,6 +138,7 @@ const speculationRules = { prefetch: [{ where: { href_matches: '/*' }, eagerness
     <Footer lang={lang} />
     <SearchDialog lang={lang} />
     <ConsentBanner lang={lang} />
+    <AnalyticsInit />
     <slot name="end" />
   </body>
 </html>

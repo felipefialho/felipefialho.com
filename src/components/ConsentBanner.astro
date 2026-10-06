@@ -135,10 +135,7 @@ const SWITCH = { switch: '' };
 </p>
 
 <script>
-  import { initAnalytics } from '../lib/analytics';
   import { CONSENT_ID, cmpConfirmed, inCmpRegion, readConsent, saveConsent } from '../lib/consent';
-
-  initAnalytics();
 
   const TOAST_MS = 6000;
 
@@ -146,12 +143,28 @@ const SWITCH = { switch: '' };
   const prefs = document.querySelector<HTMLDialogElement>('#consent-prefs');
   const toast = document.querySelector<HTMLElement>('#consent-toast');
   const form = prefs?.querySelector('form');
+  const analytics = form?.elements.namedItem('analytics');
+  const ads = form?.elements.namedItem('ads');
+  const message = toast?.querySelector<HTMLElement>('.msg');
 
-  if (banner && prefs && toast && form && typeof banner.showPopover === 'function') {
-    const analytics = form.elements.namedItem('analytics') as HTMLInputElement;
-    const ads = form.elements.namedItem('ads') as HTMLInputElement;
-    const message = toast.querySelector<HTMLElement>('.msg')!;
-    const messages: Record<'accept' | 'necessary' | 'save', string> = JSON.parse(toast.dataset.messages ?? '{}');
+  type Choice = 'accept' | 'necessary' | 'save';
+
+  // The toast copy is server-rendered JSON: anything missing falls back to an empty string
+  const readMessages = (raw: string | undefined): Record<Choice, string> => {
+    const data: unknown = JSON.parse(raw ?? '{}');
+    const pick = (key: Choice): string => {
+      const text: unknown = typeof data === 'object' && data !== null ? Reflect.get(data, key) : undefined;
+      return typeof text === 'string' ? text : '';
+    };
+    return { accept: pick('accept'), necessary: pick('necessary'), save: pick('save') };
+  };
+
+  if (
+    banner && prefs && toast && form && message
+    && analytics instanceof HTMLInputElement && ads instanceof HTMLInputElement
+    && typeof banner.showPopover === 'function'
+  ) {
+    const messages = readMessages(toast.dataset.messages);
     let timer: ReturnType<typeof setTimeout> | undefined;
 
     const armToast = () => {
@@ -171,7 +184,7 @@ const SWITCH = { switch: '' };
     toast.addEventListener('pointerleave', armToast);
     toast.addEventListener('focusout', armToast);
 
-    const choose = (choice: 'accept' | 'necessary' | 'save') => {
+    const choose = (choice: Choice) => {
       if (choice === 'accept') saveConsent(true, true);
       else if (choice === 'necessary') saveConsent(false, false);
       else saveConsent(analytics.checked, ads.checked);
@@ -183,7 +196,7 @@ const SWITCH = { switch: '' };
     // The dialog stands alone: hide the banner while it is open, bring it back if closed with no choice
     let bannerHidden = false;
     prefs.addEventListener('toggle', (event) => {
-      if ((event as ToggleEvent).newState !== 'open' || !banner.matches(':popover-open')) return;
+      if (event.newState !== 'open' || !banner.matches(':popover-open')) return;
       bannerHidden = true;
       banner.hidePopover();
     });
@@ -207,20 +220,21 @@ const SWITCH = { switch: '' };
 
     // Show the stored choice, never pre-ticked switches
     prefs.addEventListener('beforetoggle', (event) => {
-      if ((event as ToggleEvent).newState !== 'open') return;
+      if (event.newState !== 'open') return;
       const stored = readConsent();
       analytics.checked = stored?.analytics ?? false;
       ads.checked = stored?.ads ?? false;
     });
 
     banner.addEventListener('click', (event) => {
-      const action = (event.target as Element).closest<HTMLElement>('[data-action]')?.dataset.action;
+      const target = event.target instanceof Element ? event.target : null;
+      const action = target?.closest<HTMLElement>('[data-action]')?.dataset.action;
       if (action === 'customize') openPrefs();
       else if (action === 'accept' || action === 'necessary') choose(action);
     });
 
     toast.addEventListener('click', (event) => {
-      if ((event.target as Element).closest('[data-action="change"]')) openPrefs();
+      if (event.target instanceof Element && event.target.closest('[data-action="change"]')) openPrefs();
     });
 
     form.addEventListener('submit', (event) => {
