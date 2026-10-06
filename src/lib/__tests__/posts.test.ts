@@ -124,4 +124,16 @@ describe('tagStaticPaths', () => {
     expect(different[0].props.alternate).toBe('/en/blog/');
     expect(different[0].params.tag).toBe('carreira');
   });
+
+  it('merges tags that normalize to the same slug into one route without dropping posts', async () => {
+    getCollection.mockResolvedValue([
+      post('p1', '2020-01-01T00:00:00Z', ['Segurança']),
+      post('p2', '2020-02-01T00:00:00Z', ['seguranca']),
+      post('p3', '2020-03-01T00:00:00Z', ['SEGURANCA!']),
+    ]);
+    const paths = await tagStaticPaths('pt');
+    expect(paths).toHaveLength(1);
+    expect(paths[0].params.tag).toBe('seguranca');
+    expect(paths[0].props.posts.map((entry) => entry.id).sort()).toEqual(['p1', 'p2', 'p3']);
+  });
 });

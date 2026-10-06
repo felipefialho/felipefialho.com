@@ -14,17 +14,17 @@ export async function getPosts(lang: Lang): Promise<Post[]> {
 }
 
 /** The newest published post and the `limit` posts right after it. Drafts never lead the home, even in dev. */
-export function getFeatured<T extends Post>(posts: T[], limit = 6) {
+export function getFeatured<T extends Post>(posts: T[], limit = 6): { featured: T | undefined; latest: T[] } {
   const published = posts.filter((post) => !post.data.draft);
   return { featured: published[0], latest: published.slice(1, 1 + limit) };
 }
 
-export const postPath = (lang: Lang, id: string) => localePath(lang, `/blog/${id}/`);
+export const postPath = (lang: Lang, id: string): string => localePath(lang, `/blog/${id}/`);
 
-export const ogImagePath = (lang: Lang, id: string) => localePath(lang, `/og/${id}.jpg`);
+export const ogImagePath = (lang: Lang, id: string): string => localePath(lang, `/og/${id}.jpg`);
 
 /** Maps each PT slug to its EN translation slug and back, for hreflang and the language switch. */
-export async function getTranslationMap() {
+export async function getTranslationMap(): Promise<{ ptToEn: Map<string, string>; enToPt: Map<string, string> }> {
   // Same draft filter as the routes, so an unpublished translation never becomes a hreflang target
   const en = await getPosts('en');
   const ptToEn = new Map(en.map((entry) => [entry.data.translationOf, entry.id]));
@@ -40,7 +40,7 @@ export function getAdjacent(posts: Post[], id: string): { older?: Post; newer?: 
 }
 
 /** Up to `limit` posts sharing the most tags, newest first on ties. */
-export function getRelated(posts: Post[], current: Post, limit = 3) {
+export function getRelated(posts: Post[], current: Post, limit = 3): Post[] {
   const tags = new Set(current.data.tags);
   return posts
     .filter((post) => post.id !== current.id)
@@ -54,7 +54,7 @@ export function getRelated(posts: Post[], current: Post, limit = 3) {
 /** Tags with enough posts to deserve their own page. */
 export const MIN_TAG_POSTS = 3;
 
-export function getTagCounts(posts: Post[]) {
+export function getTagCounts(posts: Post[]): Map<string, number> {
   const counts = new Map<string, number>();
   for (const post of posts) {
     for (const tag of post.data.tags) counts.set(tag, (counts.get(tag) ?? 0) + 1);
@@ -69,7 +69,7 @@ export const HOME_TOPICS = ['ai', 'carreira', 'front-end', 'javascript', 'css', 
  * Tags that have their own page: the pinned ones first (in their order), then the most used
  * (alphabetical on ties), up to the limit.
  */
-export function getTopTags(posts: Post[], limit = 7, pinned: readonly string[] = []) {
+export function getTopTags(posts: Post[], limit = 7, pinned: readonly string[] = []): string[] {
   const ranked = [...getTagCounts(posts)]
     .filter(([, count]) => count >= MIN_TAG_POSTS)
     .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
@@ -79,7 +79,7 @@ export function getTopTags(posts: Post[], limit = 7, pinned: readonly string[] =
   return [...new Set([...first, ...ranked])].slice(0, limit);
 }
 
-export const tagSlug = (tag: string) => {
+export const tagSlug = (tag: string): string => {
   const slug = tag
     .toLowerCase()
     .normalize('NFD')
@@ -105,16 +105,18 @@ const TAG_LABELS: Record<string, string> = {
 };
 
 /** Display form of a normalized (lowercase) tag: "css" becomes "CSS", "soft skills" becomes "Soft skills". */
-export const tagLabel = (tag: string) => TAG_LABELS[tag] ?? `${tag.charAt(0).toUpperCase()}${tag.slice(1)}`;
+export const tagLabel = (tag: string): string => TAG_LABELS[tag] ?? `${tag.charAt(0).toUpperCase()}${tag.slice(1)}`;
 
-export const tagPath = (lang: Lang, tag: string) => localePath(lang, `/blog/tags/${tagSlug(tag)}/`);
+export const tagPath = (lang: Lang, tag: string): string => localePath(lang, `/blog/tags/${tagSlug(tag)}/`);
 
 /** Groups posts by publication year, newest year first. */
-export function groupByYear(posts: Post[]) {
+export function groupByYear(posts: Post[]): [number, Post[]][] {
   const years = new Map<number, Post[]>();
   for (const post of posts) {
     const year = post.data.date.getUTCFullYear();
-    years.set(year, [...(years.get(year) ?? []), post]);
+    const bucket = years.get(year);
+    if (bucket) bucket.push(post);
+    else years.set(year, [post]);
   }
   return [...years.entries()];
 }
@@ -123,7 +125,7 @@ export function groupByYear(posts: Post[]) {
  * Static paths for the post pages of a language. Every path shares the same `posts` array
  * reference (no copy), which is cheaper than re-querying the collection once per page.
  */
-export async function postStaticPaths(lang: Lang) {
+export async function postStaticPaths(lang: Lang): Promise<{ params: { slug: string }; props: { post: Post; posts: Post[]; alternate: string | undefined } }[]> {
   const posts = await getPosts(lang);
   const { ptToEn, enToPt } = await getTranslationMap();
   const translations = lang === 'pt' ? ptToEn : enToPt;
@@ -137,21 +139,37 @@ export async function postStaticPaths(lang: Lang) {
   });
 }
 
+/**
+ * Posts grouped by tag slug, for tags with enough posts. Two tags that normalize to the same slug
+ * share one entry (the first spelling wins), so no route is duplicated and no post is dropped.
+ */
+export function groupTagsBySlug(posts: Post[]): Map<string, { tag: string; posts: Post[] }> {
+  const groups = new Map<string, { tag: string; posts: Post[] }>();
+  for (const post of posts) {
+    for (const slug of new Set(post.data.tags.map(tagSlug))) {
+      const group = groups.get(slug);
+      if (!group) groups.set(slug, { tag: post.data.tags.find((tag) => tagSlug(tag) === slug) ?? slug, posts: [post] });
+      else group.posts.push(post);
+    }
+  }
+  for (const [slug, { posts: grouped }] of groups) {
+    if (grouped.length < MIN_TAG_POSTS) groups.delete(slug);
+  }
+  return groups;
+}
+
 /** Static paths for the tag archives of a language. */
-export async function tagStaticPaths(lang: Lang) {
+export async function tagStaticPaths(lang: Lang): Promise<{ params: { tag: string }; props: { tag: string; posts: Post[]; alternate: string } }[]> {
   const otherLang: Lang = lang === 'pt' ? 'en' : 'pt';
   const [posts, otherPosts] = await Promise.all([getPosts(lang), getPosts(otherLang)]);
-  const otherSlugs = new Set(tagsWithPage(otherPosts).map(tagSlug));
-  return tagsWithPage(posts).map((tag) => ({
-    params: { tag: tagSlug(tag) },
+  const otherSlugs = new Set(groupTagsBySlug(otherPosts).keys());
+  return [...groupTagsBySlug(posts)].map(([slug, { tag, posts: tagPosts }]) => ({
+    params: { tag: slug },
     props: {
       tag,
-      posts: posts.filter((post) => post.data.tags.includes(tag)),
+      posts: tagPosts,
       // The same slug in the other language is the same topic; otherwise fall back to its blog index
-      alternate: otherSlugs.has(tagSlug(tag)) ? tagPath(otherLang, tag) : localePath(otherLang, '/blog/'),
+      alternate: otherSlugs.has(slug) ? tagPath(otherLang, tag) : localePath(otherLang, '/blog/'),
     },
   }));
 }
-
-const tagsWithPage = (posts: Post[]) =>
-  [...getTagCounts(posts)].filter(([, count]) => count >= MIN_TAG_POSTS).map(([tag]) => tag);
