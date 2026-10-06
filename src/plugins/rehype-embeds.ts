@@ -5,6 +5,10 @@ import { langOf, toFilePath } from './utils/paths.ts';
 
 const YOUTUBE_ID = /^(?:https?:)?\/\/(?:www\.|m\.)?(?:youtube(?:-nocookie)?\.com\/embed\/|youtu\.be\/)([\w-]{6,})/i;
 const CODEPEN_EMBED = /^(?:https?:)?\/\/(?:www\.)?codepen\.io\/[^/]+\/embed\//i;
+const HTTPS_SRC = /^https:\/\//i;
+const REFERRER_POLICY = 'strict-origin-when-cross-origin';
+// Third-party embeds (CodePen and friends) need scripts and their own origin to work, nothing else of the page
+const GENERIC_SANDBOX = 'allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms allow-presentation';
 const YOUTUBE_ALLOW = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
 
 // A padding-bottom wrapper div is the old responsive aspect-ratio hack, alone with its iframe
@@ -71,18 +75,23 @@ function youtubeIframe(id: string, title: string, lang: Lang): string {
   attrs.set('title', escapeAttr(title));
   attrs.set('allow', YOUTUBE_ALLOW);
   attrs.set('allowfullscreen', true);
+  attrs.set('referrerpolicy', REFERRER_POLICY);
   return `<iframe ${serializeAttrs(attrs)}></iframe>`;
 }
 
-function genericIframe(source: string, lang: Lang, wrapperRemoved: boolean): string {
+/** Hardened generic iframe, or undefined when its src is not https (the caller leaves the markup untouched). */
+function genericIframe(source: string, lang: Lang, wrapperRemoved: boolean): string | undefined {
   const attrs = parseAttrs(source);
   const src = stringAttr(attrs, 'src');
+  if (src !== undefined && !HTTPS_SRC.test(src.trim())) return undefined;
   const authoredTitle = stringAttr(attrs, 'title')?.trim();
   const isPen = CODEPEN_EMBED.test(src ?? '');
   const label = isPen ? TEXT[lang].loadPen : TEXT[lang].loadGeneric;
   const title = authoredTitle ? decodeEntities(authoredTitle) : undefined;
 
   attrs.set('loading', 'lazy');
+  attrs.set('referrerpolicy', REFERRER_POLICY);
+  if (!attrs.has('sandbox')) attrs.set('sandbox', GENERIC_SANDBOX);
   attrs.set('title', escapeAttr(title ?? TEXT[lang].generic));
   if (src && !attrs.has('srcdoc')) {
     withFacade(attrs, { lang, href: src, text: title ?? label, label: title ? `${label}: ${title}` : label });
@@ -131,6 +140,7 @@ export function transformEmbeds(html: string, lang: Lang): string {
     }
 
     const iframe = genericIframe(source, lang, wrapperRemoved);
+    if (iframe === undefined) return _match;
     if (!wrapperRemoved) return iframe;
     return `<figure class="${CODEPEN_EMBED.test(src) ? 'embed embed-codepen' : 'embed'}">${iframe}</figure>`;
   });

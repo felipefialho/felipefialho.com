@@ -96,6 +96,31 @@ describe('transformEmbeds, other iframes', () => {
     expect(attr(out, 'srcdoc')).toBe('&lt;p&gt;hi&lt;/p&gt;');
   });
 
+  it('hardens generic iframes with a referrer policy and a sandbox', () => {
+    const out = transformEmbeds('<iframe src="https://example.com/x"></iframe>', 'en');
+    expect(attr(out, 'referrerpolicy')).toBe('strict-origin-when-cross-origin');
+    expect(attr(out, 'sandbox')).toContain('allow-scripts');
+    expect(attr(out, 'sandbox')).not.toContain('allow-top-navigation');
+  });
+
+  it('keeps an authored sandbox', () => {
+    expect(attr(transformEmbeds('<iframe src="https://example.com/x" sandbox="allow-scripts"></iframe>', 'en'), 'sandbox')).toBe('allow-scripts');
+  });
+
+  it.each([
+    ['http', 'http://example.com/x'],
+    ['javascript', 'javascript:alert(1)'],
+    ['data', 'data:text/html,hi'],
+    ['protocol-relative', '//example.com/x'],
+  ])('leaves a %s iframe untouched', (_name, src) => {
+    const html = `<iframe src="${src}"></iframe>`;
+    expect(transformEmbeds(html, 'en')).toBe(html);
+  });
+
+  it('adds a referrer policy to YouTube facades', () => {
+    expect(attr(transformEmbeds('<iframe src="https://www.youtube.com/embed/abcdef123"></iframe>', 'en'), 'referrerpolicy')).toBe('strict-origin-when-cross-origin');
+  });
+
   it('does not touch html without iframes', () => {
     const html = '<p>hello</p><div style="padding-bottom:1px">x</div>';
     expect(transformEmbeds(html, 'pt')).toBe(html);
