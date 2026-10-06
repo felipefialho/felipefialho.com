@@ -5,21 +5,25 @@ export const GA_ID = 'G-TM1XEXQZ6B';
 
 let injected = false;
 
+const IDLE_TIMEOUT_MS = 3000;
+const IDLE_FALLBACK_MS = 200;
+
 const whenIdle = (callback: () => void) => {
-  if ('requestIdleCallback' in window) requestIdleCallback(callback, { timeout: 3000 });
-  else setTimeout(callback, 200);
+  if ('requestIdleCallback' in window) requestIdleCallback(callback, { timeout: IDLE_TIMEOUT_MS });
+  else setTimeout(callback, IDLE_FALLBACK_MS);
 };
 
+// GA's documented opt-out switch is a window property named `ga-disable-<ID>`
 const setDisabled = (disabled: boolean) => {
-  (window as unknown as Record<string, boolean>)[`ga-disable-${GA_ID}`] = disabled;
+  Object.assign(window, { [`ga-disable-${GA_ID}`]: disabled });
 };
 
 // Local builds and deploy previews never report to the production property
-const IS_PRODUCTION_HOST = location.hostname === 'felipefialho.com';
+const isProductionHost = () => location.hostname === 'felipefialho.com';
 
 function inject(): void {
   setDisabled(false);
-  if (injected || !IS_PRODUCTION_HOST) return;
+  if (injected || !isProductionHost()) return;
   injected = true;
   whenIdle(() => {
     const script = document.createElement('script');
