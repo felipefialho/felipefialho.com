@@ -11,48 +11,51 @@ interface Props {
 
 const { headings, lang, variant } = Astro.props;
 const label = t(lang).toc;
+
+// One list, two shells: a collapsible <details> below 60rem, a labelled <nav> from 60rem
+const Wrapper = variant === 'inline' ? 'details' : 'nav';
+const wrapperProps =
+  variant === 'inline'
+    ? { class: 'toc-inline', 'data-pagefind-ignore': true }
+    : { class: 'toc-sidebar', 'aria-label': label, 'data-pagefind-ignore': true, 'data-toc': true };
 ---
 
-{
-  variant === 'inline' ? (
-    <details class="toc-inline" data-pagefind-ignore>
-      <summary>{label}</summary>
-      <ol>
-        {headings.map(({ slug, text, depth }) => (
-          <li data-depth={depth}>
-            <a href={`#${slug}`}>{text}</a>
-          </li>
-        ))}
-      </ol>
-    </details>
-  ) : (
-    <nav class="toc-sidebar" aria-label={label} data-pagefind-ignore data-toc>
-      <p class="toc-label">{label}</p>
-      <ol>
-        {headings.map(({ slug, text, depth }) => (
-          <li data-depth={depth}>
-            <a href={`#${slug}`}>{text}</a>
-          </li>
-        ))}
-      </ol>
-    </nav>
-  )
-}
+<Wrapper {...wrapperProps}>
+  {variant === 'inline' ? <summary>{label}</summary> : <p class="toc-label">{label}</p>}
+  <ol>
+    {headings.map(({ slug, text, depth }) => (
+      <li data-depth={depth}>
+        <a href={`#${slug}`}>{text}</a>
+      </li>
+    ))}
+  </ol>
+</Wrapper>
 
 <script>
-  // Section highlight: the current section is the last heading above 40% of the viewport
+  // Section highlight: the current section is the last heading above LINE_RATIO of the viewport
+  // (sidebar only: the inline variant is a collapsed list with no active style)
   const nav = document.querySelector<HTMLElement>('[data-toc]');
   const CURRENT = 'location';
+  const LINE_RATIO = 0.4;
+  // Keeps the active item clear of the faded edges
+  const EDGE_PX = 48;
+
+  // A malformed percent escape in a hash would make decodeURIComponent throw
+  const headingFor = (hash: string) => {
+    try {
+      return document.getElementById(decodeURIComponent(hash.slice(1)));
+    } catch {
+      return document.getElementById(hash.slice(1));
+    }
+  };
 
   if (nav) {
     const entries = [...nav.querySelectorAll<HTMLAnchorElement>('a[href^="#"]')].flatMap((link) => {
-      const heading = document.getElementById(decodeURIComponent(link.hash.slice(1)));
+      const heading = headingFor(link.hash);
       return heading ? [{ link, heading }] : [];
     });
     const list = nav.querySelector('ol');
     const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
-    // Keeps the active item clear of the faded edges
-    const EDGE = 48;
     let active: HTMLAnchorElement | undefined;
 
     // Scrolls the list only: scrollIntoView would also move the page
@@ -60,7 +63,7 @@ const label = t(lang).toc;
       if (!list || list.scrollHeight <= list.clientHeight) return;
       const box = list.getBoundingClientRect();
       const item = link.getBoundingClientRect();
-      if (item.top >= box.top + EDGE && item.bottom <= box.bottom - EDGE) return;
+      if (item.top >= box.top + EDGE_PX && item.bottom <= box.bottom - EDGE_PX) return;
       list.scrollTo({
         top: list.scrollTop + item.top - box.top - (box.height - item.height) / 2,
         behavior: reduceMotion.matches ? 'auto' : 'smooth',
@@ -68,7 +71,7 @@ const label = t(lang).toc;
     };
 
     const update = () => {
-      const line = window.innerHeight * 0.4;
+      const line = window.innerHeight * LINE_RATIO;
       const next = entries.findLast(({ heading }) => heading.getBoundingClientRect().top <= line)?.link;
       if (next === active) return;
       active?.removeAttribute('aria-current');
