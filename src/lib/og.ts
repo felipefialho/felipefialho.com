@@ -4,6 +4,7 @@ import { resolve } from 'node:path';
 import satori from 'satori';
 import { html } from 'satori-html';
 import sharp, { type Sharp } from 'sharp';
+import { cached, hashOf } from './disk-cache';
 import { formatDay, type Lang } from './i18n';
 
 const WIDTH = 1200;
@@ -169,7 +170,21 @@ async function postMarkup({ title: text, meta, tags }: PostCard): Promise<string
     </div>`;
 }
 
+const CACHE_DIR = resolve('node_modules/.cache/og');
+
+// Any change to the template, the pinned dependencies or the photo invalidates every card
+const sourceHash = Promise.all([
+  readFile(resolve('src/lib/og.ts')),
+  readFile(resolve('pnpm-lock.yaml')).catch(() => Buffer.alloc(0)),
+  readFile(PHOTO),
+]).then((sources) => hashOf(...sources));
+
+/** Renders a card, reusing the JPEG of an identical earlier build (rendering is about 160ms per card). */
 export async function renderOgImage(input: OgInput): Promise<Buffer> {
+  return cached(CACHE_DIR, hashOf(await sourceHash, JSON.stringify(input)), () => renderOgImageUncached(input));
+}
+
+async function renderOgImageUncached(input: OgInput): Promise<Buffer> {
   const markup = html(
     input.kind === 'post'
       ? await postMarkup({ ...input, title: stripEmoji(input.title), meta: stripEmoji(input.meta) })
