@@ -12,7 +12,7 @@ const COPY = {
   pt: {
     region: 'Aviso de cookies',
     intro:
-      'Uso o Google Analytics pra entender o que vocês mais leem e o Google AdSense pra exibir anúncios que ajudam a manter o blog. Nada disso roda sem o seu ok',
+      'Anúncios ajudam a manter o blog. Os personalizados e a análise de audiência só entram com o seu ok',
     policy: 'Política de privacidade',
     policyShort: 'política de privacidade',
     customize: 'personalizar',
@@ -28,14 +28,14 @@ const COPY = {
     analyticsHint: 'Mostra quais posts são mais lidos, de forma agregada. Ajuda a decidir sobre o que escrever',
     analyticsVendor: 'google analytics',
     ads: 'Anúncios',
-    adsHint: 'Permite anúncios personalizados. Recusando, os anúncios continuam, mas genéricos',
+    adsHint: 'Anúncios personalizados. Recusando, continuam os genéricos',
     adsVendor: 'google adsense',
     toast: { accept: 'tudo aceito. valeu!', necessary: 'só os necessários. de boa', save: 'escolhas salvas' },
   },
   en: {
     region: 'Cookie notice',
     intro:
-      'I use Google Analytics to see what you read the most and Google AdSense to show ads that help keep the blog running. None of it runs without your ok',
+      'Ads help keep the blog running. Personalized ads and analytics only come with your ok',
     policy: 'Privacy policy',
     policyShort: 'privacy policy',
     customize: 'customize',
@@ -51,7 +51,7 @@ const COPY = {
     analyticsHint: 'Shows which posts are read the most, in aggregate. Helps decide what to write about',
     analyticsVendor: 'google analytics',
     ads: 'Ads',
-    adsHint: 'Allows personalized ads. If you decline, ads still show, just generic ones',
+    adsHint: 'Personalized ads. If you decline, generic ones still show',
     adsVendor: 'google adsense',
     toast: { accept: 'all accepted. thanks!', necessary: 'necessary only. all good', save: 'choices saved' },
   },
@@ -294,7 +294,7 @@ const SWITCH = { switch: '' };
       max-inline-size: 45rem;
       margin: 0;
       color: var(--text);
-      font-size: 1.0625rem;
+      font-size: 0.8125rem;
       line-height: 1.55;
     }
 
@@ -416,7 +416,7 @@ const SWITCH = { switch: '' };
       flex-direction: column;
       gap: 0.375rem;
       color: var(--soft);
-      font-size: 0.9375rem;
+      font-size: 0.8125rem;
       line-height: 1.5;
 
       & strong {
@@ -531,7 +531,8 @@ const SWITCH = { switch: '' };
     outline-offset: 2px;
   }
 
-  @media (width < 48rem) {
+  /* Below this the three actions no longer fit beside the text, so they drop under it */
+  @media (width < 64rem) {
     .consent {
       grid-template-columns: minmax(0, 1fr);
       gap: 1.25rem;
@@ -540,7 +541,9 @@ const SWITCH = { switch: '' };
       max-block-size: calc(100dvh - 2rem);
       overflow: auto;
     }
+  }
 
+  @media (width < 48rem) {
     .consent .actions {
       flex-direction: column;
     }
