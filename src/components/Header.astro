@@ -107,7 +107,7 @@ const readStrings = `--mins: ${readingMinutes}; --s-done: '${ui.readDone}'; --s-
           ))
         }
       </ul>
-      <a class="lang" href={langHref} hreflang={HTML_LANG[otherLang]} lang={HTML_LANG[otherLang]} aria-label={`${otherLang}: ${ui.switchLang}`}>
+      <a class="lang" data-lang-switch={otherLang} href={langHref} hreflang={HTML_LANG[otherLang]} lang={HTML_LANG[otherLang]} aria-label={`${otherLang}: ${ui.switchLang}`}>
         {otherLang}
       </a>
       <button class="theme" type="button" data-theme-toggle data-label-light={ui.themeToLight} data-label-dark={ui.themeToDark} aria-label={ui.themeToLight}>
@@ -129,6 +129,8 @@ const readStrings = `--mins: ${readingMinutes}; --s-done: '${ui.readDone}'; --s-
 </header>
 
 <script>
+  import { LANG_COOKIE } from '../lib/locale';
+
   const root = document.documentElement;
   const toggle = document.querySelector<HTMLButtonElement>('[data-theme-toggle]');
   const themeColor = document.querySelector<HTMLMetaElement>('meta[name="theme-color"]');
@@ -166,6 +168,12 @@ const readStrings = `--mins: ${readingMinutes}; --s-done: '${ui.readDone}'; --s-
     if (!dialog) return;
     event.preventDefault();
     if (!dialog.open) dialog.showModal();
+  });
+
+  // An explicit language choice outranks the browser language the homepage redirect follows
+  document.querySelector<HTMLAnchorElement>('[data-lang-switch]')?.addEventListener('click', (event) => {
+    const target = (event.currentTarget as HTMLElement).dataset.langSwitch;
+    document.cookie = `${LANG_COOKIE}=${target}; path=/; max-age=31536000; samesite=lax`;
   });
 
   // A hello for whoever opens DevTools

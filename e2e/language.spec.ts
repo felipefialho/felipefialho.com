@@ -11,3 +11,15 @@ test.describe('Language switch', () => {
     await expect(page.getByRole('link', { name: 'Ler em português' })).toBeVisible();
   });
 });
+
+test.describe('Language preference', () => {
+  test('remembers the language picked with the switch', async ({ page, context }) => {
+    await page.goto('/en/');
+    await page.getByRole('link', { name: 'pt: ' }).first().click();
+    await expect(page).toHaveURL(/\/$/);
+    await expect(page.locator('html')).toHaveAttribute('lang', 'pt-BR');
+
+    const cookies = await context.cookies();
+    expect(cookies.find((cookie) => cookie.name === 'lang')?.value).toBe('pt');
+  });
+});
