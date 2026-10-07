@@ -13,13 +13,24 @@ test.describe('Language switch', () => {
 });
 
 test.describe('Language preference', () => {
-  test('remembers the language picked with the switch', async ({ page, context }) => {
-    await page.goto('/en/');
-    await page.getByRole('link', { name: 'pt: ' }).first().click();
-    await expect(page).toHaveURL(/\/$/);
-    await expect(page.locator('html')).toHaveAttribute('lang', 'pt-BR');
+  const cases = [
+    { from: '/en/', link: 'br: Português', lang: 'br', url: /\/$/, html: 'pt-BR' },
+    { from: '/', link: 'en: English', lang: 'en', url: /\/en\/$/, html: 'en' },
+  ];
 
-    const cookies = await context.cookies();
-    expect(cookies.find((cookie) => cookie.name === 'lang')?.value).toBe('pt');
-  });
+  for (const { from, link, lang, url, html } of cases) {
+    test(`remembers ${lang} after picking it with the switch on ${from}`, async ({ page, context }) => {
+      await page.goto(from);
+
+      await page.getByRole('banner').getByRole('link', { name: link }).click();
+
+      await expect(page).toHaveURL(url);
+      await expect(page.locator('html')).toHaveAttribute('lang', html);
+      await expect.poll(async () => (await context.cookies()).find((cookie) => cookie.name === 'lang')).toMatchObject({
+        value: lang,
+        path: '/',
+        sameSite: 'Lax',
+      });
+    });
+  }
 });

@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import avatar from '../assets/images/felipe-fialho.jpg';
 import { HTML_LANG, localePath, t, type Lang } from '../lib/i18n';
+import { LANG_LABEL } from '../lib/locale';
 import { SOCIAL_PROFILES } from '../lib/social';
 import SocialIcon from './SocialIcon.astro';
 
@@ -107,8 +108,8 @@ const readStrings = `--mins: ${readingMinutes}; --s-done: '${ui.readDone}'; --s-
           ))
         }
       </ul>
-      <a class="lang" data-lang-switch={otherLang} href={langHref} hreflang={HTML_LANG[otherLang]} lang={HTML_LANG[otherLang]} aria-label={`${otherLang}: ${ui.switchLang}`}>
-        {otherLang}
+      <a class="lang" data-lang-switch={LANG_LABEL[otherLang]} href={langHref} hreflang={HTML_LANG[otherLang]} lang={HTML_LANG[otherLang]} aria-label={`${LANG_LABEL[otherLang]}: ${ui.switchLang}`}>
+        {LANG_LABEL[otherLang]}
       </a>
       <button class="theme" type="button" data-theme-toggle data-label-light={ui.themeToLight} data-label-dark={ui.themeToDark} aria-label={ui.themeToLight}>
         <svg class="moon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
