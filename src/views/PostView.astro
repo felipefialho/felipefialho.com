@@ -43,7 +43,7 @@ const jsonLd = {
   inLanguage: HTML_LANG[lang],
   url,
   mainEntityOfPage: { '@type': 'WebPage', '@id': url },
-  image: new URL(ogImagePath(lang, post.id), Astro.site).href,
+  image: new URL(ogImagePath(lang, post), Astro.site).href,
   keywords: post.data.tags.join(', '),
   author: { '@type': 'Person', name: 'Felipe Fialho', url: new URL('/', Astro.site).href },
 };
@@ -53,7 +53,7 @@ const jsonLd = {
   lang={lang}
   title={post.data.title}
   description={post.data.description}
-  image={ogImagePath(lang, post.id)}
+  image={ogImagePath(lang, post)}
   type="article"
   alternate={alternate}
   publishedTime={post.data.date}

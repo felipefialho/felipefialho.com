@@ -1,4 +1,5 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
+import { hashOf } from './disk-cache';
 import { localePath, type Lang } from './i18n';
 
 export type Post = CollectionEntry<'posts'> | CollectionEntry<'postsEn'>;
@@ -21,7 +22,9 @@ export function getFeatured<T extends Post>(posts: T[], limit = 6): { featured: 
 
 export const postPath = (lang: Lang, id: string): string => localePath(lang, `/blog/${id}/`);
 
-export const ogImagePath = (lang: Lang, id: string): string => localePath(lang, `/og/${id}.jpg`);
+/** Social card path, versioned by what the card shows so platforms that cache by URL (LinkedIn) fetch it again after an edit. */
+export const ogImagePath = (lang: Lang, post: Post): string =>
+  localePath(lang, `/og/${post.id}.jpg?v=${hashOf(post.data.title, ...post.data.tags).slice(0, 8)}`);
 
 /** Maps each PT slug to its EN translation slug and back, for hreflang and the language switch. */
 export async function getTranslationMap(): Promise<{ ptToEn: Map<string, string>; enToPt: Map<string, string> }> {
