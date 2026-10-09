@@ -25,7 +25,9 @@ const { Content } = home ? await render(home) : { Content: null };
       {Content && <Content />}
       <a href={localePath(lang, '/hi/')}>{ui.moreAboutLink}</a>
     </div>
-    <p class="off mono"><span class="warm">{ui.offKeyboard}</span> {ui.offKeyboardList}</p>
+    <p class="off mono"><span class="warm">{ui.offKeyboard}</span> {ui.offKeyboardList} ·
+      <a href="https://www.instagram.com/_felipefialho/" rel="me">{ui.offKeyboardLink}</a>
+    </p>
   </div>
 
   <figure class="photo">
@@ -137,6 +139,12 @@ const { Content } = home ? await render(home) : { Content: null };
     color: var(--muted);
     font-size: var(--step--1);
     line-height: 1.7;
+
+    & a {
+      white-space: nowrap;
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+    }
   }
 
   .photo {
