@@ -1,7 +1,7 @@
 ---
-title: 'Como foi reconstruir meu blog em 2026 (e o piano de bônus)'
+title: 'Como foi reconstruir meu blog em 2026 usando Astro e componentes nativos'
 date: 2026-10-07 00:00:01
-description: 'Componentes nativos, performance no talo e zero framework no navegador. O blog saiu do Gatsby 2 e o Piano voltou de brinde 🎹'
+description: 'Lighthouse 100, uns 5 KB de JS na home e zero framework no navegador, sem React e sem bundle pra renderizar texto 🚀'
 tags: ['performance', 'html', 'css', 'front-end', 'ai']
 ---
 

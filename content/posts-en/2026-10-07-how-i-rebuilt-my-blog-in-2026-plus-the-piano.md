@@ -1,7 +1,7 @@
 ---
-title: 'How I rebuilt my blog in 2026 (plus the piano as a bonus)'
+title: 'How I rebuilt my blog in 2026 with Astro and native components'
 date: 2026-10-07 00:00:01
-description: 'Native components, maxed-out performance and zero framework in the browser. The blog left Gatsby 2 behind and the Piano came back as a bonus 🎹'
+description: 'Lighthouse 100, about 5 KB of JS on the home page and zero framework in the browser, no React and no bundles just to render text 🚀'
 tags: ['performance', 'html', 'css', 'front-end', 'ai']
 translationOf: como-foi-reconstruir-meu-blog-em-2026-e-o-piano-de-bonus
 ---
