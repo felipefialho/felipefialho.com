@@ -30,6 +30,7 @@ jobs:
           path: node_modules/.cache/og
           key: og-${{ hashFiles('src/lib/og.ts', 'pnpm-lock.yaml', 'src/assets/images/felipe-fialho.jpg') }}-${{ github.sha }}
           restore-keys: og-${{ hashFiles('src/lib/og.ts', 'pnpm-lock.yaml', 'src/assets/images/felipe-fialho.jpg') }}-
+      - run: pnpm check
       - run: pnpm lint
       - run: pnpm test
       - run: pnpm build
