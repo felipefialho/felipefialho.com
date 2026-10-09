@@ -2,6 +2,9 @@
   command = "pnpm build"
   publish = "dist"
 
+[[plugins]]
+  package = "./netlify/plugins/astro-cache"
+
 [build.environment]
   NODE_VERSION = "24"  # keep in sync with .nvmrc
 
