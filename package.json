@@ -30,16 +30,16 @@
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
-    "astro": "^7.3.5",
+    "astro": "^7.3.6",
     "image-size": "^2.0.4",
     "reading-time": "^1.5.0",
-    "satori": "^0.33.5",
+    "satori": "^0.35.1",
     "satori-html": "^0.3.2",
     "sharp": "^0.35.5"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
-    "@astrojs/markdown-satteri": "^0.4.2",
+    "@astrojs/markdown-satteri": "^0.4.3",
     "@eslint/js": "^10.0.1",
     "@fontsource-variable/geist": "^5.3.0",
     "@fontsource-variable/geist-mono": "^5.3.0",
@@ -47,21 +47,21 @@
     "@fontsource/geist-mono": "^5.3.0",
     "@playwright/test": "^1.63.0",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@tabler/icons": "^3.48.0",
+    "@tabler/icons": "^3.49.0",
     "@types/hast": "^3.0.5",
-    "@types/node": "^26.6.3",
-    "eslint": "^10.11.0",
+    "@types/node": "^26.6.4",
+    "eslint": "^10.12.0",
     "eslint-plugin-astro": "^3.2.1",
-    "globals": "^17.12.0",
+    "globals": "^17.13.0",
     "happy-dom": "^20.14.5",
     "pagefind": "^1.5.2",
     "postcss-html": "^2.0.0",
     "satteri": "^0.10.5",
-    "stylelint": "^17.15.0",
+    "stylelint": "^17.16.0",
     "stylelint-config-html": "^2.0.0",
     "stylelint-config-standard": "^40.0.0",
     "typescript": "~6.0.3",
-    "typescript-eslint": "^8.70.1",
-    "vitest": "^5.0.2"
+    "typescript-eslint": "^8.71.1",
+    "vitest": "^5.0.3"
   }
 }
