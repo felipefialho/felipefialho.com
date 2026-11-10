@@ -11,7 +11,7 @@ Posts are written in Portuguese, with some translated to English under `/en/`. T
 ## Stack
 
 - [Astro](https://astro.build/) 7 with TypeScript and plain CSS
-- Markdown processed by Sätteri, with local plugins in `src/plugins` (embeds, image attributes, external links, heading anchors, reading time, in-article ads)
+- Markdown processed by Sätteri, with local plugins in `src/plugins` (embeds, image attributes, external links, heading anchors, reading time)
 - [Pagefind](https://pagefind.app/) for search
 - Build-time Open Graph cards with satori and sharp
 - LGPD consent banner with Consent Mode v2: Google Analytics 4 loads only after consent, AdSense is lazy-loaded and personalized only with consent

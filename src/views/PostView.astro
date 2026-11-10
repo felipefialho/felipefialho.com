@@ -2,8 +2,6 @@
 import { Image } from 'astro:assets';
 import { render } from 'astro:content';
 import avatar from '../assets/images/felipe-fialho.jpg';
-import AdSlot from '../components/AdSlot.astro';
-import AdsLoader from '../components/AdsLoader.astro';
 import CodeCopy from '../components/CodeCopy.astro';
 import Base from '../layouts/Base.astro';
 import PostFooter from '../components/PostFooter.astro';
@@ -109,7 +107,6 @@ const jsonLd = {
           <Content />
         </div>
 
-        <AdSlot kind="end" lang={lang} />
         <PostFooter lang={lang} post={post} posts={posts} part="extras" />
       </div>
 
@@ -124,7 +121,6 @@ const jsonLd = {
   </article>
 
   <PostFooter lang={lang} post={post} posts={posts} part="adjacent" />
-  <AdsLoader />
   <CodeCopy />
 </Base>
 
