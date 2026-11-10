@@ -1,6 +1,5 @@
 ---
-title: '14 Hábitos de Desenvolvedores
-Altamente Produtivos - Resenha do Livro'
+title: '14 Hábitos de Desenvolvedores Altamente Produtivos - Resenha do Livro'
 date: 2020-09-24 00:00:01
 description:
   'Esse artigo é uma resenha desse ótimo livro e de alguns hábitos que são abordados nele 📚'
