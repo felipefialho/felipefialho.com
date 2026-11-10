@@ -7,7 +7,7 @@ export const slugify = (text: string) =>
 
 // Ids owned by the page chrome, a heading must never take them
 const RESERVED_IDS = [
-  'content', 'search', 'search-ui', 'search-status', 'consent', 'latest', 'lab', 'support-title', 'related-title', 'toc',
+  'content', 'search', 'search-ui', 'search-status', 'latest', 'lab', 'support-title', 'related-title', 'toc',
 ];
 
 const WRAPPED_DEPTHS = new Set(['h2', 'h3']);

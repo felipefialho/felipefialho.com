@@ -21,7 +21,6 @@ const profiles = [
   <div class="foot page">
     <div class="legal">
       <span>© Felipe Fialho · {ui.footerMade}</span>
-      <button type="button" commandfor="consent-prefs" command="show-modal">{ui.cookies}</button>
       <a href={localePath(lang, '/policies/')}>{ui.privacy}</a>
     </div>
     <ul class="socials">
@@ -68,7 +67,6 @@ const profiles = [
       min-block-size: 2.75rem;
     }
 
-    & button,
     & a {
       padding: 0;
       border: 0;
@@ -78,8 +76,6 @@ const profiles = [
       text-decoration: underline;
       text-underline-offset: 3px;
       text-transform: lowercase;
-      cursor: pointer;
-
       &:hover {
         color: var(--ink);
       }

@@ -1,5 +1,4 @@
 import { test as base } from '@playwright/test';
-import { ConsentBanner } from './consent-banner';
 import { HomePage } from './home-page';
 import { LabPage } from './lab-page';
 import { NotFoundPage } from './not-found-page';
@@ -10,7 +9,6 @@ export { MISSING_PATH } from './not-found-page';
 export { POST_PATH } from './post-page';
 
 type Fixtures = {
-  consentBanner: ConsentBanner;
   homePage: HomePage;
   labPage: LabPage;
   notFoundPage: NotFoundPage;
@@ -18,9 +16,6 @@ type Fixtures = {
 };
 
 export const test = base.extend<Fixtures>({
-  consentBanner: async ({ page }, use) => {
-    await use(new ConsentBanner(page));
-  },
   homePage: async ({ page }, use) => {
     await use(new HomePage(page));
   },

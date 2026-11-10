@@ -14,7 +14,7 @@ Posts are written in Portuguese, with some translated to English under `/en/`. T
 - Markdown processed by Sätteri, with local plugins in `src/plugins` (embeds, image attributes, external links, heading anchors, reading time)
 - [Pagefind](https://pagefind.app/) for search
 - Build-time Open Graph cards with satori and sharp
-- LGPD consent banner with Consent Mode v2: Google Analytics 4 loads only after consent, AdSense is lazy-loaded and personalized only with consent
+- Cookieless page view counts with Cloudflare Web Analytics (production builds only), no consent banner needed
 - [Netlify](https://www.netlify.com/) for hosting, with the Image CDN serving legacy post images
 
 ## Getting Started
