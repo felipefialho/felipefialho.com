@@ -36,7 +36,7 @@ const editUrl = post.filePath ? `${repoUrl}/blob/main/${post.filePath}` : `${rep
             </button>
             <span class="visually-hidden" role="status" data-copy-status />
           </p>
-          <a class="sponsor" href="https://github.com/sponsors/felipefialho" data-track="sponsor_click">
+          <a class="sponsor" href="https://github.com/sponsors/felipefialho">
             {ui.sponsors}
           </a>
         </div>
@@ -104,16 +104,11 @@ const editUrl = post.filePath ? `${repoUrl}/blob/main/${post.filePath}` : `${rep
         button.textContent = copied;
         setTimeout(() => (button.textContent = label), RESET_MS);
         announce(copied);
-        window.track?.('pix_copy');
       } catch {
         // Clipboard denied: the key stays visible to copy by hand
         announce(failed);
       }
     });
-  });
-
-  document.querySelectorAll<HTMLAnchorElement>('a[data-track]').forEach((link) => {
-    link.addEventListener('click', () => window.track?.(link.dataset.track ?? ''));
   });
 </script>
 

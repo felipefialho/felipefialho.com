@@ -1,8 +1,6 @@
 ---
 import { Font } from 'astro:assets';
-import AnalyticsInit from '../components/AnalyticsInit.astro';
 import ConsentBanner from '../components/ConsentBanner.astro';
-import ConsentHead from '../components/ConsentHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import SearchDialog from '../components/SearchDialog.astro';
@@ -66,7 +64,16 @@ const speculationRules = { prefetch: [{ where: { href_matches: '/*' }, eagerness
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <ConsentHead />
+    {
+      import.meta.env.PROD && (
+        <script
+          is:inline
+          type="module"
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "b028eb5b16854ffcae4222cbbc73d58a"}'
+        />
+      )
+    }
     <meta name="theme-color" content="#0f0f0f" />
     <script is:inline>
       try {
@@ -138,7 +145,6 @@ const speculationRules = { prefetch: [{ where: { href_matches: '/*' }, eagerness
     <Footer lang={lang} />
     <SearchDialog lang={lang} />
     <ConsentBanner lang={lang} />
-    <AnalyticsInit />
     <slot name="end" />
   </body>
 </html>

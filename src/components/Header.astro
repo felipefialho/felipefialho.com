@@ -155,7 +155,6 @@ const readStrings = `--mins: ${readingMinutes}; --s-done: '${ui.readDone}'; --s-
     } catch {
       // Private mode: the choice lasts for this page only
     }
-    window.track?.('theme_change', { theme: next });
   });
 
   // Ctrl+K (Cmd+K on a Mac) opens the search dialog
