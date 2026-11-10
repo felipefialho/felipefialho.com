@@ -40,7 +40,7 @@ export default function remarkLegacyImages(factory: PluginFactoryContext): Mdast
     name: 'legacy-images',
     image(node, ctx) {
       const next = rewriteSrc(node.url, markdownFile);
-      if (next) ctx.setProperty(node, 'url', next);
+      if (next) ctx.setField(node, 'url', next);
     },
     html(node, ctx) {
       const value = node.value.replace(IMG_TAG, (tag) =>
@@ -49,7 +49,7 @@ export default function remarkLegacyImages(factory: PluginFactoryContext): Mdast
           return next ? `${prefix}"${next}"` : match;
         }),
       );
-      if (value !== node.value) ctx.setProperty(node, 'value', value);
+      if (value !== node.value) ctx.setField(node, 'value', value);
     },
   };
 }

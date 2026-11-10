@@ -40,7 +40,9 @@ function stop(): void {
   for (const cookie of document.cookie.split('; ')) {
     const name = cookie.split('=')[0];
     if (!name.startsWith('_ga')) continue;
-    for (const scope of ['', `; domain=.${domain}`]) document.cookie = `${name}=; max-age=0; path=/${scope}`;
+    // A fixed past date (rather than max-age=0) sidesteps any now-vs-expiry edge case at the instant of deletion
+    for (const scope of ['', `; domain=.${domain}`])
+      document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/${scope}`;
   }
 }
 
