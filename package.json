@@ -33,7 +33,7 @@
     "astro": "^7.4.7",
     "image-size": "^2.1.0",
     "reading-time": "^1.5.0",
-    "satori": "^0.33.5",
+    "satori": "^0.63.2",
     "satori-html": "^0.3.2",
     "sharp": "^0.35.5"
   },
