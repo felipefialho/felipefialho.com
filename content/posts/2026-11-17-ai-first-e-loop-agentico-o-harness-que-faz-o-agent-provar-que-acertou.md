@@ -1,6 +1,6 @@
 ---
 title: 'AI First e loop agêntico: o harness que faz o agent provar que acertou'
-date: 2026-11-06 00:00:01
+date: 2026-11-17 00:00:01
 description: 'Agent sem guard rail entrega com muita confiança uma coisa que ninguém consegue provar que tá certa. Esse é o harness que eu uso pra resolver isso: guard rails, loop red/green, subagents e documentação como contexto 🚀'
 tags: ['ai', 'agents', 'workflow', 'programação']
 ---
@@ -49,7 +49,7 @@ Então tudo que é importante de verdade sai do texto e vai pra algum lugar que 
 - **Qualidade dentro do loop:** visual regression contra a `main`, auditoria de acessibilidade, Lighthouse e Web Vitals rodam a cada volta, não num pipeline que alguém olha depois (ou nem isso)
 - **Tool allowlist por papel:** cada agent declara no frontmatter as ferramentas que pode usar. Um agent que só deveria reportar não recebe ferramenta de edição, então "só reporta" deixa de ser pedido e vira limitação técnica
 - **Arquivos proibidos:** quem implementa nunca toca nos testes. O caminho mais curto pra deixar um teste green é editar o teste, e o harness bloqueia isso
-- **Hooks:** scripts que rodam no ciclo de vida do agent, antes ou depois de cada tool call, no início da sessão. Eles bloqueiam um comando perigoso, injetam contexto ou rodam uma verificação sem depender de o agent lembrar
+- **Hooks:** scripts que rodam no ciclo de vida do agent e barram o que não pode passar, sem depender de o agent lembrar. Mais sobre isso na próxima seção
 - **Budget:** teto de rodadas de review, de subagents em paralelo e nível de esforço por tarefa. Sem teto, "mais uma rodada e zera" vira um poço de tokens
 
 A direção entre camadas é o melhor exemplo
@@ -57,6 +57,60 @@ A direção entre camadas é o melhor exemplo
 Rotas compõem features, features usam entities, entities nunca importam features. Escrito só em texto, um agent quebra isso na primeira pressa. Com o lint barrando o import, a regra deixa de depender de alguém lembrar
 
 Nada disso é exclusivo de quem usa AI, é só boa engenharia. A diferença é o preço: antes uma convenção frouxa custava um pouco de atrito no time, agora ela custa um agent errando com confiança em escala
+
+## Guard rails determinísticos
+
+Rule e skill ainda são texto. O modelo lê, entende e na maioria das vezes segue. Mas "na maioria das vezes" é probabilidade, não garantia
+
+Um LLM é **probabilístico** por natureza. A mesma instrução, no mesmo repo, pode dar resultados diferentes de uma sessão pra outra: depende do que mais tá na janela de contexto, de quanto a sessão já cresceu, da versão do modelo e até da amostragem de cada token. Uma rule lida no começo de uma sessão curta pesa muito mais do que a mesma rule soterrada depois de horas de log e diff
+
+Um guard rail **determinístico** é o oposto: a mesma entrada sempre gera a mesma saída. Um `DROP TABLE` ou um `migrate reset` apontando pro banco de produção é barrado hoje, amanhã e na milésima vez, não importa o modelo, o tamanho do contexto ou a pressa do agent. Não existe "dessa vez passou", e num caso desses uma vez só já apaga dado de cliente que nenhum revert de código traz de volta
+
+Dá pra pensar nos guard rails como um espectro. Num extremo, o prompt: pedido, que o modelo pode ignorar. No meio, rules e skills: contexto bem escrito, que ele quase sempre segue. No outro extremo, o que é determinístico porque não passa pelo modelo: tipo, lint, permissão de ferramenta e **hooks**
+
+Hook é um script que o harness roda em pontos fixos do ciclo de vida do agent. Ele recebe o que o agent tá prestes a fazer e devolve uma decisão: deixa passar, bloqueia com um motivo ou injeta contexto. O modelo não decide se o hook roda, e não tem como convencer o hook a mudar de ideia. É código, roda sempre, e decide sempre igual
+
+A divisão de trabalho fica clara: **a parte probabilística decide o que fazer, a parte determinística decide o que não pode acontecer**. O agent continua livre pra escolher o caminho, só que alguns caminhos simplesmente não existem
+
+E tem um bônus que vem junto: o que é determinístico dá pra testar. Uma rule em texto eu só sei se funciona observando o agent por um tempo. Um hook eu testo como qualquer função, com a entrada e a saída esperada
+
+E eles se encaixam em quatro momentos:
+
+- **Antes da ação:** barra o atalho antes dele acontecer. Silenciar o linter, pular um teste, burlar os git hooks
+- **Depois da ação:** devolve feedback na hora. Formata o arquivo e manda de volta só o erro que sobrou
+- **Na saída:** não deixa o agent declarar pronto sem prova. Editou código e não rodou verificação, a task não fecha
+- **Em volta da sessão:** guarda o estado antes da compactação de contexto e injeta de volta depois
+
+Um hook desses é pequeno. Esse barra teste focado ou pulado antes dele entrar no arquivo:
+
+```bash
+#!/bin/bash
+# PreToolUse (Write|Edit): blocks focused or skipped tests before they land
+input=$(cat)
+added=$(jq -r '.tool_input.new_string // .tool_input.content // empty' <<< "$input")
+
+if grep -qE '\b(test|it|describe)\.(only|skip)\(' <<< "$added"; then
+  jq -n '{hookSpecificOutput: {hookEventName: "PreToolUse", permissionDecision: "deny",
+    permissionDecisionReason: "Focused or skipped test: fix the test or the code instead"}}'
+fi
+exit 0
+```
+
+O que faz um hook ser útil e não um obstáculo é o motivo que ele devolve. "Negado" faz o agent tentar qualquer outro caminho. "Teste pulado: corrige o teste ou o código" faz ele corrigir na hora
+
+### Os trade-offs
+
+Determinístico não quer dizer de graça. A mesma propriedade que torna o hook confiável é a que cobra o preço: ele decide sempre igual, inclusive quando devia decidir diferente
+
+- **Rigidez:** hook não entende contexto. Ele não sabe que aquele `.skip` era temporário e combinado com o time. Todo falso positivo vira atrito, e o agent tende a contornar em vez de parar e perguntar
+- **Cobertura parcial:** hook barra o caminho que você previu. Se ele olha a ferramenta de edição, o agent ainda pode escrever o mesmo arquivo pelo shell. É guard rail contra atalho, não sandbox de segurança
+- **Manutenção:** ser testável não quer dizer que se testa sozinho. Uma heurística frouxa barra coisa legítima, uma apertada demais deixa passar o que devia barrar, e uma mudança no formato que a ferramenta manda quebra tudo em silêncio
+- **Ruído:** hook que barra demais vira o alarme que todo mundo ignora, e uma hora alguém desliga. Por isso ele só deve olhar o que a mudança adiciona, nunca o que já tava no arquivo
+- **Latência:** roda em toda tool call, então cada segundo dele se multiplica pela sessão inteira
+- **Regra invisível:** quem não conhece o harness não sabe por que foi bloqueado. Versionar os hooks junto com o resto e escrever a mensagem pra quem nunca viu ajuda
+- **Acoplamento:** o formato do hook é da ferramenta. Deixar a lógica num script separado e só a cola presa nela facilita trocar de ferramenta depois
+
+A régua pra decidir o que vira hook sai daí: se a resposta certa é sempre a mesma pra mesma entrada, o falso positivo é raro e errar custa caro, sai do texto e vira hook. Se a resposta depende de julgamento, continua rule
 
 ## Primeiro eu defino o que é certo
 

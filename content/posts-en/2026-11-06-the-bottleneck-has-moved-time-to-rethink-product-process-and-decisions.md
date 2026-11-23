@@ -1,6 +1,6 @@
 ---
 title: 'The bottleneck has moved: time to rethink product, process and decisions'
-date: 2026-11-17 00:00:01
+date: 2026-11-06 00:00:01
 description: 'Writing code got fast, but maintaining and scaling a product is still expensive. And when quality and speed stop competing, the biggest risk becomes missing the timing ⏱️'
 tags: ['architecture', 'product', 'ai', 'design system', 'front-end']
 translationOf: o-gargalo-mudou-de-lugar-hora-de-rever-produto-processo-e-decisao

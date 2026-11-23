@@ -1,6 +1,6 @@
 ---
 title: 'O gargalo mudou de lugar: hora de rever produto, processo e decisão'
-date: 2026-11-17 00:00:01
+date: 2026-11-06 00:00:01
 description: 'Escrever código ficou rápido, mas manter e escalar um produto continua caro. E quando qualidade e velocidade param de competir, o maior risco passa a ser perder o timing ⏱️'
 tags: ['arquitetura', 'produto', 'ai', 'design system', 'front-end']
 ---

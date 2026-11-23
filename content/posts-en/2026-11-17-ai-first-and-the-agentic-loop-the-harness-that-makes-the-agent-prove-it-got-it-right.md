@@ -1,6 +1,6 @@
 ---
 title: 'AI First and the agentic loop: the harness that makes the agent prove it got it right'
-date: 2026-11-06 00:00:01
+date: 2026-11-17 00:00:01
 description: 'An agent without guard rails confidently ships something nobody can prove is correct. This is the harness I use to solve that: guard rails, a red/green loop, subagents and documentation as context 🚀'
 tags: ['ai', 'agents', 'workflow', 'programming']
 translationOf: ai-first-e-loop-agentico-o-harness-que-faz-o-agent-provar-que-acertou
@@ -50,7 +50,7 @@ So everything that really matters leaves the text and moves to a place that bloc
 - **Quality inside the loop:** visual regression against `main`, accessibility audit, Lighthouse and Web Vitals run on every round, not in a pipeline someone looks at later (or never)
 - **Tool allowlist per role:** each agent declares in its frontmatter the tools it can use. An agent that should only report gets no editing tool, so "only reports" stops being a request and becomes a technical limitation
 - **Forbidden files:** whoever implements never touches the tests. The shortest path to a green test is editing the test, and the harness blocks that
-- **Hooks:** scripts that run in the agent's lifecycle, before or after each tool call, at session start. They block a dangerous command, inject context or run a check without depending on the agent remembering
+- **Hooks:** scripts that run in the agent's lifecycle and block what can't get through, without depending on the agent remembering. More on that in the next section
 - **Budget:** caps on review rounds, on parallel subagents and on effort level per task. Without a cap, "one more round and we're done" becomes a token sinkhole
 
 Layer direction is the best example
@@ -58,6 +58,60 @@ Layer direction is the best example
 Routes compose features, features use entities, entities never import features. Written only as text, an agent breaks that the first time it's in a hurry. With the linter blocking the import, the rule no longer depends on anyone remembering it
 
 None of this is exclusive to people who use AI, it's just good engineering. The difference is the price: before, a loose convention cost a bit of friction on the team, now it costs an agent being confidently wrong at scale
+
+## Deterministic guard rails
+
+Rules and skills are still text. The model reads them, understands them and follows them most of the time. But "most of the time" is a probability, not a guarantee
+
+An LLM is **probabilistic** by nature. The same instruction, in the same repo, can produce different results from one session to the next: it depends on what else is in the context window, how long the session has grown, the model version and even the sampling of each token. A rule read at the start of a short session weighs a lot more than the same rule buried under hours of logs and diffs
+
+A **deterministic** guard rail is the opposite: the same input always produces the same output. A `DROP TABLE` or a `migrate reset` pointed at the production database is blocked today, tomorrow and the thousandth time, no matter the model, the context size or how much of a hurry the agent is in. There's no "it got through this time", and in a case like this, once is enough to wipe customer data that no code revert brings back
+
+You can think of guard rails as a spectrum. At one end, the prompt: a request the model can ignore. In the middle, rules and skills: well-written context it almost always follows. At the other end, whatever is deterministic because it doesn't go through the model: types, lint, tool permissions and **hooks**
+
+A hook is a script the harness runs at fixed points in the agent's lifecycle. It receives what the agent is about to do and returns a decision: let it through, block it with a reason or inject context. The model doesn't decide whether the hook runs, and it can't talk the hook into changing its mind. It's code, it always runs, and it always decides the same way
+
+The division of labor becomes clear: **the probabilistic part decides what to do, the deterministic part decides what can't happen**. The agent is still free to choose its path, some paths just don't exist
+
+And there's a bonus that comes with it: what's deterministic can be tested. A rule written as text I can only check by watching the agent for a while. A hook I test like any function, with an input and the expected output
+
+And they fit into four moments:
+
+- **Before the action:** blocks the shortcut before it happens. Silencing the linter, skipping a test, bypassing git hooks
+- **After the action:** gives feedback right away. Formats the file and sends back only the error that's left
+- **On the way out:** doesn't let the agent declare it's done without proof. Edited code and didn't run any verification, the task doesn't close
+- **Around the session:** saves the state before context compaction and injects it back afterwards
+
+A hook like that is small. This one blocks a focused or skipped test before it lands in the file:
+
+```bash
+#!/bin/bash
+# PreToolUse (Write|Edit): blocks focused or skipped tests before they land
+input=$(cat)
+added=$(jq -r '.tool_input.new_string // .tool_input.content // empty' <<< "$input")
+
+if grep -qE '\b(test|it|describe)\.(only|skip)\(' <<< "$added"; then
+  jq -n '{hookSpecificOutput: {hookEventName: "PreToolUse", permissionDecision: "deny",
+    permissionDecisionReason: "Focused or skipped test: fix the test or the code instead"}}'
+fi
+exit 0
+```
+
+What makes a hook useful instead of an obstacle is the reason it returns. "Denied" makes the agent try any other path. "Skipped test: fix the test or the code" makes it fix it right away
+
+### The trade-offs
+
+Deterministic doesn't mean free. The same property that makes a hook reliable is the one that charges the price: it always decides the same way, including when it should decide differently
+
+- **Rigidity:** a hook doesn't understand context. It doesn't know that `.skip` was temporary and agreed on with the team. Every false positive becomes friction, and the agent tends to work around it instead of stopping to ask
+- **Partial coverage:** a hook blocks the path you anticipated. If it watches the edit tool, the agent can still write the same file through the shell. It's a guard rail against shortcuts, not a security sandbox
+- **Maintenance:** being testable doesn't mean it tests itself. A loose heuristic blocks legitimate things, a tight one lets through what it should block, and a change in the format the tool sends breaks everything silently
+- **Noise:** a hook that blocks too much becomes the alarm everyone ignores, and eventually someone turns it off. That's why it should only look at what the change adds, never at what was already in the file
+- **Latency:** it runs on every tool call, so every second it takes is multiplied by the whole session
+- **Invisible rules:** someone who doesn't know the harness doesn't know why they were blocked. Versioning hooks with everything else and writing the message for someone who has never seen it helps
+- **Coupling:** the hook format belongs to the tool. Keeping the logic in a separate script and only the glue tied to the tool makes switching tools easier later
+
+The rule for deciding what becomes a hook comes from there: if the right answer is always the same for the same input, false positives are rare and getting it wrong is expensive, it leaves the text and becomes a hook. If the answer depends on judgment, it stays a rule
 
 ## First I define what correct means
 
