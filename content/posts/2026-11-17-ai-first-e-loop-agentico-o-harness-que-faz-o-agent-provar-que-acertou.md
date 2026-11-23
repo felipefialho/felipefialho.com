@@ -289,22 +289,6 @@ E a documentação segue regras tão duras quanto o código:
 
 A documentação deixa de ser burocracia de fim de projeto e vira a memória de longo prazo do sistema
 
-## Design system como base compartilhada
-
-Tudo isso vale pra um lugar que eu acho que ainda é subestimado: o design system
-
-Com agents, o design system deixa de ser só uma lib de componentes e vira **a base de onde designers e agents constroem**. Tokens, componentes e regras de uso escritos viram contexto, do mesmo jeito que a spec vira contexto pro código
-
-No [Claude Design](https://claude.ai/design) eu montei um design system e, em cima dele, um protótipo de um fluxo completo. Com o mesmo loop: um agent construía, outro conferia os screenshots contra o design system, rodada atrás de rodada, até não sobrar diferença
-
-O que me interessa nisso não é a ferramenta em si, é quem passa a conseguir prototipar
-
-Produto, design e negócio validam uma ideia sem entrar na fila de dev, e chegam na conversa com algo clicável, montado com as mesmas peças que existem no código. A conversa sai de "como isso deveria parecer" e vai pra "o que falta pra isso ir pra produção"
-
-E o papel de quem desenha muda igual ao meu. Em vez de desenhar cada tela do zero, a pessoa cuida do sistema e valida o que sai dele
-
-Mas só funciona com a mesma disciplina do resto: design system mal documentado gera protótipo inconsistente com a mesma confiança que um agent sem guard rail gera código errado
-
 ## Agents, skills e rules: um sistema que eu refino todo dia
 
 Nada disso mora num prompt que eu colo toda vez. Mora num sistema em camadas, e ele nunca tá pronto
@@ -406,5 +390,6 @@ O responsável por cada entrega segue sendo **VOCÊ**
 
 ## Vale ler também
 
+- [O gargalo mudou de lugar: hora de rever produto, processo e decisão](/blog/o-gargalo-mudou-de-lugar-hora-de-rever-produto-processo-e-decisao)
 - [Code review artesanal não escala mais (e o que fazer no lugar)](/blog/code-review-artesanal-nao-escala-mais-e-o-que-fazer-no-lugar)
 - [Stack com AI que vai elevar seu trampo como dev](/blog/stack-com-ai-que-vai-elevar-seu-trampo-como-dev)

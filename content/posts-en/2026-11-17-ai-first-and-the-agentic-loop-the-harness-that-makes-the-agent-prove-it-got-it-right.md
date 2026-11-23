@@ -290,22 +290,6 @@ And documentation follows rules as strict as the code:
 
 Documentation stops being end-of-project bureaucracy and becomes the system's long-term memory
 
-## Design system as the shared foundation
-
-All of this applies to a place I think is still underrated: the design system
-
-With agents, the design system stops being just a component library and becomes **the foundation that designers and agents build from**. Written tokens, components and usage rules become context, the same way the spec becomes context for the code
-
-In [Claude Design](https://claude.ai/design) I built a design system and, on top of it, a prototype of a complete flow. With the same loop: one agent built, another checked the screenshots against the design system, round after round, until there were no differences left
-
-What interests me here isn't the tool itself, it's who gets to prototype
-
-Product, design and business validate an idea without getting in the dev queue, and they come to the conversation with something clickable, built from the same pieces that exist in the code. The conversation moves from "what should this look like" to "what's missing for this to go to production"
-
-And the role of whoever designs changes just like mine did. Instead of drawing every screen from scratch, they take care of the system and validate what comes out of it
-
-But it only works with the same discipline as everything else: a poorly documented design system produces inconsistent prototypes with the same confidence an agent without guard rails produces wrong code
-
 ## Agents, skills and rules: a system I refine every day
 
 None of this lives in a prompt I paste every time. It lives in a layered system, and it's never finished
@@ -407,5 +391,6 @@ The one responsible for every delivery is still **YOU**
 
 ## Worth reading too
 
+- [The bottleneck has moved: time to rethink product, process and decisions](/en/blog/the-bottleneck-has-moved-time-to-rethink-product-process-and-decisions/)
 - [Manual code review does not scale anymore (and what to do instead)](/en/blog/manual-code-review-does-not-scale-anymore-and-what-to-do-instead/)
 - [AI stack that will level up your work as a dev](/en/blog/ai-stack-that-will-level-up-your-work-as-a-dev/)
